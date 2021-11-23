@@ -190,4 +190,32 @@ We can assign the VLAN to the port interface. Once the device is assigned to the
 
 An access port may only be assigned to one data VLAN and one voice VLAN; the latter for when a phone and an end device are off of the same switchport.
 
-### Trun
+### Trunk Configuration Commands
+
+These are to configure and verify VLAN trunks. Trunks are layer 2 and carry traffic for all VLANs.
+
+| Task | IOS Command |
+| ---  | ----------- |
+| Enter global configuration mode | `Switch# configure terminal` |
+| Enter interface configuration mode | `Switch(config)# interface <interface-id>` |
+| Set the port to permanent trunking mode | `Switch(config-if)# switchport mode trunk` |
+| Sets the native VLAN to something other than VLAN 1 | `Switch(config-if)# switchport trunk native vlan <vlan-id>`
+| Specify the list of VLANs to be allowed on the trunk link | `Switch(config-if)# switchport trunk allowed vlan <vlan-list>`
+| Return to privileged EXEC mode | `Switch(config-if)# end` |
+
+#### Trunk Configuration Example
+
+![[Pasted image 20211123001900.png]]
+
+| Prompt | Command |
+| ------ | ------- |
+| `S1(config)#` | `interface fa0/18` |
+| `S1(config-if)#` | `switchport mode trunk` |
+| `S1(config-if)#` | `switchport trunk native vlan 99` |
+| `S1(config-if)#` | `switchport trunk allowed vlan 10,20,30,99` |
+| `S1(config-if)#` | `end` |
+
+The subnets associated with each VLAN are as follows:
+
+- VLAN 10 (Faculty/Staff) - `172.17.10.0/24`
+- VLAn 20 (Students) - `172.17.20.0/24`
