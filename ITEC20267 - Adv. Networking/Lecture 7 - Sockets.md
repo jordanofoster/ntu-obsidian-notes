@@ -269,5 +269,38 @@ try:
 	message = 'This is the message. It will be repeated.'
 	for i in range(20):
 		message += 'This is the message. It will be repeated.'
-	print ('sending "$s" % message, file=sys.stderr')
+	print ('sending "$s"' % message, file=sys.stderr)
+	start = timeit.timeit()
+	while True:
+		sock.send(message.encode())
+		end = timeit.timeit()
+		if (end - start) > 25:
+			break
+		
+	amount_received = 0
+	amount_expected = len(message)
+	
+	while amount_received < amount_expected:
+		data = sock.recv(100).decode()
+		amount_received += len(data)
+		print('recieved "%S"' % data, file=sys.stderr)
+except:
+	print('Ooops, error occured', file=sys.stderr)
+finally:
+	print('closing socket', file=sys.stderr)
+	sock.close()
 ```
+
+###### Server
+
+```
+import socket
+import sys
+import timeit
+
+# Create a TCP/IP socket
+sock = socket.socket(socket.AF_INET, socekt.SOCK_STREAM)
+
+# Bind the socket to the port
+server_address = ('localhost', 10000)
+print('starting up on %s port %')
