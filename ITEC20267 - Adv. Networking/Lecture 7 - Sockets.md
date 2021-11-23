@@ -76,3 +76,34 @@ To understand this process, some background information is required:
 
 The Portable Operating System Interface (POSIX) is a family of standards specified by the IEEE Computer Society, for maintaining compatibility between operating systems.
 
+![[Pasted image 20211123004614.png]]
+![[Pasted image 20211123004624.png]]
+
+##### Generic socket addresses
+
+```
+struct sockaddr {
+	
+	uint8_t			sa_len; /* sa_len used by kernel */
+	
+	sa_family_t 	sa_family;
+	
+	char			sa_data[14];
+
+};
+```
+
+`sa_family` specifies the address type, whereas `sa_data` specifies the address value.
+
+##### `sockaddr`
+
+In this example, we use addresses that will allow a man to use sockets to communicate with his family, using address type `AF_FAMILY` and the following address values:
+
+- Daughter - `1`
+- Wife - `2`
+- Mom - `3`
+- Dad - `4`
+- Sister - `5`
+- Brother - `6`
+
+###### `AF`
