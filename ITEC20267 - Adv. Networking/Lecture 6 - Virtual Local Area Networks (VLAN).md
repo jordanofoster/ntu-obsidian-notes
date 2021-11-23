@@ -238,3 +238,15 @@ The Dynamic Trunking Protocol (DTP) is proprietary and designed by Cisco. Its ch
 
 ![[Pasted image 20211123002557.png]]
 ![[Pasted image 20211123002601.png]]
+
+##### Negotiated Interface Modes
+
+The `switchport mode` command has additional options. The `switchport nonegotiate` interface configuration command can be used to stop DTP negotation.
+
+| Option | Description |
+| ------ | ----------- |
+| `access` | Permanent access mode and negotiates to convert the neighboring link into an access link |
+| `dynamic auto` | Will become a trunk interface if the neighboring interface is set to `trunk` or `desirable` mode |
+| `dynamic desirable` | Actively seeks to become a trunk by negotiating with other `auto` or `desirable` interfaces |
+| `trunk` | Permanent trunking mode and negotiates to convert the neighboring link into a trunk link |
+
