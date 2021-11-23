@@ -40,19 +40,19 @@ The following is provided:
 
 These are generic sockets with support for multiple protocol families, and address representation independence. They attempt to use existing I/O programming interfaces as much as possible.
 
-##### Socket Abstraction
+#### Socket Abstraction
 
 A socket is an abstract representation of a communication endpoint. They work with Unix I/O services, much like files, pipes and FIFOs. They obviously have special needs, such as establishing a connection and specifying communication endpoint addresses.
 
-###### Unix file descriptor table
+##### Unix file descriptor table
 
 ![[Pasted image 20211123003838.png]]
 
-###### Unix socket descriptor table
+##### Unix socket descriptor table
 
 ![[Pasted image 20211123003855.png]]
 
-##### Creating a socket
+#### Creating a socket
 
 `int socket(int family,int type,int proto);`
 
@@ -62,24 +62,24 @@ The above code is used, where:
 - `type` specifies the type of service (`SOCK_STREAM` for TCP, `SOCK_DGRAM` for UDP)
 - `protocol` specifies the protocol to use (usually `0`, meaning the default).
 
-##### `socket()`
+#### `socket()`
 
 The `socket()` system call returns a socket descriptor, represented by a small integer, or `-1` on error. The `socket()` function itself allocates resources needed for a communication endpoint, but does not deal with endpoint addressing.
 
-##### Specifying an endpoint address
+#### Specifying an endpoint address
 
 The socket API is generic, and therefore contains a generic way to specify endpoint addresses. TCP/IP requires an IP address and port number for each endpoint address; but other protocol suites/families may use other schemes.
 
 To understand this process, some background information is required:
 
-###### POSIX data types
+##### POSIX data types
 
 The Portable Operating System Interface (POSIX) is a family of standards specified by the IEEE Computer Society, for maintaining compatibility between operating systems.
 
 ![[Pasted image 20211123004614.png]]
 ![[Pasted image 20211123004624.png]]
 
-##### Generic socket addresses
+#### Generic socket addresses
 
 ```
 struct sockaddr {
@@ -95,7 +95,7 @@ struct sockaddr {
 
 `sa_family` specifies the address type, whereas `sa_data` specifies the address value.
 
-##### `sockaddr`
+#### `sockaddr`
 
 In this example, we use addresses that will allow a man to use sockets to communicate with his family, using address type `AF_FAMILY` and the following address values:
 
@@ -106,7 +106,7 @@ In this example, we use addresses that will allow a man to use sockets to commun
 - Sister - `5`
 - Brother - `6`
 
-###### `AF_FAMILY`
+#### `AF_FAMILY`
 
 By initializing a `sockaddr` structure to point to the *Daughter* address, we use the following code:
 
@@ -117,14 +117,32 @@ mary.sa_family = AF_FAMILY;
 mary.sa_data[0] = 1;
 ```
 
-###### `AF_INET`
+#### `AF_INET`
 
 For the `AF_FAMILY` protocol, only 1 byte was needed to specify the address. For `AF_INET`(TCP/IP), we need the following; a 16-bit port number, and, exclusively for IPv4, a 32-bit IP address.
 
-###### `struct sockaddr` In IPv4
+##### `struct sockaddr_in`  (IPv4)
 
 ![[Pasted image 20211123005521.png]]
 
-###### `struct sockaddr` In IPv6
+##### `struct sockaddr_in` (IPv6)
 
 ![[Pasted image 20211123005600.png]]
+
+#### Network Byte Order
+
+All values stored in a `sockaddr_in` struct must be in *network byte order.* For example:
+
+- `sin_port` is a TCP/IP port number.
+- `sin_addr` is an IP address.
+
+This is a common mistake!
+
+##### Network Byte Order Functions
+
+where the following applies:
+
+- `h`: host byte order
+- `n`: network byte order
+- `s`: short (16-bit)
+- `l`: long (32-bit)
