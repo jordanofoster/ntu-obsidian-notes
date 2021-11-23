@@ -336,5 +336,7 @@ try:
 		else:
 			print('no more data from', client_address, file=sys.stderr)
 			break
-			
+finally:
+	# Clean up the connection
+	connection.close()
 	
