@@ -164,5 +164,37 @@ However, there is a caveat - the C functions that make up the sockets API expect
 
 ![[Pasted image 20211123010556.png]]
 
+##### TCP/IP - `bind()`
 
-##### TCP/IP 
+The `bind()` syscall is used to assign an address to an existing socket, as seen below:
+
+```
+int bind(int sockfd, const struct sockaddr *myaddr, int addrlen)
+```
+Note the `const struct` here.
+
+`bind()` returns 0 on success, and -1 on error. Calling `bind()` assigns the address specified by the `sockaddr` structure to the socket descriptor. You can give `bind()` a `sockaddr_in` structure as well:
+
+```
+bind(mysock, (struct sockaddr*) &myaddr, sizeof(myaddr) );
+```
+
+###### Example of `bind()`
+
+```
+int mysock,err;
+
+struct sockaddr_in myaddr;
+
+mysock = socket(PF_INET,SOCK_STREAM,0);
+
+myaddr.sin_family = AF_INET;
+
+myaddr.sin_port = htons(portnum);
+
+myaddr.sin_addr = htonl(ipaddress);
+
+err=bind(mysock, (sockaddr *) &myaddr, sizeof(myaddr));
+```
+
+###### 
