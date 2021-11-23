@@ -139,4 +139,33 @@ VLAN details are stored in the `vlan.dat` file. VLANs are created in the global 
 
 | Task | IOS Command |
 | ---  | ----------- |
-| Enter global configuration mode | `Switch# configure terminal`
+| Enter global configuration mode | `Switch# configure terminal` |
+| Create a VLAN with a valid ID number | `Switch(config)# vlan <vlan-id>` |
+| Specify a unique name to identify the VLAN | `Switch(config-vlan)# name <vlan-name>` |
+| Return to privileged EXEC mode | `Switch(config-vlan)# end` |
+| Enter global configuration mode | `Switch# configure terminal` |
+
+#### VLAN Creation Example
+
+![[Pasted image 20211123000801.png]]
+
+| Prompt | Command |
+| ------ | ------- |
+| `S1#` | `configure terminal` |
+| `S1(config)#` | `vlan 20` |
+| `S1(config-vlan)#` | `name student` |
+| `S1(config-vlan)#` | `end` |
+
+If the student PC is going to be in VLAN 20, we create the VLAN first and then name it. If you do not name it, the Cisco IOS will give it a default name of `vlan` and the four digit number of the VLAN (e.g. `vlan0020` for VLAN 20).
+
+### VLAN Port Assignment Commands
+
+Once the VLAN is created, it can then be assigned to the correct interfaces:
+
+| Task | Command |
+| ---  | ------- |
+| Enter global configuration mode | `Switch# configure terminal` |
+| Create a VLAN with a valid ID number | `Switch(config)# vlan <vlan-id>` |
+| Specify a unique name to identify the VLAN | `Switch(config-vlan)# name <vlan-name>` |
+| Return to privileged EXEC mode | `Switch(config-vlan)# end` |
+| Enter global configuration mode | `Switch# configure terminal` |
