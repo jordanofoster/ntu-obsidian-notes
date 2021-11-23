@@ -210,9 +210,23 @@ Clients don't typically care about what port they are given. When `bind()` is us
 
 ##### TCP/IP - Address Assignment
 
-There is no realistic way to know the right IP address to give to `bind()` - the IP address should instead be specified as `INADDR_ANY`, as this tells the OS to take care of this problem on our behalf
+There is no realistic way to know the right IP address to give to `bind()` - the IP address should instead be specified as `INADDR_ANY`, as this tells the OS to take care of this problem on our behalf.
 
+###### TCP/IP - Address Conversions
 
 The following code converts ASCII dotted-decimal IP addresses to a network-byte-ordered 32-bit value, returning `1` on a success, and `0` on a failure;
 
-`int inet_a`
+`int inet_aton(char *, struct in_addr *);`
+
+This line, on the other hand, does the reverse - changing a network-byte-ordered value to an ASCII dotted-decimal (or string-format IP address):
+
+`char *inet_nota(struct in_addr);`
+
+
+Using `family`, `string_ptr` and `address_ptr`, this line converts the IP address string to a network-byte-ordered 32 or 128-bit value, returning 1 on success, -1 on failure, and 0 on invalid input:
+
+`int inet_pton(int, const char *, void *);`
+
+Using `family`, `address_ptr`, `string_ptr` and `length`, this converts a network-byte-ordered value to an IP address string, in the format `x:x:x:x:x:x:x:x` or `x:x:x:x:x:x:a.b.c.d`:
+
+`char *inet_ntop(int, const void*, char*, size_t);`
