@@ -99,4 +99,22 @@ The IEE 802.1Q header is 4 bytes long. When the tag is created, the FCS must be 
 | Type | 2-Byte field with hexadecimal `0x8100`. This is referred to as the Tag Protocool ID (TPID). |
 | User Priority | 3-bit value that supports `note: blank here? fill later` |
 | Canonical Format Identifier (CFI) | 1-bit value that can support token ring frames on Ethernet |
-| VLAN ID (VID)
+| VLAN ID (VID) | 12-bit VLAN identifier that can support up to 4096 VLANs |
+
+##### Native VLANs and 802.1Q Tagging
+
+![[Pasted image 20211122235921.png]]
+
+The basics of 802.1Q trunks are as follows:
+
+- Tagging is typically done on all VLANs.
+- The use of a native VLAN was designed for legacy use (such as in the above example)
+- Unless changed, VLAN1 is the native VLAN.
+- Both ends of a trunk link must be configured with the same native VLAN.
+- Each trunk is configured separately, so it is possible to have different native VLANs on separate trunks.
+
+##### Voice VLAN Verification Example
+
+![[Pasted image 20211123000054.png]]
+
+The `show interfaces fa0/18 swutchport` command shows both data and 
