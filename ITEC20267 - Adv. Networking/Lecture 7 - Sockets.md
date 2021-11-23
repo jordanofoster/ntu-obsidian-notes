@@ -197,4 +197,22 @@ myaddr.sin_addr = htonl(ipaddress);
 err=bind(mysock, (sockaddr *) &myaddr, sizeof(myaddr));
 ```
 
-###### 
+###### Uses cases for `bind()`
+
+There are a number of them:
+- The server would like to bind to a well known address (port number).
+- Client can bind to a specific port.
+- The client can ask the OS to assign *any* available port number.
+
+Clients don't typically care about what port they are given. When `bind()` is used, however, it can be told to assign you any available port, as seen below:
+
+`myaddr.port = htonx(0);`
+
+##### TCP/IP - Address Assignment
+
+There is no realistic way to know the right IP address to give to `bind()` - the IP address should instead be specified as `INADDR_ANY`, as this tells the OS to take care of this problem on our behalf
+
+
+The following code converts ASCII dotted-decimal IP addresses to a network-byte-ordered 32-bit value, returning `1` on a success, and `0` on a failure;
+
+`int inet_a`
