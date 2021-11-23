@@ -218,4 +218,23 @@ These are to configure and verify VLAN trunks. Trunks are layer 2 and carry traf
 The subnets associated with each VLAN are as follows:
 
 - VLAN 10 (Faculty/Staff) - `172.17.10.0/24`
-- VLAn 20 (Students) - `172.17.20.0/24`
+- VLAN 20 (Students) - `172.17.20.0/24`
+- VLAN 30 (Guests) - `172.17.30.0/24`
+- VLAN 99 (Native) - `172.17.99.0/24`
+
+The `F0/1` port on S1 is configured as a trunk port.
+
+Note: This assumes a 2960 switch using 802.1Q tagging. Layer 3 switches require the encapsulation to be configured before the trunk mode.
+
+#### Introduction to DTP
+
+The Dynamic Trunking Protocol (DTP) is proprietary and designed by Cisco. Its characteristics are as follows:
+
+- On by default on Catalyst 2960/2950 switches
+- Dynamic-auto is default on 2960/2950 switches
+- May be turned off with the `nonegotiate` command
+- May be turned back on by setting the interface to dynamic-auto
+- Setting a switch to a static trunk or static access will avoid negotiation issues with the `switchport mode trunk` or `switchport mode access` commands.
+
+![[Pasted image 20211123002557.png]]
+![[Pasted image 20211123002601.png]]
