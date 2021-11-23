@@ -165,7 +165,29 @@ Once the VLAN is created, it can then be assigned to the correct interfaces:
 | Task | Command |
 | ---  | ------- |
 | Enter global configuration mode | `Switch# configure terminal` |
-| Create a VLAN with a valid ID number | `Switch(config)# vlan <vlan-id>` |
-| Specify a unique name to identify the VLAN | `Switch(config-vlan)# name <vlan-name>` |
-| Return to privileged EXEC mode | `Switch(config-vlan)# end` |
-| Enter global configuration mode | `Switch# configure terminal` |
+| Enter interface configuration mode | `Switch(config)# interface <interface-id>` |
+| Set the port to access mode | `Switch(config-if)# switchport mode access` |
+| Assign the port to a VLAN | `Switch(config-if)# switchport access vlan <vlan-id>`
+| Return to privileged EXEC mode | `Switch(config-if)# end` |
+
+#### VLAN Port Assignment Example
+
+![[Pasted image 20211123001252.png]]
+
+| Prompt | Command |
+| ------ | ------- |
+| `S1#` | `configure terminal` |
+| `S1(config)#` | `interface fa0/18` |
+| `S1(config-if)#` | `switchport mode access` |
+| `S1(config-if)#` | `switchport access vlan 20` |
+| `S1(config-if)#` | `end` |
+
+We can assign the VLAN to the port interface. Once the device is assigned to the VLAN, the end device then needs the IP address information for that VLAN. Here, Student PC recieves `172.17.20.22`.
+
+## Data and Voice VLANs
+
+![[Pasted image 20211123001600.png]]
+
+An access port may only be assigned to one data VLAN and one voice VLAN; the latter for when a phone and an end device are off of the same switchport.
+
+### Trun
