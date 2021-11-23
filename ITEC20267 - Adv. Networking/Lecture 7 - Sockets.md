@@ -197,7 +197,7 @@ myaddr.sin_addr = htonl(ipaddress);
 err=bind(mysock, (sockaddr *) &myaddr, sizeof(myaddr));
 ```
 
-###### Uses cases for `bind()`
+###### Use cases for `bind()`
 
 There are a number of them:
 - The server would like to bind to a well known address (port number).
@@ -230,3 +230,34 @@ Using `family`, `string_ptr` and `address_ptr`, this line converts the IP addres
 Using `family`, `address_ptr`, `string_ptr` and `length`, this converts a network-byte-ordered value to an IP address string, in the format `x:x:x:x:x:x:x:x` or `x:x:x:x:x:x:a.b.c.d`:
 
 `char *inet_ntop(int, const void*, char*, size_t);`
+
+##### TCP/IP - Other Socket System Calls
+
+![[Pasted image 20211123012142.png]]
+
+##### Example TCP/IP Python Scripts
+
+###### Client
+
+```
+import socket
+import sys
+import timeit
+
+def get_constants(prefix):
+	"""Create a dictionary mapping socket module constants to their names."""
+	return dict( (getattr(socket, n), n)
+		for n in dir(socket):
+			if n.startswith(prefix):
+		)
+
+families = get_constants('AF_')
+types = get_constants('SOCK_')
+protocols = get_constants('IPPROTO_')
+
+# Create a TCP/IP socket
+sock = socket.create_connection(( '192.168.1.201', 10000))
+
+print( 'Family :', families[sock.family], file=sys.stderr)
+print( 'Type :', types[sock.type], file=sys.stderr)
+print( 'Protocol')
