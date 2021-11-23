@@ -60,4 +60,19 @@ The above code is used, where:
 
 - `family` specifies the protocol (such as `PF_INET` for TCP/IP
 - `type` specifies the type of service (`SOCK_STREAM` for TCP, `SOCK_DGRAM` for UDP)
-- ``
+- `protocol` specifies the protocol to use (usually `0`, meaning the default).
+
+##### `socket()`
+
+The `socket()` system call returns a socket descriptor, represented by a small integer, or `-1` on error. The `socket()` function itself allocates resources needed for a communication endpoint, but does not deal with endpoint addressing.
+
+##### Specifying an endpoint address
+
+The socket API is generic, and therefore contains a generic way to specify endpoint addresses. TCP/IP requires an IP address and port number for each endpoint address; but other protocol suites/families may use other schemes.
+
+To understand this process, some background information is required:
+
+###### POSIX data types
+
+The Portable Operating System Interface (POSIX) is a family of standards specified by the IEEE Computer Society, for maintaining compatibility between operating systems.
+
