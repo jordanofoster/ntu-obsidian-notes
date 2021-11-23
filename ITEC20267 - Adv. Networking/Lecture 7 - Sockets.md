@@ -260,4 +260,14 @@ sock = socket.create_connection(( '192.168.1.201', 10000))
 
 print( 'Family :', families[sock.family], file=sys.stderr)
 print( 'Type :', types[sock.type], file=sys.stderr)
-print( 'Protocol')
+print( 'Protocol:', protocols[sock.proto], file=sys.stderr)
+print(file=sys.stderr)
+
+try:
+	
+	# Send data
+	message = 'This is the message. It will be repeated.'
+	for i in range(20):
+		message += 'This is the message. It will be repeated.'
+	print ('sending "$s" % message, file=sys.stderr')
+```
