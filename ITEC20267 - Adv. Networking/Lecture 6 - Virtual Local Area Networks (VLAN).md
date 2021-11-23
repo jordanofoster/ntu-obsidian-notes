@@ -88,7 +88,7 @@ Without VLANs, all devices connected to the switches receive all unicast, multic
 
 With VLANs, unicast, multicast and broadcast traffic if confined to a VLAN. Without a Layer 3 device to connect each VLAN, devices in different networks cannot communicate.
 
-#### VLAN Identification with a Tag
+### VLAN Identification with a Tag
 
 ![[Pasted image 20211122235133.png]]
 
@@ -101,7 +101,7 @@ The IEE 802.1Q header is 4 bytes long. When the tag is created, the FCS must be 
 | Canonical Format Identifier (CFI) | 1-bit value that can support token ring frames on Ethernet |
 | VLAN ID (VID) | 12-bit VLAN identifier that can support up to 4096 VLANs |
 
-##### Native VLANs and 802.1Q Tagging
+#### Native VLANs and 802.1Q Tagging
 
 ![[Pasted image 20211122235921.png]]
 
@@ -113,8 +113,30 @@ The basics of 802.1Q trunks are as follows:
 - Both ends of a trunk link must be configured with the same native VLAN.
 - Each trunk is configured separately, so it is possible to have different native VLANs on separate trunks.
 
-##### Voice VLAN Verification Example
+#### Voice VLAN Verification Example
 
 ![[Pasted image 20211123000054.png]]
 
-The `show interfaces fa0/18 swutchport` command shows both data and 
+The `show interfaces fa0/18 swutchport` command shows both data and voice VLANs assigned to the interface.
+
+### VLAN Ranges on Catalyst Switches
+
+![[Pasted image 20211123000243.png]]
+
+Catalyst switches 2960 and 3650 support over 4000 VLANs.
+
+| Normal Range VLAN (1 - 1005) | Extended Range VLAN (1006 - 4095) |
+| ---------------------------- | --------------------------------- |
+| Used in Small to Medium sized businesses | Used by Service Providers |
+| 1002 - 1005 are reserved for legacy VLANs | Are in Running-Config |
+| 1, 1002 - 1005 are auto-created and cannot be deleted | Supports fewer VLAN features |
+| Stored in the vlan.dat file in flash | Requires VTP configurations |
+| VTP can synchronize between switches | |
+
+### VLAN Creation Commands
+
+VLAN details are stored in the `vlan.dat` file. VLANs are created in the global configuration mode.
+
+| Task | IOS Command |
+| ---  | ----------- |
+| Enter global configuration mode | `Switch# configure terminal`
