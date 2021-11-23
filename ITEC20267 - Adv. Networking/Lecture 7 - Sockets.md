@@ -303,4 +303,38 @@ sock = socket.socket(socket.AF_INET, socekt.SOCK_STREAM)
 
 # Bind the socket to the port
 server_address = ('localhost', 10000)
-print('starting up on %s port %')
+print('starting up on %s port %s' % server_address, file=sys.stderr)
+sock.bind(server_address)
+
+# Listen for incoming connections
+sock.listen(1)
+
+while True:
+	# Wait for a connection
+	print('waiting for a connection', file=sys.stderr)
+	connection, client_address = sock.accept()
+
+try:
+	print('connection from', client_address, file=sys.stderr)
+	
+	# Receive the data in small chunks and retransmit it
+	start = timeit.default_timer()
+	dsize = 0;
+	while True:
+		data = connection.recv(3000000).decode()
+		dsize += len(data)
+		end = timeit.default_timer()
+	# 		print('current data size= ', dsize, end - start, file=sys.stderr)
+		if (end - start) > 20:
+			print('data size for 20 sec =', dsize, file=sys.stderr)
+			break
+	#	print('received "%s"' % data, file=sys.stderr)
+		if data:
+			dummy = 0
+			print('sending data back to the client', file=sys.stderr)
+			connection.sendall(data.encode())
+		else:
+			print('no more data from', client_address, file=sys.stderr)
+			break
+			
+	
