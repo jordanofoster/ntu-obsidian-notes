@@ -58,7 +58,7 @@ A socket is an abstract representation of a communication endpoint. They work wi
 
 The above code is used, where:
 
-- `family` specifies the protocol (such as `PF_INET` for TCP/IP
+- `family` specifies the protocol (such as `AF_INET` for TCP/IP
 - `type` specifies the type of service (`SOCK_STREAM` for TCP, `SOCK_DGRAM` for UDP)
 - `protocol` specifies the protocol to use (usually `0`, meaning the default).
 
@@ -106,4 +106,25 @@ In this example, we use addresses that will allow a man to use sockets to commun
 - Sister - `5`
 - Brother - `6`
 
-###### `AF`
+###### `AF_FAMILY`
+
+By initializing a `sockaddr` structure to point to the *Daughter* address, we use the following code:
+
+```
+struct sockaddr mary;
+
+mary.sa_family = AF_FAMILY;
+mary.sa_data[0] = 1;
+```
+
+###### `AF_INET`
+
+For the `AF_FAMILY` protocol, only 1 byte was needed to specify the address. For `AF_INET`(TCP/IP), we need the following; a 16-bit port number, and, exclusively for IPv4, a 32-bit IP address.
+
+###### `struct sockaddr` In IPv4
+
+![[Pasted image 20211123005521.png]]
+
+###### `struct sockaddr` In IPv6
+
+![[Pasted image 20211123005600.png]]
