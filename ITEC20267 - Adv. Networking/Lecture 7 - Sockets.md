@@ -140,9 +140,29 @@ This is a common mistake!
 
 ##### Network Byte Order Functions
 
-where the following applies:
+Where the following applies:
 
 - `h`: host byte order
 - `n`: network byte order
 - `s`: short (16-bit)
 - `l`: long (32-bit)
+
+```
+uint16_t htons(uint16_t); /* Host Byte Order to Network Byte Order (Short) */
+uint16_t ntohs(uint1_16_t); /* Network Byte Order to Host Byte Order (Short) */
+uint32_t htonl(uint32_t); /* Host Byte Order to Network Byte Order (Long) */
+uint32_t ntohl(uint32_t); /* Network Byte Order to Host Byte Order (Long) */
+```
+
+#### TCP/IP Addresses
+
+In this instance, we don't need to deal with `sockaddr` structures, since we will only deal with a real protocol family - instead, we can use `sockaddr_in`.
+
+However, there is a caveat - the C functions that make up the sockets API expects `sockaddr` structures, not `sockaddr_in`.
+
+##### TCP/IP Address Structures
+
+![[Pasted image 20211123010556.png]]
+
+
+##### TCP/IP 
