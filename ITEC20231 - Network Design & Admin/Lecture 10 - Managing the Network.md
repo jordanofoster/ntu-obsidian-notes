@@ -49,4 +49,16 @@ This is done by entering `%systemroot%` in a runbox and going to the PolicyDefin
 - Enable disk quotas
 - Enforce disk quota limit
 - Default quota limit and warning level
-- 
+- Log event when quota limit exceeeded
+
+- Scripting of Java applets
+- Logon options
+- Run .NET Framework-reliant components signed with Authenticode
+- Run .NET Framework-reliant components not signed with Authenticode
+- Download signed ActiveX controls
+- Download unsigned ActiveX controls
+
+- Configure Automatic Updates
+- Specify Intranet Microsoft update service location
+- Enable client-side targeting
+- Reschedule Automatic Updates scheduled 
