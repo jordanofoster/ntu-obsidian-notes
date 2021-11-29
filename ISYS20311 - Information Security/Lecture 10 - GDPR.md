@@ -199,4 +199,50 @@ Staff should be provided with support to ensure that they do not inadvertently p
 #### Minimise impact of incidents
 
 - Measures to detect security events
-- Resilience of proic
+- Resilience of processing systems/services
+- Ability to restore availability to personal data in event of an incident
+
+##### C) Detect security events
+
+You can detect security events that affect the systems that process personal data and you monitor authorised user access to that data
+
+###### C.1 Security monitoring
+   
+You appropriately monitor the status of systems processing personal data and monitor user access to that data, including anomalous user activity.
+
+You record user access to personal data. Where unexpected events or indications of a personal data breach are detected, you have processes in place to act upon those events as necessary in an appropriate timeframe.
+
+##### D.1 Response and recovery planning
+
+You have well-defined and tested incident management processes in place in case of personal data breaches. You have mitigation processes are in place that are designed to contain or limit the range of personal data that could be compromised following a personal data breach.
+
+Where the loss of availability of personal data could cause harm, you have measures in place to ensure appropriate recovery. This should include maintaining (and securing) appropriate backups.
+
+##### D.2 Improvements
+
+When a personal data breach occurs, you take steps to:
+- Understand the root cause
+- Report the breach to the Information Comissioner and, where appropriate, affected individuals
+- Where appropriate (or required), report other relevant bodies (for example, other regulators, the NCSC and/or law enforcement) and 
+- Take appropriate remediating action.
+
+#### Must notify breaches
+
+- Personal data breach
+	- Notify Information Commissioner’s office within 72 hours of discovery
+
+- You may also wish to report significant cyber incidents to the National Cyber Security Centre.
+	- If the incident is likely to have a national impact then we will seek to provide support, subject to resource constraints.
+		- National impact includes harm to national security, the economy, public confidence, or public health and safety.
+	- NCSC also welcome notification of incidents ‘for information’ which you feel may be of interest, for example incidents which may contribute to our understanding of adversary activity, inform the guidance we provide, or help other organisations.
+
+- Incidents below national threshold should be reported to Action Fraud – the UK’s national fraud and cyber crime reporting centre or, if you're in Scotland, then reports should be made to Police Scotland.
+
+#### Fines for non-compliance
+
+- Sanctions for non-compliance
+- Supervisory Authorities
+	- Investigative powers
+	- Corrective powers
+- Penalties
+	- 2% global turnover or    €10m (whichever is greater)
