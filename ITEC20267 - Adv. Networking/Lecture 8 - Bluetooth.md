@@ -129,3 +129,8 @@ There are three classes of transmitters within the spec:
 
 This provides resistance to interference and multipath effects, alongside a form of multiple access among co-located devices synchronized to different piconets.
 
+The total bandwidth of the Bluetooth specification is divided into physical channels of 1Mhz. Frequency Hopping occurs through changing from one of these physical channels to another, in a pseudorandom sequence. This hopping sequence is shared with all devices on the piconet.
+
+Bluetooth devices use *Time Division Duplexing* (TDD) to access piconets, using <a href=https://en.wikipedia.org/wiki/Time-division_multiple_access>Time-division Multiple Access (TDMA)</a> as the access technique; as a result, this combination is referred to as Frequency Hopping Time Di
+
+
