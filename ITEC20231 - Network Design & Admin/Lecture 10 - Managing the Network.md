@@ -62,3 +62,19 @@ This is done by entering `%systemroot%` in a runbox and going to the PolicyDefin
 - Specify Intranet Microsoft update service location
 - Enable client-side targeting
 - Reschedule Automatic Updates scheduled 
+- No auto-restart for schedulded Automatic Updates
+- installations
+
+#### Security Policies (secpol.msc)
+
+![[Pasted image 20211129212958.png]]
+
+### Effect of not using GPO for accounts
+   
+In January 2009 (and more since!), a hacker gained access to a Twitter employee’s administrative account and was able to use the admin tools to reset passwords on other users’ accounts. Then these passwords for the accounts of several celebrities (including Barack Obama) were published on a hackers’ forum. Subsequently, posts were made on those accounts by unauthorized persons. Twitter did not use account lockout policies to prevent a hacker from utilising dictionary attacks.
+
+Miley Cyrus had her Twitter account suspended temporarily after it was hacked into, and offensive messages posted.
+
+In the case of the hacked Twitter employee, the combination of a weak password, "happiness“, and Twitter's lax security regarding repeated login attempts made it simple for the hacker to gain entry. Twitter has not indicated that it has fixed this vulnerability by limiting the number of password attempts.
+
+One security researcher observed
