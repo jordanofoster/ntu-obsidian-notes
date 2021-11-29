@@ -147,5 +147,24 @@ Article 25 mandates that, at the time of the *determination* of the means of the
 
 You have proportionate security measures in place to protect against cyber attack which cover the personal data you process, and the systems that process such data.
 
+You should appropriately authenticate and authorise users (or automated functions) that can access personal data. You should strongly authenticate users who have privileged access and consider two-factor or hardware authentication measures.
+
+You should prevent users from downloading, transferring, altering or deleting personal data where there is no legitimate organisational reason to do so. You should appropriately constrain legitimate access to ensure there is an appropriate audit trail.
+
+You should have a robust password policy which avoids users having weak passwords, such as those trivially guessable. You should change all default passwords and remove or suspend unused accounts.
+
 ##### B.1 Service Protection Policies and Processes
 
+You should define, implement, communicate and enforce appropriate policies and processes that direct your overall approach to securing systems involved in the processing of personal data. You should also consider assessing your systems and implementing specific technical controls as laid out in appropriate frameworks, such as ISO 27001.
+
+##### B.2 Identity & Access Control
+
+You understand, document and manage access to personal data and systems that process this data. Access rights granted to specific users must be understood, limited to those users who reasonably need such access to perform their function and removed when no longer needed. You should undertake activities to check or validate that the technical system permissions are consistent with your documented user access rights.
+
+##### B.3 Data Security
+
+Implement technical controls (such as appropriate encryption) to prevent unauthorised or unlawful processing of personal data, whether through unauthorised access to user devices or storage media, backups, interception of data in transit or at rest or accessing data that might remain in memory when technology is sent for repair or disposal.
+
+##### B.4 System Security
+
+Implement appropriate technical and organisational measures to protect systems, technologies and digital services that process personal data from cyber attack.
