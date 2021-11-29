@@ -44,7 +44,12 @@ The above diagram represents the entire network stack of the Bluetooth protocol;
 - The baseband itself uses *Frequency-hopping spread spectrum* (**FHSS**), a method supported by 79 carriers - it also makes use of CDMA, which defines a hopping sequence using the MAC addresses of nodes.
 - Audio interfaces directly with the baseband layer, with each voice connection being over a 64Kbps SCO link - the encoding scheme used for this is <a href=https://en.wikipedia.org/wiki/Continuously_variable_slope_delta_modulation>Continuous Variable Slope Delta (CVSD)</a> modulation.
 - The *Link Manager Protocol* (**LMP**) defines link setup and control methods, alongside authentication and encryption procedures.
-- The *Host Controller Interface (**HCI**) provides a uniform access method to the baseband, contro
+- The *Host Controller Interface* (**HCI**) provides a uniform access method to the baseband, control registers and other low-level components via physical interfaces, such as USB, PCI or UART.
+- The *Logical Link Control and Adaptation Layer* (**L2CAP**) contains higher-level protocols that assist with multiplexing, packet segmentation/reassembly and <a href=https://www.fortinet.com/resources/cyberglossary/qos-quality-of-service>Quality of Service (QoS).</a>
+- The Service Discover Protocol (SDP) assists in locating services provided by another Bluetooth device.
+- The Telephony Control Specification (TCS) defines the call control signalling, for establishing speech/data calls between Bluetooth devices.
+- RFCOMM provides emulation of serial links (typical over physical interface RS232). Up to 60 connections are supported.
+
 #### Core Protocols
 
 This includes the following:
