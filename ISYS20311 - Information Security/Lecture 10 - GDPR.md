@@ -12,4 +12,4 @@ GDPR replaces the Data Protection Directive of 1995, and was enforced in member 
 
 ### Changes Since 1995
 
-Jury opinion on data protection has changed over time due to case law, particu
+- Jury opinion on data protection has changed over time due to case law, particularly 
