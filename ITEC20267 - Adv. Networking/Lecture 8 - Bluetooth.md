@@ -14,6 +14,20 @@ Bluetooth also acts as a simple, cheap replacement of IrDA, as it is low-range, 
 	- Supported via FHSS over 79 channels of 1MHz each, and supporting 1600 hops/second
 - Coexistence of multiple piconets, like CDMA
 - Via both synchronous connections and asynchronous, connectionless methods, links are supported
-- Interoperability, as the protocol stack supports TCP/IP,
+- Interoperability, as the protocol stack supports TCP/IP, OBEX and SDP
+- Range of 10 meters, extendible to 100
 
+The <a href = "https://www.bluetooth.com">documentation</a> itself is over 1000 pages long.
+
+### Bluetooth Application Areas
+
+Bluetooth can be applied in the following areas:
+
+- Data and voice access points
+	- Real-time voice and data transmissions
+- Cable replacement
+	- Bluetooth removes the need for numerous cable attachments for communication
+- Low implementation cost networking, < $5
+- Ad hoc networks
+	- Devices with a bluetooth radio can establish a connection with another device when 
 
