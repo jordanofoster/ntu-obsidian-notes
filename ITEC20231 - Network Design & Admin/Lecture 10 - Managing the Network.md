@@ -114,3 +114,27 @@ Some of the GPO’s have to be considered as merely obscuration rather than secu
 
 GPOs allow admins to specify which .msi packages are to be assigned or published. Assignment can be user or computer associated, whereas publishing is necessarily linked only to users (a user has to do something to install it). GPOs can also define how upgrade/removal of software is handled.
 
+![[Pasted image 20211129215829.png]]
+
+##### Why .msi?
+
+- Contains useful info about structure of program
+- Can self-heal if files accidentally deleted
+- Installer creates system restore point before installing - so reverts automatically if install goes wrong
+- Has sophisticated options for various methods of installation -especially for big programs and slow links - to install only some bits of large packages (e.g. Office) immediately.
+
+#### How to setup and 
+
+- Create Software Distribution Points (SDP) - shared network folders with NTFS Read/Execute permissions for the users
+- Create GPO for software deployment (and associate with chosen domain/site/OU)
+- Configure software deployment properties for the GPO - location of SDP, default handling of new packages, etc.
+- Add the installation packages to the GPO (indicating whether to be published or assigned)
+- Configure each installation package properties - e.g.
+	- Auto-Install This Application By File Extension Activation
+	- Uninstall This Application When It Falls Out Of The Scope Of Management
+
+##### Some snags
+
+- No licence control is performed - so Published software had better be on a site licence.
+- Need to plan carefully how to structure the software e.g.
+
