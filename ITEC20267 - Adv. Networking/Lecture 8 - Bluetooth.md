@@ -13,7 +13,7 @@ Bluetooth also acts as a simple, cheap replacement of IrDA, as it is low-range, 
 - Resistance to jamming and selective frequency fading
 	- Supported via FHSS over 79 channels of 1MHz each, and supporting 1600 hops/second
 - Coexistence of multiple piconets, like CDMA
-- Via both synchronous connections and asynchronous, connectionless methods, links are supported
+- Via both synchronous connections (SCO) and asynchronous, connectionless methods, links are supported
 - Interoperability, as the protocol stack supports TCP/IP, OBEX and SDP
 - Range of 10 meters, extendible to 100
 
@@ -41,7 +41,10 @@ The above diagram represents the entire network stack of the Bluetooth protocol;
 
 - At the lowest-level, the radio used for Bluetooth runs in the 2.4Ghz frequency band, as stated prior.
 	- This is modulated using Gaussian [[Lecture 3 - Modulation Techniques#Frequency-shift Keying FSK|FSK]].
-- The baseband itself supports FH-SS, which consi
+- The baseband itself uses *Frequency-hopping spread spectrum* (**FHSS**), a method supported by 79 carriers - it also makes use of CDMA, which defines a hopping sequence using the MAC addresses of nodes.
+- Audio interfaces directly with the baseband layer, with each voice connection being over a 64Kbps SCO link - the encoding scheme used for this is <a href=https://en.wikipedia.org/wiki/Continuously_variable_slope_delta_modulation>Continuous Variable Slope Delta (CVSD)</a> modulation.
+- The *Link Manager Protocol* (**LMP**) defines link setup and control methods, alongside authentication and encryption procedures.
+- The *Host Controller Interface (**HCI**) provides a uniform access method to the baseband, contro
 #### Core Protocols
 
 This includes the following:
