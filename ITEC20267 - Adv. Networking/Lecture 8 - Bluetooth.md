@@ -155,6 +155,29 @@ Bluetooth packets contain various fields to facilitate their use:
 
 The **access code** is used to timing synchronization, offset compensation, paging and inquiries. The packet header itself identifies the packet type and carries protocol control information, and the **payload** contains user voice or data and an additional payload header, if it is present.
 
+#### Bluetooth Packet Header Fields
+
+- `AM_ADDR` contains the *active mode* address of one of the slaves.
+- `Type` determines the type of packet:
+	- For ACL:
+		- Data Medium (`DM`) or Data High (`DH`), with different slot lengths: `DM1`, `DM3`, `DM5`, `DH1`, `DH3`, `DH5`.
+	- For SCO:
+		- Data Voice (`DV`) and High-quality voice (`HV`)
+- `Flow` is a 1-bit flow control.
+- `ARQN` is a 1-bit acknowledgement.
+- `SEQN` is a 1-bit sequential numbering scheme.
+- Header error control (`HEC`) acts as an 8-bit error detection code.
+
 ### Bluetooth Access Codes
 
-There are three; the Channel Access Code (CAC), which identifies a piconet, the Device Access Code (DAC), which is used for paging and subsequent responses, and Inquiry Access Code (IAC) - used 
+There are three; the Channel Access Code (CAC), which identifies a piconet, the Device Access Code (DAC), which is used for paging and subsequent responses, and the Inquiry Access Code (IAC) - used for inquiry purposes.
+
+All access codes contain a preamble, sync and trailer.
+
+### Bluetooth Payload Format
+
+Bluetooth packet payloads contain the following information:
+
+- Inside the payload header:
+	- `L_CH` field, which identifies the logical channel
+	- `Flow` field, which is used to control flow 
