@@ -288,5 +288,24 @@ Security algorithms have some parameters:
 The link manager manages the master-slave radio link. It offers a security service, involving authentication, encryption and key distribution. It also handles clock synchronization, exchanges station capability information, and deals with mode management, which involves the following:
 
 - Switching between master/slave role
-- Change hold, sniff, park modes for sla
+- Change hold, sniff, park modes for slaves.
+- Quality of Service (QoS)
 
+#### Bluetooth L2CAP
+
+L2CAP provides a link-layer protocol between entities with a number of services, relying on the lower layers of the Bluetooth protocol for flow and error control.
+
+L2CAP uses ACL links but does not support SCO links, and provides two alternative services to upper-layer protocols:
+- Connectionless service
+- Connection-oriented service, where a QoS flow specification is assigned in each direction.
+
+Signalling messages are exchanged in order to establish and configure connection parameters.
+
+#### Bluetooth Flow Specification Parameters
+
+- Service type
+- Token rate (bytes/second)
+- Token bucket size (bytes)
+- Peak bandwidth (bytes/second)
+- Latency (microseconds)
+- Delay variation (microseconds)
