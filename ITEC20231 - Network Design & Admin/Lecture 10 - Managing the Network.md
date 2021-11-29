@@ -28,4 +28,25 @@ The most important group here is Administrators - by default, the global Enterpr
 
 ### Group Policy Management
 
-There can be lots of GPOs within a domain; the Group Policy Management Console provides you with a way to manage these GPOs,
+There can be lots of GPOs within a domain; the Group Policy Management Console provides you with a way to manage these GPOs by providing access to the Group Policy Editor, where individual policy objects can be created and edited, alongside access to Administrative templates (.admx) which describe where registry-based group policy settings are stored, and are used to change settings on GPOs.
+
+#### Group Policy Management Console
+
+![[Pasted image 20211129212106.png]]
+
+#### Administrative Templates
+
+There are a number of templates that are built-in, stored within .admx files, that use XML to describe settings. Each of these files contain many individual policy descriptions, and where they are stored in the Registry.
+
+If an admin wants to add new policies, Microsoft recommend to creaete custom .admx files rather than modify the existing templates.
+
+![[Pasted image 20211129212254.png]]
+
+This is done by entering `%systemroot%` in a runbox and going to the PolicyDefinitions directory - where there are lots of admx files.
+
+##### Example Policies in .admx
+
+- Enable disk quotas
+- Enforce disk quota limit
+- Default quota limit and warning level
+- 
