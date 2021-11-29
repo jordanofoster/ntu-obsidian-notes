@@ -4,7 +4,7 @@
 
 ## Definition of a VLAN
 
-![[Pasted image 20211122230822.png]]
+![[VLANDiag.png]]
 
 VLANs are logical connections with other similar devices; placing devices into various VLANs have the following characteristics:
 - Provides segmentation of the various groups of devices on the same switches
@@ -15,7 +15,7 @@ VLANs are logical connections with other similar devices; placing devices into v
 
 ### Benefits of a VLAN
 
-![[Pasted image 20211122233642.png]]
+![[VLANDiag2.png]]
 
 | Benefits | Description |
 | -------- | ----------- |

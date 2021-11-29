@@ -233,7 +233,7 @@ An Access Control List is associated to an object being accessed, and not the ob
 
 Lists are made out of Access Control Entries (ACEs), i.e. the name of the security principle and the permissions it has been granted. An example is shown below:
 
-![[Pasted image 20211115214501.png]]
+![[ACLExampleWindows.png]]
 
 #### NTFS Permissions
 
@@ -259,11 +259,11 @@ Slight differences apply when permissions are applied to a file rather than a fo
 14. Full Control
 
 ###### Example Permissions
-![[Pasted image 20211115214856.png]]
+![[NTFSPermsExample.png]]
 
 ###### Access to Special Permissions
 
-![[Pasted image 20211115214918.png]]
+![[SpecialNTFSPermsExample.png]]
 
 ##### Example Permissions Breakdown
 
@@ -302,7 +302,7 @@ As a result, a user's permissions are a combination of those inherited from thei
 
 The effective permissions view is used to make visualization of scenarios such as the above easier.
 
-![[Pasted image 20211115215953.png]]
+![[EffectivePermsView.png]]
 
 ### Registry Keys
 
@@ -319,7 +319,7 @@ Registry Keys are the entities that store information about a Windows PC. They a
 The Registry is separated into *Hives:*
 
 ###### `HKEY_CLASSES_ROOT`
-![[Pasted image 20211115220234.png]]
+![[RegistryKey.png]]
 This is used for installed apps - file associations, etc.
 
 ######  `HKEY_CURRENT_USER`
@@ -336,12 +336,12 @@ This is generated at boot time to give information about the local machine confi
 
 #### Registry Entries
 
-![[Pasted image 20211115220514.png]]
+![[RegEntriesExample.png]]
 
 For registry entries to be modified, the program or user has to be allowed to change it. In the image above, we see the Administrators group has been given Full Control over this sub-key, via inheritance.
 
 #### Registry Permissions
-![[Pasted image 20211115220655.png]]
+![[RegistryPerms.png]]
 (Note: Write DAC = ability to change ACL for key)
 
 There are both similarities and differences between these and NTFS permissions; for starters, a different set of standard and special permissions. Inheritance can be again allowed or stopped, and deny/allow priority applies.
@@ -389,13 +389,13 @@ This depends on the role of the machine and therefore the security risks associa
 
 These allow network clients to actually see folders on a network remotely; some shares are created automatically due to the role of a server; for example `NETLOGON` shares are created when a system becomes a domain controller.
 
-![[Pasted image 20211115221511.png]]
+![[MSFileShares.png]]
 `NETLOGON`: Windows Server service that authenticates users and other services within a domain
 `SYSVOL`: Set of files and folders that reside on local hard disk of each DC in a domain that are replicated by the File Replication Service (FRS).
 
 Shares can be hidden by appending $ to the name, but this poses an issue: how do users find it? By creating a share using the MMC Shared Folders Snap-in, shown below:
 
-![[Pasted image 20211115221804.png]]
+![[MMCSharedFldrsSnapIn.png]]
 
 ###### File Share Permissions
 
@@ -424,7 +424,7 @@ The superuser `root` can do anything even if not the owner of the file.
 
 ##### Examples of Linux Permissions
 
-![[Pasted image 20211115223119.png]]
+![[LinuxPermsExample.png]]
 
 #### Modern UNIX/Linux Permissions
 
@@ -447,13 +447,13 @@ For cost effectiveness, we want multiple users to access a single printer. What 
 
 #### Locally Attached Printer  (LAP)
 
-![[Pasted image 20211115222546.png]]
+![[LAPDiag.png]]
 
 This presents physical security issues, as the printer has to be close to the server. When the printer share is created, the attached server functions as the print server.
 
 #### Network attached printer, with logical printer on every client
 
-![[Pasted image 20211115222636.png]]
+![[NAPWithLogPrintDiag.png]]
 
 ##### Issues
 
@@ -465,4 +465,4 @@ This presents physical security issues, as the printer has to be close to the se
 
 #### Network attached printer, with print server
 
-![[Pasted image 20211115222811.png]]
+![[NAPPrintServerDiag.png]]
