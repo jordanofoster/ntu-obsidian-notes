@@ -30,7 +30,7 @@ VLANs are logical connections with other similar devices; placing devices into v
 
 #### Default VLAN
 
-![[Pasted image 20211122233900.png]]
+![[showvlanbrief.png]]
 
 VLAN 1 is the following:
  - Default VLAN
@@ -54,7 +54,7 @@ This is used for  SSH/Telnet VTY traffic, and should not be carried with end-use
 
 #### Voice VLAN
 
-![[Pasted image 20211122234317.png]]
+![[VoiceVLAN.png]]
 
 A separate VLAN is required for voice traffic because it requires the following:
 - Assured bandwidth
@@ -68,7 +68,7 @@ The entire VLAN network must be designed to serve this purpose.
 
 #### Defining LAN Trunks
 
-![[Pasted image 20211122234501.png]]
+![[DefLANTrunks.png]]
 
 Trunks are point-to-point links between two network devices. Cisco trunk functions do the following:
 - Allow more than one VLAN
@@ -78,19 +78,19 @@ Trunks are point-to-point links between two network devices. Cisco trunk functio
 
 #### Networks without VLAN
 
-![[Pasted image 20211122234630.png]]
+![[NetworksWithoutVLAN.png]]
 
 Without VLANs, all devices connected to the switches receive all unicast, multicast and broadcast traffic.
 
 #### Networks with VLANs
 
-![[Pasted image 20211122235117.png]]
+![[NetworksWithVLAN.png]]
 
 With VLANs, unicast, multicast and broadcast traffic if confined to a VLAN. Without a Layer 3 device to connect each VLAN, devices in different networks cannot communicate.
 
 ### VLAN Identification with a Tag
 
-![[Pasted image 20211122235133.png]]
+![[VLANTagIdent.png]]
 
 The IEE 802.1Q header is 4 bytes long. When the tag is created, the FCS must be recalculated. When sent to end devices, this tag must be removed and the FCS recalculated back to its original number.
 
@@ -103,7 +103,7 @@ The IEE 802.1Q header is 4 bytes long. When the tag is created, the FCS must be 
 
 #### Native VLANs and 802.1Q Tagging
 
-![[Pasted image 20211122235921.png]]
+![[NativeVLAN8021-QTagging.png]]
 
 The basics of 802.1Q trunks are as follows:
 
@@ -115,13 +115,13 @@ The basics of 802.1Q trunks are as follows:
 
 #### Voice VLAN Verification Example
 
-![[Pasted image 20211123000054.png]]
+![[VoiceVLANVerifExample.png]]
 
 The `show interfaces fa0/18 swutchport` command shows both data and voice VLANs assigned to the interface.
 
 ### VLAN Ranges on Catalyst Switches
 
-![[Pasted image 20211123000243.png]]
+![[ShowInterfaces.png]]
 
 Catalyst switches 2960 and 3650 support over 4000 VLANs.
 
@@ -147,7 +147,7 @@ VLAN details are stored in the `vlan.dat` file. VLANs are created in the global 
 
 #### VLAN Creation Example
 
-![[Pasted image 20211123000801.png]]
+![[VLANCreationExample.png]]
 
 | Prompt | Command |
 | ------ | ------- |
@@ -172,7 +172,7 @@ Once the VLAN is created, it can then be assigned to the correct interfaces:
 
 #### VLAN Port Assignment Example
 
-![[Pasted image 20211123001252.png]]
+![[VLANPortAssignExample.png]]
 
 | Prompt | Command |
 | ------ | ------- |
@@ -186,7 +186,7 @@ We can assign the VLAN to the port interface. Once the device is assigned to the
 
 ## Data and Voice VLANs
 
-![[Pasted image 20211123001600.png]]
+![[Data&VoiceVLAN.png]]
 
 An access port may only be assigned to one data VLAN and one voice VLAN; the latter for when a phone and an end device are off of the same switchport.
 
@@ -205,7 +205,7 @@ These are to configure and verify VLAN trunks. Trunks are layer 2 and carry traf
 
 #### Trunk Configuration Example
 
-![[Pasted image 20211123001900.png]]
+![[TrunkConfExample.png]]
 
 | Prompt | Command |
 | ------ | ------- |
@@ -236,8 +236,8 @@ The Dynamic Trunking Protocol (DTP) is proprietary and designed by Cisco. Its ch
 - May be turned back on by setting the interface to dynamic-auto
 - Setting a switch to a static trunk or static access will avoid negotiation issues with the `switchport mode trunk` or `switchport mode access` commands.
 
-![[Pasted image 20211123002557.png]]
-![[Pasted image 20211123002601.png]]
+![[SwitchportModeTrunk-Nonegotiate.png]]
+![[SwitchportModeDynamicAuto.png]]
 
 ##### Negotiated Interface Modes
 

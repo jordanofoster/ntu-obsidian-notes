@@ -2,7 +2,7 @@
 
 ## Application Programming Interface (API)
 
-![[Pasted image 20211123003208.png]]
+![[SocketAPILayers.png]]
 
 These are network services that provide the interface between application and protocol software, often by the operating system.
 
@@ -46,11 +46,11 @@ A socket is an abstract representation of a communication endpoint. They work wi
 
 ##### Unix file descriptor table
 
-![[Pasted image 20211123003838.png]]
+![[UnixFileDescTable.png]]
 
 ##### Unix socket descriptor table
 
-![[Pasted image 20211123003855.png]]
+![[UnixSockDescTable.png]]
 
 #### Creating a socket
 
@@ -76,8 +76,8 @@ To understand this process, some background information is required:
 
 The Portable Operating System Interface (POSIX) is a family of standards specified by the IEEE Computer Society, for maintaining compatibility between operating systems.
 
-![[Pasted image 20211123004614.png]]
-![[Pasted image 20211123004624.png]]
+![[POSIXDataTypes1.png]]
+![[POSIXDataTypes2.png]]
 
 #### Generic socket addresses
 
@@ -123,11 +123,11 @@ For the `AF_FAMILY` protocol, only 1 byte was needed to specify the address. For
 
 ##### `struct sockaddr_in`  (IPv4)
 
-![[Pasted image 20211123005521.png]]
+![[StructSockaddr_InIPv4.png]]
 
 ##### `struct sockaddr_in` (IPv6)
 
-![[Pasted image 20211123005600.png]]
+![[StructSockaddrInIPv6.png]]
 
 #### Network Byte Order
 
@@ -162,7 +162,7 @@ However, there is a caveat - the C functions that make up the sockets API expect
 
 ##### TCP/IP Address Structures
 
-![[Pasted image 20211123010556.png]]
+![[TCP-IPAddrStructs.png]]
 
 ##### TCP/IP - `bind()`
 
@@ -233,7 +233,7 @@ Using `family`, `address_ptr`, `string_ptr` and `length`, this converts a networ
 
 ##### TCP/IP - Other Socket System Calls
 
-![[Pasted image 20211123012142.png]]
+![[OtherSockSysCalls.png]]
 
 ##### Example TCP/IP Python Scripts
 
