@@ -149,6 +149,12 @@ There are two types of physical link:
 
 ### Bluetooth Packet Fields
 
-Bluetooth
+Bluetooth packets contain various fields to facilitate their use:
 
 ![[Pasted image 20211129175148.png]]
+
+The **access code** is used to timing synchronization, offset compensation, paging and inquiries. The packet header itself identifies the packet type and carries protocol control information, and the **payload** contains user voice or data and an additional payload header, if it is present.
+
+### Bluetooth Access Codes
+
+There are three; the Channel Access Code (CAC), which identifies a piconet, the Device Access Code (DAC), which is used for paging and subsequent responses, and Inquiry Access Code (IAC) - used 
