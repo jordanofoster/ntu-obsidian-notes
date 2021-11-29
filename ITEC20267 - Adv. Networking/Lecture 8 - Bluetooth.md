@@ -131,6 +131,24 @@ This provides resistance to interference and multipath effects, alongside a form
 
 The total bandwidth of the Bluetooth specification is divided into physical channels of 1Mhz. Frequency Hopping occurs through changing from one of these physical channels to another, in a pseudorandom sequence. This hopping sequence is shared with all devices on the piconet.
 
-Bluetooth devices use *Time Division Duplexing* (TDD) to access piconets, using <a href=https://en.wikipedia.org/wiki/Time-division_multiple_access>Time-division Multiple Access (TDMA)</a> as the access technique; as a result, this combination is referred to as Frequency Hopping Time Di
+Bluetooth devices use *Time Division Duplexing* (TDD) to access piconets, using <a href=https://en.wikipedia.org/wiki/Time-division_multiple_access>Time-division Multiple Access (TDMA)</a> as the access technique; 
+
+![[Pasted image 20211129174911.png]]
+
+As a result, this combination is referred to as *Frequency Hop Time Division Multiplexing Time-divison Multiple Access* (FH-TDD-TDMA).
 
 
+### Bluetooth Physical Links
+
+There are two types of physical link:
+- Synchronous Connection Oriented (SCO)
+	- Allocates fixed bandwidth between the point-to-point connection of both master and slave
+	- The master maintains the link using reserved slots, and can support three simultaneous links.
+- Asynchronous Connectionless (ACL)
+	- Point-to-multipoint link between master and all slaves; only one ACL link can exist.
+
+### Bluetooth Packet Fields
+
+Bluetooth
+
+![[Pasted image 20211129175148.png]]
