@@ -4,6 +4,8 @@
 
 Bluetooth was created by a consortium of various companies, including Ericsson, Intel, IBM, Nokia and Toshiba, amongst others. Bluetooth as a protocol aims to cover several scenarios, including:
 
+![[Pasted image 20211129164111.png]]
+
 - Connection of peripheral devices, such as loudspeakers, joysticks and headsets
 - Support of ad-hoc networking using low-cost, small devices
 - Bridging of networks, such as GSM (via phone) → Bluetooth → Laptop
@@ -99,4 +101,10 @@ An example of various wireless Bluetooth network topologies is shown below:
 
 ![[Pasted image 20211129163656.png]]
 
-##### Network To
+##### Bluetooth Network Topologies
+
+![[Pasted image 20211129163828.png]]
+
+Piconets, as stated before, are a set of Bluetooth nodes (*Slaves*) synchronized to a master node. The piconet hopping sequence is derived from the Master device's MAC address, and is defined as `BD_ADDR`, an IEEE802 48-bit compatible address.
+
+*Master* and *Slave* devices can switch roles, but nodes can only be masters of *one* piconet. `Q: Why?`
