@@ -111,4 +111,4 @@ Piconets, as stated before, are a set of Bluetooth nodes (*Slaves*) synchronized
 
 ###### Bluetooth Scatternets
 
-Within each piconet, the master determines the hopping sequence of the network, and slave devices must synchronize to this, as it is the literal definition of participation within the piconet. Communication between piconets (
+Within each piconet, the master determines the hopping sequence of the network, and slave devices must synchronize to this, as it is the literal definition of participation within the piconet. Communication between several piconets involves devices jumping back and forth between 
