@@ -242,4 +242,7 @@ After neighbouring devices have been discovered and information on their `BD_ADD
 
 The master uses the addresses of slave devices to calculate a page frequency-hopping sequence. It then pages using an ID packet and the DAC of a specific slave on the piconet.
 
-The paged slave dev
+The paged slave device responds with a DAC ID packet, to which the master replies with a FHS packet; the slave confirms its recipt with the DAC ID, and moves to Connection state.
+
+As an example, with the goal of setting up a piconet after an inquiry;
+
