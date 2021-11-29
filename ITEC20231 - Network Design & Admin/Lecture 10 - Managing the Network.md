@@ -98,4 +98,4 @@ WinHttpReq.Send("login=Chris&password=Pa$$w0rd")
 
 A particular problem is the need to disable USB sticks and other removable media in secure installations. You can set up custom .admx files to include this, and apply them via GPO to a group of workstations. This disables various drivers, and generally works a lot better than gluing up the USB ports.
 
-Windows includes
+Windows includes extensions to GPs to make this easier such as *Removable Storage Management* but also includes approx. 800 other new policy settings
