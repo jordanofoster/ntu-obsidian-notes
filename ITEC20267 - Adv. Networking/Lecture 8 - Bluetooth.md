@@ -200,6 +200,30 @@ There are three:
 The ARQ scheme uses 4 elements:
 
 - Error detection: the destination detects errors and discards malformed packets.
-- Positive acknowledgement is returned by the destination when recieving a good packet.
+- Positive acknowledgement is returned by the destination when receiving a good packet.
 - The source retransmits unacknowledged packets.
-- Negative acknowledg
+- Negative acknowledgement is returned by the destination for packets with errors, and the source retransmits in response.
+
+
+### Bluetooth Channel Control
+
+There are two major states for channel control: **Standby** (the default state) and **Connection**, for when a device is connected. There are, however, many interim substates for adding new slaves to a piconet:
+
+- Page: device has issued a page
+	- This is used by the master.
+- Page scan: device is listening for a page
+- Master response: master recieves a page response from a slave node
+- Slave response: slave responds to a page from the master node.
+- Inquiry: device has issued an inquiry for the identity of devices in range.
+- Inquiry scan: device is listening for an inquiry to be requested of it.
+- Inquiry response: device has recieved an inquiry response.
+
+A diagram detailing transisitons between states is shown below:
+
+![[Pasted image 20211129181635.png]]
+
+### Bluetooth Initialization
+
+When a network begins, a potential master node identifies devices in range that may act as willing participants. It transmits an ID packet to these devices that contains an Inquiry Access Code (IAC); this process occurs in the *Inquiry* state.
+
+Devices recieve the inquiry and enter the 
