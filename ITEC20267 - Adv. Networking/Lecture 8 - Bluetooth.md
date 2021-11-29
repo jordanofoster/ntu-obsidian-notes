@@ -232,4 +232,14 @@ Devices receive the inquiry and enter the *Inquiry Response* state, returning a 
 
 The goal here is to discover other neighbouring devices. The inquiring node sends an inquiry message in the form of a packet containing only the IAC; this can either be a General IAC (GIAC) or Dedicated IAC (DIAC). This message is sent over a subset of all possible frequencies.
 
-These inquiry frequencies are divided into two hopping sets, of 16 frequencies each. In inquiry state, the node sends up to $N_{Inquiry}$ sequences o
+These inquiry frequencies are divided into two hopping sets, of 16 frequencies each. In inquiry state, the node sends up to $N_{Inquiry}$ sequences on one set of 16 frequencies, before switching to the other set. Up to 3 switches can be executed, and as such the inquiry may last up to a maximum of 10.24 seconds.
+
+The node to be discovered enters an inquiry scan mode; when hearing the inquiry message (and after a backoff procedure), it enters an inquiry response node, sending a Frequency Hop Sync (FHS) packet that contains `BD_ADDR`, and the native clock.
+
+After neighbouring devices have been discovered and information on their `BD_ADDR` and clock has been gathered, the inquiring node can start creating a page routine, in order to establish a piconet.
+
+#### Page Procedure Details
+
+The master uses the addresses of slave devices to calculate a page frequency-hopping sequence. It then pages using an ID packet and the DAC of a specific slave on the piconet.
+
+The paged slave dev
