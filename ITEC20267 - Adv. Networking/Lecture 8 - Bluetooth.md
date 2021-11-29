@@ -251,3 +251,27 @@ The paging node, or master, does the following:
 - Sends a page message (packet with only the DAC of the paged node) over 32 frequency hops, (from DAC, split into 2\*16 frequencies).
 - This is repeated until a response is received.
 - When a response is received, send a FHS message to allow the paged node to synchronize to the piconet
+
+The paged node, or slave, responds as such:
+
+- Listens on its hopping sequence for a page message
+- When received, send `page_response` and wait for the FHS of the pager
+
+#### Bluetooth Slave Connection State Modes
+
+There are 4:
+
+- Active, participating in piconet
+	- Listens/transmits/receives packets
+- Sniff, only listening on specified slots
+- Hold, not supporting Asynchronous Connnectionless (ACL) packets
+	- Reduced power status, may still participate in SCO exchanges
+- Park, not participating on piconet
+	- Though still retained as part of it
+
+#### Bluetooth Audio
+
+There are two voice encoding schemes; Pulse Code Modulaton (PCM) and Continuously Variable Slope Delta (CVSD) modulation. The choice of encoding scheme is made by the link manager, which negotiates the most appropriate scheme for the application.
+
+#### Bluetooth Link Security
+
