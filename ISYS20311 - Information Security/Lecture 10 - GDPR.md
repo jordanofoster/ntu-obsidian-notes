@@ -245,4 +245,10 @@ When a personal data breach occurs, you take steps to:
 	- Investigative powers
 	- Corrective powers
 - Penalties
-	- 2% global turnover or    €10m (whichever is greater)
+	- 2% global turnover or €10m (whichever is greater)
+	- 4% global turnover or €20m for serious incidents
+	- Turnover, not Profit
+		- TalkTalk profit 2017: $165 million
+		- Turnover 2017: £1.783 billion
+- Compensation
+
