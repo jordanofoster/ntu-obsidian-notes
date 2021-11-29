@@ -80,7 +80,7 @@ These are protocols Bluetooth inherently implements as part of being a layered a
 
 ### Bluetooth Usage Models
 
-There are **6** usage models for bluetooth; they are listed below:
+There are **6** usage models for Bluetooth; they are listed below:
 
 - File transfer
 - Internet bridge
@@ -108,3 +108,7 @@ An example of various wireless Bluetooth network topologies is shown below:
 Piconets, as stated before, are a set of Bluetooth nodes (*Slaves*) synchronized to a master node. The piconet hopping sequence is derived from the Master device's MAC address, and is defined as `BD_ADDR`, an IEEE802 48-bit compatible address.
 
 *Master* and *Slave* devices can switch roles, but nodes can only be masters of *one* piconet. `Q: Why?`
+
+###### Bluetooth Scatternets
+
+Within each piconet, the master determines the hopping sequence of the network, and slave devices must synchronize to this, as it is the literal definition of participation within the piconet. Communication between piconets (
