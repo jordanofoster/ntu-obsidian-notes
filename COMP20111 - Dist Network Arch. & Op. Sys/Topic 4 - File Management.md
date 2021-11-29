@@ -22,11 +22,11 @@ Files are used to store large amounts of data in the long-term, and several proc
 
 The motivation behind this is so that the user does not have to use numerical addresses to refer to specific files, instead going by a user-friendly human-language title. Different OSes enforce different naming conventions, but most follow a common pattern; many for example support up to approximately 260 characters for names, such as Windows/Unix.
 
-![[Pasted image 20211115164740.png]]
+![[FileNameExceptionWindows.png]]
 
 There are also generally restrictions on characters that can be used; for example `?` can't be used in Windows, but this is valid in Unix. Case sensitivity is also noted amongst OSes - Unix is, whereas Windows is not.
 
-![[Pasted image 20211115165116.png]]
+![[FileBasenameExtension.png]]
 
 **File extensions** are useful to tell both OS and user what type of data a file contains:
 - In MS-DOS, only 3 characters were allowed for extensions
@@ -66,13 +66,13 @@ With this method, the OS inherently considers files as unstructured, leaving it 
 
 ###### Record Sequence
 
-![[Pasted image 20211115165823.png]]
+![[RecordSequence.png]]
 
 This treats files as a sequence of fixed-length, structured records - a collection of bytes, mainly useful when punch cards were still commonplace.
 
 ###### Tree
 
-![[Pasted image 20211115165829.png]]
+![[TreeSequence.png]]
 
 Each variable-length record has a key field, used for record retrieval. Useful in database systems.
 
@@ -87,10 +87,10 @@ Most OSes support several types of files:
 - **Block special:** Again, not true files, but directory entries which refer to block devices.
 	- Used for communication with storage devices, such as disks or main memory.
 
-![[Pasted image 20211115170142.png]]
+![[ExampleExecutableLayout.png]]
 Example layout of an executable file.
 
-![[Pasted image 20211115170146.png]]
+![[ExampleArchiveLayout.png]]
 Example layout of an archival file.
 
 ##### File Attributes
@@ -133,7 +133,7 @@ Operating Systems offer several system calls for file management:
 
 #### File Access
 
-![[Pasted image 20211115172856.png]]
+![[FileAccessTypes.png]]
 
 File access refers to the way in which files stored may be accessed, [[Topic 3 - Memory Management#Abstraction|as discussed in topic 3.]] There are two types:
 
@@ -150,7 +150,7 @@ File access refers to the way in which files stored may be accessed, [[Topic 3 -
 
 Most filing systems allow files to be grouped in directories or folders, resulting in more logical organisation. This allows operations to be performed in bulk on groups of files, such as copying files or setting their attributes - as well as allowing different files to have the *same filename* so long as they are in *different directories.*
 
-![[Pasted image 20211115173543.png]]
+![[FileDescTable.png]]
 
 Each directory is managed via a special file, which contains a *file descriptor table* with descriptors for each file under that directory, corresponding to specific entries on the global file table.
 
@@ -163,25 +163,25 @@ There are three types of systems for each directory structure:
 
 ##### Single-level (Flat) Directory Systems
 
-![[Pasted image 20211115174007.png]]
+![[FlatDirectorySys.png]]
 
 One directory is used for all files in the volume (e.g. four files are owned by 3 different people, `A`, `B`, and `C`). This structure was mainly used in early mainframes, being very simple and allowing the ability to quickly find files - but it also struggles from naming and grouping problems as a result of its design.
 
 ##### Two-level Directory Systems
 
-![[Pasted image 20211115174121.png]]
+![[2LevelDirectorySys.png]]
 
 A separate directory is used for each user, with letters dictating owners of directories and files. It has the benefit of allowing the same file name for different users, but at the cost of limited grouping capability.
 
 ##### Hierarchical Directory Systems
 
-![[Pasted image 20211115174446.png]]
+![[HierarchicalDirSys.png]]
 
 These are directories that present themselves in a tree-like structure; this method grants grouping capabilities and [[Topic 4 - File Management#Directories Folders|allows the same file name for files in different directories]] - but this is at the cost of requiring a method to browse/locate files (such as `ls, cd, pwd` for Unix).
 
 #### Paths
 
-![[Pasted image 20211115174815.png]]
+![[Pathing.png]]
 
 Two common pathing methods are used to browse files:
 - **Absolute path name** - which is relative to the route directory and unique:
@@ -212,7 +212,7 @@ More directory specific syscalls exist depending on OS used.
 
 #### File Systems Layout
 
-![[Pasted image 20211115175505.png]]
+![[ParitionTable.png]]
 
 Drives are divided into partitions/volumes, each holding an independent file system. Section 0 is the **master boot record (MBR)** - this is used to boot the computer via a **boot block** from a specified partition, from which the OS is loaded.
 
@@ -221,7 +221,7 @@ The **super block** contains info about the partition (e.g. the number of blocks
 ##### File Block Allocation Methods
 Blocks are subdivisions of mass storage originally related to disks. They are very much similar to both [[Topic 3 - Memory Management#Paging|pages and their frames, used in main memory.]]
 
-![[Pasted image 20211115180914.png]]
+![[BlockAllocation.png]]
 
 The objective of file block allocation is to keep track of which files go to which block on a physical drive. There are different schemes to achieve this:
 
@@ -232,7 +232,7 @@ The objective of file block allocation is to keep track of which files go to whi
 
 ###### Contiguous Allocation
 
-![[Pasted image 20211115181405.png]]
+![[ContigAlloc.png]]
 
 Contiguous allocation is a simple implementation, only needing to store the first block address and its length - thereby being very performant, allowing ease of random access, and providing robustness against drive faults, as damage to a single block only causes localised loss of data.
 
@@ -242,7 +242,7 @@ Fragmentation occurs as files are deleted and holes left in their place; as with
 
 ###### Linked List Allocation (Non-Contiguous)
 
-![[Pasted image 20211115182154.png]]
+![[LLNonContigAlloc.png]]
 
 Files in this method are stored as *linked lists of blocks.* The first bytes of each block are used as a pointer - and each block contains both its own data and a pointer to the next block, with the final block containing a *null* pointer.
 
@@ -252,7 +252,7 @@ However random access is not supported as this method is very slow due to the ch
 
 ###### Linked List with File Allocation table
 
-![[Pasted image 20211115182551.png]]
+![[LLFAT.png]]
 
 This method is used by older versions of MS-DOS/Windows, and proposes a major improvement over basic linked list allocation by introducing a *file allocation table* (FAT) that stores all pointers in memory. This was standardised in different ways, causing different filesystems such as FAT16 and FAT32.
 
@@ -264,7 +264,7 @@ However the FAT may get too large - especially for physical drives with higher c
 
 ###### Allocation with i-nodes
 
-![[Pasted image 20211115182842.png]]
+![[INodeAlloc.png]]
 
 These are used by UNIX-type OSes. Each file is associated with an i-node (index-node) that lists all file attributes and the drive/disk addresses of each block associated with the file. With this, all blocks corresponding to the file can be found easily.
 
@@ -274,7 +274,7 @@ This has the advantage of only requiring the i-node of a file to be in memory, a
 
 I-nodes in unix contain a number of **direct** pointers to disk blocks, typically of which there are 10. 
 
-![[Pasted image 20211115183043.png]]
+![[UnixINodes.png]]
 
 In addition to this, 3 **indirect** pointers exist, which point to further address blocks that eventually lead to another disk data block. The first of these pointers is a **single** level of indirections, with the next being a **double** indirect pointer, and the third a **triple** indirect pointer.
 
@@ -282,13 +282,13 @@ In addition to this, 3 **indirect** pointers exist, which point to further addre
 
 File Systems also allow the sharing of files at different points within the file hierarchy, as shown below:
 
-![[Pasted image 20211115183253.png]]
+![[SharedFileDiag.png]]
 
 #### Implementation of Directories/Folders
 
 To open files, a path name is used to locate its directory entry. This directory entry then provides a mapping from a filename/file descriptor to the disk blocks that contain the data.
 
-![[Pasted image 20211115173543.png]]
+![[FileDescTable.png]]
 
 This directory entry contains all the information needed to find the disk blocks for a given file, dependent on filesystem:
 
@@ -298,15 +298,15 @@ This directory entry contains all the information needed to find the disk blocks
 
 The directory entry also allows access to the file's attributes; the structure of which differs based on operating system, as the diagram below shows, using DOS as figure `a` and UNIX as figure `b`:
 
-![[Pasted image 20211115183743.png]]
+![[DirEntryStruct.png]]
 
 To be more exact, in DOS, a directory entry contains the attributes itself:
 
-![[Pasted image 20211115183808.png]]
+![[DOSDirEntry.png]]
 
 Whereas in UNIX, each directory entry has an i-node number and filename. All of the directory's attributes are stored in the i-node, and all i-nodes have fixed locations on the disk - meaning locating one is simple and fast.
 
-![[Pasted image 20211115183848.png]]
+![[UnixDirEntry.png]]
 
 ##### Example of Locating A File in UNIX
 
@@ -319,7 +319,7 @@ Given an absolute path name of `/usr/ast/mbox`:
 
 Accessing relative path names are identical, with the exception that the search starts from the current working directory.
 
-![[Pasted image 20211115184349.png]]
+![[LocatingUnixFileDiag.png]]
 
 After `/usr/ast/mbox` is located, the i-node of `mbox` is held in memory until the file is closed. Locating files in other hierarchical file systems is similar i.e. by looking things up component by component.
 
@@ -338,7 +338,7 @@ Much like with [[Topic 3 - Memory Management#Managing Free Space|main memory]], 
 
 #### Linked List Method
 
-![[Pasted image 20211115185051.png]]
+![[TrackFreeSpaceLLMethod.png]]
 
 Some of the free blocks left over are used to hold free disk block numbers. These blocks are linked together, making their own linked list of free blocks that can be written to.
 
