@@ -35,6 +35,13 @@ Bluetooth can be applied in the following areas:
 
 Bluetooth is a layered protocol architecture - this means it is built upon various other protocol stacks, which deal with different roles; including core protocols, cable replacement/telephony control protocols and adopted protocols (through implementation of the prior).
 
+![[Pasted image 20211129162035.png]]
+
+The above diagram represents the entire network stack of the Bluetooth protocol; it is broken down as such:
+
+- At the lowest-level, the radio used for Bluetooth runs in the 2.4Ghz frequency band, as stated prior.
+	- This is modulated using Gaussian [[Lecture 3 - Modulation Techniques#Frequency-shift Keying FSK|FSK]].
+- The baseband itself supports FH-SS, which consi
 #### Core Protocols
 
 This includes the following:
@@ -59,5 +66,5 @@ These are protocols Bluetooth inherently implements as part of being a layered a
 - PPP (Point-to-Point Protocol)
 - TCP/UDP/IP
 - OBEX (Object Exchange)
-- WAE/WAP (Wireless Application Environment/Wireless Applicaiton Protocol)
+- WAE/WAP (Wireless Application Environment/Wireless Application Protocol)
 
