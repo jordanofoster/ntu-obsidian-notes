@@ -64,13 +64,13 @@ Note: Unlike IPv4, IPv6 does not use broadcast addresses. However, IPv6 all-node
 
 Prefix length is noted in slash notation, used to indicate the network portion of an IPv6 address. The length can range from 0 to 128; the recommended IPv6 prefix length for LANs and most other types of networks is `/64`.
 
-![[Pasted image 20211115225158.png]]
+![[IPv6PrefixLenDiag.png]]
 
 Note: It is strongly recommended to use a 64-bit Interface ID for most networks. This is because stateless address autoconfiguration (SLAAC) uses 64 bits for the Interface ID. It also makes subnetting easier to create and manage.
 
 ### Types of IPv6 Unicast Addresses
 
-![[Pasted image 20211115225344.png]]
+![[IPv6UnicastTypes.png]]
 
 Unlike IPv4 devices that have only a single address, IPv6 addresses typically have two unicast addresses:
 
@@ -81,7 +81,7 @@ Unlike IPv4 devices that have only a single address, IPv6 addresses typically ha
 
 IPv6 global unicast addresses (GUAs) are globally unique and routable on the IPv6 internet; currently, only GUAs with the first three bits of 001 or 2000::/3 are being assigned. Currently available GUAs begin with a decimal 2 or a 3. This is only 1/8th of the total available IPv6 address space.
 
-![[Pasted image 20211115225542.png]]
+![[IPv6GUAs.png]]
 
 ##### Structure of IPv6 GUAs
 
@@ -105,7 +105,7 @@ An IPv6 link-local address (LLA) enables a device to communicate with other IPv6
 
 Every IPv6-enabled network interface must have an LLA. If an LLA is not configured manually on an interface, the device will automatically create one. IPv6 LLAs are in the fe80::/10 range.
 
-![[Pasted image 20211115225734.png]]
+![[IPv6LLAs.png]]
 
 ### Unique Local Addresses
 
@@ -123,11 +123,11 @@ Most IPv6 configuration and verification commands in the Cisco IOS are similar t
 
 The example below shows commands to configure a GUA on the G0/0/0 interface on R1:
 
-![[Pasted image 20211115225927.png]]
+![[CLIConfigStaticGUA.png]]
 
 ### Static GUA Configuration on a Windows Host
 
-![[Pasted image 20211115230002.png]]
+![[WinGUIStaticGUAConfig.png]]
 
 Manually configuring the IPv6 address on a host is similar to configuring an IPv4 address. The GUA or LLA of the router interface can be used as the default gateway. Best practice is to use the LLA.
 
@@ -139,7 +139,7 @@ Configuring the LLA manually lets you create an address that is recognizable and
 
 The example below shows commands to configure a LLA on the G0/0/0 interface on R1:
 
-![[Pasted image 20211115230124.png]]
+![[CLIStaticGUALinkLocalUnicastAddrConfig.png]]
 
 Note: The same LLA can be configured on each link as long as it is unique on that link. Common practice is to create a different LLA on each interface of the router to make it easy to identify the router and the specific interface.
 
@@ -161,7 +161,7 @@ Devices obtain GUA addresses dynamically through Internet Control Message Protoc
 
 SLAAC allows a device to configure a GUA without the services of DHCPv6. Devices obtain the necessary information to configure a GUA from the ICMPv6 RA messages of the local router. The prefix is provided by the RA and the device uses either the EUI-64 or random generation method to create an interface ID.
 
-![[Pasted image 20211115231200.png]]
+![[SLAACDiag.png]]
 
 #### Method 2: SLAAC and Stateless DHCP
 
@@ -171,7 +171,7 @@ An RA can instruct a device to use both SLAAC and stateless DHCPv6. The RA messa
 - The router LLA, which is the RA source IPv6 address, as the default gateway address
 - A stateless DHCPv6 server to obtain other information such as a DNS server address and a domain name
 
-![[Pasted image 20211115231244.png]]
+![[SLAACStatelessDHCP.png]]
 
 #### Method 3: Stateful DHCPv6
 
@@ -184,7 +184,7 @@ An RA can instruct a device to use stateful DHCPv6 only. Stateful DHCPv6 is simi
 
 When the RA message is either SLAAC or SLAAC with stateless DHCPv6, the client must generate its own interface ID. The interface ID can be created using the EUI-64 process or a randomly generated 64-bit number.
 
-![[Pasted image 20211115231411.png]]
+![[EUI64vsRandomGen.png]]
 
 #### EUI-64 Process
 
@@ -204,7 +204,7 @@ As an example:
    
 Depending upon the operating system, a device may use a randomly generated interface ID instead of using the MAC address and the EUI-64 process. Beginning with Windows Vista, Windows uses a randomly generated interface ID instead of one created with EUI-64.
 
-![[Pasted image 20211115231738.png]]
+![[WinRandInterfaceIDExample.png]]
 
 Note: To ensure the uniqueness of any IPv6 unicast address, the client may use a process known as Duplicate Address Detection (DAD). This is similar to an ARP request for its own address. If there is no reply, then the address is unique.
 
@@ -212,7 +212,7 @@ Note: To ensure the uniqueness of any IPv6 unicast address, the client may use a
 
 All IPv6 interfaces must have an IPv6 LLA. Like IPv6 GUAs, LLAs can be configured dynamically. The figure below shows that the LLA is dynamically created using the fe80::/10 prefix and the interface ID using the EUI-64 process, or a randomly generated 64-bit number.
 
-![[Pasted image 20211115231908.png]]
+![[DynAddrLLAsDiag.png]]
 
 #### Dynamic LLAs on Windows
 
@@ -220,11 +220,11 @@ Operating systems, such as Windows, will typically use the same method for both 
 
 ###### EUI-64 Generated Interface ID
 
-![[Pasted image 20211115231950.png]]
+![[WinEUI-64GenInterfaceID.png]]
 
 ###### Random 64-bit Generated Interface ID:
 
-![[Pasted image 20211115232008.png]]
+![[WinRand64-BitInterfaceID.png]]
 
 ### Assigned IPv6 Multicast Addresses
    
@@ -244,17 +244,17 @@ Well-known IPv6 multicast addresses are assigned and are reserved for predefined
 
 A solicited-node multicast address is similar to the all-nodes multicast address and is mapped to a special Ethernet multicast address. The Ethernet NIC can filter the frame by examining the destination MAC address without sending it to the IPv6 process to see if the device is the intended target of the IPv6 packet.
 
-![[Pasted image 20211115232251.png]]
+![[SolNodeIPv6MultiDiag.png]]
 
 ### Subnetting an IPv6 Network using the Subnet ID
 
 IPv6 was designed with subnetting in mind. A separate subnet ID field in the IPv6 GUA is used to create subnets; the subnet ID field is the area between the Global Routing Prefix and the interface ID.
 
-![[Pasted image 20211115232343.png]]
+![[SubnettingIDDiag.png]]
 
 #### IPv6 Subnetting Example
 
-![[Pasted image 20211115232419.png]]
+![[IPv6SubnetExample.png]]
 
 - Given the 2001:db8:acad::/48 global routing prefix with a 16 bit subnet ID.
 - Allows 65,536 /64 subnets
@@ -265,4 +265,4 @@ IPv6 was designed with subnetting in mind. A separate subnet ID field in the IPv
    
 The example topology requires five subnets, one for each LAN as well as for the serial link between R1 and R2. The five IPv6 subnets were allocated, with the subnet ID field 0001 through 0005. Each /64 subnet will provide more addresses than will ever be needed.
 
-![[Pasted image 20211115232456.png]]
+![[IPv6SubnetAllocDiag.png]]
