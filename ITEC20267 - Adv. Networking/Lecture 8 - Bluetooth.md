@@ -180,4 +180,26 @@ Bluetooth packet payloads contain the following information:
 
 - Inside the payload header:
 	- `L_CH` field, which identifies the logical channel
-	- `Flow` field, which is used to control flow 
+	- `Flow` field, which is used to control flow at the L2CAP level.
+	- `Length` field, which is the number of bytes of data in the payload body.
+
+The payload body itself contains user data, and a field called `CRC` contains a 16-bit CRC code.
+
+### Bluetooth Error Correction Schemes
+
+There are three:
+
+- 1/3 rate FEC (Forward Error Correction):
+	- This is used on an 18-bit packet header, on the voice field in a HV1 packet. Each bit is simply sent three times over three consecutive bits.
+- 2/3 rate FEC
+	- This is used in DM packets, the data field of DV packets, FHS packets and HV2 packets. Each sequence of 10 bits is followed by 5 parity bits that are calculated using a (15,10) shortened Hamming code.
+- ARQ is used with DM and DH packets.
+
+#### Automatic Repeat Request (ARQ) Scheme Elements
+
+The ARQ scheme uses 4 elements:
+
+- Error detection: the destination detects errors and discards malformed packets.
+- Positive acknowledgement is returned by the destination when recieving a good packet.
+- The source retransmits unacknowledged packets.
+- Negative acknowledg
