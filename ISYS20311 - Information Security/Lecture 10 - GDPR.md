@@ -104,7 +104,11 @@ This is necessary for the following:
 
 GDPR defines appropriate procedures in A.1 and A.2.
 
-##### A.1. Governance
+##### A.1 Governance
 
-You have appropriate data protection and information security policies and processes in place.
+You have appropriate data protection and information security policies and processes in place. If required, you ensure that you maintain records of processing activities, and have appointeed a Data Protection Officer.
+
+##### A.2 Risk management
+
+You take appropriate steps to identify, assess and understand security risks to personal data and the systems that process this data.
 
