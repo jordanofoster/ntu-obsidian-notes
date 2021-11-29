@@ -226,4 +226,10 @@ A diagram detailing transisitons between states is shown below:
 
 When a network begins, a potential master node identifies devices in range that may act as willing participants. It transmits an ID packet to these devices that contains an Inquiry Access Code (IAC); this process occurs in the *Inquiry* state.
 
-Devices recieve the inquiry and enter the 
+Devices receive the inquiry and enter the *Inquiry Response* state, returning a *Frequency Hop Synchronization* (FHS) packet with address and timing information before moving to the *page scan* state.
+
+#### Inquiry Procedure Details
+
+The goal here is to discover other neighbouring devices. The inquiring node sends an inquiry message in the form of a packet containing only the IAC; this can either be a General IAC (GIAC) or Dedicated IAC (DIAC). This message is sent over a subset of all possible frequencies.
+
+These inquiry frequencies are divided into two hopping sets, of 16 frequencies each. In inquiry state, the node sends up to $N_{Inquiry}$ sequences o
