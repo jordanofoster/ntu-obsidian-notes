@@ -2,7 +2,7 @@
 
 ## Current Position (Windows)
 
-![[Pasted image 20211115163909.png]]
+![[Lecture4CurrentPos.png]]
 
 ### Why non-volatile storage?
 
@@ -16,7 +16,7 @@ Files are uniform logical units of information that are created by a process. Th
 
 Files are used to store large amounts of data in the long-term, and several processes may be allowed to access the file data concurrently, as seen below:
 
-![[Pasted image 20211115164405.png]]
+![[Files.png]]
 
 #### Naming of Files
 
