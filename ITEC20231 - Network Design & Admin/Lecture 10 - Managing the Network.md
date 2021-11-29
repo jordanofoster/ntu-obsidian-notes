@@ -77,4 +77,16 @@ Miley Cyrus had her Twitter account suspended temporarily after it was hacked in
 
 In the case of the hacked Twitter employee, the combination of a weak password, "happiness“, and Twitter's lax security regarding repeated login attempts made it simple for the hacker to gain entry. Twitter has not indicated that it has fixed this vulnerability by limiting the number of password attempts.
 
-One security researcher observed
+One individual observed the following about the Miley Cyrus incident:
+
+*"It appears that Miley didn't learn the lesson last year and hasn't been taking enough care over her password security to avoid the same fate, other users should make sure they choose strong passwords that can't be easily cracked, and Twitter itself should play a key part in enforcing this."*
+
+*“… I started wondering how vulnerable other sites might be to this type of attack.  … I went looking at some of the sites that I frequent and found that many of them don’t have any restrictions on authentication attempts…*
+
+*And how hard would it really be to create such a script to attempt a brute force attack like the one that was used by the hacker?  Well… How about four simple lines of code attached to a very large dictionary database:”*
+
+```
+Set WinHttpReg = CreateObject("WinHttp.WinHttpRequest.5.1")
+WinHttpReq.Open "POST","http://"
+
+
