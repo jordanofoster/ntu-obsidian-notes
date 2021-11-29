@@ -246,3 +246,8 @@ The paged slave device responds with a DAC ID packet, to which the master replie
 
 As an example, with the goal of setting up a piconet after an inquiry;
 
+The paging node, or master, does the following:
+
+- Sends a page message (packet with only the DAC of the paged node) over 32 frequency hops, (from DAC, split into 2\*16 frequencies).
+- This is repeated until a response is recieved.
+- When a response is recieved, send a FHS message to allow the paged node to synchronize to the piconet
