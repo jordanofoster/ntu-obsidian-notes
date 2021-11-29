@@ -98,7 +98,7 @@ WinHttpReq.Send("login=Chris&password=Pa$$w0rd")
 
 A particular problem is the need to disable USB sticks and other removable media in secure installations. You can set up custom .admx files to include this, and apply them via GPO to a group of workstations. This disables various drivers, and generally works a lot better than gluing up the USB ports.
 
-Windows includes extensions to GPs to make this easier such as *Removable Storage Management* but also includes approximately 800 other new policy settings.
+Windows includes extensions to GPs to make this easier such as *Removable Storage Management,* but also includes approximately 800 other new policy settings.
 
 #### Other Issues with GPO's 
 
@@ -123,7 +123,7 @@ GPOs allow admins to specify which .msi packages are to be assigned or published
 - Installer creates system restore point before installing - so reverts automatically if install goes wrong
 - Has sophisticated options for various methods of installation -especially for big programs and slow links - to install only some bits of large packages (e.g. Office) immediately.
 
-#### How to setup and 
+#### How to setup and use
 
 - Create Software Distribution Points (SDP) - shared network folders with NTFS Read/Execute permissions for the users
 - Create GPO for software deployment (and associate with chosen domain/site/OU)
@@ -135,6 +135,25 @@ GPOs allow admins to specify which .msi packages are to be assigned or published
 
 ##### Some snags
 
-- No licence control is performed - so Published software had better be on a site licence.
-- Need to plan carefully how to structure the software e.g.
+- No licence control is performed - so published software had better be on a site licence.
+- Need to plan carefully how to structure the software e.g. common packages to be assigned to computers, specific ones to be assigned to different user groups etc., otherwise might have too many GPOs to manage
+- If users need admin privilege to install, risky! Can configure installer to "always install elevated", but this also poses a security risk.
+
+#### Microsoft Software Licensing
+
+- Needs care in Windows networks
+- Need to consider whether Per User or Per Device is the most cost-effective way.
+	- Also, might need to buy additional Client Access Licences for Remote Desktop Services if remote users log in to a server
+- Each 2008+ Server computer runs a Licence Logging service, which keeps track.
+- The information is replicated to a Site Licence Server
+- Can maintain licence information for file, print services, IIS, RDS, Exchange, SQL Server etc.
+
+#### Process to maintain licences
+
+- Identify Site Licence Server (normally first domain controller in a site)
+- Administer licences using Licensing in Administrative Tools
+- To add new licences, select New Licence, and specify added 
+- Alternatively, use 3rd party tool that can also handle other licences e.g. volume
+- Monitor licence status regularly
+
 
