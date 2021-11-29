@@ -212,13 +212,13 @@ There are two major states for channel control: **Standby** (the default state) 
 - Page: device has issued a page
 	- This is used by the master.
 - Page scan: device is listening for a page
-- Master response: master recieves a page response from a slave node
+- Master response: master receives a page response from a slave node
 - Slave response: slave responds to a page from the master node.
 - Inquiry: device has issued an inquiry for the identity of devices in range.
 - Inquiry scan: device is listening for an inquiry to be requested of it.
-- Inquiry response: device has recieved an inquiry response.
+- Inquiry response: device has received an inquiry response.
 
-A diagram detailing transisitons between states is shown below:
+A diagram detailing transitions between states is shown below:
 
 ![[Pasted image 20211129181635.png]]
 
@@ -249,5 +249,5 @@ As an example, with the goal of setting up a piconet after an inquiry;
 The paging node, or master, does the following:
 
 - Sends a page message (packet with only the DAC of the paged node) over 32 frequency hops, (from DAC, split into 2\*16 frequencies).
-- This is repeated until a response is recieved.
-- When a response is recieved, send a FHS message to allow the paged node to synchronize to the piconet
+- This is repeated until a response is received.
+- When a response is received, send a FHS message to allow the paged node to synchronize to the piconet
