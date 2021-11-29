@@ -87,6 +87,15 @@ One individual observed the following about the Miley Cyrus incident:
 
 ```
 Set WinHttpReg = CreateObject("WinHttp.WinHttpRequest.5.1")
-WinHttpReq.Open "POST","http://"
+WinHttpReq.Open "POST","http://domain.com/login",false
+WinHttpReq.SetRequestHeader "Content-Type","application/x-www-form-urlencoded"
+WinHttpReq.Send("login=Chris&password=Pa$$w0rd")
+```
 
+*“I tested this script against a site that I frequent, and it worked as expected.  So, I guess it’s not that hard to perform such an attack.  Now it seems the question isn’t how did this happen to Twitter, but why doesn’t this happen every day?”*
 
+#### Example security issue helped by GPO
+
+A particular problem is the need to disable USB sticks and other removable media in secure installations. You can set up custom .admx files to include this, and apply them via GPO to a group of workstations. This disables various drivers, and generally works a lot better than gluing up the USB ports.
+
+Windows includes
