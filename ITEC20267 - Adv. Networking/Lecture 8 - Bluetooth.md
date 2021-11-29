@@ -264,14 +264,29 @@ There are 4:
 - Active, participating in piconet
 	- Listens/transmits/receives packets
 - Sniff, only listening on specified slots
-- Hold, not supporting Asynchronous Connnectionless (ACL) packets
+- Hold, not supporting Asynchronous Connectionless (ACL) packets
 	- Reduced power status, may still participate in SCO exchanges
 - Park, not participating on piconet
 	- Though still retained as part of it
 
 #### Bluetooth Audio
 
-There are two voice encoding schemes; Pulse Code Modulaton (PCM) and Continuously Variable Slope Delta (CVSD) modulation. The choice of encoding scheme is made by the link manager, which negotiates the most appropriate scheme for the application.
+There are two voice encoding schemes; Pulse Code Modulation (PCM) and Continuously Variable Slope Delta (CVSD) modulation. The choice of encoding scheme is made by the link manager, which negotiates the most appropriate scheme for the application.
 
 #### Bluetooth Link Security
+
+There are three elements to this: **Authentication** to verify claimed identity, **Encryption** to establish privacy, and Key management/usage.
+
+Security algorithms have some parameters:
+- Unit address
+- Secret authentication key, 128 bits in length
+- Secret privacy key, 4-128 bits length, secret key
+- Random number
+
+##### Bluetooth Link Management 
+
+The link manager manages the master-slave radio link. It offers a security service, involving authentication, encryption and key distribution. It also handles clock synchronization, exchanges station capability information, and deals with mode management, which involves the following:
+
+- Switching between master/slave role
+- Change hold, sniff, park modes for sla
 
