@@ -76,3 +76,27 @@ These are protocols Bluetooth inherently implements as part of being a layered a
 - OBEX (Object Exchange)
 - WAE/WAP (Wireless Application Environment/Wireless Application Protocol)
 
+### Bluetooth Usage Models
+
+There are **6** usage models for bluetooth; they are listed below:
+
+- File transfer
+- Internet bridge
+- LAN access
+- Synchronization
+- Three-in-one phone
+- Headsets
+
+### Bluetooth Terminology
+
+*Piconets* are basic units of Bluetooth networking, containing one *Master* and one-to-seven *Slave* devices. The *Master* device determines the channel and phase of the ad-hoc network.
+
+*Scatternets* are an accumulation of piconets; a device in one piconet may exist as a master or slave in another piconet. Scatternets allow many devices to share the same area, and make efficient use of bandwidth.
+
+#### Bluetooth Networks
+
+An example of various wireless Bluetooth network topologies is shown below:
+
+![[Pasted image 20211129163656.png]]
+
+##### Network To
