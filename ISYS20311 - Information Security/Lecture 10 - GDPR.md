@@ -90,4 +90,21 @@ This is necessary for the following:
 
 #### Managing Risk
 - Map the law to your processing
-- Identify key da
+- Identify key data processing
+- Identify high-risk processing
+- Identify gaps
+- Mitigate the risks
+- The 6 Ws:
+	- *Why is personal data processed?*
+	- *Whose personal data is processed?*
+	- *What personal data is processed?*
+	- *When is personal data processed?*
+	- *Where is personal data processed?*
+	- *How is personal data processed?*
+
+GDPR defines appropriate procedures in A.1 and A.2.
+
+##### A.1. Governance
+
+You have appropriate data protection and information security policies and processes in place.
+
