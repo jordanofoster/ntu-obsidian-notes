@@ -113,4 +113,14 @@ You have appropriate data protection and information security policies and proce
 You take appropriate steps to identify, assess and understand security risks to personal data and the systems that process this data. You also make effective risk-based decisions based upon the following:
 
 - The state of the art \[of technology\]
+- Cost of implementation
+- The nature/scope/context/purpose of processing
+- The severity and likelihood of risks being realised.
 
+Where processing is likely to result in a high risk to the rights/freedoms of individuals, you must also undertake a Data Protection Impact Assessment to determine the impact of the intended processing on the protection of personal data.
+
+#### Processing Personal Data
+
+##### A.3 Asset management
+
+You understand and catalogue the personal data you process and can describe the purpose for processing 
