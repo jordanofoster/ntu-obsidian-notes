@@ -139,4 +139,13 @@ Article 5(1)(f) states that personal data shall be:
 
 *Processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures*
 
-In summary, take appropriate action, such as doing a risk assessment. The security measures must be designed into your systems at the outset, a process referred to as *Privacy by Design.* 
+In summary, take appropriate action, such as doing a risk assessment. The security measures must be designed into your systems at the outset, a process referred to as *Privacy by Design.*
+
+Article 25 mandates that, at the time of the *determination* of the means of the *processing* (i.e. the design phase of any processing operation) and at the time of the processing itself, appropriate measures must be put in place.
+
+#### Protect personal data against cyber attack
+
+You have proportionate security measures in place to protect against cyber attack which cover the personal data you process, and the systems that process such data.
+
+##### B.1 Service Protection Policies and Processes
+
