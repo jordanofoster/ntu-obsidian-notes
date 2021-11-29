@@ -111,4 +111,21 @@ Piconets, as stated before, are a set of Bluetooth nodes (*Slaves*) synchronized
 
 ###### Bluetooth Scatternets
 
-Within each piconet, the master determines the hopping sequence of the network, and slave devices must synchronize to this, as it is the literal definition of participation within the piconet. Communication between several piconets involves devices jumping back and forth between 
+![[Pasted image 20211129174021.png]]
+
+Within each piconet, the master determines the hopping sequence of the network, and slave devices must synchronize to this, as it is the literal definition of participation within the piconet. Communication between several piconets involves devices jumping back and forth between each of them.
+
+### Bluetooth Radio Specification
+
+There are three classes of transmitters within the spec:
+
+- **Class 1** - outputs 100mW for maximum range.
+	- Power control is mandatory, and this provides the greatest distance.
+- **Class 2** - outputs 2.4mW at maximum.
+	- Power control is optional for this class.
+- **Class 3** has a nominal output of 1mW, and is the lowest power class.
+
+#### Frequency Hopping in Bluetooth
+
+This provides resistance to interference and multipath effects, alongside a form of multiple access among co-located devices synchronized to different piconets.
+
