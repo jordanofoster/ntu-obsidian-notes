@@ -100,3 +100,17 @@ A particular problem is the need to disable USB sticks and other removable media
 
 Windows includes extensions to GPs to make this easier such as *Removable Storage Management* but also includes approximately 800 other new policy settings.
 
+#### Other Issues with GPO's 
+
+For earlier versions of Windows Server and Windows, they run in *winlogon* and then update on irregular time basis. This is still relevant to know as there are still a number of Windows 2003 Servers and XP machines in corporate networks/embedded systems.
+
+However, for Windows 10 and newer versions of Windows Server, they have their own “hardened” (dedicated) service which cannot be stopped.
+
+.admx files are added to sysvol every time a new GPO is created – this can lead to lots of copied files around the system, and replication traffic overhead.
+
+Some of the GPO’s have to be considered as merely obscuration rather than security, since users may be able to use other programs to get around them e.g. for editing Registry settings
+
+#### Managing Software on the Network
+
+GPOs allow admins to specify which .msi packages are to be assigned or published. Assignment can be user or computer associated, whereas publishing is necessarily linked only to users (a user has to do something to install it). GPOs can also define how upgrade/removal of software is handled.
+
