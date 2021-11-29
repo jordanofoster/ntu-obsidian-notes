@@ -131,8 +131,12 @@ The personal data you process should be adequate, relevant and limited to what i
 
 You understand and manage security risks to your processing operations that may arise as a result of dependencies on third parties such as data processors. This includes ensuring that they employ appropriate security measures.
    
-You are required to choose data processors that provide sufficient guarantees about their technical and organizational measures. The GDPR includes provisions where processors are used, including specific stipulations that must feature in your contract.
+You are required to choose data processors that provide sufficient guarantees about their technical and organisational measures. The GDPR includes provisions where processors are used, including specific stipulations that must feature in your contract.
 
 #### Process data securely
 
-Article 5(1)(f) states that personal data 
+Article 5(1)(f) states that personal data shall be:
+
+*Processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures*
+
+In summary, take appropriate action, such as doing a risk assessment. The security measures must be designed into your systems at the outset, a process referred to as *Privacy by Design.* 
