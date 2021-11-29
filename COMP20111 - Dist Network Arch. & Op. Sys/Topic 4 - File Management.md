@@ -344,7 +344,7 @@ Some of the free blocks left over are used to hold free disk block numbers. Thes
 
 #### Bitmap method
 
-![[Pasted image 20211115185221.png]]
+![[TrackFreeSpaceBMMethod.png]]
 
 Bitmaps are stored with one bit per block that records whether it is free or not; `1` is free, `0` is used. As a result, bitmaps occupy less space than linked lists - 1 bit per block instead of the 32 bits required by the latter.
 
@@ -354,7 +354,7 @@ However, the number of blocks required to track free space in a bitmap is *const
 
 File systems read, modify and write blocks - meaning that if they crash before all modifications have been written out, errors can occur; this is known as *Inconsistency.* An example diagram showing file system states is shown below:
 
-![[Pasted image 20211115185754.png]]
+![[ConsistencyDiag.png]]
 
 `a`: Consistent.
 `b`: Missing block.
@@ -376,7 +376,7 @@ Analogous steps are required in Windows.
 
 Issues can occur in event of error; if the first task above completes and then the system crashes, the i-node and file blocks will not be accessible from any file, or be available for reassignment. Fixing this requires time-consuming repairs, such as `scandisk` etc.
 
-![[Pasted image 20211115190302.png]]
+![[JournalingExample.png]]
 
 *Journaling* file systems use a special area of the disk to make a log entry listing actions that need to be completed. In the event of failure, the log is used to bring the disk back into a consistent state (i.e. by completing all pending actions). Log entries are erased once operations complete successfully.
 
@@ -391,7 +391,7 @@ Using many disks in parallel provides many benefits to performance and reliabili
 - RAID 1 (mirroring) uses more than one disk to store the same data. This degrades speed and doesn't ensure full capacity, but the security of data is ensured.
 - RAID 1+0 takes advantage of both:
 
-![[Pasted image 20211115190825.png]]
+![[RAID1+0.png]]
 
 ### Security in File Systems
 
@@ -399,15 +399,15 @@ Using many disks in parallel provides many benefits to performance and reliabili
 
 Access to file can be done through Access Control Lists, where each object (e.g. file) contains a list of principals that list what can be done to the object:
 
-![[Pasted image 20211115191836.png]]
+![[ACLExample.png]]
 
 ### Minix File System Layout - Implementation Example
 
-![[Pasted image 20211115191916.png]]
+![[ExampleMinixDskLayout.png]]
 
 Above is the disk layout for a small hard-disk partition containing 64 i-nodes and a 1KB block size (i.e. two consecutive 512B sectors are treated as a single block).
 
-![[Pasted image 20211115192149.png]]
+![[ExampleMinixDskLayout2.png]]
 
 The API and procedures for both block and i-node management are shown below:
 
@@ -441,4 +441,4 @@ Procedures used to manage the superblock and bitmaps are also shown below:
 
 It has been shown in this topic, that an OS and PC will have a filesystem. In distributed systems, we must consider many separate machines with their own file systems. How is this space managed
 
-![[Pasted image 20211115193034.png]]
+![[DistributedFileSystems.png]]
