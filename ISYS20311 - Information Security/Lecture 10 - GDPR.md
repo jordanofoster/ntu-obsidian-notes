@@ -123,4 +123,16 @@ Where processing is likely to result in a high risk to the rights/freedoms of in
 
 ##### A.3 Asset management
 
-You understand and catalogue the personal data you process and can describe the purpose for processing 
+You understand and catalogue the personal data you process and can describe the purpose for processing it. You also understand the risks posed to individuals of any unauthorized or unlawful processing, accidental data loss, destruction or damage to that data.
+
+The personal data you process should be adequate, relevant and limited to what is necessary for the purpose of the processing, and it should not be kept for longer than is necessary.
+
+##### A.4 Data processors and the supply chain
+
+You understand and manage security risks to your processing operations that may arise as a result of dependencies on third parties such as data processors. This includes ensuring that they employ appropriate security measures.
+   
+You are required to choose data processors that provide sufficient guarantees about their technical and organizational measures. The GDPR includes provisions where processors are used, including specific stipulations that must feature in your contract.
+
+#### Process data securely
+
+Article 5(1)(f) states that personal data 
