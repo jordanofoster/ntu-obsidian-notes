@@ -46,4 +46,18 @@ This includes the following:
 
 #### Cable Replacement Protocol
 
-RFCOMM is used as a form of cable replacement 
+RFCOMM is used as a form of cable replacement protocol
+
+#### Telephony Control Protocol
+
+The Binary Telephony Control Specification (TCS BIN) is used here.
+
+#### Adopted Protocols
+
+These are protocols Bluetooth inherently implements as part of being a layered architecture:
+
+- PPP (Point-to-Point Protocol)
+- TCP/UDP/IP
+- OBEX (Object Exchange)
+- WAE/WAP (Wireless Application Environment/Wireless Applicaiton Protocol)
+
