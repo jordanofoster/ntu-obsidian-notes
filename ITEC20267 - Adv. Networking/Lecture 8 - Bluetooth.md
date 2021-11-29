@@ -29,5 +29,21 @@ Bluetooth can be applied in the following areas:
 	- Bluetooth removes the need for numerous cable attachments for communication
 - Low implementation cost networking, < $5
 - Ad hoc networks
-	- Devices with a bluetooth radio can establish a connection with another device when 
+	- Devices with a Bluetooth radio can establish a connection with another device when in range
 
+### Bluetooth Protocol Architecture
+
+Bluetooth is a layered protocol architecture - this means it is built upon various other protocol stacks, which deal with different roles; including core protocols, cable replacement/telephony control protocols and adopted protocols (through implementation of the prior).
+
+#### Core Protocols
+
+This includes the following:
+- Radio
+- Baseband
+- Link Manager Protocol (LMP)
+- Logical link control and adaptation protocol (L2CAP)
+- Service discovery protocol (SDP)
+
+#### Cable Replacement Protocol
+
+RFCOMM is used as a form of cable replacement 
