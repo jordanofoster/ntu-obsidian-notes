@@ -153,6 +153,22 @@ You should prevent users from downloading, transferring, altering or deleting pe
 
 You should have a robust password policy which avoids users having weak passwords, such as those trivially guessable. You should change all default passwords and remove or suspend unused accounts.
 
+- Actively managing software vulnerabilities, including using in-support software and the application of software update policies (patching) and taking other mitigating steps, where patches can’t be applied.
+
+- Managing end user devices (laptops and smartphones etc) so that you can apply organisational controls over software or applications that interact with or access personal data.
+
+- Encrypting personal data at rest on devices (laptops, smartphones, and removable media) that are not subject to strong physical controls.
+
+- Encrypting personal data when transmitted electronically.
+
+- Ensuring that web services are protected from common security vulnerabilities such as SQL injection and others described in widely-used publications such as the OWASP Top 10.
+
+- Ensuring your processing environment remains secure throughout its lifecycle.
+
+- You also undertake regular testing to evaluate the effectiveness of your security measures, including virus and malware scanning, vulnerability scanning and penetration testing as appropriate. You record the results of any testing and remediating action plans.
+
+- Whatever security measures are put in place, whether these are your own or whether you use a third party service such as a cloud provider, you remain responsible both for the processing itself, and also in respect of any devices you operate.
+
 ##### B.1 Service Protection Policies and Processes
 
 You should define, implement, communicate and enforce appropriate policies and processes that direct your overall approach to securing systems involved in the processing of personal data. You should also consider assessing your systems and implementing specific technical controls as laid out in appropriate frameworks, such as ISO 27001.
@@ -168,3 +184,19 @@ Implement technical controls (such as appropriate encryption) to prevent unautho
 ##### B.4 System Security
 
 Implement appropriate technical and organisational measures to protect systems, technologies and digital services that process personal data from cyber attack.
+
+Whilst the GDPR requires a risk-based approach, typical expected examples of security measures you could take include:
+
+- Tracking and recording of all assets that process personal data, including end user devices and removable media.
+- Minimising the opportunity for attack by configuring technology appropriately, minimising available services and controlling connectivity.
+
+###### B.5 Staff awareness & training
+
+You give staff appropriate support to help them manage personal data securely, including the technology they use. This includes relevant training and awareness as well as provision of the tools they need to effectively undertake their duties in ways that support the security of personal data.
+
+Staff should be provided with support to ensure that they do not inadvertently process personal data (e.g. by sending it to the incorrect recipient).
+
+#### Minimise impact of incidents
+
+- Measures to detect security events
+- Resilience of proic
