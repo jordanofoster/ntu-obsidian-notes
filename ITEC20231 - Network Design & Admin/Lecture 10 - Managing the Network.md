@@ -38,7 +38,7 @@ There can be lots of GPOs within a domain; the Group Policy Management Console p
 
 There are a number of templates that are built-in, stored within .admx files, that use XML to describe settings. Each of these files contain many individual policy descriptions, and where they are stored in the Registry.
 
-If an admin wants to add new policies, Microsoft recommend to creaete custom .admx files rather than modify the existing templates.
+If an admin wants to add new policies, Microsoft recommends creating custom .admx files rather than modify the existing templates.
 
 ![[Pasted image 20211129212254.png]]
 
@@ -49,7 +49,7 @@ This is done by entering `%systemroot%` in a runbox and going to the PolicyDefin
 - Enable disk quotas
 - Enforce disk quota limit
 - Default quota limit and warning level
-- Log event when quota limit exceeeded
+- Log event when quota limit exceeded
 
 - Scripting of Java applets
 - Logon options
@@ -62,7 +62,7 @@ This is done by entering `%systemroot%` in a runbox and going to the PolicyDefin
 - Specify Intranet Microsoft update service location
 - Enable client-side targeting
 - Reschedule Automatic Updates scheduled 
-- No auto-restart for schedulded Automatic Updates
+- No auto-restart for scheduled Automatic Updates
 - installations
 
 #### Security Policies (secpol.msc)
