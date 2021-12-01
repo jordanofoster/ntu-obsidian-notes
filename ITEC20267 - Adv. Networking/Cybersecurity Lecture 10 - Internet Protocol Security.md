@@ -85,6 +85,23 @@ Security Associations may include the following:
 
 The list of active SAs is held in the *Security Association Database* (SAD).
 
-In order to decide what protection is to be provided for an outgoing packet, IPsec can uniquely identify an SA by their *Security Parameters Index* (SPI).
+In order to decide what protection is to be provided for an outgoing packet, IPsec can uniquely identify an SA by their *Security Parameters Index* (SPI), a destination IP, and a security protocol identifier (from AH or ESP). It should be noted that the SPI is stored within the header of both AH and ESP packets.
 
-SPI is carried in both AH and E
+A similar procedure is used for incoming packets. It should be noted that the actual choice of encryption and authentication algorithm is left to the administrator of an IPsec-aware network.
+
+### Internet Key Exchange Protocol
+
+SAs can be created manually if the number of nodes is small, but this obviously does not scale to reasonable sized networks of IPsec-aware hosts.
+
+The *Internet Key Exchange* (IKE) protocol is used to automatically set up SAs by handling the negotiation of protocols/algorithms, and generation of encryption/authentication keys to be used by IPsec.
+
+The security goals of IKE are as follows:
+- Entity authentication
+- Establishing fresh shared secrets
+- Secure negotiation of all cryptographic algorithms
+
+### IPsec Example
+
+See <a href=https://ntu.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=341f64b7-02b7-4fcd-a748-adf100a83bb1&start=2546.578999>this point in the lecture</a>
+
+![[Pasted image 20211201173939.png]]
