@@ -39,7 +39,32 @@ The Encapsulating Security Payload (ESP) can be used to provide confidentiality,
 ###### ESP Fields 
 
 - Security Parameters Index (32 bits)
-	- Used together with source IP address to identify the *security association* of the sending party.
+	- used together with source IP address to identify the *security association* of the sending party.
 - Sequence Number (32 bits)
 	- A monotonically increasing sequence number to protect against replay attacks.
--  
+- Payload data (variable)
+	- The protected contents of the original IP packet.
+- Padding (0-255 octets)
+	- Padding for encryption, to extend the payload data to a size that fits the encryption's cipher block size, and to align the next field
+- Authentication data (variable, multiple of 32 bits)
+	- Integrity check value
+
+##### ESP Modes
+
+There are two modes of ESP; *Transport* and *Tunnel* mode.
+
+###### Transport Mode
+
+![[Pasted image 20211201172908.png]]
+
+In *Transport Mode*, an upper-layer protocol frame (e.g. from TCP or UDP) is encapsulated within the ESP. The header IP is *not* encrypted.
+
+Transport mode provides end-to-end protection of packets exchanged between two end hosts; both nodes have to be IPsec aware, however.
+
+###### Tunnel Mode
+
+![[Pasted image 20211201172930.png]]
+
+In *Tunnel Mode*, both the entire datagram *and* the ESP fields are treated as a new payload of an outer IP datagram packet. The original (inner) datagram packet is encapsulated within the outer packet. As a result, IP tunnelling tends to be described as *IP-within-IP*.
+
+Tunnel mode has the advantage of end hosts not needing to be aware of IPsec
