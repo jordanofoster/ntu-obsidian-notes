@@ -102,6 +102,15 @@ The security goals of IKE are as follows:
 
 ### IPsec Example
 
-See <a href=https://ntu.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=341f64b7-02b7-4fcd-a748-adf100a83bb1&start=2546.578999>this point in the lecture</a>
+See <a href = "https://ntu.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=341f64b7-02b7-4fcd-a748-adf100a83bb1&start=2546.578999">this point in the lecture</a> for a video description.
 
 ![[Pasted image 20211201173939.png]]
+
+### Takeaway Remarks on IPsec
+
+IPSec provides *transparent* security for all users of the IP protocol, without fundamentally changing the interface of IP itself. It provides host-to-host security but *not* user-to-user or application-to-applicaiton security.
+
+As a result, IPsec protects and application traffic *across an IP network* - applications themselves do not need to be specifically designed to use IPsec.
+
+The main application of IPsec is in the use of *Virtual Private Networks* (VPNs).
+
