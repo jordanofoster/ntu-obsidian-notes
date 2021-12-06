@@ -147,4 +147,17 @@ The best way to handle this is through use of a uniformed device interface (see 
 
 With this change, it is easier to see different devices, as they all share the same syscall definitions.
 
-Each device driver provides a set of functions; for example, a disk driver could have `open`, `close`, `read`, `write`, `seek`, `power on`, `power off` functions and many more. They are represented by a table of pointers
+Each device driver provides a set of functions; for example, a disk driver could have `open`, `close`, `read`, `write`, `seek`, `power on`, `power off` functions and many more. They are represented by a table of pointers to functions provided by the driver itself.
+
+When the driver is loaded, the OS remembers the address of this table so that it can access them when receiving a syscall that necessitates device interaction.
+
+The use of a uniformed device interface also allows consideration of device security, as they are named objects mapped to the file system itself as a named object (in the case of both UNIX and Windows), meaning permissions can be set to limit who has access to them.
+
+### Interrupt-Driven I/O
+
+![[Pasted image 20211206171437.png]]
+
+Suppose we have an example scenario in which a user process requests an 8-char string, "ABCDFGH", to be sent to the printer:
+- An interrupt is caused for each character sent (not very efficient)
+- Additionally, the data transfer between device and memory unit is limited by CPU speed.
+
