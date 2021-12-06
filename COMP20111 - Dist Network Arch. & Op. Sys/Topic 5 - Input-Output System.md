@@ -53,6 +53,6 @@ Interrupts are a very important part of an I/O stack, and are not trivial to han
 
 1) Save registers not already saved by interrupt hardware
 2) Set up context for interrupt service procedure
-3) Set up stack for interupt service procedure
-4) Acknoweldge interrupt controller
+3) Set up stack for interrupt service procedure
+4) Acknowledge interrupt controller
 5) 
