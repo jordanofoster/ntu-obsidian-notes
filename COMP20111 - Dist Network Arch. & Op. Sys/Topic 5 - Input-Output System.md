@@ -73,4 +73,14 @@ Interrupts are a very important part of an I/O stack, and are not trivial to han
 - Request translated and relayed by system calls
 
 **I/O control system:**
-- Deals with I/O related systems c
+- Deals with I/O related system calls
+	- Device-independent software
+	- Platform for installed drivers to communicate with
+
+**Device driver:**
+- Software module that manages the communication with a specific I/O device
+- Converts logical I/O requests into specific commands directed to that device via communications bus (e.g. to which PCIe is connected)
+
+**Device controller:**
+- Hardware unit attached to the bus
+- Provides interface between computer and I/O devices using electrical signals
