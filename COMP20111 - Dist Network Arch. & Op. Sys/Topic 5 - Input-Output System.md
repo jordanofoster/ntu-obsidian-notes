@@ -49,10 +49,28 @@ Typically, when complex systems are engineered, a complex approach is taken; I/O
 
 #### Interrupt Handlers
 
+![[Pasted image 20211206161953.png]]
+
 Interrupts are a very important part of an I/O stack, and are not trivial to handle, requiring several steps:
 
 1) Save registers not already saved by interrupt hardware
 2) Set up context for interrupt service procedure
 3) Set up stack for interrupt service procedure
 4) Acknowledge interrupt controller
-5) 
+5) Copy registers from where they were saved to the process table
+6) Run the interrupt service procedure to extract information from the device control registers
+7) Choose which process to run next
+8) Set up MMU context for process to run next
+9) Load new process' registers
+10) Start running the new process
+
+#### Structure of the I/O System
+
+![[Pasted image 20211206162039.png]]
+
+**User program:**
+- Makes I/O request in a high level language
+- Request translated and relayed by system calls
+
+**I/O control system:**
+- Deals with I/O related systems c
