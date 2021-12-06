@@ -121,4 +121,30 @@ The device driver would undergo the following functions:
 3) Issue commands to control device:
 	1) Write them into device controller's registers
 	2) Check after each if device is ready for next command, waiting or blocking if not.
-4) Block or wait for controlel 
+4) Block or wait for controller to finish work
+5) Check for errors, passing data to device-independent software
+6) Return status information
+7) Process next queued request, or block waiting for next
+
+There are a few challenges with developing a device driver, namely:
+
+- The driver must be reentrant, meaning it can be called by an interrupt while running.
+- The driver must be capable of handling hot-pluggable devices, and device removal while running.
+- Drivers are complex and they are many in number; additionally, bugs in them can crash a system.
+
+
+##### Device Driver Interfacing
+
+Device drivers provide access to specific devices.
+
+![[Pasted image 20211206170945.png]] 
+
+The issue is when there is no standard driver interface (see `(a)`); we need to alter the operating system to handle different system calls to drivers, and this is not possible or efficient.
+
+The best way to handle this is through use of a uniformed device interface (see `(b)`):
+
+![[Pasted image 20211206171105.png]]
+
+With this change, it is easier to see different devices, as they all share the same syscall definitions.
+
+Each device driver provides a set of functions; for example, a disk driver could have `open`, `close`, `read`, `write`, `seek`, `power on`, `power off` functions and many more. They are represented by a table of pointers
