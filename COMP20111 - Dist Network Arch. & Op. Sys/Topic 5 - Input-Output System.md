@@ -173,8 +173,6 @@ There are several registers available that can be read/written to by the CPU, su
 
 ### Buffering
 
-![[Pasted image 20211206173113.png]]
-
 A buffer is an interim memory area that holds data in transit between process' working RAM and the device itself. This helps to cope with any speed mismatch between the device, and also involves the performance of a checksum.
 
 There are a few types of buffering:
@@ -185,5 +183,22 @@ There are a few types of buffering:
 - The process is blocked only if it tries to force an output before the system has emptied the buffer.
 
 **Input Buffering**
+- Input data is stored in an input buffer.
+- The process takes data from this buffer.
+- The OS fills the buffer when empty
+- Processes are blocked if trying to get data from an empty buffer.
 
-Input data is stored in an in
+#### Single Buffering
+
+![[Pasted image 20211206173113.png]]
+
+The above diagram represents data input with a single buffer:
+
+- Blocks are read into the buffer and then moved to the user's work area.
+- When blocks are moved from the buffer, processing can be in parallel with transfer of the next blocks.
+- Interrupts are reduced, but the device is still idle for some time.
+
+#### Double Buffering
+
+![[Pasted image 20211206173500.png]]
+
