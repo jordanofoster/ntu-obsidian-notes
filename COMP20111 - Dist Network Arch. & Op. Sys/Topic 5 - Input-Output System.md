@@ -227,3 +227,38 @@ Errors happen very often in I/O, and a similar issue is also presented in distri
 - Very serious error occurred which has corrupted OS data, such as critical data structure.
 - Need to display error and terminate (BSoD/Kernel Panic).
 
+### Overview of an Input/Output System
+
+![[Pasted image 20211206181255.png]]
+
+### I/O and Networking
+
+![[Pasted image 20211206181452.png]]
+
+A generalized Linux structure is as follows:
+
+**User Space:**
+- Application Layer (user program)
+
+**Kernel Space:**
+- System Call Interface (API to access layer below)
+- Network Protocol/Stack (Send/Receive)
+	- Socket handling (Berkeley Socket Interface)
+- Network Device Driver (API to access device specifics)
+
+**Physical Layer**
+- Network Hardware (Physical Hardware/Network Medium)
+
+#### Intefacing With The Device Driver
+
+The Network Interface Driver has two circular queues:
+- Transmission queue (TX)
+- Receive Queue (RX)
+
+These queues provide a buffer to store packets in, recieved from or to be sent to the Network Hardware layer.
+
+If receiving packets:
+- Network hardware receives packet (if containing its MAC address)
+- DMA is used to put packet into RX buffer
+- NIC generates an interrupt (assuming packet received)
+- Network Protocol/Stack layer DMA
