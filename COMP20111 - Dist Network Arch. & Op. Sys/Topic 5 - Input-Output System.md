@@ -202,4 +202,28 @@ The above diagram represents data input with a single buffer:
 
 ![[Pasted image 20211206173500.png]]
 
-Use two buffers: the process reads
+Here, two buffers are used: the process reads/writes to one, while the OS empties/fills the other. Using the concept of double buffering for data input as an example:
+
+- One buffer can be emptied while the other is filled
+- Maximises utilisation of I/O device
+
+If the processing time is less than the transferring time, transferring data may be continuous. This can further be extended to multiple buffering; with enough buffers, continuous I/O can be always achieved.
+
+### Error Reporting
+
+Errors happen very often in I/O, and a similar issue is also presented in distributed systems. The OS itself needs to handle them, and there are several different classes of I/O error:
+
+**Programming errors:**
+- Could be trying to **write** from an **input** device or **read** to an **output** device
+- Providing invalid buffer address or invalid driver
+- Easy to handle, just return error code to parent
+
+**Actual I/O error:**
+- HW failure, such as disk error (faulty disk block)
+- Should be handled by device driver to determine what to do:
+	- Fix/mitigation strategy or if no idea, return to previous layer
+
+**OS corruption:**
+- Very serious error occurred which has corrupted OS data, such as critical data structure.
+- Need to display error and terminate (BSoD/Kernel Panic).
+
