@@ -45,8 +45,14 @@ With character devices, a stream of characters is sent or received. They are *no
 
 ![[Pasted image 20211206151541.png]]
 
-Typically when complex systems are engineered, a complex approach is taken; I/O is no different, having multiple layers for dealing with requests. Each layer will have an Application Programming Interface (API) providing access to the layer below.
+Typically, when complex systems are engineered, a complex approach is taken; I/O is no different, having multiple layers for dealing with requests. Each layer will have an Application Programming Interface (API) providing access to the layer below.
 
 #### Interrupt Handlers
 
-Interrupts are a very important part of an I/O stack, and 
+Interrupts are a very important part of an I/O stack, and are not trivial to handle, requiring several steps:
+
+1) Save registers not already saved by interrupt hardware
+2) Set up context for interrupt service procedure
+3) Set up stack for interupt service procedure
+4) Acknoweldge interrupt controller
+5) 
