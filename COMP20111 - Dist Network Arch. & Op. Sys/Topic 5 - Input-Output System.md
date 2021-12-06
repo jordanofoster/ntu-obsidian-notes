@@ -161,3 +161,13 @@ Suppose we have an example scenario in which a user process requests an 8-char s
 - An interrupt is caused for each character sent (not very efficient)
 - Additionally, the data transfer between device and memory unit is limited by CPU speed.
 
+### Direct Memory Access (DMA)
+
+![[Pasted image 20211206172503.png]]
+
+Shown above is a diagram of the operation of a DMA transfer.
+
+Although it is possible for us to access device controllers one byte at a time, it would be very slow and inefficient. Direct Memory Access solves this issue; the DMA 
+
+
+![[Understanding DMA Malware.pdf]]
