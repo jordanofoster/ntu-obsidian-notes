@@ -202,3 +202,4 @@ The above diagram represents data input with a single buffer:
 
 ![[Pasted image 20211206173500.png]]
 
+Use two buffers: the process reads
