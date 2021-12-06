@@ -64,7 +64,7 @@ Interrupts are a very important part of an I/O stack, and are not trivial to han
 9) Load new process' registers
 10) Start running the new process
 
-#### Structure of the I/O System
+### Structure of the I/O System
 
 ![[Pasted image 20211206162039.png]]
 
@@ -89,3 +89,36 @@ Interrupts are a very important part of an I/O stack, and are not trivial to han
 - Block device transfers data in groups of characters
 - Character device transfers data one character at a time
 
+#### Device Drivers
+
+![[Pasted image 20211206170347.png]]
+
+The I/O system handles the following:
+- The device(s) itself
+- The device controller(s)
+- The OS mediating the operations
+- The user process that requests the operations
+
+A device driver is used to provide detail on how the device works, and provides a standard API call for the OS to use. For each device, a different device driver would exist, as shown in the bottom part of the above diagram.
+
+![[Pasted image 20211206170530.png]]
+
+Each device has a device descriptor containing information about it, such as the following:
+
+- The device identification
+- The instructions that operate the device
+- The current status
+- The current user process (if any)
+
+This information is used by the I/O controller.
+
+##### Simplified Device Driver Behaviour
+
+The device driver would undergo the following functions:
+
+1) Check input parameters for validity, translating them to device-specific language
+2) Check if device is free, waiting or blocking the process if not.
+3) Issue commands to control device:
+	1) Write them into device controller's registers
+	2) Check after each if device is ready for next command, waiting or blocking if not.
+4) Block or wait for controlel 
