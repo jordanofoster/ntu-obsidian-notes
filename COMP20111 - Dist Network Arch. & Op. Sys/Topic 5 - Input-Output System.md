@@ -84,3 +84,8 @@ Interrupts are a very important part of an I/O stack, and are not trivial to han
 **Device controller:**
 - Hardware unit attached to the bus
 - Provides interface between computer and I/O devices using electrical signals
+
+**I/O device:**
+- Block device transfers data in groups of characters
+- Character device transfers data one character at a time
+
