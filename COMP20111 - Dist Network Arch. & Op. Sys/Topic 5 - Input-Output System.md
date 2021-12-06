@@ -249,16 +249,25 @@ A generalized Linux structure is as follows:
 **Physical Layer**
 - Network Hardware (Physical Hardware/Network Medium)
 
-#### Intefacing With The Device Driver
+#### Interfacing With The Device Driver
 
 The Network Interface Driver has two circular queues:
 - Transmission queue (TX)
 - Receive Queue (RX)
 
-These queues provide a buffer to store packets in, recieved from or to be sent to the Network Hardware layer.
+These queues provide a buffer to store packets in, received from or to be sent to the Network Hardware layer.
 
 If receiving packets:
 - Network hardware receives packet (if containing its MAC address)
 - DMA is used to put packet into RX buffer
 - NIC generates an interrupt (assuming packet received)
-- Network Protocol/Stack layer DMA
+- Network Protocol/Stack layer uses DMA to get to Kernel Space buffers.
+- Then application notified of packet
+
+If sending packets:
+- Application calls syscall
+- Write to kernel space queue (network protocol/stack)
+- Written to Network Device Driver, stored in TX
+- NIC notified to send, NIC generates interrupt to indicate packet sent
+
+![[Pasted image 20211206181903.png]]
