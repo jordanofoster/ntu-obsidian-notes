@@ -167,7 +167,23 @@ Suppose we have an example scenario in which a user process requests an 8-char s
 
 Shown above is a diagram of the operation of a DMA transfer.
 
-Although it is possible for us to access device controllers one byte at a time, it would be very slow and inefficient. Direct Memory Access solves this issue; the DMA 
+Although it is possible for us to access device controllers one byte at a time, it would be very slow and inefficient. Direct Memory Access solves this issue, with the DMA controller having access to the bus independent of the CPU.
 
+There are several registers available that can be read/written to by the CPU, such as the Memory Address Register, Byte Count Register and Control Registers. However, the privileged access DMA controllers have is a severe system vulnerability and can be easily exploited; see [[Understanding DMA Malware.pdf|"Understanding DMA Malware".]]
 
-![[Understanding DMA Malware.pdf]]
+### Buffering
+
+![[Pasted image 20211206173113.png]]
+
+A buffer is an interim memory area that holds data in transit between process' working RAM and the device itself. This helps to cope with any speed mismatch between the device, and also involves the performance of a checksum.
+
+There are a few types of buffering:
+
+**Output Buffering**
+- Output data is transferred to an area of memory called the output buffer.
+- The OS empties the buffer when full
+- The process is blocked only if it tries to force an output before the system has emptied the buffer.
+
+**Input Buffering**
+
+Input data is stored in an in
