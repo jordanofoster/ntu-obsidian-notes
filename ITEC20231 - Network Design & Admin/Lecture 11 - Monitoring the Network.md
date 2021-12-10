@@ -99,4 +99,37 @@ Naturally, not all servers run windows; a number of organizations use Unix/Linux
 
 (In summary, basically everything Windows Server can do).
 
-####
+### Monitoring the Server
+
+As stated before, the health of a server needs to be constantly monitored due to their importance within organizations. Things that are monitored include:
+- Processor usage/temperature
+- Disk performance/usage/throughput
+- Memory utilisation
+	- Page files, etc.
+- Network parameters
+
+When monitoring servers, the best practice is to start from a baseline; although this may change over time as new hardware and software is added.
+
+#### Monitoring via the Event Viewer
+
+![[Pasted image 20211210162903.png]]
+
+This is accessible via the *Administration Tools* menu, and should be looked at regularly, as part of a procedure. The event viewer can also access event logs on a remote machine.
+
+##### Event Logs
+
+- Application:
+	- About specific programs
+		- Depends on what is logged by developers
+- System:
+	- About components.
+		- Driver failure, service failure, etc.
+- Security:
+	- Entries *only* turn up if explicitly set; nothing is set up by default.
+		- Example include failed logins and attempts to access protected resources.
+
+Additionally, Domain Controllers and DNS servers have extra logs that are specific to them.
+
+##### Event Types
+
+![[Pasted image 20211210163148.png]]
