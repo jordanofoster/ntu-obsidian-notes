@@ -130,6 +130,36 @@ This is accessible via the *Administration Tools* menu, and should be looked at 
 
 Additionally, Domain Controllers and DNS servers have extra logs that are specific to them.
 
-##### Event Types
+###### Event Types
 
-![[Pasted image 20211210163148.png]]
+![[Pasted image 20211210163240.png]]
+![[Pasted image 20211210163243.png]]
+
+###### Event Properties
+
+![[Pasted image 20211210163307.png]]
+
+### Real-time monitoring
+
+On Windows, the *Task Manager* provides live real-time information:
+- Processor/Memory usage
+- Applications/processes
+- Network utilisation
+- Users connected to a system
+
+However, the task manager can only be used to view information for the local system, and has no logging capability. Even with the use of remote desktop, this makes aggregating information a chore.
+
+#### Performance Console
+
+This is a snap-in that displays real-time data; as well as allowing info to be recorded over time, and actions to be executed when trigger values are reached.
+
+By default, the *Performance Monitor* displays the following:
+- Memory
+	- Pages/second
+- Physical Disk
+	- Average disk queue length
+- Processor
+	- % Processor time
+
+Great care should be taken not to monitor too many metrics, or to observe them too often, as this generates significant overhead. On the other hand, infrequent monitoring risks 
+
