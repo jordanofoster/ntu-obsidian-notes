@@ -50,3 +50,24 @@ One factor that affects which method is used is budget (e.g. cost of sending tec
 #### Microsoft Management Console
 
 ![[Pasted image 20211210161704.png]]
+![[Pasted image 20211210161708.png]]
+
+This has already been encountered when looking at users and computers, but the MMC provides a central point of management for different objects and resources. It can be started via one of two methods; via *admin tools*, or using *mmc.exe* and including a snap-in (such as *gpedit.msc*).
+
+The MMC can also be redirected to another machine.
+
+#### Physically logging in
+
+This can obviously be inconvenient to both user and admin, but it is sometimes necessary, such as when a network card has failed.
+
+More frequently, this is done when helping a particular user, as they prefer local presence - although the cost of doing so is high.
+
+#### Remote Log in
+
+This is *much* cheaper than physically accessing a device, and generally acts as a better solution.
+
+This is achieved through the use of Remote Desktop to log into a client machine; the software is also particularly used for monitoring servers, which may be in remote locations.
+
+*Remote Desktop* uses Remote Desktop Services at the target machine, and a client program, known as *Remote Desktop Connection*, at the admin's machine.
+
+Alternatively remote administration can be done via PowerShell, with the use of `ssh` required on 
