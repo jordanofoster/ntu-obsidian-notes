@@ -70,4 +70,33 @@ This is achieved through the use of Remote Desktop to log into a client machine;
 
 *Remote Desktop* uses Remote Desktop Services at the target machine, and a client program, known as *Remote Desktop Connection*, at the admin's machine.
 
-Alternatively remote administration can be done via PowerShell, with the use of `ssh` required on 
+Alternatively, remote administration can be done via PowerShell, with the use of `ssh` required on Unix machines.
+
+It should be noted that setup is required at both ends for remote login to be possible.
+
+##### Client-side remote desktop access
+
+![[Pasted image 20211210162246.png]]
+
+Clients can simply set-up access from the system properties. By default, the *Administrator* group are granted remote access permission, though additional users can also be added.
+
+##### Remote Desktop Services/Virtual Desktop Infrastructure
+
+This was previously called *Terminal Services* in *Windows Server* versions before 2008, and allows clients to use a server as if it were their own PC.
+
+###### Configuring server-side remote desktop services
+
+![[Pasted image 20211210162455.png]]
+
+##### Remotely accessing a Unix server
+
+Naturally, not all servers run windows; a number of organizations use Unix/Linux within their workplace. These machines may be setup to provide various roles, such as:
+
+- DNS
+- Web Server
+- File Server
+- Print Server
+
+(In summary, basically everything Windows Server can do).
+
+####
