@@ -161,5 +161,13 @@ By default, the *Performance Monitor* displays the following:
 - Processor
 	- % Processor time
 
-Great care should be taken not to monitor too many metrics, or to observe them too often, as this generates significant overhead. On the other hand, infrequent monitoring risks 
+Great care should be taken not to monitor too many metrics, or to observe them too often, as this generates significant overhead. On the other hand, infrequent monitoring risks spikes in values being unrecorded.
 
+![[Pasted image 20211210163729.png]]
+
+##### Performance Logs/Alerts
+
+There are three; *Counter* logs, *Trace* logs and *Alerts:*
+- Counter logs capture stats for specified *counters* - to log for later analysis.
+- Trace logs record information about system apps when certain events occur.
+- Alerts perform actions when a *counter* reaches a specified value.
