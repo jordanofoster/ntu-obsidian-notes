@@ -21,4 +21,6 @@ Several aspects of UDP's sister protocol, TCP, add delay to network communicatio
 	- Connection establishment
 	- Tracking connection state
 	
-UDP naturally does not face these issues. In addition, the protocol's small header size reduces overhead further, and the lack of congestion control means that UDP's only limits on data-rate are those imposed by the layers below it. This makes it naturally suitable for situations where data needs to reach another system q
+UDP naturally does not face these issues. In addition, the protocol's small header size reduces overhead further, and the lack of congestion control means that UDP's only limits on data-rate are those imposed by the layers below it. This makes it naturally suitable for situations where data needs to reach another system quickly, but not completely.
+
+A good way to think about this is to consider telephony, which itself uses UDP - if voice data comes through at a low quality (as opposed to simply cutting out), a user on the other side will be able to subconsciously use hueristics to determine what was said with a reasonable amount of accuracy. This concept of 'close enough' can be adapted to fit many modern usecases for the protocol.
