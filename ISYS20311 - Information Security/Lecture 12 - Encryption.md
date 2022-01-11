@@ -12,4 +12,7 @@ These are historical [cryptographic primitives](https://en.wikipedia.org/wiki/Cr
 	- Shift all letters in the message by $x$ positions in the alphabet
 - Vigenere cipher
 	- This is a rotating St Cyr cipher based on the letters of a keyword.
-		- For example: CAB
+		- For example, using keyword *CAB:*
+			- Shift the letters by 3(C), 1(A), 2(B), 3(C), 1(A), 2(B)...
+- Hiding messages in plain sight ([[Lecture 3 - Cyber Attacks#]])
+	- [Steganography](https://en.wikipedia.org/wiki/Steganography) 
