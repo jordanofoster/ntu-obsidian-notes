@@ -7,6 +7,10 @@ The transport layer provides *logical communication* between application-layer p
 
 More than one transportation layer protocol is available to applications, with the main two being TCP and UDP.
 
+A good way to think of things is that the *network layer* provides *logical comunication* between *hosts,* whereas the *transport layer* builds upon this by allowing logical communication *between processes* on each host. An analogy involving a household is shown below:
+
+![[Pasted image 20220111233128.png]]
+
 ## UDP
 UDP is a very barebones Internet transport protocol that attempts to be a best effort service; UDP segments may be lost or delivered out-of-order to the application. The protocol is *connectionless*, meaning that no handshaking occurs between the sender and receiver, and each UDP segment is treated independently of others (i.e. there is no packet numbering).
 
@@ -107,4 +111,12 @@ The sender can have up to $N$ unacknowledged packets in the pipeline. The receiv
 
 ## Summarized Notes:
 
-Transport layer protocols provide a form of *logical communication* between application processes running on different hosts.
+- Transport layer protocols provide a form of *logical communication* between application processes running on different hosts. ![1]
+- TCP provides reliable, ordered delivery of packets. It does this using the following:
+	- Congestion control
+	- Flow control
+	- Mandatory connection setup
+- UDP is unreliable and unordered, but acts as a low-overhead extension of the IP stack for high-bitrate purposes.
+- TCP is a *connection-oriented* protocol; UDP is *connectionless.*
+
+- For *Go-back-N* acknowledgement scheme:
