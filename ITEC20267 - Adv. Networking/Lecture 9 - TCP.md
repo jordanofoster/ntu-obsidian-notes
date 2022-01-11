@@ -1,7 +1,11 @@
 # TCP
 ## Transport Layer
-The transport layer provides *logical communication* between app processes running on different hosts. Transportation protocols themselves run on end systems as two sides:
+The transport layer provides *logical communication* between application-layer processes running on different hosts. Transportation protocols themselves run on end systems as two sides:
 
-- On the sending side, the protocol breaks app messages into *segments* and passes them onto the network layer.
-- On the receiving side, segments are reassembled into messages and 
+- On the sending side, the protocol breaks application messages into *segments* and passes them onto the network layer.
+- On the receiving side, segments are reassembled into messages and passed back to the application layer.
 
+More than one transportation layer protocol is available to applications, with the main two being TCP and UDP.
+
+## UDP
+UDP is a very barebones Internet transport protocol that attempts to be a best effort service; UDP segments may be lost or delivered out-of-order to the application. The protocol is *connectionless*, meaning that no handshaking 
