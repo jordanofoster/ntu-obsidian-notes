@@ -8,4 +8,6 @@ The transport layer provides *logical communication* between application-layer p
 More than one transportation layer protocol is available to applications, with the main two being TCP and UDP.
 
 ## UDP
-UDP is a very barebones Internet transport protocol that attempts to be a best effort service; UDP segments may be lost or delivered out-of-order to the application. The protocol is *connectionless*, meaning that no handshaking 
+UDP is a very barebones Internet transport protocol that attempts to be a best effort service; UDP segments may be lost or delivered out-of-order to the application. The protocol is *connectionless*, meaning that no handshaking occurs between the sender and receiver, and each UDP segment is treated independently of others (i.e. there is no packet numbering).
+
+UDP is typically used for applications where bandwidth is limited, be it by the amount of data transferred or the lack of quality in the connection itself. This includes things such as streaming/multimedia apps (which can compensate for packet loss - but not for low data rates), 
