@@ -10,4 +10,6 @@ More than one transportation layer protocol is available to applications, with t
 ## UDP
 UDP is a very barebones Internet transport protocol that attempts to be a best effort service; UDP segments may be lost or delivered out-of-order to the application. The protocol is *connectionless*, meaning that no handshaking occurs between the sender and receiver, and each UDP segment is treated independently of others (i.e. there is no packet numbering).
 
-UDP is typically used for applications where bandwidth is limited, be it by the amount of data transferred or the lack of quality in the connection itself. This includes things such as streaming/multimedia apps (which can compensate for packet loss - but not for low data rates), 
+UDP is typically used for applications where bandwidth is limited, be it by the amount of data transferred or the lack of quality in the connection itself. This includes things such as streaming/multimedia apps (which can compensate for packet loss - but not for low data rates), and network-discovery protocols such as DNS and SNMP. The protocol itself lacks any reliability measures, and as such they must be implemented at the application layer (such as error recovery).
+
+### UDP Segment Format
