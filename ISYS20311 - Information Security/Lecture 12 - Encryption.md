@@ -1,7 +1,7 @@
 # Encryption
 
 ## Simple Ciphers
-These are historical [cryptographic primitives](https://en.wikipedia.org/wiki/Cryptographic_primitive) that have been subject to thorough [cryptanalysis](https://en.wikipedia.org/wiki/Cryptanalysis) that renders their modern use ill-advised, but they are mentioned here to form a basic understanding of the concept:
+These are historical [cryptographic primitives](https://en.wikipedia.org/wiki/Cryptographic_primitive) that have mostly been subject to thorough [cryptanalysis](https://en.wikipedia.org/wiki/Cryptanalysis) that renders their modern use ill-advised, but they are mentioned here to form a basic understanding of the concept:
 
 - Caesar Cipher
 	- Shift all letters in the message by 3 positions in the alphabet
@@ -14,5 +14,10 @@ These are historical [cryptographic primitives](https://en.wikipedia.org/wiki/Cr
 	- This is a rotating St Cyr cipher based on the letters of a keyword.
 		- For example, using keyword *CAB:*
 			- Shift the letters by 3(C), 1(A), 2(B), 3(C), 1(A), 2(B)...
-- Hiding messages in plain sight ([[Lecture 3 - Cyber Attacks#]])
-	- [Steganography](https://en.wikipedia.org/wiki/Steganography) 
+
+### Hiding in plain sight
+Alternatively (and, done right, this is still a strong practice):
+- Hiding messages in plain sight ([security through obscurity](https://en.wikipedia.org/wiki/Security_through_obscurity))
+	- [Steganography](https://en.wikipedia.org/wiki/Steganography), word coding and other [COMSEC](https://en.wikipedia.org/wiki/Communications_security) practices
+
+An example of 
