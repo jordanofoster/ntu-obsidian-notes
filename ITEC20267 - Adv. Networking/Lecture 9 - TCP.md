@@ -28,6 +28,11 @@ A good way to think about this is to consider telephony, which itself uses UDP -
 ## TCP Services
 
 TCP as a protocol provides the following services:
-- Connection Orientation: as applications must request a connection *to* a destination and then use it to transfer data.
-- Point-to-Point communication, as each TCP connection has *two* endpoints.
-- 
+- Connection Orientation - applications must request a connection *to* a destination and then use it to transfer data.
+- Point-to-Point communication - as each TCP connection has *two* endpoints.
+- Complete reliability - TCP guarantees that data sent is delivered uncorrupted and in order.
+- Full Duplex Communication - data flows in either direction and may be sent at any time.
+	- TCP can buffer outgoing and incoming data in both directions.
+- Stream Interface - data is sent as an uninterpreted continuous sequence of octets along the connection. TCP does not keep records, and there is no guarantee that data is received in the same packet length as it is sent.
+- Reliable Connection Startup - TCP requires that 2 applications must agree to a connection being formed before it is actually created.
+	- Duplicate packets used in previous connections are not valid resp
