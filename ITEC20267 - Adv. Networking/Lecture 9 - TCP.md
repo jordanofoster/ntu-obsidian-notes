@@ -122,4 +122,6 @@ The sender can have up to $N$ unacknowledged packets in the pipeline. The receiv
 - For the *Go-back-N* acknowledgement scheme [[Lecture 9 - TCP#Go-back-N|(4)]]:
 	- The sender can have up to $N$ unacknowledged packets in the pipeline.
 	- The receiver only sends *cumulative acknowledgements.*
-- For the *Selective Repeat* acknowledgement scheme [[Lecture 9 - TCP#Selective Repeat]]
+- For the *Selective Repeat* acknowledgement scheme [[Lecture 9 - TCP#Selective Repeat|(5)]]:
+	- The sender can have up to $N$ unacknowledged packets in the pipeline.
+	- The receiver sends *individual acknowledgements* for each packet.
