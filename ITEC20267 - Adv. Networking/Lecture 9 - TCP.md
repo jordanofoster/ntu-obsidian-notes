@@ -61,3 +61,19 @@ $EstimatedRT = (1 - \alpha) \times EstimatedRTT + \alpha \times SampleRTT$
 This represents an exponential *weighted* moving average. The influence of the past sample thereforedecreases exponentially fast; typically, $a = 0.125$.
 
 ![[Pasted image 20220111222542.png]]
+
+###### Comparison of Retransmission Times
+![[Pasted image 20220111231413.png]]
+
+## Buffers, Flow Controls and TCP Windows
+![[Pasted image 20220111231430.png]]
+
+## TCP Three-Way Handshakes
+![[Pasted image 20220111231504.png]]
+Three-way handshakes are used to close a connection; ACKs are sent in each direction to guarantee that all data has arrived before the connection is closed.
+
+
+## TCP Segment Header Format
+![[Pasted image 20220111231611.png]]
+
+TCP uses a single format for all messages; TCP connections themselves contains 2 streams of data. The *acknowledgement number* and *window* header values refer to incoming data, wheree
