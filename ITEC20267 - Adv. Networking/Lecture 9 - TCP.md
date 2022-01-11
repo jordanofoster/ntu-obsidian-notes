@@ -90,3 +90,21 @@ Pipelining refers to when the sender allows multiple packets to be sent without 
 ![[Pasted image 20220111232120.png]]
 There are two generic forms of pipelining protocols; *go-back-N* and *selective repeat*.
 
+#### Example of pipelining increasing efficiency
+![[Pasted image 20220111232243.png]]
+
+#### Pipelining Acknowledgement Schemes
+
+##### Go-back-N
+
+With this, the sender can have up to $N$ unacknowleged packets in the pipeline; the receiver only sends a *cumulative acknowledgement* for these, instead of an acknowledgement per-packet. If there is a gap in the pipeline, the cumulative acknowledgement is split into two for every unreceived stream of packets.
+
+The sender keeps a timer for the oldest unacknowleged packet; when expired, *all* unacknowledged packets are retransmitted.
+
+##### Selective Repeat
+
+The sender can have up to $N$ unacknowledged packets in the pipeline. The receiver will send an *individual* acknowledgement for each packet. The sender maintains an individual timer for each unacknowleged packet; when this expires, *that specific packet* is retransmitted.
+
+## Summarized Notes:
+
+Transport layer protocols provide a form of *logical communication* between application processes running on different hosts.
