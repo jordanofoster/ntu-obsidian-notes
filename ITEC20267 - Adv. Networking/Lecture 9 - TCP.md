@@ -76,4 +76,17 @@ Three-way handshakes are used to close a connection; ACKs are sent in each direc
 ## TCP Segment Header Format
 ![[Pasted image 20220111231611.png]]
 
-TCP uses a single format for all messages; TCP connections themselves contains 2 streams of data. The *acknowledgement number* and *window* header values refer to incoming data, wheree
+TCP uses a single format for all messages; TCP connections themselves contains 2 streams of data. The *acknowledgement number* and *window* header values refer to incoming data, whereas the *sequence number* header value refers to outgoing data.
+
+### Principles of reliable data transfer
+
+This is important at the application, transport and link layers of the TCP/IP stack.
+![[Pasted image 20220111231748.png]]
+The characteristics of an unreliable channel will determine the complexity of the reliable data transfer protocol (`rdt`).
+
+#### Pipelined Protocols
+
+Pipelining refers to when the sender allows multiple packets to be sent without acknowledgement after each transmission. This involves a range of sequence numbers being increased, and buffering on the sender and/or receiver's end. 
+![[Pasted image 20220111232120.png]]
+There are two generic forms of pipelining protocols; *go-back-N* and *selective repeat*.
+
