@@ -111,12 +111,15 @@ The sender can have up to $N$ unacknowledged packets in the pipeline. The receiv
 
 ## Summarized Notes:
 
-- Transport layer protocols provide a form of *logical communication* between application processes running on different hosts. ![1]
-- TCP provides reliable, ordered delivery of packets. It does this using the following:
+- Transport layer protocols provide a form of *logical communication* between application processes running on different hosts. [[Lecture 9 - TCP#Transport Layer|(1)]]
+- TCP provides reliable, ordered delivery of packets. It does this using the following [[Lecture 9 - TCP#TCP Services|(2)]]:
 	- Congestion control
 	- Flow control
-	- Mandatory connection setup
-- UDP is unreliable and unordered, but acts as a low-overhead extension of the IP stack for high-bitrate purposes.
+	- Mandatory connection setup 
+- UDP is unreliable and unordered, but acts as a low-overhead extension of the IP stack for high-bitrate purposes. [[Lecture 9 - TCP#UDP|(3)]]
 - TCP is a *connection-oriented* protocol; UDP is *connectionless.*
 
-- For *Go-back-N* acknowledgement scheme:
+- For the *Go-back-N* acknowledgement scheme [[Lecture 9 - TCP#Go-back-N|(4)]]:
+	- The sender can have up to $N$ unacknowledged packets in the pipeline.
+	- The receiver only sends *cumulative acknowledgements.*
+- For the *Selective Repeat* acknowledgement scheme [[Lecture 9 - TCP#Selective Repeat]]
