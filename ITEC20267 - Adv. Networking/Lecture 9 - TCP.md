@@ -35,4 +35,23 @@ TCP as a protocol provides the following services:
 	- TCP can buffer outgoing and incoming data in both directions.
 - Stream Interface - data is sent as an uninterpreted continuous sequence of octets along the connection. TCP does not keep records, and there is no guarantee that data is received in the same packet length as it is sent.
 - Reliable Connection Startup - TCP requires that 2 applications must agree to a connection being formed before it is actually created.
-	- Duplicate packets used in previous connections are not valid resp
+	- Duplicate packets used in previous connections are not valid responses, nor will they otherwise interfere with the new connection.
+- Graceful Connection Shutdown - An application program can open a connection, send arbritrary amounts of data, and then request that it be shut down. TCP guarantees that all data is delivered reliably before a connection can be closed.
+
+### End-to-End TCP Service
+
+![[Pasted image 20220111221951.png]]
+
+TCP provides connections directly from an application on one computer to an application on a remote computer; these are virtual, as they are achieved in software. The TCP protocol itself uses the IP stack to carry messages.
+
+#### Packet Loss and Retransmission
+
+![[Pasted image 20220111222019.png]]
+
+##### Adaptive Retransmission
+TCP estimates the *round-trip* delay for each active connection by measuring the time needed for a response to be received. The protocol also records the time that a message was sent.
+
+When the response arrives, a new estimate for the round-trip delay is calculated, via a statistical function that produces a weighted average and variance, and uses a linear combination of the estimated mean and variance as a value for retransmission.
+
+###### Benefits of Adaptive Retransmission
+TCP estimates the 
