@@ -89,4 +89,15 @@ BSA needs to be installed manually for Windows 7/8.1/10.
 	- For Service Packs, installation is possible via CD or network archive file.
 	- Hotfixes can also be chained together.
 - Slipstream updating is an older method that involves adding Service Packs/hotfixes as part of the installation process.
-- [[]]
+- [[Lecture 10 - Managing the Network#Managing the Network|Group Policy]] can be deployed to automate Service Pack inclusion.
+- Finally, the Windows Server Update Service (WSUS) can be used.
+
+### Group Policy Objects (GPOs)
+[[Lecture 10 - Managing the Network#Group Policy Objects GPO|Group Policy Objects have been covered in Lecture 10.]]
+
+#### GPO Editor
+![[Pasted image 20220112013037.png]]
+Additional screenshot showing how the [[Lecture 10 - Managing the Network#Group Policy Management Console|GPO Editor]] can be used to automate distribution of update packages.
+
+### Windows Server Update Services (WSUS)
+This allow
