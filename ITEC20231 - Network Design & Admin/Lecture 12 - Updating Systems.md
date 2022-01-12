@@ -9,12 +9,12 @@ Servers support many users; so update procedures need to be robust. Workstations
 
 In particular, sysadmins must ask themselves this question; do changes need to be done for *everyone*, or just a few users?
 
-### User Notifications
+## User Notifications
 ![[Pasted image 20220112010507.png]]
 This method leaves updating mostly to the user; naturally, most will get annoyed, and will never set aside the time to do so themselves (users only use computers when they *need* them to work right then and there.)
 
-### Types of Changes (Microsoft's Terminology)
-#### Traditional Windows Systems (2k, XP, Vista, 7, 8/8.1)
+## Types of Changes (Microsoft's Terminology)
+### Traditional Windows Systems (2k, XP, Vista, 7, 8/8.1)
 - Recommended/Optional Updates
 	- "*A minor revision to a software product, usually intended to address specific performance issues rather than add new features.*"
 - Critical Updates
@@ -25,10 +25,10 @@ This method leaves updating mostly to the user; naturally, most will get annoyed
 - Hotfix
 	- These address a very specific issue.
 
- #### Windows 10/11
+ ### Windows 10/11
  These systems have two release types; feature updates that add new functionality, and quality updates that provide security and reliability fixes.
 
- ##### Servicing Channels
+ #### Servicing Channels
 
  These are the first way to separate users into deployment groups for feature and quality updates. There are currently *three* release channels for Windows clients.
  - The *General Availability Channel,* which receives feature updates as soon as available.
@@ -47,4 +47,26 @@ Tarballs can explicitly be pulled off a server and installed by a sysadmin - thi
 
 Packages allow system updates and changes to be recoverable, as they take account of local configuration changes (and do not overwrite this information), allowing a rollback to previous state if required- higher-level package managers such as `yum` and `apt` make the rollback process even easier.
 
-###
+## An Example of Service Pack Documentation
+![[Pasted image 20220112011743.png]]
+(Extra notes from lecture?)
+
+### Service Pack Contents
+![[Pasted image 20220112011804.png]]
+
+### Windows 10 versions by servicing option
+![[Pasted image 20220112011824.png]]
+
+### Windows Support/Knowledge Base
+
+![[Pasted image 20220112011839.png]]
+
+### Windows Server versions by servicing option
+![[Pasted image 20220112011902.png]]
+
+## When to update?
+
+For security vulnerabilities, as soon as possible. Hotfixes are only necessary when the issue addressed becomes a problem. Service Packs/Version updates should be installed fairly soon after release, but a small wait is in order to see if the updates have any major issues.
+
+- Service packs offer to backup all files at the start of the installation to `$ntservicepackuninstall$`, allowing rollback if the update causes new problems;
+	- The issue is detecting those problems - does the sysadmin have a regression suite to check this, or are they just waiting f
