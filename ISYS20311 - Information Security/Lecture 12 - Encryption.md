@@ -109,5 +109,15 @@ Using our private key, we can *sign* a *hash/message digest* to form a *digital 
 
 Malicious third parties can try and get in between two communicating parties, allowing them to substitute their own key into the exchange that *spoofs* the identity of one of the genuine parties.
 
-As a result, mechanisms need to exist to verify keys against this 
+As a result, mechanisms need to exist to verify keys against this attack vector; this is the job of certificate authorities who sign keys with their *own* private key to prove their origin, and is referred to as Public Key Infrastructure (PKI).
+
+## Popular Encryption Algorithms
+
+### Triple DES
+
+The DES (Data Encryption Standard) was an old standard that used a 56-bit key. Due to the short keylength and comparatively weak primitive, this can be now cracked in hours; despite this, it can still be found occasionally, such as on some smartcards.
+
+*Triple* DES involves running the DES algorithm three times, a process known as [multiple encryption](https://en.wikipedia.org/wiki/Multiple_encryption). This results in a 168-bit encryption output, but has a weakness; if keys 1 and 3 are the same, it is reduced to 112-bit strength.
+
+The algorithm is slow because of the triple run, and uses short block lengths to compensate; regardless, it is being phased out for better algorithms.
 
