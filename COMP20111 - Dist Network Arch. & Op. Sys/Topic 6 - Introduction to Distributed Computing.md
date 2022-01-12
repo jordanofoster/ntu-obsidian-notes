@@ -88,4 +88,27 @@ The image above demonstrates a few examples of *tightly coupled* architectures (
 
 Multi-computers can be connected in a number of ways, as seen above. There are some key things to consider:
 
-- *N
+- *Nodes* (**dots**) in topologies represent *switches* - or to be more exact, CPUs connected to switches.
+- Each node can have a number of links to other nodes (*fanout*).
+- The *diameter* of an interconnected network represetns the largest number of links that need to be traversed between the two most distant nodes. The *lower the amount of hops, the better.*
+- The maximum bandwidth between nodes must also be considered.
+
+## Other Distributed Systems: Internet of Things
+
+Complex systems and products are now integrated into the home and office. The Internet of Things (IoT) is an extension of *Pervasive Computing* in which small devices are IP-enabled and connectible via internet.
+
+As a result, we can start to integrate computing resources into devices to enable new things that we had not considered before, such as:
+- Intelligent spaces (the environment changes and adapts based on our interactions with it)
+- Using devices to help the elderly, or provide general healthcare
+- And many more uses.
+
+## Other issues to consider
+
+There are even more issues we must consider when building robust distributed systems, such as:
+
+- *Infrastructure Types*
+	- Centralised/Decentralised computing
+	- Cloud, Cluster & Grid-based computing
+	- Plus physical networking and throughput, optimisted routing, etc.
+- *Research Challenges*
+	- Heterogeneity, Openness, Security,
