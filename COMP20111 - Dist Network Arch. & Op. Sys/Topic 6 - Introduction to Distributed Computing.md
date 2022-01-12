@@ -152,3 +152,18 @@ Using coursework 1 as an example:
 
 ![[Pasted image 20220112115331.png]]
 
+##### Edit-compile-debug cycle
+
+![[Pasted image 20220112115626.png]]
+
+When programming for complex systems, a program cannot work on the first build. We instead start by writing the code (*edit phase*), compiling it (*compile phase*), use the outcome to determine code/runtime errors (*debugging phase*) and then repeat the cycle until the program is correct.
+
+##### What is a compiler?
+
+![[Pasted image 20220112115714.png]]
+
+Most programs, such as C, C++ and Java, will use one of these to *compile* source code (something *you* understand but the system does not) into something the processor can understand.
+
+### Object-Oriented Programming (OOP)
+
+Java is an Object-Oriented language. This is similar to C++, C# and Python. In real life, things are looked at as objects; a tabl
