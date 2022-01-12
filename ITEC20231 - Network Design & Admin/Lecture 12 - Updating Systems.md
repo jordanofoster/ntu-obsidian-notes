@@ -100,4 +100,28 @@ BSA needs to be installed manually for Windows 7/8.1/10.
 Additional screenshot showing how the [[Lecture 10 - Managing the Network#Group Policy Management Console|GPO Editor]] can be used to automate distribution of update packages.
 
 ### Windows Server Update Services (WSUS)
-This allow
+Allowing workstations to automatically update from the Microsoft website can cause a few problems:
+- Sysadmins may not wish for all updates to be included
+- Internet traffic could be substantial
+- Users may get irritated by machines requiring a restart.
+
+The WSUS reduces these problems by allowing sysadmins more control over the update process.
+
+#### WSUS Architecture Overview
+![[Pasted image 20220112013338.png]]
+
+##### Server-Side Architecture
+![[Pasted image 20220112013353.png]]
+##### Client-Side Architecture 
+![[Pasted image 20220112013428.png]]
+
+### Updating Linux via Ubuntu
+This can be done either with `apt-get update` or the GUI frontend of *Software Updater:*
+![[Pasted image 20220112013618.png]]
+
+#### High-Level Package Management Systems for Linux
+
+As with windows, tools are needed for the update process, including:
+- The simplification of locating and downloading packages
+- Automation of updates/upgrades
+- 
