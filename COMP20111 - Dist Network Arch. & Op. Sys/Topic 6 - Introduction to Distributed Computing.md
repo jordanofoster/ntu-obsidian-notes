@@ -166,4 +166,24 @@ Most programs, such as C, C++ and Java, will use one of these to *compile* sourc
 
 ### Object-Oriented Programming (OOP)
 
-Java is an Object-Oriented language. This is similar to C++, C# and Python. In real life, things are looked at as objects; a tabl
+Java is an Object-Oriented language. This is similar to C++, C# and Python. In real life, things are looked at as objects; when thought about, a *table* is deconstructed into its constituent parts - namely four table legs and a single tabletop.
+
+OOP can be thought about in a similar sense, as smaller units or objects are used to describe the state and behaviour of a parent object.
+
+#### Classes
+
+Classes provide a blueprint of what interactions (behaviour) and fields (states) an object can offer. Classes are typically composed of the following:
+
+![[Pasted image 20220112120041.png]]
+
+Data stored in a class should only be accessible by methods defined within it.
+
+#### Classes vs. Objects
+
+[[Topic 6 - Introduction to Distributed Computing#Classes|As stated prior,]] classes provide blueprints. When considering objects in real life, they also contain information regarding its characteristics;
+
+To provide an example, cars have a class (the way it is created/designed) and a state (the details about the car).
+
+![[Pasted image 20220112120348.png]]
+
+Using the above image
