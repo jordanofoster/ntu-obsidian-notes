@@ -63,4 +63,29 @@ Security is naturally a large concern during this process, as without necessary 
 
 ## Design issues for building large-scale computing clusters
 
-There are a number of these to consider when creating a High Performance Cluster (HPC) or 
+There are a number of these to consider when creating a High Performance Cluster (HPC) or mainframe. They are as follows:
+1) Does this follow a mainframe design (with few processors but high bandwidth I/O), or is it built out of lots of smaller computers?
+	- Which architecture (Mainframe or HPC) is best to use must be considered.
+2) Are machines based on *multi-processor* or *multi-computer* architectures?
+3) Which networking topology is used to link everything together?
+4) How do we pass information between each component of the system?
+5) How do we logically and physically organise and control system resources?
+6) Do we use shared memory systems?
+7) Do we use shared file systems?
+8) What security issues must we consider?
+
+Alongside these there are many more considerations to make.
+
+## Types of Parallel Computer Architectures
+
+![[Pasted image 20220112113653.png]]
+
+The image above demonstrates a few examples of *tightly coupled* architectures (with on-chip parallelism, being *multi-processor*) and *loosely coupled* (*multi-computer*) systems.
+
+### Multi-computer Topologies
+
+![[Pasted image 20220112113823.png]] ![[Pasted image 20220112113827.png]]
+
+Multi-computers can be connected in a number of ways, as seen above. There are some key things to consider:
+
+- *N
