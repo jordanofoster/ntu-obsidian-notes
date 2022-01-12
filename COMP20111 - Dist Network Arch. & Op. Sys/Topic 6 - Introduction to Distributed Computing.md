@@ -126,13 +126,29 @@ There are even more issues we must consider when building robust distributed sys
 
 ## Programming Distributed Systems
 
+### Typical, Single-system Programming
 ![[Pasted image 20220112114707.png]]
 
-When designing systems to run on a single machines, all functionality is considered to be offered as part of a single product; all functionality is implemented in one or more programs, and all will be running on one machine. This can be complex, but is generally fairly straightforward, as the following is handled:
+When designing systems to run on a single machines, all functionality is considered to be offered as part of a single product; all functionality is implemented in one or more programs, and all will be running on one machine. This can be complex, but is generally fairly straightforward - with these considerations:
 
 - All elements of the program are stored/executed on the local machine
 - The program is stored/executed within a single addressable space
 - The program might have access to other CPUs on the local machine
-- 
+- Might be multi-threaded, and therefore requiring knowledge on concurrency and synchronisation
+- Program might have to access network
+- And typically will have a GUI/text interface.
 
+### Distributed Programming
+
+When designing a distributed system, multiple computers will be used, and thus functionality must be spread over different machines, by dividing up aspects of the software into different programs (running on different machines) to provide the *overall* desired functionality.
+
+Instead of calling methods, we use a messaging system to get other machines to do something, and generally distributed programs do not have a user interface (excluding occasaionally on a head node).
+
+Using coursework 1 as an example:
+
+![[Pasted image 20220112115228.png]]
+
+#### Java Crash Course - JDK, JRE & JVM
+
+![[Pasted image 20220112115331.png]]
 
