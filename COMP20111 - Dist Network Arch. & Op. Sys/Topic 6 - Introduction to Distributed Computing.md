@@ -186,4 +186,19 @@ To provide an example, cars have a class (the way it is created/designed) and a 
 
 ![[Pasted image 20220112120348.png]]
 
-Using the above image
+Using the above image as an example, both cars clearly have different details (and thus different states). This includes but is not limited to:
+
+- Colour (Green vs. Blue)
+- Decals (Stripes vs. Flames)
+- Type (Racecar vs. Hotrod)
+- Chassis
+- Engine
+- Wheels
+- Seats (1 vs. 2(?))
+- Entry method (climb-in vs. open-door)
+
+To summarise, objects are an *instance* of a class.
+
+#### Fields
+
+Classes provide methods to define their behaviour 
