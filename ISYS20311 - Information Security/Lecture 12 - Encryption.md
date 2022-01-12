@@ -121,3 +121,14 @@ The DES (Data Encryption Standard) was an old standard that used a 56-bit key. D
 
 The algorithm is slow because of the triple run, and uses short block lengths to compensate; regardless, it is being phased out for better algorithms.
 
+### AES
+This refers to the *Advanced Encryption Standard*, which has a key size of 128 bits. AES, being a victor of a cryptography competition, is used by the US government for classified information, alongside many commercial/domestic software and hardware products.
+
+AES is a block cipher, meaning plaintext is encrypted block-by-block (instead of bit-by-bit). It also has *rounds* of encryption; it will encrypt the plaintext anywhere from 10-14 times. It should be noted that AES is a symmetric technique.
+
+### TwoFish
+TwoFish is similar to AES, in that it is symmetric and block-based; however, it uses more rounds of encryption (*16*). Blocklengths are 128-256 bit, and the algorithm is less computationally expensive than AES, making it good for small hardware, such as SIM cards.
+
+### RSA
+
+RSA is an asymmetric algorithm, meaning that a public and private key are used. RSA is designed to be used on a network that is known to be insecure, and uses the computational infeasibility of calculating the
