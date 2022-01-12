@@ -136,8 +136,18 @@ RSA is an asymmetric algorithm, meaning that a public and private key are used. 
 RSA keys are generally 1024-2048 bits long; 1024 was considered secure until recently, but now 2048-bit keys are recommended.
 
 ## Quantum Computing
-![[Pasted image 20220112003944.png]]
 
-The advent of quantum physics applied to the field of computing brings about great leaps in power for certain applications; included in these capabilities is an increased ability to break codes, and as a result, new, stronger cryptographic primitives are required, as seen above.
+The advent of quantum physics applied to the field of computing brings about great leaps in power for certain applications; included in these capabilities is an increased ability to break codes, and as a result, new, stronger cryptographic primitives ([[Lecture 12 - Encryption#Types of Cryptography|see below]]) are required, as seen above.
 
 The video linked at the [[Lecture 12 - Encryption|start of this document]] explains in greater detail, from 3:50-7:40.
+
+### Types of Cryptography.
+
+![[Pasted image 20220112003944.png]]
+To summarize the above poster:
+
+- The best encryption now is lattice-based, with *500* dimensional lattices (and having to find the nearest node of those.)
+- This is *still under academic debate, however:*
+	- Researchers at GCHQ recommended against using *Soliloquy* - a lattice-based technique they had secretly invented - because it could be cracked.
+	- Subsequent cryptanalysis suggested that Soliloquy had a flaw, in that it translated the results of the lattice into a single short vector, for purposes of efficiency.
+	- Encryption schemes based on generic ideal lattices, such as *Ring-LWE* and *NTRU* are still thought to be secure - even if less efficient.
