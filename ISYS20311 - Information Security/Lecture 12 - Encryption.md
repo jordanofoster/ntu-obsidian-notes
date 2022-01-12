@@ -131,4 +131,13 @@ TwoFish is similar to AES, in that it is symmetric and block-based; however, it 
 
 ### RSA
 
-RSA is an asymmetric algorithm, meaning that a public and private key are used. RSA is designed to be used on a network that is known to be insecure, and uses the computational infeasibility of calculating the
+RSA is an asymmetric algorithm, meaning that a public and private key are used. RSA is designed to be used on a network that is known to be insecure, and uses the difficulty of factoring the product of two *large* prime numbers as its cryptographic primitive (known as the [*factoring problem.*](https://en.wikipedia.org/wiki/Integer_factorization#Difficulty_and_complexity))
+
+RSA keys are generally 1024-2048 bits long; 1024 was considered secure until recently, but now 2048-bit keys are recommended.
+
+## Quantum Computing
+![[Pasted image 20220112003944.png]]
+
+The advent of quantum physics applied to the field of computing brings about great leaps in power for certain applications; included in these capabilities is an increased ability to break codes, and as a result, new, stronger cryptographic primitives are required, as seen above.
+
+The video linked at the [[Lecture 12 - Encryption|start of this document]] explains in greater detail, from 3:50-7:40.
