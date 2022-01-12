@@ -111,4 +111,28 @@ There are even more issues we must consider when building robust distributed sys
 	- Cloud, Cluster & Grid-based computing
 	- Plus physical networking and throughput, optimisted routing, etc.
 - *Research Challenges*
-	- Heterogeneity, Openness, Security,
+	- Heterogeneity, Openness, Security, Scalability/Load Balancing, Failure Handling, Concurrency, etc.
+- *Models* (Interaction, Failure, Security)
+- *Messaging systems* and *decentralised coordination* and *IPC*
+- File and Memory Systems
+- *Clocks* and *synchronisation,* and the methods/algorithms for achieving this
+- *Coordination* & *distributed* synchronisation methods/algorithms
+- *Scheduling strategies* and methods
+- *Virtualisation,* including principles, types, and hypervisor technology
+- *Designing* effective software solutions
+- *Data,* *Storage* and *Security*
+	- The latter including *storage, transmission, protection and use*
+- Programming distributed systems (using Java)
+
+## Programming Distributed Systems
+
+![[Pasted image 20220112114707.png]]
+
+When designing systems to run on a single machines, all functionality is considered to be offered as part of a single product; all functionality is implemented in one or more programs, and all will be running on one machine. This can be complex, but is generally fairly straightforward, as the following is handled:
+
+- All elements of the program are stored/executed on the local machine
+- The program is stored/executed within a single addressable space
+- The program might have access to other CPUs on the local machine
+- 
+
+
