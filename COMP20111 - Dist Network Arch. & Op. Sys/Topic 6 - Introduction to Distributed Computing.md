@@ -300,4 +300,30 @@ When a new class is created (using below as an example), a class can be defined 
 
 ### Designing Class Diagrams
 
-Before we jump in and create a clas
+Before we jump in and create a class, we can thing about its states and behaviours:
+
+![[Pasted image 20220112124502.png]]
+
+#### Collaboration between classes
+
+Classes can be associated with one another, showing collaboration between them. In the diagram below, a *course* "knows" about the *student,* but the *student* doesn't know about the course:
+
+![[Pasted image 20220112124607.png]]
+
+Naturally, courses do not normally have one student. As a result, multiplicity must be introduced to see how many are linked. In the case of a course, there could be lots of students, so we represent this as seen below:
+
+![[Pasted image 20220112124651.png]]
+
+![[Pasted image 20220112124717.png]]
+
+![[Pasted image 20220112124724.png]]
+
+![[Pasted image 20220112124732.png]]
+
+## Language Syntax: Backus-Naur Form (BNF)
+
+Java, like other languages, has a syntax - which dictates what words and operators are used to tell the computer to do something (equivalent to the language's grammar).
+
+These instructions can be stated in Backus-Naur Form, which started being used in the 50s/60s in Computer Science (although it was first proposed in the 30s).
+
+An example of the Java language syntax expressed in BNF can be found []
