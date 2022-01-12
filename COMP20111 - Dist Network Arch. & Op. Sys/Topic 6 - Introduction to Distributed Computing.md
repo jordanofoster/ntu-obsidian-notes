@@ -209,6 +209,25 @@ Fields have an associated data type, and can be initialised with a value when de
 
 #### Constructors
 
-All class
+All classes require a construtor, be it explicitly or implicitly defined. The method for the constructor has to have the same name as the class' name, and it is called by default when creating an object, being used to initialise fields.
 
+![[Pasted image 20220112122514.png]]
+
+#### Access Modifiers
+
+Classes, methods and fields are required to have an access modifier associated with them. These are keywords located at the beginning of the declaration, and specify what visibility they have. There are 2 main types:
+- *Public*, which can be invoked from within the same class, or by an external one;
+- *Private*, which can be invoked only from within the same class. This ensures information hiding is enforced.
+
+![[Pasted image 20220112122701.png]]
+
+#### Accessor & Mutator Methods
+
+Methods provide the behaviour/interactions behind a class. As well as having an access modifier, methods generally fall into one of two categories:
+
+- *Accessor* methods are used to process and/or return information stored within a class' fields. Convention is to use *get* at the start of an accessor method's name.
+
+![[Pasted image 20220112122827.png]]
+
+- *Mutator* methods can process and modify the contents of a class field. Convention is to use *set* at the start of a mutator method's name.
 
