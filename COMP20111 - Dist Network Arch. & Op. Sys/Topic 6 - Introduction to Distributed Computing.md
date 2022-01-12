@@ -52,3 +52,15 @@ Systems engineers frequently find themselves working for companies that provide 
 A typical data centre server floor will have several racks, each of which containing 80 computers; the rooms themselves will also accomodate for the power and network cabling requirements. Generally, fibre-optic cabling is used to provide high-speed connectivity. These are the yellow wires shown in the below image:
 
 ![[Pasted image 20220112112851.png]]
+
+Another important aspect of data centres is dealing with the vast amount of data that is generated and stored by the cluster when providing various services. For example, if each server on a rack has 2TB of disk space and at least 5120 servers are present in each data server, a minimum of *10,240TB* of backup space is required.
+
+Keep in mind that this already large number does not include the additional storage requirements provided by data centres, such as index and document servers (using Google as an example).
+
+Backups are required in the case of failure so that this information can be restored; The systems contain enough data that automated robotic systems are used to load tapes (the typical form of *cold* storage used in enterprise) into the backup devices.
+
+Security is naturally a large concern during this process, as without necessary protections, data can easily be stolen by an adversary if the data centre itself does not have enough physical controls and measures undertaken.
+
+## Design issues for building large-scale computing clusters
+
+There are a number of these to consider when creating a High Performance Cluster (HPC) or 
