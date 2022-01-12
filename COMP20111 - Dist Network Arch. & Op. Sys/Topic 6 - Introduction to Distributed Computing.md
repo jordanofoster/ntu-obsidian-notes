@@ -261,4 +261,20 @@ Java also has more complex data types, such as:
 #### Loops
 ![[Pasted image 20220112123417.png]]
 
-#### C
+#### Control Structures
+
+Java provides the same control structures as C/C++. Using an if statement as an example:
+
+![[Pasted image 20220112123528.png]]
+
+When comparing objects, it should be noted that `if( obj == obj2 ) {}` in Java is *not* checking whether two objects contain the *same data,* but instead if they have the *same pointers.* To compare string contents, `.equals()` should be used.
+
+Java additionally provides a more elegant way of dealing with multiple outcomes, the same as C/C++ does; with `switch` statements:
+
+![[Pasted image 20220112123747.png]]
+
+#### Methods
+
+Methods in java require the access modifier, return type, method name and parameter list (even if there are no parameters), alongside a set of curly braces `{}` to define the method code in. Methods are also always contained within a class.
+
+Under python, method code is highlighted with the use of an indent; in java, this is only used for us to see code structure; the syntax itself does not recognize indents as 
