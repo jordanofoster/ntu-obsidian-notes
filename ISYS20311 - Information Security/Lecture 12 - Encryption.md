@@ -2,7 +2,23 @@
 Encryption is used to provide [[ISYS20311 - Information Security/Lecture 1 - Overview#Confidentiality|confidentiality]], integrity, authentication and non-repudiation. It exists in *Symmetric* and *Asymmetric* forms. A basic overview of how it works is shown in the following video, from `1:22-3:50`:
 
 <iframe width="896" height="504" src="https://www.youtube.com/embed/UiJiXNEm-Go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- Encryption is *important* as a key control in managing risk; as a result, we need to know what it can be applied to 
+ Encryption is *important* as a key control in managing risk; as a result, we need to know what it can be applied to, and have a foundational understanding of the technology itself. 
+ 
+ Encryption is also a key requirement for compliance with laws and regulations, and in regards to protecting data subjects, as we need to worry about data at rest and in transit, and verifying identities, transactions and communication.
+
+ ## Symmetric Encryption
+
+ With this, the same key is used to both encrypt and decrypt the data. This has a low overhead in terms of resources, but key management is an issue - how is the key *safely* shared between authorised parties?
+
+ Additionally, the number of keys increases exponentially with the number of communicating parties.
+
+ ## Asymmetric Encryption
+
+ Here, two keys with mathematical relations are used; one to encrypt, and one to decrypt. The *public* key (responsible for encryption) is openly distributed for anyone to access, whereas the *private* key (responsible for decryption) is made only available to the keyholder.
+
+ By using the public keys of other parties, data can be encrypted to recipients, who can then *decrypt* the data safely using the associated private key.
+
+ 
 ## Simple Ciphers
 These are historical [cryptographic primitives](https://en.wikipedia.org/wiki/Cryptographic_primitive) that have mostly been subject to thorough [cryptanalysis](https://en.wikipedia.org/wiki/Cryptanalysis) that renders their modern use ill-advised, but they are mentioned here to form a basic understanding of the concept:
 
