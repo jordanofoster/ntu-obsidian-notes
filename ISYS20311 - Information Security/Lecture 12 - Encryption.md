@@ -18,7 +18,18 @@ Encryption is used to provide [[ISYS20311 - Information Security/Lecture 1 - Ove
 
  By using the public keys of other parties, data can be encrypted to recipients, who can then *decrypt* the data safely using the associated private key.
 
- 
+ ## Message Integrity
+
+ Digests, Hashes and Checksums produce a *fingerprint* of a message that can be used to verify the message integrity. These are one-way functions, meaning that data is lost in the process (and thus, the message cannot be reconstructed from the hash).
+
+ The receiver can use the same one-way function on a received message, and check the hash they produce to ensure it verifies the hash they receives. This is a way of *verifying* message integrity.
+
+ (Need to make notes seperately on this by watching lecture).
+
+## Authentication & Non-Repudiation
+This refers to the idea that you can be certain of who you are talking to (*Authentication*), and that they cannot deny having sent a message (*Non-Repudiation*).
+
+Using our private key, we can *sign* a 
 ## Simple Ciphers
 These are historical [cryptographic primitives](https://en.wikipedia.org/wiki/Cryptographic_primitive) that have mostly been subject to thorough [cryptanalysis](https://en.wikipedia.org/wiki/Cryptanalysis) that renders their modern use ill-advised, but they are mentioned here to form a basic understanding of the concept:
 
