@@ -231,3 +231,34 @@ Methods provide the behaviour/interactions behind a class. As well as having an 
 
 - *Mutator* methods can process and modify the contents of a class field. Convention is to use *set* at the start of a mutator method's name.
 
+![[Pasted image 20220112122925.png]]
+
+## Anatomy of a Java Program
+
+![[Pasted image 20220112123033.png]]
+
+### Your first Java "hello world" program
+
+![[Pasted image 20220112123114.png]]
+
+#### A slightly more complex version
+
+![[Pasted image 20220112123143.png]]
+
+### Python vs. Java
+
+#### Basic data types
+
+Under python, variables do not need to be typed. However, Java has the same primitive data types as found in C/C++, and thus they must be specified with a type. We call programming languages with this practice *strongly typed.*
+
+Java also has more complex data types, such as:
+- LinkedList
+- ArrayList
+- Stack
+- Queue
+- and more.
+
+#### Loops
+![[Pasted image 20220112123417.png]]
+
+#### C
