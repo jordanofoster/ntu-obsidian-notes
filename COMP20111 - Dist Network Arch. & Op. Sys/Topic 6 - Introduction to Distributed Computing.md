@@ -26,4 +26,29 @@ This is by no means an exhaustive list and there are many other factors to consi
 
 ### Complex Systems
 
-Large interconnected networks are naturally extremely complex, and as a result we must consider how to offer additional benefits and services to them. To provide an example, networked computers act as the enabling technology for large-scale computing, which involves a large number of computer nodes. These nodes can also be 
+Large interconnected networks are naturally extremely complex, and as a result we must consider how to offer additional benefits and services to them. 
+
+To provide an example, networked computers act as the enabling technology for large-scale computing, which involves a large number of computer nodes. These nodes can also be used to provide cloud functionality.
+
+A complex software layer is required to allow these nodes to act together as a single entity, and abstract them as such to other developers. Thus, the following design issues are raised:
+- How do we design and write the software that controls nodes as a distributed cluster?
+- What specialised applications do we use our clusters for?
+- What software layer(s) are required for enabling these systems for use?
+
+### Cloud-based Systems
+
+Systems engineers frequently find themselves working for companies that provide some form of cloud presence, or services based on the technology. They must ask themselves how these types of systems are engineered, and what they must consider for the following aspects of the process:
+- Hardware
+- Networking
+- Topology
+- Software Systems
+- Virtualisation
+- Security
+
+### Large-Scale Computing Systems
+
+#### Data Centres
+![[Pasted image 20220112112832.png]]
+A typical data centre server floor will have several racks, each of which containing 80 computers; the rooms themselves will also accomodate for the power and network cabling requirements. Generally, fibre-optic cabling is used to provide high-speed connectivity. These are the yellow wires shown in the below image:
+
+![[Pasted image 20220112112851.png]]
