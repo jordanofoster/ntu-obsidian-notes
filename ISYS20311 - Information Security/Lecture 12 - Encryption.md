@@ -15,9 +15,52 @@ These are historical [cryptographic primitives](https://en.wikipedia.org/wiki/Cr
 		- For example, using keyword *CAB:*
 			- Shift the letters by 3(C), 1(A), 2(B), 3(C), 1(A), 2(B)...
 
-### Hiding in plain sight
 Alternatively (and, done right, this is still a strong practice):
 - Hiding messages in plain sight ([security through obscurity](https://en.wikipedia.org/wiki/Security_through_obscurity))
 	- [Steganography](https://en.wikipedia.org/wiki/Steganography), word coding and other [COMSEC](https://en.wikipedia.org/wiki/Communications_security) practices
 
-An example of 
+### An example of coding/hiding in plain sight
+
+The following message looks like glowing praise of an employee, read normally:
+
+
+LETTER OF RECOMMENDATION
+
+*Bob Smith, my assistant programmer, can always be found  
+hard at work in his cubicle. Bob works independently, without  
+wasting company time talking to colleagues. Bob never  
+thinks twice about assisting fellow employees, and he always  
+finishes given assignments on time. Often Bob takes extended  
+measures to complete his work, sometimes skipping coffee  
+breaks. Bob is a dedicated individual who has absolutely no  
+vanity in spite of his high accomplishments and profound  
+knowledge in his field. I firmly believe that Bob can be  
+classed as a high-calibre employee, the type which cannot be  
+dispensed with. Consequently, I duly recommend that Bob be  
+promoted to executive management, and a proposal will be  
+executed as soon as possible.*
+
+Sincerely,
+Project Leader
+
+If we only read every second line though, it becomes rather more sinister:
+
+LETTER OF RECOMMENDATION  
+
+**Bob Smith, my assistant programmer, can always be found**  
+*hard at work in his cubicle. Bob works independently, without*  
+**wasting company time talking to colleagues. Bob never**  
+*thinks twice about assisting fellow employees, and he always*  
+**finishes given assignments on time. Often Bob takes extended**  
+*measures to complete his work, sometimes skipping coffee*  
+**breaks. Bob is a dedicated individual who has absolutely no**  
+*vanity in spite of his high accomplishments and profound*  
+**knowledge in his field. I firmly believe that Bob can be**  
+*classed as a high-calibre employee, the type which cannot be*  
+**dispensed with. Consequently, I duly recommend that Bob be**  
+*promoted to executive management, and a proposal will be*  
+**executed as soon as possible.**  
+
+Sincerely,  
+Project Leader  
+
