@@ -275,6 +275,29 @@ Java additionally provides a more elegant way of dealing with multiple outcomes,
 
 #### Methods
 
+![[Pasted image 20220112124001.png]]
+
 Methods in java require the access modifier, return type, method name and parameter list (even if there are no parameters), alongside a set of curly braces `{}` to define the method code in. Methods are also always contained within a class.
 
-Under python, method code is highlighted with the use of an indent; in java, this is only used for us to see code structure; the syntax itself does not recognize indents as 
+Under python, method code is highlighted with the use of an indent; in java, this is only used for us to see code structure; the syntax itself does not recognize indents as code highlighting and requires `{}` to indicate the code block.
+
+For java, dot notation is used to call methods, as seen in the [[Topic 6 - Introduction to Distributed Computing#Python Java Classes|Classes section]]:
+
+#### Python/Java Classes
+![[Pasted image 20220112124128.png]]
+
+##### Inheritance
+
+Java allows functionality to be inherited from another class.
+
+![[Pasted image 20220112124301.png]]
+
+##### The Object Class
+
+When a new class is created (using below as an example), a class can be defined without explicit inheritance. However, all subclasses derive from a super class, even if not explicitly stated. This is the object class.
+
+![[Pasted image 20220112124330.png]]
+
+### Designing Class Diagrams
+
+Before we jump in and create a clas
