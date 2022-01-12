@@ -69,4 +69,24 @@ Packages allow system updates and changes to be recoverable, as they take accoun
 For security vulnerabilities, as soon as possible. Hotfixes are only necessary when the issue addressed becomes a problem. Service Packs/Version updates should be installed fairly soon after release, but a small wait is in order to see if the updates have any major issues.
 
 - Service packs offer to backup all files at the start of the installation to `$ntservicepackuninstall$`, allowing rollback if the update causes new problems;
-	- The issue is detecting those problems - does the sysadmin have a regression suite to check this, or are they just waiting f
+	- The issue is detecting those problems - does the sysadmin have a regression suite to check this, or are they just waiting for user complaints?
+
+On Windows 10 devices, updates are automatically pushed to machines, unless WSUS is setup with Windows 10 Enterprise devices. As a result, things can break and be harder to maintain.
+
+## Checking Security on Windows Systems
+![[Pasted image 20220112012343.png]]
+The Baseline Security Analyzer (shown above) checks the following for issues:
+- OS and its components
+- IIS, SQL Server, Office and IE
+The program primarily just reports issues, but the version pictured can also update if requested by the sysadmin. It does more checks than basic updater tools, and is container in Server 2008 R2/2012R2 in *Computer Management.*
+
+BSA needs to be installed manually for Windows 7/8.1/10.
+
+## Update Methods
+
+- Users can be allowed to do it via the Microsoft Update site; this is automatic, and the user has no choice under Windows 10 Home. As stated prior, [[Lecture 12 - Updating Systems#User Notifications|this is a bad idea.]]
+- Manual installation can be done:
+	- For Service Packs, installation is possible via CD or network archive file.
+	- Hotfixes can also be chained together.
+- Slipstream updating is an older method that involves adding Service Packs/hotfixes as part of the installation process.
+- [[]]
