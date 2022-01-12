@@ -1,5 +1,8 @@
 # Encryption
+Encryption is used to provide [[ISYS20311 - Information Security/Lecture 1 - Overview#Confidentiality|confidentiality]], integrity, authentication and non-repudiation. It exists in *Symmetric* and *Asymmetric* forms. A basic overview of how it works is shown in the following video:
 
+<iframe src="https://youtu.be/UiJiXNEm-Go"></i>
+ 
 ## Simple Ciphers
 These are historical [cryptographic primitives](https://en.wikipedia.org/wiki/Cryptographic_primitive) that have mostly been subject to thorough [cryptanalysis](https://en.wikipedia.org/wiki/Cryptanalysis) that renders their modern use ill-advised, but they are mentioned here to form a basic understanding of the concept:
 
@@ -63,4 +66,3 @@ LETTER OF RECOMMENDATION
 
 Sincerely,  
 Project Leader  
-
