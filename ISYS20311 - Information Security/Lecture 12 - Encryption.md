@@ -6,30 +6,6 @@ Encryption is used to provide [[ISYS20311 - Information Security/Lecture 1 - Ove
  
  Encryption is also a key requirement for compliance with laws and regulations, and in regards to protecting data subjects, as we need to worry about data at rest and in transit, and verifying identities, transactions and communication.
 
- ## Symmetric Encryption
-
- With this, the same key is used to both encrypt and decrypt the data. This has a low overhead in terms of resources, but key management is an issue - how is the key *safely* shared between authorised parties?
-
- Additionally, the number of keys increases exponentially with the number of communicating parties.
-
- ## Asymmetric Encryption
-
- Here, two keys with mathematical relations are used; one to encrypt, and one to decrypt. The *public* key (responsible for encryption) is openly distributed for anyone to access, whereas the *private* key (responsible for decryption) is made only available to the keyholder.
-
- By using the public keys of other parties, data can be encrypted to recipients, who can then *decrypt* the data safely using the associated private key.
-
- ## Message Integrity
-
- Digests, Hashes and Checksums produce a *fingerprint* of a message that can be used to verify the message integrity. These are one-way functions, meaning that data is lost in the process (and thus, the message cannot be reconstructed from the hash).
-
- The receiver can use the same one-way function on a received message, and check the hash they produce to ensure it verifies the hash they receives. This is a way of *verifying* message integrity.
-
- (Need to make notes seperately on this by watching lecture).
-
-## Authentication & Non-Repudiation
-This refers to the idea that you can be certain of who you are talking to (*Authentication*), and that they cannot deny having sent a message (*Non-Repudiation*).
-
-Using our private key, we can *sign* a 
 ## Simple Ciphers
 These are historical [cryptographic primitives](https://en.wikipedia.org/wiki/Cryptographic_primitive) that have mostly been subject to thorough [cryptanalysis](https://en.wikipedia.org/wiki/Cryptanalysis) that renders their modern use ill-advised, but they are mentioned here to form a basic understanding of the concept:
 
@@ -93,3 +69,45 @@ LETTER OF RECOMMENDATION
 
 Sincerely,  
 Project Leader  
+
+ ## Symmetric Encryption
+
+ With this, the same key is used to both encrypt and decrypt the data. This has a low overhead in terms of resources, but key management is an issue - how is the key *safely* shared between authorised parties?
+
+ Additionally, the number of keys increases exponentially with the number of communicating parties.
+
+ ## Asymmetric Encryption
+
+ Here, two keys with mathematical relations are used; one to encrypt, and one to decrypt. The *public* key (responsible for encryption) is openly distributed for anyone to access, whereas the *private* key (responsible for decryption) is made only available to the keyholder.
+
+ By using the public keys of other parties, data can be encrypted to recipients, who can then *decrypt* the data safely using the associated private key.
+
+ ## Message Integrity
+
+ Digests, Hashes and Checksums produce a *fingerprint* of a message that can be used to verify the message integrity. These are one-way functions, meaning that data is lost in the process (and thus, the message cannot be reconstructed from the hash).
+
+ The receiver can use the same one-way function on a received message, and check the hash they produce to ensure it verifies the hash they receives. This is a way of *verifying* message integrity.
+
+ ![[Pasted image 20220112002244.png]]
+
+ (Need to make notes seperately on this by watching lecture).
+
+## Authentication & Non-Repudiation
+This refers to the idea that you can be certain of who you are talking to (*Authentication*), and that they cannot deny having sent a message (*Non-Repudiation*).
+
+Using our private key, we can *sign* a *hash/message digest* to form a *digital signature*. As the private and public key are related, the recipient can then use our *public* key to verify our identity. 
+
+### Digital Signatures (Green Circles)
+![[Pasted image 20220112002408.png]]
+(Again, notes)
+
+#### Altogether (Integrity, Authenticity, Nonrepudiation and Confidentiality)
+![[Pasted image 20220112002440.png]]
+(Ditto).
+
+## Man-in-the-Middle Attacks
+
+Malicious third parties can try and get in between two communicating parties, allowing them to substitute their own key into the exchange that *spoofs* the identity of one of the genuine parties.
+
+As a result, mechanisms need to exist to verify keys against this 
+
