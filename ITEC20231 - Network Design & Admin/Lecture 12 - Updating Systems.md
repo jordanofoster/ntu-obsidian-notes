@@ -124,4 +124,14 @@ This can be done either with `apt-get update` or the GUI frontend of *Software U
 As with windows, tools are needed for the update process, including:
 - The simplification of locating and downloading packages
 - Automation of updates/upgrades
-- 
+- Facilitation of interdependency management
+
+Unlike Windows, however, Linux packages may be in a wide range of locations, and can have interdependencies (although this also happens with hotfixes in Windows).
+
+##### Advanced Package Tool (`apt`)
+This is used by Debian and systems based off it (such as Ubuntu, Mint, etc), but is abstracted by the Update Manager on systems that use it.
+
+`apt` is used when a sysadmin needs to install something not in the distro's default repositories; the program searches for repositories by looking at the contents of `etc/apt/sources.list`. This file lists the *what* (binary, source, stable repositories, etc). and *where* (URL, typically).
+
+Using `netselect-apt`, a list of the fastest mirrors within `sources.list` can be found. `apt-get update` refreshes package information, and `apt-get install <package name>` retrieves and installs any new software packages.
+
