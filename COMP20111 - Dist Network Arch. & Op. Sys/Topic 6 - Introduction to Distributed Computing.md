@@ -201,4 +201,14 @@ To summarise, objects are an *instance* of a class.
 
 #### Fields
 
-Classes provide methods to define their behaviour 
+Classes provide methods to define their behaviour - the *fields* (data) are accessible and modifiable by the methods contained within the class. They can be *private* or *public* and do not need to be defined within a code block. In principle, fields should be private to ensure information hiding; that is, users of the class should be prevented from knowing about its implementation.
+
+Fields have an associated data type, and can be initialised with a value when defined.
+
+![[Pasted image 20220112122414.png]]
+
+#### Constructors
+
+All class
+
+
