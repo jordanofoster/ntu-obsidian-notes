@@ -52,5 +52,14 @@ Officially called the BeiDou Navigation Satellite System (BDS), this Chinese sys
 
 Mathematically speaking, four satellite ranges are needed to determine exact positioning, given perfect timing. This is not achievable with current technology, so more are needed.  
 
-If the receiver's clocks were perfect, all satellite ranges would intersect at a single point (the position). We require the fourth range to act as a cross-check (which does *not* intersect with the first three). With imperfect clocks, this doesn't work - This extra measurement is used to 'cure' the timing offset.
+![[Pasted image 20220117163044.png]]
+
+If the receiver's clocks were perfect, all satellite ranges would intersect at a single point (the position). To check if they are not, we require the fourth range to act as a cross-check. 
+
+With imperfect clocks, the cross-check does *not* intersect with the first three measurements, allowing the device to detect a discrepancy, and conclude that its clocks are not synchronised with universal time. 
+
+Since any offset will affect every measurement, the receiver looks for a single correction factor to subtract from *all* of its timing measurements, that would 'cure' the timing offset and cause all ranges to intersect at a single point. As a result, this correction brings the receiver's clock back into sync, with atomic accuracy.
+
+It should be noted that GPS gives not only the position at which we stand; it also is a source of syncing times
+
 
