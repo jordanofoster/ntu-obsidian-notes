@@ -96,4 +96,9 @@ A host-based monitoring system can detect unauthorised activity on systems thems
 Staff use of corporate systems should be monitored. This includes both regular users and system administrators, and monitoring should be done at both the application and O/S layers. This helps to identify suspicious user behaviour, be it by an attacker or insider.
 
 ##### When
-The duration and level of logging should cover this, but a balance must be made between storage cost and the ability to retrospectively query data. Stored logs must also comply with dat aprotection 
+The duration and level of logging should cover this, but a balance must be made between storage cost and the ability to retrospectively query data. Stored logs must also comply with data protection laws.
+
+##### Where
+Logs should be stored in a database with access for monitoring analysts only, and isolated from other corporate trust domains. This is in order to prevent an attacker from deleting or modifying logs.
+
+
