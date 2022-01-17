@@ -15,3 +15,9 @@ In the inevitable outcome that policies eventually *don't* work:
 ## Check that staff know the policies
 
 There are several methods:
+
+- Spot checks - visit someone at their desk and give them a policy quiz
+
+- Host a lunchtime quiz on the policies, with prizes
+
+- Put up big posters to remind people of policies, in order to keep pro
