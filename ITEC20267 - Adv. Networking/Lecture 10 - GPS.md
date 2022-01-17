@@ -58,8 +58,18 @@ If the receiver's clocks were perfect, all satellite ranges would intersect at a
 
 With imperfect clocks, the cross-check does *not* intersect with the first three measurements, allowing the device to detect a discrepancy, and conclude that its clocks are not synchronised with universal time. 
 
-Since any offset will affect every measurement, the receiver looks for a single correction factor to subtract from *all* of its timing measurements, that would 'cure' the timing offset and cause all ranges to intersect at a single point. As a result, this correction brings the receiver's clock back into sync, with atomic accuracy.
+Since any offset will affect every measurement, the receiver looks for a single correction factor to subtract from *all* of its timing measurements, that would 'cure' the timing offset and cause all ranges to intersect at a single point. As a result, this correction brings the receiver's clock back into sync.
 
-It should be noted that GPS gives not only the position at which we stand; it also is a source of syncing times
+It should be noted that GPS gives not only the position at which we stand; it also is a source of syncing time precisely with satellite time - since satellites keep precise atomic time, by synchronising, so do our devices.
+
+## Caveats of GPS
+
+Signals may bounce off of local obstructions before our receiver obtains it. This is called a *multipath error* and is similar to the ghosting effect seen on TV. Good receivers use sophisticated signal rejection techniques to minimise this effect.
+
+GPS as a whole relies on the idea that a signal can fly straight from the satellite to receiver. Unfortunately in reality, signals bounce off most things in a local environment and will get to the receiver in this manner (as well as directly). 
+
+This results in a barrage of signals, first the direct transmission, then a delayed set of reflected signals; which creates a messy resultant signal. If the reflected signals are strong enough, the receiver can be confused into making erroneous measurements.
+
+Good receivers deal with this through various signal processing tricks, to make sure that only the earliest arriving signals (the direct ones) are considered. Sometimes, additional s
 
 
