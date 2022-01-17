@@ -67,6 +67,15 @@ Other methods include:
 ### What to monitor?
 
 #### Outbound website traffic (towards internet)
-As a minimum, this should include domain names and URLs. If possible though, this should extend to monitoring the full HTTP header information.
 
-This is because initial infection and persistent connections are often ma
+As a minimum, this should include domain names and URLs. If possible though, this should extend to monitoring the full HTTP header information, as it often provides clues to malicious activity.
+
+This is because initial infection and persistent connections are often made through HTTP(S) traffic and could appear to come from user devices (*the most likely source*) or servers.
+
+#### Email traffic
+
+At minimum, the metadata about what is sent/received should be captured. If possible, both email headers and contents should be monitored - if links are visible, attempts at phishing attacks can be connected.
+
+#### IP connections between network and the Internet
+
+It is useful to capture 5-tuple metadata of the accepted connections at the edge of your network, as this shows any raw connections coming out of it. Interesting 
