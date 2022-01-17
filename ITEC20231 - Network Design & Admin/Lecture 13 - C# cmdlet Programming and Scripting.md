@@ -18,6 +18,7 @@ Powershell is referred to as the *next generation command shell and scripting la
 [This link provides more info.](https://programming.oreilly.com/2013/06/powershell-command-line-introduction.html)
 
 ### What knowledge is needed to program a cmdlet?
+![[Pasted image 20220117235135.png]]
 
 Mainly, C#; this is a C++/Java-esque language that requires the .NET framework to be installed. Cmdlets are written in C#, but the following is also required:
 
@@ -28,4 +29,33 @@ Mainly, C#; this is a C++/Java-esque language that requires the .NET framework t
 	- **ProcessRecord**
 	- **EndProcessing**
 
-Then, provide your code. [](https://msdn.microsoft.com/en-us/library/zw4w595w.aspx)
+Then, provide your code. [Another link.](https://msdn.microsoft.com/en-us/library/zw4w595w.aspx)
+
+## C# vs. Java
+### Data Types
+C# has the same primitive data types as seen in C++ and Java;
+
+`int` (e.g. `int value = 5;`)
+`bool` (e.g. `bool receivedInput = false;`)
+`float` (e.g. `float value = 8.5;`)
+`arrays` (e.g. `string []params;`)	
+
+C# does however have more complex data types:
+- String
+- List
+- ArrayList
+- Stack
+- Queue
+- ...
+
+### Classes
+
+In C#, everything is an *Object.* A class provides the blueprint as to what data and operations can be offered. However, you have to use the class blueprint to create an object instance before it can be accessed. C# class syntax is similar to Java otherwise, however;
+
+```
+public class MyFirstClass {
+	public MyFirstClass() {
+		// Constructor ...
+	}
+}
+```
