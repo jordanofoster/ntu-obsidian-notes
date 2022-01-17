@@ -90,4 +90,10 @@ For example, server networks. At minimum, 5-tuple metadata from the critical OT 
 
 A host-based monitoring system can detect unauthorised activity on systems themselves, such as unusual/unauthorised activity by software systems. These might evade typical detection systems based on network interfaces.
 
-### Who, when, where...
+#### Whom, when and where?
+
+##### Who
+Staff use of corporate systems should be monitored. This includes both regular users and system administrators, and monitoring should be done at both the application and O/S layers. This helps to identify suspicious user behaviour, be it by an attacker or insider.
+
+##### When
+The duration and level of logging should cover this, but a balance must be made between storage cost and the ability to retrospectively query data. Stored logs must also comply with dat aprotection 
