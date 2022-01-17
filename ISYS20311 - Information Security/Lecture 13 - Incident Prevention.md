@@ -30,4 +30,22 @@ With the spot checks:
 
 Self-phishing:
 - Some companies send their own staff phishing emails, then analyse how many give away requested confidential information
-- There are free self-phishing tools, and free managed campaigns (usually by a vendor of a commercial tool)
+- There are [free self-phishing tools](https://resources.infosecinstitute.com/top-9-free-phishing-simulators/#gref), and free managed campaigns (usually by a vendor of a commercial tool)
+
+Alternatively, manufacture an obvious breach of policy and observe how many staff report and/or attempt to fix it.
+
+## Real-Life Scenarios
+
+These are done by penetration testers and white hat hackers.
+<iframe width="720" height="405" src="https://www.youtube.com/embed/QMAJ4bVB3EI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## Training options
+
+- Online courses with additional test
+- Lectures/seminars
+- Q&A sessions with experts
+- Mini-apprenticeships
+- Simulations, such as the aforementioned self-phishing
+
+## Stick and Carrot
+This is part of a performance review, which can act as both the *stick* and the *carrot.*
+
