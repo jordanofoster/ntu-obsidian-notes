@@ -59,12 +59,12 @@ Other methods include:
 
 ## Incident Detection
 
-- [[Lecture 13 - Incident Prevention#Monitoring|Monitoring]]
+- [[Lecture 13 - Incident Prevention#What to monitor detect|Monitoring]]
 - [[Lecture 13 - Incident Prevention#Dashboards|Dashboards]]
-- [[Lecture 13 - Incident Prevention#Anomaly Detection|Anomaly Detection]]
+- Anomaly Detection
 - [[Lecture 13 - Incident Prevention#Artificial Intelligence|Artificial Intelligence]]
 
-### What to monitor?
+### What to monitor/detect?
 
 #### Outbound website traffic (towards internet)
 
@@ -100,5 +100,15 @@ The duration and level of logging should cover this, but a balance must be made 
 
 ##### Where
 Logs should be stored in a database with access for monitoring analysts only, and isolated from other corporate trust domains. This is in order to prevent an attacker from deleting or modifying logs.
+
+### Dashboards
+
+Dashboards should preferably contain the following information from monitoring:
+- User activity
+- Network activity
+- System activity (or lack thereof, if the system is slow)
+- Anomalies
+	- Any unusual patterns/events in the above. It should be noted that not all anomalies represent security incidents.
+- Security activity
 
 
