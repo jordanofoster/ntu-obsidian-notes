@@ -78,4 +78,16 @@ At minimum, the metadata about what is sent/received should be captured. If poss
 
 #### IP connections between network and the Internet
 
-It is useful to capture 5-tuple metadata of the accepted connections at the edge of your network, as this shows any raw connections coming out of it. Interesting 
+It is useful to capture 5-tuple metadata of the accepted connections at the edge of your network, as this shows any raw connections coming out of it. Interesting traffic would include things like:
+- HTTP traffic not going through a proxy server
+- Direct malware *command/control* sessions
+
+#### IP connections between zones in OT (Operational Technology) networks
+
+For example, server networks. At minimum, 5-tuple metadata from the critical OT zone boundaries (such as the IT/OT interface) should be captured. Such traffic is likely to contain evidence of an attacker's actions against cyber-physical systems.
+
+#### Host-based activity
+
+A host-based monitoring system can detect unauthorised activity on systems themselves, such as unusual/unauthorised activity by software systems. These might evade typical detection systems based on network interfaces.
+
+### Who, when, where...
