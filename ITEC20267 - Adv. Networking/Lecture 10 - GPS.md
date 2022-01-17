@@ -36,3 +36,19 @@ There are several satellite based navigation systems currently in operation; the
 This was the first navigation system to be built, and is formed from a constellation of 24 satellites and their associated ground stations. It was developed and owned by the U.S. government. There are both civilian-standardized and confidential millitary code signals coming from the satellites.
 
 
+### Galileo
+
+This is the EU's answer to GPS and is maintained by the GNSS agency, with headquarters in Prague, Czech Republic.
+
+### GLONASS
+
+Russian owned; also has 24 satellites and similar precision to GPS.
+
+### BeiDou
+
+Officially called the BeiDou Navigation Satellite System (BDS), this Chinese system is also known as COMPASS or BeiDou-2. It has been operational since December of 2011 with a partial constellation of 10 satellites - and since December of 2012, has been offering services to customers in the Asia-Pacific region.
+
+## Triangulating Position
+
+Mathematically speaking, four satellite ranges are needed to determine exact positioning, given perfect timing. This is not currently achievable 
+
