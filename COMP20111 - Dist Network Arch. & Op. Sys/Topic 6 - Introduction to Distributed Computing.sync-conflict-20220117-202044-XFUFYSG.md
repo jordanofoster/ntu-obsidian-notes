@@ -326,4 +326,7 @@ Java, like other languages, has a syntax - which dictates what words and operato
 
 These instructions can be stated in Backus-Naur Form, which started being used in the 50s/60s in Computer Science (although it was first proposed in the 30s).
 
-An example of the Java language syntax expressed in BNF can be found []
+An example of the Java language syntax expressed in BNF can be found [here.](http://homepage.cs.uiowa.edu/~fleck/JavaBNF.htm) The image below specifies a method in BNF:
+
+![[Pasted image 20220112125025.png]]
+

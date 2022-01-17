@@ -68,8 +68,13 @@ Signals may bounce off of local obstructions before our receiver obtains it. Thi
 
 GPS as a whole relies on the idea that a signal can fly straight from the satellite to receiver. Unfortunately in reality, signals bounce off most things in a local environment and will get to the receiver in this manner (as well as directly). 
 
+![[Pasted image 20220117163926.png]]
+
 This results in a barrage of signals, first the direct transmission, then a delayed set of reflected signals; which creates a messy resultant signal. If the reflected signals are strong enough, the receiver can be confused into making erroneous measurements.
 
-Good receivers deal with this through various signal processing tricks, to make sure that only the earliest arriving signals (the direct ones) are considered. Sometimes, additional s
+Good receivers deal with this through various signal processing tricks, to make sure that only the earliest arriving signals (the direct ones) are considered. Sometimes, additional signals from base stations are added to the positioning signal; these base stations provide the difference between actual and measured delay (for all visible satellites), thus improving accuracy. This approach to things is referred to as differential GPS (DGPS).
+
+If a loss of signal occurs (e.g. the receiver is in a tunnel), a so-called *intertial* measurement takes place; the last location (or last fix) is combined with road knowledge and the readings for travelled distance of the device are combined for accurate measurement - a process called *dead reckoning.* Sophisticated intertial systems make use of sensors such as accelerometers, gyroscopes and magnometers to do this.
+
 
 
