@@ -50,5 +50,7 @@ Officially called the BeiDou Navigation Satellite System (BDS), this Chinese sys
 
 ## Triangulating Position
 
-Mathematically speaking, four satellite ranges are needed to determine exact positioning, given perfect timing. This is not currently achievable 
+Mathematically speaking, four satellite ranges are needed to determine exact positioning, given perfect timing. This is not achievable with current technology, so more are needed.  
+
+If the receiver's clocks were perfect, all satellite ranges would intersect at a single point (the position). We require the fourth range to act as a cross-check (which does *not* intersect with the first three). With imperfect clocks, this doesn't work - This extra measurement is used to 'cure' the timing offset.
 
