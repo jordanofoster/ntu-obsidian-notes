@@ -12,7 +12,7 @@ In the inevitable outcome that policies eventually *don't* work:
 - [[Lecture 13 - Incident Prevention#Training options|Training options]]
 - [[Lecture 13 - Incident Prevention#Stick and Carrot|Stick and Carrot]]
 
-## Check that staff know the policies
+### Check that staff know the policies
 
 There are several methods:
 
@@ -22,7 +22,7 @@ There are several methods:
 
 - Put up big posters to remind people of policies, in order to keep the profile of the policies high
 
-## Check that staff follow the policies
+### Check that staff follow the policies
 
 With the spot checks:
 - Do staff have confidential information on their desk?
@@ -34,11 +34,11 @@ Self-phishing:
 
 Alternatively, manufacture an obvious breach of policy and observe how many staff report and/or attempt to fix it.
 
-## Real-Life Scenarios
+### Real-Life Scenarios
 
 These are done by penetration testers and white hat hackers.
 <iframe width="720" height="405" src="https://www.youtube.com/embed/QMAJ4bVB3EI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-## Training options
+### Training options
 
 - Online courses with additional test
 - Lectures/seminars
@@ -47,5 +47,26 @@ These are done by penetration testers and white hat hackers.
 - Simulations, such as the aforementioned self-phishing
 
 ## Stick and Carrot
-This is part of a performance review, which can act as both the *stick* and the *carrot.*
+This can be part of a performance review, which can act as both the *stick* and the *carrot.*
 
+Other methods include:
+
+- Highlighting success stories
+	- Highling individuals who have contributed by publishing them on company's internal website
+- Naming and shaming
+	- Naming is a bad idea - but publishing shameful 
+	statistics about a group can work.
+
+## Incident Detection
+
+- [[Lecture 13 - Incident Prevention#Monitoring|Monitoring]]
+- [[Lecture 13 - Incident Prevention#Dashboards|Dashboards]]
+- [[Lecture 13 - Incident Prevention#Anomaly Detection|Anomaly Detection]]
+- [[Lecture 13 - Incident Prevention#Artificial Intelligence|Artificial Intelligence]]
+
+### What to monitor?
+
+#### Outbound website traffic (towards internet)
+As a minimum, this should include domain names and URLs. If possible though, this should extend to monitoring the full HTTP header information.
+
+This is because initial infection and persistent connections are often ma
