@@ -20,4 +20,14 @@ There are several methods:
 
 - Host a lunchtime quiz on the policies, with prizes
 
-- Put up big posters to remind people of policies, in order to keep pro
+- Put up big posters to remind people of policies, in order to keep the profile of the policies high
+
+## Check that staff follow the policies
+
+With the spot checks:
+- Do staff have confidential information on their desk?
+- Has their screen been left unlocked? etc.
+
+Self-phishing:
+- Some companies send their own staff phishing emails, then analyse how many give away requested confidential information
+- There are free self-phishing tools, and free managed campaigns (usually by a vendor of a commercial tool)
