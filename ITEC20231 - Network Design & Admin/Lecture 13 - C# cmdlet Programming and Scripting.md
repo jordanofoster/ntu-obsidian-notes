@@ -59,3 +59,5 @@ public class MyFirstClass {
 	}
 }
 ```
+
+![[Pasted image 20220117235730.png]]
