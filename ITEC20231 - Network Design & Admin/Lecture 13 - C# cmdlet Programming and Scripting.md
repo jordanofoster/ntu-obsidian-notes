@@ -157,5 +157,28 @@ if( x == 10) {
 Remember that when comparing objects, `if( obj == obj2 ){}` does not compare that the two object *contain the same data,* but instead comparing the pointers of each object. Strings are different in this regard, however:
 
 ```
+String name1 = "clark";
+String name2 = "lois";
+if( name1 == name2 ) Console.WriteLine("they are the same!");
+else Console.WriteLine("they are not the same!")
+```
+
+Additionally, the switch statement:
 
 ```
+switch( value ) {
+	case 1:
+		Console.WriteLine("Option 1!");
+		break;
+	case 2:
+		Console.WriteLine("Option 2!");
+		break;
+	default:
+		Console.WriteLine("Option 2!");
+		break;
+}
+```
+
+### Loops
+
+
