@@ -181,4 +181,16 @@ switch( value ) {
 
 ### Loops
 
+For loops are the same as in C#/Java:
+```
+for (int iCounter = 0; iCounter < 10; iCounter++)
+{
+	Console.WriteLine("counter = " + iCounter);
+}
+```
 
+For each:
+```
+List<string> myList = new List<string>();
+for (int counter = 0; coun)
+```
