@@ -120,6 +120,42 @@ namespace myLibrary
 		void add(object onj);
 		object get(int index);
 		int size();
+		void toString();
 	}
 }
+```
+
+### *this* and *is* keywords
+
+*this* refers to the current instance of an object:
+
+```
+private string name;
+public void setName(string name) {
+	this.name = name;
+}
+```
+
+*is* provides the user with a way to determine if the object supports an interface. If it does, then methods within the interface can be accessed. Syntax is `<expression> is <type>`.
+
+```
+Employee CKent = new Employee("Clark Kent");
+if( CKent is Employee ) CKent.print();
+```
+
+### Control Structures
+
+C# provides the same control structures as C/C++ and Java, such as the *if* statement:
+
+```
+if( x == 10) {
+	// ...
+} else {
+	// ...
+}
+```
+Remember that when comparing objects, `if( obj == obj2 ){}` does not compare that the two object *contain the same data,* but instead comparing the pointers of each object. Strings are different in this regard, however:
+
+```
+
 ```
