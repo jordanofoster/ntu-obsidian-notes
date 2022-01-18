@@ -78,4 +78,32 @@ Because *String* is a class, it comes with several useful methods and properties
 
 ### Inheritance
 
-C# allows functionality to be inherited from another class
+C# allows functionality to be inherited from another class:
+![[Pasted image 20220118000615.png]]
+![[Pasted image 20220118000629.png]]
+
+#### Concept of Inheritance
+
+![[Pasted image 20220118000649.png]]
+
+![[Pasted image 20220118000655.png]]
+
+### Namespaces
+
+C# provides the user with hundreds of usable classes for use in programs. Each class created will have a name, as seen below:
+
+`public class ListCommand`
+
+However, what happens if another class called *ListCommand* exists? In this case, Namespaces can be used to limit the scope of any defined classes:
+
+```
+namespace myLibrary
+{
+	public class ListCommand
+	{
+		// ...
+	}
+}
+```
+
+Now *ListCommand* is visible within the *myLibrary* namespace, and the class be 
