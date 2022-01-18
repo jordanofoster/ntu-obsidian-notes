@@ -192,5 +192,27 @@ for (int iCounter = 0; iCounter < 10; iCounter++)
 For each:
 ```
 List<string> myList = new List<string>();
-for (int counter = 0; coun)
+for (int counter = 0; counter < 10; counter++) {
+	myList.Add("item " + counter);
+}
+foreach (string value in myList) {
+	Console.WriteLine(value);
+}
+```
+
+### Reading/Writing to console
+
+```
+namespace ConsoleApplication1
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			Console.WriteLine("Enter first mumber: ");
+			int value1 = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("Enter second number: ");
+		}
+	}
+}
 ```
