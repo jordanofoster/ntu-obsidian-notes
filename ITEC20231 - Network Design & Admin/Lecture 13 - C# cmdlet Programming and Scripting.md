@@ -61,3 +61,21 @@ public class MyFirstClass {
 ```
 
 ![[Pasted image 20220117235730.png]]
+
+### Anatomy of a C# Program
+
+![[Pasted image 20220118000200.png]]
+
+### Strings
+
+Strings are objects of the **System.String** class. A sequence of characters can be assigned to them using the assignment operator $=$ , as shown below:
+`String machineName = "MAE108-34";`
+
+Strings can also be joined together using the $+$ operator:
+`String fullName = machineName + ".ads.ntu.ac.uk"`
+
+Because *String* is a class, it comes with several useful methods and properties, including *Length* (returns number of characters in string) and *Substring(`int startPosition, int length`)* which returns characters between two 'bound' characters, such as `start` and `start+length`.
+
+### Inheritance
+
+C# allows functionality to be inherited from another class
