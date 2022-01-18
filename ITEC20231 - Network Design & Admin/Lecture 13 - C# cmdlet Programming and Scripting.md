@@ -106,4 +106,20 @@ namespace myLibrary
 }
 ```
 
-Now *ListCommand* is visible within the *myLibrary* namespace, and the class be 
+Now *ListCommand* is visible within the *myLibrary* namespace, and the class can be accessed as `myLibrary.ListCommand`.
+
+### Interfaces
+
+An interface allows the definition of a specific interface to a class; any class that implements it will have to provide a set of pre-defined method signatures. Interfaces cannot include implementation, private, protected or internal members. All of them should be *public.*
+
+```
+namespace myLibrary
+{
+	public Interface MyListInterface
+	{
+		void add(object onj);
+		object get(int index);
+		int size();
+	}
+}
+```
