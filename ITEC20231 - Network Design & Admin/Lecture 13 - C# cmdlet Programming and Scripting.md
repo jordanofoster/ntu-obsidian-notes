@@ -212,7 +212,18 @@ namespace ConsoleApplication1
 			Console.WriteLine("Enter first mumber: ");
 			int value1 = Convert.ToInt32(Console.ReadLine());
 			Console.WriteLine("Enter second number: ");
+			int value2 = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("multiplying {0} by {1} gives {2}",
+								value1, value2, (value1 * value2));
 		}
 	}
 }
 ```
+
+### Exception Handling
+
+C# provides the user with *throw* and *try-catch* statements so that you can handle unwanted exceptions. Classes that can be used within C# code will usually throw an exception if an error occurs, especially if you are relying on 3rd-party APIs and libraries:
+
+![[Pasted image 20220118003934.png]]
+![[Pasted image 20220118004039.png]]
+[A final link.](https://insecure.org/st)
