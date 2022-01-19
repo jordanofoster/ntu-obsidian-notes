@@ -226,4 +226,4 @@ C# provides the user with *throw* and *try-catch* statements so that you can han
 
 ![[Pasted image 20220118003934.png]]
 ![[Pasted image 20220118004039.png]]
-[A final link.](https://insecure.org/st)
+[A final link.](https://insecure.org/stf/smashstack.html)
