@@ -48,4 +48,28 @@ There is no limit to a size of a DNS server. For example, one server has over 20
 
 Data is replicated, as it is copied from the master to multiple slaves. Clients can query the master server and any of the copies at slave servers, though they will typically prefer to query local caches.
 
-DNS as a protocol can also use either UDP or TCP;
+DNS as a protocol can also use either UDP or TCP; if the former, the protocol automatically handles issues such as retransmission, sequencing, etc.
+
+#### Dynamicity
+
+The database can be updated dynamically, meaning that any record can be added, deleted or otherwise modified. Modification of the master database triggers replication, as it is the only one that can be dynamically updated. As a result, it ends up becoming a single point of failure.
+
+## DNS Concepts
+
+### DNS Names
+
+A DNS namespace needs to be hierarchical in order to scale. Objects are named based on the following:
+- Location
+	- Within country
+	- Set of organizations
+	- Set of companies, etc.
+- Unit within that location
+	- Company within set of company, etc.
+- Object within a unit
+	- Name of a person within the company
+
+##### Fully Qualified Domain Names (FQDNs)
+
+An example of this is `WWW.RIPE.NET.` - notice the ***trailing dot.*** 
+
+DNS provides 
