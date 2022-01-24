@@ -34,3 +34,21 @@ It also places legal obligations for increased cooperation and information shari
 
 Each responder has an emergency planning officer, sometimes called a civil protection, civil contingencies or resilience officer (or also alternatively, simply 'risk manager') who is usually responsible for ensuring their organisation is in compliance with the Act and sharing information with other responders. The usual way of checking compliance is by regularly testing plans by reviews or exercises.
 
+## Differences between BC and Backups
+
+### Tiers of preparedness
+
+SHARE released a 7-tier disaster recovery released in 1992, updated in 2012 by IBM as an 8-tier model. It is listed below:
+
+- Tier 0
+	- Nothing off-site. Recovery time is unpredictable - recovery itself is perhaps not possible.
+- Tier 1
+	- IBM calls this PTAM (*Pickup Truck Access Method*) - this is on a hotsite, however (using backup hardware).
+-  Tier 2
+	- Hot site - requires hours/days to load even the most recent backup tapes.
+- Tier 3
+	- Transaction data at off-site kept relatively current, using ongoing high-speed data link (electronic vaulting) and "an automated tape library at the remote site."
+- Tier 4
+	- "Point-in-time copies", to ensure that less reprocessing of transactions are needed.
+- Tier 5
+	- "Transaction integrity"
