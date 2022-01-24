@@ -68,7 +68,7 @@ A DNS namespace needs to be hierarchical in order to scale. Objects are named ba
 - Object within a unit
 	- Name of a person within the company
 
-##### Fully Qualified Domain Names (FQDNs)
+#### Fully Qualified Domain Names (FQDNs)
 
 An example of this is `WWW.RIPE.NET.` - notice the ***trailing dot.*** 
 
@@ -79,5 +79,11 @@ DNS provides mapping from an initial FQDN to resources of several types, and nam
 The DNS maps names into data through the use of Resource Records, as shown below:
 ![[Pasted image 20220124134724.png]]
 
-##### 
+#### DNS Names Concept
 
+Domain names can be mapped to a tree; new branches are made at the 'dots', and there is no restriction to the amount of branches.
+
+![[Pasted image 20220124135043.png]]
+
+
+#### 
