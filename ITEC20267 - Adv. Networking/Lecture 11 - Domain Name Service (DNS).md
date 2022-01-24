@@ -38,4 +38,5 @@ Data is maintained locally, but retrievable globally. No single computer has all
 
 #### Loose Coherency
 
-DNS databases are always internally consistent; each version of a subset of the database (a zone) has a serial number that increments on each database change
+DNS databases are always internally consistent; each version of a subset of the database (a zone) has a serial number that increments on each database change. Changes to the master copy of the database are replicated according to timing set by the zone administrator. Cached data also expires according to a set timeout.
+
