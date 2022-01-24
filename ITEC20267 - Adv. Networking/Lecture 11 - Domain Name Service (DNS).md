@@ -141,4 +141,30 @@ Using question `www.ripe.net A` (what is the A record of domain www.ripe.net?):
 
 #### Resource Records (more detail)
 
-Reource records consist of their names, TTL, class
+Reource records consist of their names, TTL, class, type and RDATA:
+- TTL is a timing parameter.
+- the IN class is the widest used.
+- There are multiple types of RR records
+- Everything behind the type identifier is under RDATA.
+
+![[Pasted image 20220124142809.png]]
+
+###### Examples of DNS RRs in a zone file
+
+![[Pasted image 20220124142857.png]]
+
+###### DNS RRs: SOA and NS (Nameserver) records
+
+The SOA and NS records are used to provide information about the DNS server itself. The NS indicates where information about a given zone can be found:
+
+```
+ripe.net. 7200 IN NS ns.ripe.net
+ripe.net. 7200 IN NS ns.eu.net
+```
+
+The SOA record provides information about the start of authority (i.e. the top of the zone), also known as the APEX:
+
+
+
+
+
