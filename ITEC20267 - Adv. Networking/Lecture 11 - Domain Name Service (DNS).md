@@ -121,5 +121,24 @@ These give authoritative answers for one or more zones; the master server normal
 
 ##### Recursive Servers
 
-Recursive servers typically do the actual look
+Recursive servers typically do the actual lookups, as they ask questions to the DNS on behalf of the clients. The answers they provide are obtained from authoritative servers, but the actual answers forwarded to the client are not marked as such.
 
+Previous answers are stored for future reference in the server's cache.
+
+##### Resolvers
+
+Resolvers ask questions to a DNS system on behalf of the application. This is normally implemented via a system library such as libc, as shown below:
+```
+gethostbyname(char *name);
+gethostbyaddr(char *addr, int len, type);
+```
+
+###### Resolving Process & Cache
+
+Using question `www.ripe.net A` (what is the A record of domain www.ripe.net?):
+
+![[Pasted image 20220124142616.png]]
+
+#### Resource Records (more detail)
+
+Reource records consist of their names, TTL, class
