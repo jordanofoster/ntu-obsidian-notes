@@ -51,4 +51,43 @@ SHARE released a 7-tier disaster recovery released in 1992, updated in 2012 by I
 - Tier 4
 	- "Point-in-time copies", to ensure that less reprocessing of transactions are needed.
 - Tier 5
-	- "Transaction integrity"
+	- "Transaction integrity", where the hotsite is kept as up-to-date as possible (to the moment).
+- Tier 6
+	- "Zero or Near-zero data loss"
+- Tier 7
+	- "Highly automated" recovery - few if any manual steps are required following a main site failure; rollover to the hotsite is automatic.
+
+## Problems are not just cyber attacks
+
+These include:
+- Epidemics
+- Earthquakes
+- Fires
+- Floods
+- Sabotages (insider/external threat)
+- Hurricanes/other major storms
+- Power outages
+- Water outages (supply interruption, contamination)
+- Telecoms outages
+- IT outages
+- Terrorism/Piracy
+- War/civil disorder
+- Theft (insider or external threat, vital information or material)
+- Random failure of mission-critical systems
+- Single point dependencies
+- Supplier failures
+
+### In disaster scenarios, problems interact
+
+For example:
+
+- Emergency teams cannot locate people if the mobile network is down.
+- Disaster zones can still be hot/flooded/unstable/infectious/irradiated long after a disaster.
+- Nuclear plant shutdown procedures may fail if the electricity fails
+- Normally rational human beings may start acting out of desperation
+
+##### Planning for Interactions
+
+During the 2002-2003 SARS outbreak, some organizations compartmentalized and rotated teams to match the incubation period of the disease. In-person contact was also banned during both business and non-business hours; these steps increased resiliency against the threat.
+
+
