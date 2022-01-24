@@ -72,4 +72,12 @@ A DNS namespace needs to be hierarchical in order to scale. Objects are named ba
 
 An example of this is `WWW.RIPE.NET.` - notice the ***trailing dot.*** 
 
-DNS provides 
+DNS provides mapping from an initial FQDN to resources of several types, and names are used as a key when fetching data within the DNS.
+
+##### DNS Resource Records (RR)
+
+The DNS maps names into data through the use of Resource Records, as shown below:
+![[Pasted image 20220124134724.png]]
+
+##### 
+
