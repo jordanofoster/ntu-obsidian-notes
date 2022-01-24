@@ -90,4 +90,36 @@ For example:
 
 During the 2002-2003 SARS outbreak, some organizations compartmentalized and rotated teams to match the incubation period of the disease. In-person contact was also banned during both business and non-business hours; these steps increased resiliency against the threat.
 
+##### Other effects of disasters that go beyond backups
+
+It may take a long time for a business to occupy its original premises (if ever!). Additionally, equipment in buildings may be damaged by rescue efforts as well as by the disaster.
+
+#### IT-related disasters and continuity
+
+- IT equipment destroyed
+- Data destroyed by malware
+- Payment/personal data is stolen
+- Data manipulated (e.g. sending payments to different addresses)
+- Piracy: (stolen data is used in a different jurisdiction)
+
+Any of the above can happen to a key supplier; for example, British Airways had an issue with a 3rd-party flight booking website.
+
+## What do BCPs need to consider?
+
+For IT, minimum application/data requirements and the time in which they must be available is to be considered. Outside of IT, hard copies (such as contracts) must be preserved. Manufacturers (processing plants for example) must consider skilled staff and embedded technology.
+
+BCPs need policies for at least the following:
+- Crisis management command structure
+- Telecommunication architecture between primary and secondary work sites
+- Data replication methodology between primary and secondary work sites
+- Backup work sites - applications, data and workspaces required at the secondary work site.
+
+### Plan Checklist
+
+- Emergency response
+- Crisis management
+- 
+
+
+
 
