@@ -28,4 +28,9 @@ This refers to *Security Techniques - Guidelines for information and communicati
 
 The *Civil Contingencies Act 2004* exists to enforce this. Part 1 of the Act places a legal obligation upon emergency services and local authorities (defined as *"Category 1 responders"* under the act) to plan, exercise for and assess the risk of emergencies, as well as undertaking Business Continuity Management.
 
+Category 1 responders are also responsible for warning and informing the public in relation to emergencies, and local authorities are required to provide business continuity advice to local businesses.
+
+It also places legal obligations for increased cooperation and information sharing between different emergency services and also to non-emergency services that may have a role in emergency situations (such as electric companies). Such non-emergency services are defined as *Category 2 responders* under the Act.
+
+Each responder has an emergency planning officer, sometimes called a civil protection, civil contingencies or resilience officer (or also alternatively, simply 'risk manager') who is usually responsible for ensuring their organisation is in compliance with the Act and sharing information with other responders. The usual way of checking compliance is by regularly testing plans by reviews or exercises.
 
