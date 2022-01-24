@@ -149,7 +149,7 @@ Reource records consist of their names, TTL, class, type and RDATA:
 
 ![[Pasted image 20220124142809.png]]
 
-###### Examples of DNS RRs in a zone file
+##### Examples of DNS RRs in a zone file
 
 ![[Pasted image 20220124142857.png]]
 
@@ -163,6 +163,19 @@ ripe.net. 7200 IN NS ns.eu.net
 ```
 
 The SOA record provides information about the start of authority (i.e. the top of the zone), also known as the APEX:
+
+![[Pasted image 20220124143158.png]]
+
+##### TTL and other Timers
+
+TTL is a timer that is used in caches, and acts as an indication for how long data can be reused; expected 'stable' data can have high TTL values. SOA timers are used to maintain consistency between primary and secondary servers.
+
+#### DNS Places where DNS data lives
+
+![[Pasted image 20220124143406.png]]
+
+
+
 
 
 
