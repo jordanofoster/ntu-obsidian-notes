@@ -85,5 +85,12 @@ Domain names can be mapped to a tree; new branches are made at the 'dots', and t
 
 ![[Pasted image 20220124135043.png]]
 
+#### DNS
 
-#### 
+Domains themselves are considered namespacs. For example, everything below the top-level domain .com is in the `com` domain, and everything below ripe.net is in the `ripe.net` domain and in the `net` domain.
+
+![[Pasted image 20220124141542.png]]
+
+##### DNS Delegation
+
+Administrators can create subdomains to group hosts, according to one or more of geography, organizational affliation or any other criterion. Admins of the domains themselves can also delegate responsibility 
