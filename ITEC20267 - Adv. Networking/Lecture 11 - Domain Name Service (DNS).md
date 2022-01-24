@@ -93,4 +93,33 @@ Domains themselves are considered namespacs. For example, everything below the t
 
 ##### DNS Delegation
 
-Administrators can create subdomains to group hosts, according to one or more of geography, organizational affliation or any other criterion. Admins of the domains themselves can also delegate responsibility 
+Administrators can create subdomains to group hosts, according to one or more of geography, organizational affliation or any other criterion. Admins of the domains themselves can also delegate responsibility for managing a subdomain to someone else (although this isn't required).
+
+A parent domain retains links to its delegated subdomains, by "remembering" who the subdomain was delegated to.
+
+###### Zones and Delegations
+
+Zones are administrative spaces, where the admins are responsible for a portion of a domain's namespace. Authority is delegated from a parent, and to a child.
+
+![[Pasted image 20220124141853.png]]
+
+#### Nameservers
+
+Nameservers answer DNS questions; there are several types:
+- Authoritative servers
+	- Master (primary)
+	- Slave (secondary)
+- Recursive (caching) server
+	- Alongside caching forwarders
+- Nameservers that mix functionality.
+
+##### Authoritative Nameservers
+
+These give authoritative answers for one or more zones; the master server normally loads the data from a zone file, whereas a slave server normally replicates the data from the master server via a zone transfer.
+
+![[Pasted image 20220124142120.png]]
+
+##### Recursive Servers
+
+Recursive servers typically do the actual look
+
