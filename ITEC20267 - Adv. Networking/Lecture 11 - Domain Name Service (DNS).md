@@ -22,4 +22,20 @@ Names are how an endpoint is referenced. There us typically no structurally sign
 
 #### History of Naming
 
-In the 1970s, ARPANET mainly used a hosts.txt file maintained by the SRI-NIC. It was pulled from a single machine, and 
+In the 1970s, ARPANET mainly used a hosts.txt file maintained by the SRI-NIC. It was pulled from a single machine, and was essentially a list of what IP addresses resolved to which hostnames. This caused many problems, including but not limited to traffic/load issues, name collisions and consistency.
+
+DNS was created in 1983 by Paul Mockapetris as a response to these issues, being published under RFC 1034/1035, and later modified updated and enchanced by subsequent RFCs.
+
+## DNS
+
+DNS is a lookup mechanism for translating objects into other objects. It acts as a globally distributed, loosely coherent, scalable and reliable dynamic database. It contains three components; a namespace, servers that host the namespace, and resolvers (clients) that query these servers about the namespace.
+
+### Features
+
+#### Global Distribution
+
+Data is maintained locally, but retrievable globally. No single computer has all DNS data. Lookups can also be performed by any device, and remote DNS data is locally cachable to improve performance.
+
+#### Loose Coherency
+
+DNS databases are always internally consistent; each version of a subset of the database (a zone) has a serial number that increments on each database change
