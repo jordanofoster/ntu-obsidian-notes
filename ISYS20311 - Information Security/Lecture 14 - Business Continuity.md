@@ -118,7 +118,22 @@ BCPs need policies for at least the following:
 
 - Emergency response
 - Crisis management
-- 
+- Business recovery
+- Product recovery
+- Operational recovery
+- Systems recovery
+- Resources, plant and equipment recovery
+- Supplier and stock recovery
+- Key contacts
+
+### Testing a Business Continuity Plan
+
+The 2008 book *Exercising for Excellence* (published by the British Standards Institution) identified three types of exercises that can be employed when testing BCPs. These are:
+
+- **Tabletop exercises** - a small number of people concentrate on a specific aspect of the BCP. Another form of this involves a single representative from each of several teams.
+- **Medium exercises** - Several departments, teams or disciplines concentrate on multiple BCP aspects; the scope can range from a few teams from one building to multiple teams operating across dispersed locations. Pre-scripted *"surprises"* are added.
+- **Complex exercises** - All aspects of a medium exercise remain, but for maximum realism there is a no-notice activation, an actual evacuation and actual invocation of a disaster recovery site is added.
+
 
 
 
