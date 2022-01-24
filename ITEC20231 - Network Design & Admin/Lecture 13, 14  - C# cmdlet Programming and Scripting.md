@@ -227,3 +227,27 @@ C# provides the user with *throw* and *try-catch* statements so that you can han
 ![[Pasted image 20220118003934.png]]
 ![[Pasted image 20220118004039.png]]
 [A final link.](https://insecure.org/stf/smashstack.html)
+
+## C\# Implementations
+
+### Inheritance:
+
+![[Pasted image 20220124162737.png]]
+
+### Interfaces
+
+![[Pasted image 20220124162802.png]]
+
+## Why Properties?
+
+- Making the class field *Public* and exposing it to the external world is not a good programming practice, as you will not have control over what gets assigned and returned.
+
+![[Pasted image 20220124162901.png]]
+
+## Properties
+
+In C\#, properties can be used to access private data. This is done by using the *get* and *set*
+methods to allow read and write access respectively.
+
+
+
