@@ -40,3 +40,12 @@ Data is maintained locally, but retrievable globally. No single computer has all
 
 DNS databases are always internally consistent; each version of a subset of the database (a zone) has a serial number that increments on each database change. Changes to the master copy of the database are replicated according to timing set by the zone administrator. Cached data also expires according to a set timeout.
 
+#### Scalability
+
+There is no limit to a size of a DNS server. For example, one server has over 20,000,000 names (although this is not a good idea). There is also no limit to the number of queries; 24,000 queries per second can be easily handled. Queries are distributed amongst masters, slaves and caches.
+
+#### Reliability
+
+Data is replicated, as it is copied from the master to multiple slaves. Clients can query the master server and any of the copies at slave servers, though they will typically prefer to query local caches.
+
+DNS as a protocol can also use either UDP or TCP;
