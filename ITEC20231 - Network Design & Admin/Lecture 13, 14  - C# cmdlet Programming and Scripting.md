@@ -238,16 +238,51 @@ C# provides the user with *throw* and *try-catch* statements so that you can han
 
 ![[Pasted image 20220124162802.png]]
 
-## Why Properties?
+### Properties
+
+In C\#, properties can be used to access private data. This is done by using the *get* and *set*
+methods to allow read and write access respectively.
+
+![[Pasted image 20220124163003.png]]
+
+#### Why Properties?
 
 - Making the class field *Public* and exposing it to the external world is not a good programming practice, as you will not have control over what gets assigned and returned.
 
 ![[Pasted image 20220124162901.png]]
 
-## Properties
 
-In C\#, properties can be used to access private data. This is done by using the *get* and *set*
-methods to allow read and write access respectively.
+#### Get and Set methods
 
+![[Pasted image 20220124163122.png]]
 
+#### Override
+
+![[Pasted image 20220124163152.png]]
+
+### Handling data (Arrays)
+
+Arrays are fixed-length collections of homogenous objects. For example, you can have an array of integer data types, Employee objects, etc.
+
+In C\#, Arrays are firstly class objects; this means they must be initialised with the `new` keyword
+
+```
+int arrayOfInt[256]; // Wrong!
+int arrayOfInt[] = new int[256]; // creating an array of 256 integers
+```
+
+C\# has a shortcut for creating array objects and initialising them where the `new` is not required:
+
+```
+int smallPrimes = {2, 3, 5, 7, 11};
+```
+
+#### Array Initialisation Methods
+
+Arrays can also be multi-dimensional:
+
+```
+// 2-dimensional array
+int[,] array1 = new int[10, 10]
+```
 
