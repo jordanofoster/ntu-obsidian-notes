@@ -237,7 +237,19 @@ The request URI in the SIP INVITE message contains the Telephone Number which is
 
 Two-way speech path is established after ANM (Answer Message) and 200 OK
 
-The gateway acts as a SIP end device 
+The gateway acts as a SIP end device to convert SIP into SS7 for PSTN and back. It also converts voice media from coded form to PCM and back.
+
+SIP BYE is used to terminate the call.
+
+#### PSTN to SIP: ENUM
+
+The system needs to convert traditional telephone numbers to get an appropriate URI for a VOIP phone. We also need a global directory to map these numbers to SIP addresses. The answer to this is the ENUM (RFC6116) protocol. The gateway acts as a PSTN and SIP end device and maps signalling and voice data between the two.
+
+![[Pasted image 20220131163831.png]]
+
+
+
+
 
 
 
