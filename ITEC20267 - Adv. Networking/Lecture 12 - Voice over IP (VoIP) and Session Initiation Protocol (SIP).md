@@ -33,7 +33,18 @@ For reference, $\log_{10}$ is the default base of $\log$ when using a calculator
 
 Message sources usually have more than one message:
 
-$I_1 = \log_{2}(\frac{1}{p_1})$, $I_2 = \log_{2}
+$I_1 = \log_{2}(\frac{1}{p_1})$, $I_2 = \log_{2}(\frac{1}{p_2})$, etc.
+
+To get the average, multiply the information by the likelihood of the message and add them together. Given a special name Entropy, $H$:
+
+$H = p_1I_1 + p_2I_2 + .. = p_1 \log_{2}(\frac{1}{p_1}) + p_2 \log_{2}(\frac{1}{p_2}) + ...$
+
+$H = \sum_{k}p_kI_k = \sum_{k}p_{k}\log_{2}(\frac{1}{p_{k}})$
+
+for reference, $\sum$ means to sum over all values of $k$.
+
+#### Entropy Example
+
 
 
 
