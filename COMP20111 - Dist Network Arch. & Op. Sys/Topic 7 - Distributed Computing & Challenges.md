@@ -121,19 +121,31 @@ As before, this is explored in greater detail in Topic 11.
 
 #### Cluster Computing
 
+![[Pasted image 20220131142151.png]]
+
+
 Clusters can be built out of off-the-shelf commodities (e.g. a *Beowulf* cluster) or via specially designed nodes (e.g. *Blue Gene*). Clusters are interconnected nodes linked by high capacity networking, such as Ethernet (1Gbps) or InfiniBand (>30Gbps).
 
 Middleware controls job allocation, file access, etc. Clusters themselves are viewed as a single entity, rather than the nodes being exposed as descrete computational devices.
 
 Advantages of this type of computing include:
 
-- 
+- Increased processing speed, as multiple machines are working together
+- Cost effectiveness, as these are cheaper to put together than super computers
+- Resource availability through failure handling and over-provisioning.
+
+Security issues include inter-node communication snooping and service distruptions such as DoS. Again, this topic is covered further in Topic 9.
+
 ## A quick word on Server Hardware
 
 This typically differs from desktop-grade systems, as they contain multiple CPU sockets, a much larger memory capacity, higher-speed I/O (and networking) and support enterprise-class CPUs.
 
 ![[Pasted image 20220131132813.png]]
 
+## Case Study: Google
+
+![[Pasted image 20220131142355.png]]
+![[Pasted image 20220131142420.png]]
 
 
 
