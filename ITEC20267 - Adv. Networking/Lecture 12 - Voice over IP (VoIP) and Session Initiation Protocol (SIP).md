@@ -14,9 +14,26 @@ Can we measure information? We need a function such that:
 - It is inversely proportional to probability, $P(likelihood)$.
 - If we have two information, the information, $i$, adds.
 
-This is the case if $I = log (\frac{1}{p})$
+This is the case if $I = \log (\frac{1}{p})$
 But actually, $I = \log_{2}(\frac{1}{p})$ - The information has a pseudo-unit - the BIT.
 
+Now to measure information, all we need to know is the probability or likelihood of a message.
+
+Another example: what is the information in being told the card picked from a deck of playing cards?
+
+Calculators don't typically know how to do \log_{2}, so we need to help them:
+
+$\log_{2}X = \frac{\log_{10}X}{\log_{10}(2)} = 3.32\log_{10}X$, where $X = \frac{1}{\frac{1}{52}} = 52$
+
+For reference, $\log_{10}$ is the default base of $\log$ when using a calculator.
+
+### Entropy
+
+#### The average information per message
+
+Message sources usually have more than one message:
+
+$I_1 = \log_{2}(\frac{1}{p_1})$, $I_2 = \log_{2}
 
 
 
