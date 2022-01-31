@@ -230,6 +230,38 @@ Scheduling in distributed systems is a lot more complex than within an OS, as it
 - Dynamic - System needs to be able to alter resource usage and current loadings based on the state of the system.
 - Transparent - the management of resources and processing are hidden from the user.
 
+This is covered further in Topic 9.
+
+### Transparency & Quality of Service
+
+When accessing a large scale system, we want users or applications to only see the whole - rather than individual - components. Types of transparency include:
+
+- Access transparency
+- Location transparency
+- Concurrency transparency
+- Replication transparency
+- Failure transparency
+- Mobility transparency
+- Performance transparency
+- Scaling transparency
+
+The quality of service refers to how well systems perform when under load. Ideally, systems need to be able to handle high workloads and still perform efficiently.
+
+
+### Security and Trust
+
+Information is a commodity which needs protecting, so that it is only used for the purposes of what the user intends. As a result, it is of high intrinsic value. When considering security in a distributed system, we need to think about it in the following terms:
+
+- Confidentiality - protects the information and resources from unauthorized users (either locally or in transit). 
+- Data integrity - ensures that information and resources are not altered or corrupted.
+- Access control - protects against interference and unauthorised access to resources.
+- Authorisation - requires a single secure access point for a user to access the system.
+- Accountability - required to know who (user or entity) was responsible for failure (data provenance, etc).
+- Non-repudiation - Entity cannot refute that something was done (e.g. access data, send message)
+
+## Programming Considerations
+
+Programming distributed systems requires us to consider the aforementioned challenges, whether they are 
 
 - Scalability
 - Failure Handling
