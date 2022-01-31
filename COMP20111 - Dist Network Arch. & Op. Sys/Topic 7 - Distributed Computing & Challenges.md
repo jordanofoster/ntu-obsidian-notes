@@ -147,6 +147,33 @@ This typically differs from desktop-grade systems, as they contain multiple CPU 
 ![[Pasted image 20220131142355.png]]
 ![[Pasted image 20220131142420.png]]
 
+As shown above, for any form of large-scale distributed system, several things must be considered:
+
+1) The computing nodes - are they loosely or tightly coupled? Additionally, what is the performance of memory/processing/disk/networking?
+2) Network topologies - How do we best connect the nodes (read: most efficiently)? How is information propagated throughout the network?
+	`NOTE: Will be looked at in more detail in a future lecture.`
+3) Communication Protocols
+4) Load Balancing
+5) Synchronisation of tasks and concurrency
+
+## Challenges in Distributed Systems
+
+There are a number of challenges within distributed systems:
+
+### Heterogeneity
+4 There are lots of varieties of computing devices and software - in other words, h
+- Openness
+- Scalability
+- Failure Handling
+- Concurrent access & Shared resources
+- Scheduling
+- Transparency
+- Quality of Service
+- Security and Trust
+- Programming
+
+
+
 
 
 
