@@ -161,8 +161,28 @@ As shown above, for any form of large-scale distributed system, several things m
 There are a number of challenges within distributed systems:
 
 ### Heterogeneity
-4 There are lots of varieties of computing devices and software - in other words, h
-- Openness
+
+There are lots of varieties of computing devices and software - in other words, heterogeneity means a collection of various computers, networks and software. How can we provide an *even* set of these? Introduction of middleware typically exists to mask thse differences.
+
+![[Pasted image 20220131143012.png]]
+
+### Openness
+
+In computing we have many types of devices, standards and communication protocols; we need to consider that these are produced by different companies, consortiums or other governing bodies.
+
+Openness is defined under the *Oxford English Dictionary* as *"The quality or condition of being open"* - or alternatively, *\[The\] absence of dissimulation, secrecy or reserve".*
+
+Open systems require key interfaces (hardware/software) to be published, so that others can use and expand them. When considering open distributed systems, we need standard communication mechanisms with open interfaces (i.e. published and freely accessible) on how to access shared resources.
+
+Due to the heterogeneity of devices and software, standards need to ensure that these interfaces are tested and verified for use in an open system.
+
+### Scalability
+
+The number of resources contained within a distributed network can differ considerably, depending on the purpose of the system. For example: a small home network of pervasive devices vs. a large compute cluster.
+
+A system is scalable if it can remain effective when dealing with an increase in resources and users.
+
+
 - Scalability
 - Failure Handling
 - Concurrent access & Shared resources
