@@ -64,6 +64,19 @@ Entropy of a message source in a table:
 
 Note that both traditional voice and VoIP involve digital transmission (at least in the network).
 
+### Concept for VoIP Terminal or end point
+
+- Analogue telephone adaptor
+	- Adapts standard analogue phone to IP, connected to Internet (creates ringtones, bell voltages, etc.)
+- IP phones
+	- As standard phone, but connects directly to data network e.g. Ethernet or Wifi.
+- PC-to-PC
+	- Software IP phone client on host computer
+
+All of these use the underlying IP network to transport voice - this is the big difference between VoIP and traditional telephony. Remember that traditional PTSNs use circuit switched TDM (Time Division Multiplexed) technology, and not a packet switched IP network.
+
+### 
+
 
 
 
