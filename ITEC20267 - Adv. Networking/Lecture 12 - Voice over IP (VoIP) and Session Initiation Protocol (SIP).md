@@ -109,7 +109,16 @@ As a result, you end up with small packets, with 50 bytes of application data. T
 
 #### Packet transfer: reordering and timing
 
-The coded voice packets need to be made ready for transport over the IP network. The decoder needs the coded data in the right order and the right time. While we're at it, we should try to maximise bandwidth efficiency by minimising overheads - we would do this by sending data over a TCP connection to make sure things are in the right order and no packet losses are sustained, but it makes sure every segment gets there using retransmissions if neccessary
+The coded voice packets need to be made ready for transport over the IP network. The decoder needs the coded data in the right order and the right time. While we're at it, we should try to maximise bandwidth efficiency by minimising overheads.
+
+We would do this by sending data over a TCP connection to make sure things are in the right order and no packet losses are sustained, but it makes sure every segment gets there using retransmissions if neccessary. This is fine if none are needed, but because we have to wait and we're trying to have a conversation, delay is a killer (only 150ms is the maximum acceptable delay.) In addition, the 20 byte segment header is significant.
+
+Since TCP is a problem, we go for using UDP instead.
+
+##### UDP usage issues
+
+UDP is a connectionless, best effort protocol with only an 8 byte header; they can arrive out of order and with no timing constraints (whereas TCP has to retransmit). As a result, we use RTP (Real-time Transport Protocol) instead.
+
 
 
 
