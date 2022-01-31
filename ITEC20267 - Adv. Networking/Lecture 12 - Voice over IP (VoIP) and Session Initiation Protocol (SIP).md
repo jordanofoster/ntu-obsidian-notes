@@ -91,7 +91,13 @@ All of these use the underlying IP network to transport voice - this is the big 
 	- Data is routed by packet switching, instead of the circuit switching of traditional telephony.
 	- Therefore, a codec that can handle packet losses is good, such as ILBC (Internet low bit-rate codec)
 
-If we try to fill an IP packet destined for an Ethernet frame payload of roughly 1500 bytes and 8bit sampling (we need ->64Kbps throughput) - we get 
+If we try to fill an IP packet destined for an Ethernet frame payload of roughly 1500 bytes and 8bit sampling (we need ->64Kbps throughput) - we send one packet every 25ms.
+
+#### VoIP Codec
+
+Typical parameters used for coding VoIP voice:
+- ILBC as an example
+
 
 
 
