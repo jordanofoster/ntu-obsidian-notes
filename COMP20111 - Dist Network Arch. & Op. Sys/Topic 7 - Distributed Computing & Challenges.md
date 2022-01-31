@@ -261,7 +261,18 @@ Information is a commodity which needs protecting, so that it is only used for t
 
 ## Programming Considerations
 
-Programming distributed systems requires us to consider the aforementioned challenges, whether they are 
+Programming distributed systems requires us to consider the aforementioned challenges, whether they are tightly or loosely coupled. Consideration must be additionally taken for:
+
+- Changes in programming style - no longer sequential, parallel processing must be considered.
+- Communication - Need to go beyond networking protocols, and consider methods for inter-processor communication and messaging systems.
+- Memory - What strategies are present for dividing the addressable space between multiple nodes.
+- Scheduling/Concurrency/Synchronisation - Parallel programming on multiple computers, each with potentially multi-processor and multi-core configuration.
+- Load balancing, and distributing workloads evenly between resources.
+- Middleware, with functionality to offer an even environment for applications to run.
+
+These considerations will be revisited in detail in future topics.
+
+
 
 - Scalability
 - Failure Handling
