@@ -182,6 +182,31 @@ The number of resources contained within a distributed network can differ consid
 
 A system is scalable if it can remain effective when dealing with an increase in resources and users.
 
+### Failure Handling
+
+![[Pasted image 20220131143540.png]]
+
+We encounter failures in different situations. For example, a failure in software that is not caught will result in the program crashing - or a *total failure.* When considering multi-computer/service environments, failures are typically partial - meaning that part of the system could fail, but other parts would still be running.
+
+There are a number of ways to handle a failure:
+
+###### Detecting Failures
+
+Naturally, we want to detect if a failure has occurred. For example, if you wanted to check whether a message sent between two computers has been corrupted during transmission, you would use a checksum. This would allow us to detect simple failures.
+
+On the other hand, the question of how you would detect if a server node in a cloud is operational is more complex; therefore, we need a way of managing when failures could occur.
+
+###### Masking Failures
+
+If a failure happens, we can adopt the approach of either hiding or making the failure less severe. An example of making a fault less severe is when a message has to be re-transmitted if it does not arrive; an example of *hiding* a failure is using a mirrored raid array where data is written to both disks. Corrupt data on one disk is hidden, as data from the other is returned.
+
+###### Tolerating Failures
+
+We can pass failures onto the end user instead of dealing with it at a system level.
+
+###### Recovery from Failures
+
+How do we recover from a failure? One way is by roling back information into the last known good sta
 
 - Scalability
 - Failure Handling
