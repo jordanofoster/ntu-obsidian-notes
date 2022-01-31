@@ -131,4 +131,28 @@ The Session Initiation Protocol is an application-layer protocol that enables vo
 
 ### What SIP Does
 
-SIP has five areas that support 
+SIP has five areas that support establishing and terminating multimedia communications:
+
+1) User location - locating end-user devices, such as finding an IP address.
+2) User availability - determination of willingness to engage (is user busy?)
+3) User capabilities - what sort of media can be used (e.g. voice/video, codec parameters)
+4) Session setup - Establish session parameters at both ends and indications such as 'ringing'
+5) Session management - transfer and termination of sessions, modifying session parameters 
+
+#### SIP phone
+
+![[Pasted image 20220131161321.png]]
+
+##### SIP Phone Registration
+
+1) Phone boots up
+2) Registers with SIP registrar (location database) uses DNS to resolve registrar's IP address
+	1) Sends SIP message indicating own user address (user@domain e.g. like e-mail) and current IP address.
+	2) e.g. taw@ip-phone.org is at 175.248.98.45
+3) Registers again when time expires or new location (=new IP address)
+
+
+
+
+
+
