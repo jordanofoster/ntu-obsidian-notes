@@ -151,6 +151,23 @@ SIP has five areas that support establishing and terminating multimedia communic
 	2) e.g. taw@ip-phone.org is at 175.248.98.45
 3) Registers again when time expires or new location (=new IP address)
 
+##### SIP Call Steps
+
+1) Say Client1: sangeet@voip.com wants to call Client2: taw@ip-phone.org
+2) Authenticate needed with own proxy server (voip.com)
+	1) DNS lookup ip-phone.org
+	2) Send SIP INVITE message to ip-phone.org
+3) Body of INVITE message contains session description (e.g. codec, port, bandwidth, session id, encryption etc - using SDP(Session Description Protocol) )
+4) ip-phone proxy server looks up taw in location database -> taw is at 135.182.63.19
+5) Sends 100 trying back to sangeet@voip.com
+6) Forward INVITE to 135.182.63.19 (current registered IP for taw)
+7) Ringing indication (SIP 180) passed back to sangeet via proxy server
+8) When call picked up taw sends OK (SIP 200) from rich passed back to proxy server and to sangeet
+9) Sangeet acknowledges OK (SIP code 200)
+10) Now sangeet has current IP address of taw and taw has open port for voice data (and vice versa).
+11) The media session (data transfer) takes place directly between the voip phones.
+12) The session can be ended by either user through sending a SIP BYE indication (via the proxy server - if called routing enabled).
+
 
 
 
