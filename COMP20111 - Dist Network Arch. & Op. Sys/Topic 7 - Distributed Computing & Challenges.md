@@ -18,5 +18,27 @@ In parallel computing, all processing nodes in a machine can be coupled in diffe
 
 Distributed systems are made up from multiple autonomous computers; each has its own CPU and memory, and communication is done through a network. *Message passing* is used to exchange information - depending on topology and use, a distributed system could be used to form a cluster (*highly-coupled*) or cloud (*highly/loosely-coupled*); the latter can be centralised or distributed depending on purpose.
 
-#### Trends in Distributed SYs
+#### Trends in Distributed Systems
+
+Distributed Computing has been becoming significantly more relevant and important for users in the past decade, as they are found in the following areas:
+
+- Client/Server computing
+- P2P Computing
+- Pervasive/Ubiquitous Computing
+- Internet of Things
+- Cloud/Fog/Edge Computing
+- Grid Computing
+- Cluster (HPC) Computing
+
+##### Client/Server Computing
+
+The paradigm itself has been around for a considerable time, but Client/Server systems tend to be distributed, comprised of autonomous computing nodes (servers) that are accessible via a network that offers a variety of services. Client computers interact with the server(s) and services.
+
+![[Pasted image 20220131132536.png]]
+![[Pasted image 20220131132551.png]]
+
+
+
+
+
 
