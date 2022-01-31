@@ -14,11 +14,11 @@ In parallel computing, all processing nodes in a machine can be coupled in diffe
 
 ![[Pasted image 20220131131904.png]]
 
-### Distributed Computing
+## Distributed Computing
 
 Distributed systems are made up from multiple autonomous computers; each has its own CPU and memory, and communication is done through a network. *Message passing* is used to exchange information - depending on topology and use, a distributed system could be used to form a cluster (*highly-coupled*) or cloud (*highly/loosely-coupled*); the latter can be centralised or distributed depending on purpose.
 
-#### Trends in Distributed Systems
+### Trends in Distributed Systems
 
 Distributed Computing has been becoming significantly more relevant and important for users in the past decade, as they are found in the following areas:
 
@@ -30,22 +30,33 @@ Distributed Computing has been becoming significantly more relevant and importan
 - Grid Computing
 - Cluster (HPC) Computing
 
-##### Client/Server Computing
+#### Client/Server Computing
 
 The paradigm itself has been around for a considerable time, but Client/Server systems tend to be distributed, comprised of autonomous computing nodes (servers) that are accessible via a network that offers a variety of services. Client computers interact with the server(s) and services.
 
 ![[Pasted image 20220131132536.png]]
 ![[Pasted image 20220131132551.png]]
 
-###### A quick word on Server Hardware
+#### Peer-to-Peer (P2P)
+
+This provides a distributed model for networked systems; instead of clients and servers, nodes in P2P networks act interchangably as client and server, providing a decentralized model for controlling resources. Peers in a network are self organising, providing distributed control; Ad hoc networking connects them together.
+
+The size and topology of a P2P network can change dynamically by peers joining and exiting over time. P2P itself is susceptible to a number of security attacks, such as Denial of Service and Identity attacks, alongside Poisioning.
+
+![[Pasted image 20220131133404.png]]
+
+#### Pervasive Computing
+
+Another form of Distributed System is embedded/pervasive computing technology. Sensors and actuators are used and controlled by various autonomous computing devices; depending on the hardware used, it can either be limited 
+
+## A quick word on Server Hardware
 
 This typically differs from desktop-grade systems, as they contain multiple CPU sockets, a much larger memory capacity, higher-speed I/O (and networking) and support enterprise-class CPUs.
 
 ![[Pasted image 20220131132813.png]]
 
-##### Peer-to-Peer (P2P)
 
-This provides a distributed model for networked systems; instead of clients and servers, nodes in P2P networks act interchangably as client and server, providing a decentralized 
+
 
 
 
