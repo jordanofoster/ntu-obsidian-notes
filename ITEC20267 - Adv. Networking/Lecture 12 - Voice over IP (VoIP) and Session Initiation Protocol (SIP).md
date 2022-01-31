@@ -100,9 +100,16 @@ Typical parameters used for coding VoIP voice using ILBC as an example:
 	- 30ms worth of samples (=240 samples) per packet
 
 Reducing the bitrate using Compression:
-	- Based on *Linear Predictive Coding:
+	- Based on *Linear Predictive Coding:*
+	- End up with 50 bytes/30ms frame \[=>13.3kb/s\]
+	
+Note the coding delay of 30ms before any network delay is added.
 
+As a result, you end up with small packets, with 50 bytes of application data. This is not very efficient as the packet/frame headers are a significant portion of the transmission.
 
+#### Packet transfer: reordering and timing
+
+The coded voice packets need to be made ready for transport over the IP network. The decoder needs the coded data in the right order and the right time. While we're at it, we should try to maximise bandwidth efficiency by minimising overheads - we would do this by sending data over a TCP connection to make sure things are in the right order and no packet losses are sustained, but it makes sure every segment gets there using retransmissions if neccessary
 
 
 
