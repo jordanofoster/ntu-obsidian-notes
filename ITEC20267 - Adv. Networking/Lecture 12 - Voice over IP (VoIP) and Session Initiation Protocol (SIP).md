@@ -64,6 +64,14 @@ Entropy of a message source in a table:
 
 Note that both traditional voice and VoIP involve digital transmission (at least in the network).
 
+VoIP requires two processes:
+- Call setup and termination (session management): to put the voice 'client' in touch with the voice 'server' and agree on protocols.
+- Data transfer: to transfer voice data.
+
+Note the similarity with traditional telephony (connection established then voice transmitted just like PTSN - connection terminated after use).
+
+Therefore, consider the application as being connection oriented.
+
 ### Concept for VoIP Terminal or end point
 
 - Analogue telephone adaptor
@@ -75,8 +83,15 @@ Note that both traditional voice and VoIP involve digital transmission (at least
 
 All of these use the underlying IP network to transport voice - this is the big difference between VoIP and traditional telephony. Remember that traditional PTSNs use circuit switched TDM (Time Division Multiplexed) technology, and not a packet switched IP network.
 
-### 
+#### Carrying voice data in IP packets
 
+- Must digitize analogue voice from microphone and reverse at destination ('undigitize' the voice 'data' to give to the loudspeaker).
+- Choice of codec for this can be important:
+	- IP offers no guarantees of bandwidth, or that a packet will arrive in a timely fashion, if it arrives at all.
+	- Data is routed by packet switching, instead of the circuit switching of traditional telephony.
+	- Therefore, a codec that can handle packet losses is good, such as ILBC (Internet low bit-rate codec)
+
+If we try to fill an IP packet destined for an Ethernet frame payload of roughly 1500 bytes and 8bit sampling (we need ->64Kbps throughput) - we get 
 
 
 
