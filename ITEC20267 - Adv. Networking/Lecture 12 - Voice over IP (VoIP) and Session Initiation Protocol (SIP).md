@@ -45,7 +45,21 @@ for reference, $\sum$ means to sum over all values of $k$.
 
 #### Entropy Example
 
+Entropy of a message source in a table:
 
+| Message | Probability, $p$ | $I$ | $p \times I$ |
+| --- | --- | --- | --- |
+| A | 0.4 | 1.32 | 0.53 |
+| B | | | |
+| C | | | |
+| D | | | |
+
+## VoIP
+
+### The Concept
+
+- There is an increasing trend towards networks consisting entirely of IP-based devices.
+- Internet is typically cheaper than the typical telco's PTSN systems
 
 
 
