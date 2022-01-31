@@ -47,7 +47,11 @@ The size and topology of a P2P network can change dynamically by peers joining a
 
 #### Pervasive Computing
 
-Another form of Distributed System is embedded/pervasive computing technology. Sensors and actuators are used and controlled by various autonomous computing devices; depending on the hardware used, it can either be limited 
+Another form of Distributed System is embedded/pervasive computing technology. Sensors and actuators are used and controlled by various autonomous computing devices; depending on the hardware used, specifications can be either limited, or systems can be fully discrete.
+
+Devices can interact with background/infrastructure servers & services as well. There are also other considerations that mst be taken on board:
+
+- 
 
 ## A quick word on Server Hardware
 
