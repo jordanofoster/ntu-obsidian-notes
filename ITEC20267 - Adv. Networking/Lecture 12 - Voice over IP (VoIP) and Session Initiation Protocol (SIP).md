@@ -95,8 +95,12 @@ If we try to fill an IP packet destined for an Ethernet frame payload of roughly
 
 #### VoIP Codec
 
-Typical parameters used for coding VoIP voice:
-- ILBC as an example
+Typical parameters used for coding VoIP voice using ILBC as an example:
+- Sample rate: 8kHz
+	- 30ms worth of samples (=240 samples) per packet
+
+Reducing the bitrate using Compression:
+	- Based on *Linear Predictive Coding:
 
 
 
