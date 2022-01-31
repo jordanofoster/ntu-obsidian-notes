@@ -10,4 +10,13 @@ Everyday devices fall under the *centralized* computing paradigm. This means tha
 
 ## What is parallel computing?
 
-In parallel computing, all processing nodes in a machine can be coupled in different ways 
+In parallel computing, all processing nodes in a machine can be coupled in different ways; tightly coupled, with shared memory, or loosely coupled, with distributed memory (or clusters), as shown below:
+
+![[Pasted image 20220131131904.png]]
+
+### Distributed Computing
+
+Distributed systems are made up from multiple autonomous computers; each has its own CPU and memory, and communication is done through a network. *Message passing* is used to exchange information - depending on topology and use, a distributed system could be used to form a cluster (*highly-coupled*) or cloud (*highly/loosely-coupled*); the latter can be centralised or distributed depending on purpose.
+
+#### Trends in Distributed SYs
+
