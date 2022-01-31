@@ -51,7 +51,9 @@ Another form of Distributed System is embedded/pervasive computing technology. S
 
 Devices can interact with background/infrastructure servers & services as well. There are also other considerations that mst be taken on board:
 
-- 
+- Effective means of programming in restrictive systems
+- Power saving/Power scavenging
+- Communication 
 
 ## A quick word on Server Hardware
 
