@@ -184,8 +184,25 @@ SIP Requests (Methods)
 | INVITE | A session is being requested to be setup using a specified media |
 | ACK | Message from client to indicate that a successful response to an INVITE has been received |
 | OPTIONS | A query to a server about its capabilities |
-| BYE | A call is being rl
+| BYE | A call is being released by either party |
+| CANCEL | Cancels any pending requests. Ususally sent to a proxy server to cancel searches |
+| REGISTER | Used by client to register a particular address with the SIP server (registrar)
 
+#### SIP Responses
+
+SIP Responses are defined as (HTTP-style):
+	- SIP-Version - Status-Code - Reason-Phrase
+	- for example: `SIP/2.0 401 Not Authorised`
+	- First digit gives the class of response:
+
+|  | Description | Examples |
+| --- | --- | --- |
+| 1xx | Informational - Request received, continuing to process request. | 180 Ringing, 181 Call is Being Forwarded |
+| 2xx | Success - Action was successfully received, understood and accepted. | 200 OK |
+| 3xx | Redirection - Further action needs to be taken in order to complete the request. | 300 Multiple Choices, 302 Moved Temporarily |
+| 4xx | Client Error - Request contains bad syntax or cannot be fulfilled at this server. | 401 Unauthorized, 408 Request Timeout |
+| 5xx | Server Error - Server failed to fulfill an apparently valid request. | 503 Service Unavailable, 505 Version Not Supported |
+|  6xx | Global Failure - Request is invalid at any server. | 600 Busy Everywhere, 603 
 
 
 
