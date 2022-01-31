@@ -37,7 +37,15 @@ The paradigm itself has been around for a considerable time, but Client/Server s
 ![[Pasted image 20220131132536.png]]
 ![[Pasted image 20220131132551.png]]
 
+###### A quick word on Server Hardware
 
+This typically differs from desktop-grade systems, as they contain multiple CPU sockets, a much larger memory capacity, higher-speed I/O (and networking) and support enterprise-class CPUs.
+
+![[Pasted image 20220131132813.png]]
+
+##### Peer-to-Peer (P2P)
+
+This provides a distributed model for networked systems; instead of clients and servers, nodes in P2P networks act interchangably as client and server, providing a decentralized 
 
 
 
