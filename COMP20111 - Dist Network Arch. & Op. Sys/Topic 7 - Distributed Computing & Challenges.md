@@ -206,7 +206,30 @@ We can pass failures onto the end user instead of dealing with it at a system le
 
 ###### Recovery from Failures
 
-How do we recover from a failure? One way is by roling back information into the last known good sta
+How do we recover from a failure? One way is by roling back information into the last known good state. For example, database transactions can be rolled-back if incomplete, and restore points can be used when applying system updates.
+
+###### Redundancy
+
+This is self explanatory, and involves having backup hardware to go.
+
+### Concurrent Access & Shared Resources
+
+How do we protect shared resources so that only one entity has access to it at any one time (to enforce mutual exclusion)? To share between threads on a single computer, we can use semaphores and mutexes.
+
+However, we face issues when applying this to a distributed system, as communication protocols and invocation (Remote Procedure Calls or Event Messages) to allow the calling of methods on remote nodes.
+
+![[Pasted image 20220131144221.png]]
+
+### Scheduling
+
+Scheduling in distributed systems is a lot more complex than within an OS, as it must meet the following criteria:
+
+- General - must not introduce restrictions on what can be done (jobs/applications/etc)
+- Fairness - similar to OSes, need to ensure that no single user ends up using most or all of the system.
+- Efficient - Resources need to be effectively managed to maximise performance.
+- Dynamic - System needs to be able to alter resource usage and current loadings based on the state of the system.
+- Transparent - the management of resources and processing are hidden from the user.
+
 
 - Scalability
 - Failure Handling
