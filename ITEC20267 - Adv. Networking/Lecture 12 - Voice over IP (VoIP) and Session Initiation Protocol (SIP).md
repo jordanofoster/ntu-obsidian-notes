@@ -119,6 +119,16 @@ Since TCP is a problem, we go for using UDP instead.
 
 UDP is a connectionless, best effort protocol with only an 8 byte header; they can arrive out of order and with no timing constraints (whereas TCP has to retransmit). As a result, we use RTP (Real-time Transport Protocol) instead.
 
+#### RTP
 
+This is the real time transport protocol, used when data needs to be presented at the right time, even when the packet arrival has variable delay. Packets themselves need to be in the right order - IP doesn't have a means for doing this; TCP might have an implementation, but it gets delayed with packet losses.
 
+RTP gives data proper timing and order by having a sequence number and timestamp in its protocol header, and RTP PDUs are transported in UDP datagrams over IP. It is defined in RFC3350.
 
+## SIP
+
+The Session Initiation Protocol is an application-layer protocol that enables voice (or more generally, multimedia) streams to be connected. The protocol itself has lots of detail, as defined in RFC 3261.
+
+### What SIP Does
+
+SIP has five areas that support 
