@@ -73,8 +73,35 @@ Challenges IoT systems must face include:
 - Programming small scale devices to work collectively.
 
 #### Edge & Fog Computing
+![[Pasted image 20220131141137.png]]
 
-Edge computing is a distributed computing framework, where data analy
+
+Edge computing is a distributed computing framework, where data analysis/procressing takes place at the point of creation, such as an IoT device. Data transformation and processing can occur at the point of creation too (such as the device generating the data). This has the following advantages:
+
+- Improves latency between device and cloud/datacentre
+- Faster analysis/response to deal with changes at that location
+- Would be connected wirelessly/mobile (4G/5G) to infrastructure
+
+Examples of this include:
+- Smart city deployments
+- Vehicular networks
+
+Challenges that must be considered:
+- Network/device security risks
+- Latencies and bandwidth within the infrastructure
+- Management of devices and resources
+
+Similarly, Fog computing refers to when processing takes place *between* the edge and data centre.
+
+#### Cloud Computing
+
+Clients access a back-end system that contains a cloud of resources, such as servers and storage. The nodes within the cloud can work collectively or independently through the use of virtualisation technologies, and provide elastic services. Examples of cloud computing include:
+- Infrastructure as a Service
+- Software as a Service
+- Platform as a Service
+- Web services
+
+Cloud computing suffers from similar security issues as Grid Computing, which will be covered in Topic 11 alongside general Cloud and Virtualisation technologies such as *VMware vSphere* (Hypervisor/cloud layer), *Microsoft Azure* (& *MS Hyper-V*) and Amazon Web Services (*EC2*).
 ## A quick word on Server Hardware
 
 This typically differs from desktop-grade systems, as they contain multiple CPU sockets, a much larger memory capacity, higher-speed I/O (and networking) and support enterprise-class CPUs.
