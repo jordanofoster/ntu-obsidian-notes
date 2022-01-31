@@ -283,6 +283,23 @@ Arrays can also be multi-dimensional:
 
 ```
 // 2-dimensional array
-int[,] array1 = new int[10, 10]
+int[,] array1 = new int[10, 10];
+// using a for loop to initialise values
+for (int i = 0; i < 10; i++)
+{
+	for (int j = 0; j < 10; j++)
+	{
+		array1[i, j] = 0;
+	}
+}
 ```
+
+```
+// could also initialise array this way...
+int[,] array2 = { { 1, 1 }, { 2, 2 }, { 3, 3} };
+```
+
+### Methods and Parameter Passing
+
+![[Pasted image 20220124163655.png]]
 
