@@ -61,7 +61,20 @@ Devices can interact with background/infrastructure servers & services as well. 
 #### Internet of Things
 
 Complex systems and products are now starting to be integrated into the home and office; the Internet of Things is an extension of Pervasive Computing, in which small devices are IP-enabled and connected by the internet. We can start to integrate computing resources into devices to enable new things that we had not considered before, such as:
+- Intelligent spaces (the environment changes and adapts based on how we react with it)
+- Using devices to help the elderly (or general healthcare)
+- Many more...
 
+Challenges IoT systems must face include:
+- Billions of IP-connected devices
+- Security, privacy & trust (lots of different solutions exists such as Hive, but all have limited/no notion of security)
+- Middlewares for controlling/coordinating large scale collections of devices
+- Heterogeneity of devices and software
+- Programming small scale devices to work collectively.
+
+#### Edge & Fog Computing
+
+Edge computing is a distributed computing framework, where data analy
 ## A quick word on Server Hardware
 
 This typically differs from desktop-grade systems, as they contain multiple CPU sockets, a much larger memory capacity, higher-speed I/O (and networking) and support enterprise-class CPUs.
