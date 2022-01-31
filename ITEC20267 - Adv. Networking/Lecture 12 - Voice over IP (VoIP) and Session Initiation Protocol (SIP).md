@@ -202,8 +202,42 @@ SIP Responses are defined as (HTTP-style):
 | 3xx | Redirection - Further action needs to be taken in order to complete the request. | 300 Multiple Choices, 302 Moved Temporarily |
 | 4xx | Client Error - Request contains bad syntax or cannot be fulfilled at this server. | 401 Unauthorized, 408 Request Timeout |
 | 5xx | Server Error - Server failed to fulfill an apparently valid request. | 503 Service Unavailable, 505 Version Not Supported |
-|  6xx | Global Failure - Request is invalid at any server. | 600 Busy Everywhere, 603 
+|  6xx | Global Failure - Request is invalid at any server. | 600 Busy Everywhere, 603 Decline |
 
+### Session Description Protocol (RFC4566)
+
+SDP is used to convey sufficient information to enable applications to join a session. An SDP session description includes the following:
+- Session name and purpose
+- Time(s) the session is active
+- The media (e.g. audio/video, codec details) comprising the session
+- Information needed to receive those media (IP addresses, ports, formats, etc.)
+
+Further information may include:
+
+- Information about the bandwidth to be used by the session
+- Contact information for the person responsible for the session
+- URI Information
+
+#### Media and Transport Information
+
+An SDP session description includes media format and transport protocol information:
+- Type of media (video, audio, etc.)
+- Transport protocol (RTP/UDP/IP, H.320, etc.)
+- Format of the media (H.261 video, PCMU, GSM, Speex etc.)
+
+SDP also carries address and port details:
+- Address (usually IP address) for media - can be multicast
+- Transport port for media
+
+### SIP to PSTN
+
+SIP -> PSTN gateway -> local PSTN switch -> PTN phone
+
+The request URI in the SIP INVITE message contains the Telephone Number which is sent to the PSTN Gateway. The Gateway maps the INVITE to PSTN signalling (SS7). Session Progress establishes early media sessions, so the caller hears the ringtone.
+
+Two-way speech path is established after ANM (Answer Message) and 200 OK
+
+The gateway acts as a SIP end device 
 
 
 
