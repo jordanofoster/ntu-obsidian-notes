@@ -53,7 +53,14 @@ Devices can interact with background/infrastructure servers & services as well. 
 
 - Effective means of programming in restrictive systems
 - Power saving/Power scavenging
-- Communication 
+- Communication (efficient use of wireless tech, power usage)
+- Integration of sensors/actuators
+- Intelligent Systems
+- Security, Privacy, Sensing, Coordination, etc...
+
+#### Internet of Things
+
+Complex systems and products are now starting to be integrated into the home and office; the Internet of Things is an extension of Pervasive Computing, in which small devices are IP-enabled and connected by the internet. We can start to integrate computing resources into devices to enable new things that we had not considered before, such as:
 
 ## A quick word on Server Hardware
 
