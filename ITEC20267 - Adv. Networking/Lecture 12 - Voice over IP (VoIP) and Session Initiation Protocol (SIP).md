@@ -168,6 +168,24 @@ SIP has five areas that support establishing and terminating multimedia communic
 11) The media session (data transfer) takes place directly between the voip phones.
 12) The session can be ended by either user through sending a SIP BYE indication (via the proxy server - if called routing enabled).
 
+#### SIP message
+
+SIP messages (request and response) comprises of:
+- Type of message (e.g. INVITE, ACK)
+- Message header fields
+	- Contains SIP address of caller and callee, call ID etc. via proxy(s)
+- Message body
+	- Uses SDP to describe data to be transferred, port numbers, etc.
+
+SIP Requests (Methods)
+
+| Method | Description |
+| --- | --- |
+| INVITE | A session is being requested to be setup using a specified media |
+| ACK | Message from client to indicate that a successful response to an INVITE has been received |
+| OPTIONS | A query to a server about its capabilities |
+| BYE | A call is being rl
+
 
 
 
