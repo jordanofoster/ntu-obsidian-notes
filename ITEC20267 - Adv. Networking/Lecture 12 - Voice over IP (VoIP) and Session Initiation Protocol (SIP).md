@@ -14,5 +14,10 @@ Can we measure information? We need a function such that:
 - It is inversely proportional to probability, $P(likelihood)$.
 - If we have two information, the information, $i$, adds.
 
-This is the case if $I = log{\frac{1}{p}}}$
+This is the case if $I = log (\frac{1}{p})$
+But actually, $I = \log_{2}(\frac{1}{p})$ - The information has a pseudo-unit - the BIT.
+
+
+
+
 
