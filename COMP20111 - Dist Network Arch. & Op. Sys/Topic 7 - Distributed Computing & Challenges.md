@@ -102,6 +102,32 @@ Clients access a back-end system that contains a cloud of resources, such as ser
 - Web services
 
 Cloud computing suffers from similar security issues as Grid Computing, which will be covered in Topic 11 alongside general Cloud and Virtualisation technologies such as *VMware vSphere* (Hypervisor/cloud layer), *Microsoft Azure* (& *MS Hyper-V*) and Amazon Web Services (*EC2*).
+
+#### Grid Computing
+
+![[Pasted image 20220131141742.png]]
+
+This brings together heterogenous computing resources such as Servers/Workstations/Clusters/Supercomputers/Databases/Storage (etc) to solve large-scale problems. Resources are leased by enabling software to link them globally, so grid computing makes use of available connected devices.
+
+The main grid types are *Computational, Data* and *Service* grids. Examples include *TeraGrid* and *BOINC* (Berkeley Open Infrastructure for Network Computing). Security issues include:
+
+- Resources (host/network security)
+- Services (denial of service)
+- Authentication/Authorisation
+- Information (Integrity/Confidentiality)
+- Management (Credential)
+
+As before, this is explored in greater detail in Topic 11.
+
+#### Cluster Computing
+
+Clusters can be built out of off-the-shelf commodities (e.g. a *Beowulf* cluster) or via specially designed nodes (e.g. *Blue Gene*). Clusters are interconnected nodes linked by high capacity networking, such as Ethernet (1Gbps) or InfiniBand (>30Gbps).
+
+Middleware controls job allocation, file access, etc. Clusters themselves are viewed as a single entity, rather than the nodes being exposed as descrete computational devices.
+
+Advantages of this type of computing include:
+
+- 
 ## A quick word on Server Hardware
 
 This typically differs from desktop-grade systems, as they contain multiple CPU sockets, a much larger memory capacity, higher-speed I/O (and networking) and support enterprise-class CPUs.
