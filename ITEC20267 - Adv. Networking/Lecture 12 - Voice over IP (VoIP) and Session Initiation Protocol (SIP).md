@@ -60,6 +60,11 @@ Entropy of a message source in a table:
 
 - There is an increasing trend towards networks consisting entirely of IP-based devices.
 - Internet is typically cheaper than the typical telco's PTSN systems
+- Skype is a well-known (but proprietary) example.
+
+Note that both traditional voice and VoIP involve digital transmission (at least in the network).
+
+
 
 
 
