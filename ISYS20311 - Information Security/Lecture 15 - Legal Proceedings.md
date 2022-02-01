@@ -49,4 +49,10 @@ The act also makes it an offence to possess or make articles for use in frauds.
 
 #### Computer Misuse Act 1990
 
-This Act was originally design to deter hackers. Unauthorised 
+This Act was originally design to deter hackers. Unauthorised access to a computer is defined as a summary offence, with a max sentence of 6 months. The unauthorised *modification* of a computer can be an offence of either kind, but contains a larger max sentence of 2 years.
+
+An extension of this, the Serious Crime Act of 2015, gives a maximum sentence of 14 years for causing damage to an economy or environment. [See this telegraph article.](https://telegraph.co.uk/news/2017/04/09/hacker-sets-every-emergency-siren-dallas/?)
+
+Denial of service is also covered by case law under this Act (See *DPP v. Lennon, 2006*).
+
+Making, supplying or obtaining articles for use in computer misuse offences is also a crime under Section 37 of the *Police and Justice Act* 
