@@ -14,4 +14,8 @@
 
 ## Admissible Evidence
 
-Evidence must follow a chain of custody; for example, records of everyone who has touched or could have otherwise modified data on that machine after the incident, until the for
+Evidence must follow a chain of custody; for example, records of everyone who has touched or could have otherwise modified data on that machine after the incident, until the forensic image has been taken.
+
+The easiest way is to stop anyone from touching it.
+
+Regarding forensic images themselves; are they 
