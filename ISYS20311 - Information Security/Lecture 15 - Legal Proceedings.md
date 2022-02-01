@@ -32,4 +32,21 @@ If civil charges are pressed, solicitors are involved - fines for damages are av
 
 #### Theft
 
-THe 
+The key damage in many breaches is the unauthorised obtaining of information. The main question is whether this is theft; the legal definition is as follows:
+
+*\[theft is] appropriating property belonging to another dishonestly with intent to permanently deprive.* 
+
+This shows that information theft is *explicitly* excluded from the Theft Act 1968, and court cases have upheld this interpretation of the law (see *Oxford v. Moss, 1979*).
+
+#### Fraud Act 2006
+
+This updated various offences originally prosecuted under the Theft Acts. Under this act, it is an offence to do the following with intent of making gain for yourself or loss for another:
+- Make a false representation
+- Fail to disclose information that you are legally required to disclose
+- Abuse a position of safeguarding financial interests
+
+The act also makes it an offence to possess or make articles for use in frauds.
+
+#### Computer Misuse Act 1990
+
+This Act was originally design to deter hackers. Unauthorised 
