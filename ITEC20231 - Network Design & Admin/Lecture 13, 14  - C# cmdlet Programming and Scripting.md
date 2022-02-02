@@ -484,4 +484,39 @@ Comparators in PowerShell scripting are as follows:
 - `-eq` is equal to $(=)$
 - `-lt` is less than $(<)$
 - `-gt` is greater than $(>)$
-- `-ge` is greater than or
+- `-ge` is greater than or equal to $(\geq)$
+- `-le` is less than or equal to $(\leq)$
+- `ne` is not equal to $(\neq)$
+
+### PowerShell Switch example
+
+Switch statement syntax is as follows:
+
+```
+switch <expression evaluation type> ($<variable name>) {
+... expressions ...
+}
+```
+
+a few examples are shown below:
+
+```
+[int] $simpleSwitchExample = 2
+
+switch ($simpleSwitchExample) {
+	1 { "Option 1" }
+	2 { "Option 2" }
+	3 { "Option 3" }
+	default { "No idea..." }
+}
+```
+
+```
+[string] $regularExpressionSwitchExample = "1234"
+[int] $size = 0
+
+switch -regex ($regularExpressionSwitchExample) {
+	"\d(4)" { $size = 4; break; }
+	"\d(3)" { $size = 3; break;}
+}
+```
