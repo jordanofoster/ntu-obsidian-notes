@@ -96,5 +96,22 @@ Regarding the checklists themselves:
 - If an organisation does not require a DPO, does it truly have no requirement to train its staff in data processing issues? Might there be a requirement under contract or tort law?
 - What do words such as "regular" and "large-scale" mean?
 
-Decisions made by the European Court of Justice are expected to bring light to some of these issue
+Decisions made by the European Court of Justice are expected to bring light to some of these issues caused by the legislative text itself.
 
+##### Who is the threat?
+
+Under GPDR, are organisations a threat to cloud service providers and the companies they support? See below:
+
+![[Pasted image 20220202001913.png]]
+
+![[Pasted image 20220202001927.png]]
+
+##### A particular issue for AI/ML systems: responding to requests for personal information
+
+Articles 13-15 of GDPR require that the data subject be given a variety of information about their rights regarding the storage and processing of their personal data, including "the purposes of the processing for which the personal data are intended." 
+
+If subjects' personal data is being used for "automatic decision making including profiling" then they are also entitled to "meaningful information about the logic involved", as well as "the significance and the evisaged consequences of such processing for the data subject."
+
+Article 22 of GPDR spells out the purpose of these requirements: that "the data subject shall have the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning him or her or similarly significantly affects him or her."
+
+Is this impossible for machine learning systems to deliver? The GDPR does explicitly state that data subjects have a right to "obtain an explanation of the decision reached after such an assessment", but in Recital 71 
