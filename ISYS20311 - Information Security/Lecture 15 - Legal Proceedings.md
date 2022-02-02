@@ -160,9 +160,16 @@ Defamation charges have been used in the past to prevent 'kiss and tell' stories
 Injuctions can be made to prevent publications; these are the only actions that can be issued against persons unknown, as shown by the case of *Hampshire Waste Service v. Persons Unknown* (2003), summarized below:
 
 - The case arose as a result of the *Global Day of Action Against Incinerators 2003.*
-- Members of the Onyx group of companies, who own the main large waste incinerator sites throughout the country,
+- Members of the Onyx group of companies, who own the main large waste incinerator sites throughout the country, faced the likely risk that one or more of their plants would be a target of an invasion by trespassers styling themselves as environmental protestors. 
+- The experience of such global days of action in previous years had led to them suffering seriously damaging and costly invasions.
+- In the preceding year, just one invasion alone at a plant in the course of construction had lead to legal and enforcement costs of £120,000, not to mention the other consequential losses that had been experienced.
+- All of the evidence clearly disclosed a case for an interim injunction, subject only to the potential problem that the claimant companies could not name even one protestor who would be involved.
+- Notwithstanding this, the Onyx companies successfully applied for an injunction from the Vice-Chancellor, who was willing to grant the first injunction of its type against *persons unknown* to the context of trespass and protest demonstration situations.
 
 Super-injunctions forbid both the public disclosure of information on a particular issue and any disclosure of the existence of the directive itself. However, both types of injuction are only applicable within UK jurisdiction.
 
+##### Mareva Injunctions (Asset freezing orders)
 
+If a person who has stolen information is identified, rapid action is often required. A Mareva injunction freezes assets at short notice, and is intended to prevent the dissipation of assets before court judgment. They are named after the second case to grant them: *Mareva Compania Naviera SA v. International Bulkcarriers SA* (1975).
 
+Mareva injunctions do not transfer the ownersh
