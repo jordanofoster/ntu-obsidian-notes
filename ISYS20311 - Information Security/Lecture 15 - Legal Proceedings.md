@@ -126,4 +126,18 @@ IP law only applies if the thief *actually uses* the stolen information; at leas
 
 Under patent law, a patent is theoretically breached after the theft of information, but this rarely applies, as the purpose of patents is to persuade inventors to publish their designs in return for a limited monopoly on its use - so as a result, theft is unneccessary (it's already public knowledge!)
 
-Violation of copyright law is relatively easy t
+Violation of copyright law is relatively easy to prove, via similarity - but it protects form and not function; if the design for a market-leading chocolate bar was stolen and reproduced, the law would only protect the wrapper and the shape of the bar itself, and not the creation process.
+
+Copyright law includes the database right, defined under Section 16 of the CDPA. It covers any organised collection of independent works (see *British Horseracing Board v. William Hill*, 2004). Offences are defined as *unauthorised extraction or re-utilisation of all or a substantial part of the contents of the database,* or the *repeated and systematic extraction or re-utilisation of insubstantial parts of the contents of the database.*
+
+Trademark law applies if someone uses a similar trademark to you, but only *within your legal jurisdiction.*
+
+### Civil Law
+
+#### Breach of Confidence
+
+This was originally designed to protect trade secrets, so that anyone who learned of one under a confidentiality agreement could not reveal it. Key factors of the law include the following:
+
+- The information has "the neccessary degree of confidence about it"
+- The information was provided in circumstances importing an obligation of confidence
+- There was an unauthorised use or disclosure of that information, 
