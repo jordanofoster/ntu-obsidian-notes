@@ -81,4 +81,20 @@ The 'right to be forgotten' established by the European Court of Justice (See *G
 
 Text-based checklists are available, provided by various organisations including the Information Commissioner's Office, for organisations to use when preparing to comply to GDPR. To provide an examplem under Article 39:
 
-*"Data Protection Officers are under a specific obligation to implement appropriate training. Although not an express obligation for organisations where DPOs are not required, we consider it to be almost impossible to demonstrate that an organisation is able to achieve compliance without policies settin"*
+*"Data Protection Officers are under a specific obligation to implement appropriate training. Although not an express obligation for organisations where DPOs are not required, we consider it to be almost impossible to demonstrate that an organisation is able to achieve compliance without policies setting out how to comply coupled with training to bring those policies to life."*
+
+Regarding the checklists themselves:
+
+*"Organisations should implement a training programme covering data protection generally and the areas that are specifically relevant to their organisations, and implement a policy for determining when training should take place and when refresher training should be carried out and a process for when training has been completed"*
+
+##### Unresolved Issues
+
+- DPOs are required to offer training, but do staff have to accept it?
+- Which staff need to be trained?
+- If multiple jurisdictions are involved, which supervisory authority or authorities should take action?
+- Who (or what) decides whether training is adequate or suitable?
+- If an organisation does not require a DPO, does it truly have no requirement to train its staff in data processing issues? Might there be a requirement under contract or tort law?
+- What do words such as "regular" and "large-scale" mean?
+
+Decisions made by the European Court of Justice are expected to bring light to some of these issue
+
