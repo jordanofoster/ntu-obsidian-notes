@@ -57,10 +57,22 @@ Denial of service is also covered by case law under this Act (See *DPP v. Lennon
 
 - The defendant (Lennon) was dismissed from his employment. He subsequently sent several hundred thousand emails to his former employer's computer system which purportedly came from the company's HR manager.
 - Charges were brought under Section 3 of the Computer Misuse Act 1990 for making an unauthorised modification to the contents of a computer.
-- The judge, at first instance, held that the emails were authorised as the employer's computer system was set up to receive email. It was also held that Section 3 was designed to 
+- The judge, at first instance, held that the emails were authorised as the employer's computer system was set up to receive email. It was also held that Section 3 was designed to prevent the sending of material such as computer viruses.
+- On appeal, the High Court concurred that a person who sets up a computer to receive emails is giving consent to emails being sent to that computer.
+	- This consent does not extend to emails sent not for communication purposes, but to disrupt the system.
 
 Making, supplying or obtaining articles for use in computer misuse offences is also a crime under Section 37 of the *Police and Justice Act* - A controversial decision.
 
 Making information available with intent (such as other people's passwords) is not yet a criminal offence, but the concept is under discussion since the *News International* phone hacking scandal of 2011.
 
+#### GDPR
 
+The EU-wide General Data Protection Regulation took effect on the 25th May 2018. It updates the Data Protection Act of 1998 - with the biggest change being a huge increase in fines; to show an example, under UK law TalkTalk was fined £400,000 - under GDPR, this fine would be predicted as large as £52 *million.*
+
+##### Other changes under GPDR
+
+Individuals must give 'clear and affirmative consent' to the processing of their data. A checkbox is adequate; anything less (read: silence) is not. IP addressses and mobile device IDs are unquestionably defined as personal data; their status was previously questionable under the Data Protection Directive.
+
+Genetic and biometric data are classified as 'sensitive personal data.' There is a strong incentive to pseudonymise data sets - such data is still classed as personal data, but is exempted from various GPDR requirements. Encryption of data is also encouraged.
+
+The 
