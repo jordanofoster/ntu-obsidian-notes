@@ -75,4 +75,10 @@ Individuals must give 'clear and affirmative consent' to the processing of their
 
 Genetic and biometric data are classified as 'sensitive personal data.' There is a strong incentive to pseudonymise data sets - such data is still classed as personal data, but is exempted from various GPDR requirements. Encryption of data is also encouraged.
 
-The 
+The 'right to be forgotten' established by the European Court of Justice (See *Google Spain v. AEPD,* 2014) has been extended towards a 'right to erasure' - it is no longer sufficient to remove a person's data from search results under a request; data controllers must now erase that data entirely. However if the data is encrypted, it may be sufficient to destroy the keys rather than undergo the prolonged process of ensuring that the data is fully erased.
+
+##### Complying with GDPR
+
+Text-based checklists are available, provided by various organisations including the Information Commissioner's Office, for organisations to use when preparing to comply to GDPR. To provide an examplem under Article 39:
+
+*"Data Protection Officers are under a specific obligation to implement appropriate training. Although not an express obligation for organisations where DPOs are not required, we consider it to be almost impossible to demonstrate that an organisation is able to achieve compliance without policies settin"*
