@@ -53,6 +53,14 @@ This Act was originally design to deter hackers. Unauthorised access to a comput
 
 An extension of this, the Serious Crime Act of 2015, gives a maximum sentence of 14 years for causing damage to an economy or environment. [See this telegraph article.](https://telegraph.co.uk/news/2017/04/09/hacker-sets-every-emergency-siren-dallas/?)
 
-Denial of service is also covered by case law under this Act (See *DPP v. Lennon, 2006*).
+Denial of service is also covered by case law under this Act (See *DPP v. Lennon, 2006*). A summary of the case is as follows:
 
-Making, supplying or obtaining articles for use in computer misuse offences is also a crime under Section 37 of the *Police and Justice Act* 
+- The defendant (Lennon) was dismissed from his employment. He subsequently sent several hundred thousand emails to his former employer's computer system which purportedly came from the company's HR manager.
+- Charges were brought under Section 3 of the Computer Misuse Act 1990 for making an unauthorised modification to the contents of a computer.
+- The judge, at first instance, held that the emails were authorised as the employer's computer system was set up to receive email. It was also held that Section 3 was designed to 
+
+Making, supplying or obtaining articles for use in computer misuse offences is also a crime under Section 37 of the *Police and Justice Act* - A controversial decision.
+
+Making information available with intent (such as other people's passwords) is not yet a criminal offence, but the concept is under discussion since the *News International* phone hacking scandal of 2011.
+
+
