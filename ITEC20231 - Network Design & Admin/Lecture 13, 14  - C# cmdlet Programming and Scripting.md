@@ -314,10 +314,48 @@ Cmdlets are specialised .NET classes that implement a specific tasks or operatio
 
 ### Cmdlet naming
 
-- Verbs are action-oriented words
-	- e.g.
-		- Add
-		- Get
-		- Set
-		- Update
-- Nouns descir
+- Verbs are action-oriented words e.g.:
+	- Add
+	- Get
+	- Set
+	- Update
+- Nouns describe what command to act on e.g.:
+	- SPSite
+	- SPUser
+
+Note that all nouns for SharePoint begin with SP; there are 893 cmdlets alone on SP server 2019.
+
+Examples encountered in NDA labs include:
+
+- New-ADComputer
+- Get-Help
+- Set-ADUser
+- Get-Spsite
+- Get-PSSnapin
+- New-SPContentDatabase
+
+There are lots of pre-defined verbs, stored in classes:
+- VerbsCommon
+- VerbsCommunciations
+- VerbsData
+- VerbsDiagnostic
+- VerbsLifeCyle
+- VerbsSecurity
+- VerbsOther
+
+### Sending input to cmdlets
+
+Cmdlets can accept parameters:
+
+```
+new-gpo -name "Publishers Policy"
+```
+
+Cmdlets can also be chained together so that the output of one can be input to another:
+
+```
+new-gpo -name "Publishers Policy" | new-gplink -target "ou=publishers, dc=testnetwork, dc=com"
+```
+
+Here, `new-gpo` is creating a new GPO object and passing it (using the pipe symbol `|`) to the `new-gplink` cmdlet. The `new-gplink` cmdlet links a GPO to a site, domain, or organizational unit (OU).
+
