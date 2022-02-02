@@ -422,4 +422,36 @@ Modules are another way that PowerShell commands are packaged; it is a preferred
 3) Use the `installutil` command to register the cmdlet in PowerShell.
 4) Use `add-pssnapin <new cmdlet>` to access the cmdlet from a PowerShell prompt.
 
-## PowerShe
+## PowerShell Scripting
+
+PowerShell provides a rich scripting language that is used to provide more complex functionality by linking cmdlets together. There are various types of languge features available:
+
+- Variables
+- If/else statements
+- Switch statements
+- For loops
+- Command line parameter passing
+
+and so on.
+
+### PowerShell Scripting Example
+
+```
+[int] $intPing=10
+[string] $intNetwork="127.0.0."
+
+for($i=1; $i -le $intPing; $i++) {
+	$strQuery = "select * from win32_pingstatus
+  where address = ' " + $intNetwork + $i + " ' "
+	$wmi = get-wmiobject -query $strQuery
+	"Pinging $intNetwork$i ..."
+	if( $wmi.statuscode -eq 0 )
+		{"success"}
+	else
+		{"error: " + $wmi.statuscode + " occurred"}
+}
+```
+
+Variables have the fo
+
+
