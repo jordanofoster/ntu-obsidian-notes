@@ -283,6 +283,41 @@ Arrays can also be multi-dimensional:
 
 ```
 // 2-dimensional array
-int[,] array1 = new int[10, 10]
+int[,] array1 = new int[10, 10];
+// using a for loop to initialise values
+for (int i = 0; i < 10; i++)
+{
+	for (int j = 0; j < 10; j++)
+	{
+		array1[i, j] = 0;
+	}
+}
 ```
 
+```
+// could also initialise array this way...
+int[,] array2 = { { 1, 1 }, { 2, 2 }, { 3, 3} };
+```
+
+### Methods and Parameter Passing
+
+![[Pasted image 20220124163655.png]]
+
+
+## A quick note on Access Modifiers
+
+![[Pasted image 20220202005630.png]]
+
+## What is a Cmdlet?
+
+Cmdlets are specialised .NET classes that implement a specific tasks or operation, such as an executable file. Cmdlets have required and optional parameters that control how they operate, and are named using a *verb-noun* pairing; the verbs are used to describe what actions the cmdlet will perform, and nouns are used to describe what entity the cmdlet will perform the action on.
+
+### Cmdlet naming
+
+- Verbs are action-oriented words
+	- e.g.
+		- Add
+		- Get
+		- Set
+		- Update
+- Nouns descir
