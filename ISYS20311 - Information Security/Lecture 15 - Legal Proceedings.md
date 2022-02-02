@@ -172,4 +172,14 @@ Super-injunctions forbid both the public disclosure of information on a particul
 
 If a person who has stolen information is identified, rapid action is often required. A Mareva injunction freezes assets at short notice, and is intended to prevent the dissipation of assets before court judgment. They are named after the second case to grant them: *Mareva Compania Naviera SA v. International Bulkcarriers SA* (1975).
 
-Mareva injunctions do not transfer the ownersh
+Mareva injunctions do not transfer the ownership of assets; it merely prevents their use or movement.
+
+#### Anton Piller orders (Search orders)
+
+These are search warrants that do not require a warning, but are orders where the defendant must give permission for searchers to enter. They are generally used when a search is required at a very short notice (e.g. to prevent the destruction of computer data). The name is derived from *Anton Piller KG v. Manufacturing Processes Limited* (1975) - a case that dealt with the theft of trade secrets.
+
+Anton Piller orders are very destructive to targeted businesses, as they reveal important business information to others, and computers may be seized and kept for months. As a result, there is an extremely high threshold for their issuance:
+
+- There must be an extremely strong *prima facie* case against the repsondent
+- The damage, be it potential or actual, must be very serious for the applicant
+- There must be clear evidence that the respondents have in their possession relevant documents or things and that there is a real possibility that they may destroy such material.
