@@ -399,5 +399,27 @@ protected override void ProcessRecord()
 }
 ```
 
-## Snap-ins 
+## Snap-ins
 
+Once you have finished writing your C\# cmdlet, you have to create another file which contains snap-in information. Snap-ins are used to register cmdlets with PowerShell, and to setup any registry entries. If you do not register a cmdlet within PowerShell, you will not be able to run it; A snap-in for the cmdlet would be added to your project and linked in when the project is compiled.
+
+### Anatomy of a Snap-in
+
+![[Pasted image 20220202011000.png]]
+
+### Snap-ins vs Module
+
+Snap-ins include not only PowerShell commands, but also other supporting .DLLS or applications that you might need in order to get snap-in or commands within that same snap-in to work.
+
+Modules are another way that PowerShell commands are packaged; it is a preferred packaging technique and is demonstrated in later sections.
+
+### Compiling cmdlets and linking into PowerShell
+
+1) Cmdlets can be created and compiled within Visual Studio.
+	- You need a special template project to create cmdlets; they can be downloaded from the web.
+2) Cmdlets can also be compiled using the .NET framework's C\# compiler, `csc.exe`.
+	- It is found under `windows\Microsoft.Net\Framework\<.net version>`
+3) Use the `installutil` command to register the cmdlet in PowerShell.
+4) Use `add-pssnapin <new cmdlet>` to access the cmdlet from a PowerShell prompt.
+
+## PowerShe
