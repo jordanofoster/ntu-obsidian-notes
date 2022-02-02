@@ -516,7 +516,24 @@ switch ($simpleSwitchExample) {
 [int] $size = 0
 
 switch -regex ($regularExpressionSwitchExample) {
-	"\d(4)" { $size = 4; break; }
-	"\d(3)" { $size = 3; break;}
+	"\d{4}" { $size = 4; break; }
+	"\d{3}" { $size = 3; break; }
+	"\d{2}" { $size = 2; break; }
+	"\d{1}" { $size = 1; break; }
+	default {
+		"No idea..."
+		$size = -1
+		}
 }
+
+if( $size -gt 0 ) { "The string had " + $size + " characters " }
+else { "Wasn't able to work out how many characters!" }
 ```
+
+In the second example, `-regex` refers to a regular expression. Simiarly, `-wildcard` refers to wildcard matching
+
+### Getting input from the user
+
+Scripts can interact with the user to provide more functionality; for example, they can display information by just saying - for example - "message..." However, this is not formatted.
+
+We can use the `Write-Host` cmdlet to display output instead:
