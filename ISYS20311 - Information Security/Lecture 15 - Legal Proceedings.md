@@ -140,4 +140,16 @@ This was originally designed to protect trade secrets, so that anyone who learne
 
 - The information has "the neccessary degree of confidence about it"
 - The information was provided in circumstances importing an obligation of confidence
-- There was an unauthorised use or disclosure of that information, 
+- There was an unauthorised use or disclosure of that information and, at least, the risk of damage
+
+The concept has been progressively broadened by case law decisions:
+
+- *Saltman Engineering Co. Ltd. v. Campbell Engineering Co. Ltd.* (1948) has the court rule that "No contractual relationship is required". 
+- *Douglas v. Hello!* (2002), a case initially concerning the confidentiality of electronic information in the context of photographs, had the courts rule that "Only a reasonable expectation of confidence is required."
+
+Thes rulings may create a tort law regarding the misuse of private information; an example includes a 2014 case against Google for working around cookie blockers to obtain personal information for targeted ads (Vidal-Hall v. Google Inc.)
+
+#### Defamation
+
+Also known as libel or slander, this refers to the publication or voicing of statements that negatively affect the claimant's reputation. The concept is rarely applied 
+
