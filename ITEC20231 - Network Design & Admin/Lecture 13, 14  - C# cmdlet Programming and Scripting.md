@@ -359,3 +359,45 @@ new-gpo -name "Publishers Policy" | new-gplink -target "ou=publishers, dc=testne
 
 Here, `new-gpo` is creating a new GPO object and passing it (using the pipe symbol `|`) to the `new-gplink` cmdlet. The `new-gplink` cmdlet links a GPO to a site, domain, or organizational unit (OU).
 
+### Anatomy of a cmdlet
+
+![[Pasted image 20220202010354.png]]
+
+### Processing within cmdlets
+
+The Cmdlet and PSCmdlet classes provide the following methods:
+- `BeginProcessing()` - Provides a one-time, pre-processing functionality for the cmdlet.
+- `ProcessRecord()` - Provides a record-by-record processing functionality for the cmdlet.
+- `EndProcessing()` - Provides a one-time, post-processing functionality for the cmdlet.
+
+These methods need to be implemented by the developer; sending objects through a pipeline between cmdlets can then be demonstrated by the following:
+
+![[Pasted image 20220202010600.png]]
+
+Each of the methods is inherited from the PSCmdlet class so we need to use the `protected` and `override` modifiers.
+
+```
+protected override void EndProcessing()
+{
+	base.EndProcessing();
+}
+
+protected override void BeginProcessing()
+{
+	base.BeginProcessing();
+}
+
+protected override void ProcessRecord()
+{
+
+	foreach (string name in nameCollection)
+	{
+		WriteVerbose("Creating salutation for " + name);
+		string salutation = "Hello, " + name;
+		WriteObject(salutation);
+	}
+}
+```
+
+## Snap-ins 
+
