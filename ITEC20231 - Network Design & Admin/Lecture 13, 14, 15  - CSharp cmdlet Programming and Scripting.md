@@ -560,9 +560,25 @@ display "hello world"
 ```
 
 ```
-function display( $message ) { % Un-typed 
+function display( $message ) { // $message is untyped - could be any information
 	Write-Host "Your message is $message"
 }
 
 display "hello world"
+```
+
+```
+function display {
+	param ([string]$message="";
+			[int]$repeat=1)
+	$returnMessage = ""
+	for($count=1; $count -le $repeat; $count++) {
+		Write-Host "Your message is $message"
+		$returnMessage = $returnMessage +
+						 "Your message is $message"
+	}
+  return $returnMessage
+}
+
+display("hello world", 5)
 ```
