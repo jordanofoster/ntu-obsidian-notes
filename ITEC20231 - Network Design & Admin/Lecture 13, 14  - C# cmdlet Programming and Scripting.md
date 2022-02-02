@@ -536,4 +536,33 @@ In the second example, `-regex` refers to a regular expression. Simiarly, `-wild
 
 Scripts can interact with the user to provide more functionality; for example, they can display information by just saying - for example - "message..." However, this is not formatted.
 
-We can use the `Write-Host` cmdlet to display output instead:
+We can use the `Write-Host` cmdlet to display output instead, and we can format the message (colours, spaces, etc.) To provide an example:
+
+`Write-host "hello world" -foregroundcolor black -backgroundcolor white`
+
+Scripts can get input from the user by using the `Read-Host` cmdlet. For example:
+
+`$ipAddress = Read-Host "Enter the ip address:"`
+
+Additionally, the `-AsSecureString` option to mask what has been entered:
+
+`$password = read-host -assecurestring "Enter your password:"`
+
+### PowerShell Functions
+
+```
+function display {
+	param ([string]$message="")
+	Write-Host "Your message is $message"
+}
+
+display "hello world"
+```
+
+```
+function display( $message ) { % Un-typed 
+	Write-Host "Your message is $message"
+}
+
+display "hello world"
+```
