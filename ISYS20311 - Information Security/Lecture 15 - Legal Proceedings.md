@@ -151,5 +151,18 @@ Thes rulings may create a tort law regarding the misuse of private information; 
 
 #### Defamation
 
-Also known as libel or slander, this refers to the publication or voicing of statements that negatively affect the claimant's reputation. The concept is rarely applied 
+Also known as libel or slander, this refers to the publication or voicing of statements that negatively affect the claimant's reputation. The concept is rarely applied in cases of information theft because the statements themselves must be false; true statements act as a defence. In addition, there is government pressure to reduce such cases (e.g. withdrawal of Legal Aid).
+
+Defamation charges have been used in the past to prevent 'kiss and tell' stories from former employees. 
+
+#### Injunctions and Super-injections
+
+Injuctions can be made to prevent publications; these are the only actions that can be issued against persons unknown, as shown by the case of *Hampshire Waste Service v. Persons Unknown* (2003), summarized below:
+
+- The case arose as a result of the *Global Day of Action Against Incinerators 2003.*
+- Members of the Onyx group of companies, who own the main large waste incinerator sites throughout the country,
+
+Super-injunctions forbid both the public disclosure of information on a particular issue and any disclosure of the existence of the directive itself. However, both types of injuction are only applicable within UK jurisdiction.
+
+
 
