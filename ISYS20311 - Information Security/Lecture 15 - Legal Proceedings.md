@@ -114,4 +114,16 @@ If subjects' personal data is being used for "automatic decision making includin
 
 Article 22 of GPDR spells out the purpose of these requirements: that "the data subject shall have the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning him or her or similarly significantly affects him or her."
 
-Is this impossible for machine learning systems to deliver? The GDPR does explicitly state that data subjects have a right to "obtain an explanation of the decision reached after such an assessment", but in Recital 71 
+Is this impossible for machine learning systems to deliver? The GDPR does explicitly state that data subjects have a right to "obtain an explanation of the decision reached after such an assessment", but in Recital 71 (which is non-binding), rather than in the legally binding Articles.
+
+It *is* possible to provide "meaningful information about the logic" and to explain the "significance of decision making" without giving a full explanation of an individual decision - this is done by providing a document giving a technical description of the ML model. One unreferenced article suggests describing where the data comes from, the method used, and how many features are selected for.
+
+Another document is suggested to give an understanding of the decision(s) that the model is used to make and the consequences of a false positive or an omission. This will help to explain not only the logic of the decision, but also its significance.
+
+#### Intellectual Property Law
+
+IP law only applies if the thief *actually uses* the stolen information; at least in this instance there is someone to prosecute, though.
+
+Under patent law, a patent is theoretically breached after the theft of information, but this rarely applies, as the purpose of patents is to persuade inventors to publish their designs in return for a limited monopoly on its use - so as a result, theft is unneccessary (it's already public knowledge!)
+
+Violation of copyright law is relatively easy t
