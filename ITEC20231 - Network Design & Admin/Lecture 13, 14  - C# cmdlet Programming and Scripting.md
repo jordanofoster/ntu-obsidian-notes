@@ -452,6 +452,36 @@ for($i=1; $i -le $intPing; $i++) {
 }
 ```
 
-Variables have the fo
+Variables have the following syntax:
 
+`[<data type]$<variable name> = <data value>`
 
+The following data types are available:
+- `[array]`
+- `[char]`
+- `[decimal]`
+- `[hashtable]`
+- `[long]`
+- `[single]`
+- `[bool]`
+- `[byte]`
+- `[double]`
+- `[int]`
+- `[string]`
+- `[xml]`
+
+If statement syntax is as follows:
+
+```
+if( $<variable name> <evaluation expression> <value> )
+	{"success"}
+else
+	{"fail"}
+```
+
+Comparators in PowerShell scripting are as follows:
+
+- `-eq` is equal to $(=)$
+- `-lt` is less than $(<)$
+- `-gt` is greater than $(>)$
+- `-ge` is greater than or
