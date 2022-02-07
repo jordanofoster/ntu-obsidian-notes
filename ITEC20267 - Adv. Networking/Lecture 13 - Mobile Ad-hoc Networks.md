@@ -18,3 +18,13 @@ When creating MANETs, we want to determine an optimal way to find the optimal ne
 
 As such, the frequency of route changes are a function of node mobility.
 
+### Conventional Routing Protocols for Wired Networks:
+
+#### Distance vector routing
+
+- Each router has a table giving the distance from itself to all possible destinations.
+- Each router periodically broadcasts its table to its neighbours
+	- Neighbors will update their table based on this information to ensure they are using the shortest route to reach each destination.
+- To route packets, routers check their table to find the next hop to the destination.
+- The tradeoff here is how often routing table are exchanged:
+	- Too often results in a large amount
