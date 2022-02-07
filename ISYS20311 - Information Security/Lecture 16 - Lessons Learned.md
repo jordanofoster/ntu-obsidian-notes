@@ -37,7 +37,7 @@ Discussion always begins with the first activity or question of 'What was *inten
 
 These key points should be recorded.
 
- ## Incident Walkthrough
+ ## Incident Walkthrough (Example 1)
 
  For the purposes of this section, we will use an example incident where unauthorised access to a computer system was obtained by someone using a 'stolen' set of credentials (login/password).
 
@@ -81,11 +81,30 @@ These are as follows:
 2) Avoid hazards that caused the incident in the first place.
 3) Improve the management system for crisis situations.
 
-### Prevent the Incident
+We will be using our [[Lecture 16 - Lessons Learned#Incident Walkthrough|prior incident walkthrough]] as a guideline.
 
-Using our [[Lecture 16 - Lessons Learned#Incident Walkthrough|prior incident walkthrough]] as a guideline:
+### Prevent the Incident
 - We remind employees to *never* give out their credentials by email.
 - Additionally, we introduce a *new* policy:
 	- *Employees should never give out sensitive information via OWA.*
+
+### Avoid the Hazard
+There are several options:
+- Write a program to scan incoming emails for doubtful origin.
+- We *stop* using OWA, and give employees a dedicated email client that works at home instead.
+- We make use of two-factor authentication when using OWA.
+	- E.g. sending a code to the user's phone (SMS 2FA)
+	- This is a less draconian measure than banning OWA outright.
+- Register our URIs (like *mail.corp.com*)
+	- This is a good idea in general.
+	- Introducing Mondays (?)
+
+### Improve the Management System
+- Create a telephone hotline for urgent username/password change requests.
+	- Additionally, ban all requests by email.
+		- This could be onerous if we have a lot of employees.
+- Microsoft could mitigate this by adding *CSRF* (cross-site request forgery) tokens to the form authentication template in OWA.
+	- However they didn't do it in Exchange 2010 - even though the problem has existed since *Exchange 2007!*
+
 
 
