@@ -85,5 +85,10 @@ When the query reaches the destination:
 
 Additionally, route discovery information can be piggybacked onto data such as TCP connection packets. This reduces latency (e.g. start-up time for the TCP connection), but increases overhead (since packets are flooded throughout the network)
 
-Intermediate nodes can cache routes they have discovered. These can be used if they want to send a packet to a node listed in the route, and reduces overhead in terms of number of route request packets required. Nodes can operate in "promiscious" mode, which has it listen to all packets exchanged on the network, allowing it to cache the routes that are listed within the packets.
+Intermediate nodes can cache routes they have discovered. These can be used if they want to send a packet to a node listed in the route, and reduces overhead in terms of number of route request packets required. Nodes can also operate in "promiscious" mode, which has it listen to all packets exchanged on the network, allowing it to cache the routes that are listed within the packets.
 
+###### Route Maintenance
+
+Nodes can determine broken links through the ACK/NACK responses included in most protocols. If the link is broken, the following options are available:
+- Node that detects the broken link reports this information back to the sending node.
+- Alternativ
