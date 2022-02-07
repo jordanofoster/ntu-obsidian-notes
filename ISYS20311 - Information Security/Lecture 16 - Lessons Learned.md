@@ -32,4 +32,31 @@ AARs should have a facilitator appointed; their role is not to 'have' answers as
 
 Discussion always begins with the first activity or question of 'What was *intended* to happen?' participants should first universally reach an agreeable conclusion about the facts of what happened during the incident, and then the plan the organization had is compared with what happened in reality. This consists of the following two steps:
 
-1) Identify and discuss the successes and shortfalls of the actual outco
+1) Identify and discuss the successes and shortfalls of the actual procedure followed.
+2) Put in place new action plans to sustain these successes and improve upon the shortfalls.
+
+These key points should be recorded.
+
+## Phases of Improvement
+
+These are as follows:
+
+1) Prevent the incident from occuring again.
+2) Avoid hazards that caused the incident in the first place.
+3) Improve the management system for crisis situations.
+
+ ## Incident Walkthrough
+
+ For the purposes of this section, we will use an example incident where unauthorised access to a computer system was obtained by someone using a 'stolen' set of credentials (login/password).
+
+ Firstly, the incident is divided into discrete activities:
+ 1) Perpetrator(s) obtained legitimate log-in credentials for user *X.*
+ 2) Perpetrators logged in remotely using a VPN.
+ 3) Perpetrators downloaded various files
+ 4) Perpetrators did not delete nor (apparently) damage any files.
+
+### What happened?
+
+- User X says he has only used his credentials to log into the system at home and at work, *except for the update message.*
+	- ""*What* update message?""
+	- X and numerous others received an urgent email from the sysadmin telling them of a security breach
