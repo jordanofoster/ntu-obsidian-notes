@@ -155,4 +155,9 @@ Often, the hardest task is not devising the best practice, but getting people to
 	- The problem with this is that a successful security policy is measured by the lack of things that occur as a result of its proper implementtion.
 	- So a good security policy is a quiet one.
 
+### Disseminating lessons in practice
 
+This is done via several methods:
+
+- Generating *What-If* scenarios - these are far more memorable than policies
+- Self-phishing
