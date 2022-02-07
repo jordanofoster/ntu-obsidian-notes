@@ -191,5 +191,24 @@ Incremental backups take up much less storage space and can be run much faster; 
 
 ##### Other backup Strategies
 
-Should me
+There are various strategies for rotating out backup media. Grandfather-Father-Son (GFS) rotation is a widely used strategy for storage media. It works as thus:
+
+- Daily (Son): 
+	- Reuse every week, store backups on 7 separate pieces of media (1 week's worth).
+- Weekly (Father): 
+	- Reuse every month, store backups on 4 separate pieces of media (1 month's worth).
+- Monthly (Grandfather): 
+	- Reuse every year, store backups on 12 separate pieces of media (1 year's worth).
+
+Other backup strategies include the *Tower of Hanoi* method.
+
+##### Backup & Restore under Linux
+
+Linux can use the `dump` and `restore` commands, but dumps cannot be applied directly to a remote disk. Nemeth (et al) recommend `Bacula` as a network/site wide solution for enterprises, due to the following reasons:
+- It backs up data from a wide range of O/Ses.
+- It uses MySQL or other systems as a backend database.
+- It can write backups that span multiple tape volumes.
+- It handles auto changers.
+- It can write MD5 checksums to validate files.
+- It's free
 
