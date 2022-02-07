@@ -29,4 +29,10 @@ As such, the frequency of route changes are a function of node mobility.
 - The tradeoff here is how often routing table are exchanged:
 	- Too often results in a large amount of overhead, excessive bandwidth and computational resources used.
 	- Too infrequent results in sub-optimal or invalid (stale) routes
-	- 
+	- Can send routing table updates whenever information in the table changes due to a new link or a broken link.
+
+#### Problems with using Conventional Routing in MANETs
+Unidirectional links
+- A communicating with B does not always imply that B can communicate with A.
+Redundant links
+- 
