@@ -68,7 +68,8 @@ Route discovery:
 Thus, we want an approach that is simple and efficient. One solution is to perform controlled flooding of the query:
 - Nodes receiving the query will append their address to the route being recorded in the packet header and boradcast the updated packet to all neighbours
 	- When a node receives a query, it checks to see if its address is already in the header (indicating the packet was already flooded by itself)
-	- If the address is present 
+	- If the address is present, the node drops the packet
+- 
 
 
 
