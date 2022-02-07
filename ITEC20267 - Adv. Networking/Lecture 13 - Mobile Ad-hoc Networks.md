@@ -50,5 +50,8 @@ Periodic routing updates
 Dynamic nature of ad-hoc networks
 - Wired networks are relatively stable 
 	- Occasionally links go down/come up or congestion changes the cost of a link
-- Wireless network links are continuously changing
+- Wireless network links are continuously changing due to node mobilty and environmental conditions
+	- Convergence to stable routes may be too slow to produce useful information information if routing updates are not sent often enough
+	- If routing updates are sent too often, it wastes the battery of mobiles and channel bandwidth
+- 
 
