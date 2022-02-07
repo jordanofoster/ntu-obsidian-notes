@@ -27,4 +27,6 @@ As such, the frequency of route changes are a function of node mobility.
 	- Neighbors will update their table based on this information to ensure they are using the shortest route to reach each destination.
 - To route packets, routers check their table to find the next hop to the destination.
 - The tradeoff here is how often routing table are exchanged:
-	- Too often results in a large amount
+	- Too often results in a large amount of overhead, excessive bandwidth and computational resources used.
+	- Too infrequent results in sub-optimal or invalid (stale) routes
+	- 
