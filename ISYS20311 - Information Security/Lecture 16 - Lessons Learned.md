@@ -55,8 +55,28 @@ These are as follows:
  3) Perpetrators downloaded various files
  4) Perpetrators did not delete nor (apparently) damage any files.
 
-### What happened?
+### "What happened?"
 
 - User X says he has only used his credentials to log into the system at home and at work, *except for the update message.*
-	- ""*What* update message?""
-	- X and numerous others received an urgent email from the sysadmin telling them of a security breach
+	- "*What* update message?"
+	- X and numerous others received an urgent email from the sysadmin telling them of a security breach, and that they needed to update their passwords immediately.
+		- X did this on Saturday morning from his home, using Outlook Web Access (OWA).
+		- The sysadmin denies the sending of any such email.
+
+### Revision of activities list
+
+1) Perpetrator obtained the name of the sysadmin
+2) Perpetrator sent fake (but convincing-looking) emails to numerous staff members
+3) Perpetrator harvested login details from the staffs' responses.
+4) X brings his laptop into the meeting - a check of the web cache shows access to an *unknown domain* on Saturday morning.
+
+### "What happened?" Part 2: Electric Boogaloo
+
+- An *Outlook Web Access* phishing attack occurred.
+- The perpetrator obtained the name of the sysadmin from the corporate website.
+- Perp cloned the company's OWA site, including graphics.
+- Perp registered a lookalike mail domain in the form of *mailcorp.com* (instead of mail.corp.com)
+- Perp sent emails purportedly from the sysadmin with a link directing the staff to the *fake* OWA site.
+- After harvesting these details, the fake site redirected the users to the real site.
+
+()
