@@ -57,7 +57,18 @@ Dynamic nature of ad-hoc networks
 #### Routing Protocols for MANETs:
 
 ##### Route discovery and route maintenance
+Route discovery:
+- Initial discovery of valid route from source to destination
+- Source node can send a query for a destination node
+- Only destination node responds to a query
+- If the destination node is located in the source node's transmission range, the destination responds and a link is established
+	- No periodic routing updates are needed
+	- Approach must be extended to a case where the destination node is not in the source node's transmission range
 
+Thus, we want an approach that is simple and efficient. One solution is to perform controlled flooding of the query:
+- Nodes receiving the query will append their address to the route being recorded in the packet header and boradcast the updated packet to all neighbours
+	- When a node receives a query, it checks to see if its address is already in the header (indicating the packet was already flooded by itself)
+	- If the address is present 
 
 
 
