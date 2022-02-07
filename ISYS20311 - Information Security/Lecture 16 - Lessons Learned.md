@@ -139,4 +139,20 @@ Firstly, we change the software! We also require more comprehensive test procedu
 We follow good security programming practices; risks for web apps explicitly are defined [here.](https://owasp.org/www-project-top-ten)
 
 ### Improve the Management System (Example 2)
-Teach, emphasise and make policy of good programming practices -
+Teach, emphasise and make policy of good programming practices - and make sure they are followed.
+
+## Disseminating lessons learned/creating best practices
+
+Often, the hardest task is not devising the best practice, but getting people to use it. Options to facilitate their use are listed below:
+- Mandatory policy
+	- Penalize those that do not follow it
+- Mandatory seminars/training
+- Posters everywhere to remind and raise awareness
+- Incentives to follow policy
+	- However, only *one* person needs to not follow policy to create a breach.
+	- Incentives also make the policy appear as a form of 'extra special behaviour' (i.e. fine to ignore).
+- Publicising security successes
+	- The problem with this is that a successful security policy is measured by the lack of things that occur as a result of its proper implementtion.
+	- So a good security policy is a quiet one.
+
+
