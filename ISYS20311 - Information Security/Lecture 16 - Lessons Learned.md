@@ -161,3 +161,12 @@ This is done via several methods:
 
 - Generating *What-If* scenarios - these are far more memorable than policies
 - Self-phishing
+- White hat hackers
+- Write incident recovery procedures
+	- This helps kill two birds with one stone.
+
+Other methods could include:
+- Software apps?
+	- Best practices are at your fingertips
+	- They present key information (e.g. data protection guides/secure programming examples)
+	- An AI app may ask you all the relevant questi
