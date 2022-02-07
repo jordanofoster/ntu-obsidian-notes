@@ -49,5 +49,6 @@ Periodic routing updates
 
 Dynamic nature of ad-hoc networks
 - Wired networks are relatively stable 
-	- Occasionally links 
+	- Occasionally links go down/come up or congestion changes the cost of a link
+- Wireless network links continuously chan
 
