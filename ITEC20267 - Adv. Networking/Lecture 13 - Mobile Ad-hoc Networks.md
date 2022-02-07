@@ -35,4 +35,7 @@ As such, the frequency of route changes are a function of node mobility.
 Unidirectional links
 - A communicating with B does not always imply that B can communicate with A.
 Redundant links
-- 
+Redundant links
+- In wired networks, only one or a small number of routers connecting two networks
+- In wireless networks, there may be several "gateway" nodes between a source and sink due to wireless channel properties.
+	- 
