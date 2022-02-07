@@ -169,4 +169,8 @@ Other methods could include:
 - Software apps?
 	- Best practices are at your fingertips
 	- They present key information (e.g. data protection guides/secure programming examples)
-	- An AI app may ask you all the relevant questi
+	- An AI app may ask you all the relevant questions needed.
+- Compliance monitoring:
+	- Could you have an undercover boss?
+	- Perhaps incentives for testers to find security bugs
+
