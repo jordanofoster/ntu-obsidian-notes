@@ -37,14 +37,6 @@ Discussion always begins with the first activity or question of 'What was *inten
 
 These key points should be recorded.
 
-## Phases of Improvement
-
-These are as follows:
-
-1) Prevent the incident from occuring again.
-2) Avoid hazards that caused the incident in the first place.
-3) Improve the management system for crisis situations.
-
  ## Incident Walkthrough
 
  For the purposes of this section, we will use an example incident where unauthorised access to a computer system was obtained by someone using a 'stolen' set of credentials (login/password).
@@ -79,4 +71,21 @@ These are as follows:
 - Perp sent emails purportedly from the sysadmin with a link directing the staff to the *fake* OWA site.
 - After harvesting these details, the fake site redirected the users to the real site.
 
-()
+[A blog post explaining how this attack vector works is shown here.](https://community.rapid7.com/community/metasploit/blog/2012/01/19/simple-outlook-web-access-phishing)
+
+## Phases of Improvement
+
+These are as follows:
+
+1) Prevent the incident from occuring again.
+2) Avoid hazards that caused the incident in the first place.
+3) Improve the management system for crisis situations.
+
+### Prevent the Incident
+
+Using our [[Lecture 16 - Lessons Learned#Incident Walkthrough|prior incident walkthrough]] as a guideline:
+- We remind employees to *never* give out their credentials by email.
+- Additionally, we introduce a *new* policy:
+	- *Employees should never give out sensitive information via OWA.*
+
+
