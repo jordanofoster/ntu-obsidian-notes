@@ -210,5 +210,31 @@ Linux can use the `dump` and `restore` commands, but dumps cannot be applied dir
 - It can write backups that span multiple tape volumes.
 - It handles auto changers.
 - It can write MD5 checksums to validate files.
-- It's free
+- It's free!
+- Bacula is very complex, but rich in features such as scheduling.
+
+###### Bacula Structure
+![[Pasted image 20220207145245.png]]
+
+##### Backup Security
+
+Nemeth quotes Dan Geer in saying the following:
+*"What does a backup do? It reliably violates file permissions at a distance."*
+
+Thus, the following should be done to keep backups secured:
+- Create specific user accounts for backup purposes
+	- For example, members of the *Backup Operators* group can backup files without having NTFS read permissions.
+- Password-protect tapes - though this might be a problem if different software is used to recover the backup.
+- Store and transport backups securely.
+- Possibly encrypt the data being backed up.
+
+## System Disasters
+
+If the entire Windows OS dies, an ASR backup should be ready for use. ASR backups cover system files, system data, system services, etc. It should be noted that an ASR backup does *not* backup user data.
+
+ASR backups reformat the entire system drive when restored, and as such should only be used if all else has failed.
+
+Plenty of linux systems are available via a bootable CD or USB drive, so recoveries can be done from here.
+
+Alternatively, the cloud may be used
 
