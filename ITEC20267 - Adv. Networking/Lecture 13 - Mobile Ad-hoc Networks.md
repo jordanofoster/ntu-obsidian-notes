@@ -78,4 +78,6 @@ Thus, we want an approach that is simple and efficient. One solution is to perfo
 Typically, the source and destination will not be far away in an ad-hoc network.
 - We can add a TTL (time to live) to route request
 - Each node reduces the TTL by one when it propagates the request
-- If the TTL hits zero 
+- If the TTL hits zero, the route request packet is dropped
+
+
