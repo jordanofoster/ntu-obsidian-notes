@@ -91,4 +91,7 @@ Intermediate nodes can cache routes they have discovered. These can be used if t
 
 Nodes can determine broken links through the ACK/NACK responses included in most protocols. If the link is broken, the following options are available:
 - Node that detects the broken link reports this information back to the sending node.
-- Alternativ
+- Alternatively, node can try to fix the link by sending out its own route request to the destination.
+
+If no ACK/NACK is present in the link-layer protocol, nodes can listen to the channel to determine if the next hop will transmit a packet or not. If the node does not hear the forwarding of the packet, it is assumed that the link is lost. Explicit routing acknowledgements can also be used to determine the state of links.
+
