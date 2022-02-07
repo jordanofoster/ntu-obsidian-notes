@@ -53,5 +53,11 @@ Dynamic nature of ad-hoc networks
 - Wireless network links are continuously changing due to node mobilty and environmental conditions
 	- Convergence to stable routes may be too slow to produce useful information information if routing updates are not sent often enough
 	- If routing updates are sent too often, it wastes the battery of mobiles and channel bandwidth
-- 
+
+#### Routing Protocols for MANETs:
+
+##### Route discovery and route maintenance
+
+
+
 
