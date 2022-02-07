@@ -59,14 +59,50 @@ Common risks for users include:
 
 All of the above can be reduced in effect by having various forms of redundant storage, which vary in recovery time and the amount of sysadmin intervention required.
 
-### Using technology to help reduce risk: Data Redundancy
+### Using technology to help reduce risk
 
-There are several types of RAID:
+#### Data Redundancy
+
+There are several types of RAID that assist with this:
 
 - Spanned: Multiple disks appear as a single volume.
+
 ![[Pasted image 20220207142626.png]]
 
 - Striped (RAID 0): Multiple disks appear as a single volume, but data is written across all drives at the same rate.
+
 ![[Pasted image 20220207142705.png]]
+
+#### Disk Redundancy
+
+Other types of RAID target this issue:
+
+- Mirrored (RAID 1): Identical copies are stored on another volume.
+
+![[Pasted image 20220207142828.png]]
+
+- RAID 5: This is a striped disk set with *parity* - this allows the system to continue running in the event of single disk failure.
+
+![[Pasted image 20220207142858.png]]#
+
+RAID can be implemented either via software (built into the O/S) or via hardware (RAID controllers).
+
+##### Problems with Hardware RAID
+
+There are a number of problems with RAID controllers that must be considered:
+- Common mode failure.
+- Inconsistent failure rates (when compared with the specs).
+- Replacement rates are much higher than MTTF figures suggest.
+- Write caching is another issue.
+- Transactions written by a database to a RAID setup can also be problematic.
+
+##### Software RAID (Windows Server)
+
+Windows Server 2008 allows the use of disk mirroring to provide a RAID-1 software-based configuration. A second, empty disk is needed to have an equal sized volume to the primary disk partition. The process is as follows:
+
+1) Create a new RAID-1 partition using both disks.
+2) Highlight the primary OS partition and click "Add Mirror".
+3) Will re-sync the contents between both partitions to create a mirror.
+
 
 
