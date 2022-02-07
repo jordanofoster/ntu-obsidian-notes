@@ -236,5 +236,7 @@ ASR backups reformat the entire system drive when restored, and as such should o
 
 Plenty of linux systems are available via a bootable CD or USB drive, so recoveries can be done from here.
 
-Alternatively, the cloud may be used
+Alternatively, the cloud may be used.
+
+
 
