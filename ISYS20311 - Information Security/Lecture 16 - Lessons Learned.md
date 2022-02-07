@@ -47,7 +47,7 @@ These key points should be recorded.
  3) Perpetrators downloaded various files
  4) Perpetrators did not delete nor (apparently) damage any files.
 
-### "What happened?"
+### "What happened?" (Example 1)
 
 - User X says he has only used his credentials to log into the system at home and at work, *except for the update message.*
 	- "*What* update message?"
@@ -73,7 +73,7 @@ These key points should be recorded.
 
 [A blog post explaining how this attack vector works is shown here.](https://community.rapid7.com/community/metasploit/blog/2012/01/19/simple-outlook-web-access-phishing)
 
-## Phases of Improvement
+## Phases of Improvement 
 
 These are as follows:
 
@@ -83,12 +83,12 @@ These are as follows:
 
 We will be using our [[Lecture 16 - Lessons Learned#Incident Walkthrough|prior incident walkthrough]] as a guideline.
 
-### Prevent the Incident
+### Prevent the Incident (Example 1)
 - We remind employees to *never* give out their credentials by email.
 - Additionally, we introduce a *new* policy:
 	- *Employees should never give out sensitive information via OWA.*
 
-### Avoid the Hazard
+### Avoid the Hazard (Example 1)
 There are several options:
 - Write a program to scan incoming emails for doubtful origin.
 - We *stop* using OWA, and give employees a dedicated email client that works at home instead.
@@ -99,12 +99,28 @@ There are several options:
 	- This is a good idea in general.
 	- Introducing Mondays (?)
 
-### Improve the Management System
+### Improve the Management System (Example 1)
 - Create a telephone hotline for urgent username/password change requests.
 	- Additionally, ban all requests by email.
 		- This could be onerous if we have a lot of employees.
 - Microsoft could mitigate this by adding *CSRF* (cross-site request forgery) tokens to the form authentication template in OWA.
 	- However they didn't do it in Exchange 2010 - even though the problem has existed since *Exchange 2007!*
 
+## Incident Walkthrough (Example 2)
 
+*Three users of your dating website have complained that their accounts were hacked immediately after they set a brand new password.*
+
+*The only common feature appears to be that all three logged in through shared computers in the same town: one in an Internet café, one in the public library and one over Wi-Fi in an upmarket café.*
+
+Once again, we divide the incident into discrete activities:
+1) Each user logged onto the dating website.
+2) One purchased some credits; the other two already had sufficient credits in their account.
+3) They all conducted a few searches, and sent a message (or two)
+4) They all *explicitly* logged off
+5) They all reported that these hacks occured on the *same day.*
+
+### "What Happened?" (Example 2)
+
+- Logs suggest that the logins themselves were valid.
+	- So the login credentials themselves must have been stolen 
 
