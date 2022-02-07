@@ -18,4 +18,18 @@ These aim to follow a 'no-blame' culture; that is, a mentality of blaming proces
 AARs themselves ask the following questions:
 - What was *intended* to happen
 - What *actually* happened
-- 
+- *Why* it happened
+- *What*  was learned?
+
+### Holding an After Action Review
+
+An AAR should be held immediately after the incident is resolved, while all participants are still available and have fresh memory of it. AARs themselves should create the right climate for discussion, by following the right principles:
+
+- AARs should have a culture of openness and commitment to learning ('doing better').
+	- As such, they are free from the concept of seniority/rank, and are explicitly *not* critiques or evaluations of personal performance.
+
+AARs should have a facilitator appointed; their role is not to 'have' answers as to what happened so much as to help those in session 'learn' the answers found. The event itself should be divided into discrete activities, each of which should have an identifiable objective and plan of action.
+
+Discussion always begins with the first activity or question of 'What was *intended* to happen?' participants should first universally reach an agreeable conclusion about the facts of what happened during the incident, and then the plan the organization had is compared with what happened in reality. This consists of the following two steps:
+
+1) Identify and discuss the successes and shortfalls of the actual outco
