@@ -72,7 +72,10 @@ Thus, we want an approach that is simple and efficient. One solution is to perfo
 - Each query is labeled with a unique request ID
 	- Each node keeps a cache with request IDs of packets it has already forwarded
 	- Discards packets with request ID listed in node's cache
-	- Avoids 
+	- Avoids duplicate queries sent throughout the network
+- Node only propagates first copy of each route request packet it sees
 
-
-
+Typically, the source and destination will not be far away in an ad-hoc network.
+- We can add a TTL (time to live) to route request
+- Each node reduces the TTL by one when it propagates the request
+- If the TTL hits zero 
