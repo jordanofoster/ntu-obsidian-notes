@@ -57,7 +57,7 @@ Dynamic nature of ad-hoc networks
 #### Routing Protocols for MANETs:
 
 ##### Route discovery and route maintenance
-Route discovery:
+###### Route discovery
 - Initial discovery of valid route from source to destination
 - Source node can send a query for a destination node
 - Only destination node responds to a query
@@ -79,5 +79,12 @@ Typically, the source and destination will not be far away in an ad-hoc network.
 - We can add a TTL (time to live) to route request
 - Each node reduces the TTL by one when it propagates the request
 - If the TTL hits zero, the route request packet is dropped
+
+When the query reaches the destination:
+- The destination sends a response back to the node from which it received the route request, using the route in the packet header (if available)
+
+Additionally, route discovery information can be piggybacked onto data such as TCP connection packets. This reduces latency (e.g. start-up time for the TCP connection), but increases overhead (since packets are flooded throughout the network)
+
+
 
 
