@@ -128,4 +128,39 @@ Offsite provision of spare processing can help when computers are lost, stolen o
 Backing up data follows a simple recipe:
 1) Use a backup device (DVD, Tape, Drive...)
 2) Use a backup software tool (3rd-party tools may be more sophisticated)
-3) Knowledge of *what*
+3) Knowledge of *what* exactly to backup
+
+Hardware considerations for 1) include:
+- Capacity
+- Speed
+- Cost
+- Reliability
+
+##### Types of Backup
+
+- Normal/Full
+	- This backs up a complete copy of the target folder/drive.
+- Incremental
+	- This clears the *archive* bit on all files.
+	- Only files marked as *changed* will be included in the next backup.
+- Differential
+	- This does not clear the archive bit on files...
+	- ...and backs up all files since the last *full* backup.
+
+Note that if multiple copies of the same data is stored, space used can be reduced via deduplication (i.e. having multiple references to a single copy of the data).
+
+###### Incremental Backup Example
+
+Suppose that an incremental backup is performed on Tuesday; only the data that changed since Monday's incremental backup will be backed up today. The result is a much smaller and faster backup; with the advantage of a shorter time interval between backups, and less data itself to be backed up.
+
+![[Pasted image 20220207144037.png]]
+
+###### Differential Backup Example
+
+Suppose that a full backup is done on Sunday. On Monday, only files that have changed since Sunday are backed up; on Tuesday, only the files that changed since Monday are backed up, and so on until the next full backup is performed.
+
+![[Pasted image 20220207144156.png]]
+
+
+###### Example of Alternative Backups
+
