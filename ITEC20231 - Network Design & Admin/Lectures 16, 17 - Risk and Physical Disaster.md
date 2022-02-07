@@ -164,3 +164,32 @@ Suppose that a full backup is done on Sunday. On Monday, only files that have ch
 
 ###### Example of Alternative Backups
 
+| Day | Backup | Contents | Comment |
+| --- | --- | --- | --- |
+| 1 | | Full | A,B,C | A,B then changed |
+| 2 | Incremental | A,B only | C changed, D created |
+| 3 | Incremental | C,D only | Keeps backup small |
+| 1 | Full | A,B,C | A,B then changed |
+| 2 | Differential | A,B only | C changed, D created |
+| 3 | Differential | A,B,C,D | Backs up all changes since Full |
+
+###### Example of Alternative Full Restorations
+
+A failure occurs on Day 3 of backups:
+
+- Using the incremental strategy:
+	- Restore Day 1's Full Backup
+	- Restore Day 2's Incremental Backup
+	- Restore Day 3's Incremental Backup
+- Using the differential strategy:
+	- Restore Day 1's Full Backup
+	- Restore Day 3's Differential Backup
+
+##### Incremental vs Differential
+
+Incremental backups take up much less storage space and can be run much faster; but recovery is slower as you have to deal with many more 'pieces' in the form of the increments. Differential backups take up a fair amount of storage space by comparison; while they are faster than full/normal backups, they are slow compared to incremental backups.
+
+##### Other backup Strategies
+
+Should me
+
