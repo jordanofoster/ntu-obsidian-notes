@@ -122,5 +122,21 @@ Once again, we divide the incident into discrete activities:
 ### "What Happened?" (Example 2)
 
 - Logs suggest that the logins themselves were valid.
-	- So the login credentials themselves must have been stolen 
+	- So the login credentials themselves must have been stolen on three separate occasions.
+- The same town suggests that there is one individual or gang at work in the same area
+	- So no need for remote access.
+- Could keyloggers have been used?
+	- This is unlikely, as one user was using Wi-Fi and could have been anywhere in range (and using their own device on top).
+- Spy cameras/shoulder surfing?
+	- This is possible, but statistically unlikely; it's difficult enough to facilitate *once* - but at *three* different venues?
+- The web cache is checked at the Internet café and the library:
+	- Cookies are found for the dating website, with authorisation details stored inside.
 
+### Prevent the Incident (Example 2)
+Firstly, we change the software! We also require more comprehensive test procedures.
+
+### Avoid the Hazard (Example 2)
+We follow good security programming practices; risks for web apps explicitly are defined [here.](https://owasp.org/www-project-top-ten)
+
+### Improve the Management System (Example 2)
+Teach, emphasise and make policy of good programming practices -
