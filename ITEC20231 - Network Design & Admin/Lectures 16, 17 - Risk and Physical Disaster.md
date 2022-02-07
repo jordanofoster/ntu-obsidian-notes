@@ -102,7 +102,30 @@ Windows Server 2008 allows the use of disk mirroring to provide a RAID-1 softwar
 
 1) Create a new RAID-1 partition using both disks.
 2) Highlight the primary OS partition and click "Add Mirror".
-3) Will re-sync the contents between both partitions to create a mirror.
+3) The OS will re-sync the contents between both partitions to create a mirror.
 
+![[Pasted image 20220207143211.png]]
 
+##### Summary of software-based RAID choices
 
+| Mirrored Volumes (RAID-1) | Striped Volumes with Parity (RAID-5) |
+| --- | --- |
+| Can protect system or boot partition | Cannot protect system or boot partition |
+| Requires two hard disks | Requires a minimum of three hard disks and allows a maximum of 32 hard disks |
+| Has a higher cost per MB | Has a lower cost per MB |
+| 50% redundancy | 33% maximum redundancy |
+| Has good read/write performance | Has excellent read, moderate write performance |
+| Uses less system memory | Uses more system memory |
+
+### When things go wrong
+
+RAID is nice, but cannot help in these situations. We need backups to external media - and to protect against disasters (floods, fires, etc.), we need off-site storage of the backup media.
+
+Offsite provision of spare processing can help when computers are lost, stolen or damaged, but it is costly. Total backup solutions are provided by external data warehouses, but they factor their own risk into their services (and thus cost a lot of money).
+
+####  Backup
+
+Backing up data follows a simple recipe:
+1) Use a backup device (DVD, Tape, Drive...)
+2) Use a backup software tool (3rd-party tools may be more sophisticated)
+3) Knowledge of *what*
