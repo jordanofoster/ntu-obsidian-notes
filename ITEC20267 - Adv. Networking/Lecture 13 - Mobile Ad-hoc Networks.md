@@ -38,4 +38,16 @@ Redundant links
 Redundant links
 - In wired networks, only one or a small number of routers connecting two networks
 - In wireless networks, there may be several "gateway" nodes between a source and sink due to wireless channel properties.
-	- 
+	- Several redundant paths may be generated
+	- This is a waste of bandwidth, computation and storage
+
+Periodic routing updates
+- Cost of sending routing updates (bandwidth, energy) is much greater in a wireless network than in a wired network
+- Routing updates required even if nothing has changed
+- In highly-connected networks, routing updates may collide
+- Mobile cannot enter a sleep state because they need to hear all routing updates; this wastes energy.
+
+Dynamic nature of ad-hoc networks
+- Wired networks are relatively stable 
+	- Occasionally links 
+
