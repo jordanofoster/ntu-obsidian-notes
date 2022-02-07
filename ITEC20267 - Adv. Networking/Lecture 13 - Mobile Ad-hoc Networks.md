@@ -69,7 +69,10 @@ Thus, we want an approach that is simple and efficient. One solution is to perfo
 - Nodes receiving the query will append their address to the route being recorded in the packet header and boradcast the updated packet to all neighbours
 	- When a node receives a query, it checks to see if its address is already in the header (indicating the packet was already flooded by itself)
 	- If the address is present, the node drops the packet
-- 
+- Each query is labeled with a unique request ID
+	- Each node keeps a cache with request IDs of packets it has already forwarded
+	- Discards packets with request ID listed in node's cache
+	- Avoids 
 
 
 
