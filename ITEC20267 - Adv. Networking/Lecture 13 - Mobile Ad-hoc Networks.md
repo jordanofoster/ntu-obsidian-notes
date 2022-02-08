@@ -221,3 +221,36 @@ Simulations by Carnegie Mellon University show the following:
 - When the node mobility is low, DSDV perform far better than when mobility is high.
 	- Although reactive protocols still have lower overhead and better packet delivery ratios.
 
+##### Overall conclusions
+- DSDV performs well only in low-mobility situations. Even then, its overhead is still high.
+- DSR and AODV perform well regardless of mobility.
+	- DSR has the lowest packet overhead.
+	- If the overhead includes the packet header (overhead in bytes) however, AODV performs better than DSR as it has smaller headers.
+	- However the header overhead may be less costly than the packet overhead due to the cost to obtain channel access, MAC/PHY headers, etc.
+
+## Current Research in Routing for MANETs
+
+- Hybrid proactive-reactive approaches
+- Multicast
+- QoS support
+	- How can guarantees be provided in such a dynamic network environment?
+- Resource-aware routing
+	- Using metric besides shortest-path for routing decisions
+	- Low power routing
+	- Trying to avoid network partitioning
+- Location-based routing.
+
+### Power-Aware Routing
+Energy is needlessly expended in the following areas with current routing protocols:
+- Overhearing transmission of packets not intended for the node ("promiscuous" mode)
+- Contention
+- Overhead in route finding and route maintenance.
+
+Promiscuous mode is still useful, however:
+- Some protocols take advantage of the ability for nodes to overhear transmissions to other nodes to gather more information.
+- This also improves routing, as more up-to-date routing information is obtained.
+- However a *large* amount of energy is required to receive and decode the entire packet.
+
+Contention itself also requires power:
+- Channel sensing
+- Ac
