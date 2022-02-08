@@ -253,4 +253,27 @@ Promiscuous mode is still useful, however:
 
 Contention itself also requires power:
 - Channel sensing
-- Ac
+- ACK schemes
+- Retransmissions
+
+Route finding and maintenance has a lot of unnecessary wastage as overhead packets are transmitted throughout the network to find optimal routes. As a result, many "useless" packets are transmitted.
+
+Routing metrics are limited:
+- Most MANET routing protocols use shortest-hop as a metric for determining "good" routes, but there are other options:
+	- Minimum latency
+	- Link quality
+	- Location stability
+	- Power of intermediate nodes
+
+Power as a metric by itself seems bad, initially:
+- It can potentially over-use intermediate nodes
+	- Nodes can run out of energy early
+	- And intention is increased around an overused node.
+- It also increases the system lifetime, however...
+- ...and reduces the chance of partitioning the network.
+
+As such, the goal in power-aware routing is thus: To increase network lifetime, or the time until the network is partitioned, by evenly distributing the energy load.
+- This is a problem similar to load balancing:
+	- How should routes be chosen to ensure nodes' overall energy dissipation is kept low, whilst not overusing any individual node?
+
+#### Routing Metrics that Incorporate Power
