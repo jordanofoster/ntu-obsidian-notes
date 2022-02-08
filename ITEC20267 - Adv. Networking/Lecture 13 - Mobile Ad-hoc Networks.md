@@ -174,4 +174,15 @@ The protocol works as follows:
 - Each RREQ is uniquely identified by the source's ID and a sequence number.
 - Intermediate nodes keep track of which neighbour node the RREQ came from, in order to establish a valid reverse path.
 
-When a route is found, the destination or intermediate node sends (over unicast) a route reply (*RREP*) back to the neighbour
+When a route is found, the destination or intermediate node sends (over unicast) a route reply (*RREP*) back to the neighbour that gave it the RREQ request. Intermediate nodes set up routing information based on the nodes from which they receive the RREP packet. These routes contain timers, and will expire if left unused.
+
+Route maintenance is achieved differently depending on the change. If a source node moves, a new RREQ is sent to the destination node. If an intermediate node moves, its upstream neighbour propagates a link failure notification message to the source node, so that the source node can then send a new RREQ packet to find a new valid route.
+
+Additionally, "Hello" messages are used to inform nodes of their neighbours. This can be used to ensure the link is kept alive, and can contain information about a node's neighbours to give information about the network topology.
+
+##### DSR (Dynamic Source Routing)
+This is similar to AODV, but the entire route is maintained within the packet header. Intermediate nodes do not need to keep the routing information to route packets, and no periodic route advertisements are needed.
+
+Intermediate nodes that propagate a "route request" append their ID to the "route record" in the packet header. When the packet reaches its destination (or a node with a valid cached route to it), a "route reply" is returned:
+- If the route reply is from the destination node, send the "route record" in the route reply.
+
