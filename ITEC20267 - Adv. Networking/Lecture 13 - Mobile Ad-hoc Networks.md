@@ -158,4 +158,20 @@ CGSR as a process is as follows:
 - Each node keeps a "cluster member table" that contains the clusterhead node for each mobile in the network.
 	- Updates to this table are sent via DSDV.
 
+#### Reactive Routing Protocols
 
+Routes are created only when needed with these protocols, and they require "route discovery" and "route maintenance". Reactive Routing is also referred to as "source-initiated on-demand routing".
+
+The goal of these protocols is to minimize the amount of overhead compared with proactive approaches, at the expense of latency in finding a route when needed. Reactive protocols are:
+
+- AODV: Ad-hoc on-demand distance vector
+- DSR - Dynamic Source Routing
+
+##### AODV (Ad-hoc on-demand distance vector)
+The protocol works as follows:
+- A node needing to find a route to a destination broadcasts a route request (*RREQ*) to its neighbouring nodes.
+- Neighbour nodes broadcast a RREQ to *their* neighbours until the destination is found, or an intermediate node has recent information about a route to the destination.
+- Each RREQ is uniquely identified by the source's ID and a sequence number.
+- Intermediate nodes keep track of which neighbour node the RREQ came from, in order to establish a valid reverse path.
+
+When a route is found, the destination or intermediate node sends (over unicast) a route reply (*RREP*) back to the neighbour
