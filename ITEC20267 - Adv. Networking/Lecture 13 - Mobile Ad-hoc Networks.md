@@ -288,5 +288,19 @@ As such, the goal in power-aware routing is thus: To increase network lifetime, 
 - If $E(i,j) = energy$ to transmit packets from node $i$ to $j$ (including reception energy), the metric tries to minimize via the following equation:
 
 $e_k = \displaystyle\sum_{j+1} ^{i+1} E(i,j)$
+
 The energy/packet model is as such:
-$E(i,j) = \alpha + \betaf(d_i)
+$E(i,j) = \alpha + \beta f(d_{ij}) + yf(congestion)$
+
+If there is a large amount of traffic, $f(congestion)$ will cause the packet to be routed around the traffic; possible causing a longer route to be taken. The drawback of this is that the metric does not take into account *relative* node energies.
+
+##### Cost/packet
+This metric routes packets around nodes with low energy. $f_{i}(x_{i}) = node$ where $i =$ cost of node, given that it has already expended $x_i$ energy.
+
+The model describes a penalty to the node (and hence the entire network) if the packet is routed through it:
+
+$c_k = \displaystyle\sum_{i=1}^{j-1} f_{i}(x_{i})$
+
+To minimize the total cost to send the a
+
+
