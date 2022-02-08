@@ -184,5 +184,16 @@ Additionally, "Hello" messages are used to inform nodes of their neighbours. Thi
 This is similar to AODV, but the entire route is maintained within the packet header. Intermediate nodes do not need to keep the routing information to route packets, and no periodic route advertisements are needed.
 
 Intermediate nodes that propagate a "route request" append their ID to the "route record" in the packet header. When the packet reaches its destination (or a node with a valid cached route to it), a "route reply" is returned:
-- If the route reply is from the destination node, send the "route record" in the route reply.
+- If the route reply is from the destination node, send the "route record" in the "route reply".
+- Otherwise is the node is intermediate, append the cached route to the destination node to the "route record" in the "route reply".
 
+The "route reply" itself is returned along various paths depending on context:
+- If there is a cached path to the source node, it follows that.
+- If symmetric links are assumed, the packet travels the reverse route of the "route record".
+- The route reply can also be piggybacked with a "route request" to the source node.
+
+Route maintenance is achieved via the use of "route error" messages to propagate information about broken links. All cached routes with broken links are removed from the table.
+- Nodes themselves can use promiscuous mode to listen to all traffic on the channel.
+	- This allows them to update their route caches based on information from packets.
+	- If the node knows a better route to the destination, a gratuitious "route reply" to the source can be sent.
+- If an intermediate node determines that the next hop in a "route record" is unreachable, it can replace the route with a cached route instead.
