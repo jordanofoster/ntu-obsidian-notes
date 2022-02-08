@@ -301,6 +301,19 @@ The model describes a penalty to the node (and hence the entire network) if the 
 
 $c_k = \displaystyle\sum_{i=1}^{j-1} f_{i}(x_{i})$
 
-To minimize the total cost to send the a
+The intent is to minimize the total cost ($c_k$) to send the packet. $f_i$ must be chosen to reflect battery lifetime remaining; if the node has little energy left, $f_i$ should be large (e.g. $f_{i}(x_{i}) = ax_{i}$ )
+
+Advantages of this approach include the ability to incorporate the battery model into the metric itself, increasing the time before the network is partitioned, and reducing congestion due to distributed routes.
+
+However the metric does *not* automatically avoid the nodes with the highest cost; this is its main disadvantage.
+
+##### Maximum node cost
+
+A metric $f_{i}(x_{i})$ can be developed which determines the cost of routing a packet (through node $i$). This is used to choose the path whereby the maximum node cost is minimized.
+
+##### Time to network partition
+
+The time to the partitioning of a network can be mini
+
 
 
