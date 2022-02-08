@@ -313,7 +313,19 @@ A metric $f_{i}(x_{i})$ can be developed which determines the cost of routing a 
 
 ##### Time to network partition
 
-The time to the partitioning of a network can be mini
+The time to the partitioning of a network can be minimized by finding "cut-set" nodes; when all of these are removed, the result is network partitioning, so ideally we want to evenly distribute energy load among all of the cut-set nodes.
 
+It is hard to optimise for this metric while also maintaining low delay and high throughput, however. One option is to perform a round-robin distribution of packets to nodes in the cut-set, if all the packets are the same length; this ensures equal power drain among all the critical nodes. Such a solution is approximatable with a minimum cost/packet algorithm.
 
-
+#### Simulation Results for Power Aware Routing
+- No extra packet delay is recorded using power-aware routing.
+- Even though the routes are longer, congestion is avoided -> fewer retransmissions are needed -> shorter waiting times to transmit packets, etc.
+- Power-aware routing is thus beneficial for:
+	- Large networks:
+		- If the network is too small, there are not many alternative routes to choose from.
+	- Moderate network loads
+		- If the network is lightly loaded, shortest-path algorithms work fine.
+		- If the network is heavily loaded however, the cost of contention outweighs any power savings.
+	- Dense networks
+		- These have more alternative routes than sparser networks.
+- Finally, the node cost function $f_{i}(x_{i})$ has a significant effect on energy savings.
