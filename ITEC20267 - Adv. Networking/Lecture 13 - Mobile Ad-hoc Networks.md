@@ -54,10 +54,10 @@ Dynamic nature of ad-hoc networks
 	- Convergence to stable routes may be too slow to produce useful information information if routing updates are not sent often enough
 	- If routing updates are sent too often, it wastes the battery of mobiles and channel bandwidth
 
-#### Routing Protocols for MANETs:
+### Routing Protocols for MANETs:
 
-##### Route discovery and route maintenance
-###### Route discovery
+#### Route discovery and route maintenance
+##### Route discovery
 - Initial discovery of valid route from source to destination
 - Source node can send a query for a destination node
 - Only destination node responds to a query
@@ -87,11 +87,29 @@ Additionally, route discovery information can be piggybacked onto data such as T
 
 Intermediate nodes can cache routes they have discovered. These can be used if they want to send a packet to a node listed in the route, and reduces overhead in terms of number of route request packets required. Nodes can also operate in "promiscious" mode, which has it listen to all packets exchanged on the network, allowing it to cache the routes that are listed within the packets.
 
-###### Route Maintenance
+##### Route Maintenance
 
 Nodes can determine broken links through the ACK/NACK responses included in most protocols. If the link is broken, the following options are available:
 - Node that detects the broken link reports this information back to the sending node.
 - Alternatively, node can try to fix the link by sending out its own route request to the destination.
 
 If no ACK/NACK is present in the link-layer protocol, nodes can listen to the channel to determine if the next hop will transmit a packet or not. If the node does not hear the forwarding of the packet, it is assumed that the link is lost. Explicit routing acknowledgements can also be used to determine the state of links.
+
+#### Proactive vs. Reactive Routing
+##### Proactive Routing
+Nodes continuously evaluate and update routes.
+- Periodic updates
+- Triggered updates - when a link changes
+- Efficient if routes used often
+- Large amount of overhead
+- Similar to conventional routing protocols
+
+###### Proactive Routing
+
+##### Reactive Routing
+Node evaluate and update routes only when they are needed.
+- When a node has a packet to send, it checks to see if it has a valid route.
+- If no valid route known, node must send out a route-request message to obtain a valid route (controlled flooding of the network)
+- Data sent using valid route
+- Efficient if routes not used often
 
