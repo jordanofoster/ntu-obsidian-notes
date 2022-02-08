@@ -277,3 +277,16 @@ As such, the goal in power-aware routing is thus: To increase network lifetime, 
 	- How should routes be chosen to ensure nodes' overall energy dissipation is kept low, whilst not overusing any individual node?
 
 #### Routing Metrics that Incorporate Power
+
+##### Shortest-hop
+- Fewer hops -> less energy dissipation!
+- However, energy load is not evenly distributed.
+
+##### Energy Consumed per Packet
+- If there is little traffic, this is the same efficiency as shortest-hop.
+- If there is a large amount, the energy for contention will ensure that the packet is routed around high-load areas.
+- If $E(i,j) = energy$ to transmit packets from node $i$ to $j$ (including reception energy), the metric tries to minimize via the following equation:
+
+$e_k = \displaystyle\sum_{j+1} ^{i+1} E(i,j)$
+The energy/packet model is as such:
+$E(i,j) = \alpha + \betaf(d_i)
