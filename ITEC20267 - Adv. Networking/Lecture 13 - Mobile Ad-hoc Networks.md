@@ -104,8 +104,6 @@ Nodes continuously evaluate and update routes.
 - Large amount of overhead
 - Similar to conventional routing protocols
 
-###### Proactive Routing
-
 ##### Reactive Routing
 Node evaluate and update routes only when they are needed.
 - When a node has a packet to send, it checks to see if it has a valid route.
@@ -113,3 +111,31 @@ Node evaluate and update routes only when they are needed.
 - Data sent using valid route
 - Efficient if routes not used often
 
+#### Proactive Routing Protocols
+Each node maintains consistent, up-to-date routing information in the form of a table with the next-hop to reach every node in the network. Changes in link state are transmitted throughout the network to update each node's routing table.
+
+Proactive routing protocols include:
+- DSDV: Destination-sequenced distance-vector
+- CGSR - Clusterhead Gateway Switch Routing
+
+##### DSDV (Destination-sequenced distance-vector)
+Each node maintains a table with the following:
+- All possible destination nodes
+- Number of hops required to reach that node
+- Next hop along the route to that node
+- Sequence number
+
+The sequence number is used to distinguish new routes from old routes. Updates to the routing table are transmitted throughout the network via two methods:
+- "Full dump" routing updates
+	- Via a large packet that contains all routing information
+	- Transmitted infrequently, when little change occurs in existing links
+- "Incremental" routing updates
+	- Contains only information that has changed since the last update.
+
+Route broadcast packets are transmitted containing the following info:
+- Address of destination
+- Number of hops to reach destination
+- Sequence number of information
+- Sequence number of broadcast packet
+
+The route broad
