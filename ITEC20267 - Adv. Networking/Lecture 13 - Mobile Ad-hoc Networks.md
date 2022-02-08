@@ -197,3 +197,27 @@ Route maintenance is achieved via the use of "route error" messages to propagate
 	- This allows them to update their route caches based on information from packets.
 	- If the node knows a better route to the destination, a gratuitious "route reply" to the source can be sent.
 - If an intermediate node determines that the next hop in a "route record" is unreachable, it can replace the route with a cached route instead.
+
+#### Final comparison of proactive vs. reactive protocols
+
+##### Proactive Approaches
+- More efficient when the routes are used often
+- Assures the routes are ready when needed
+- Requires periodic route updates (acts as a form of overhead)
+- Node mobility affects the entire network as part of routing updates.
+
+##### Reactive Approaches
+- More efficient when routes are used rarely
+- Requires the node to first find the route before data can be transmitted.
+- Periodic route updates are not required;
+- Can have localized route discovery to help deal with the problem of node mobility.
+
+Simulations by Carnegie Mellon University show the following:
+- Reactive protocols can deliver many more packets that proactive protocols when the node mobility is high.
+	- Proactive protocols by contrast have too many routing updates triggered, and the routes themselves cannot converge.
+- Overhead of reactive protocols is dependant on node mobility:
+	- DSR has less overhead than AODV, as intermediate nodes cache routes and thus fewer "route requests" need to be sent throughout the network.
+- DSDV's overhead is constant due to its periodic updates.
+- When the node mobility is low, DSDV perform far better than when mobility is high.
+	- Although reactive protocols still have lower overhead and better packet delivery ratios.
+
