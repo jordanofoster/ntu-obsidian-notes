@@ -138,4 +138,24 @@ Route broadcast packets are transmitted containing the following info:
 - Sequence number of information
 - Sequence number of broadcast packet
 
-The route broad
+The route broadcast packet is used to update tables at intermediate nodes. If the sequence number of the update is the same as the sequence number of the information in the node's own table, the route with the shortest path is used; if the update is newer, the node replaces its own information with that of the updated route.
+
+##### CGSR (Clusterhead Gateway Switch Routing)
+This is a clustering multihop approach, where the clusterhead controls nodes in a cluster:
+- Nodes within the cluster use CDMA-type SS code to avoid inter-cluster interference
+- The clusterhead itself can control channel access
+
+There is a clusterhead selection algorithm within the cluster:
+- This can perform minimum cluster changes to reduce overhead (e.g. clusterhead only changed if it moves out of the cluster, or another clusterhead moves into an existing cluster).
+
+DSDV is used as an underlying routing mechanism for CGSR.
+
+CGSR as a process is as follows:
+- Nodes send data to the clusterhead.
+- The clusterhead sends data to "gateway" nodes.
+- The gateway nodes route the packet to a new clusterhead.
+- The packet goes in a chain of clusterhead -> gateway -> clusterhead until the packet reaches the destination cluster's clusterhead.
+- Each node keeps a "cluster member table" that contains the clusterhead node for each mobile in the network.
+	- Updates to this table are sent via DSDV.
+
+
