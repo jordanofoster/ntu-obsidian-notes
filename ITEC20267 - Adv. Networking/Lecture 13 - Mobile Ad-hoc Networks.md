@@ -329,3 +329,9 @@ It is hard to optimise for this metric while also maintaining low delay and high
 	- Dense networks
 		- These have more alternative routes than sparser networks.
 - Finally, the node cost function $f_{i}(x_{i})$ has a significant effect on energy savings.
+
+##### Further Discussion:
+- What other methods could be used to reduce power usage for ad-hoc networks?
+- What other metrics might be important in determining optimal routes?
+- How could routing protocols be adapted to account for multiple metrics and/or metrics that change importance over the lifetime of the ad-hoc network?
+- What network properties affect the "quality" of the routing protocol?
