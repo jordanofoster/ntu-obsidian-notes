@@ -109,4 +109,21 @@ Moving to virtualized architectures based on hypervisors/VMs will likely require
 
 Furthermore, interference between VMs can cause missed deadlines and excessive jitter. Faults (hazards) and failures (accidents) can occur, and as stated before, interference requires proper real-time scheduling and timing analysis.
 
-Safety policy guidelines are based on obsolete assumptions, and need to be updated based on the following recommendations (which?)
+Safety policy guidelines are based on obsolete assumptions, and need to be updated. Safety-critical applications can be run on multiple VMs, achieving software redundancy with voting.
+
+#### Security Recertification & Related Issues
+
+Moving to a virtualized architecture based on hypervisors and virtual machines will probably require security recertification. Security vulnerabilities can also violate isolation, as sophisticated exploits can escape from one VM to another, via the hypervisor.
+
+#### Increased risk of Concurrency Defects
+
+Concurrency defects can be more likely to occur due to VMs executing concurrently, on one or more cores. These defects are listed as follows:
+- Deadlocks
+- Livelocks
+- Starvation
+- Suspension
+- (Data-based) race conditions
+- Priority inversion
+- Order vilations
+- Order vulnerabilities
+- Atomicity violations
