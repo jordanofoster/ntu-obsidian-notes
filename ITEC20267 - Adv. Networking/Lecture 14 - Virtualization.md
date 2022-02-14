@@ -238,4 +238,15 @@ Containers are typically insecure by default and require significant hardening:
 
 Additionally, moving to a containerized architecture could require recertification. The [NIST Application Container Security Guide (SP 800-190)](https://doi.org/10.6028/NIST.SP.800-190) is written to assist with this.
 
-#### 
+### Additional Restrictions
+
+Containers are largely restricted to Linux-based operating systems; container sprawl (excessive containerization) increases the need for management.
+
+## Tabular Summarization of Lecture
+
+### When to use what - Multicore computers, VMs or Containers
+
+| Criteria | Multicore | Virtualization | Containerization |
+| --- | --- | --- | --- |
+| Reliability and Robustness | Yes | Yes | Yes |
+| Concurrency
