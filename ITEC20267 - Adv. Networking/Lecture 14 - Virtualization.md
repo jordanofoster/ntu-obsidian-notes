@@ -157,3 +157,24 @@ Containerization itself is the process of engineering a software architecture wi
 
 #### Diagram of Virtualization combined with Containerization
 
+![[Pasted image 20220214144916.png]]
+
+
+### The Container Lifecycle
+Typically, the lifecycle of a container consists of three phases; 
+
+1) The container is created, tested and accredited
+2) Images are made of the container, to be stored and retrieved as needed
+3) Containers are deployed and managed
+
+The diagram below helps visualize this idea:
+![[Pasted image 20220214145054.png]]
+
+### Current Container Trends
+
+Containers are becoming more common in recent years because they provide many of the isolation benefits of VMs, without causing as much overhead. Although they are typically hosted on some version of Linux, containers are beginning to also be hosted on other OSes such as Windows.
+
+Containers are heavily used in cloud-hosted applications, and are increasingly leveraged to support the continuous development and integration (CD/CI) of containerized microservices.
+
+## 
+
