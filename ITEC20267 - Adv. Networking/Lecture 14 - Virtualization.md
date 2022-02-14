@@ -97,6 +97,16 @@ The sharing of resources imply several potential issues:
 - The possibility for two applications running on the same VM to interfere with eachother
 	- Additionally, software running on one VM can impact software running on another VM; primarily of the sort that violates temporal isolation.
 
-#### More difficult Security Analysis
+#### More difficult Interference Analysis
 
-Analysis of temporal interference (such as meeting timin)
+Analysis of temporal interference (such as meeting timing deadlines) is difficult and typically results are overly conservative. Additionally, interference analysis becomes more complex with an increase in the number of VMs, and when virtualization becomes concerned with multicore processing.
+
+The number of potential interference paths increase rapidly with the number of VMs; exhaustive analysis of all paths is typically impossible, meaning representative selection of paths is neccessary.
+
+#### Safety
+
+Moving to virtualized architectures based on hypervisors/VMs will likely require safety recertification.
+
+Furthermore, interference between VMs can cause missed deadlines and excessive jitter. Faults (hazards) and failures (accidents) can occur, and as stated before, interference requires proper real-time scheduling and timing analysis.
+
+Safety policy guidelines are based on obsolete assumptions, and need to be updated based on the following recommendations (which?)
