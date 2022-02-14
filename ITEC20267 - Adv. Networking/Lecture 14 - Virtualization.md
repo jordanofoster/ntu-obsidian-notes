@@ -247,6 +247,26 @@ Containers are largely restricted to Linux-based operating systems; container sp
 ### When to use what - Multicore computers, VMs or Containers
 
 | Criteria | Multicore | Virtualization | Containerization |
-| --- | --- | --- | --- |
+| --- | :---: | :---: | :---: |
 | Reliability and Robustness | Yes | Yes | Yes |
-| Concurrency
+| Concurrency | Yes | Yes | Yes |
+| Temporal and Spatial Isolation | Yes | Yes | Yes |
+| Configurability (flexible deployment) | Yes | Yes | Yes |
+| SWAP-C | Yes | Yes/No | Yes |
+| Portability (Multiple HW Platforms) | No | Yes | No |
+| Portability (Multiple OSes) | No | Yes | No |
+| Technology Refresh | Yes | Yes | Yes |
+| Legacy Software Reuse | Somewhat | Yes | Somewhat |
+| Performance (throughput) | Yes | Somewhat | Yes |
+| Hard real-time (response time) | Somewhat | No | Somewhat |
+| Safety | Somewhat | Improved | Improved |
+| Security | Somewhat | Improved | Less Improved |
+
+### Comparison of VMs and Containers
+
+| Criteria | VMs | Containers |
+| --- | :---: | :---: |
+| Portability (\# of operating systems) | One or more per HV | One/ContainerEng |
+| Portability (\# of OS versions) | One or more per HV | One or more per CE |
+| Portability (\# of OS types) | One or more | Primarily Linux |
+|
