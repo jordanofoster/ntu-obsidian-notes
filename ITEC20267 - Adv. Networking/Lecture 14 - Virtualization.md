@@ -126,4 +126,5 @@ Concurrency defects can be more likely to occur due to VMs executing concurrentl
 - [Priority inversion](https://en.wikipedia.org/wiki/Priority_inversion)
 - Order violations
 - Order vulnerabilities
-- Atomicity violations
+- [Atomicity violations](https://en.wikipedia.org/wiki/Atomicity_(database_systems))
+
