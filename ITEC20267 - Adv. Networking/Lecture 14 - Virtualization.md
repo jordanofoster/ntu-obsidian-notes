@@ -137,4 +137,23 @@ A lack of real-time predictability causes jitter and failure to meet hard real-t
 - [Reliability testing](https://en.wikipedia.org/wiki/Software_reliability_testing)
 - [Soak testing](https://en.wikipedia.org/wiki/Soak_testing)
 - [Reliability Demonstration Testing](http://www.gmr-solutions.com/reliability-services/reliability-demonstration-testing/reliability-demonstration-testing-rdt/)
-- 
+- [Accelerated life testing](https://en.wikipedia.org/wiki/Accelerated_life_testing)
+
+#### Increased Licensing Costs
+
+This is, naturally, avoided if using FOSS software.
+
+## Containers
+
+Containers are virtual runtime environments that run on top of a single OS kernel, without any attempt to emulate the underlying hardware. a *pod* as a cohesive collection of containers that are co-located and share resources.
+
+Containerization is sometimes called *virtualization via containers*. However the following distinction must be made: *Virtualization* refers to multiple virtual *hardware platforms*, whereas *Containerization* refers to multiple virtual *operating systems.*
+
+Containerization itself is the process of engineering a software architecture with the use of multiple containers. Container orchestration - by extension - refers to the process of managing (e.g. creating/deploying/securing/monitoring) multiple containers; possibly spread across multiple VMs/cores/processors/clusters.
+
+### Diagram of "Pure" Containerization
+
+![[Pasted image 20220214144856.png]]
+
+#### Diagram of Virtualization combined with Containerization
+
