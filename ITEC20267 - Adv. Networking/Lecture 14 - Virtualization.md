@@ -209,6 +209,14 @@ Containers share a *lot* compared to VMs:
 - VM
 - Hypervisor
 - Host OS (if container in VM running type 2 hypervisor)
-- Same resource pool (with multicore processors)
-	- Processor-internal resources (L3 cache, system bus, memory)
+- ...on top of the resources VMs share:
+	- Processor-internal resources and Processor-external resources
+
+#### Why resource sharing is bad
+
+Their implementation implies shared single points of failure, and increased risk ofm interference:
+- Applications running in the same container can interfere with each other.
+- Applications running in one container can potentially impact software in another container, as interference has potential to violate spatial and temporal isolation.
+
+#### Analysis of Interfe
 
