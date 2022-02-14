@@ -33,4 +33,23 @@ Computer forensics is used both by law enforcement and organisations. The concer
 - Unauthorised access to computer resources
 - Monitoring/capture of network traffic to steal user IDs, passwords and other sensitive information.
 - Use of digital equipment for criminal activities (encrypted emails, crime-related documents, etc).
-- Computer/network activity
+- Computer/network activity of known criminals (murderers, paedophiles, etc.)
+
+#### Common concerns for organisations
+- Unauthorised use of data and information (leaks, 'stealing' trade secrets)
+- Use of computer resources for non-work related purposes
+- Breach of organisational policies (e.g. viewing pornography)
+- Lax security on organisational machines
+
+## National Security
+
+Computer forensics is increasingly important for national security procedure, including detection of the following:
+- Hostile intelligence collection
+- Sabotages
+- Terroristic plans
+
+National Security focus is typically on protection of infrastructure; especially control rooms, such as those for power plants, rail transport, or water services. Stuxnet is an example of a case study on why this is important.
+
+## Computer Crime
+
+Old crimes are easier over time for non-experts, such as credit card fraud, embezzlement, blackmail and stealing. New crimes become possible, however, such as hacking or Denial of Service (DoS) attacks
