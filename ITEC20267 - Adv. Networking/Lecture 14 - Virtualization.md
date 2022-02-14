@@ -128,3 +128,8 @@ Concurrency defects can be more likely to occur due to VMs executing concurrentl
 - Order vulnerabilities
 - [Atomicity violations](https://en.wikipedia.org/wiki/Atomicity_(database_systems))
 
+Additionally, virtualization increases the amount and difficulty of testing for concurrency defects.
+
+#### Stability
+
+A lack of real-time predictability causes jitter and failure to meet hard real-time deadlines due to response time, Additionally, virtualization is a relatively new technology, and hypervisors and VMs as a result tend to be more buggy than operating systems. When integrating and testing new virtualized systems, 
