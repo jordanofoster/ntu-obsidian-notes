@@ -269,4 +269,13 @@ Containers are largely restricted to Linux-based operating systems; container sp
 | Portability (\# of operating systems) | One or more per HV | One/ContainerEng |
 | Portability (\# of OS versions) | One or more per HV | One or more per CE |
 | Portability (\# of OS types) | One or more | Primarily Linux |
-|
+| Security (roughly equal, depending on use) | Improved isolation | Improvded isolation, smaller attack surface |
+| \# of applications per server | Lower | Higher |
+| \# of copies of single application | One | Many |
+| Performance (throughput, not response time) | Lower | Higher |
+| Overhead (administration) | Higher | Lower |
+| Overhead (resource usage) | Much higher | Much lower |
+| Readily share resources? (devices, services) | No | Yes |
+| Robustness (via failover/restart) | Not supported | Supported |
+| Scalability/load balancing (dynamic deployment) | Slower and harder | Faster and easier |
+| Application runs on bare metal | Not supported | May be supported |
