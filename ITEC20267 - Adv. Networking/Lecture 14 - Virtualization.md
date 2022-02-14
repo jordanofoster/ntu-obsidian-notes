@@ -176,5 +176,9 @@ Containers are becoming more common in recent years because they provide many of
 
 Containers are heavily used in cloud-hosted applications, and are increasingly leveraged to support the continuous development and integration (CD/CI) of containerized microservices.
 
-## 
+## Pros and Cons of Containers
+
+### Pros
+
+
 
