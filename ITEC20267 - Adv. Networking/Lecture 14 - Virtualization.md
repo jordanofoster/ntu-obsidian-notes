@@ -132,4 +132,9 @@ Additionally, virtualization increases the amount and difficulty of testing for 
 
 #### Stability
 
-A lack of real-time predictability causes jitter and failure to meet hard real-time deadlines due to response time, Additionally, virtualization is a relatively new technology, and hypervisors and VMs as a result tend to be more buggy than operating systems. When integrating and testing new virtualized systems, 
+A lack of real-time predictability causes jitter and failure to meet hard real-time deadlines due to response time, Additionally, virtualization is a relatively new technology, and hypervisors and VMs as a result tend to be more buggy than operating systems. When integrating and testing new virtualized systems, an increased number of test cases is required, causing an increase in duration of the testing phase. These include:
+
+- [Reliability testing](https://en.wikipedia.org/wiki/Software_reliability_testing)
+- [Soak testing](https://en.wikipedia.org/wiki/Soak_testing)
+- [Reliability Demonstration Testing](http://www.gmr-solutions.com/reliability-services/reliability-demonstration-testing/reliability-demonstration-testing-rdt/)
+- 
