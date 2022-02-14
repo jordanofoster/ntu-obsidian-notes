@@ -37,7 +37,7 @@ Virtualization supports the reuse of software written for different (potentially
 
 Finally, the virtualization of testbeds is also possible.
 
-### Decreased Hardware Costs
+#### Decreased Hardware Costs
 
 This is through enabling of consolidation, or the allocation of multiple applications to the same hardware device. This allows us to do the following:
 - Take advantage of multicore hardware architecture
@@ -48,7 +48,7 @@ This is through enabling of consolidation, or the allocation of multiple applica
 
 Virtualization also supports cloud computing, server farms and mobile computing
 
-### Optimizations
+#### Optimizations
 
 Virtualization software can be optimized for general purpose computing, such as MIS and cloud computing. This maximizes the throughput adn average case response time. Virtualized systems are, however, not optimized for some other things:
 	
@@ -57,7 +57,7 @@ Virtualization software can be optimized for general purpose computing, such as 
 
 Virtualization may also improve operational availability by supporting failover and recovery, alongside the enabling of dynamic resource management.
 
-## Spatial/Temporal Isolation of VMs
+#### Spatial/Temporal Isolation of VMs
 
 Hypervisors significantly improve (but do not guarantee) the *spatial* and *temporal* isolation of VMs. 
 
@@ -72,7 +72,18 @@ Achieving spatial and temporal isolation improves the following:
 - Security
 	- By localizing impact of malware to a single VM
 
-## Security
+#### Security
 
-As stated before, spatial isolation largely limits the impact of malware to a single VM. It should be noted however that 
+As stated before, spatial isolation largely limits the impact of malware to a single VM. It should be noted however that sophisticated exploits can escape from one VM to another (via the hypervisor).
+
+Compromised VMs can be terminated and replaced with a new VM, booted from a clean image. This enables a rapid system restore or software reload following a cybersecurity compromise.
+
+Bare-metal Type 1 hypervisors have a relatively small attack suface, being less subject to common OS exploits and malware. Security software and rules implemented at the hypervisor level can also apply to all of its VMs.
+
+### Cons
+
+#### Increased Hardware Resource Requirements
+
+VMs and hypervisors require more CPU strength, and greater amounts of RAM. Images (of software state/date) require increased amounts of storage.
+
 
