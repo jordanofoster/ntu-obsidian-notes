@@ -84,6 +84,19 @@ Bare-metal Type 1 hypervisors have a relatively small attack suface, being less 
 
 #### Increased Hardware Resource Requirements
 
-VMs and hypervisors require more CPU strength, and greater amounts of RAM. Images (of software state/date) require increased amounts of storage.
+VMs and hypervisors require more CPU strength, and greater amounts of RAM. Images (of software state/date) require increased amounts of storage. Virtualization can simulationously increase and decrease the required amount of hardware, dependant on requirements. Architecture engineering typically determine which of these trends dominate.
 
+#### Sharing of Resources
 
+VMs share a Hypervisor, Host OS, and some other shared resources within multicore processors:
+- Processor-internal resources (L3 cache, system bus, memory and I/O controllers and interconnects)
+- Processor-external resources (main memory, I/O devices and networks)
+
+The sharing of resources imply several potential issues:
+- Singular points of failure
+- The possibility for two applications running on the same VM to interfere with eachother
+	- Additionally, software running on one VM can impact software running on another VM; primarily of the sort that violates temporal isolation.
+
+#### More difficult Security Analysis
+
+Analysis of temporal interference (such as meeting timin)
