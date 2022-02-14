@@ -158,4 +158,18 @@ The ACPO provides principles and comprehensive guidance on the following:
 
 #### Investigating CSA images under ACPO
 
-Possession of CSA content is an offence; examiners must be careful about the circumstances in which they carry out their examinations. 
+Possession of CSA content is an offence; examiners must be careful about the circumstances in which they carry out their examinations. The enquiry itself will contain personal information and in some cases, the identity of victims; so evidence is subject to classification (at minimum, 'restricted' status).
+
+Images that are seized and the technical report, should be exhibited on an encrypted disk that is password controlled. Print outs of images should only be made in exceptional circumstances, and maintained in accordance with the assigned security level.
+
+## What software is needed?
+
+It depends what is being searched for. Several tools are covered in future lectures, e.g.:
+- *EnCase*, which is primarily used in digital forensics to recover evidence from seized hard drives, computers, laptops and mobile devices.
+- *Autopsy*: digital forensics tool used by law enforcement, millitary and corporate examiners to investigate what happened on a computer. Can also be used to recover photos from the camera's memory card.
+- Both can be easily used in the recovery of "deleted" files. [Until files are overwritten by the system, they can be recovered.](https://www.hackers-arise.com/post/2016/10/10/digital-forensics-part-3-recovering-deleted-files)
+- Some hidden data ca be revealed using everyday software, however - such as microsoft word.
+
+## Metadata
+
+Metadata is data that describes other data. For exam
