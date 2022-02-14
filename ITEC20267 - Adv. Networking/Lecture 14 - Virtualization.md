@@ -180,5 +180,20 @@ Containers are heavily used in cloud-hosted applications, and are increasingly l
 
 ### Pros
 
+#### Lightweight Spatial and Temporal Isolation
+
+Each container is provided with its own resources (e.g. CPU and memory) and container-specific namespaces. The overhead of this is less than VMs, as containers do not emulate underlying hardware.
+
+#### Easy instantiation at scale
+
+Multiple individual containers are relatively easily instantiated, enabling the support of scalability, availability/reliability (via redundancy/failover), and load balancing.
+
+#### Support for continuous procecedure
+
+Containers have support for DevOps and continuous integration/deployment (CI/CD).
+
+#### Environmental/Timing Consistency
+
+Containers provide consistency between development/test/operational environments, and have more consistent timing than VMs, meaning that containers can have real-time and safety 
 
 
