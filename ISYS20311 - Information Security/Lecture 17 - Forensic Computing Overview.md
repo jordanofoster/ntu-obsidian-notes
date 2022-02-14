@@ -52,4 +52,14 @@ National Security focus is typically on protection of infrastructure; especially
 
 ## Computer Crime
 
-Old crimes are easier over time for non-experts, such as credit card fraud, embezzlement, blackmail and stealing. New crimes become possible, however, such as hacking or Denial of Service (DoS) attacks
+Old crimes are easier over time for non-experts, such as credit card fraud, embezzlement, blackmail and stealing. New crimes become possible, however, such as hacking or Denial of Service (DoS) attacks.
+
+The following is one way to classify a computer crime, but it is not mutually exclusive:
+- The computer, or the information on it, is the **target** of the crime - with the aim of damaging its integrity/confidentiality/availability (see [here.](https://www.bbc.co.uk/news/world-asia-23324172))
+- The computer is a **respository** for information used/generated in the commission of a crime (see [here.](https://www.bbc.co.uk/news/magazine-20237564))
+- The computer is a **tool** for committing the crime. (see [here.](https://www.bbc.co.uk/news/uk-england-hanpshire-18536940))
+
+### What are the most common crimes/incidents?
+
+The diagram below, provided by the 2018 Cyber Security Breaches Survey, shows this information:
+
