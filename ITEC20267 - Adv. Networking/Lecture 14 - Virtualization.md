@@ -72,7 +72,7 @@ Achieving spatial and temporal isolation improves the following:
 - Security
 	- By localizing impact of malware to a single VM
 
-#### Security
+#### Security through Isolation
 
 As stated before, spatial isolation largely limits the impact of malware to a single VM. It should be noted however that sophisticated exploits can escape from one VM to another (via the hypervisor).
 
@@ -103,7 +103,7 @@ Analysis of temporal interference (such as meeting timing deadlines) is difficul
 
 The number of potential interference paths increase rapidly with the number of VMs; exhaustive analysis of all paths is typically impossible, meaning representative selection of paths is neccessary.
 
-#### Safety
+#### Safety Recertification & Related Issues
 
 Moving to virtualized architectures based on hypervisors/VMs will likely require safety recertification.
 
