@@ -63,3 +63,32 @@ The following is one way to classify a computer crime, but it is not mutually ex
 
 The diagram below, provided by the 2018 Cyber Security Breaches Survey, shows this information:
 
+![[Pasted image 20220214162111.png]]
+
+## Forensics in law enforcement
+
+Criminal activity will nearly always leave some electronic evidence on a computer, be it used as a respository, or as a target/tool. If the latter is true, evidence must be assembled:
+- It must be:
+	- Identified
+	- Preserved
+	- Analysed
+	- Presented
+
+There are many obstacles to computer forensic analysis, as computer evidence is inherently mutable:
+- It can be readily altered/deleted
+- Invisibly/undetectably altered
+- While being altered, files can appear to be copied/actually copied (temporarily)
+- Evidence can be stored in a different format to that which is printed/displayed
+
+As such, computer evidence can be hard to separate from other data, and must be interpreted.
+
+### FBI Handbook
+
+The FBI's *Handbook of Forensic Services* identifies the following types of computer examinations and recovery procedures:
+- Content
+- Comparison
+- Translation
+- Extraction
+- Deleted data files
+- Format conversion
+- 
