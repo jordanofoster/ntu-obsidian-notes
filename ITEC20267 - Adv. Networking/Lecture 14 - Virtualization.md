@@ -118,10 +118,10 @@ Moving to a virtualized architecture based on hypervisors and virtual machines w
 #### Increased risk of Concurrency Defects
 
 Concurrency defects can be more likely to occur due to VMs executing concurrently, on one or more cores. These defects are listed as follows:
-- Deadlocks
-- Livelocks
-- Starvation
-- Suspension
+- [Deadlocks]([Deadlock - Wikipedia](https://en.wikipedia.org/wiki/Deadlock))
+- [Livelocks]([Deadlock - Wikipedia](https://en.wikipedia.org/wiki/Deadlock#Livelock))
+- [Starvation](https://en.wikipedia.org/wiki/Starvation_(computer_science))
+- [Suspension]()
 - (Data-based) race conditions
 - Priority inversion
 - Order vilations
