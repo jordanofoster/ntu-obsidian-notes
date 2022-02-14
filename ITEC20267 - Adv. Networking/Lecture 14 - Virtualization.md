@@ -194,6 +194,21 @@ Containers have support for DevOps and continuous integration/deployment (CI/CD)
 
 #### Environmental/Timing Consistency
 
-Containers provide consistency between development/test/operational environments, and have more consistent timing than VMs, meaning that containers can have real-time and safety 
+Containers provide consistency between development/test/operational environments, and have more consistent timing than VMs, meaning that containers can have real-time and safety applications.
 
+#### Decreased code size
+
+Container applications can share binaries and libraries, and this is the main benefit of such design. Shared binaries/libraries can also cause issues however (this will be covered in Cons).
+
+### Cons
+
+#### Sharing of Resources
+
+Containers share a *lot* compared to VMs:
+- The container engine and OS kernel
+- VM
+- Hypervisor
+- Host OS (if container in VM running type 2 hypervisor)
+- Same resource pool (with multicore processors)
+	- Processor-internal resources (L3 cache, system bus, memory)
 
