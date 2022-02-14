@@ -202,7 +202,9 @@ Container applications can share binaries and libraries, and this is the main be
 
 ### Cons
 
-#### Sharing of Resources
+#### Cons shared with VMs
+
+##### Sharing of Resources
 
 Containers share a *lot* compared to VMs:
 - The container engine and OS kernel
@@ -212,11 +214,27 @@ Containers share a *lot* compared to VMs:
 - ...on top of the resources VMs share:
 	- Processor-internal resources and Processor-external resources
 
+
+
 #### Why resource sharing is bad
 
 Their implementation implies shared single points of failure, and increased risk ofm interference:
 - Applications running in the same container can interfere with each other.
 - Applications running in one container can potentially impact software in another container, as interference has potential to violate spatial and temporal isolation.
 
-#### Analysis of Interfe
+#### Difficulty of Interference Analysis
+
+Same as VMs, the analysis of interference (particularly temporal) is difficult, and outcomes are typically overly conservative - additionally, containerization is always combined with virtualizationa and multicore processing, meaning containers will *always* adopt the exponential difficulty of analysis that they cause.
+
+#### Security
+
+Containers are typically insecure by default and require significant hardening:
+- No data can be stored inside the container's pattern.
+- Container processes must be forced to write to container-specific filesystems
+- Container network namespaces must be made to write to specific private intranets.
+- Container services should have thier privileges minimized (i.e. non-root, if possible)
+
+Additionally, moving to a containerized architecture could require recertification. The [NIST Application Container Security Guide (SP 800-190)](https://doi.org/10.6028/NIST.SP.800-190) is written to assist with this.
+
+#### Increased
 
