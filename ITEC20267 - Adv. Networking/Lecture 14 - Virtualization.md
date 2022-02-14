@@ -121,9 +121,9 @@ Concurrency defects can be more likely to occur due to VMs executing concurrentl
 - [Deadlocks]([Deadlock - Wikipedia](https://en.wikipedia.org/wiki/Deadlock))
 - [Livelocks]([Deadlock - Wikipedia](https://en.wikipedia.org/wiki/Deadlock#Livelock))
 - [Starvation](https://en.wikipedia.org/wiki/Starvation_(computer_science))
-- [Suspension]()
-- (Data-based) race conditions
-- Priority inversion
-- Order vilations
+- [Suspension](https://en.wikipedia.org/wiki/Lock_(computer_science)#Granularity)
+- [(Data-based) race conditions](https://en.wikipedia.org/wiki/Race_condition#Data_race)
+- [Priority inversion](https://en.wikipedia.org/wiki/Priority_inversion)
+- Order violations
 - Order vulnerabilities
 - Atomicity violations
