@@ -50,4 +50,29 @@ Virtualization also supports cloud computing, server farms and mobile computing
 
 ### Optimizations
 
-Virtualization software can be optimized for general purpose computing, such as MIS and cloud computing. This maximizes the throughput adn average case respon
+Virtualization software can be optimized for general purpose computing, such as MIS and cloud computing. This maximizes the throughput adn average case response time. Virtualized systems are, however, not optimized for some other things:
+	
+- Embedded real-time/safety-critical/cyber-physical systems
+- Meeting deadlines
+
+Virtualization may also improve operational availability by supporting failover and recovery, alongside the enabling of dynamic resource management.
+
+## Spatial/Temporal Isolation of VMs
+
+Hypervisors significantly improve (but do not guarantee) the *spatial* and *temporal* isolation of VMs. 
+
+*Physical/Spatial Isolation* means that different VMs are prevented from accessing the same physical memory locations, such as caches and RAM. *Temporal* isolation means that the execution of software on one VM does not impact the temporal behaviour of software running on another VM.
+
+Achieving spatial and temporal isolation improves the following:
+- Reliability and Robustness
+	- Localizing the impact of defects to a single VM
+	- Enabling software failover and recovery
+- Safety
+	- By localizing impact of faults/failures to a single VM
+- Security
+	- By localizing impact of malware to a single VM
+
+## Security
+
+As stated before, spatial isolation largely limits the impact of malware to a single VM. It should be noted however that 
+
