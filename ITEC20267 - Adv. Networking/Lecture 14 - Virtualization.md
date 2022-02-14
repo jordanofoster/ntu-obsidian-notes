@@ -27,4 +27,27 @@ Virtualization is only just beginning to see use in real-time, safety-critical a
 
 Virtualization is also being combined with virtualization; where appropriate, full-fat VMs are replaced by lighter containers. As a side effect, security is increasingly important; as vulnerabilities (VM escapes) in virtual machines and hypervisors are discovered.
 
-## Pro
+## Pros and Cons of Virtualization
+
+### Pros
+
+#### Increased Hardware Isolation
+
+Virtualization supports the reuse of software written for different (potentially old) operating systems and hardware. Additionally, the tech enables the upgrade of obsolete hardware infrastructure software, and improves the portability of software to multiple hardware/OS platforms.
+
+Finally, the virtualization of testbeds is also possible.
+
+### Decreased Hardware Costs
+
+This is through enabling of consolidation, or the allocation of multiple applications to the same hardware device. This allows us to do the following:
+- Take advantage of multicore hardware architecture
+- Replace several lightly-loaded machines with fewer, more heavily-loaded machines to achieve the following:
+	- Minimise SWAP-C (size, weight, power and cooling)
+	- Free up hardware for new functionality
+	- Support load balancing
+
+Virtualization also supports cloud computing, server farms and mobile computing
+
+### Optimizations
+
+Virtualization software can be optimized for general purpose computing, such as MIS and cloud computing. This maximizes the throughput adn average case respon
