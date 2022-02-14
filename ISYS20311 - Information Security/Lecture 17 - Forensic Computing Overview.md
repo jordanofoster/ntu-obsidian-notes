@@ -91,4 +91,44 @@ The FBI's *Handbook of Forensic Services* identifies the following types of comp
 - Extraction
 - Deleted data files
 - Format conversion
-- 
+- Keyword searching
+- Passwords
+- Limited source code
+- Storage media
+
+### Investigation Principles
+
+An investigation must be appropriate and proportionate; evidence itself needs to meet the same legal requirements, regardless of format:
+- Admissible
+- Authentic
+- Complete
+- Reliable
+- Believable
+
+### Forensic Principles and Methodologies
+
+The Association of Chief Police Officers (ACPO)'s *Good Practices Guide for Computer-Based Electronic Evidence* is the predominant model of computer forensic work in the UK. Non-compliance with the guide does not automatically lead to evidence being rejected, but it does provide a standard of quality. Examiners must be trained to carry out an examination, and give evidence in court.
+
+The ACPO provides principles and comprehensive guidance on the following:
+- Crime scenes
+- Investigating personnell
+- Home networks/wireless tech
+- Network forensics/volatile data
+- Disclosure
+- Retrieval of video/CCTV evidence
+- Welfare in the workplace
+- Control of CSA images
+- Consulting witnesses/forensic contractors
+- Mobile phone seizure and examination
+- Legislation
+- Initial contact with victims, including suggested questions.
+
+#### ACPO Principles
+
+##### Principle 1
+
+*No action taken by law enforcement agencies or their agents should change data on a computer or storage medium that may subsequently be relied on in court.*
+
+##### Principle 2
+
+*In circumstances where a person finds it necessary to acce*
