@@ -131,4 +131,31 @@ The ACPO provides principles and comprehensive guidance on the following:
 
 ##### Principle 2
 
-*In circumstances where a person finds it necessary to acce*
+*In circumstances where a person finds it necessary to access original data on a computer or storage medium, that person must be competent to do so and must be able to give evidence explaining the relevance and implications of their actions.*
+
+##### Principle 3
+
+*An audit trail or other record of all processes applied to computer-based electronic evidence should be created and preserved. An independent third party should be abloe to examine those processes and achieve the same results.*
+
+##### Principle 4
+
+*The person in charge of the investigation (the case officer)* has overall responsibility for ensuring that the law and these principles are adhered to.
+
+#### Investigating personnel under ACPO
+
+##### Pre-search
+- Collect as much information as possible about the type, location and connection of any computer systems.
+##### Briefing
+- All personnel attending the scene must be adequately briefed.
+##### Search preparation
+- Toolkit
+- What and who to take
+- Records to be kept
+	- Record all steps of the crime scene
+		- e.g. Sketch map of scene, details of persons present, details of computers (make, model, serial number) display details, etc.
+#### Interviews
+- Consider inviting trained personnel or independent specialists.
+
+#### Investigating CSA images under ACPO
+
+Possession of CSA content is an offence; examiners must be careful about the circumstances in which they carry out their examinations. 
