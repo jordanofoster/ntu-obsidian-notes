@@ -172,4 +172,6 @@ It depends what is being searched for. Several tools are covered in future lectu
 
 ## Metadata
 
-Metadata is data that describes other data. For exam
+Metadata is data that describes other data. For example, a microsoft word documents contain metadata that can be seen in the properties (`File > Info` - look on the right of the screen. Additional properites can also be seen by clicking at the bottom right.)
+
+
