@@ -163,5 +163,23 @@ Examples include embedded system processing events, and the FIFO buffer storing 
 
 Publish/Subscribe systems are formed out of a set of *producers* (publishers) and a set of *consumers* (subscribers).
 
-Publisher
+Publishers generate events and subscribers are notified when something interesting happens:
+
+![[Pasted image 20220221140944.png]]
+![[Pasted image 20220221141003.png]]
+![[Pasted image 20220221141011.png]]
+
+### Message Queues
+
+When looking at Publish/Subscribe systems, the concept of producers/consumers was revisited, as mentioned in [[Topic 2 - Concurrency#The Producer-Consumer Problem|Topic 2.]] Distributed message queues are very similar to how producers/consumers work:
+
+1) Producers *send* information to the queue
+2) Consumers can extract information from the queue in three ways:
+	1) *blocking receive* - block until the message is available
+	2) *non-blocking receive* - polls to see if the message is available
+	3) *notify* - gets notified that the message is available (similar to Publish/Subscribe)
+
+![[Pasted image 20220221141326.png]]
+
+### Distributed Memory
 
