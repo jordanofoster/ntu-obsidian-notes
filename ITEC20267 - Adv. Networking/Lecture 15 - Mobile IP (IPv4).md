@@ -48,10 +48,21 @@ Since an MN's home IP doesn't change, it can be used by long-lived applications 
 
 #### Home Agent (HA)
 
-This is effectively a router with additional functionality, located on the home network of the MN. It does mobility binding of the MN's IP with its own Certificate of Authority (COA), and forwards packets to an appropriate network when the MN is away through encapsulation.
+This is effectively a router with additional functionality, located on the home network of the MN. It does mobility binding of the MN's IP with the MN's Care-of-address (COA), and forwards packets to an appropriate network when the MN is away through encapsulation.
 
 #### Foreign Agent (FA)
 
-Foreign agents are another agent (*not* the HA) with enhanced functionality.
+Foreign agents are another agent (*not* the HA) with enhanced functionality. If the MN is away from the HA, it uses a FA to send/recieve data to/from its HA. Foreign agents advertise themselves periodically over the network, and forward the registration requests of MNs and decapsulate messages for delivery to them.
+
+#### Care-of-address (COA)
+
+This is an address that identifies the MN's current location, and is sent by the FA to the HA when the MN attaches to it. The COA is typically the IP address of the FA itself.
+
+#### Correspondent Node (CN)
+
+CNs are the end host to which the MN corresponds (such as a web server).
+
+
+
 
 
