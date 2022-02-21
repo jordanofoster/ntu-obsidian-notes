@@ -151,4 +151,12 @@ A service is used to recieve and deliver messages to all group members. Group co
 - Group membership management
 - Failure detection
 
-A small example group communication system is located in [week 18's activity](https://now.ntu.ac.uk/d2l/le/content/803352/viewContent/5818764/View)
+A small example group communication system is located in [week 18's activities](https://now.ntu.ac.uk/d2l/le/content/803352/viewContent/5818764/View)
+
+### Publish/Subscribe
+
+Publish/Subscribe is another form of messaging system used in Distributed Systems. They are formed out of a set of producers (publishers) and a set of consumers (subscribers). An example of a producer/consumer set is shown below:
+
+![[Pasted image 20220221140320.png]]
+
+Exa
