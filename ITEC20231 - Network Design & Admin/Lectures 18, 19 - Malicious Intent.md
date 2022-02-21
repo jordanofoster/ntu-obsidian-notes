@@ -227,7 +227,7 @@ In our context - unless known to be necessary, *remove* things!
 	- Can someone see what's being typed?
 	- What about audio?
 - Electrical visibility
-	- see TEMPEST.
+	- see [[Lectures 18, 19 - Malicious Intent#TEMPEST http www newscientist com blog technology 2007 04 seeing-through-walls html and Attacks|]]TEMPEST.
 
 #### Physical Devices
 
@@ -241,4 +241,20 @@ We could also use handheld devices for unique password generation.
 ![[Pasted image 20220221174254.png]]
 ![[Pasted image 20220221174301.png]]
 
-These involve using the unavoidable emissions of computer systems to exfiltrate data, and are the main attack vector against airgapped systems. Intelligence agencies such as the NSA 
+These involve using the unavoidable emissions of computer systems to exfiltrate data, and are the main attack vector against airgapped systems. Intelligence agencies such as the NSA invest lots of money into these as they are cutting edge, so a high threat model is generally assumed. Vectors can include:
+
+- Sound
+	- Recording sound (speakers can be turned into microphones)
+	- Playing ultrasonic sound to transmit data (speakers)
+	- The noise several components make can leak data:
+		- Hard drives
+		- Fans
+			- PSUs, Computers
+- Light
+	- Photon emissions (as seen above) from screens
+	- Optical data transmission (morse?)
+- Heat
+	- The heat emanations from components can be altered to exfiltrate data.
+- Electromagnetism
+- Electricity itself
+	- Data can be read/inferred from the fluctuations in a power line (from the PSU).
