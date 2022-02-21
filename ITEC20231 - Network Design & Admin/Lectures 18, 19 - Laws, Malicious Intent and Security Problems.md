@@ -38,4 +38,17 @@ See [Software \[In\]security: Top 11 Reasons Why Top 10 \(or Top 25\) Lists Don'
 #### SQL Injections
 [As explained by xkcd.]([xkcd: Exploits of a Mom](https://xkcd.com/327/))
 
-More seriously, though, the point of this strip i
+More seriously, though, the point of this comic strip is that any application may be considered vulnerable, unless proven otherwise. Microsoft has been quoted as saying that ["Perfect Security is Impossible".](http://msdn.microsoft.com/en-us/library/ft0y04t6(vs.71).aspx) A holistic approach must therefore be taken.
+
+#### Command Injection
+
+The code below shows how a simple Python program for copying a file to another destination can introduce a potential exploit:
+
+```
+import os
+systemCommand = "cp"
+srcFile = input("Please enter the name of the source: ")
+dstFile = input("Please enter the name of the destination: ")
+systemCommand += srcFile + " " dstFile
+os.system(systemCommand)
+```
