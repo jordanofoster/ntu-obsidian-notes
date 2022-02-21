@@ -103,5 +103,10 @@ for `(b)`, we can see that when checking whether the username and password is va
 #### [Dictionary Attacks](http://www.sci-tech-today.com/news/Data-Breach-Offers-Lessons-for-CIOs/story.xhtml?story_id=13300EUMKOJ4)
 
 ```
-Set WinHttpReq = CreateObject("WinHttp.WinHttp")
+Set WinHttpReq = CreateObject("WinHttp.WinHttpRequest.5.1")
+WinHttpReq.Open "POST", "http://www.domain.com/login", false
+WinHttpReq.SetRequestHeader "Content-Type","application/x-www-form-urlencoded"
+WinHttpReq.Send("login=Chris&password=Pa$$w0rd")
 ```
+
+Dictionary attacks are a form of brute-force attack; we connect to a server many times a second, and send dicti
