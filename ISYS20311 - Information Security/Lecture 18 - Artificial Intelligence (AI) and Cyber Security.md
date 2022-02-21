@@ -138,5 +138,34 @@ Unlike malware detection (which focuses on common attacks), user behaviour is a 
 
 An intrusion can be identified as any set of actions that attempt to compromise the CIA triad of a resource. There are three classes of intruder:
 - The masquerader, an illegitimate user that penetrates the system using a legitimate user's account
-- The misfeasor, a legitimate user that misuses his/her privileges by accessing un
+- The misfeasor, a legitimate user that misuses his/her privileges by accessing resources that are not authorised.
+- The clandestine user, a privileged user that uses their supervisory control to suppress audit control.
+
+Intrusions themselves are the activites that violate the security policy of the system, and Intrusion Detection is the process to identify them.
+
+### Structure of an IDS
+
+![[Pasted image 20220221160112.png]]
+
+### Types of IDS
+
+#### Host-based IDSs
+
+These get audit data from host audit trails, and detect attacks against a single host.
+
+#### Distributed IDSs
+
+These gather audit data from multiple hosts, and possibly the network that connects them. They are designed to detect attacks that involve multiple hosts.
+
+#### Network-Based IDSs
+
+These use network traffic as the audit data source, relieving the burden on the hosts that usually provide normal computing services. These are designed to detect attacks from the network.
+
+### Intrusion Detection Techniques
+
+#### 
+
+
+
+
 
