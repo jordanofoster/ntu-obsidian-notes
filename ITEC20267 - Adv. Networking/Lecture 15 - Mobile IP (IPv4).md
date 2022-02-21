@@ -80,7 +80,30 @@ These are the same as the standard IP stack, only with the addition of the COA i
 
 1) An MN listens for an agent's advertisement, then initiates registration.
 	- If the responding agent is the HA, then mobile IP standards are not required.
-- After receiving the registration request from an MN, the HA acknowledges, and 
+2) After receiving the registration request from an MN, the HA acknowledges, and registration is complete.
+	- Registration itself happens as often as the MN changes networks.
+3) The HA intercepts all packets destined for the MN.
+	- This is simple unless the sending application is on (or near) the same network as the MN:
+		- The HA intercepts packets by masquerading as the MN.
+	- There is a specific lifetime for service before a MN must re-register with an agent.
+	- There is also a de-registration process with the HA, invoked if the MN returns home.
+4) The HA then encapsulates all packets addressed to the MN, and forwards them to the FA (in a form of IP tunneling).
+5) The FA decapsulates all packets addressed to the MN, and forwards them via hardware addresses, learned as part of the registration process. 
+	- Note that the MN can perofrm
+
+### Illustration of Mobile IP Registration Process
+
+![[Pasted image 20220221151208.png]]
+
+## Mobile IP Tables (maintained via Routers)
+
+Mobility Binding Tables are maintained on the HA of the MN, and they map the MN's home address with its current COA.
+
+![[Pasted image 20220221151317.png]]
+
+Visitor lists are maintained on the FA serving an MN, and map the MN's home address to it's MAC and HA address:
+
+![[Pasted image 20220221151347.png]]
 
 
 
