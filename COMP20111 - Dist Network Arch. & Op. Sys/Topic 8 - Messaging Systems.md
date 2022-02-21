@@ -81,5 +81,29 @@ socket.receive(packet);
 String message = new String(buffer);
 System.out.println("Got message: " + message.trim());
 socket.close();
+```
+
+## Socket & Multi-threaded Programming using Java
+
+For Client/Server systems, a `ServerSocket` can be used to accept multiple connections from clients:
 
 ```
+ServerSocket serverSocket = new ServerSocket(listeningPort, connectionQueueSize);
+while (true) {
+	Socket clientSocket = serverSocket.accept();
+	// ....
+}
+```
+
+When dealing with multiple connections, we would need to use a multi-threaded approach to designing and writing our applications.
+
+### Socket Communication: Single Client to Server
+
+![[Pasted image 20220221133500.png]]
+
+### Multi Client to server
+![[Pasted image 20220221133534.png]]
+
+## Server systems using messages
+
+Another key approach to distributed and server programming is through the receiving and sending of messages (i.e. a messaging system). There are a few fac
