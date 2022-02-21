@@ -146,4 +146,13 @@ Security policies are the answer. You can adopt a policy based on the following:
 
 ### Perimeter Security
 
-Peri
+Perimeters require multiple layers of security, rather than one. For example, a [DMZ](https://en.wikipedia.org/wiki/DMZ_%28computing%29) is often used; the principle being that access to important services is protected. Only less critical services (those that *have* to use the internet) live in the DMZ. The direction of initiation of transactions is from the protected region, out via the DMZ.
+
+#### [Examples of DMZ Topologies](http://technet.microsoft.com/en-us/library/cc778219.aspx)
+![[Pasted image 20220221171842.png]]
+- Use proxy servers within the DMZ to provide a single route for internet access.
+- Keep services for databases and email private.
+	- Use a separate set of servers within the DMZ to access them instead.
+- We can use a reverse proxy to allow external users access to internal services.
+- We *never* put a domain controller within a DMZ.
+
