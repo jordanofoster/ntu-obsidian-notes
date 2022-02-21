@@ -54,8 +54,32 @@ A User Datagram Packet is a connectionless form of transmission (i.e. the packet
 - `buffer.length` represents how many bytes of information to send.
 - `addr` refers to the address of the destination machine.
 - `destinationPort` refers to the port of the destination machine.
+![[Pasted image 20220221132627.png]]
 
 Once `DatagramPacket` has been created, a `DatagramSocket` object is needed to send it.
 
+![[Pasted image 20220221132645.png]]
 
+To create a socket on the sending machine, a port to transmit it on is required:
+```
+DatagramSocket socket = new DatagramSocket(3000); // DatagramSocket(<socket>)
+socket.send(packet); // DatagramPacket
+socket.close();
+```
 
+`DatagramSocket` has two important methods:
+- `send(<packet>)`
+- `recieve(<packet>)`
+
+Another example of code shown below:
+```
+DatagramSocket socket = new DatagramSocket(4000);
+socket.setSoTimeout(0);
+byte []buffer = new byte[1024];
+DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
+socket.receive(packet);
+String message = new String(buffer);
+System.out.println("Got message: " + message.trim());
+socket.close();
+
+```
