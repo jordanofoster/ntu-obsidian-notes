@@ -200,4 +200,31 @@ DSM will be looked at more in *Topic 9.*
 
 ## Programming remote systems
 
-There are some standards in place that can help when programming remote systems. We have already been introduced to [[Topic 8 - Messaging Systems#]]
+There are some standards in place that can help when programming remote systems. We have already been introduced to [[Topic 8 - Messaging Systems#Types of communication|direct coupled systems.]] Examples include Java RMI and the Message Passing Interface (MPI).
+
+### Remote Procedure Calling: Java RMI
+
+Java RMI is the Java implementation of [[Topic 8 - Messaging Systems#Remote Procedure Calls RPCs|RPC (Remote Procedure Call).]] The Java RMI handles all of the marshalling/unmarshalling of data across the network, and will also handle errors:
+
+![[Pasted image 20220221142224.png]]
+
+Marshalling/Unmarshalling refers to handling of the following:
+- Package data
+- Communication handling
+- Invocation
+- Repackaging and communication back
+- Unpacking data and beginning consumption
+
+The infrastructure of RMI is shown below:
+
+![[Pasted image 20220221142334.png]]
+
+#### Java RMI Example
+
+```
+import java.
+```
+
+
+
+
