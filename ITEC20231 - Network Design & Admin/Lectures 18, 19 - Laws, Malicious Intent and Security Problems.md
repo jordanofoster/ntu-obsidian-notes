@@ -200,4 +200,17 @@ A similar level of diligence should be used for software - especially if it is w
 Suppliers should indicate which methods they use for quality software building. They should also have a process for ensuring security in tandem with basic quality standards, such as:
 - [Microsoft Secure Development Lifecycle (SDL)](http://technet.microsoft.com/en-us/library/cc778219.aspx)
 - [Comprehensive, Lightweight Application Security Process (Clasp)](http://www.newscientist.com/blog/technology/2007/04/seeing-through-walls.html)
-- [Electronic Eavesdropping Risks of Flat-Panel Displays.pdf|Software Security Touchpoints]
+- [[Electronic Eavesdropping Risks of Flat-Panel Displays.pdf|Software Security Touchpoints]]
+- Suppliers should know how their software would fit into an ISO27001 system.
+
+### [Security through Obscurity - A simple principle...](   http://history1900s.about.com/library/photos/blywwiip187.htm)
+
+In wartime, the *need-to-know* principle was applied at all levels in society, through propaganda as seen below:
+![[Pasted image 20220221173511.png]]
+
+People were forbidden to access information by default; this must be considered as a potential policy when setting up groups and folders.
+
+#### Another simple principle - *"If in doubt, leave it out"*
+
+In our context - unless known to be necessary, *remove* things!
+- Remove/disable default/built-in accounts (such as Guests) as general
