@@ -44,6 +44,8 @@ Machine learning algorithms generate models from data; there are two types - sup
 
 #### Classification
 
+This is a form of supervised learning. The class will be predetermined in the ML training phase. The character of classes themselves are also determined during this phase, and it is a common approach in a pattern recognition systme.
+
 Classification algorithms include:
 - SVM
 - Naïve Bayesian Filtering
@@ -163,7 +165,22 @@ These use network traffic as the audit data source, relieving the burden on the 
 
 ### Intrusion Detection Techniques
 
-#### 
+#### Association Rule Mining (Pattern Discovery)
+
+The goal of this technique is to derive multi-feature (attribute) correlations from a set of records. An example of an expression of an association pattern is as follows:
+![[Pasted image 20220221160710.png]]
+
+#### The Machine Learning Methods
+##### Time-Based Inductive Machines
+The are much like the Bayes Network, using probability and a direct graph to predict the nxt event.
+
+##### Instance-Based Learning
+These define a distance to measure the similarity between feature vectors.
+
+##### Neural Networks
+These can be trained to predict an attack occuring, much like a well-trained human.
+
+
 
 
 
