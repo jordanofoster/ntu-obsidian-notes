@@ -123,4 +123,25 @@ Additionally, it still needs to be multi-threaded; one thread for receiving and 
 Some of the issues when programming systems have already been looked at prior, although more will be covered in this topic and subsequent topics:
 
 - Messaging systems are used to enable communication between two or more 'devices' in a distributed system.
-- RPC and programming methods that we have looked at so far classed as *direct coupling*
+- RPC and programming methods that we have looked at so far are classed as *direct coupling* between a sender and receiver.
+	- They are susceptible to points of failure (at the client and/or server), and are not easily adaptable to change.
+- For messaging systems to be used, they need to be flexible and able to adapt to change.
+- These types of *indirect* systems exhibit:
+	- Space uncoupling
+	- Time uncoupling
+	- Flow uncoupling
+
+Messaging systems themselves can be broadly categorised into the following:
+- Group communication
+- Publish/Subscribe
+- Message Queues
+- Distributed shared memory
+
+### Group Communication
+
+Group based communication builds upon *multicast* communication. Systems can join or leave a group of systems; the implication being that systems will be part of a group membership.
+
+A service is used to recieve and deliver messages to all group members. Group communication itself requires the following:
+
+- *Reliable communication* to large numbers of group members
+	- *Integrity*, to ensure that the message received is the same 
