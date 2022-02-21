@@ -58,7 +58,12 @@ Clustering algorithms include:
 - K-Means
 - Farthest first
 
-##### Limitation of 
+##### Limitation of Clustering
+Clustering is subjective:
+
+
+![[Pasted image 20220221154506.png]]
+
 
 #### Evaluation of Machine Learning Algorithms
 ![[Pasted image 20220221154048.png]]
@@ -78,3 +83,22 @@ An example of supervised learning involves the use of decision trees to distingu
 
 An example of this would include using self-organizing maps and clustering techniques to identify anomalous IP traffic.
 
+#### Reinforcement Learning
+
+This is the training of machine learning models to make a sequence of decisions in a game-like situation, such as bringing threat intelligence and the end user into the loop.
+
+## Benefits of Machine Learning in Cyber Security
+Machine learning can be useful in the following Cyber Security contexts:
+- Handling large volumes of data
+- Security task automation, such as:
+	- Malware analysis
+	- Network log analysis
+	- Vulnerability assessments
+	- Raising alarms, etc.
+- Threat detection and classification
+- Network risk scoring
+	- This is the use of quantitative measures to assign risk scores to sections of networks, and helps organisations to prioritise resources.
+
+Also see *Machine Learning and Deep Learning Methods for Cybersecurity*, Xin, Y., et al., 2018  and  *Survey of machine learning techniques for malware analysis*, Daniele U., Leonardo A., & Roberto B., 2022.
+
+## Cyber 
