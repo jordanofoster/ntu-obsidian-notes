@@ -156,3 +156,31 @@ Perimeters require multiple layers of security, rather than one. For example, a 
 - We can use a reverse proxy to allow external users access to internal services.
 - We *never* put a domain controller within a DMZ.
 
+#### [Bastion Servers](http://www.securitysoftwarezone.com/how-bastion-hosts-work-review136-7.html)
+![[Pasted image 20220221172112.png]]
+These are used to host the services that sit inside the DMZ. Because of likelihood of attack, they are locked down as much as possible:
+- No access to network files
+- Logging is activated and the Bastion is monitored
+	- Potentially, dual logging is performed via a separate dedicated machine
+	- Unused services are removed.
+	- No user accounts are present.
+	- Intrusion detection software is installed.
+
+### Defence in Depth
+
+Assume that the system has multiple points of failure, and attempt to address all points of weakness, through methods such as:
+- Virus checkers
+- Firewalls
+- Malware detection software
+- Encryption
+- Physical barriers
+
+#### Design for Security
+
+- The physical design of the network needs to ensure defensivfe layers, such as DMZs and firewalls.
+- The logical design (i.e. in terms of corporate structure) needs to ensure separation of more/less important data.
+- Simplicity of design should ensure that systems and software is easier to maintain, update and monitor.
+- Documentation should aid maintenance, review and response to attack.
+- Education of users is fundamental to reducing attack potential.
+
+#### Question what o
