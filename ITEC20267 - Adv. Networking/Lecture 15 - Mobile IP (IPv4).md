@@ -42,5 +42,16 @@ Mobile IP itself could be even more important than physically connected routing;
 
 #### Mobile Node (MN)
 
-This is an entity that can change its point of attachment from network-to-network, within the internet. MNs detect that they have moved and register themselves with the 'best' FA. Mobile nodes  
+This is an entity that can change its point of attachment from network-to-network, within the internet. MNs detect that they have moved and register themselves with the 'best' FA. Mobile nodes are assigned a permanent IP (called its *home* address), to which other hosts send packets - regardless of that MN's location.
+
+Since an MN's home IP doesn't change, it can be used by long-lived applications - even as the MN's location changes.
+
+#### Home Agent (HA)
+
+This is effectively a router with additional functionality, located on the home network of the MN. It does mobility binding of the MN's IP with its own Certificate of Authority (COA), and forwards packets to an appropriate network when the MN is away through encapsulation.
+
+#### Foreign Agent (FA)
+
+Foreign agents are another agent (*not* the HA) with enhanced functionality.
+
 
