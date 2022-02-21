@@ -1,5 +1,7 @@
 # Malicious Intent
 
+`NOTE: References here are wrong in places and require updating.`
+
 The assumption is made that any organisation or individual with computers is a target for malicious intent, and that some attackers will be specifically targeting you, whereas others will just see you as a resource to exploit (targeted vs. dragnet attacks).
 
 Methods of attack can be many and varied, as can attackers. Specific threats will be discussed only in as much as there are specific strategies to counter them. The security in practice module (year 3) will go into exploiting and defending against attacks.
@@ -227,7 +229,7 @@ In our context - unless known to be necessary, *remove* things!
 	- Can someone see what's being typed?
 	- What about audio?
 - Electrical visibility
-	- see [[Lectures 18, 19 - Malicious Intent#TEMPEST http www newscientist com blog technology 2007 04 seeing-through-walls html and Attacks|]]TEMPEST.
+	- see [[Lectures 18, 19 - Malicious Intent#TEMPEST http www newscientist com blog technology 2007 04 seeing-through-walls html and Attacks|TEMPEST]].
 
 #### Physical Devices
 
@@ -236,7 +238,7 @@ Key loggers cannot be detected, except through visual inspection:
 
 We could also use handheld devices for unique password generation.
 
-#### [TEMPEST](http://www.newscientist.com/blog/technology/2007/04/seeing-through-walls.html and) Attacks
+#### [TEMPEST](http://www.newscientist.com/blog/technology/2007/04/seeing-through-walls.html) Attacks
 
 ![[Pasted image 20220221174254.png]]
 ![[Pasted image 20220221174301.png]]
