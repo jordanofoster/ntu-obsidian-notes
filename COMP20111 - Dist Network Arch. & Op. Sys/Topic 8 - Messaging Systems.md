@@ -262,4 +262,35 @@ public class RMIServer {
 }
 ```
 
+##### Example 4
+```
+import java.rmi.*;
 
+public class Rmiexample{
+
+	public static void main(String[] args){
+		try{
+			RMIObjectInterface remoteObject =(RMIObjectInterface)Naming.lookup("//localhost:4000/RMIObject");
+			System.out.println(remoteObject.getReply());
+		} catch (Exception error){
+			System.out.println(error.getMessage());
+		}
+	}
+}
+```
+
+### Message Passing Interface (MPI)
+
+When using a cluster built out of computer nodes, we must use MPI; *MPJ* is the Java implementation of the MPI standard. MPI itself allows programmers to send work to each compute node within a cluster. Noteworthy MPI calls include the following:
+
+- `MPI_Init`
+- `MPI_Comm_size`
+- `MPI_Send`
+- `MPI_Recv`
+
+#### Example of MPI
+
+MPI 4 C applications typically have the following structure:
+- Including MPI header
+- Definining local declarations and methods
+- I
