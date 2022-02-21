@@ -20,4 +20,21 @@ Types of Cyber Security Threats include:
 
 ## Branches of Artificial Intelligence
 - Machine Learning
-	- Thes
+	- These give computers the potential to learn without explicit programming.
+- Neural Networks
+	- These are a set of algorithms that make use of neurology to imitate the human brain's operating process.
+- Robotics
+	- This is a field of science that combines mechanical engineering, electrical engineering, computer science, etc., to deploy robots for laborious tasks.
+- Expert Systems
+	- These are computer systems that mimic the decision-making intelligence of a human expert.
+- Fuzzy Logic
+	- These are techniques that represent and modify uncertain information by measuring the degree to which a hypothesis is correct.
+- Natural Language Processing
+	- This helps in communications between computers and humans, through the use of natural language.
+
+### Machine Learning
+
+Computer programs are said to learn from experience $(E)$ with respect to some class of tasks $(T)$, and performance measure $(P)$ - if the performance at $T$ (if measured by $P$) improves with $E$.
+
+Machine learning algorithms generate models from data; there are two types - supervised and unsupervised. Algorithms themselves tend to perform classification and clustering with the assistance of probability, statistics and other fields of mathematics.
+
