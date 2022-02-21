@@ -183,4 +183,20 @@ Assume that the system has multiple points of failure, and attempt to address al
 - Documentation should aid maintenance, review and response to attack.
 - Education of users is fundamental to reducing attack potential.
 
-#### Question what o
+#### Question what you are buying
+
+Sysadmins are expected to conduct due dilligence when purchasing equipment:
+- What is the MTTF (Mean Time To Failure)?
+- What is the maintenance service like?
+- Has the supplier been accredited by ISO9000 or some other scheme?
+
+A similar level of diligence should be used for software - especially if it is web based:
+- Has the supplier been accredited to ISO9000 (and other standards)?
+- What security process do they follow?
+- What is their update/patch management like?
+
+#### Software Suppliers & Security Policies
+
+Suppliers should indicate which methods they use for quality software building. They should also have a process for ensuring security in tandem with basic quality standards, such as:
+- [Microsoft Secure Development Lifecycle (SDL)](http://technet.microsoft.com/en-us/library/cc778219.aspx)
+- [Comprehensive, Lightweight Application Security Process (Clasp)]()
