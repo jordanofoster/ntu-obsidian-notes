@@ -293,4 +293,33 @@ When using a cluster built out of computer nodes, we must use MPI; *MPJ* is the 
 MPI 4 C applications typically have the following structure:
 - Including MPI header
 - Definining local declarations and methods
-- I
+- Initialising the MPI environment
+- Performing work and messaging
+- Closing the MPI environment
+
+A coded version of this is shown below:
+```
+#include "mpi.h"
+int main( int argc, char *argv[]){
+	char message[20];
+	int myrank;
+	MPI_Status status;
+	MPI_Init( &argc, &argv );
+	MPI_Comm_rank( MPI_COMM_WORLD, &myrank );
+	if (myrank == 0){/* code for process zero */
+		strcpy(message,"Hello, there");
+		MPI_Send(message,strlen(message)+1, MPI_CHAR, 1, 99, MPI_COMM_WORLD);
+	} else if (myrank == 1){/* code for process one */
+		MPI_Recv(message, 20, MPI_CHAR, 0, 99, MPI_COMM_WORLD, &status);
+		printf("received :%s:\n", message);
+		}
+	MPI_Finalize();
+	return 0;
+}
+```
+
+Additionally, applications can be multithreaded; there are several levels of thread support, from 0-3, where:
+- 0 refers to a single thread
+- 1 is multi-threaded, where main thread can access the MPI
+- 2 is multi-threaded, where threads can access MPI one at a time
+- 3 Has no re
