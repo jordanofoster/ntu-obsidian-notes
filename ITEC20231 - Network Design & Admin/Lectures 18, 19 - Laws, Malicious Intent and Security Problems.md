@@ -213,4 +213,32 @@ People were forbidden to access information by default; this must be considered 
 #### Another simple principle - *"If in doubt, leave it out"*
 
 In our context - unless known to be necessary, *remove* things!
-- Remove/disable default/built-in accounts (such as Guests) as general
+- Remove/disable default/built-in accounts (such as Guests) as general containers.
+- If you want access to a website to be limited, configure IIS Security (e.g. force use of username/password credentials).
+- Limit access to files/programs offline - disable caching too.
+- Limit physical access (e.g. to servers/routers).
+- Limit access to printers (especially those printing using special forms).
+
+### Other Security Issues
+
+- Active Directory
+- Password and Login attempts
+- Physical visibility
+	- Can someone see what's being typed?
+	- What about audio?
+- Electrical visibility
+	- see TEMPEST.
+
+#### Physical Devices
+
+Key loggers cannot be detected, except through visual inspection:
+![[Pasted image 20220221174057.png]]
+
+We could also use handheld devices for unique password generation.
+
+#### [TEMPEST](http://www.newscientist.com/blog/technology/2007/04/seeing-through-walls.html and) Attacks
+
+![[Pasted image 20220221174254.png]]
+![[Pasted image 20220221174301.png]]
+
+These involve using the unavoidable emissions of computer systems to exfiltrate data, and are the main attack vector against airgapped systems. Intelligence agencies such as the NSA 
