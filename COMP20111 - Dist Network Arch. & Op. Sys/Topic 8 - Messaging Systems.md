@@ -183,3 +183,21 @@ When looking at Publish/Subscribe systems, the concept of producers/consumers wa
 
 ### Distributed Memory
 
+In a single computer system, there are a number of discrete computing resources available to the system (CPU, memory, bus, I/O etc). In distributed systems, each node has its own set of resources, linked together to form a whole. Memory is one such resource that needs to be organised; it is used either *individually* or *collectively.*
+
+![[Pasted image 20220221141513.png]]
+
+#### Distributed Shared Memory
+
+For both multi-processor and multi-computer architectures, we need to consider a set of rules to govern how CPUs negotiate with each other to access memory. This is known as the *memory consistency model.* There are two types:
+
+- *Strict consistency* - A read from location $X$ will return the most recent write to location $X$ between CPUs.
+	- In other words, strict order is enforced for memory operations.
+- *Weak consistency* - Synchronisation operations are required to guarantee order. This is a relaxed form of ordering, where overlapping of operations can occur.
+	- *Release consistency* is an example of this.
+
+DSM will be looked at more in *Topic 9.*
+
+## Programming remote systems
+
+There are some standards in place that can help when programming remote systems. We have already been introduced to [[Topic 8 - Messaging Systems#]]
