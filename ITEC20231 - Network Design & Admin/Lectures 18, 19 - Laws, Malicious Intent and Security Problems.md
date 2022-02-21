@@ -199,4 +199,5 @@ A similar level of diligence should be used for software - especially if it is w
 
 Suppliers should indicate which methods they use for quality software building. They should also have a process for ensuring security in tandem with basic quality standards, such as:
 - [Microsoft Secure Development Lifecycle (SDL)](http://technet.microsoft.com/en-us/library/cc778219.aspx)
-- [Comprehensive, Lightweight Application Security Process (Clasp)]()
+- [Comprehensive, Lightweight Application Security Process (Clasp)](http://www.newscientist.com/blog/technology/2007/04/seeing-through-walls.html)
+- [Electronic Eavesdropping Risks of Flat-Panel Displays.pdf|Software Security Touchpoints]
