@@ -13,4 +13,22 @@ Concentration on a few known threats can leave targets vulnerable to those uncon
 There are a number of security concerns a sysadmin has to be aware of, such as:
 - Coding errors (some):
 	- Buffer overflows
-	- Trapdoors (not an error, but someone adding extra code to circum)
+	- Trapdoors (not an error, but someone adding extra code to circumvent security)
+- Attacks (some):
+	- SQL Injection
+	- Dictionary Attacks
+	- DDOS attacks
+- Viruses
+- Rootkits
+- Spyware/Malware
+
+The question is what sysadmins can do to help protect against these.
+
+### Example of a 'false target'
+
+- [The top 25 types of coding errors](http://cwe.mitre.org/top25/)
+- [A full CWE list of 1000+ problems](http://cwe.mitre.org/data/index.html)
+	-
+
+
+
