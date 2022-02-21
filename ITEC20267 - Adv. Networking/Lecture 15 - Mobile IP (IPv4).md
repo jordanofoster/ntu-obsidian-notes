@@ -119,6 +119,24 @@ The HA and FA themselves do not have to share any security information.
 
 If the MN is in the same subnetwork as the node to which it is communicating, and the HA itself is on the other side of the world, the packets must be routed through the HA. This is obviously suboptimal and is referred to as "triangle" routing. It would be nice if packets could directly be routed from MN to CN without a middleman.
 
-Thankfully, mobile IP allows us to do this, by letting the CN know the COA of the MN
+Thankfully, mobile IP allows us to do this, by letting the CN know the COA of the MN. With this, the CN can then open its own IP tunnel straight to the MN. This does however require software support from the CN itself, as the process is initiated by the HA (which notifies the CN via a binding update).
 
+There is a caveat, however - the binding table can become stale.
 
+## Issues with Mobile IP
+
+- The single HA model itself is fragile, infrastructurally speaking. One possible solution is to have multiple HAs at once.
+- The HA gets frequent reports to the HA, if the MN is moving.
+	- Supporting FA clustering may reduce this.
+- The security of mobile IP is questionable:
+	- The standard seems susceptible to connection hijacking and snooping.
+
+The standard itself seems to have many open research questions.
+
+## Mobile IPv6
+
+Route optimization is a fundamental part of IPv6; mobile IPv4 is an optional set of extensions that may not be supported by all nodes. Additionally, Foreign Agents are not needed for mobile IPv6, as MNs can function in any location without the services of a special router there as well (due to IPv6's larger address space).
+
+Mobile IPv6 nodes are expected to employ strong authentication and encryption, resolving some issues.
+
+More details in lecture 16.
