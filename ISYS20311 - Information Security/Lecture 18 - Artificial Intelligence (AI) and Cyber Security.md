@@ -38,3 +38,29 @@ Computer programs are said to learn from experience $(E)$ with respect to some c
 
 Machine learning algorithms generate models from data; there are two types - supervised and unsupervised. Algorithms themselves tend to perform classification and clustering with the assistance of probability, statistics and other fields of mathematics.
 
+![[Pasted image 20220221153614.png]]
+
+#### Machine Learning Algorithms
+
+#### Classification
+
+Classification algorithms include:
+- SVM
+- Naïve Bayesian Filtering
+- Decision Trees
+- Random forests
+- Logistic regression
+
+Additionally, esembles of 3 algorithms can be present (with voting).
+
+#### Clustering
+Clustering algorithms include:
+- K-Means
+- Farthest first
+
+#### Evaluation of Machine Learning Algorithms
+This is done through three equations:
+
+$$Precision = \frac{tp}{tp+fp}$$
+$$Recall = \frac{tp}{tp+fn}$$
+$$F1
