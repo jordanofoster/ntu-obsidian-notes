@@ -159,4 +159,9 @@ Publish/Subscribe is another form of messaging system used in Distributed System
 
 ![[Pasted image 20220221140320.png]]
 
-Exa
+Examples include embedded system processing events, and the FIFO buffer storing data.
+
+Publish/Subscribe systems are formed out of a set of *producers* (publishers) and a set of *consumers* (subscribers).
+
+Publisher
+
