@@ -24,11 +24,18 @@ There are a number of security concerns a sysadmin has to be aware of, such as:
 
 The question is what sysadmins can do to help protect against these.
 
-### Example of a 'false target'
+#### Example of a 'false target'
 
 - [The top 25 types of coding errors](http://cwe.mitre.org/top25/)
 - [A full CWE list of 1000+ problems](http://cwe.mitre.org/data/index.html)
-	-
+	- This includes eveything from SQL injection (CWE-89) to improper access control (CWE-285).
+	- 'Errors' here range in scale from coding bugs, to an overall failure to architect security structure.
+	- As a result, it may tempt managers to concentrate *only* on those indicated issues.
+		- Many of these errors are moreso symptoms of a bigger problem, such as sloppy coding standards, inadequate testing regime or a lack of managerial control.
 
+See [Software \[In\]security: Top 11 Reasons Why Top 10 \(or Top 25\) Lists Don't Work](http://www.informit.com/articles/article.aspx?p=1322398)
 
+#### SQL Injections
+[As explained by xkcd.]([xkcd: Exploits of a Mom](https://xkcd.com/327/))
 
+More seriously, though, the point of this strip i
