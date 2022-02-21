@@ -112,3 +112,38 @@ WinHttpReq.Send("login=Chris&password=Pa$$w0rd")
 Dictionary attacks are a form of brute-force attack; we connect to a server many times a second, and send words from a dictionary as the password. Problems can arise here due to poor security policies on a server, such as:
 - The account lockout duration has been disabled
 - Password complexity requirements
+
+#### Distributed Denial of Service Attacks (DDOSes)
+![[Pasted image 20220221171025.png]]
+These are done by flooding the server with Internet Control Message Protocol (ICMP) packets, such as (ping, syn, etc.)
+
+## Security Tools
+
+There are a variety of security tools to help in the defense of networks, which can be broken down into two types:
+- Intrusion Protection
+- Penetration Testing
+
+Examples of tools include:
+- NMap
+- Nessus
+- Snort
+- etc.
+
+For cracking/exploiting systems, some examples include:
+- Metasploit
+- John the Ripper
+
+As stated before, check [sectools.org](https://sectools.org) for open source/free tools.
+
+## Security Policy
+
+How do we protect our servers within our network, or those that are accessible remotely? Are there any ways to minimise the risk of intrusion?
+
+Security policies are the answer. You can adopt a policy based on the following:
+- Perimeter security
+- Defence in depth
+- Security through Obscurity
+
+### Perimeter Security
+
+Peri
