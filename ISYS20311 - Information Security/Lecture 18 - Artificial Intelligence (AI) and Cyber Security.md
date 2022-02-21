@@ -87,7 +87,7 @@ An example of this would include using self-organizing maps and clustering techn
 
 This is the training of machine learning models to make a sequence of decisions in a game-like situation, such as bringing threat intelligence and the end user into the loop.
 
-## Benefits of Machine Learning in Cyber Security
+### Benefits of Machine Learning in Cyber Security
 Machine learning can be useful in the following Cyber Security contexts:
 - Handling large volumes of data
 - Security task automation, such as:
@@ -101,4 +101,30 @@ Machine learning can be useful in the following Cyber Security contexts:
 
 Also see *Machine Learning and Deep Learning Methods for Cybersecurity*, Xin, Y., et al., 2018  and  *Survey of machine learning techniques for malware analysis*, Daniele U., Leonardo A., & Roberto B., 2022.
 
-## Cyber 
+#### Application of machine learning in Cyber Security
+##### Machine learning for network protection
+
+This can be used for both Intrusion Detection Systems (IDSs) and for network traffic analysis. Examples include:
+
+- Regression, to predict the network packet parameters and compare them with the normal ones
+- Classification to identify different classes of network attacks such as scanning and spoofing
+- Clustering for forensic analysis
+
+##### Machine learning for application security
+
+Web Application Firewalls (WAFs) can have some help from machine learning, but a universal model cannot be developed to deal with all threats; some examples are listed below, however:
+
+- Regression to detect anomalies in HTTP requests, such as auth bypass.
+- Classification to detect known types of attacks, such as injections (SQLi, XSS, etc.)
+- Clustering of user activity, to detect DDOS attacks and mass exploitation.
+
+##### Machine learning for user behaviour
+
+Unlike malware detection
+## Cyber Security Tasks
+1) Prediction
+2) Prevention
+3) Detection
+4) Response
+5) Monitoring
+
