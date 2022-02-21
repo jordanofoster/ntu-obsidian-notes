@@ -58,4 +58,24 @@ Calling `os.system` will get the OS to execute the command given. This can be a 
 - `"readme.txt readme2.txt;" + "rm -rf/"` is not!
 	- This copies the file and then recursively deletes all files on the filesystem.
 		- Sure, access control/authorisation can help reduce this; but what if SU/root did this?
-			- 
+			- Files would be deleted until the system was broken so much that it could not even do that!
+
+#### Buffer Overflows
+
+![[Pasted image 20220221165050.png]]
+
+The above images show the following:
+- (a) is a situation when the main program is running.
+- (b) shows the situation after procedure A is called.
+- (c) shows a buffer overflow in grey.
+
+(For additional investigation; Stack Smashing, Metasploit, and [other penetration tools](https://sectools.org))
+
+#### Trapdoors
+```
+# (a): Normal code with no security exploits
+
+def login():
+	name = password = ""
+	while True
+```
