@@ -58,9 +58,23 @@ Clustering algorithms include:
 - K-Means
 - Farthest first
 
-#### Evaluation of Machine Learning Algorithms
-This is done through three equations:
+##### Limitation of 
 
+#### Evaluation of Machine Learning Algorithms
+![[Pasted image 20220221154048.png]]
+
+This is done through three equations, where:
+$tp =$ *true positive*
+$fp =$ *false positive*
+$fn =$ *false negative*
 $$Precision = \frac{tp}{tp+fp}$$
 $$Recall = \frac{tp}{tp+fn}$$
-$$F1
+$$F1 = \frac{2\times(Precision\times Recall)}{(Precision + Recall)}$$
+#### Supervised Machine Learning
+
+An example of supervised learning involves the use of decision trees to distinguish between spam and non-spam email based on the frequency of terms/words, used in a large historical set of phishing and non-phishing emails.
+
+#### Unsupervised Machine Learning
+
+An example of this would include using self-organizing maps and clustering techniques to identify anomalous IP traffic.
+
