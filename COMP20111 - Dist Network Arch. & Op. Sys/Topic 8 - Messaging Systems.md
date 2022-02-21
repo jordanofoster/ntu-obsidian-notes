@@ -105,5 +105,22 @@ When dealing with multiple connections, we would need to use a multi-threaded ap
 ![[Pasted image 20220221133534.png]]
 
 ## Server systems using messages
+![[Pasted image 20220221133736.png]]
 
-Another key approach to distributed and server programming is through the receiving and sending of messages (i.e. a messaging system). There are a few fac
+Another key approach to distributed and server programming is through the receiving and sending of messages (i.e. a messaging system). There are a few factors to consider:
+1) The messages and their structure
+2) How are messages sent?
+	- Directly?
+	- Broadcast?
+	- Multicast?
+3) How are messages sequenced?
+4) How to write servers to receive and process messages
+
+Additionally, it still needs to be multi-threaded; one thread for receiving and one for sending.
+
+## Types of communication
+
+Some of the issues when programming systems have already been looked at prior, although more will be covered in this topic and subsequent topics:
+
+- Messaging systems are used to enable communication between two or more 'devices' in a distributed system.
+- RPC and programming methods that we have looked at so far classed as *direct coupling*
