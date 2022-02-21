@@ -219,12 +219,47 @@ The infrastructure of RMI is shown below:
 
 ![[Pasted image 20220221142334.png]]
 
-#### Java RMI Example
+#### Java RMI Example(s)
 
+##### Example 1
 ```
-import java.
+import java.rmi.*;
+
+public interface RMIObjectInterface extends Remote {
+	public String getReply() throws RemoteException;
+}
 ```
 
+##### Example 2
+```
+import java.rmi.*;
+import java.rmi.server.*;
 
+public class RMIObject extends UnicastRemoteObject implements RMIObjectInterface {
+
+	public RMIObject() throws RemoteException{}
+
+	public String getReply() throws RemoteException {
+		return "from rmi object";
+	}
+}
+```
+
+##### Example 3
+```
+import java.rmi.*;
+import java.rmi.registry.*;
+
+public class RMIServer {
+	public static void main(String []args){
+		try {
+			Registry RMIregistry = LocateRegistry.createRegistry(4000);
+			RMIregistry.rebind("RMIObject", new RMIObject());
+		} catch(Exception error) {
+			System.out.println(error.getMessage());
+		}
+	}
+}
+```
 
 
