@@ -87,9 +87,10 @@ These are the same as the standard IP stack, only with the addition of the COA i
 		- The HA intercepts packets by masquerading as the MN.
 	- There is a specific lifetime for service before a MN must re-register with an agent.
 	- There is also a de-registration process with the HA, invoked if the MN returns home.
-4) The HA then encapsulates all packets addressed to the MN, and forwards them to the FA (in a form of IP tunneling).
+4) The HA encapsulates all packets addressed to the MN, and forwards them to the FA (in a form of IP tunneling).
 5) The FA decapsulates all packets addressed to the MN, and forwards them via hardware addresses, learned as part of the registration process. 
-	- Note that the MN can perofrm
+	- Note that the MN can perform FA functions, if it acquires an IP address (such as via DHCP).
+	- Bidirectional communications require IP tunneling in each direction.
 
 ### Illustration of Mobile IP Registration Process
 
@@ -105,5 +106,19 @@ Visitor lists are maintained on the FA serving an MN, and map the MN's home addr
 
 ![[Pasted image 20220221151347.png]]
 
+## Mobile IP Tunneling
+![[Pasted image 20220221151551.png]]
+
+## Mobile IP Authentication
+
+Authentication can be performed by all parties, although only authentication between the MN and HA is required. Keyed MD5 is the default method. Mobile IP also has replay-protection built in; packet timestamps are mandatory, but random numbers on request reply packets are optional.
+
+The HA and FA themselves do not have to share any security information.
+
+## Dealing with "triangle" routing
+
+If the MN is in the same subnetwork as the node to which it is communicating, and the HA itself is on the other side of the world, the packets must be routed through the HA. This is obviously suboptimal and is referred to as "triangle" routing. It would be nice if packets could directly be routed from MN to CN without a middleman.
+
+Thankfully, mobile IP allows us to do this, by letting the CN know the COA of the MN
 
 
