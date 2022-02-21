@@ -147,4 +147,8 @@ A service is used to recieve and deliver messages to all group members. Group co
 	- *Integrity*, to ensure that the message received is the same as is sent.
 	- *Valdity*, to ensure that messages will eventually be delivered
 	- *Agreement*, to ensure that where messages are delivered to one system, all others systems in the group also receive the message.
-- Maintenance of *message order* 
+- Maintenance of *message order* (i.e. if a message occurs before another message in a distributed system, the ordering is maintained).
+- Group membership management
+- Failure detection
+
+A small example group communication system is located in [week 18's activity](https://now.ntu.ac.uk/d2l/le/content/803352/viewContent/5818764/View)
