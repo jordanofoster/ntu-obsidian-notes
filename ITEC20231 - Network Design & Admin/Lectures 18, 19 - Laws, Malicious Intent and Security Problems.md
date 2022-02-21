@@ -109,4 +109,6 @@ WinHttpReq.SetRequestHeader "Content-Type","application/x-www-form-urlencoded"
 WinHttpReq.Send("login=Chris&password=Pa$$w0rd")
 ```
 
-Dictionary attacks are a form of brute-force attack; we connect to a server many times a second, and send dicti
+Dictionary attacks are a form of brute-force attack; we connect to a server many times a second, and send words from a dictionary as the password. Problems can arise here due to poor security policies on a server, such as:
+- The account lockout duration has been disabled
+- Password complexity requirements
