@@ -52,3 +52,10 @@ dstFile = input("Please enter the name of the destination: ")
 systemCommand += srcFile + " " dstFile
 os.system(systemCommand)
 ```
+
+Calling `os.system` will get the OS to execute the command given. This can be a problem:
+- `"readme.txt + readme2.txt"` is fine.
+- `"readme.txt readme2.txt;" + "rm -rf/"` is not!
+	- This copies the file and then recursively deletes all files on the filesystem.
+		- Sure, access control/authorisation can help reduce this; but what if SU/root did this?
+			- 
