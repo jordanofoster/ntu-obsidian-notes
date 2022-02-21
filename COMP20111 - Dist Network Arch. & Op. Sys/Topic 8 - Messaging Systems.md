@@ -44,6 +44,18 @@ Java provides access to a comprehensive set of packages and classes for accessin
 
 ### UDP Programming under java
 
-A User Datagram Packet is a connectionless form of transmission. i.e.
+A User Datagram Packet is a connectionless form of transmission (i.e. the packet will be routed via a packet-switched network). To create a packet, the following line is required:
+
+`packet = new DatagramPacket(buffer.length, addr, destinationPort)`
+
+`buffer` is the space you want to store when receiving or sending the information. This needs to be definined as `Bytes[]`, but `string.getBytes()` could be used instead (***when sending***).
+![[Pasted image 20220221132556.png]]
+
+- `buffer.length` represents how many bytes of information to send.
+- `addr` refers to the address of the destination machine.
+- `destinationPort` refers to the port of the destination machine.
+
+Once `DatagramPacket` has been created, a `DatagramSocket` object is needed to send it.
+
 
 
