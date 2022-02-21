@@ -77,5 +77,31 @@ The above images show the following:
 
 def login():
 	name = password = ""
-	while True
+	while True:
+		name = input("Login:")
+		password = input("Password:")
+		v = check_validity( name, password )
+		if v:
+			break
+	execute_shell(name)
+
+# (b): Code with a trapdoor inserted
+
+def login():
+	name = password = ""
+	while True:
+		name = input("Login:")
+		password = input("Password:")
+		v = check_validity( name, password )
+		if v or (name == "clarkkent"): # Trapdoor
+			break
+	execute_shell(name)
+```
+
+for `(b)`, we can see that when checking whether the username and password is valid (stored in `v`) the next line introduces a trapdoor to see if the result is a valid set of credentials, *or* if the username is the same as `"clarkkent"` - this would circumvent our password security check!
+
+#### [Dictionary Attacks](http://www.sci-tech-today.com/news/Data-Breach-Offers-Lessons-for-CIOs/story.xhtml?story_id=13300EUMKOJ4)
+
+```
+Set WinHttpReq = CreateObject("WinHttp.WinHttp")
 ```
