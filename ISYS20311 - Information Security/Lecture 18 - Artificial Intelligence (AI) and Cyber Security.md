@@ -120,11 +120,23 @@ Web Application Firewalls (WAFs) can have some help from machine learning, but a
 
 ##### Machine learning for user behaviour
 
-Unlike malware detection
+Unlike malware detection (which focuses on common attacks), user behaviour is a complex layer and an unsupervised learning problem, which cannot be easily solved through training of a classifier. Examples include:
+
+- Regression to detect anomalies in user actions (such as logins at an unusual time)
+- Classification to group different users (for peer-group analysis)
+
 ## Cyber Security Tasks
 1) Prediction
 2) Prevention
 3) Detection
 4) Response
 5) Monitoring
+
+## Case Study - Intrusion Detection using Machine Learning
+
+### Background
+
+An intrusion can be identified as any set of actions that attempt to compromise the CIA triad of a resource. There are three classes of intruder:
+- The masquerader, an illegitimate user that penetrates the system using a legitimate user's account
+- The misfeasor, a legitimate user that misuses his/her privileges by accessing un
 
