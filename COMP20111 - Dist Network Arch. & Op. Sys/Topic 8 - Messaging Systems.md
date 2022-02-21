@@ -144,4 +144,7 @@ Group based communication builds upon *multicast* communication. Systems can joi
 A service is used to recieve and deliver messages to all group members. Group communication itself requires the following:
 
 - *Reliable communication* to large numbers of group members
-	- *Integrity*, to ensure that the message received is the same 
+	- *Integrity*, to ensure that the message received is the same as is sent.
+	- *Valdity*, to ensure that messages will eventually be delivered
+	- *Agreement*, to ensure that where messages are delivered to one system, all others systems in the group also receive the message.
+- Maintenance of *message order* 
