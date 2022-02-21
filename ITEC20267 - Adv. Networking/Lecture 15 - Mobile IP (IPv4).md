@@ -32,4 +32,15 @@ Mobile IP was developed as a means for transparently dealing with the problems o
 - Enables hosts to be tracked, without changing their IP address
 - Requires no changes to the software of non-mobile hosts/routers
 - Requires *some* additions to existing infrastructure
-- No geogrp
+- No geographical limitations are present
+- No modifications to IP addresses (or the format itself) is required.
+- Mobile IP itself also supports security.
+
+Mobile IP itself could be even more important than physically connected routing; the IETF standardiziation process is still underway[^citation needed].
+
+### Mobile IP Entities 
+
+#### Mobile Node (MN)
+
+This is an entity that can change its point of attachment from network-to-network, within the internet. MNs detect that they have moved and register themselves with the 'best' FA. Mobile nodes  
+
