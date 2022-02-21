@@ -62,7 +62,25 @@ This is an address that identifies the MN's current location, and is sent by the
 
 CNs are the end host to which the MN corresponds (such as a web server).
 
+### Mobile IP Support Services
 
+### Agent Discovery
+
+HAs and FAs broadcast their presence on each network to which they are attached, beaconing messages via the ICMP Router Discovery Protocol (IRDP). MNs listen for advertisements from FAs/HAs and then initiate registration.
+
+### Registration
+
+When the MN is away, its COA is registered with its HA. Typically this is done through the FA with the strongest signal. Registration messages themselves are sent via UDP to well-known ports.
+
+### Encapsulation/Decapsulation
+
+These are the same as the standard IP stack, only with the addition of the COA instead.
+
+## Mobile IP Operation
+
+1) An MN listens for an agent's advertisement, then initiates registration.
+	- If the responding agent is the HA, then mobile IP standards are not required.
+- After receiving the registration request from an MN, the HA acknowledges, and 
 
 
 
