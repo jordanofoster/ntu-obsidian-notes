@@ -322,4 +322,4 @@ Additionally, applications can be multithreaded; there are several levels of thr
 - 0 refers to a single thread
 - 1 is multi-threaded, where main thread can access the MPI
 - 2 is multi-threaded, where threads can access MPI one at a time
-- 3 Has no re
+- 3 has no restrictions
