@@ -68,4 +68,34 @@ Solutions must meet the following criterium:
 - End-to-End security (possibly) via IPSec integration
 - Support for source routing
 - Full mobility support
-- No broadcast traffic 
+- No broadcast traffic to hamper wireless network efficiency
+- Potential support of real-time data delivery via QoS
+- Potential to utilize Anycast addressing
+
+### Challenges of Mobile IP in MANETs
+[[MobileIPMANETChallenges.m4a]]
+[[MobileIPMANETChallenges2.m4a]]
+- Denial of Service
+	- DAD DoS, Uncooperative routers, etc.
+	- Neighbor discovery trust and threats
+- Network discovery
+	- Reachback, DNS, Key Manager
+- Security
+	- IPSec/HAIPES tunnel end-points
+	- Security Policies in a dynamic environment
+	- Is layer-2 encryption sufficient?
+	- Insecure routing
+		- Attackers can inject erroneous routing info to divert traffic or make routing inefficient
+- Key Management
+	- Lack of key distribution mechanism
+	- Hard to guarantee access to any particular node by obtaining a secret key
+- Duplicate Address Discovery
+	- Not suitable for multihop adhoc networks that have dynamic topologies
+	- Situation where two MANET partitions merge needs addressing
+- Radio Technology
+	- Layer-2 media access often incompatible with layer-3 MANET routing protocol
+- Battery exhaustion threat
+	- A malicious node may interact with a mobile node very often, trying to drain the latter's battery.
+- Testing of Applications
+- Integrating MANET into the Internet
+
