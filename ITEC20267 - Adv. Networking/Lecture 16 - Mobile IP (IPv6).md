@@ -51,5 +51,21 @@ Solutions must meet the following criterium:
 - Must treat all potential configurations the same, regardless of number of subnets, MMNs, nested levels of MRs, egress interfaces, etc.
 - Must support mobile networks attaching to other mobile networks (known as nested mobile networks).
 
-NEMO 
+[[NEMOFeatures.m4a|NEMO is also responsible for providing the following:]]
 
+- Route optimization
+- Load sharing (monami)
+- Policy Based Routing (monami)
+- Multiple Home Agents from different Service Providers
+	- These have security issues
+	- Desirable for some applications (i.e. air traffic control, airline maintenance, entertainment)
+
+## Benefits of IPv6 in MANETs
+
+- IPv6 coupled together with MANET offers ease and speed of deployment, with reduced infrastructure reliance.
+- End-to-End Global Addressing
+- Autoconfiguration of link-local addresses
+- End-to-End security (possibly) via IPSec integration
+- Support for source routing
+- Full mobility support
+- No broadcast traffic 
