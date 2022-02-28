@@ -59,6 +59,12 @@ Solutions must meet the following criterium:
 - Multiple Home Agents from different Service Providers
 	- These have security issues
 	- Desirable for some applications (i.e. air traffic control, airline maintenance, entertainment)
+![[Pasted image 20220228134234.png]]
+[[NEMOFeatures2.m4a]]
+- Unicast/Multicast Address Autoconfiguration
+- Multicast Name Resolution
+- Service Discovery
+- Global Connectivity between MANET and Internet
 
 ## Benefits of IPv6 in MANETs
 
@@ -98,4 +104,13 @@ Solutions must meet the following criterium:
 	- A malicious node may interact with a mobile node very often, trying to drain the latter's battery.
 - Testing of Applications
 - Integrating MANET into the Internet
+
+## Conclusions of Mobile IP
+- Mobile IP plays an important role in the future with mobile computing devices, such as:
+	- 3G phones
+	- Wi-Fi/WiMAX nodes, etc.
+- Mobility vs. Security will always be a tradeoff.
+- Security is provided with IPSec and AAA services
+- Problem of QoS with Mobile IP requires addressing
+- The standard is driven by IETF, which helps in faster deployment without many interoperability issues.
 
