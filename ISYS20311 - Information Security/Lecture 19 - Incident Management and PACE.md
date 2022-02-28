@@ -66,5 +66,41 @@ This depends on the incident, but generally:
 - Changing filtering rules on firewalls/routers
 - Disabling known vulnerable services, such as file transfer/calendar services
 - Shut down systems
-- 
+- Disconnect systems from network
+- Call in experts if necessary
 
+
+#### Prevent recurrence of attack
+- Identify and close the gateway
+	- Change all passwords just in case
+- Scan all machines for undetected infection
+	- Remove any found malware
+
+#### Assess attack intent
+- Set traps
+	- Honeypot servers
+	- Files/directories with attractive names
+- Assess actions
+	- Reconnaissance?
+	- Denial of Service?
+	- Blackmail?
+	- Who/what was targeted?
+
+#### Limit effects of attack
+- Possibilties:
+	- Proactive admission
+		- Tell world before hacker does
+		- Tell world about mitigative measures
+	- Restore backups
+		- Assuming they've been made (...right?)
+	- Pay blackmail?
+		- Official sources always say no, but they don't suffer from lost data
+		- No guarantees blackmailers will keep their side of the bargain or not raise the asking price
+		- Beware of middlemen
+
+## Collect Evidence
+This must be court admissible, which sometimes slows down procedure and weighs against business continuity. Computer forensics may be required, in which case the following should be followed:
+
+- Do not switch off turned on machines
+- Only turn off machines if they are running destructive code
+- If machines are on, remove the network cable
