@@ -134,3 +134,29 @@ Schedule 2 of Part 1 states the following: Organisations may choose to disclose 
 
 Similar laws state:
 - It is a criminal offence to not disclose phone/other passwords to the police if a court order has been obtained under section 49 of the Regulation of Investigatory Powers Act (RIPA)
+- Section 7 of Terrorism Act 2000 can be used to compel disclosure of passwords at ports/airports.
+
+### Admissibility of evidence
+
+PACE has a lot to say regarding evidence admissibility:
+- Hearsay
+- Confessions
+- Bad character
+
+For cybersecurity, only *Hearsay* is relevant: normally, evidence from 'a friend of a friend' is non-admissible, as witnesses must have observed it directly. However, it is very rare to observe someone using a computer to commit an offence, and far more common to discover evidence of such on the computer itself.
+
+Thus, special rules are needed to make computer evidence admissible. The first attempt was the Civil Evidence Act 1968, which included some conditions that were difficult to prove, such as:
+
+*"Throughout the material part of the period, the computer was operating properly."*
+
+#### Admissibility of evidence under PACE
+PACE loosens the "operating properly" statement:
+
+*"In any proceedings, a statement contained in a document produced by a computer shall not be admissible in evidence of any fact stated therein unless it is shown - (a) that there are no reasonable grounds for believing that the statement is inaccurate because of improper use of any computer; (b) that at all material times the computer was operating properly, or if not, that any respect in which it was not operating properly or was out of operation was not such as to affect the production of the document or the accuracy of its contents."*
+
+However "improper use" covers any use of the computer by anyone after the suspect last used it - so forensic computing procedures are carefully designed to avoid that.
+
+#### Other relevant acts of admissibility
+
+- Youth Justice and Criminal Evidence Act 1999
+	- This loosened the "operating properly" requirement further still; now computers are assumed to have been functioning properly unless evidence to the contra
