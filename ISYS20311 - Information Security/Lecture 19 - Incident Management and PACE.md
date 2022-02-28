@@ -159,4 +159,20 @@ However "improper use" covers any use of the computer by anyone after the suspec
 #### Other relevant acts of admissibility
 
 - Youth Justice and Criminal Evidence Act 1999
-	- This loosened the "operating properly" requirement further still; now computers are assumed to have been functioning properly unless evidence to the contra
+	- This loosened the "operating properly" requirement further still; now computers are assumed to have been functioning properly unless evidence to the contrary exists.
+- Criminal Justice Act 2003, s129
+	- Where a representation of any fact is made otherwise than by a person, but depends for its accuracy on information supplied (directly or indirectly) by a person, then the representation is not admissible in criminal proceedings as evidence of the fact unless it is proved that the information was accurate.
+	- To summarise: evidence derived from a forensic image of a suspect's computer is only admissible if proven that the image is an accurate copy of the original.
+- S127 of the Criminal Justice Act
+	- Exceptions are made for expert witnesses, allowed to offer opinions (rather than facts) in court.
+	- This is a good reason to employ a professional forensic computer analyst
+
+### Retention
+- S22 of PACE allows police to keep seized computer for as long as needed (for the most part):
+	- Anything seized/taken away by a constable may be retained so long as in necessary in all circumstances.
+	- Anything seized for purposes of criminal investigation may be retained:
+		- (i) - for use as evidence at a trial for an offence; or
+		- (ii) - for forensic examination or for investigation in connection with an offence; and
+		- anything may be retained in order to establish a lawful owner, where there are reasonable grounds for believing that it has been obtained in consequence of the commision of an offence.
+- Nothing may be retained for either of the purposes mentioned prior if a photograph or copy would also be sufficient for that purpose.
+
