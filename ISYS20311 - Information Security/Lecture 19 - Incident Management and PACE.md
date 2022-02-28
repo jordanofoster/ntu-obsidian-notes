@@ -37,4 +37,34 @@ This depends on the incident, but generally:
 #### General effects
 - Theft of confidential info
 - Reputational damage
-	- 
+	- Withdrawal of advertisers
+- Business interruption
+- Recovery costs
+	- Increased insurance premiums
+- Fines
+
+### Report appropriately
+- Regulatory requirements:
+	- e.g. for GDPR, ICO must be notified of personal data breaches within 72 hours.
+- Within organisation:
+	- Chief Information Officer
+	- Head of IT Security
+	- Any reporting defined in policy?
+- Others
+	- National Cyber Security Centre, Action Fraud
+- What do you report?
+	- As rule of thumb - facts about what the *organisation* has suffered
+	- Do not name individuals - can prejudice later investigation
+
+### Contain the incident
+- Limit extent of attacks
+- Prevent recurrence of attack
+- Assess intent of attack
+- Limit effect of attack
+
+#### Limit extent of attack
+- Changing filtering rules on firewalls/routers
+- Disabling known vulnerable services, such as file transfer/calendar services
+- Shut down systems
+- 
+
