@@ -30,3 +30,19 @@ There are two modes of communication between a mobile node and correspondent nod
 ## Mobile IP Security
 Binding updates make use of IPSec extension headers, or alternatively via th *Binding Authorisation Data* option. Prefix discovery is protected using the IPSec headers and mechanisms related to transporting payload packets (such as the *Home Address Destination* option and type 2 routing header) have been designed such that their use in attacks is restricted.
 
+## NEMO
+
+[[NEMO.m4a|NEMO refers to (NE)tworks in (MO)tion]] - a working group established in the IETF during December 2002, concerned with managing mobility across entire networks - which change their point of attachment to the internet (and thus reachability in the topology) as a unit.
+
+### Goals of NEMO
+
+NEMO intends to standardize some basic support mechanisms based on bidirectional tunnelling  (completed January 2005) and to study the possible approaches and issues with providing more optimal routing.
+
+### NEMO Protocol
+
+Solutions must meet the following criterium: 
+- Must use bidirectional tunnels
+- MNNs must be reachable at a permanent IP with associated name.
+- Continuous sessions (both unicast and multicast) between MMNs and arbitrary CNs must be maintained after IP handover to one of the MRs.
+- Solutions must not require modifications to nodes other thna MR
+
