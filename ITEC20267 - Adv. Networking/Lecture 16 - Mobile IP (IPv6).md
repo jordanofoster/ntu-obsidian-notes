@@ -44,5 +44,12 @@ Solutions must meet the following criterium:
 - Must use bidirectional tunnels
 - MNNs must be reachable at a permanent IP with associated name.
 - Continuous sessions (both unicast and multicast) between MMNs and arbitrary CNs must be maintained after IP handover to one of the MRs.
-- Solutions must not require modifications to nodes other thna MR
+- Must not require modifications to nodes other the MRs and HAs.
+- Must support fixed nodes, mobile hosts and mobil routers in the mobile network.
+- Must not prevent the proper operation of Mobile IPv6:
+	- i.e. Must support MIPv6-enabled MNNs and must allow MNNs to receive and process binding updates from arbitrary mobile nodes.
+- Must treat all potential configurations the same, regardless of number of subnets, MMNs, nested levels of MRs, egress interfaces, etc.
+- Must support mobile networks attaching to other mobile networks (known as nested mobile networks).
+
+NEMO 
 
