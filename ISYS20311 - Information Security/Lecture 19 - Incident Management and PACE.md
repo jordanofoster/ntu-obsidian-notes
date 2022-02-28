@@ -103,4 +103,34 @@ This must be court admissible, which sometimes slows down procedure and weighs a
 
 - Do not switch off turned on machines
 - Only turn off machines if they are running destructive code
-- If machines are on, remove the network cable
+- If machines are on, remove the network cable and/or disable the wifi (preferably while being video recorded)
+- If police are involved, an affected computer may be lost for months:
+	- Get a forensic specialist to take an image of the computer for analysis
+
+## Potential prosecution/civil action
+If perpetrators are identified, what should they be charged with? English law distinguishes criminal offences and civil offences:
+- The Crown Prosecution Service decides who is charged with a criminal offence
+- The offended party decides who is sued for a civil offence
+
+### Police and Criminal Evidence Act 1984 (PACE)
+This regulates what police forces can and cannot do. Codes of practice cover:
+- Stop and search
+- Arrests
+- Detention
+- Investigation
+- Identification
+- Interviewing detainees
+
+This affects the following aspects of cybersec incidents/investigations:
+- Disclosure of information
+- Admissibility
+- Retention
+
+#### Disclosure of information under PACE
+
+Schedule 1 of PACE allows a court to make an order that an organisation must disclose specific information that would otherwise be legally confidential to the court.
+
+Schedule 2 of Part 1 states the following: Organisations may choose to disclose personal data to the police for the purpose of investigating, detecting and preventing crime. It is not mandatory, but the organisation is responsible to ensure that risk of harm from non-disclosure is lower than the breach of privacy disclosure causes.
+
+Similar laws state:
+- It is a criminal offence to not disclose phone/other passwords to the police if a court order has been obtained under section 49 of the Regulation of Investigatory Powers Act (RIPA)
