@@ -111,4 +111,7 @@ They can affect office politics in various ways:
 		- Why not just send an email?
 	- Hijacked meetings
 		- Can happen when a widespread greivance isn't dealt with
-			- Certain people will also have
+			- Certain people will also have favoured greivances
+		- Meetings that discuss issues that cannot be changed under current system/culture
+			- Such changes require detailed plans and top management approval
+		- Meeting regarding the format/frequency/usefulness of meetings
