@@ -90,4 +90,21 @@ Attacks against this area can be passive (eavesdropping) or active (modification
 
 ### Resource Management and Coordination Services.
 
-This critical area involve
+This critical area involves threats to the mechanisms that help coordinate resources (typically middleware protocols). This can include:
+- Aspects of synchronisation
+- Replication management
+- Viewing changes
+- Time/event ordering
+- Linearisability(...?)
+- Consensus algorithms
+- Transactional commits.
+
+### Data Security
+
+Distributed systems are reliant on data through the following inputs:
+- Data sourcing
+- Data distribution
+- Storage of data
+- Usage of this data in services
+
+The [[ISYS20311 - Information Security/Lecture 1 - Overview#CIA Triad|CIA]] triad directly applies to each element of the data chain (alongside the interfaces within it). The threats direct 
