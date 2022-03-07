@@ -93,4 +93,16 @@ Better reactions are:
 - For the emotionally difficult, meet them where another is present, or leave the meeting/office door open.
 	- For a boss, you may have to formally request that another is present, such has a union representative. Many organisations have policies permitting this. 
 
-### Lazy/Unpro
+### Lazy/Unproductive people.
+- Have regular progress meetings, ask for (brief) summaries of work completed
+- If they still continue, go to their boss using summaries as evidence.
+
+### Losing your temper
+Don't; as a rule of thumb, the first to get angry is the first to lose the argument.7
+
+## Meetings
+They can affect office politics in various ways:
+
+- Positive
+	- Project progress meetings where some work is dependant on other's output.
+	- Meetings where grievances are aired/
