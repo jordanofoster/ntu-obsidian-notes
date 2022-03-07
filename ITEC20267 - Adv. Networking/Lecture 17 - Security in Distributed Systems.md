@@ -128,3 +128,19 @@ As a result, addressing data security in a distributed context requires the abov
 
 Alongside data threats themselves (in the form of malware).
 
+## Decentralised P2P distribution models
+As stated before, these constitute a decentralised variant of typically centralised distributed systems. Their popularity is due to the benefits they provide in scalability, decentralised coordination and low costs. There are four protocol types:
+- Unstructured P2P
+- Structured P2P
+- Hybrid P2P
+- Hierarchical P2P
+
+Regardless of model, P2P systems typically combine the following 5 principles:
+1) Symmetry of interfaces, as peers can seamlessly swap between client and server roles
+2) Resilience to damage in the underlying infrastructure and to peer failures
+3) Data and service survivability through replication schemes
+4) Usage of peer resources at edge of networks, granting low infrastructure costs, providing scalability and decentralisation
+5) Addressing the variance of resource provisioning amongst peers.
+
+### Unstructured P2P Protocols
+
