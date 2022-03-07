@@ -129,6 +129,8 @@ As a result, addressing data security in a distributed context requires the abov
 Alongside data threats themselves (in the form of malware).
 
 ## Decentralised P2P distribution models
+The design of P2P paradigms correlate with the [[Lecture 17 - Security in Distributed Systems#Classes of Vulnerabilities and Threats|application categories]] given prior.
+
 As stated before, these constitute a decentralised variant of typically centralised distributed systems. Their popularity is due to the benefits they provide in scalability, decentralised coordination and low costs. There are four protocol types:
 - Unstructured P2P
 - Structured P2P
@@ -143,4 +145,6 @@ Regardless of model, P2P systems typically combine the following 5 principles:
 5) Addressing the variance of resource provisioning amongst peers.
 
 ### Unstructured P2P Protocols
+
+Unstructured protocols are mostly suited for large scale, continually scalable data dissemination. Programs that use unstructured P2P such as Freenet or Gnutella mainly use unstructured P2P to disseminate data for the purposes of censorship-free communication or filesharing. 
 
