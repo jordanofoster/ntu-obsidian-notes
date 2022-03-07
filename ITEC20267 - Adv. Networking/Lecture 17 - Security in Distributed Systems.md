@@ -39,6 +39,18 @@ Security for these systems is nuanced; one viewpoint focuses on the security of 
 
 This lecture will focus on the former category (of 'securing a distributed system'); however the latter will also be discussed, given that dispersed security mechanisms typically execute on dispersed resources.
 
-It is worth mentioning that distributed architecture is often layered, where each builds upon the services provided by the last and coordinated services are offered across the system. At lowest levels, individual device resources are accesssed through the OS. Distributed systems are assembled through the interactivity between different components/services on different devices.
+### Footnote about distributed systems
+It is worth mentioning that distributed architecture is often layered, where each builds upon the services provided by the last and coordinated services are offered across the system. At the lowest levels, individual device resources are accesssed through the OS - distributed systems are assembled through the interactivity between different components/services on different devices.
 
-Vertical interactions across the layers of a distributed system are supported by middleware frameworks that support different communication standards, such as [[Topic 8 - Messaging Systems#Message Passing Interface MPI|message passing]], [[Topic 8 - Messaging Systems#Remote Procedure Calls RPCs|Remote Procedure Calls (RPCs)]], distributed object platfor
+Vertical interactions across the layers of a distributed system are supported by middleware frameworks that support different communication standards, such as [[Topic 8 - Messaging Systems#Message Passing Interface MPI|message passing]], [[Topic 8 - Messaging Systems#Remote Procedure Calls RPCs|Remote Procedure Calls (RPCs)]], distributed object platforms, [[Topic 8 - Messaging Systems#Publish Subscribe|publish-subscribe architectures]] and the Enterprise Service Bus.
+
+With such services, decentralisation and coordination at each layer may differ, resulting in hybrid compositions of decentralisation/coordination patterns.
+
+## Classes of Vulnerabilities and Threats
+Vulnerabilities relate to the design or operational weaknesses that allow for a system to be compromised by an attacker. These include:
+- Access/admission control and ID management
+- Data transportation
+- Resource management and coordination services
+- Data security.
+
+Threats reflect the [[Lecture 6 - Risk Assessment|potential or likelihood]] of an attacker causing damage or compromising the system, and is an end-to-end property of a system. As a result, vulnerabilities are broadly grouped based on the blocks of functionality that define the
