@@ -148,3 +148,4 @@ Regardless of model, P2P systems typically combine the following 5 principles:
 
 Unstructured protocols are mostly suited for large scale, continually scalable data dissemination. Programs that use unstructured P2P such as Freenet or Gnutella mainly use unstructured P2P to disseminate data for the purposes of censorship-free communication or filesharing. 
 
+While peers themselves do not have any topology that links them, an implicit topology exists embedded within the physical infrastructure in the form of tree or mesh-like subgraphs; these allow for low latency message exchange (e.g. to address timeline requirements of data dissemination applications).
