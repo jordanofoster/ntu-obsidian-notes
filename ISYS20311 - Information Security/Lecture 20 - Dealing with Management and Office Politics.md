@@ -36,4 +36,14 @@ For employees, the environment offers security and the opoortunity to acquire sp
 
 Task culture is job/project oriented. It is a team-based, where group work takes precedence over individual objectives and most status/style differences. Work structures in this environment are often matrix/project-based. Influence is centralised on expert power rather than position or personal power.
 
-This environment provides a lot of autonomy to individuals, as judgement is based on results
+This environment provides a lot of autonomy to individuals, as judgement is based on results, and there are easy working relationships within groups and mutual respect based on ability (instead of age/status).
+
+Task-cultured organisations can respond rapidly, since each group contains all decision-making powers required. Task culture is therefore appropriate when flexibility/sensitivity to the market/environment is important; such as where the marekt is competitive, a product's lifecycle is short or reaction speed is critical.
+
+Control in this enivronment is difficult. Senior managers concentrate on allocation projects, people and resources. Task cultures can become role or power-based if resources are limited or the organisation is unsuccessful.
+
+### Person
+
+Person culture is unusual. If there is structure in an organisation, it only exists to serve and assist individuals, to further their own interests without an overriding objective. As a result, control mechanisms and hierarchy is impossible here except by mutual consent. Individuals can leave the organisation, but can rarely be evicted. Influence is shared and power is mostly expert-based. That is, people do what they are good at and are listened to for their expertise. Some resource power also exists.
+
+Consultants (employed or freelance) and architects' partnerships often have such culture, as do some universities. Many specialists have personal pr
