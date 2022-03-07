@@ -53,4 +53,25 @@ Vulnerabilities relate to the design or operational weaknesses that allow for a 
 - Resource management and coordination services
 - Data security.
 
-Threats reflect the [[Lecture 6 - Risk Assessment|potential or likelihood]] of an attacker causing damage or compromising the system, and is an end-to-end property of a system. As a result, vulnerabilities are broadly grouped based on the blocks of functionality that define the
+Threats reflect the [[Lecture 6 - Risk Assessment|potential or likelihood]] of an attacker causing damage or compromising the system, and is an end-to-end property of a system. As a result, vulnerabilities are broadly grouped based on the blocks of functionality that define a distributed system.
+
+As a result, these 'blocks' and the operations they perform create the base threat/attack surface (area to exploit) for the systems themselves. At higher levels, attack surfaces relate to compromising the following:
+- Physical resources
+- Communication schema
+- Coordination mechanisms
+- Services themselves
+	- The usage policies on the data services use.
+
+### Access/Admission Control & ID Management
+
+Access/admission control determines authorisation to use/access the following within a distributed system:
+- Resources
+- Users
+- Services
+
+This can also include sourcing data and read/write access to data over a service's lifetime. The potential threats and consequential attacks can include the following:
+- Masquerading/spoofing identity to gain access rights
+- Denial of Service (DoS) attacks to limit access
+	- Through depleting computing resources and breaking communication channels
+		- Leading to them becoming inaccessible even to authenticated users.
+		- 
