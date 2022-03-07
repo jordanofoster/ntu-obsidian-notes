@@ -37,4 +37,8 @@ Google, AWS, Azure and Apache's *Cassandra* are companies/services that offer ac
 Security for these systems is nuanced; one viewpoint focuses on the security of the underlying concepts and mechanisms in a distributed system where resources and services are dispersed. The other considers the use of distribution as a way to provide security itself. For example:
 - The dispersal of keys, instead of using a centralised key store, or the use of VMs to partition/isolate resources and applications.
 
-This lecture will focus on the former category (of 'securing a distributed system'); however the latter will also be discussed, given that dispersed security 
+This lecture will focus on the former category (of 'securing a distributed system'); however the latter will also be discussed, given that dispersed security mechanisms typically execute on dispersed resources.
+
+It is worth mentioning that distributed architecture is often layered, where each builds upon the services provided by the last and coordinated services are offered across the system. At lowest levels, individual device resources are accesssed through the OS. Distributed systems are assembled through the interactivity between different components/services on different devices.
+
+Vertical interactions across the layers of a distributed system are supported by middleware frameworks that support different communication standards, such as [[Topic 8 - Messaging Systems#Message Passing Interface MPI|message passing]], [[Topic 8 - Messaging Systems#Remote Procedure Calls RPCs|Remote Procedure Calls (RPCs)]], distributed object platfor
