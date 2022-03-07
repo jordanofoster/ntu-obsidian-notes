@@ -63,3 +63,30 @@ Consultants (employed or freelance) and architects' partnerships often have such
 		- "I am the expert on this subject"
 		- 'I've always treated you nicely, will you do the same?'
 		- "I am a (possibly minor) celebrity - do what I do"
+
+## How do you respond to organisational politics?
+
+Common reactions are:
+- Avoid it if possible
+- Complain to the boss of a person making your life difficult.
+- Complain generally to co-workers
+- Leave
+
+Better reactions are:
+- Focus on what is best for the org
+- Make friends
+- Play nice
+- Fight fair
+- Keep your cool
+- Forgive/forget
+- Don't have favourites
+- Don't gossip
+
+### Specific tactics for difficult situations
+
+#### Conflicts
+- Defuse them if possible
+- It's better in the long run to fix the problem with the least embarassment, than make an example of someone.
+
+#### Difficult people
+- If 
