@@ -177,3 +177,19 @@ This recursive way of doing things turns out to be extremely efficient and scala
 Hybrid variants integrate elements of both structured and unstructured schemas with the intent of facilitating *both* discovery and dissemination of data. Prominent examples of hybrid protocols include file sharing services such as Napster, Limewire and BitTorrent.
 
 BitTorrent originally was a classically unstructured protocol, but has since been extended with structured features to provide a *fully* decentralised data discovery mechanism. As a result, BitTorrent was able to abandon the concept of "tracker servers" - which facilitated peer discovery in a centralised manner -  and thereby improve its availabilty.
+
+### Hierarchical P2P Protocols
+
+Typically, all servers in P2P systems are considered equal in terms of the services they can provide, both as a client and server. Hierarchical protocols change this, as in some scenarios it can be advantageous. Hierarchical protocols include a layered design of both structured and unstructured overlays - peers themselves are further categorised based on the following:
+- Bandwidth
+- Latency
+- Storage
+- Computation cycles
+
+The protocols provision these resources, with some "super" peers taking the coordinating role. Usually the category with the fewest peers represents the back-end of the hierarchy, whereas high-peer categories act as frontends that can process service requests, and only forward requests they themselves cannot resolve to the "back-end" peers.
+
+This method of doing things improves lookup performance, and also generates less network traffic (via messaging). Furthermore, commonly requested content can be locally cached to reduce download delay.
+
+## Attacking P2P Systems
+
+There are two functional elements
