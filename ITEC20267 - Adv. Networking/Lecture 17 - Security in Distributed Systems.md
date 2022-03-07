@@ -34,3 +34,4 @@ Both will be utilised throughout this chapter; the spectrum of distributed syste
 
 Google, AWS, Azure and Apache's *Cassandra* are companies/services that offer access to this class of system.
 
+Security for these systems is nuanced; one viewpoint focuses on the security of the underlying concepts and mechanisms that 
