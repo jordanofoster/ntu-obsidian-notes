@@ -89,4 +89,8 @@ Better reactions are:
 - It's better in the long run to fix the problem with the least embarassment, than make an example of someone.
 
 #### Difficult people
-- If 
+- If you must meet them, make an appointment shortly before one or both of you need to be elsewhere (to limit the length of the meeting)
+- For the emotionally difficult, meet them where another is present, or leave the meeting/office door open.
+	- For a boss, you may have to formally request that another is present, such has a union representative. Many organisations have policies permitting this. 
+
+### Lazy/Unpro
