@@ -150,4 +150,21 @@ Unstructured protocols are mostly suited for large scale, continually scalable d
 
 While peers themselves do not have any topology that links them, an implicit topology exists embedded within the physical infrastructure in the form of tree or mesh-like subgraphs; these allow for low latency message exchange (e.g. to address timeline requirements of data dissemination applications).
 
-P2P systems communicate across peers via messages. Messaging passing may be direct (using an underlay network between two pee)
+P2P systems communicate across peers via messages. Messaging passing may be direct (using an underlay network between two peers) - but this requires the following:
+1) Peers are *explicitly* aware of eachother
+2) The route to the other peer is known.
+
+When the destination peer for a message is unknown, the message is piggybacked alongside resource discovery operations. All peers maintain direct routing tables with the addresses (hashed or plaintext) of other peers, allowing messaging to work efficiently (i.e. without the network suffocating from resource discovery messages).
+
+The efficiency of P2P routing tables depends on the liveliness of the peers; as a result, listed peers are periodically pinged to check helath and removed when no reply is received. This period is dynamically adjusted based on the relevant *churn* (i.e. the rate of peer joins/departures)
+
+### Structured P2P Protocols
+These include the following services:
+- Chord
+- Pastry
+- Tapestry
+- Kademila
+- CAN, etc.
+
+They are typically used for data discovery applications, where the structure of the topology aids efficient searching. Graphs of structured P2P topologies show small-world properties; that is, a path exists between any two peers, with a relatively small number of *edges*. Structured topologies often map out as ring structures with inbuilt shortcuts, forming a basis for scalable and efficient resource discovery and message passing.
+
