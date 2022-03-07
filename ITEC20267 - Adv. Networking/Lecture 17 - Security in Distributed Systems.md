@@ -18,4 +18,19 @@ This is done across distributed resources and services, and is best understood w
  1) The coordination of resources
  2) The coordination of services.
 
-Both will be 
+Both will be utilised throughout this chapter; the spectrum of distributed systems include:
+- Client-Server models
+- n-Tier multi-tenancy models
+- Elastic on-demand geo-dispered aggregation of resources
+	- Layman's term - *clouds*. They can be:
+		- Public/Private
+		- Hybrid
+		- Multi-cloud
+	- They can also be used for a variety of transactional services:
+		- Databases
+		- Ledgers
+		- Storage systems
+		- Key Value Stores (KVSs).
+
+Google, AWS, Azure and Apache's *Cassandra* are companies/services that offer access to this class of system.
+
