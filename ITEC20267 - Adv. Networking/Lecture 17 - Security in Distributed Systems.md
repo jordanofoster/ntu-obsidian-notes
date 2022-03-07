@@ -107,4 +107,24 @@ Distributed systems are reliant on data through the following inputs:
 - Storage of data
 - Usage of this data in services
 
-The [[ISYS20311 - Information Security/Lecture 1 - Overview#CIA Triad|CIA]] triad directly applies to each element of the data chain (alongside the interfaces within it). The threats direct 
+The [[ISYS20311 - Information Security/Lecture 1 - Overview#CIA Triad|CIA]] triad directly applies to each element of the data chain (alongside the interfaces within it), and therefore threats to each are present in distributed systems:
+- Confidentiality
+	- Information leakage threats
+		- Side channel attacks
+		- Covert channel attacks
+- Integrity
+	- Compromise of data correctness
+	- Violation of data consistency, as observed by distributed devices
+		- This includes different types of consistency (over storage/transactional services):
+			- strong/weak/related/eventual/etc. 
+- Availability
+	- Delay/denial of data access.
+
+As a result, addressing data security in a distributed context requires the above threats to be mentioned across several areas:
+- Resources
+- Access control
+- Data transportation
+- Coordination services
+
+Alongside data threats themselves (in the form of malware).
+
