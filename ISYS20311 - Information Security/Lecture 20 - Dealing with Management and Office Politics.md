@@ -46,4 +46,20 @@ Control in this enivronment is difficult. Senior managers concentrate on allocat
 
 Person culture is unusual. If there is structure in an organisation, it only exists to serve and assist individuals, to further their own interests without an overriding objective. As a result, control mechanisms and hierarchy is impossible here except by mutual consent. Individuals can leave the organisation, but can rarely be evicted. Influence is shared and power is mostly expert-based. That is, people do what they are good at and are listened to for their expertise. Some resource power also exists.
 
-Consultants (employed or freelance) and architects' partnerships often have such culture, as do some universities. Many specialists have personal pr
+Consultants (employed or freelance) and architects' partnerships often have such culture, as do some universities. Many specialists have personal preferences for this environment, but find themselves operating in orthodox cultures instead. Such people are not easily manageable.
+
+## How does power affect organisation politics
+
+- Positional power:
+	- "I am your boss"
+		- "Do what I say"
+		- "If you do this, I can promote/reward you"
+		- "If I don't want you to do something I will deny the information needed to do so."
+	- Resource power
+		- "Yes you can, or No you can't have an extra/specific person on the team"
+		- "Refusal to release information (e.g. pentesters refusing to reveal their methods)"
+		- "You can/can't buy this software/travel here"
+	- Personal power
+		- "I am the expert on this subject"
+		- 'I've always treated you nicely, will you do the same?'
+		- "I am a (possibly minor) celebrity - do what I do"
