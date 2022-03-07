@@ -74,4 +74,20 @@ This can also include sourcing data and read/write access to data over a service
 - Denial of Service (DoS) attacks to limit access
 	- Through depleting computing resources and breaking communication channels
 		- Leading to them becoming inaccessible even to authenticated users.
-		- 
+
+It should be noted that distribution of resources tends to give access controls more value; the increase of information transported to support access controls can also increase the attack surface of the system.
+
+### Data Transportation
+
+Network level threats here span the following:
+- Routing
+- Message passing
+- Publish-subscribe related resource interaction
+- Event-based response triggers
+- General threats across the middleware stack
+
+Attacks against this area can be passive (eavesdropping) or active (modification of data). A typical example of this is a Man in the Middle (MITM) attack, where an adversary inserts themselves between a victim's browser and the web server itself, establishing two separate connections. This allows the adversary to actively record messages and selectively alter data, all without alerting to suspicious activity (if the system does not require endpoint authentication i.e. via SSL certificates).
+
+### Resource Management and Coordination Services.
+
+This critical area involve
