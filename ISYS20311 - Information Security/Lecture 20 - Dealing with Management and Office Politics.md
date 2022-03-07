@@ -105,4 +105,10 @@ They can affect office politics in various ways:
 
 - Positive
 	- Project progress meetings where some work is dependant on other's output.
-	- Meetings where grievances are aired/
+	- Meetings where grievances are aired/minuted and actions assigned.
+- Negative
+	- Meetings where the manager does most of the talking:
+		- Why not just send an email?
+	- Hijacked meetings
+		- Can happen when a widespread greivance isn't dealt with
+			- Certain people will also have
