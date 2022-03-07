@@ -34,4 +34,7 @@ Both will be utilised throughout this chapter; the spectrum of distributed syste
 
 Google, AWS, Azure and Apache's *Cassandra* are companies/services that offer access to this class of system.
 
-Security for these systems is nuanced; one viewpoint focuses on the security of the underlying concepts and mechanisms that 
+Security for these systems is nuanced; one viewpoint focuses on the security of the underlying concepts and mechanisms in a distributed system where resources and services are dispersed. The other considers the use of distribution as a way to provide security itself. For example:
+- The dispersal of keys, instead of using a centralised key store, or the use of VMs to partition/isolate resources and applications.
+
+This lecture will focus on the former category (of 'securing a distributed system'); however the latter will also be discussed, given that dispersed security 
