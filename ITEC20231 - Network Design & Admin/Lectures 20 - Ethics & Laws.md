@@ -119,3 +119,10 @@ The GDPR gives individuals enhanced rights, that include the right to:
 - Data portability
 - Object to data collection
 - Rights in relation to automated decision making/profiling of data
+
+#### Privacy and Electronic Communications (EC Directive) Regulations 2003
+
+If there is a significant security risk associated with using your service, you *must inform the user* of:
+1) The nature of that risk (e.g. tracking via cookies);
+2) Any appropriate measures that the subscriber may take to safeguard against that risk (e.g. private browsing);
+3) The likely ccosts to the subscriber involved in the taking of such measures (e.g. more software)
