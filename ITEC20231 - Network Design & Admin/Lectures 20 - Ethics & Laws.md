@@ -144,5 +144,8 @@ Often, sysadmins/managers are also worried about reporting such material, in cas
 
 Good practices will involve web controls, traffic and storage-use monitoring.
 
-#### 
+#### Disability Discrimination Act 1995
+It is unlawful for "a provider of services" to discriminate against a disabled person in failing to comply with provisions of the DDA. 
+
+An example case would include *Sydney Olympics* (McGuire vs. SOCOG 2000)
 
