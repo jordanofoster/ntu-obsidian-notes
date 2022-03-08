@@ -125,4 +125,18 @@ The GDPR gives individuals enhanced rights, that include the right to:
 If there is a significant security risk associated with using your service, you *must inform the user* of:
 1) The nature of that risk (e.g. tracking via cookies);
 2) Any appropriate measures that the subscriber may take to safeguard against that risk (e.g. private browsing);
-3) The likely ccosts to the subscriber involved in the taking of such measures (e.g. more software)
+3) The likely costs to the subscriber involved in the taking of such measures (e.g. more software)
+
+This is now law, but do *all* online companies do this?
+
+The EC Directive also:
+- Prohibits unsolicited commerical marketing by e-mail without 'opt-in' consent:
+	- But the regulations do not help with most spam.
+- Requires you to inform users about any cookies or what web bugs do, and the information they collect.
+	- One interpretation is that you must allow users to refuse the cookies.
+- However, the IC takes a [more pragmatic view.](http://www.aboutcookies.org/Default.aspx?page=3) 
+- Information used for the provision of a service must be erased/anonymised after completion of the transmission.
+
+#### Sexual Offences Act 2003
+If an employee accesses illegal material of 
+
