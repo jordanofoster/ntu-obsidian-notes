@@ -149,4 +149,8 @@ It is unlawful for "a provider of services" to discriminate against a disabled p
 
 An example case would include *Sydney Olympics* (McGuire vs. SOCOG 2000)
 
-This was clarified in 2002 in a Code of Practice to explicitly mention online services such as websites. The Special Educational Needs and Disability Act 2001 (SENDA) establises legal rights for disabled students in pre and post-16 education by amending the DDA to [include education.](http://www.jisclegal.ac.uk/ispliability/ispliability.htm) 
+This was clarified in 2002 in a Code of Practice to explicitly mention online services such as websites. The Special Educational Needs and Disability Act 2001 (SENDA) establises legal rights for disabled students in pre and post-16 education by amending the DDA to [include education.](http://www.jisclegal.ac.uk/ispliability/ispliability.htm) - Lookup the Equality act 2010.
+
+## Who Watches the Watchers?
+
+As a sysadmin, who checks you? Companies need policies and procedures so that sysadmins know their limits and 
