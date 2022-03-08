@@ -41,4 +41,14 @@ Laws can be broken in two ways; by committing an offence, or by omission. Sys/Ne
 - *Electronic Commerce (EC Directive) Regulations 2002*
 - *Data Protection Act 1998*
 	- Including the changes made in 2018 via the GDPR
-- *[Disability Discrimination Act 1995](https://www.rnib.org.uk/xpedio/groups/public/documents/publicwebsite/public_
+- *[Disability Discrimination Act 1995](https://www.rnib.org.uk/xpedio/groups/public/documents/publicwebsite/public_legalcase.hcsp)*
+- *[Sexual Offences Act 2003](http://www.computing.co.uk/itweek/news/2085638/rules-cut-porn-risks)*
+- *Investigatory Powers Act 2016*
+- *Telecommunications* - (Lawful Business Practice) (Interception of Communications) Regulations 2000 (LBP Regulations)
+- *Article 8 of the Human Rights Act 1998*
+- *Privacy and Electronic Communications* (EC Directive) Regulations 2003
+- *[Part 11 of the Anti-Terrorism, Crime and Security Act 2001](http://www.opsi.gov.uk/acts/acts2001/ukpga_20010024_en_11)*
+- *Counter-Terrorism and Security Act 2015* (Communications Identity)#
+
+#### Copyright Act
+Software is considered as a 
