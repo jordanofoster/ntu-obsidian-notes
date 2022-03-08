@@ -62,4 +62,20 @@ Sources: http://www.out-law.com/page-431 and the OFT publication *"A guide for b
 Both those responsible for a website, as well as service providers - whether involved in e-commerce or not - should provide the following minimum information, which should be easily, directly and permanently accessible:
 - The *name* of the service provider must be given somewhere easily accessible on the site.
 - The *email address* of the service provider must be given. It is not sufficient to include a 'contact us' form without also providing an email address.
-- 
+- The *geographic address* of the service provider must be given.
+- If a company, the company's *registration number* should also be given.
+	- The *place of registration* should also be stated.
+		- This is required by the *Companies Act* as from 31st December 2006.
+- If the business is a member of a trade or professional association then membership details - including any registration number - should be provided.
+- If the business has a *VAT number*, it should be stated - even if the website is not being used for e-commerce transactions.
+- Prices on the websites should be clear and unambiguous.
+
+The *Distance Selling Regulations* contain other information requirements for online businesses that sell to consumers (business-to-customer, as opposed to business-to-business sales).
+
+#### Data Protection Act 1998
+
+Organisations that process personal information must register with the *Information Commisioner (IC).* Such bodies must have adequate technical and organisation security protection in place.
+
+Data may only be used for the specific purpose for which it was collected; it may not be transmitted outside the EEA without consent (or adequate protection), and must be kept "no longer than necessary".
+
+
