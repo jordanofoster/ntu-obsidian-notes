@@ -151,6 +151,14 @@ An example case would include *Sydney Olympics* (McGuire vs. SOCOG 2000)
 
 This was clarified in 2002 in a Code of Practice to explicitly mention online services such as websites. The Special Educational Needs and Disability Act 2001 (SENDA) establises legal rights for disabled students in pre and post-16 education by amending the DDA to [include education.](http://www.jisclegal.ac.uk/ispliability/ispliability.htm) - Lookup the Equality act 2010.
 
+### British Standards Institute (BSI) Standards
+
+BSI provides a set of standards for [management of IT systems.](https://bsigroup.co.uk) 
+- **ISO/IEC 27001** - "defines the requirements for an Information Security Management System (ISMS)"
+- Companies can be certified against the standard for a price, or just conform to the Code of Practice for **ISO/IEC 17799:**
+	- Includes the "Plan, Do, Check, Act" process - a recommended approach to risk assessment based ojn
 ## Who Watches the Watchers?
 
-As a sysadmin, who checks you? Companies need policies and procedures so that sysadmins know their limits and what to do in [difficult circumstances.](https://www.usenix.org/lisa/system-administrators-code-ethics) Misuse of information can be considered harassment 
+As a sysadmin, who checks you? Companies need policies and procedures so that sysadmins know their limits and what to do in [difficult circumstances.](https://www.usenix.org/lisa/system-administrators-code-ethics) Misuse of information can be considered harassment - and by extension, grounds for dismissal.
+
+The company should have an Ombudsman for confidential consulation.
