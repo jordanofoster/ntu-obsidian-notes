@@ -140,5 +140,9 @@ The EC Directive also:
 #### Sexual Offences Act 2003
 If an employee accesses illegal material or saves it on shares, what happens? There is the potential for bad corporate publicity and cost, since police may take machines away for a considerable time, and probably take backup tapes too.
 
-Often, sysadmins/managers are also worried about reporting such material, in case they are also considered responsible. There is a memorandum of understanding between CPS and the police clarified by law, that allows sysadmins/managers to preserve such files, but only in order to [present it to police.](http://www.iwf.org.uk/police/page.22.213.htm) 
+Often, sysadmins/managers are also worried about reporting such material, in case they are also considered responsible. There is a memorandum of understanding between CPS and the police clarified by law, that allows sysadmins/managers to preserve such files, but only in order to [present it to police](http://www.iwf.org.uk/police/page.22.213.htm) by reporting it to the Internet Watch Foundation.
+
+Good practices will involve web controls, traffic and storage-use monitoring.
+
+#### 
 
