@@ -153,4 +153,4 @@ This was clarified in 2002 in a Code of Practice to explicitly mention online se
 
 ## Who Watches the Watchers?
 
-As a sysadmin, who checks you? Companies need policies and procedures so that sysadmins know their limits and 
+As a sysadmin, who checks you? Companies need policies and procedures so that sysadmins know their limits and what to do in [difficult circumstances.](https://www.usenix.org/lisa/system-administrators-code-ethics) Misuse of information can be considered harassment 
