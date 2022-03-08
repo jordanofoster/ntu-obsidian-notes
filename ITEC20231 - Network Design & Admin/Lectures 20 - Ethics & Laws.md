@@ -78,4 +78,28 @@ Organisations that process personal information must register with the *Informat
 
 Data may only be used for the specific purpose for which it was collected; it may not be transmitted outside the EEA without consent (or adequate protection), and must be kept "no longer than necessary".
 
+##### Understanding the DPA
 
+![[Pasted image 20220308015315.png]]
+
+##### How does it affect sysadmins?
+If you are the *Data Controller,* the IC may:
+- Assess your data processing setup for good practice, with you permission (Section 51(7))
+- Serve you with a notice for information (Section 43)
+- Get a search warrant from a judge to inspect your setup (Section 9)
+
+*"Any person who intentionally obstructs the Commissioner, or fails without reasonable excuse to give any assistance reasonably requested, is guilty of an offence"*
+
+The 1998 act is being superseded by the GDPR in May 2018.
+
+#### [General Data Protection Regulations (2018)](https://www.itgovernance.co.uk/data-protection-dpa-and-eu-data-protection-regulation)
+- Need to ensure accountability/governance compliance
+	- Detailed governance structures with roles/responsibilities
+	- Detailed record of all data processing operations
+	- Documenting policies and procedures
+	- Data protection impact assessments
+	- Appropriate measures to secure data
+	- Staff training and awareness
+	- Data protection officer required (as with DPA 1998).
+
+GDPR is based on sim
