@@ -102,4 +102,20 @@ The 1998 act is being superseded by the GDPR in May 2018.
 	- Staff training and awareness
 	- Data protection officer required (as with DPA 1998).
 
-GDPR is based on sim
+GDPR is based on similar principles to the DPA that it supersedes:
+- Data is processed lawfully/fairly/transparently
+- Collected and used for a specific purpose
+- Only relavant information for purposes is captured
+- Data is accurate and kept up-to-date
+- Data is only stored as long as necessary
+- Processed in a manner that ensures appropriate security
+
+The GDPR gives individuals enhanced rights, that include the right to:
+- Be informed
+- Access their data
+- Rectify their data
+- Erasure of data
+- Restrict data processing
+- Data portability
+- Object to data collection
+- Rights in relation to automated decision making/profiling of data
