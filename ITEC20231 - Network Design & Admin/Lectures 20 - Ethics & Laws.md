@@ -51,4 +51,15 @@ Laws can be broken in two ways; by committing an offence, or by omission. Sys/Ne
 - *Counter-Terrorism and Security Act 2015* (Communications Identity)#
 
 #### Copyright Act
-Software is considered as a 
+Software is considered as a piece of literary work. FAST applies Copyright Law against companies, and companies blame IT/System administrators. How can we keep a check on copyright within the company?
+- Keep good control on licenses; where possible, use site licences or licence servers.
+- Ensure no pirated software is added by users.
+- Ensure copying of documentation/printing of information from the internet follows the CLA(?).
+
+#### E-Commerce Requirements
+Sources: http://www.out-law.com/page-431 and the OFT publication *"A guide for businesses on distance selling"*
+
+Both those responsible for a website, as well as service providers - whether involved in e-commerce or not - should provide the following minimum information, which should be easily, directly and permanently accessible:
+- The *name* of the service provider must be given somewhere easily accessible on the site.
+- The *email address* of the service provider must be given. It is not sufficient to include a 'contact us' form without also providing an email address.
+- 
