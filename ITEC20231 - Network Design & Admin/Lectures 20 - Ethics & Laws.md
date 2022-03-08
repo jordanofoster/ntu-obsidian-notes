@@ -154,9 +154,12 @@ This was clarified in 2002 in a Code of Practice to explicitly mention online se
 ### British Standards Institute (BSI) Standards
 
 BSI provides a set of standards for [management of IT systems.](https://bsigroup.co.uk) 
-- **ISO/IEC 27001** - "defines the requirements for an Information Security Management System (ISMS)"
+- **ISO/IEC 27001** - *"defines the requirements for an Information Security Management System (ISMS)"*
 - Companies can be certified against the standard for a price, or just conform to the Code of Practice for **ISO/IEC 17799:**
-	- Includes the "Plan, Do, Check, Act" process - a recommended approach to risk assessment based ojn
+	- Includes the "Plan, Do, Check, Act" process - a recommended approach to risk assessment based on business requirement to protect corporate corporate assets and the importance of measurement and metrics.
+- The **ISO 9000** family are a set of Quality Management standards.
+- **ISO 20000** - *"particularly suitable for internal IT service providers, such as IT departments, and external IT service providers, such as IT outsourcing organizations"*
+
 ## Who Watches the Watchers?
 
 As a sysadmin, who checks you? Companies need policies and procedures so that sysadmins know their limits and what to do in [difficult circumstances.](https://www.usenix.org/lisa/system-administrators-code-ethics) Misuse of information can be considered harassment - and by extension, grounds for dismissal.
