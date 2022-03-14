@@ -64,3 +64,30 @@ There are a few security concerns for distributed systems:
 - Other threats:
 	- [Man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)
 	- [Denial-of-service attacks](https://en.wikipedia.org/wiki/Denial-of-service_attack)
+	- [Mobile code](https://en.wikipedia.org/wiki/Code_mobility) - as covered in lab 5
+- The situation can be improved via secure communications:
+	- We can use cryptography to encrypt message details.
+	- We can verify the identity of an authenticated user by applying their private key to encrypted messages.
+	- Securely encrypted channels.
+
+## Revisiting Cluster Computing
+![[Pasted image 20220314133329.png]]
+There are a few issues that need to be addressed for any large-scale distributed system:
+- Networking
+- Tranmission of information
+- Clocks
+- States
+- Synchronisation
+- Scheduling
+- Load Blanacing
+- Remote Invocation / IPC
+- Distributed Memory
+- Distributed Filesystems
+- Security
+
+## Revisiting Multi-computer Topologies
+![[Pasted image 20220314133503.png]]
+
+Multi-computers can be connected via a number of ways. There are some things to consider:
+- Nodes in topologies represent switches, with CPUs connected to switches.
+- Each node can have a number of links to other nodes (fanout).
