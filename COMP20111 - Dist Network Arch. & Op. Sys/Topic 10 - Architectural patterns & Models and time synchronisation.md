@@ -173,7 +173,7 @@ This is a low accuracy method for synchronising clocks that sends time to *other
 
 This provides a very low accuracy, as clocks can have a wider range of times.
 
-##### NTP Procedure call mode
+##### NTP Procedure Call Mode
 
 This is similar to other methods such as Cristian's Algorithm; the client *requests* time from other servers. Time is based on the *timestamps* of clocks on other servers:
 - Each server replies with a message with a clock timestamp
@@ -181,5 +181,20 @@ This is similar to other methods such as Cristian's Algorithm; the client *reque
 
 Procedure call mode provides better accuracy compared to multicast, and can be used if multicast is not possible; but it demands *higher accuracy* for bottom stratum and leaf devices.
 
-#####
+##### NTP Symmetric Mode
 
+This is used by master servers on lower stratums. Higher accuracy is needed as they deal with leaf devices.
+
+In this mode, server pairs exchange messages between each other.
+- This improves accuracy over time;
+- However synchronisation dispersion should be considered
+
+Additionally, pair-wise synchronisation is needed to get the best accuracy.
+
+###### NTP symmetric pair-wise synchronisation protocol
+![[Pasted image 20220314161948.png]]
+The long-winded method of calculating clock correction is as follows:
+1) Record times for each start/end
+2) Work out message delay for $msg_1$ and $msg_2$ (from #1)
+3) Calculate propagation delay (from #2)
+4) Calculate clock offset (from #3)
