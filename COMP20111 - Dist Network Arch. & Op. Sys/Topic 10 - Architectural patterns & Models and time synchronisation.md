@@ -145,3 +145,8 @@ Proposed in 1989 by [Flaviu Cristian](https://en.wikipedia.org/wiki/Flaviu_Crist
 #### [The Berkeley Algorithm](https://en.wikipedia.org/wiki/Berkeley_algorithm)
 Introduced by Gusella, R., and Zatti, S. in 1989, this algorithm syncs clocks using a server/client polling method, a la *internal synchronisation.*
 
+![[Pasted image 20220314135658.png]]
+
+![[Pasted image 20220314135736.png]]
+
+#### The Network Time Protocol
