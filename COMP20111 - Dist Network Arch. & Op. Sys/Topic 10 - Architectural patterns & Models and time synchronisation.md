@@ -91,3 +91,19 @@ There are a few issues that need to be addressed for any large-scale distributed
 Multi-computers can be connected via a number of ways. There are some things to consider:
 - Nodes in topologies represent switches, with CPUs connected to switches.
 - Each node can have a number of links to other nodes (fanout).
+- The diameter of an interconnection network represents the largest number of links that may need to be traversed between the two most distant nodes. The lowest number of hops is the best, and is known as the shortest path.
+- Maximum bandwidth between nodes.
+
+### Sender/receiver initiated Diffusion
+![[Pasted image 20220314133800.png]]
+![[Pasted image 20220314133807.png]]
+One issue with large-scale computing is transmitting workload between nodes via different load balancing strategem. Some common ones include the namesakes of this section. Load balancing is covered in [[Topic 9.]]
+
+## Clocks in distributed systems
+Time is an important notion with distributed systems; when sending information between interconnected nodes, we must consider the order that messages are processed/distributed in. Processes running on two or more machines can use the clock to timestamp events and keep track of synchronisation.
+
+### Clock issues in the Interaction Model
+![[Pasted image 20220314133957.png]]
+![[Pasted image 20220314134003.png]]
+
+When different programs and/or services work together to provide overall system functionality across a number of machines, distri
