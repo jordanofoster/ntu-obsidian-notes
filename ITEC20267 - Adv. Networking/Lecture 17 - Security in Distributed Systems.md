@@ -200,4 +200,20 @@ There are two functional elements of P2P systems that need broad protection:
 	- Download, etc.
 All of this functionality pertains to the network level.
 
-2) P2P Data Structures (P-DSs), accessible at the 
+2) P2P Data Structures (P-DSs), accessible at either the network level or locally on a peer's host machine, such as:
+	- Data stored in peer's routing table
+	- Resources shared with other peers
+
+The focus is on attacks against the P2P network infrastructure itself (e.g., Denial of Service or routing disruptions) and don't consider attacks prepared/conducted using P2P systems that harm non-P2P systems, such as *Distributed* Denial of Service attacks.
+
+Most attacks exploit fundamental features such as message exchange based decentralised coordination, or the fact that each peer only has a partial (local) view of the entire system, by aiming to trick other peers by giving incorrect data or colluding to create partitions that hide aspects of the system from good nodes. Such example scenarios include:
+- Misleading peers in terms of routing
+- Taking advantage of access to resources
+- Overcoming limitations in voting systems or games
+- Hiding information in the overlay, among others.
+
+### Attack Types:
+#### DoS, DDoS & Disruption Attacks
+These manifest as resource exhaustion by limiting access to nodes or communication routes. In P2P architectures, attackers aim to decrease the network service availability of the overlay by sending excessive messages to a specific peer set, thereby negatively affecting P-OPs. Examples of affected P-OPs include:
+- The peer join/leave mechanism
+- Other arbitrary P2P service aspects
