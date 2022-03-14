@@ -156,3 +156,8 @@ Both Cristian's and the Berkley algorithm are intended for local network use; th
 - *"To enable clients to resynchronise sufficiently frequently to offset the rates of drift found in most computers"*
 - *"To provide protection against interference with the time service, whether malicious or accidental"*
 ![[Pasted image 20220314152328.png]]
+Servers are connected in a logical hierarchical tree, called a synchronisation subnet. Each level/strata of the tree contains servers:
+- At the top-most stratum are primary servers, the next secondary, and so on;
+	- The bottom stratum deals with user machine clocks.
+- Timing information is passed through each strata.
+
