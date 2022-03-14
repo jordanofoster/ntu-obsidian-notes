@@ -138,4 +138,10 @@ There are various other things to consider regarding clocks:
 - Monotonicity
 - Faultiness (crash/arbitrary failures)
 
-#### Christian's Method
+#### [Cristian's Algorithm](https://en.wikipedia.org/wiki/Cristian%27s_algorithm)
+![[Pasted image 20220314135311.png]]
+Proposed in 1989 by [Flaviu Cristian](https://en.wikipedia.org/wiki/Flaviu_Cristian) - who came up with a probabilistic algorithm to set clocks within an intranet to an external time source (*external synchronisation*).
+
+#### [The Berkeley Algorithm](https://en.wikipedia.org/wiki/Berkeley_algorithm)
+Introduced by Gusella, R., and Zatti, S. in 1989, this algorithm syncs clocks using a server/client polling method, a la *internal synchronisation.*
+
