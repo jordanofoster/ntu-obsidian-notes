@@ -120,4 +120,22 @@ When different programs and/or services work together to provide overall system 
 Each node on the network has its own internal clock. In the example above, two nodes have the same time, but $c_2$ is out by a minute.
 - There is *no difference* between $c_1$ and $c_3$ 
 - There is a difference of *1 minute* between $c_1$ and $c_2$.
-- This difference is called *skew* (i.e. the differ)
+- This difference is called *skew* (i.e. the difference between two readings).
+
+System clocks are based on a timing circuit which oscillates $x$ times/second. For example, a 2.4GHz processor oscillates 2.4 billion times/second. There can be *slight differences* between circuits in different nodes:
+- For example, one may do $2,400,000,000$ oscillations where another does $2,400,000,001$ due to a variety of reasons, such as current crystal temperature.
+	- This is known as *clock drift.*
+
+### Strategies to synchronise physical clocks
+There are various:
+- External Synchronisation
+	- An external source synchronises each individual clock with the correct time.
+- Internal Synchronisation
+	- Each individual clock is synchronised with eachother to a known accuracy (bound), then the interval between two events occuring on different machines can be measured.
+
+There are various other things to consider regarding clocks:
+- Correctness
+- Monotonicity
+- Faultiness (crash/arbitrary failures)
+
+#### Christian's Method
