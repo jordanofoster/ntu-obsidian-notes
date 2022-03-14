@@ -152,4 +152,7 @@ Introduced by Gusella, R., and Zatti, S. in 1989, this algorithm syncs clocks us
 #### The Network Time Protocol
 Both Cristian's and the Berkley algorithm are intended for local network use; the Network Time Protocol (NTP) is used for clock synchronisation over a WAN or the internet (made of many WANs). Its design aims are as follows:
 - *"To provide a service enabling clients across the Internet to be synchronised accurately to UTC"*
-- 
+- *"To provide a reliable service that can survive lengthy losses of connectivity"*
+- *"To enable clients to resynchronise sufficiently frequently to offset the rates of drift found in most computers"*
+- *"To provide protection against interference with the time service, whether malicious or accidental"*
+![[Pasted image 20220314152328.png]]
