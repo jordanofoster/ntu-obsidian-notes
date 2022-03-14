@@ -34,7 +34,9 @@ When thinking about multiple servers and clients, different programs/services wo
 - Interaction models can be synchronous or asynchronous.
 
 ### Failure Model
-Failure models let you consider how they occur and how best to understand and correct them; failure handling itself has already been introduced in [[Topic 7 - Distributed Computing & Challenges#Failure Handling|Topic 7.]] There ar ea few types of failures:
+![[Pasted image 20220314132622.png]]
+
+Failure models let you consider how they occur and how best to understand and correct them; failure handling itself has already been introduced in [[Topic 7 - Distributed Computing & Challenges#Failure Handling|Topic 7.]] There are a few types of failures:
 
 - Omission failures
 	- Process omissions
@@ -48,7 +50,17 @@ Failure models let you consider how they occur and how best to understand and co
 			- Process execution timing
 		- Asynchronous systems generally may face errors related to taking *too much* time to do something, but generally do not face timing errors.
 
-When failures occur, we can adopt 
-### Security Model
-With multiple components together, these model how we protect or secure objects, components and processes from attack.
+When failures occur, we can either hide them, or make the effects of the failure less severe.
 
+### Security Model
+![[Pasted image 20220314132702.png]]
+With multiple components together, these model how we protect or secure objects, components and processes from attack. We need to consider how to secure running systems, as well as the methods by which they communicate with eachother. There are two ways of doing this:
+- Protecting remote objects
+- Security interactions themselves
+
+There are a few security concerns for distributed systems:
+- Securing remote method invocations
+	- How do we know that a device that calls a method is the device it claims to be?
+- Other threats:
+	- [Man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)
+	- [Denial-of-service attacks](https://en.wikipedia.org/wiki/Denial-of-service_attack)
