@@ -198,3 +198,6 @@ There are two functional elements of P2P systems that need broad protection:
 	- Query
 	- Routing
 	- Download, etc.
+All of this functionality pertains to the network level.
+
+2) P2P Data Structures (P-DSs), accessible at the 
