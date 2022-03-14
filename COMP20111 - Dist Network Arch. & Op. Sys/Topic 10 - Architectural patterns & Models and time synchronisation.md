@@ -167,4 +167,4 @@ Primary servers are usually less accurate than servers on lower stratums (e.g., 
 - Symmetric mode
 
 ##### NTP Multicast Mode
-
+This is a low accuracy method for synchronising clocks that sends time to *other* time servers. It is 
