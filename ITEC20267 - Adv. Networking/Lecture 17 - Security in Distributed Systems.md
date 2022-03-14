@@ -216,4 +216,16 @@ Most attacks exploit fundamental features such as message exchange based decentr
 #### DoS, DDoS & Disruption Attacks
 These manifest as resource exhaustion by limiting access to nodes or communication routes. In P2P architectures, attackers aim to decrease the network service availability of the overlay by sending excessive messages to a specific peer set, thereby negatively affecting P-OPs. Examples of affected P-OPs include:
 - The peer join/leave mechanism
-- Other arbitrary P2P service aspects
+- Other arbitrary P2P service aspects:
+	- Damaging routing put/get options in the DHT.
+
+Benign peers may also be impaired by an excessive maintenance workload; additional, both DoS and DDoS attacks can have negative impacts on bandwidth usage and resource provisioning, resulting in degraded services.
+
+#### Collusion Attacks
+These aim to compromise the [[ISYS20311 - Information Security/Lecture 1 - Overview#CIA Triad|CIA triad]] in regards to P2P networks. In collusion, a sufficiently large subset of peers can operate together to carry out strategies that target P2P networks to negatively affect P-OPs.
+
+Typical collusion attacks attempt to override control mechanisms (such as those for reputation or trust management), or control provisioning. *Sybil* and *Eclipse* attacks are based on attackers colluding to create network partitions that hide system state information from good nodes.
+
+#### Pollution Attacks
+
+Also known as Index Poisoning, these compromise a P2P system's integrity and P-DSs by adding incorrect information, which can then be proliferated (resulting in service impairments)
