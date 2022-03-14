@@ -106,4 +106,18 @@ Time is an important notion with distributed systems; when sending information b
 ![[Pasted image 20220314133957.png]]
 ![[Pasted image 20220314134003.png]]
 
-When different programs and/or services work together to provide overall system functionality across a number of machines, distri
+When different programs and/or services work together to provide overall system functionality across a number of machines, how our distributed algorithms work and the interactions between each computer needs to be considered, including:
+
+- Performance considerations such as latency/bandwidth/jitter
+	- This also means we must consider clocks and how they relate to the interaction model.
+- Clocks & Timers
+	- Each machine in a distributed system has its own internal clock.
+	- Clocks & Timers are used within the OS for pre-emptive multitasking (when considering a singular machine).
+	- In distributed systems, processes running on two or more machines can use the clock to timestamp events and track synchronisation.
+
+### Clock Skew and Drift
+![[Pasted image 20220314134345.png]]
+Each node on the network has its own internal clock. In the example above, two nodes have the same time, but $c_2$ is out by a minute.
+- There is *no difference* between $c_1$ and $c_3$ 
+- There is a difference of *1 minute* between $c_1$ and $c_2$.
+- This difference is called *skew* (i.e. the differ)
