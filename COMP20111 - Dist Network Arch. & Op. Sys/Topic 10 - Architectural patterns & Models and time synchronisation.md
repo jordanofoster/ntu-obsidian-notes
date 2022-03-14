@@ -173,4 +173,13 @@ This is a low accuracy method for synchronising clocks that sends time to *other
 
 This provides a very low accuracy, as clocks can have a wider range of times.
 
+##### NTP Procedure call mode
+
+This is similar to other methods such as Cristian's Algorithm; the client *requests* time from other servers. Time is based on the *timestamps* of clocks on other servers:
+- Each server replies with a message with a clock timestamp
+- The average is used to calculate best clock correction.
+
+Procedure call mode provides better accuracy compared to multicast, and can be used if multicast is not possible; but it demands *higher accuracy* for bottom stratum and leaf devices.
+
+#####
 
