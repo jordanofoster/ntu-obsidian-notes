@@ -167,4 +167,4 @@ Primary servers are usually less accurate than servers on lower stratums (e.g., 
 - Symmetric mode
 
 ##### NTP Multicast Mode
-This is a low accuracy method for synchronising clocks that sends time to *other* time servers. It is 
+This is a low accuracy method for synchronising clocks that sends time to *other* time servers. It is supposed to be used on high-speed LANs or close together systems. A small delay is assumed for transmission (e.g. 35ms) and receivers do not reply.
