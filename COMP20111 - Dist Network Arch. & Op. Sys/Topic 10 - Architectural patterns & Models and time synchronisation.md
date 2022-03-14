@@ -161,4 +161,10 @@ Servers are connected in a logical hierarchical tree, called a synchronisation s
 	- The bottom stratum deals with user machine clocks.
 - Timing information is passed through each strata.
 
-Primary servers are usually less accurate than servers on lower stratums (e.g., secondary servers are less accurate than tertiary servers and so on).
+Primary servers are usually less accurate than servers on lower stratums (e.g., secondary servers are less accurate than tertiary servers and so on). NTP servers can synchronise in one of three ways:
+- Multicast mode
+- Procedure-call mode
+- Symmetric mode
+
+##### NTP Multicast Mode
+
