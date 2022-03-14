@@ -193,7 +193,7 @@ This method of doing things improves lookup performance, and also generates less
 ## Attacking P2P Systems
 
 There are two functional elements of P2P systems that need broad protection:
-1) P2P Operations (P-OPs) such as:
+1) P2P Operations (P-OPs) that are accessible through the service interface, such as:
 	- Discovery
 	- Query
 	- Routing
