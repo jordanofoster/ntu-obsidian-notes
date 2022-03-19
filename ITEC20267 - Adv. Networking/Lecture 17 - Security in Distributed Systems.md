@@ -474,4 +474,9 @@ Factors that determine the specifics of the mechanism depend on system synchroni
 #### Paxos
 To avoid distributed entities from acting in an uncoordinated manner or failing to respond, Paxos, a group of *implicit leader-election* protocols, has been developed - in order to solve consensus in an asynchronous context.
 
-Paxos specifically solves the problem by giving all participants the ability to propose a value to agree on in an initial phase. In the second phase, if a majority agrees on a value, the process that initially proposed 
+Paxos specifically solves the problem by giving all participants the ability to propose a value to agree on in an initial phase. In the second phase, if a majority agrees on a value, the process that initially proposed the value becomes leader and agreement is achieved. This is repeated for each value in a sequence that requires consensus.
+
+#### Byzantine Fault Tolerance (BFT)
+Attacks and other deliberate disruptions do not follow the same patterns as benign omissions, timing errors or crashes. As a result, BFT is required to tolerate such entropy. Protocols that implement BFT use *coordinated replication* to guarantee correct execution of operations, so long as no more than $\frac{1}{3}$ of processes are compromised via an arbitrary fault.
+
+From a security standpoint, BFT proto
