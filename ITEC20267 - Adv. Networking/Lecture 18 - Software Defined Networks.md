@@ -65,6 +65,8 @@ When undergoing traffic engineering, we must set node weights. There are several
 ![[Pasted image 20220319203012.png]]
 
 ### Why use SDN?
-As seen prior, networks are hard to reason about, hard to evolve a
+As seen prior, networks are hard to reason about, hard to evolve, and expensive:
+- There are too many task-specific control mechanisms, with no modularity and limited functionality. 
+- We have indirect control, and must invert protocol behaviour to "coax" it into doing what we want, for example by changing weights instead of paths for traffic 
 
 
