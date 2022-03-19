@@ -338,6 +338,10 @@ Such attacks vary depending on whether attacks have direct or indirect network a
 
 ## Distributed Systems and Coordinated Resource Clustering
 
-In contrast to the decentralised model of P2P systems, there are a multitude of distributed systems where interactions across resources and services are orchestrated using various coordination mechanisms; all of which provide the illusion of a logically centralised/coordinated system/service.
+In contrast to the decentralised model of P2P systems, there are a multitude of distributed systems where interactions across resources and services are orchestrated using various coordination mechanisms; all of which provide the illusion of a logically centralised/coordinated system/service. This coordination can be in the following forms:
+- Scheduler/resource manager
+- Discrete coordinator
+- Coordination group
 
-This coordination can be in the following forms:
+These include ordering in time (causality) or varied precedence order across transactions in the distributed system.
+
