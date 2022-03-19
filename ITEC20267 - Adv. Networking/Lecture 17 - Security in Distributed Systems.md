@@ -290,4 +290,13 @@ As a result, Eclipse attacks affect both P-OPs and P-DSs.
 | Sybil | Y | N | Y | P-OP |
 | Eclipse | Y | Y | Y | P-DS, P-OP |
 
+The adversarial collusion of malicious peers is a key factor to launch attacks such as these. In many cases the inherent design of P2P (which foster scalability and fault tolerance) are exploited.
 
+Attacks against P2P systems typically impact one of three factors of the system:
+- Confidentiality
+- Integrity
+- Availability
+
+Several of these attacks are known from other system architectures, such as client-server models, whereas others are new (unique to P2P systems) or new compositions of new and old attacks. 
+
+The main difference from client-server architectures is that P2P overlays can grow very large, and adversarial efforts have to thus adapt accordingly 
