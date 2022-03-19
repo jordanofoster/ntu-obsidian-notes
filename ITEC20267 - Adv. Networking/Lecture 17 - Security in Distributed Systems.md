@@ -277,6 +277,19 @@ Having done this, an adversary can either mask or spoof the good node's external
 
 As a result, Eclipse attacks affect both P-OPs and P-DSs.
 
+#### Mitigation approaches:
+
+##### Basic PoS (Proof-of-Stake) and P-DS scenarios
+
+Proper functionality ofg basic P2P protocol security mechanisms such as the following are key to threat migitation:
+- Authentication mechanisms
+	- These help to maintain benign peer populations, and provide technical basis for downstream mechanisms, such as secure admission, alongside the following two mechanisms.
+- Secure storage
+	- This is vital for data centric applications to prevent illcit data modifications 
+- Secure routing
+
+Their proper implementation allow allows downstream mechanisms to be implemented which may also further mitigate threat vectors.
+
 ### Summarization of Attack Types
 
 | Attack | Availability | Integrity | Confidentiality | Functionality |
@@ -299,4 +312,8 @@ Attacks against P2P systems typically impact one of three factors of the system:
 
 Several of these attacks are known from other system architectures, such as client-server models, whereas others are new (unique to P2P systems) or new compositions of new and old attacks. 
 
-The main difference from client-server architectures is that P2P overlays can grow very large, and adversarial efforts have to thus adapt accordingly 
+The main difference from client-server architectures is that P2P overlays can grow very large, and adversarial efforts have to thus adapt accordingly, such as by scaling up the number of malicious peers. As a result, substantial coordination is required to execute collusion strategies effectively.
+
+Such attacks vary depending on whether attacks have direct or indirect network access via the overlay. Indirect access methods require malicious nodes to properly join the network prior to the attack. This means that malicious peers have to announce their presence in the overlay network before adversarial behaviour can begin - thereby making these attacks very noisy.
+
+
