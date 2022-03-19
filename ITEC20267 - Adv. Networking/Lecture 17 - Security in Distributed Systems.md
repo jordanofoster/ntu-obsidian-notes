@@ -663,4 +663,11 @@ On the other hand, a number of data mining/information lookup transactions only 
 - Level of consistency the services are designed to be resilient towards
 
 ###### Blockchains/Cryptocurrencies
-A ledger provides consistent bookkeeping on transactions, but is problematic to achieve in a distributed context 
+A ledger provides consistent bookkeeping on transactions, but is problematic to achieve in a distributed context, as participating entities inherently distrust each other, and themselves may be untrustworthy also.
+
+Blockchains provide decentralised, distributed and public ledgers that are used to record transactions across many computers, such that the record cannot be retroactively altered without also altering all subsequent blocks of the ledger. Such alterations require network consensus, and therefore cannot be performed unilaterally by an attacker. This property also allows participants to verify and audit transactions inexpensively. As a result, blockchains form the foundation for numerous cryptocurrencies (namely Bitcoin).
+
+In technical terms, a blockchain is a list of records or blocks. The aforementioned properties arise from the fact that each block contains a cryptographic hash of the previous block, and a timestamp. If a block in the chain is altered without altering subsequent blocks, the hash of the following block will not match; meaning tampering of the blockchain is detectable.
+
+#### """Attackability""" Implications (and Mitigation Approaches) on Service Coordination
+The mitigation schemes 
