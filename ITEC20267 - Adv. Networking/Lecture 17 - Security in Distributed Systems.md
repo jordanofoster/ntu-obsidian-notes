@@ -570,4 +570,20 @@ Other approaches to protecting resources include sandboxing them, or having a ta
 This covers *Masquerading*, *Spoofing* and *ID management* attacks. The implicated effect on resources is one of availability, though integrity and confidentiality are also affected by proxy. In the case of a DoS attack, resource availability is affected.
 
 ###### Mitigation
-*Intrusion Detection Systems* (IDSs) are the typical approach, and are completed by random 
+*Intrusion Detection Systems* (IDSs) are the typical approach, and are completed by periodic or random ID authentication queries. The periodic checking of system state is also done, to establish the sanity/correctness of IDs.
+
+##### Compromise of VM
+This typically shows as information leakage from the VM via a Covert/Side Channel Attack, or similar vectors. Such attacks violate the integrity and confidentiality of the services the VM provides.
+
+###### Mitigation
+There are three aspects to consider:
+- Detecting leakages
+- The system level, where leakages happen
+- Handling leakages
+
+*Taint analysis* is a powerful technique for data-level detection; as covert/side-channel attacks often occur at the hardware level and can be influenced by scheduling, using detectors that employ hardware performance counters is the general response.
+
+System-level handling of VM compromise typically begins with tightening trust assumptions, and validating that standards are upheld using analytical, format or experimental stress testing. Hypervisors are also commonly used to enforce VM operations.
+
+##### Compromise of Scheduler
+There are two methods this can occur; When the scheduler is affected
