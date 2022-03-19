@@ -533,4 +533,16 @@ As distributed systems primarily rely on message passing to deliver both data an
 #### Infrastructure View
 This class provides *virtualised resource access* that primarily deals with coordinating a group of computing/communication resources to provide a set of highly available/reliable platforms upon which users can access shared resources.
 
-The infrastructure view has the user 
+The infrastructure view has the user specifies the operational requirements for the desired service via metrics such as:
+- Computational capabilities
+- Number of VMs
+- Storage
+- Bandwidth constraints, etc.
+
+But such a view is agnostic to the actual underlying mechanisms that provide this "on-demand" access to properties that underlying resources offer, such as:
+- The resource itself
+- Scalability
+- Physical characteristics
+- Geolocation/distribution of the resources themselves
+
+Overall, the key characteristic of the *Resource Coordination Class* is the provisioning of high reliability/availability in access to resources. The *Cloud* and *Client-Server* models are prominent examples of this class of distributed resources.
