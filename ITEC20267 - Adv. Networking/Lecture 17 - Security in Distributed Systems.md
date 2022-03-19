@@ -151,12 +151,12 @@ Unstructured protocols are mostly suited for large scale, continually scalable d
 While peers themselves do not have any topology that links them, an implicit topology exists embedded within the physical infrastructure in the form of tree or mesh-like subgraphs; these allow for low latency message exchange (e.g. to address timeline requirements of data dissemination applications).
 
 P2P systems communicate across peers via messages. Messaging passing may be direct (using an underlay network between two peers) - but this requires the following:
-1) Peers are *explicitly* aware of eachother
+1) Peers are *explicitly* aware of each other
 2) The route to the other peer is known.
 
 When the destination peer for a message is unknown, the message is piggybacked alongside resource discovery operations. All peers maintain direct routing tables with the addresses (hashed or plaintext) of other peers, allowing messaging to work efficiently (i.e. without the network suffocating from resource discovery messages).
 
-The efficiency of P2P routing tables depends on the liveliness of the peers; as a result, listed peers are periodically pinged to check helath and removed when no reply is received. This period is dynamically adjusted based on the relevant *churn* (i.e. the rate of peer joins/departures)
+The efficiency of P2P routing tables depends on the liveliness of the peers; as a result, listed peers are periodically pinged to check health and removed when no reply is received. This period is dynamically adjusted based on the relevant *churn* (i.e. the rate of peer joins/departures)
 
 ### Structured P2P Protocols
 These include the following services:
@@ -168,15 +168,15 @@ These include the following services:
 
 They are typically used for data discovery applications, where the structure of the topology aids efficient searching. Graphs of structured P2P topologies show small-world properties; that is, a path exists between any two peers, with a relatively small number of *edges*. Structured topologies often map out as ring structures with inbuilt shortcuts, forming a basis for scalable and efficient resource discovery and message passing.
 
-Messages in most structured protocols are exchanged directly between two peers. If peers do not know each other, then *conduct routing* is required to determine the destination peer's location. To assist with this, an overlay lookup allows to steadily decrease the distance in address space from sender to receiver with every iteration of the lookup algorithm, until the destination address is reeolved.
+Messages in most structured protocols are exchanged directly between two peers. If peers do not know each other, then *conduct routing* is required to determine the destination peer's location. To assist with this, an overlay lookup allows to steadily decrease the distance in address space from sender to receiver with every iteration of the lookup algorithm, until the destination address is resolved.
 
 This recursive way of doing things turns out to be extremely efficient and scalable - once the lookup has successfully retrieved the underlay network address of the destination peer, then messages can be exchanged. There are variations on the lookup algorithm; these include iterative/recursive algorithms and/or parallelised queries (to a set of 'closest neighbour' peers).
 
 ### Hybrid P2P Protocols
 
-Hybrid variants integrate elements of both structured and unstructured schemas with the intent of facilitating *both* discovery and dissemination of data. Prominent examples of hybrid protocols include file sharing services such as Napster, Limewire and BitTorrent.
+Hybrid variants integrate elements of both structured and unstructured schemas with the intent of facilitating *both* discovery and dissemination of data. Prominent examples of hybrid protocols include file sharing services such as Napster, LimeWire and BitTorrent.
 
-BitTorrent originally was a classically unstructured protocol, but has since been extended with structured features to provide a *fully* decentralised data discovery mechanism. As a result, BitTorrent was able to abandon the concept of "tracker servers" - which facilitated peer discovery in a centralised manner -  and thereby improve its availabilty.
+BitTorrent originally was a classically unstructured protocol, but has since been extended with structured features to provide a *fully* decentralised data discovery mechanism. As a result, BitTorrent was able to abandon the concept of "tracker servers" - which facilitated peer discovery in a centralised manner -  and thereby improve its availability.
 
 ### Hierarchical P2P Protocols
 
@@ -232,12 +232,12 @@ Also known as Index Poisoning, these compromise a P2P system's integrity and P-D
 #### White-washing/Censorship Attacks
 These aim to compromise the availability or integrity of a P2P system. This includes the illicit denial of access or changing/deletion of data, thereby endangering functionality of P-DSs.
 
-Whitewashing attacks are especially dangerous for reputation-based P2P systems, since they allow a low-reputation peer to leave the system and rejoin as a new, benign user.
+Whitewashing attacks are especially dangerous for reputation-based P2P systems, since they allow a low-reputation peer to leave the system and re-join as a new, benign user.
 
 #### Routing Attacks
 Routing attacks aim to compromise the availability/integrity of P2P networks, and play an important role in composite attacks - such as the Eclipse attack, which attempts to block a good node's view of the rest of the network. In these attacks, a malicious peer undermines the message passing mechanism, typically by dropping or delaying messages. 
 
-Another variant is *Routing Table Poisioning* (RTP) - where an attacker deliberately modifies their own or another peer's routing tables  - for example, by returning bogus information to benign peer lookup requests.
+Another variant is *Routing Table Poisoning* (RTP) - where an attacker deliberately modifies their own or another peer's routing tables  - for example, by returning bogus information to benign peer lookup requests.
 
 Attraction and repulsion are specific variants of routing attacks that respectively increase or decrease the 'attractiveness' of peers, for example during path selection or routing table maintenance. Such attacks negatively affect P-DSs. A typical routing attack would include the compromise of Pastry's routing table, as it is often used in social networks.
 
@@ -262,8 +262,8 @@ Sybil attacks also provide a good starting point for many attacks discussed prio
 #### Eclipse Attacks
 These decrease the availability, integrity and confidentiality of P2P networks by surrounding a good peer with a set of colluding malicious peers that collaborate to partially or fully block the good peer's view of the rest of the P2P system.
 
-Having done this, an adversary can either mask or spoof the good node's external interactions through the malicious nodes. Eclipse attacks are composite attacks taht may also involve the following other attacks:
-- Routing Table Poisioning
+Having done this, an adversary can either mask or spoof the good node's external interactions through the malicious nodes. Eclipse attacks are composite attacks that may also involve the following other attacks:
+- Routing Table Poisoning
 - DoS/DDoS
 - Sybil Attacks
 - Collusion
@@ -284,7 +284,7 @@ Proper functionality of basic P2P protocol security mechanisms such as the follo
 - Authentication mechanisms
 	- These help to maintain benign peer populations, and provide technical basis for downstream mechanisms, such as secure admission, alongside the following two mechanisms.
 - Secure storage
-	- This is vital for data centric applications to prevent illcit data modifications by malicious nodes.
+	- This is vital for data centric applications to prevent illicit data modifications by malicious nodes.
 - Secure routing
 
 Their proper implementation allow allows downstream mechanisms to be implemented which may also further mitigate threat vectors.
@@ -292,7 +292,7 @@ Their proper implementation allow allows downstream mechanisms to be implemented
 ##### Sybil/Eclipse Scenarios
 Sybil attacks occur where attacks can begin with a small set of malicious peers and subsequently gather multiple addresses that allow those same nodes to give the impression of being a much larger cluster than they actually are.
 
-Under Sybil attacks, LEAs (Localised Eclipse Attacks) can be launched with a chain of Sybil clusters. However, this assumes the existence of a singular path towards the victim that is attacker-manipulable.
+Under Sybil attacks, LEAs (Localised Eclipse Attacks) can be launched with a chain of Sybil clusters. However, this assumes the existence of a singular path towards the victim that is attacker-manipulatable.
 
 Alternatively, LEAs can be launched using Sybil peers - where mitigation relies on centralised authorities that handle peer enrolments or admission. By extension, adding certificates given by a common CA to peers' network IDs when they join the network is another option. 
 
@@ -430,4 +430,4 @@ In these, participants do **not necessarily observe the same order of actions.**
 	- Sequential consistency is met if the order in which actions are *executed* via a process are the same as their original order.
 		- As such, the sequential *execution order* of every process is preserved.
 - **Casual Consistency**
-	- 
+	- This is achieved by categorising actions into those that are casual related/dependent, and those that are not.
