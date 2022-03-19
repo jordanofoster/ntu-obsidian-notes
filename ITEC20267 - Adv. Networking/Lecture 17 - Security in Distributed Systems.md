@@ -345,11 +345,19 @@ In contrast to the decentralised model of P2P systems, there are a multitude of 
 
 These include ordering in time (causality) or varied precedence order across transactions in the distributed system.
 
-### Distributed Concepts
-
-#### Classes of Coordination
+### Distributed Concepts & Classes of Coordination
 
 Distributed systems are a collation of geo-dispersed resources that collectively interact to provide the following:
 - Services linking dispersed data consumers/producers
 - High-availability via fault-tolerant replication, to cover resource (computing/communication) failures
-- Alternatively, a collective aggregated computational/
+- Alternatively, a collective aggregated computational/service capability to provide the illusion of a logically centralised/coordinated resource/service from distributed resources.
+
+Distributed systems are also often structured in terms of services delivered to clients. Each service comprises of - and executes on - one or more servers, that clients invoke by making requests.
+
+This could also be done on a single, centralised server, but the resulting service would only be as fault-tolerant as the server that hosts it (instead of several distributed servers).
+
+In order to accomodate server failures, they are typically replicated - either physically or logically - to ensure some amount of independence across failures via isolation. As a result, replica management protocols help coordinate client interactions across these replica servers.
+
+As a result of this approach, the handling of client failure/compromise - including their role in potential launching of attacks via malicious code - also needs to be considered.
+
+### 
