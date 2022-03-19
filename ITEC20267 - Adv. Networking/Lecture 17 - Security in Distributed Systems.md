@@ -611,4 +611,12 @@ A variety of protection techniques exist, including retries, ACK/NACK based sche
 With incorrect information given on the state of systems/services, the entire [[ISYS20311 - Information Security/Lecture 1 - Overview#CIA Triad|CIA Triad]] can be compromised.
 
 ###### Mitigation
-State consist
+State consistency schemes are typically applied here, as the replication and coordination concepts form the basis of mitigation approaches, as the very purpose of replication management is to maintain consistent system states to circumvent disruption.
+
+### The Services Coordination Class
+#### Applications View
+The service coordination model focuses on service characteristics that help determine the degree or type of coordination that is most useful for supporting it. For example, a cloud database requires integrity to be provided in the form of ACID (*Atomic, Consistent, Isolated, Durable*) properties alongside liveness.
+
+Distributed storages such as *Key Value Stores* (KVSs) or transactional database services may require variable levels of consistency or linearisability, where the desired integrity level may depend on the lowest level of data-access latency that is feasible in the system itself.
+
+The broad class of Web Services, including Web crawlers and search engines, may require weak/partial consistency (per [[Lecture 17 - Security in Distributed Systems#CAP|CAP]]). 
