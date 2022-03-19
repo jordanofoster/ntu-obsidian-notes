@@ -336,7 +336,7 @@ The main difference from client-server architectures is that P2P overlays can gr
 
 Such attacks vary depending on whether attacks have direct or indirect network access via the overlay. Indirect access methods require malicious nodes to properly join the network prior to the attack. This means that malicious peers have to announce their presence in the overlay network before adversarial behaviour can begin - thereby making these attacks very noisy.
 
-## Distributed Systems and Coordinated Resource Clustering
+## Distributed Systems - Coordinated Resource Clustering
 ### Distributed Concepts & Classes of Coordination
 In contrast to the decentralised model of P2P systems, there are a multitude of distributed systems where interactions across resources and services are orchestrated using various coordination mechanisms; all of which provide the illusion of a logically centralised/coordinated system/service. This coordination can be in the following forms:
 - Scheduler/resource manager
@@ -490,4 +490,18 @@ Therefore, *distributed coordinator directed algorithms* - acting as a specialis
 
 The *Two-Phase Commit* (2PC) is one example of an *atomic commitment protocol* - it begins with a broadcast query from the leader to all clients that must commit. From here, each client acknowledges the request (via a *commit* or *abort* message). Upon receiving all responses, the leader, accounting for responses, notifies *all clients* on an atomic decision on whether to commit to the transaction or abort it.
 
-However, the 2PC protocol gives limited support for coordinator failure (that can cause inconsistencies). To solve this, the *Three-Phase Commit* (3PC) has been developed;
+However, the 2PC protocol gives limited support for coordinator failure (that can cause inconsistencies). To solve this, the *Three-Phase Commit* (3PC) has been developed, which extends the base BFT protocol by adding another communication phase - the purpose of which is to assist the leader when deciding whether to *abort*, specifically.
+
+This gives a higher messaging/logging overhead to support recovery. While 3PC is more robust than BFT, it is not widely used due to this overhead, alongside its sensitivity to network partitioning **(P).** In practice, most systems either use BFT or Paxos instead; the former for simplicity, or the latter for robustness.
+
+## Distributed Systems - Coordination Classes and Attack Surfaces
+
+There are two main coordination classes:
+- **The Resource Coordination Class**
+- **The Services Coordination Class**
+
+Attack surfaces in distributed systems typically involve disruption of the following:
+- Resources
+- Communications
+- Interfcaces
+- Data that impairs resource availability, or impacts the [[ISYS20311 - Information Security/Lecture 1 - Overview#CIA Triad|CIA]]
