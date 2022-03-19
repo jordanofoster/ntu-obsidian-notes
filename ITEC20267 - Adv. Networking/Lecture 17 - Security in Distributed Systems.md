@@ -484,4 +484,10 @@ From a security standpoint, BFT protocols - due to their ability to handle arbit
 When faced with *malicious attackers* instead of *random faults,* however, identical replicas are insufficient - as they exhibit the same exploitable vulnerabilities. As such, an adversary can easily compromise all replicas in a system (assuming they are identical). To counter this, *replication and diversity* (or distinct protection methodologies) are required.
 
 #### Commit Protocols
-Some applications (such as databases) require ordering across replicated data/operations, where all participants ag
+Some applications (such as databases) require ordering across replicated data/operations, where all participants agree on doing the same 'correct' result (*committing*) or doing nothing. This property is referred to as *atomicity.*
+
+Therefore, *distributed coordinator directed algorithms* - acting as a specialised form of consensus - are required to coordinate all processes that participate in distributed atomic transactions; all processes must decide on whether to commit or *abort* (rollback) the transaction.
+
+The *Two-Phase Commit* (2PC) is one example of an *atomic commitment protocol* - it begins with a broadcast query from the leader to all clients that must commit. From here, each client acknowledges the request (via a *commit* or *abort* message). Upon receiving all responses, the leader, accounting for responses, notifies *all clients* on an atomic decision on whether to commit to the transaction or abort it.
+
+However, the 2PC protocol gives limited support for coordinator failure (that can cause inconsistencies). To solve this, the *Three-Phase Commit* (3PC) has been developed;
