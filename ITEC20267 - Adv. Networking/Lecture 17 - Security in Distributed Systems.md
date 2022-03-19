@@ -360,7 +360,7 @@ In order to accomodate server failures, they are typically replicated - either p
 
 As a result of this approach, the handling of client failure/compromise - including their role in potential launching of attacks via malicious code - also needs to be considered.
 
-#### Systems Coordination Styles
+### Systems Coordination Styles
 
 In order for distributed resources and services to interact meaningfully, a basis of synchronisation - either in time or logical order - needs to be specified. This applies at both the network and process levels; at high-level, synchronisation types include the following:
 
@@ -375,7 +375,7 @@ Separate entities will take their steps in an arbitrary order, operating at diff
 ###### Partially Synchronous Coordination
 Some restrictions here apply on action ordering, but no lock-step synchronisation is present; typical examples include SCADA control systems, or high-value transactional stock systems, where timeliness directly affects correctness of the service.
 
-#### Reliable and Secure Group Communication
+### Reliable and Secure Group Communication
 Group communications involves various schema to ensure reliable message delivery (amongst the distributed entities). This can be in the form of simple point-to-point messaging supported by acknowledgements - such as ACK and NACK messages - to ensure reliable delivery.
 
 Alternatives could include the use of reliable and secure multicast to provide redundant channels, or the ordering of messages alongside publish-subscribe forms of group communication. In such approaches, channels and messages can be encrypted or signed - though this incurs higher transmission and processing overheads.
@@ -386,4 +386,9 @@ Various other measures also fall into this category, such as:
 - PKI Cryptosystems
 - Secure key distribution
 
-####
+### Coordination Properties
+A distributed system's utility comes from the coordinated orchestration of dispersed resources to yield collectively meaningful capabilities. These are the base definitions used:
+- Consensus
+- Group Membership
+- Consistency
+
