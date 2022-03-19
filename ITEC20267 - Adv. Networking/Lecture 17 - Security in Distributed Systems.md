@@ -248,4 +248,12 @@ Attraction and repulsion are specific variants of routing attacks that respectiv
 
 Through this vector, adversaries can decrease the availability of P2P networks - particularly those used for media streaming applications - by reducing the outgoing traffic load of their peers by lying to others about their data provisioning abilities when queried.
 
-This also infringes on the integrity of the network, and affects P-OPs. As stated prior, P2P streaming services are 
+This also infringes on the integrity of the network, and affects P-OPs. As stated prior, this attack is extremely prevalent in P2P streaming services that rely on peer collaboration. BMC Attacks also imply several other issues, such as:
+- Omission
+- Fake Reporting
+- Fake Blocks
+- Incorrect Neighbour Selection
+
+#### Sybil Attacks
+
+These aim to compromise availability or confidentiality via the spoofing of P2P networks, and can be regarded as a specific type of 
