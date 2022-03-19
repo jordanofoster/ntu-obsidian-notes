@@ -228,4 +228,8 @@ Typical collusion attacks attempt to override control mechanisms (such as those 
 
 #### Pollution Attacks
 
-Also known as Index Poisoning, these compromise a P2P system's integrity and P-DSs by adding incorrect information, which can then be proliferated (resulting in service impairments) Examples of this include the typhoid adware attack where the attacker partially alters the content, e.g., adding 
+Also known as Index Poisoning, these compromise a P2P system's integrity and P-DSs by adding incorrect information, which can then be proliferated (resulting in service impairments) Examples of this include the typhoid adware attack where the attacker partially alters the content, e.g., by adding advertisement at a single peer that subsequently spreads the polluted content to other peers.
+
+#### White-washing/Censorship Attacks
+
+These aim to compromise the availability or integrity of a P2P system. This includes the illicit denialto data. 
