@@ -527,5 +527,10 @@ Alongside [[Lecture 17 - Security in Distributed Systems#Distributed Systems - C
 
 Regarding Value/Information-based attacks - the manipulation of message contents is a form of Byzantine behaviour, and such attacks are only viable if a set of resources exchange messages to build a global view of the system.
 
-As distributed systems primarily rely on message passing to deliver both data and to coordinate, disruptions/perturbations are grouped at the *message delivery* level. Such terminology is deliberately used to refer to issues, as anomalous operations can be a problem with dependability (if randomly occurring) or security (if from malicious intent).
+As distributed systems primarily rely on message passing to deliver both data and to coordinate, disruptions/perturbations are grouped at the *message delivery* level. Such terminology is deliberately used to refer to issues, as anomalous operations can be a problem with dependability (if randomly occurring) or security (if from malicious intent). The manifestation of such disruptions causes deviations from expected system behaviour.
 
+### The Resource Coordination Class
+#### Infrastructure View
+This class provides *virtualised resource access* that primarily deals with coordinating a group of computing/communication resources to provide a set of highly available/reliable platforms upon which users can access shared resources.
+
+The infrastructure view has the user 
