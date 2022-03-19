@@ -279,17 +279,30 @@ As a result, Eclipse attacks affect both P-OPs and P-DSs.
 
 #### Mitigation approaches:
 
-##### Basic PoS (Proof-of-Stake) and P-DS scenarios
+##### Basic PoS (Proof-of-Stake) and P-DS Scenarios
 
 Proper functionality ofg basic P2P protocol security mechanisms such as the following are key to threat migitation:
 - Authentication mechanisms
 	- These help to maintain benign peer populations, and provide technical basis for downstream mechanisms, such as secure admission, alongside the following two mechanisms.
 - Secure storage
-	- This is vital for data centric applications to prevent illcit data modifications 
+	- This is vital for data centric applications to prevent illcit data modifications by malicious nodes.
 - Secure routing
 
 Their proper implementation allow allows downstream mechanisms to be implemented which may also further mitigate threat vectors.
 
+##### Sybil/Eclipse Scenarios
+
+Sybil attacks occur where attacks can begin with a small set of malicious peers and subsequently gather multiple addresses that allow those same nodes to give the impression of being a much larger cluster than they actually are.
+
+Under Sybil attacks, LEAs (Localised Eclipse Attacks) can be launched with a chain of Sybil clusters. However, this assumes the existence of a singular path towards the victim that is attacker-manipulable.
+
+Alternatively, LEAs can be launched using Sybil peers - where mitigation relies on centralised authorities that handle peer enrolments or admission. By extension, adding certificates given by a common CA to peers' network IDs when they join the network is another option. 
+
+Other mitigation techniques to prevent self-selection of network IDs by malicious nodes could include a signing entity that makes use of public-key cryptography.
+
+##### Buffer Map Cheating Scenarios
+
+Other disruptions can be used to attack the KAD P2P network, which is Kademlia based. This can be done by flooding peer index tables that are close to the victim node with false information, in a process that is a simple variant of a taLEA (Topo)
 ### Summarization of Attack Types
 
 | Attack | Availability | Integrity | Confidentiality | Functionality |
