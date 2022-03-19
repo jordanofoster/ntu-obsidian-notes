@@ -227,17 +227,14 @@ These aim to compromise the [[ISYS20311 - Information Security/Lecture 1 - Overv
 Typical collusion attacks attempt to override control mechanisms (such as those for reputation or trust management), or control provisioning. *Sybil* and *Eclipse* attacks are based on attackers colluding to create network partitions that hide system state information from good nodes.
 
 #### Pollution Attacks
-
 Also known as Index Poisoning, these compromise a P2P system's integrity and P-DSs by adding incorrect information, which can then be proliferated (resulting in service impairments) Examples of this include the typhoid adware attack where the attacker partially alters the content, e.g., by adding advertisement at a single peer that subsequently spreads the polluted content to other peers.
 
 #### White-washing/Censorship Attacks
-
 These aim to compromise the availability or integrity of a P2P system. This includes the illicit denial of access or changing/deletion of data, thereby endangering functionality of P-DSs.
 
 Whitewashing attacks are especially dangerous for reputation-based P2P systems, since they allow a low-reputation peer to leave the system and rejoin as a new, benign user.
 
 #### Routing Attacks
-
 Routing attacks aim to compromise the availability/integrity of P2P networks, and play an important role in composite attacks - such as the Eclipse attack, which attempts to block a good node's view of the rest of the network. In these attacks, a malicious peer undermines the message passing mechanism, typically by dropping or delaying messages. 
 
 Another variant is *Routing Table Poisioning* (RTP) - where an attacker deliberately modifies their own or another peer's routing tables  - for example, by returning bogus information to benign peer lookup requests.
@@ -245,7 +242,6 @@ Another variant is *Routing Table Poisioning* (RTP) - where an attacker delibera
 Attraction and repulsion are specific variants of routing attacks that respectively increase or decrease the 'attractiveness' of peers, for example during path selection or routing table maintenance. Such attacks negatively affect P-DSs. A typical routing attack would include the compromise of Pastry's routing table, as it is often used in social networks.
 
 #### Buffer Map Cheating Attacks
-
 Through this vector, adversaries can decrease the availability of P2P networks - particularly those used for media streaming applications - by reducing the outgoing traffic load of their peers by lying to others about their data provisioning abilities when queried.
 
 This also infringes on the integrity of the network, and affects P-OPs. As stated prior, this attack is extremely prevalent in P2P streaming services that rely on peer collaboration. BMC Attacks also imply several other issues, such as:
@@ -255,7 +251,6 @@ This also infringes on the integrity of the network, and affects P-OPs. As state
 - Incorrect Neighbour Selection
 
 #### Sybil Attacks
-
 These aim to compromise availability or confidentiality via the spoofing of P2P networks, and can be regarded as a specific type of node/peer insertion attack.
 
 Sybil attacks insert into the overlay of peers that are controlled by one or more adversaries. This can happen at specifically or randomly chosen locations of the overlay topology depending on the aim of the attacker. 
@@ -265,7 +260,6 @@ Additionally, P2P applications consider system users as legal entities and as a 
 Sybil attacks also provide a good starting point for many attacks discussed prior as a result.
 
 #### Eclipse Attacks
-
 These decrease the availability, integrity and confidentiality of P2P networks by surrounding a good peer with a set of colluding malicious peers that collaborate to partially or fully block the good peer's view of the rest of the P2P system.
 
 Having done this, an adversary can either mask or spoof the good node's external interactions through the malicious nodes. Eclipse attacks are composite attacks taht may also involve the following other attacks:
@@ -278,9 +272,14 @@ Having done this, an adversary can either mask or spoof the good node's external
 As a result, Eclipse attacks affect both P-OPs and P-DSs.
 
 #### Mitigation approaches:
+It should be noted that the mitigation approaches described below increase P2P system resilience, but only until a critical mass of colluding malicious peers is reached.
+
+Additionally, some of these mitigations involve cryptographic support or the identification of peers, which may interfere with application requirements, such as:
+- Anonymity
+- Heterogeneity
+- Resource Frugality
 
 ##### Basic PoS (Proof-of-Stake) and P-DS Scenarios
-
 Proper functionality ofg basic P2P protocol security mechanisms such as the following are key to threat migitation:
 - Authentication mechanisms
 	- These help to maintain benign peer populations, and provide technical basis for downstream mechanisms, such as secure admission, alongside the following two mechanisms.
@@ -291,7 +290,6 @@ Proper functionality ofg basic P2P protocol security mechanisms such as the foll
 Their proper implementation allow allows downstream mechanisms to be implemented which may also further mitigate threat vectors.
 
 ##### Sybil/Eclipse Scenarios
-
 Sybil attacks occur where attacks can begin with a small set of malicious peers and subsequently gather multiple addresses that allow those same nodes to give the impression of being a much larger cluster than they actually are.
 
 Under Sybil attacks, LEAs (Localised Eclipse Attacks) can be launched with a chain of Sybil clusters. However, this assumes the existence of a singular path towards the victim that is attacker-manipulable.
@@ -312,7 +310,9 @@ Divergent lookups have been proposed as an alternate mitigation of taLEAs; this 
 
 Migitation mechanisms consider assigning multiple paths for each lookup, by using disjoint paths - this causes high message overhead, however.
 
-Alternative options involve using cryptographic schemes to protect paths - but P2P, being designed around decentralised coord
+Alternative options involve using cryptographic schemes to protect paths - but P2P, being designed around decentralised coordination, is a hard environment to implement centralised services within - as would be required to support the coordination of system-wide cryptographic signatures.
+
+
 ### Summarization of Attack Types
 
 | Attack | Availability | Integrity | Confidentiality | Functionality |
