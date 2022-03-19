@@ -429,5 +429,10 @@ In these, participants do **not necessarily observe the same order of actions.**
 - **Sequential Consistency**
 	- Sequential consistency is met if the order in which actions are *executed* via a process are the same as their original order.
 		- As such, the sequential *execution order* of every process is preserved.
-- **Casual Consistency**
-	- This is achieved by categorising actions into those that are casual related/dependent, and those that are not.
+- **Causal Consistency**
+	- This is achieved by categorising actions into those that are causally related/dependent, and those that are not.
+		- In this case, only the order of casually related actions need be preserved.
+			- Two events are causally related if they both access the same data object, and at least one is a write event.
+- **Eventual Consistency**
+	- In eventual consistency, there are no special constraints that have to be satisfied by the order of observer actions.
+		- The idea behind this is that participants will eventual
