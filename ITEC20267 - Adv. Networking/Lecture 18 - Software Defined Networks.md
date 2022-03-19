@@ -129,5 +129,8 @@ This specific functionality is what people pay for with SDNs, and is enabled by 
 ## 4D Basics
 ![[Pasted image 20220319212638.png]]
 
-
+- The *Decision* layer handles all management and control logic.
+- The *Dissemination* layer handles communications with routers.
+- The *Discovery* layer handles topology and traffic monitoring.
+- The *Data* layer deals with packet handling.
 
