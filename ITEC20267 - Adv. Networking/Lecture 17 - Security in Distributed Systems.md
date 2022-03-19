@@ -346,3 +346,10 @@ In contrast to the decentralised model of P2P systems, there are a multitude of 
 These include ordering in time (causality) or varied precedence order across transactions in the distributed system.
 
 ### Distributed Concepts
+
+#### Classes of Coordination
+
+Distributed systems are a collation of geo-dispersed resources that collectively interact to provide the following:
+- Services linking dispersed data consumers/producers
+- High-availability via fault-tolerant replication, to cover resource (computing/communication) failures
+- Alternatively, a collective aggregated computational/
