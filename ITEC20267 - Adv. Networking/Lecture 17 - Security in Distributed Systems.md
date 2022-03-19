@@ -168,7 +168,7 @@ These include the following services:
 
 They are typically used for data discovery applications, where the structure of the topology aids efficient searching. Graphs of structured P2P topologies show small-world properties; that is, a path exists between any two peers, with a relatively small number of *edges*. Structured topologies often map out as ring structures with inbuilt shortcuts, forming a basis for scalable and efficient resource discovery and message passing.
 
-Messages in most structured protocols are exchanged directly between two peers. If peers do not know eachother, then *conduct routing* is required to determine the destination peer's location. To assist with this, an overlay lookup allows to steadily decrease the distance in address space from sender to receiver with every iteration of the lookup algorithm, until the destination address is reeolved.
+Messages in most structured protocols are exchanged directly between two peers. If peers do not know each other, then *conduct routing* is required to determine the destination peer's location. To assist with this, an overlay lookup allows to steadily decrease the distance in address space from sender to receiver with every iteration of the lookup algorithm, until the destination address is reeolved.
 
 This recursive way of doing things turns out to be extremely efficient and scalable - once the lookup has successfully retrieved the underlay network address of the destination peer, then messages can be exchanged. There are variations on the lookup algorithm; these include iterative/recursive algorithms and/or parallelised queries (to a set of 'closest neighbour' peers).
 
