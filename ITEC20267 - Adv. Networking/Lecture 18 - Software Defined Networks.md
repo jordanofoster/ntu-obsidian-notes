@@ -72,5 +72,10 @@ As seen prior, networks are hard to reason about, hard to evolve, and expensive:
 - Interacting protocols and mechanisms
 	- Routing, addressing, access control, QoS
 
-#### SDN Changed Network
+#### SDN Changed Networks
+![[Pasted image 20220319211436.png]]
 
+#### Software Defined Networks
+![[Pasted image 20220319211530.png]]
+
+The *Network OS* is a distributed system that creates a consistent, up-to-date netw
