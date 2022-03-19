@@ -682,6 +682,7 @@ This is analogous to the [[Lecture 17 - Security in Distributed Systems#Compromi
 
 ###### Compromise of Data in Motion
 Much like before, this is also analogous to the [[Lecture 17 - Security in Distributed Systems#Compromise of Resources|breach of resources.]] This has varied consistency and latency consequences that may compromise integrity based on service specification, however. An example of simplistic enumeration using transaction classes is as follows:
+
 - **Short transactions** (Storage/KVS, etc.)
 	- The major driver for this class is both consistency and low latency (e.g., linerasibility). As both liveness and safety are violated, so is integrity of the transaction.
 		- It should be noted that a DoS attack may *not* affect consistency; but latency is affected, so service integrity *is still lost.*
@@ -692,4 +693,7 @@ Much like before, this is also analogous to the [[Lecture 17 - Security in Distr
 		- **E-commerce supporting transactions**
 			- The core requirements here are ACID properties to ensure strong consistency and no partitions. Any compromises affect integrity.
 		- **Informational Systems**
-			- Services such as
+			- Services such as web-crawlers and data retrieval services for applications such as Uber - or informational queries for shopping - can handle data partitions on both the network and data levels to operate on cached (stale) data.
+				- Attacks may lead to redundant computations during searches, or slightly stale information - but integrity is *not violated* as long as Weak/Relaxed/Eventual consistency (as applicable to the service's specification) is maintained.
+				- Additionally, informational queries have mixed latency requirements.
+					- For example, small latency within a local data centre and higher-tolerance latency over geo-dispersed data centres may define the degree of attack tolerance before both availability and integrity are compromised.
