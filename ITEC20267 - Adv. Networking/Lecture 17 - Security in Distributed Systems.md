@@ -435,4 +435,8 @@ In these, participants do **not necessarily observe the same order of actions.**
 			- Two events are causally related if they both access the same data object, and at least one is a write event.
 - **Eventual Consistency**
 	- In eventual consistency, there are no special constraints that have to be satisfied by the order of observer actions.
-		- The idea behind this is that participants will eventual
+		- The idea behind this is that participants will eventually converge to consistency;
+			- Either by observing equivalent action orders or resorting to - albeit costly - conflict resolution mechanisms.
+
+Systems with weaker consistency models became popular with the advent of the Internet - where wide-scale webservers had to accommodate large numbers of users. To achieve such demands, these systems sacrifice strong consistency for higher availability.
+
