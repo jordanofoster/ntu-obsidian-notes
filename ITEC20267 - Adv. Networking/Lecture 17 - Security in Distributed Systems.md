@@ -456,10 +456,22 @@ There are several basic approaches to building a secure environment in distribut
 - Commit Protocols
 
 #### CAP
-
 Any network shared data system (e.g., The World Wide Web) can provide only two of three of the following properties:
 1) **Consistency (C)**
 	- This is equivalent to having a single up-to-date copy of the data, such that each server can return the right response to each request.
 2) **Availability (A)**
 	- …of the data, where each request eventually receives a response.
 3) **Partition (P)**
+	- Network partition tolerance, such that servers cannot get partitioned into non-communicating groups.
+
+As a result, attacks attempt to compromise these elements of the CAP.
+
+#### Replication and Coordination
+In order to provide coherent and consistent behaviour (in terms of value/order), various types of replica management are used; one example is the coordination schema, a key-coordination mechanism that defines the functionality of any distributed system.
+
+Factors that determine the specifics of the mechanism depend on system synchronisation model, group communication type, and - especially - the nature of faults/attacks being considered. Coordination mechanisms can be simple voting or leader election processes, or more complex consensus approaches (in order to deal with crashes).
+
+#### Paxos
+To avoid distributed entities from acting in an uncoordinated manner or failing to respond, Paxos, a group of *implicit leader-election* protocols, has been developed - in order to solve consensus in an asynchronous context.
+
+Paxos specifically solves the problem by giving all participants the ability to propose a value to agree on in an initial phase. In the second phase, if a majority agrees on a value, the process that initially proposed 
