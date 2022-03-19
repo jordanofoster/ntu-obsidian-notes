@@ -494,7 +494,7 @@ However, the 2PC protocol gives limited support for coordinator failure (that ca
 
 This gives a higher messaging/logging overhead to support recovery. While 3PC is more robust than BFT, it is not widely used due to this overhead, alongside its sensitivity to network partitioning **(P).** In practice, most systems either use BFT or Paxos instead; the former for simplicity, or the latter for robustness.
 
-## Distributed Systems - Coordination Classes and Attack Surfaces
+## Distributed Systems - Coordination Classes and """Attackability"""
 
 There are two main coordination classes:
 - **The Resource Coordination Class**
@@ -503,5 +503,17 @@ There are two main coordination classes:
 Attack surfaces in distributed systems typically involve disruption of the following:
 - Resources
 - Communications
-- Interfcaces
-- Data that impairs resource availability, or impacts the [[ISYS20311 - Information Security/Lecture 1 - Overview#CIA Triad|CIA]]
+- Interfaces
+- Data that impairs resource availability...
+	- ...or impacts the [[ISYS20311 - Information Security/Lecture 1 - Overview#CIA Triad|CIA]] of the overall system and its services.
+
+These disruptions can be from improper design, arising from operational conditions or deliberately targeted attacks. The compromise/disruption of resources is the typical aim of attacks, but the functionality of a distributed system itself emerges specifically from the *interactions* that occur across these distributed resources.
+
+### """Attackability"""
+Alongside [[Lecture 17 - Security in Distributed Systems#Distributed Systems - Coordination Classes and Attackability|vulnerabilities previously mentioned,]] communication-level issues can be broadly grouped as:
+- **Timing Based**
+	- This spans the following:
+		- Message omission
+		- Early/delayed/out-of-order messaging
+		- Crashes and DoS attacks
+			- These fit here as they typically manifest as disruptions of the *timely delivery *
