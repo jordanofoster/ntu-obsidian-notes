@@ -477,6 +477,11 @@ To avoid distributed entities from acting in an uncoordinated manner or failing 
 Paxos specifically solves the problem by giving all participants the ability to propose a value to agree on in an initial phase. In the second phase, if a majority agrees on a value, the process that initially proposed the value becomes leader and agreement is achieved. This is repeated for each value in a sequence that requires consensus.
 
 #### Byzantine Fault Tolerance (BFT)
-Attacks and other deliberate disruptions do not follow the same patterns as benign omissions, timing errors or crashes. As a result, BFT is required to tolerate such entropy. Protocols that implement BFT use *coordinated replication* to guarantee correct execution of operations, so long as no more than $\frac{1}{3}$ of processes are compromised via an arbitrary fault.
+Attacks and other deliberate disruptions do not follow the same patterns as benign omissions, timing errors or crashes. As a result, BFT is required to handle such entropy. Protocols that implement BFT use *coordinated replication* to guarantee correct execution of operations, so long as no more than $\frac{1}{3}$ of processes are compromised via an arbitrary fault.
 
-From a security standpoint, BFT proto
+From a security standpoint, BFT protocols - due to their ability to handle arbitrary unwanted behaviour - are a good building block for intrusion-tolerant systems. BFT protocols also consider the *number* of compromised entities (which can be useful).
+
+When faced with *malicious attackers* instead of *random faults,* however, identical replicas are insufficient - as they exhibit the same exploitable vulnerabilities. As such, an adversary can easily compromise all replicas in a system (assuming they are identical). To counter this, *replication and diversity* (or distinct protection methodologies) are required.
+
+#### Commit Protocols
+Some applications (such as databases) require ordering across replicated data/operations, where all participants ag
