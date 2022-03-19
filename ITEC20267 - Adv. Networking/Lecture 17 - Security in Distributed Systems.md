@@ -302,7 +302,17 @@ Other mitigation techniques to prevent self-selection of network IDs by maliciou
 
 ##### Buffer Map Cheating Scenarios
 
-Other disruptions can be used to attack the KAD P2P network, which is Kademlia based. This can be done by flooding peer index tables that are close to the victim node with false information, in a process that is a simple variant of a taLEA (Topo)
+Other disruptions can be used to attack the KAD P2P network, which is Kademlia based. This can be done by flooding peer index tables that are close to the victim node with false information, in a process that is a simple variant of a taLEA (Topology Aware Localised Eclipse Attack).
+
+KAD network crawlers can be introduced to monitor network status and detect malicious peers during LEAs. This however results in large amounts of overhead, if each peer uses a mechanism to detect such malicious nodes - such that the approach becomes impractical as the size of the overlay network increases.
+
+Divergent lookups have been proposed as an alternate mitigation of taLEAs; this is done where disjoint path lookups avoid searching the proximity of a destination peer, in order to skip wasting queries on malicious peers under the assumption that a taLEA is in progress.
+
+##### Routing Scenarios
+
+Migitation mechanisms consider assigning multiple paths for each lookup, by using disjoint paths - this causes high message overhead, however.
+
+Alternative options involve using cryptographic schemes to protect paths - but P2P, being designed around decentralised coord
 ### Summarization of Attack Types
 
 | Attack | Availability | Integrity | Confidentiality | Functionality |
