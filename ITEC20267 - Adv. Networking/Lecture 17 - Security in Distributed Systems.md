@@ -280,7 +280,7 @@ Additionally, some of these mitigations involve cryptographic support or the ide
 - Resource Frugality
 
 ##### Basic PoS (Proof-of-Stake) and P-DS Scenarios
-Proper functionality ofg basic P2P protocol security mechanisms such as the following are key to threat migitation:
+Proper functionality of basic P2P protocol security mechanisms such as the following are key to threat mitigation:
 - Authentication mechanisms
 	- These help to maintain benign peer populations, and provide technical basis for downstream mechanisms, such as secure admission, alongside the following two mechanisms.
 - Secure storage
@@ -306,7 +306,7 @@ KAD network crawlers can be introduced to monitor network status and detect mali
 Divergent lookups have been proposed as an alternate mitigation of taLEAs; this is done where disjoint path lookups avoid searching the proximity of a destination peer, in order to skip wasting queries on malicious peers under the assumption that a taLEA is in progress.
 
 ##### Routing Scenarios
-Migitation mechanisms consider assigning multiple paths for each lookup, by using disjoint paths - this causes high message overhead, however.
+Mitigation mechanisms consider assigning multiple paths for each lookup, by using disjoint paths - this causes high message overhead, however.
 
 Alternative options involve using cryptographic schemes to protect paths - but P2P, being designed around decentralised coordination, is a hard environment to implement centralised services within - as would be required to support the coordination of system-wide cryptographic signatures.
 
@@ -356,7 +356,7 @@ Distributed systems are also often structured in terms of services delivered to 
 
 This could also be done on a single, centralised server, but the resulting service would only be as fault-tolerant as the server that hosts it (instead of several distributed servers).
 
-In order to accomodate server failures, they are typically replicated - either physically or logically - to ensure some amount of independence across failures via isolation. As a result, replica management protocols help coordinate client interactions across these replica servers.
+In order to accommodate server failures, they are typically replicated - either physically or logically - to ensure some amount of independence across failures via isolation. As a result, replica management protocols help coordinate client interactions across these replica servers.
 
 As a result of this approach, the handling of client failure/compromise - including their role in potential launching of attacks via malicious code - also needs to be considered.
 
@@ -400,7 +400,7 @@ Consensus refers to achieving an agreement on values, such as data or process ID
 
 #### Group Membership
 Membership is a key service property in distributed systems that determines several details:
-- The set of constitutent resources
+- The set of constituent resources
 - The nature of agreement achieved by valid participants:
 	- Static,
 	- Dynamic,
@@ -424,7 +424,7 @@ Strong consistency models are used in high-risk contexts, where any inconsistenc
 
 ##### Weak Consistency Models
 
-In these, participants do **not neccessarily observe the same order of actions.** This can result in inconsistent states depending on the nature of constaints that observed actions must satisfy. These issues can be dealt with via conflict resolution mechanisms. Three popular options are:
+In these, participants do **not necessarily observe the same order of actions.** This can result in inconsistent states depending on the nature of constraints that observed actions must satisfy. These issues can be dealt with via conflict resolution mechanisms. Three popular options are:
 
 - **Sequential Consistency**
 	- Sequential consistency is met if the order in which actions are *executed* via a process are the same as their original order.
