@@ -345,3 +345,4 @@ In contrast to the decentralised model of P2P systems, there are a multitude of 
 
 These include ordering in time (causality) or varied precedence order across transactions in the distributed system.
 
+### Distributed Concepts
