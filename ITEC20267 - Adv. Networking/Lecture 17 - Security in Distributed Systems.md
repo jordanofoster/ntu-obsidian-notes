@@ -595,4 +595,13 @@ Attacks against the scheduler typically impact availability and integrity; confi
 ###### Mitigation
 As mentioned prior, access controls and coordination schemas can check the consistency of the system state for observed deviations from legitimate or allowed resource allocation. As a result, this can also be used to identify corruptions within the scheduler itself.
 
-#####
+##### Compromise of Broker
+This occurrence, when within a Cloud or inter-Cloud resource manager/broker, primarily impacts availability.
+
+###### Mitigation
+Approaches similar to those taken against scheduler compromise are used. If backup brokers are part of system design, it becomes a typical fall-back. Otherwise, stopping systems altogether is typically the solution.
+
+##### Compromise of Communication
+Communication, being a core requirement for resource coordination, has strong implications when compromised on the ability for the resources themselves to be coordinated - directly impacting availability. Consequently, an inability to support basic system functions (replication, resource-to-task allocation, etc.) begins to appear.
+
+
