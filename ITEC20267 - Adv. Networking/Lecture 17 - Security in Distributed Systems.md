@@ -242,4 +242,10 @@ Routing attacks aim to compromise the availability/integrity of P2P networks, an
 
 Another variant is *Routing Table Poisioning* (RTP) - where an attacker deliberately modifies their own or another peer's routing tables  - for example, by returning bogus information to benign peer lookup requests.
 
-Attraction and repulsion are specific variants of routing attacks that respectively increase or decrease the 'attractiveness' of peers
+Attraction and repulsion are specific variants of routing attacks that respectively increase or decrease the 'attractiveness' of peers, for example during path selection or routing table maintenance. Such attacks negatively affect P-DSs. A typical routing attack would include the compromise of Pastry's routing table, as it is often used in social networks.
+
+#### Buffer Map Cheating Attacks
+
+Through this vector, adversaries can decrease the availability of P2P networks - particularly those used for media streaming applications - by reducing the outgoing traffic load of their peers by lying to others about their data provisioning abilities when queried.
+
+This also infringes on the integrity of the network, and affects P-OPs. As stated prior, P2P streaming services are 
