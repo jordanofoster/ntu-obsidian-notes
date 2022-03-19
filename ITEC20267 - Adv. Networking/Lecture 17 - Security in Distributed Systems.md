@@ -656,3 +656,11 @@ This covers databases and general transactional services, such as:
 - Informational Data Mining
 - Banking/Stock Transactions, etc.
 
+Requirements include consistency for things such as banking, where all debit and credit transactions are either strongly or weakly serializable for purposes of consistency. More generally, databases adhere to all stipulated ACID properties. 
+
+On the other hand, a number of data mining/information lookup transactions only need weaker consistency; for example, an information lookup process can work with physically partitioned data centres - which may provide stale or inconsistent information - so long as the data is eventually reconcilable within some specification of the service's own requirements. The following factors determine the specific coordination schema to use:
+- Type and degree of disruptions/perturbations
+- Level of consistency the services are designed to be resilient towards
+
+###### Blockchains/Cryptocurrencies
+A ledger provides consistent bookkeeping on transactions, but is problematic to achieve in a distributed context 
