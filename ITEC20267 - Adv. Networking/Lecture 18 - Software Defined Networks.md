@@ -78,4 +78,33 @@ As seen prior, networks are hard to reason about, hard to evolve, and expensive:
 #### Software Defined Networks
 ![[Pasted image 20220319211530.png]]
 
-The *Network OS* is a distributed system that creates a consistent, up-to-date netw
+The *Network OS* is a distributed system that creates a consistent, up-to-date network view, and runs on servers (controllers) in the network. Examples of Network OSs include:
+- NOX
+- ONIX
+- Floodlight
+- Trema
+- OpenDaylight
+- HyperFlow
+- Kandoo
+- Beehive
+- Beacon
+- Maestro, etc.
+
+Network OSs use *forwarding abstraction* to get state information *from* forwarding elements and give control directives *to* forwarding elements.
+
+![[Pasted image 20220319211730.png]]
+
+#### Control Program
+The control program operates on a view of the network; the input has a global network view via a graph/database, whereas the output allows to configure each network device. The control program itself is not a distributed system; abstraction hides the details of a distributed state from it.
+
+#### Forwarding Abstraction
+This provides a standard way of defining forwarding state:
+- Flexible, as behaviour is specified by control plane, and it is built from a basic set of forwarding primitives.
+- Minimal, as it is streamlined for speed and low power, and the control program is not vendor-specific.
+
+OpenFlow is an example of such an abstraction.
+
+#### Virtualisation in a Software Defined Network
+![[Pasted image 20220319212024.png]]
+
+#### 
