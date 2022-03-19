@@ -632,4 +632,15 @@ Some characteristic examples of the services class are:
 	- Information Servers
 	- E-Transaction support, etc.
 
-This is a fairly broad and generic category that 
+This is a fairly broad and generic category that encompasses a wide variety of services - many utilise the client-server paradigm, though interest here is at the services leverl.
+
+###### Key Distribution
+This is a broad class of Authorisation/Authentication services, such as:
+- Kerberos
+- PKI, etc.
+
+Such services typically enable authentication over insecure networks - based on various cryptographic protocols - via one of two methods:
+- Proving server authenticity to the client
+- Mutual authentication of both client and server
+
+Authentication services commonly act as a trusted third-party for interacting entities within a distributed system.
