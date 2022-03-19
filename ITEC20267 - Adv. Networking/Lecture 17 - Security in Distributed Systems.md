@@ -608,4 +608,7 @@ Communication, being a core requirement for resource coordination, has strong im
 A variety of protection techniques exist, including retries, ACK/NACK based schemes and cryptographically secured channels (among others).
 
 ##### Compromise on Monitoring and Accounting
-With incorrect information given on the state of systems/services
+With incorrect information given on the state of systems/services, the entire [[ISYS20311 - Information Security/Lecture 1 - Overview#CIA Triad|CIA Triad]] can be compromised.
+
+###### Mitigation
+State consist
