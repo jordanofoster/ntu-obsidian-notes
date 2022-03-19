@@ -376,3 +376,4 @@ Separate entities will take their steps in an arbitrary order, operating at diff
 Some restrictions here apply on action ordering, but no lock-step synchronisation is present; typical examples include SCADA control systems, or high-value transactional stock systems, where timeliness directly affects correctness of the service.
 
 #### Reliable and Secure Group Communication
+
