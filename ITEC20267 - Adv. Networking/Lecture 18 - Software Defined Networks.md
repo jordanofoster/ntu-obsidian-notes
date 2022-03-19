@@ -32,6 +32,13 @@ The *Management Plane* works with configuring and tuning the network, and sees u
 - ACL (Access Control List) configuration,
 - Device provisioning, etc.
 
+#### Timescales of SDN Planes
+| | Data | Control | Management |
+| --- | --- | --- | --- |
+| Timescale | Packet (nsec) | Event (10 msec to sec) | Human (minutes-to-hours) |
+| Tasks | Forwarding, buffering, filtering, scheduling | Routing, circuit set-up | Analysis, configuration |
+| Location | Line-card hardware | Router software | Humans or scripts |
+
 #### Data and Control Planes
 ![[Pasted image 20220319202459.png]]
 
@@ -39,11 +46,25 @@ The *Management Plane* works with configuring and tuning the network, and sees u
 
 Here we can apply streaming algorithms on packets by matching some header bits and performing some actions. An example is IP forwarding:
 
+![[Pasted image 20220319202554.png]]
 
-### Timescales of an SDN
-| | Data | Control | Management |
-| --- | --- | --- | --- |
-| Timescale | Packet (nsec) | Event (10 msec to sec) | Human (minutes-to-hours) |
-| Tasks | Forwarding, buffering, filtering, scheduling | Routing, circuit set-up | Analysis, configuration |
-| Location | Line-card hardware | Router software | Humans or scripts |
+##### Illustration of Data Plane
+![[Pasted image 20220319202736.png]]
+
+#### Control Plane
+Here we compute the paths the packets will follow, and populate forwarding tables. Traditionally, this is a distributed protocol - for example, in Link-state routing (OSPF, IS-IS), we flood the entire topology to all nodes, and each node computes the shortest paths via Dijkstra's algorithm.
+
+##### Illustration of Control Plane
+![[Pasted image 20220319202820.png]]
+
+#### Management Plane
+When undergoing traffic engineering, we must set node weights. There are several factors to consider:
+- Should it be inversely proportional to link capacity?
+- Should it be proportional to propagation delay?
+- Should we instead perform *network-wide* optimisation, based on traffic?
+![[Pasted image 20220319203012.png]]
+
+### Why use SDN?
+As seen prior, networks are hard to reason about, hard to evolve a
+
 
