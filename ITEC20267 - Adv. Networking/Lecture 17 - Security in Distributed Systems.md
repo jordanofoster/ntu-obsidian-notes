@@ -619,4 +619,16 @@ The service coordination model focuses on service characteristics that help dete
 
 Distributed storages such as *Key Value Stores* (KVSs) or transactional database services may require variable levels of consistency or linearisability, where the desired integrity level may depend on the lowest level of data-access latency that is feasible in the system itself.
 
-The broad class of Web Services, including Web crawlers and search engines, may require weak/partial consistency (per [[Lecture 17 - Security in Distributed Systems#CAP|CAP]]). 
+The broad class of Web Services, including Web crawlers and search engines, may require weak/partial consistency (per [[Lecture 17 - Security in Distributed Systems#CAP|CAP]]). On the other hand, blockchains/ledger queries (that provide distributed crypto-based consensus) have strong consistency and traceable auditing as a key requirement, with lesser demands for latency.
+
+As a result, it is the specification of the service (KVS/Database/Blockchain) that determines the nature of the coordination scheme for the distributed platform.
+
+Some characteristic examples of the services class are:
+
+###### Web Services
+- These cover the following:
+	- Data Mining
+	- Web Crawlers
+	- Information Servers
+	- E-Transaction support, etc.
+
