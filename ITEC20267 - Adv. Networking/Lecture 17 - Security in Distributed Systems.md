@@ -604,4 +604,8 @@ Approaches similar to those taken against scheduler compromise are used. If back
 ##### Compromise of Communication
 Communication, being a core requirement for resource coordination, has strong implications when compromised on the ability for the resources themselves to be coordinated - directly impacting availability. Consequently, an inability to support basic system functions (replication, resource-to-task allocation, etc.) begins to appear.
 
+###### Mitigation
+A variety of protection techniques exist, including retries, ACK/NACK based schemes and cryptographically secured channels (among others).
 
+##### Compromise on Monitoring and Accounting
+With incorrect information given on the state of systems/services
