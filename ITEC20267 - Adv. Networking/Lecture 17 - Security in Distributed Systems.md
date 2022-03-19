@@ -440,3 +440,4 @@ In these, participants do **not necessarily observe the same order of actions.**
 
 Systems with weaker consistency models became popular with the advent of the Internet - where wide-scale webservers had to accommodate large numbers of users. To achieve such demands, these systems sacrifice strong consistency for higher availability.
 
+
