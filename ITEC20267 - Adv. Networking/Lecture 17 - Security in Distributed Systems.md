@@ -376,4 +376,6 @@ Separate entities will take their steps in an arbitrary order, operating at diff
 Some restrictions here apply on action ordering, but no lock-step synchronisation is present; typical examples include SCADA control systems, or high-value transactional stock systems, where timeliness directly affects correctness of the service.
 
 #### Reliable and Secure Group Communication
+Group communications involves various schema to ensure reliable message delivery (amongst the distributed entities). This can be in the form of simple point-to-point messaging supported by acknowledgements - such as ACK and NACK messages - to ensure reliable delivery.
 
+Alternatives could include the use of reliable and secure multicast to provide redundant channels, or the ordering of messages alongside publish-subscribe forms of group communication. In such approaches, channels and messages can be encrypted or signed - though this incurs higher transmission and processing overheads.
