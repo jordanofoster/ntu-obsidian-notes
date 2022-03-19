@@ -650,3 +650,9 @@ This is a diverse range of services, starting from register-level distributed re
 
 In KVS, data is represented via a collection of key-value pairs; each key appears no more than once in the collection, and the service is focused on fast access times (up to a *constant* access time). They key-value data model itself is one of the simplest *non-trivial* data models, and richer models are often implemented as extensions of KVS with specified properties.
 
+###### Transaction Services/Databases
+This covers databases and general transactional services, such as:
+- Retrieval
+- Informational Data Mining
+- Banking/Stock Transactions, etc.
+
