@@ -256,4 +256,17 @@ This also infringes on the integrity of the network, and affects P-OPs. As state
 
 #### Sybil Attacks
 
-These aim to compromise availability or confidentiality via the spoofing of P2P networks, and can be regarded as a specific type of 
+These aim to compromise availability or confidentiality via the spoofing of P2P networks, and can be regarded as a specific type of node/peer insertion attack.
+
+Sybil attacks insert into the overlay of peers that are controlled by one or more adversaries. This can happen at specifically or randomly chosen locations of the overlay topology depending on the aim of the attacker. 
+
+Additionally, P2P applications consider system users as legal entities and as a result restrict the number of peers per user to the amount of allowed votes for that entity/person. As a result, imbalances occur as a result of the expected amount of peers per user being exceeded.
+
+Sybil attacks also provide a good starting point for many attacks discussed prior as a result.
+
+#### Eclipse Attacks
+
+These decrease the availability, integrity and confidentiality of P2P networks by surrounding a good peer with a set of colluding malicious peers that collaborate to partially or fully block the good peer's view of the rest of the P2P system.
+
+Having done this, an adversary can either mask or f
+
