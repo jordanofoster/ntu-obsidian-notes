@@ -681,4 +681,15 @@ The authentication processes supporting public-key distribution is compromised, 
 This is analogous to the [[Lecture 17 - Security in Distributed Systems#Compromise of Resources|breach of resources]] in the resource coordination model (as is applicable to storage systems).
 
 ###### Compromise of Data in Motion
-Much like before, this is also analogous to the 
+Much like before, this is also analogous to the [[Lecture 17 - Security in Distributed Systems#Compromise of Resources|breach of resources.]] This has varied consistency and latency consequences that may compromise integrity based on service specification, however. An example of simplistic enumeration using transaction classes is as follows:
+- **Short transactions** (Storage/KVS, etc.)
+	- The major driver for this class is both consistency and low latency (e.g., linerasibility). As both liveness and safety are violated, so is integrity of the transaction.
+		- It should be noted that a DoS attack may *not* affect consistency; but latency is affected, so service integrity *is still lost.*
+- **Large transactions**
+	- Ledgers/Blockchains lie in this category; while latency is important, integrity (as defined by the ledger's consistency) is the main property to preserve. As ledgers are a popular service, it is notarized here to illustrate aspects of both its attack surfaces and assumptions.
+- **Mixed transactions**
+	- As implied by name, this is the combination of short and large transactions. Security implications depend on service type; as an example, two service groups will be outlined:
+		- **E-commerce supporting transactions**
+			- The core requirements here are ACID properties to ensure strong consistency and no partitions. Any compromises affect integrity.
+		- **Informational Systems**
+			- Services such as
