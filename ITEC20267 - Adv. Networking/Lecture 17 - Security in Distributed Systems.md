@@ -360,4 +360,9 @@ In order to accomodate server failures, they are typically replicated - either p
 
 As a result of this approach, the handling of client failure/compromise - including their role in potential launching of attacks via malicious code - also needs to be considered.
 
-### 
+#### Systems Coordination Styles
+
+In order for distributed resources and services to interact meaningfully, a basis of synchronisation - either in time or logical order - needs to be specified. This applies at both the network and process levels; at high-level, synchronisation types include the following:
+
+###### Synchronous Coordination
+All components of a distributed system are coordinated in time - as in lock step or *rounds*. Causality is e
