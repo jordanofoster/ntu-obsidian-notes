@@ -670,4 +670,15 @@ Blockchains provide decentralised, distributed and public ledgers that are used 
 In technical terms, a blockchain is a list of records or blocks. The aforementioned properties arise from the fact that each block contains a cryptographic hash of the previous block, and a timestamp. If a block in the chain is altered without altering subsequent blocks, the hash of the following block will not match; meaning tampering of the blockchain is detectable.
 
 #### """Attackability""" Implications (and Mitigation Approaches) on Service Coordination
-The mitigation schemes 
+The mitigation schemes shown here are the same as [[Lecture 17 - Security in Distributed Systems#Attackability Implications and Mitigation Approaches on Resource Coordination|described prior]] and essentially result from the basic [[Lecture 17 - Security in Distributed Systems#Replication and Coordination|replication and coordination management concepts]] discussed previously. The very purpose of replication-based coordination - at the resource/service level - is to prevent compromise via discrete attacks, up to the threshold of severity type; and the number of disruptions the replication schema can handle by design.
+
+A list of threats is thus provided:
+
+###### Compromise of Key Distribution in PKI
+The authentication processes supporting public-key distribution is compromised, affecting service integrity and confidentiality.
+
+###### Compromise of Data at Rest
+This is analogous to the [[Lecture 17 - Security in Distributed Systems#Compromise of Resources|breach of resources]] in the resource coordination model (as is applicable to storage systems).
+
+###### Compromise of Data in Motion
+Much like before, this is also analogous to the 
