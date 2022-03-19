@@ -411,8 +411,10 @@ From security perspectives, this often relates to integrity.
 
 #### Consistency
 There are two basic consistency models; strong and weak consistency models.
+
 ##### Strong Consistency Models
 In these, participants must agree on one consistent order of actions to take. As a result, processes are guaranteed to reach consistency through determinism. Two popular models are:
+
 - **Strict Consistency**
 	- Here there are no constraints on the order of actions, so long as it is consistent to all participants.
 - **Linearisability**
@@ -420,3 +422,12 @@ In these, participants must agree on one consistent order of actions to take. As
 
 Strong consistency models are used in high-risk contexts, where any inconsistencies in data can lead to heavy consequences; in such situations, consistency of data is more valuable than availability, and strong consistency constraints result in more system delays (due to frequent synchronisation).
 
+##### Weak Consistency Models
+
+In these, participants do **not neccessarily observe the same order of actions.** This can result in inconsistent states depending on the nature of constaints that observed actions must satisfy. These issues can be dealt with via conflict resolution mechanisms. Three popular options are:
+
+- **Sequential Consistency**
+	- Sequential consistency is met if the order in which actions are *executed* via a process are the same as their original order.
+		- As such, the sequential *execution order* of every process is preserved.
+- **Casual Consistency**
+	- 
