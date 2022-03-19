@@ -558,5 +558,16 @@ These are resource groups where a set of dedicated entities (servers/service pro
 Client-server models can be monolithic, layered or hierarchical; both servers and clients are replicated to either provide a distributed service, or for fault tolerance.
 
 #### """Attackability""" Implications (and Mitigation Approaches) on Resource Coordination
+##### Compromise of Resources
+Attacks on resource coordination impact the availability of affected resources. 
 
-Attacks on resource coordination impact the availability of aff
+###### Mitigation
+Protection can be obtained by using access control schemes (including firewalls) to limit external service/network resource access. Authorisation processes can also be set-up for granting rights, alongside access control mechanisms that *verify* the actual access rights. 
+
+Other approaches to protecting resources include sandboxing them, or having a tamper-resistant *Trusted Computing Base* (TCB) that handles coordination and enforces resource access controls.
+
+##### Compromise of Access/Admission Control
+This covers *Masquerading*, *Spoofing* and *ID management* attacks. The implicated effect on resources is one of availability, though integrity and confidentiality are also affected by proxy. In the case of a DoS attack, resource availability is affected.
+
+###### Mitigation
+*Intrusion Detection Systems* (IDSs) are the typical approach, and are completed by random 
