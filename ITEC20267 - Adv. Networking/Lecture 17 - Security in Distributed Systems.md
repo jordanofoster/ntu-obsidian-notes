@@ -546,3 +546,13 @@ But such a view is agnostic to the actual underlying mechanisms that provide thi
 - Geolocation/distribution of the resources themselves
 
 Overall, the key characteristic of the *Resource Coordination Class* is the provisioning of high reliability/availability in access to resources. The *Cloud* and *Client-Server* models are prominent examples of this class of distributed resources.
+
+##### The Cloud Model
+
+*The Cloud* is representative of the resource coordination model as it essentially acts as a *resources platform* for services to execute on. There are multiple types of Clouds that offer varied types of services, ranging across emphasis on high-performance low-latency access or high-availability (amongst other properties).
+
+The specific resource coordination schema that Clouds use are dictated by the specifications of the services desired, which the platform itself provides via structured access to the resources of the Cloud itself.
+
+##### The Client-Server Model
+
+These are resource groups where a set of dedicated entities (servers/service providers) give a specific service (e.g, web services) 
