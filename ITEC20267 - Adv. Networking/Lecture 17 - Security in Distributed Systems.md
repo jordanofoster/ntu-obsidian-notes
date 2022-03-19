@@ -644,3 +644,9 @@ Such services typically enable authentication over insecure networks - based on 
 - Mutual authentication of both client and server
 
 Authentication services commonly act as a trusted third-party for interacting entities within a distributed system.
+
+###### Storage/KVS
+This is a diverse range of services, starting from register-level distributed read-writes that give strong consistency with very low latency. Another general model, the *Key Value Store* (KVS), has data accessed via keys/pointers/maps with simple read/write/delete type semantics.
+
+In KVS, data is represented via a collection of key-value pairs; each key appears no more than once in the collection, and the service is focused on fast access times (up to a *constant* access time). They key-value data model itself is one of the simplest *non-trivial* data models, and richer models are often implemented as extensions of KVS with specified properties.
+
