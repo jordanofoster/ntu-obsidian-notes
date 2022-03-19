@@ -268,5 +268,26 @@ Sybil attacks also provide a good starting point for many attacks discussed prio
 
 These decrease the availability, integrity and confidentiality of P2P networks by surrounding a good peer with a set of colluding malicious peers that collaborate to partially or fully block the good peer's view of the rest of the P2P system.
 
-Having done this, an adversary can either mask or f
+Having done this, an adversary can either mask or spoof the good node's external interactions through the malicious nodes. Eclipse attacks are composite attacks taht may also involve the following other attacks:
+- Routing Table Poisioning
+- DoS/DDoS
+- Sybil Attacks
+- Collusion
+- White-washing/censorship
+
+As a result, Eclipse attacks affect both P-OPs and P-DSs.
+
+### Summarization of Attack Types
+
+| Attack | Availability | Integrity | Confidentiality | Functionality |
+| --- | :---: | :---: | :---: | :---: |
+| Dos/DDos | Y | N | N | P-OP |
+| Collusion | Y | Y | Y | P-OP |
+| Pollution | N | Y | N | P-DS |
+| White-washing/Censorship | Y | Y | N | P-DS |
+| Routing | Y | Y | N | P-DS |
+| Buffer map cheating | Y | Y | N | P-OP |
+| Sybil | Y | N | Y | P-OP |
+| Eclipse | Y | Y | Y | P-DS, P-OP |
+
 
