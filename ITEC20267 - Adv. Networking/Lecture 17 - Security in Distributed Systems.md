@@ -232,4 +232,4 @@ Also known as Index Poisoning, these compromise a P2P system's integrity and P-D
 
 #### White-washing/Censorship Attacks
 
-These aim to compromise the availability or integrity of a P2P system. This includes the illicit denialto data. 
+These aim to compromise the availability or integrity of a P2P system. This includes the illicit denial of access or changing/deletion of data. 
