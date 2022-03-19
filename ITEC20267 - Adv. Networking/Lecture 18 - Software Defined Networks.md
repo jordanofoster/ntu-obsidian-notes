@@ -20,6 +20,30 @@ SDNs have a heavy presence in many large networks, however - as demonstrated bel
 ### Planes in SDN
 The *Data Plane* handles the processing and delivery of packets with a local forwarding state:
 - Forwarding state + packet header -> forwarding decision
-	- Commonly used for filtering, buffering and sch
+	- Commonly used for filtering, buffering and scheduling of packets.
 
- The *Control Plane* handles computation of the forwarding state within routers; it determines 
+ The *Control Plane* handles computation of the forwarding state within routers; it determines how and where packets are forwarded, and is commonly used for a few things:
+ - Routing
+ - Traffic engineering
+ - Failure detection/recovery, etc.
+
+The *Management Plane* works with configuring and tuning the network, and sees use in the following:
+- Traffic engineering (once again),
+- ACL (Access Control List) configuration,
+- Device provisioning, etc.
+
+#### Data and Control Planes
+![[Pasted image 20220319202459.png]]
+
+#### Data Plane
+
+Here we can apply streaming algorithms on packets by matching some header bits and performing some actions. An example is IP forwarding:
+
+
+### Timescales of an SDN
+| | Data | Control | Management |
+| --- | --- | --- | --- |
+| Timescale | Packet (nsec) | Event (10 msec to sec) | Human (minutes-to-hours) |
+| Tasks | Forwarding, buffering, filtering, scheduling | Routing, circuit set-up | Analysis, configuration |
+| Location | Line-card hardware | Router software | Humans or scripts |
+
