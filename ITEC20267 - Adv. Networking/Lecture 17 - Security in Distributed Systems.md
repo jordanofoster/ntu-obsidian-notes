@@ -444,4 +444,22 @@ Systems with weaker consistency models became popular with the advent of the Int
 
 One fundamental challenge for developing reliable distributed systems is to support the cooperation of the distributed devices required to execute a common task - even when some of them are inaccessible (either through communications or system failure). To do this, we need to ensure proper ordering of service actions, and to avoid partitioning of distributed resources (in order to facilitate a "coordinated" group of resources).
 
-One approach (state machine replication) 
+One approach (state machine replication) implements a general fault-tolerant service by replicating servers and coordinating client interactions with these replicas. 
+
+State-machine replication also provides a framework to understand and design replication management protocols - the essential abstraction should be that the outputs of the machine are fully determinable by the sequence of requests it processes, **regardless of time or other system activity.**
+
+There are several basic approaches to building a secure environment in distributed systems based on the schema:
+- CAP
+- Replication and Coordination
+- Paxos
+- Byzantine Fault Tolerance (BFT)
+- Commit Protocols
+
+#### CAP
+
+Any network shared data system (e.g., The World Wide Web) can provide only two of three of the following properties:
+1) **Consistency (C)**
+	- This is equivalent to having a single up-to-date copy of the data, such that each server can return the right response to each request.
+2) **Availability (A)**
+	- …of the data, where each request eventually receives a response.
+3) **Partition (P)**
