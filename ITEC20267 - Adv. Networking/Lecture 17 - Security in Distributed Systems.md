@@ -414,4 +414,9 @@ There are two basic consistency models; strong and weak consistency models.
 ##### Strong Consistency Models
 In these, participants must agree on one consistent order of actions to take. As a result, processes are guaranteed to reach consistency through determinism. Two popular models are:
 - **Strict Consistency**
-	- Here there are n
+	- Here there are no constraints on the order of actions, so long as it is consistent to all participants.
+- **Linearisability**
+	- This is essential strict consistency, but with the additional constraint that the observed order of actions corresponds to their real-time order.
+
+Strong consistency models are used in high-risk contexts, where any inconsistencies in data can lead to heavy consequences; in such situations, consistency of data is more valuable than availability, and strong consistency constraints result in more system delays (due to frequent synchronisation).
+
