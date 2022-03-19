@@ -337,7 +337,7 @@ The main difference from client-server architectures is that P2P overlays can gr
 Such attacks vary depending on whether attacks have direct or indirect network access via the overlay. Indirect access methods require malicious nodes to properly join the network prior to the attack. This means that malicious peers have to announce their presence in the overlay network before adversarial behaviour can begin - thereby making these attacks very noisy.
 
 ## Distributed Systems and Coordinated Resource Clustering
-
+### Distributed Concepts & Classes of Coordination
 In contrast to the decentralised model of P2P systems, there are a multitude of distributed systems where interactions across resources and services are orchestrated using various coordination mechanisms; all of which provide the illusion of a logically centralised/coordinated system/service. This coordination can be in the following forms:
 - Scheduler/resource manager
 - Discrete coordinator
@@ -379,3 +379,11 @@ Some restrictions here apply on action ordering, but no lock-step synchronisatio
 Group communications involves various schema to ensure reliable message delivery (amongst the distributed entities). This can be in the form of simple point-to-point messaging supported by acknowledgements - such as ACK and NACK messages - to ensure reliable delivery.
 
 Alternatives could include the use of reliable and secure multicast to provide redundant channels, or the ordering of messages alongside publish-subscribe forms of group communication. In such approaches, channels and messages can be encrypted or signed - though this incurs higher transmission and processing overheads.
+
+Various other measures also fall into this category, such as:
+- Credential management
+- Symmetric/Asymmetric cryptography
+- PKI Cryptosystems
+- Secure key distribution
+
+####
