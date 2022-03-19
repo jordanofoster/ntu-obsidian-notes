@@ -238,6 +238,8 @@ Whitewashing attacks are especially dangerous for reputation-based P2P systems, 
 
 #### Routing Attacks
 
-Routing attacks aim to compromise the availability/integrity of P2P networks, and play an important role in composite attacks - such as the Eclipse attack, which attempts to block a good node's view of the rest of the network.
+Routing attacks aim to compromise the availability/integrity of P2P networks, and play an important role in composite attacks - such as the Eclipse attack, which attempts to block a good node's view of the rest of the network. In these attacks, a malicious peer undermines the message passing mechanism, typically by dropping or delaying messages. 
 
-In these attacks, a malicious peer undermines the message passing mechanism, typically by dropping or delaying messages. Another variant is *Routing Table Poisioning* (RTP) 
+Another variant is *Routing Table Poisioning* (RTP) - where an attacker deliberately modifies their own or another peer's routing tables  - for example, by returning bogus information to benign peer lookup requests.
+
+Attraction and repulsion are specific variants of routing attacks that respectively increase or decrease the 'attractiveness' of peers
