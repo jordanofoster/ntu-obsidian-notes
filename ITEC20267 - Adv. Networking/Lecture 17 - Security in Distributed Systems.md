@@ -392,3 +392,26 @@ A distributed system's utility comes from the coordinated orchestration of dispe
 - Group Membership
 - Consistency
 
+#### Consistency
+Consensus refers to achieving an agreement on values, such as data or process IDs. it requires the following properties to hold:
+1) Agreement. All good processes agree on the same value.
+2) Validity. The agreed upon value is a good/valid one.
+3) Termination. A decision is eventually achieved.
+
+#### Group Membership
+Membership is a key service property in distributed systems that determines several details:
+- The set of constitutent resources
+- The nature of agreement achieved by valid participants:
+	- Static,
+	- Dynamic,
+	- and Quorum membership
+- And data.
+
+From security perspectives, this often relates to integrity.
+
+#### Consistency
+There are two basic consistency models; strong and weak consistency models.
+##### Strong Consistency Models
+In these, participants must agree on one consistent order of actions to take. As a result, processes are guaranteed to reach consistency through determinism. Two popular models are:
+- **Strict Consistency**
+	- Here there are n
