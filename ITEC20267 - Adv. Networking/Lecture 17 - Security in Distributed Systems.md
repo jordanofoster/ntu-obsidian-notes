@@ -299,7 +299,6 @@ Alternatively, LEAs can be launched using Sybil peers - where mitigation relies 
 Other mitigation techniques to prevent self-selection of network IDs by malicious nodes could include a signing entity that makes use of public-key cryptography.
 
 ##### Buffer Map Cheating Scenarios
-
 Other disruptions can be used to attack the KAD P2P network, which is Kademlia based. This can be done by flooding peer index tables that are close to the victim node with false information, in a process that is a simple variant of a taLEA (Topology Aware Localised Eclipse Attack).
 
 KAD network crawlers can be introduced to monitor network status and detect malicious peers during LEAs. This however results in large amounts of overhead, if each peer uses a mechanism to detect such malicious nodes - such that the approach becomes impractical as the size of the overlay network increases.
@@ -307,14 +306,12 @@ KAD network crawlers can be introduced to monitor network status and detect mali
 Divergent lookups have been proposed as an alternate mitigation of taLEAs; this is done where disjoint path lookups avoid searching the proximity of a destination peer, in order to skip wasting queries on malicious peers under the assumption that a taLEA is in progress.
 
 ##### Routing Scenarios
-
 Migitation mechanisms consider assigning multiple paths for each lookup, by using disjoint paths - this causes high message overhead, however.
 
 Alternative options involve using cryptographic schemes to protect paths - but P2P, being designed around decentralised coordination, is a hard environment to implement centralised services within - as would be required to support the coordination of system-wide cryptographic signatures.
 
 
 ### Summarization of Attack Types
-
 | Attack | Availability | Integrity | Confidentiality | Functionality |
 | --- | :---: | :---: | :---: | :---: |
 | Dos/DDos | Y | N | N | P-OP |
@@ -339,4 +336,8 @@ The main difference from client-server architectures is that P2P overlays can gr
 
 Such attacks vary depending on whether attacks have direct or indirect network access via the overlay. Indirect access methods require malicious nodes to properly join the network prior to the attack. This means that malicious peers have to announce their presence in the overlay network before adversarial behaviour can begin - thereby making these attacks very noisy.
 
+## Distributed Systems and Coordinated Resource Clustering
 
+In contrast to the decentralised model of P2P systems, there are a multitude of distributed systems where interactions across resources and services are orchestrated using various coordination mechanisms; all of which provide the illusion of a logically centralised/coordinated system/service.
+
+This coordination can be in the following forms:
