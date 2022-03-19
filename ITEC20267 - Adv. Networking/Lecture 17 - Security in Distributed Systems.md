@@ -365,4 +365,10 @@ As a result of this approach, the handling of client failure/compromise - includ
 In order for distributed resources and services to interact meaningfully, a basis of synchronisation - either in time or logical order - needs to be specified. This applies at both the network and process levels; at high-level, synchronisation types include the following:
 
 ###### Synchronous Coordination
-All components of a distributed system are coordinated in time - as in lock step or *rounds*. Causality is e
+All components of a distributed system are coordinated in time - as in lock step or *rounds*. Causality is explicitly obtained. 
+
+Examples include typical safety-critical systems, such as aircraft fly-by-wire controls; where predictability and guaranteed real-time responsiveness is desired.
+
+###### Asynchronous Coordination
+Separate entities will take their steps in an arbitrary order, operating at different speeds. The ordering of events needs to be ensured via collective interaction. Typical examples include transactional systems, databases, web-crawlers, etc.
+
