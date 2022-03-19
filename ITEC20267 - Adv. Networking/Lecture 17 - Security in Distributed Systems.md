@@ -512,8 +512,20 @@ These disruptions can be from improper design, arising from operational conditio
 ### """Attackability"""
 Alongside [[Lecture 17 - Security in Distributed Systems#Distributed Systems - Coordination Classes and Attackability|vulnerabilities previously mentioned,]] communication-level issues can be broadly grouped as:
 - **Timing Based**
-	- This spans the following:
-		- Message omission
-		- Early/delayed/out-of-order messaging
-		- Crashes and DoS attacks
-			- These fit here as they typically manifest as disruptions of the *timely delivery *
+	- Message omission
+	- Early/delayed/out-of-order messaging
+	- Crashes and DoS attacks
+		- These fit here as they typically manifest as disruptions of the *timely delivery of messages* by obstructing access to communication channels/resources.
+- **Value/Information Based**
+	- Spoofing attacks
+	- Mimicking
+	- Duplication
+	- Information leakage, such as:
+		- Covert Channel Attacks
+		- Side Channel Attacks
+		- Content Manipulation Attacks
+
+Regarding Value/Information-based attacks - the manipulation of message contents is a form of Byzantine behaviour, and such attacks are only viable if a set of resources exchange messages to build a global view of the system.
+
+As distributed systems primarily rely on message passing to deliver both data and to coordinate, disruptions/perturbations are grouped at the *message delivery* level. Such terminology is deliberately used to refer to issues, as anomalous operations can be a problem with dependability (if randomly occurring) or security (if from malicious intent).
+
