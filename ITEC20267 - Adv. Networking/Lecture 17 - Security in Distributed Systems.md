@@ -586,4 +586,13 @@ There are three aspects to consider:
 System-level handling of VM compromise typically begins with tightening trust assumptions, and validating that standards are upheld using analytical, format or experimental stress testing. Hypervisors are also commonly used to enforce VM operations.
 
 ##### Compromise of Scheduler
-There are two methods this can occur; When the scheduler is affected
+There are two methods this can occur, accidental or malicious. When the scheduler is affected, the result is an anomalous task or allocation of resources - such deviations can be detected through access controls (at least in the case of incorrect resource allocation).
+
+When a malicious takeover of the scheduler occurs, there are likely inconsistencies that occur across the system state or resource-task bindings. These can be filtered by the coordination schema (which aims to maintain consistent state).
+
+Attacks against the scheduler typically impact availability and integrity; confidentiality is always safe.
+
+###### Mitigation
+As mentioned prior, access controls and coordination schemas can check the consistency of the system state for observed deviations from legitimate or allowed resource allocation. As a result, this can also be used to identify corruptions within the scheduler itself.
+
+#####
