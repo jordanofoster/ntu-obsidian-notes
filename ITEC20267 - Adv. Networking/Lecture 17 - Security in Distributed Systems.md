@@ -440,4 +440,8 @@ In these, participants do **not necessarily observe the same order of actions.**
 
 Systems with weaker consistency models became popular with the advent of the Internet - where wide-scale webservers had to accommodate large numbers of users. To achieve such demands, these systems sacrifice strong consistency for higher availability.
 
+### Replication Management and Coordination Schema: The Basis Behind Attack Mitigation
 
+One fundamental challenge for developing reliable distributed systems is to support the cooperation of the distributed devices required to execute a common task - even when some of them are inaccessible (either through communications or system failure). To do this, we need to ensure proper ordering of service actions, and to avoid partitioning of distributed resources (in order to facilitate a "coordinated" group of resources).
+
+One approach (state machine replication) 
