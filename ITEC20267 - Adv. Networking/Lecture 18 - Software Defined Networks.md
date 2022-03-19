@@ -107,4 +107,22 @@ OpenFlow is an example of such an abstraction.
 #### Virtualisation in a Software Defined Network
 ![[Pasted image 20220319212024.png]]
 
-#### 
+###### Virtualisation Simplifies Control Program
+![[Pasted image 20220319212122.png]]
+![[Pasted image 20220319212132.png]]
+
+### Does SDN Simplify the Network?
+Abstraction does not limit complexity, as the network OS and Hypervisor are still complicated pieces of code. SDN mainly simplifies the control program interface instead (though this is user-specific) and pushes complexity into reusable code in the SDN platform, much like compilers.
+
+### OpenFlow Basics
+![[Pasted image 20220319212315.png]]
+![[Pasted image 20220319212328.png]]
+![[Pasted image 20220319212341.png]]
+
+We must consider a multi-tenant data centre, as we want to allow each tenant to specify a virtual topology. This also defines their individual policies and requirements. The data centre's network hypervisor compiles such virtual topologies into a set of switch configurations by taking 1000s of individual tenant virtual topologies and computing configurations that can implement all of them simultaneously.
+
+This specific functionality is what people pay for with SDNs, and is enabled by SDN's ability to virtualize the network.
+
+
+
+
