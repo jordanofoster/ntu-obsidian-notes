@@ -123,6 +123,11 @@ We must consider a multi-tenant data centre, as we want to allow each tenant to 
 
 This specific functionality is what people pay for with SDNs, and is enabled by SDN's ability to virtualize the network.
 
+### Practical Challenges of SDN
+![[Pasted image 20220319212612.png]]
+
+## 4D Basics
+![[Pasted image 20220319212638.png]]
 
 
 
