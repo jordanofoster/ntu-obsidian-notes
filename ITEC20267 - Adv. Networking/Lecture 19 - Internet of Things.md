@@ -48,4 +48,59 @@ To summarize, IoT acts as "A Gateway to the Future":
 #### Examples of IoT devices:
 
 ![[Pasted image 20220321142301.png]]
+![[Pasted image 20220321142333.png]]
 
+#### Where is IoT in use on NTU's Campus?
+
+To be short, everywhere!
+
+- Facilities
+	- Building Temperature Control Systems
+	- Electrical Systems
+	- Lighting Systems
+	- VoIP Phones
+	- Trash Cans
+	- Water Sensors for Floods
+	- Building Equipment Monitoring
+		- Motors, Pumps, Boilers, etc.
+
+- Safety
+	- IP Video Surveillance
+	- Fire Alarm and Life Safety Systems
+	- Security Alarms
+	- Electronic Door Access
+	- IP-enabled Police and Security Teams
+	- IP Enabled Police Vehicles
+
+- Classroom Technologies
+	- Clickers in the Classroom
+	- Projectors
+	- IP Streamed Audio
+	- Computer Presentation
+	- Integration
+
+- Tutoring Spaces
+	- Check in/out for Tutoring
+	- AV equipment
+	- Scheduling Devices
+
+- IP Connected Laboratory Equipment
+	- Refrigerators
+	- Microscopes
+	- Laboratory Probes (Frog Sensors)
+- Research
+	- IP Connected Laboratory Equipment
+		- Gene Sequencers
+		- Functional MRI Machines
+		- Irradiators
+- Refrigerators
+- Microscopes
+- Laboratory Probes (Frog Sensors)
+
+- Staff Offices
+	- Multifunction Printers
+	- Coffee Makers / Microwaves
+	- IP connected mailboxes
+	- Conference Room
+	- Scheduling
+	- Conference Room
