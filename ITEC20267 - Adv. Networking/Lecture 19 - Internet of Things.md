@@ -154,4 +154,37 @@ As of 2013, there are 9.1 billion IoT units in the wild, and this is expected to
 ### Concerns about IoT
 
 Initially, one might wonder why IoT would be a concern, as the devices therein are "just another computer". However, there are many caveats:
-- All the same issues with a
+- All the same issues with access control, vulnerability management, patching, monitoring, etc.
+- Imagine a network with *1,000,000* more devices!
+- Any compromised device is a potential foothold on the network.
+
+#### Attacking IoT
+The following are potential growths for attack vectors:
+- Difficult, weak and hardcoded credentials
+- Difficult to update firmware and OSs
+- Lack of vendor support for repairing vulnerabilities
+- Vulnerable web interfaces (SQL Injection, XSS)
+- Coding errors (buffer overflows)
+- Clear text protocols and unnecessary open ports
+- DoS/DDoS attacks
+- Physical theft and tampering
+
+#### Additional Challenges faced by IoT
+
+At present there are many:
+- Scalability
+- Security
+- Technical Requirements
+- Technological Standardization
+- Software Complexity
+
+##### Solutions to Challenges
+
+Accommodate IoT devices with existing practices:
+- Policies, Procedures & Standards
+- Awareness Training
+- Risk Management
+- Vulnerability Management
+- Forensics
+
+### Threat 
