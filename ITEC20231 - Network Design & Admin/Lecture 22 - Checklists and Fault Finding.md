@@ -137,4 +137,20 @@ There are a few metrics of processor performance:
 There are also some metrics of poor disk performance:
 - *Avg. Disk Sec/Read and Write*
 	- If these exceed 25ms, the disk is causing the system to wait too long.
-		- They should be under
+		- They should be under 10ms for critical apps such as SQL server.
+		- Solution; *get faster disks.*
+- *Avg. Disk Queue Length*
+	- If $>(2\times \text{number of spindles})$, the physical disk system is a bottleneck.
+- *Memory Cache Bytes*
+	- If the space used for the filesystem cache is too large (300 MB), this can also indicate a disk bottleneck.
+
+#### Memory
+Memory problems can be due to leaks, insufficient ram, or `boot.ini` having /3GB switch (so insufficient kernel memory). Metrics include:
+- *Available megabytes*
+	- If $< 5\%$ of physical RAM, more is needed.
+- *Pooling Non-Paged Bytes*
+	- For objects that must remain in memory.
+	- A possible memory leak can occur if greater than 175 MB, or 100 MB with a /3GB switch.
+		- Event ID 2019 will be recorded in the system event log.
+- *Pages/second*
+	- Refers to thre ra
