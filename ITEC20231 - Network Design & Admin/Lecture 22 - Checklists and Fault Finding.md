@@ -82,4 +82,31 @@ Adding components to a system and verifying that the expected change occurs with
 	- Use `pathping` to check for dropped packets that might indicate router failure.
 
 ### Printing Problems?
-1) Make sure the printer is switched on, has paper and is connected directly to the print server
+1) Make sure the printer is switched on, has paper and is connected directly to the print server, either directly or via network connection (i.e. by using `ping`)
+2) Does the test page print?
+	- Ensure that the print server has the correct driver and network address.
+3) Does it print from other computers?
+	- Ensure that this system is connected to the correct printer.
+4) Does printing work for other users?
+	- Check that the current user has valid permissions.
+5) Is printing slow?
+	- Print server may require more disk space, or defragging.
+
+### Microsoft Device Driver Debugging
+This assumes all causes outside the desktop PC itself have been eliminated, so you are left with either the application or an associated driver at fault.
+- If the driver has recently been upgraded roll back to the previous version.
+	- Else, try finding a more recent version using *System or Device Manager.*
+
+Below is an image of the process undergone to manage a driver:
+
+![[Pasted image 20220321225850.png
+
+## Performance Tuning
+![[Pasted image 20220321225938.png]]
+
+Instantly, you should ask the following question: *Why?*
+- Does the system perform adequately?
+	- This depends on the stakeholder:
+		- Users need performance.
+		- Admins need system resources to be utilised efficiently.
+- Can the system cope with changes in the period until the ne
