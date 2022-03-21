@@ -46,3 +46,31 @@ Some are less frequent:
 - "Ticket" analysis - what problem, who and why?
 - Asset inventory (NIC, IP, OUI, etc.)
 - Network auditing (much less frequent, may be done via external consultants)
+- Network assessment
+	- Not for faint-hearted management!
+
+### Event Driven Procedures
+Normal event procedures include:
+- New user
+- Departure of user (under normal notice)
+- New client machines (migration, or for a new user)
+- New or upgraded server
+- Retirement of a client machine/server
+- Movement of a user between groups/jobs
+- Request for restoration of files
+- Handling user help requests
+- Handling fault reports
+
+Non-normal event procedures include:
+- Departure of user with extreme prejudice
+- Departure of sysadmin (under a cloud)
+- Faulty/dead hardware:
+	- Client PCs
+	- Servers
+	- Network infrastructure
+- Illegal materials discovered
+- Security breach/attack, physical/logical
+- Disaster declared
+
+## Occasional Tasks
+Some tasks may be so individual that a procedure is not wo
