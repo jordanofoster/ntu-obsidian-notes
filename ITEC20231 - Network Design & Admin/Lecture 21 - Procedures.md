@@ -151,4 +151,35 @@ Complete checks for [[Lecture 21 - Procedures#Backups Recovery disks RAID and im
 - Author/Date/Issue:
 	- M.J.Martin, 2004
 - Skills/Access:
-	- Admin capable of using Linux scri
+	- Admin capable of using Linux scripts
+- Special Conditions:
+	- Cisco IOS switches only, computer with Perl, SED, awk, sh, sort, date, diff and grep to conduct inventory. Need to download/compile domainscan.c and fping.
+- Checklist:
+	- List of all IP addresses, NIC Addresses, OUI and DNS entries to be produced.
+- Instructions:
+	- [See reference.](http://searchnetworking.techtarget.com/tip/1,289483,sid7_gci1035201,00.html)
+
+### Departure of User
+- Skills/Access:
+	- Admin privilege
+- Special Conditions:
+	- None
+- Instructions:
+	1) Use User Security Pass to confirm identity of user
+	2) Assist user to retrieve/delete any personal information on their desktop machine and in their email
+	3) Set up mail forwarding to appropriate other staff member
+	4) Archive existing email to server
+	5) Disable Domain User account
+	6) Remove desktop from all groups (to ensure does not access with cached credentials)
+	7) Run script to check no local user accounts of same name on clients (more particularly their own desktop)
+	8) Sign in any hardware e.g. USB sticks, mobile phones, laptops. 
+		- Confirm admin access not locked out for these devices
+	9) Sign in any security devices e.g. handheld PW generator, swipe card
+	10) If using biometrics, disable entry in database for their ID
+	11) Disable remote access to answerphone
+	12) Document all steps and device IDs, and sign off with copy for user
+	13) After 2 weeks, confirm with user's manager that all necessary file accessible on server and removed from client machines. Backup client machines and reformat/reinstall.
+	14) Remove user account
+	15) After 26 weeks, remove backup and archived mail.
+
+
