@@ -134,3 +134,7 @@ There are a few metrics of processor performance:
 	- If > 15%, this may indicate faulty hardware that generates too many interrupts for the system to service.
 
 #### Disks
+There are also some metrics of poor disk performance:
+- *Avg. Disk Sec/Read and Write*
+	- If these exceed 25ms, the disk is causing the system to wait too long.
+		- They should be under
