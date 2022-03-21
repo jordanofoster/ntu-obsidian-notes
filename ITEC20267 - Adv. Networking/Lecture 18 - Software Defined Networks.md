@@ -125,6 +125,18 @@ This specific functionality is what people pay for with SDNs, and is enabled by 
 
 ### Practical Challenges of SDN
 ![[Pasted image 20220319212612.png]]
+- Scalability:
+	- Decision elements are responsible for many routers
+- Reliability:
+	- Surviving failures of decision elements and routers
+- Response time:
+	- Delays between decision elements and routers
+- Consistency:
+	- Ensuring multiple decision elements behave consistently
+- Security:
+	- Network vulnerable to attacks on decision elements
+- Interoperability
+	- Legacy routers and neighbouring domains
 
 ## 4D Basics
 ![[Pasted image 20220319212638.png]]
