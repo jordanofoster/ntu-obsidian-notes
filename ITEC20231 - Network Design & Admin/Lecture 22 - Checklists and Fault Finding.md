@@ -109,4 +109,28 @@ Instantly, you should ask the following question: *Why?*
 	- This depends on the stakeholder:
 		- Users need performance.
 		- Admins need system resources to be utilised efficiently.
-- Can the system cope with changes in the period until the ne
+- Can the system cope with changes in the period until the next upgrade?
+	- If so, we *do not change.*
+
+### Performance Problems
+Initially, undergo the following protocol:
+- Identify the source(s):
+	- Use `perfmon`, *Task Manager,* etc.
+	- Does the user complain about a particular application or accessing particular folders?
+		- Some applications may have their own intensive needs, or a particular folder may be heavily accessed.
+	- Is there a *baseline* to compare with?
+		- Normally a single element in a chain will cause a bottleneck.
+			- In these cases, upgrading other elements *will not help.*
+
+#### Processors
+There are a few metrics of processor performance:
+- *Processor %time (desktop/server)*
+	- If this is consistently above 85%, then a problem process may require identification and perhaps refactorization.
+	- If a process *has* to run on this machine, then we need to upgrade or add a better processor.
+- *Processor Queue Length*
+	- This indicates how many program threads are waiting to run.
+		- This should be < 2 threads/processor over an extended period; otherwise an upgrade is in order.
+- *Processor % Interrupt time*
+	- If > 15%, this may indicate faulty hardware that generates too many interrupts for the system to service.
+
+#### Disks
