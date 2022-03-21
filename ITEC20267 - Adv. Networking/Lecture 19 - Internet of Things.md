@@ -16,4 +16,36 @@ The concept of IoT has various other names, but they are all the same in concept
 ### Components of IoT networks
 ![[Pasted image 20220321141738.png]]
 
-IoT networks themselves consist 
+IoT networks themselves consist of the following components:
+- Sensors
+- Connectivity (Internet)
+- People & Processes
+
+### Why IoT?
+It provides the following:
+- Dynamic *control of industry* and *daily life*
+- Improvement of *resource utilization ratio*
+- Integration of *human society and physical systems*
+- Flexible configuration
+- Acts as a technology integrator
+- Universal inter-networking
+
+#### Corporate Aspects
+- IoT is a transformational force
+- Helps companies *improve performance* through *IoT analytics* and *IoT Security* to deliver better results
+- *Businesses in utilities and different sectors also benefit:*7
+	- Oil & gas
+	- Insurance
+	- Manufacturing
+	- Transportation
+	- Infrastructure
+	- Retail
+- IoT helps us make more *informed decisions*
+
+To summarize, IoT acts as "A Gateway to the Future":
+![[Pasted image 20220321142131.png]]
+
+#### Examples of IoT devices:
+
+![[Pasted image 20220321142301.png]]
+
