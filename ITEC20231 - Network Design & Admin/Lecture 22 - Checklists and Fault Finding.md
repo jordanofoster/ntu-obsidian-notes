@@ -21,7 +21,7 @@ Remove one part of a system at a time until the fault is resolved. The last part
 Adding components to a system and verifying that the expected change occurs with each new installation. For example:
 - Using logs in machines on the path of an e-mail to see its path from device-to-device.
 
-#### Further Clues to Consider
+### Further Clues to Consider
 - *Has the situation EVER worked?*
 	- If not, you're starting without information.
 	- It is *has,* start by enumerating changes since last known working state.
@@ -34,7 +34,7 @@ Adding components to a system and verifying that the expected change occurs with
 	- If not, is it because reporting systems are inadequate, or because there really *is* a new problem?
 		- If fault finding shows that it must have already existed, there are also faults in your reporting system.
 
-#### Gathering Information
+### Gathering Information
 *If a fault has been reported by a user:*
 - Note the following:
 	- User's name
@@ -50,3 +50,36 @@ Adding components to a system and verifying that the expected change occurs with
 - Use remote login or other tools to get a list of software versions involved.
 - File all of the above under a ticket number in a fault-reporting database, and assign priority (if allowed).
 
+### Common Problems with Installing an OS
+- *Failure to read a CD for install*
+	- Connect an alternate supported drive.
+	- Check CD for errors in another system.
+- *Failure to install/start*
+	- Is all hardware recognised by the OS?
+- *Cannot connect to Domain Controller*
+	- Is the *domain name* correct?
+	- Are the DNS server and DC both online?
+	- Is the NIC working and setup correctly?
+	- Is there a computer account in the domain?
+	- Has your account got rights to add computer accounts to the domain?
+
+### Network Problem Tracing
+![[Pasted image 20220321225242.png]]
+
+- What does your machine *think* it is?
+	- Use `ipconfig /all` to check the IP address.
+- Can you ping the loopback address?
+	- Ping `127.0.0.1` to check that TCP/IP is OK.
+- Can you ping yourself?
+	- If the host IP is correct in the table, this will forward packets to the loopback address.
+- Can your PC connect anywhere?
+	- Ping the default gateway to ensure it is working and that the PC can communicate with the local network.
+- Can your PC see outside of the network?
+	- Ping the IP of a remote host to see if you can get through the router to the Internet.
+- Can your PC access DNS services?
+	- Ping the hostname of a remote host to test that name resolution works.
+- Is there any packet loss?
+	- Use `pathping` to check for dropped packets that might indicate router failure.
+
+### Printing Problems?
+1) Make sure the printer is switched on, has paper and is connected directly to the print server
