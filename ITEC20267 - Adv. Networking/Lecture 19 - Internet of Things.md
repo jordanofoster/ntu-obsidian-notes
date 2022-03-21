@@ -187,4 +187,7 @@ Accommodate IoT devices with existing practices:
 - Vulnerability Management
 - Forensics
 
-### Threat 
+### Threat vs. Opportunity
+
+If misunderstood and misconfigured, IoT poses risk to our data, privacy and safety. If understood and secured, however, IoT enhances communications, lifestyle and delivery of services.
+
