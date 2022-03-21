@@ -106,6 +106,8 @@ All procedures should contain:
 	- Sequenced instructions with any necessary precautions
 
 ## General checklists before any major change
+Complete checks for [[Lecture 21 - Procedures#Backups Recovery disks RAID and images|the]] [[Lecture 21 - Procedures#Service packs Critical updates Security Updates|first]] [[Lecture 21 - Procedures#Antivirus|three]] and then perform a full backup, storing in a safe location. Use a PDA and/or calendar feature to remind oneself of these critical items.
+
 ### Backups/Recovery disks, RAID and images
 1) Are operating system recover disks required (server/workstation)?
 	- Have they been created recently?
@@ -127,4 +129,26 @@ All procedures should contain:
 1) Installed and updated?
 	- Recovery disks required?
 2) Is automated scan enabled and running?
-3) Are automatic download updates or push downs of u
+3) Are automatic download updates or push downs of updated DAT files available and configured?
+4) Is there a schedule for updating these items? (Weekly/Monthly)
+
+### Securing Systems
+1) Secure physical access to servers
+2) Enable BIOS passwords
+3) Lock server room
+4) Ensure battery backups are installed and working properly.
+	- Is the power supply adequate for the number of devices plugged in?
+
+### Software Licences
+1) Verify and record all software licences in possession.
+	- Are additional licenses required? Remember that sysadmins can be held liable for this!
+
+## Example Procedures
+
+### Network Inventory
+- Rationale:
+	- NIC MAC addresses are unique and provide good tracking of traffic. Different aspects of system provide redundant information for cross-referencing
+- Author/Date/Issue:
+	- M.J.Martin, 2004
+- Skills/Access:
+	- Admin capable of using Linux scri
