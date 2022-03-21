@@ -25,4 +25,28 @@ Adding components to a system and verifying that the expected change occurs with
 - *Has the situation EVER worked?*
 	- If not, you're starting without information.
 	- It is *has,* start by enumerating changes since last known working state.
-		- Reliant on 
+		- Reliant on good records, however.
+
+- *Can a user be trusted to give valid information?*
+	- Sometimes users link unconnected items, insisting upon a relationship.
+
+- *Are there multiple reports of this problem?*
+	- If not, is it because reporting systems are inadequate, or because there really *is* a new problem?
+		- If fault finding shows that it must have already existed, there are also faults in your reporting system.
+
+#### Gathering Information
+*If a fault has been reported by a user:*
+- Note the following:
+	- User's name
+	- ID
+	- Location
+	- Phone extension
+- Find the ID of the desktop machine the fault occurred on.
+- Find out the date/time of occurrence; it may not have just happened.
+- Record what the user was trying to do, and the apparent symptoms:
+	- Use open questions to gather details - "What were you expecting would happen?"
+	- Find out why they were doing it - this leads to further information, as it may follow on from another problem.
+- Get screen dumps if possible.
+- Use remote login or other tools to get a list of software versions involved.
+- File all of the above under a ticket number in a fault-reporting database, and assign priority (if allowed).
+
