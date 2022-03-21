@@ -153,4 +153,22 @@ Memory problems can be due to leaks, insufficient ram, or `boot.ini` having /3GB
 	- A possible memory leak can occur if greater than 175 MB, or 100 MB with a /3GB switch.
 		- Event ID 2019 will be recorded in the system event log.
 - *Pages/second*
-	- Refers to thre ra
+	- Refers to the rate of reading pages from the disk to resolve hard page faults.
+		- A value $> 1000$ is excessive, slows down the system, and may be a symptom of a memory leak.
+
+#### Network
+Problems in a network can be due to saturation or inadequate NIC performance - in which case, buy a faster card or segment the network. One metric is:
+- *Bytes Total/Sec*
+	- This is the rate sent/received over each adapter.
+		- Should be $< 70\%$ of available bandwidth:
+			- e.g. for a 100Mbps NIC, the limit is 8.7MB/sec:
+				- $(100Mbps = 100000kbps = 12.5MB/sec)\times{70\%}$ 
+
+#### Specific Applications
+Some may have further diagnostics to assist us:
+- Application log entries
+- Own log files, dumped to disk.
+	- Do you know *where,* though?
+- They may provide additional counters to add to the performance monitoring system, such as:
+	- Exchange
+	- SQL Server
