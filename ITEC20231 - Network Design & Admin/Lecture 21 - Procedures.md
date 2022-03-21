@@ -17,9 +17,32 @@
 - Do not roll out new software without training end users:
 	- Roll out an employee's new application immediately after they have received training to reinforce what has been learned.
 - If you're having to fight fires all the time, *find the source.*
-- 
-	
+- Avoid poor decisions from above.
+- ***Backup***
 
+## Procedures for what?
+Procedures must be designed for the the following:
+- Tasks regularly carried out (e.g. for preventative checking)
+- Event driven tasks (where events occur naturally within an organisation's lifetime)
+- Event driven tasks, but those very rarely carried out
+	- But might be important when they are (e.g., disaster recovery)
 
+### Regular Procedures
+There are several types:
+- Security log check/analysis
+- System log check/analysis
+- Specialist log checking (Printer, DC, DHCP)
+- Backups (different types at different times)
+	- If automated, then logs must still be checked
+- "Walking the job"
+	- Physical checking of security: room access, tampering, unknown devices
+	- Physical checking of status: printer paper supplies, user machines
 
-
+Some are less frequent:
+- Performance monitoring
+- Restoration testing
+- Software update checking - testing, rollout
+- Scheduled maintenance - setup and system restart
+- "Ticket" analysis - what problem, who and why?
+- Asset inventory (NIC, IP, OUI, etc.)
+- Network auditing (much less frequent, may be done via external consultants)
