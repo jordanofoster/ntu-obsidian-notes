@@ -45,12 +45,12 @@ It provides the following:
 To summarize, IoT acts as "A Gateway to the Future":
 ![[Pasted image 20220321142131.png]]
 
-#### Examples of IoT devices:
+### Examples of IoT devices:
 
 ![[Pasted image 20220321142301.png]]
 ![[Pasted image 20220321142333.png]]
 
-#### Where is IoT in use on NTU's Campus?
+### Where is IoT in use on NTU's Campus?
 
 To be short, everywhere!
 
@@ -134,4 +134,24 @@ To be short, everywhere!
 	- Wearable Fitness Trackers
 	- IP connected Sports Equipment
 		- Treadmills, Bikes, etc...
-- 
+	- Attendance/Admission Control
+	- Sporting Event Management/Fan Interaction
+		- Microphones to measure cheering levels during events
+		- Ticket/Seating Verification
+		- Venue Facilities Management
+
+- Physical and Mental Health
+	- Appointment Scheduling
+	- Medical Appointment Notes
+	- Diagnostic Medical Equipment
+
+![[Pasted image 20220321143606.png]]
+
+### Market for IoT
+
+As of 2013, there are 9.1 billion IoT units in the wild, and this is expected to grow to 28.1 billion by 2020. In addition, there is a projected revenue growth from $1.9 trillion in 2013 to $7.1 trillion in 2020.
+
+### Concerns about IoT
+
+Initially, one might wonder why IoT would be a concern, as the devices therein are "just another computer". However, there are many caveats:
+- All the same issues with a
