@@ -99,4 +99,32 @@ All procedures should contain:
 	- So the procedure is not attempted by those without skills/access necessary
 - Checklist, to be completed and signed at the end of the procedure, then filed
 	- Gives a record of individual steps and any problems
-		- Sign
+		- Signed off by an admin AND a user if appropriate
+- Special conditions to be followed (e.g., for Domain Controller) and rationale
+	- To remind the admin that some machines need special care, and why
+- Instruction sequence (related to checklist)
+	- Sequenced instructions with any necessary precautions
+
+## General checklists before any major change
+### Backups/Recovery disks, RAID and images
+1) Are operating system recover disks required (server/workstation)?
+	- Have they been created recently?
+	- Are copies placed in a safe location?
+1) Are backup recovery disks needed?
+2) Is a full backup made on a routine basis?
+	- Has a verified, full backup been stored in a safe, offsite location?
+3) Are daily incremental backups being made?
+4) Do any other software packages require/allow recovery CDs?
+	- Have they been created and stored in a safe location?
+		- Antivirus/OS/Applications/etc.
+5) Is RAID/disk mirroring enabled, and correct functionality verified?
+
+### Service packs/Critical updates/Security Updates
+1) Are the latest of these installed?
+2) Is there a schedule for updating these items (e.g. Weekly/Monthly)?
+
+### Antivirus
+1) Installed and updated?
+	- Recovery disks required?
+2) Is automated scan enabled and running?
+3) Are automatic download updates or push downs of u
