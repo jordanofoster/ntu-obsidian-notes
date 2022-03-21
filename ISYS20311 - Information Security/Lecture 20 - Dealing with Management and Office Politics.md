@@ -115,3 +115,6 @@ They can affect office politics in various ways:
 		- Meetings that discuss issues that cannot be changed under current system/culture
 			- Such changes require detailed plans and top management approval
 		- Meeting regarding the format/frequency/usefulness of meetings
+
+
+[[]]
