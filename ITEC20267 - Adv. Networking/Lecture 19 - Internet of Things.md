@@ -93,9 +93,9 @@ To be short, everywhere!
 		- Gene Sequencers
 		- Functional MRI Machines
 		- Irradiators
-- Refrigerators
-- Microscopes
-- Laboratory Probes (Frog Sensors)
+	- Refrigerators
+	- Microscopes
+	- Laboratory Probes (Frog Sensors)
 
 - Staff Offices
 	- Multifunction Printers
@@ -104,3 +104,34 @@ To be short, everywhere!
 	- Conference Room
 	- Scheduling
 	- Conference Room
+	- Presentation Systems
+	- Time Clocks
+
+- Transit Services
+	- Vehicle Location Tracking & Reporting
+	- Rider Tracking and Verification
+	- Safety Monitoring
+	- Rider Entertainment/Information
+	- Parking Control and Wayfinding
+	- Parking Pay Stations
+
+- Residential Services
+	- Entertainment
+	- Building Safety
+	- Utility Monitoring and Bills
+	- Back Building Access Control
+	- Laundry Services
+
+- Disability Services
+	- Text to Speech
+	- Speech to Text
+	- Call for Help
+	- Health Monitoring
+	- ADA Route Wayfinding
+	- ADA Parking
+
+- Sports and Fitness
+	- Wearable Fitness Trackers
+	- IP connected Sports Equipment
+		- Treadmills, Bikes, etc...
+- 
