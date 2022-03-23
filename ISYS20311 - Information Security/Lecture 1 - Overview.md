@@ -1,7 +1,5 @@
 # Overview
 
-^70a61e
-
 ## Information Security Principles
 
 ### CIA Triad
