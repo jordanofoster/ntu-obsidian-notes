@@ -149,4 +149,24 @@ The algorithm would need to consider the following:
 	- If $em_{id} > node_{id}$ ->
 		- Change state -> to being a participant.
 		- Set $elected_x$ details to -> not set
-		- Send election message -> next node on
+		- Send election message -> next node on ring.
+	- If $node_{id} > em_{id}$ ->
+		- Change state -> to being a participant
+		- Set $elected_x$ details -> to not set
+		- Update election message -> set election message id ($em_{id}$) -> $node_{id}$
+		- Send election message -> next node on ring
+	- If $node_{id} = em_{id}$ ->
+		- Node has won the election
+		- Change state -> not participating
+		- Set $elected_x$ details -> $node_{id}$
+		- Send elected message with $node_{id}$ -> next node on ring
+
+- If an *elected* message is received by $Node_x$:
+	- Change state -> not participating
+	- Set $elected_x$ details -> $node_{id}$ from elected message
+	- Check if it is the winner ->
+		- YES -> election finished, all nodes should have $elected_x$ details with winning node
+		- NO -> send elected message onto next node in ring.
+
+
+
