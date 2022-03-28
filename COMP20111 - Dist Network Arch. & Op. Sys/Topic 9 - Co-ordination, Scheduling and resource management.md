@@ -304,4 +304,22 @@ This keeps track of the load on each node in the system by storing state informa
 	- If nodes are found -> select one to send job to
 		- Update node state from free -> busy
 	- If no nodes are free -> Job is added to a queue until a node is available.
-	- If a node is finished -
+	- If a node is finished -> update node state (busy -> free)
+
+This does, however, have disadvantages:
+- It limits nodes to running one job at a time, leading to underutilisation (some can do more than one job!)
+- It also does not consider job length or resource availability when selecting the job, which can result in the node becoming overloaded.
+
+#### Ant colony optimisation
+
+This is based on the behaviour of ant colonies:
+- Ants search for food.
+	- This is done by exploring the area around the "colony" in a random manor.
+- When a food source is found, the ant assesses the quantity and quality of food.
+- It then creates a "pheromone trail" back to the "colony".
+	- Other "ants" use this trail, making it stronger (with more "pheromones") if it is a good "food source".
+
+This technique can be applied to mapping jobs to nodes:
+- In the beginning, each mapping has little information, meaning jobs are randomly assigned.
+- However, as jobs are distributed, the "trails" are updated, resulting in jobs being more evenly distributed across nodes.
+
