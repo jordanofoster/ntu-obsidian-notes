@@ -67,4 +67,32 @@ The algorithm itself is as follows:
 #### Multicast and Logical Clocks
 - A node would broadcast a request to all others to say it needs to access a Critical Section.
 - Other nodes would have to agree to let the node start the CS.
-	- However, nodes need to see if they have a request; if they do, and it has be
+	- However, nodes need to see if they have a request; if they do, and it has been made before the current request, they *do not agree to the new request.*
+	- Clocks are used to keep track of temporal ordering of requests.
+
+- For a node to request entering its CS, they need to:
+	- Have some state information about the state of the node:
+		- Released (not in/needing a CS)
+		- Wanted (wants to enter a CS)
+		- Held (currently in a CS)
+
+- State changes depending on what is needed by the node:
+	- If finished in a CS -> released
+	- If waiting to enter a CS -> wanted
+	- Entered CS -> held
+		- This would only happen once it has received a message to grant access.
+
+As for the algorithm itself:
+- When a request is received:
+	- If in released state, -> send message to grant access
+	- If in held state: ->
+		- Queue the request, but carry on with critical section (i.e. this machine has control)
+		- Once CS has finished:
+			- Go through the queue, send grant access message to all requests
+			- Change state -> released
+- If in wanted state: ->
+	- Compare the *incoming request* ($node_1$) with *local node* ($node_2$)'s stored request, which was broadcast to others:
+		- If the incoming request from $node_1$ is timestamped...
+			- ...after the *stored request* ($node_2$); -> $node_2$ (local node) is *in the Critical Section*
+			- ...before the *stored request* ($node_2$); -> send permission.
+
