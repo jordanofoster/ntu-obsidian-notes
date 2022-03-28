@@ -168,5 +168,25 @@ The algorithm would need to consider the following:
 		- YES -> election finished, all nodes should have $elected_x$ details with winning node
 		- NO -> send elected message onto next node in ring.
 
+## Scheduling re-cap
+[[Topic 2 - Concurrency#Process Scheduling]]
+
+To summarize:
+- Multi-tasking is achieved via *processes* and *threads.*
+- On a single computer, the *process manager* implements a scheduling strategy which allows dealing with many concurrent processes at the same time.
+- There are three important scheduling aspects:
+	- Fairness
+	- Throughput
+	- Response time
+- There are several types of strategy:
+	- First-Come, First-Served
+	- Shortest Job First
+	- Priority Scheduling
+	- Round-robin
+	- Multi-level queues
+- There are problems with priority scheduling; *lottery scheduling* is a potential alternative.
+
+
+
 
 
