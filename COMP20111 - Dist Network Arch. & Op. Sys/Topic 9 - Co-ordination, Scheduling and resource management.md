@@ -15,3 +15,8 @@ There are also other issues we must consider:
 - Distributed Memory
 - Clocks (as seen in topic 10)
 
+## Recap on Shared Resources
+Critical sections are enforced using a construct called a [[Topic 2 - Concurrency#Semaphores|semaphore.]] This is used to guard resources, and was initially inspired from railroads, being the original inspiration for Dijkstra's algorithm. On singular machines, shared resources must be accessed; we use critical sections via semaphores to provide this mutual exclusion.
+
+![[Pasted image 20220328121247.png]]
+
