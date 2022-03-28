@@ -263,7 +263,18 @@ Again, overloaded nodes are black and underloaded nodes are yellow. This time, t
 #### Least Connection/Least Loaded
 For this methods, jobs are assigned to the node with the least amount of jobs/connections. The LB will need to maintain a list of running jobs on nodes.
 
-When received, the LB checks the list of job assignments.
+When received, the LB checks the list of job assignments; the node with the least current assignments is sent the job. There are several problems with this approach:
+- Slower, as higher overhead needed
+- Does not factor job size/duration, potentially skewing distribution
+- Does not take into account node capabilities
+- Can result in under utilisation of nodes (e.g., more powerful nodes do not get more workload, due to only keeping track of the least number of jobs).
+
+#### Min-max
+Also known as *Minimum-Maximum* load balancing, this is a static form of load balancing that considers the size of the job and the available resources to work out which is the best to send work to.
+
+This is done by calculating the minimum time to complete a job in a queue of jobs; the LB goes through and ranks them from minimum length to maximum.
+
+After doing so, it distributes these jobs to nodes that can complete them in the lowest amount of time (from smallest to largest). This approach considers both how long the job will take, and the resources available to nodes.
 
 
 
