@@ -29,4 +29,17 @@ There are a few considerations to be made in instances where some machines are d
 1) Is the system using synchronous or asynchronous messaging?
 2) Do we block when waiting for a reply (RPC?)
 3) How do we detect and recover from failures?
-4) How can we enforce mutual ecl
+4) How can we enforce mutual exclusion in a distributed context?
+
+### Distributed Mutual Exclusion
+On a single machine, we can use semaphores or other shared variable to protect shared resources. With distributed systems, such methods cannot be relied upon - we need to consider a message passing system to relay this information.
+
+There are a few things we must consider when making a distributed mutual exclusion mechanism; firstly, we must consider the application-level protocol for a critical section:
+
+![[Pasted image 20220328122204.png]]
+
+We also need to consider some other requirements:
+1) Only one process can run in the critical section at a time.
+2) Any requests to enter or exit the critical section will eventually succeed.
+3) The order in which requests are received are adhered to (e.g. FIFO)
+
