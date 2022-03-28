@@ -272,9 +272,10 @@ When received, the LB checks the list of job assignments; the node with the leas
 #### Min-max
 Also known as *Minimum-Maximum* load balancing, this is a static form of load balancing that considers the size of the job and the available resources to work out which is the best to send work to.
 
-This is done by calculating the minimum time to complete a job in a queue of jobs; the LB goes through and ranks them from minimum length to maximum.
+This is done by calculating the minimum time to complete a job in a queue of jobs; the LB goes through and ranks them from minimum length to maximum. After doing so, it distributes these jobs to nodes that can complete them in the lowest amount of time (from smallest to largest). 
 
-After doing so, it distributes these jobs to nodes that can complete them in the lowest amount of time (from smallest to largest). This approach considers both how long the job will take, and the resources available to nodes.
+This approach considers both how long the job will take, and the resources available to nodes. However it is very complex to implement, as the LB has to work out how long a job will take *without* running it. Additionally, it can cause resource starvation for larger jobs as it favours distributing smaller jobs first (which could stop longer jobs from being sent to the node).
+
 
 
 
