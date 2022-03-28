@@ -20,3 +20,13 @@ Critical sections are enforced using a construct called a [[Topic 2 - Concurrenc
 
 ![[Pasted image 20220328121247.png]]
 
+## Distributed Synchronisation
+For distributed systems, we have to remember that the systems are formed out of a number of machines working together.
+
+![[Pasted image 20220328121421.png]]
+
+There are a few considerations to be made in instances where some machines are dependent on others;
+1) Is the system using synchronous or asynchronous messaging?
+2) Do we block when waiting for a reply (RPC?)
+3) How do we detect and recover from failures?
+4) How can we enforce mutual ecl
