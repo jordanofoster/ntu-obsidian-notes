@@ -43,3 +43,11 @@ We also need to consider some other requirements:
 2) Any requests to enter or exit the critical section will eventually succeed.
 3) The order in which requests are received are adhered to (e.g. FIFO)
 
+#### Central Server Algorithm
+This is the simplest form of enforcing mutual exclusion, where the server acts as a central system, maintaining and coordinating access.
+![[Pasted image 20220328122519.png]]
+
+There are two other methods; ring-based, and multicast & logical clocks. We could also use *Elections.*
+
+#### Ring-based Algorithm
+This is a simple method for controlling *mutual exclusion* without the need for a central system.
