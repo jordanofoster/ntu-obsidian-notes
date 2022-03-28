@@ -207,8 +207,42 @@ Getting information about network state can be done in three ways:
 We still need to consider the routing of information, and the topologies used.
 
 
-###
+### Centralised approaches
+- Round-Robin:
+	- Centralised approach to load balancing; one of the simplest.
+	- Coordinator node allocates jobs.
+		- No weighting or any other metric used for allocation - just next one in sequence
+- Weighted Round-Robin
+	- Similar to centralised approach above.
+	- This time, weighted applied for ranking of which node should be allocated a job.
+	- Node at top of ranking gets job.
+	- Weightings can be on anything, e.g.
+		- Distance
+		- Current load
+		- Cores
+		- Max Jobs
+		- Etc.
 
+### Scheduling Methods
 
+There are many:
+- Receiver and sender initiated
+- Least connection/Least Loaded
+- Min-max
+- Max-min
+- Opportunistic load balancing
+- Equally spread current execution
+- Throttled load balancing
+- Ant colony optimisation
+- Plus lots more!
+
+#### Sender Initiated Algorithms
+Consider the following topology of nodes:
+
+![[Pasted image 20220328131618.png]]
+
+In this example, overloaded (black) nodes are those where the current number of work packages in their queue exceeds a threshold value.
+
+Underloaded (yellow) nodes are ones that can still accept new jobs, as their queues have not yet exceeded a threshold value. The sender initiated algorithm dictates that job migration occurs when overloaded nodes pass their threshold of queued jobs.
 
 
