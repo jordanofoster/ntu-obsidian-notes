@@ -115,4 +115,16 @@ Examples of coordination via Elections incude the *Bully* and *Ring-based electi
 
 To determine a new coordinator (where higher ranked node bully lower ranked nodes out of the elections), we keep repeating the following process until only the highest node is left:
 
-1) $Node_x$ will broadcast an *election* message to other nodes, where $P_(id}$   
+1) $Node_x$ will broadcast an *election* message to other nodes, where $P_{id} > Node_{P_{id}}$
+	- If there is no OK message from a node with a *higher* $P_{id}$ -> broadcast the coordinator message and set the coordinator to $Node_x$.
+	- If an OK message *is* received back from a node with a *higher* $P_{id}$ -> drop out of the election.
+
+2) If a node receives an *election message:*
+	- If the election message is received and the node has the *highest* $P_{id}$ -> send back a coordinator message.
+	- Otherwise, -> return an OK message and start a new election.
+
+If a node receives a coordinator message -> treat the *sender as the coordinator.*
+(i.e. last node - highest $P_{id}$ - wins and becomes coordinator.)
+
+##### Ring-based elections
+
