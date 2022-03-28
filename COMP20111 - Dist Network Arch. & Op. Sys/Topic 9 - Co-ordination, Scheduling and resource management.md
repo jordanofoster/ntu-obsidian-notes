@@ -128,3 +128,25 @@ If a node receives a coordinator message -> treat the *sender as the coordinator
 
 ##### Ring-based elections
 
+This is very similar to a ring-based mutual exclusion algorithm. All nodes would be initially set to be non-participating; any node can start an election at any time - same as the *Bully* algorithm - and election/elected messages are used to coordinate things, also similarly to the *Bully* algorithm.
+
+The algorithm would need to consider the following:
+1) Initiating an election
+2) Dealing with an election message
+3) Dealing with an elected message (i.e. once a node has been elected).
+
+###### Algorithm:
+
+- Initiating an election:
+	- A $Node_x$ will:
+		- Change state -> to being a participant
+		- Set $elected_x$ details -> to not set
+		- Create an election message -> set election message id ($em_{id}$) -> $node_{id}$
+		- Send an election message -> next node on ring
+
+- Receiving an election message:
+	- Compare $em_{id}$ with $node_{id}$
+	- If $em_{id} > node_{id}$ ->
+		- Change state -> to being a participant.
+		- Set $elected_x$ details to -> not set
+		- Send election message -> next node on
