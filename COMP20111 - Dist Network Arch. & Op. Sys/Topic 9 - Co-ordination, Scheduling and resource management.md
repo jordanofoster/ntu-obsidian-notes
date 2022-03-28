@@ -50,4 +50,21 @@ This is the simplest form of enforcing mutual exclusion, where the server acts a
 There are two other methods; ring-based, and multicast & logical clocks. We could also use *Elections.*
 
 #### Ring-based Algorithm
-This is a simple method for controlling *mutual exclusion* without the need for a central system.
+This is a simple method for controlling *mutual exclusion* without the need for a central system. A token is passed clockwise around a ring of connected machines, as shown in the diagram below:
+![[Pasted image 20220328122945.png]]
+
+The algorithm itself is as follows:
+1) Keep passing the token around the ring
+	- When a node receives a token:
+		- Check to see if the node needs access to critical section (CS)
+			1) If NO -> no access is needed, so forward the token onto the next node in the ring
+			2) If YES -> do the following:
+				1) Keep the token (don't pass it on, as it is needed to enter the CS)
+				2) Enter the Critical Section (CS)
+					- Perform Instructions
+				3) Once Critical Section has been finished, forward the token onto the next node in the ring.
+
+#### Multicast and Logical Clocks
+- A node would broadcast a request to all others to say it needs to access a Critical Section.
+- Other nodes would have to agree to let the node start the CS.
+	- However, nodes need to see if they have a request; if they do, and it has be
