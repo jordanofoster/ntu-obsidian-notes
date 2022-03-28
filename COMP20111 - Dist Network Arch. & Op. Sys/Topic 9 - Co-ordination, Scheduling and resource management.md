@@ -283,4 +283,25 @@ Like before, this is also complex to implement, and also causes resource starvat
 
 #### Opportunistic Load Balancing
 
-This aims to keep nodes busy by randomly distributing jobs to nodes; it does *not* consider job size, node processing capability, or current node load. Workloads can become unbalanced due to this (as jobs are randomly assigned); for example, lower-capacity nodes could become overloaded, while 
+This aims to keep nodes busy by randomly distributing jobs to nodes; it does *not* consider job size, node processing capability, or current node load. Workloads can become unbalanced due to this (as jobs are randomly assigned); for example, lower-capacity nodes could become overloaded, while higher capacity nodes are under-utilised.
+
+#### Equally spread current execution
+
+This aims to keep the number of running jobs on each node consistent. It does this by:
+- Keeping track of which nodes are running which jobs
+- When a new job is received, allocating it to the node with the least number of jobs
+- Therefore, we try to ensure the evenly spread distribution of jobs by having each node run the same number of jobs.
+
+This is easy to implement, but doesn't consider the size of a job, meaning that jobs may be balanced across nodes numerically, but workload may not. As a result, some jobs take longer to complete - causing imbalance.
+
+This method also doesn't consider available resources (some nodes might be able to work on more jobs than others). As a result, some nodes are underutilised, resulting in a waste of money and energy.
+
+#### Throttled load balancing
+
+This keeps track of the load on each node in the system by storing state information for each node in a table on the load balancer. Nodes can have two states; *free* and *busy.* The method is fairly straightforward to implement:
+
+- When a job is received -> check the table to find free nodes:
+	- If nodes are found -> select one to send job to
+		- Update node state from free -> busy
+	- If no nodes are free -> Job is added to a queue until a node is available.
+	- If a node is finished -
