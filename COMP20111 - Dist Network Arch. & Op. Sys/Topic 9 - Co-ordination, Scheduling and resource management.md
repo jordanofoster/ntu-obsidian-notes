@@ -245,6 +245,19 @@ In this example, overloaded (black) nodes are those where the current number of 
 
 Underloaded (yellow) nodes are ones that can still accept new jobs, as their queues have not yet exceeded a threshold value. 
 
-The sender initiated algorithm dictates that job migration occurs when overloaded nodes pass their threshold of queued jobs. 
+The sender initiated algorithm dictates that job migration occurs when overloaded nodes pass their threshold of queued jobs. The node will try to offload any new jobs to an underloaded node. This is a *demand-driven* method.
+
+The overloaded node does this by polling neighbours to work out current workloads; this does however lead to the problem of additional traffic and workload, which can make a system inefficient at higher loads.
+
+#### Receiver Initiated Algorithms
+Consider the following topology:
+
+![[Pasted image 20220328132551.png]]
+
+Again, overloaded nodes are black and underloaded nodes are yellow. This time, the process of task migration is initiated by underloaded nodes in a demand-driven manner. For example:
+
+- $Node_4$ is being underused because $P_{threshold} > Q_{jobs}$
+- $Node_4$
+
 
 
