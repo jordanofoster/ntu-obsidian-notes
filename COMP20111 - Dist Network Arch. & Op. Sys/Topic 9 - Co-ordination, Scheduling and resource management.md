@@ -323,3 +323,18 @@ This technique can be applied to mapping jobs to nodes:
 - In the beginning, each mapping has little information, meaning jobs are randomly assigned.
 - However, as jobs are distributed, the "trails" are updated, resulting in jobs being more evenly distributed across nodes.
 
+## Parallel Programming Issues
+### Amdahl's Law
+Amdahl's law states that the amount of potential speed up of a program is defined by the fraction of code that we can parallelise. The formula for potential speedup is $\frac{1}{1-P}$ where $P$ is the fraction of the code that is parallelisable.
+
+For multi-processor systems, the formula is different; speed up is $\frac{1}{\frac{P}{N}+S}$, where:
+- $P$ is the fraction of parallelised code
+- $N$ is the number of nodes
+- $S$ is the fraction of code that is still executed serially.
+
+So - naturally - some types of code are more efficient on parallel/distributed systems than others.
+
+### Optimisation Tips
+When writing distributed programs, we need to consider how best to use our resources. When writing code for a single PC, we don't have to generally think about the best way to parallelise a program. To provide an example, a loop would normally be done one iteration after another (until completed).
+
+On highly parallelised architectures, this is inefficient - one node is doing the work while the others ar
