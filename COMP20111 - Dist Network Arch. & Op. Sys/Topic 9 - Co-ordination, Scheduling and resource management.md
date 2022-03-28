@@ -243,6 +243,8 @@ Consider the following topology of nodes:
 
 In this example, overloaded (black) nodes are those where the current number of work packages in their queue exceeds a threshold value.
 
-Underloaded (yellow) nodes are ones that can still accept new jobs, as their queues have not yet exceeded a threshold value. The sender initiated algorithm dictates that job migration occurs when overloaded nodes pass their threshold of queued jobs.
+Underloaded (yellow) nodes are ones that can still accept new jobs, as their queues have not yet exceeded a threshold value. 
+
+The sender initiated algorithm dictates that job migration occurs when overloaded nodes pass their threshold of queued jobs. 
 
 
