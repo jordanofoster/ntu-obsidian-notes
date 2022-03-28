@@ -96,3 +96,23 @@ As for the algorithm itself:
 			- ...after the *stored request* ($node_2$); -> $node_2$ (local node) is *in the Critical Section*
 			- ...before the *stored request* ($node_2$); -> send permission.
 
+#### Coordination via Elections
+
+Another approach to coordination can be achieved using election algorithms to satisfy mutual exclusion. This approach requires a coordinator to organise exclusion.
+
+With an election, different nodes can *elect* a coordinator if one has not been assigned, or one stops working. Any node is suitable for the role. Any node can call an election to find a new coordinator.
+
+A few assumptions are made:
+- For an election to work, each node needs a unique identifier.
+- Each node should know of the set of nodes.
+- The node with the highest identifier becomes coordinator.
+
+Examples of coordination via Elections incude the *Bully* and *Ring-based election* algorithms.
+
+##### The Bully Algorithm
+
+![[Pasted image 20220328124154.png]]
+
+To determine a new coordinator (where higher ranked node bully lower ranked nodes out of the elections), we keep repeating the following process until only the highest node is left:
+
+1) $Node_x$ will broadcast an *election* message to other nodes, where $P_(id}$   
