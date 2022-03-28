@@ -5,4 +5,13 @@
 
 **Synchronisation** is needed because shared resources can be used. As a result, policies for dealing with distributed mutual exclusion is required.
 
-**Scheduling**/
+**Scheduling**/load balancing methods are needed for dealing with workloads on individual nodes.
+
+There are two types of algorithms for synchronisation, coordination and scheduling; those that are **centralised** and those that are **decentralised.**
+
+There are also other issues we must consider:
+- Best topology to use
+- Best messaging system (IPC)
+- Distributed Memory
+- Clocks (as seen in topic 10)
+
