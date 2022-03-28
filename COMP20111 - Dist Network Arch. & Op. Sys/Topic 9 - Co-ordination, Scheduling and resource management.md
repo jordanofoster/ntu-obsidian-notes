@@ -276,6 +276,11 @@ This is done by calculating the minimum time to complete a job in a queue of job
 
 This approach considers both how long the job will take, and the resources available to nodes. However it is very complex to implement, as the LB has to work out how long a job will take *without* running it. Additionally, it can cause resource starvation for larger jobs as it favours distributing smaller jobs first (which could stop longer jobs from being sent to the node).
 
+#### Max-min
+Also known as *Maximum-Minimum,* this is similar to min-maxxing, as it is also a static form of load balancing that considers job size and available resources. It differs in that it calculates the *minimum* time taken to complete all jobs in a queue, meaning that it distributes *larger jobs* first, working down to smaller jobs.
 
+Like before, this is also complex to implement, and also causes resource starvation (but only on smaller jobs).
 
+#### Opportunistic Load Balancing
 
+This aims to keep nodes busy by randomly distributing jobs to nodes; it does *not* consider job size, node processing capability, or current node load. Workloads can become unbalanced due to this (as jobs are randomly assigned); for example, lower-capacity nodes could become overloaded, while 
