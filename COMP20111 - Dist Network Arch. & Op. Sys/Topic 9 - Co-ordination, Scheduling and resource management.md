@@ -186,6 +186,28 @@ To summarize:
 	- Multi-level queues
 - There are problems with priority scheduling; *lottery scheduling* is a potential alternative.
 
+### Scheduling & Load Balancing
+![[Pasted image 20220328130940.png]]
+When considering a distributed system, nodes need to be allocated work. There are a few things to consider:
+- What is the current load of the node?
+- How do you ensure an even distribution and not suffer from process starvation?
+- Which type of algorithm do we use?
+- How should the relevant node be chosen?
+- When should nodes be contacted?
+
+There are two types of load balancing algorithms:
+- Static -> Algorithm is hard-coded using existing system knowledge
+- Dynamic -> State information used to form decisions.
+
+Getting information about network state can be done in three ways:
+- Demand-driven -> Nodes disseminate information between each other. Different methods; can be sender or receiver initiated.
+- Periodically driven -> Information exchanged periodically
+- State-change driven -> Only when state of node changes does information get exchanged.
+
+We still need to consider the routing of information, and the topologies used.
+
+
+###
 
 
 
