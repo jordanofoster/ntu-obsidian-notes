@@ -257,7 +257,13 @@ Consider the following topology:
 Again, overloaded nodes are black and underloaded nodes are yellow. This time, the process of task migration is initiated by underloaded nodes in a demand-driven manner. For example:
 
 - $Node_4$ is being underused because $P_{threshold} > Q_{jobs}$
-- $Node_4$
+- $Node_4$ will poll neighbouring nodes to see if the neighbour is overloaded (i.e. $Node_5$ will say yes)
+- $Node_4$ will be given work from $Node_5$
+
+#### Least Connection/Least Loaded
+For this methods, jobs are assigned to the node with the least amount of jobs/connections. The LB will need to maintain a list of running jobs on nodes.
+
+When received, the LB checks the list of job assignments.
 
 
 
