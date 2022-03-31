@@ -348,5 +348,20 @@ for(int i = 0; i < endValue; i++) {
 ```
 When compiled, this generates code that does the following:
 
-- *Start the loop* (`i = 0`)
-- *Store i* ``
+![[Pasted image 20220331145945.png]]
+
+This can be done more efficiently on a parallelised system by "unpicking" the loop, to get each calculation to run on multiple machines.
+
+With `endValue = 4`, the loop can be converted to the following:
+
+![[Pasted image 20220331150125.png]]
+
+This is a process known as *loop unrolling;* we are able to then send each calculation to a different compute node for processing purposes. There are a few considerations with this method; it works fine if each iteration does not rely on any previous one (i.e. there are no dependencies) and if data is available via a shared resource.
+
+What if there *are* dependencies between each loop, though?
+![[Pasted image 20220331150329.png]]
+
+
+
+
+
