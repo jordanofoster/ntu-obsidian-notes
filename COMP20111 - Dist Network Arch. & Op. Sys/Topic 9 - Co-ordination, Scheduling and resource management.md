@@ -407,4 +407,6 @@ for(int x = 0; x < n; x += 2) {
 }
 ```
 
-The above code means that we can have compute nodes work on *more* than one element of work
+The above code means that we can distribute *4* "elements" of calculation per node (instead of the assumed direct node:element mapping).
+
+## Languages for distributed computing
