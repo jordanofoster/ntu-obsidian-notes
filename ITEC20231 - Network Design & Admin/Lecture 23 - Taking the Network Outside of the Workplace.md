@@ -31,3 +31,13 @@ These are vulnerable if the laptop dies anyway, so the user must be educated abo
 	- If so, which files?
 - Some files may only be worth *recovering*
 	- This means they would cost time/money to restore, but do not contain sensitive information in and of themselves.
+
+### Files from Servers
+Some users may want local copies to work on while offsite, meaning that they would need file caching to be turned on. If the laptop is stolen, such files are now at the same level of risk as locally stored files; even if security is not an issue, the work is lost.
+
+The best solution to security in this instance may just be encryption.
+
+## Encrypting File System (EFS)
+
+![[Pasted image 20220331193742.png]]
+
