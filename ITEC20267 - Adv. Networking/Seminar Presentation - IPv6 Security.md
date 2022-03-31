@@ -51,4 +51,11 @@ We will describe the options from left-to-right:
 - The *Encrypted Security Payload* (ESP) provides confidentiality and protects against eavesdropping.
 
 ## IP Security (IPSec) overview:
-[[Cybersecurity Lecture 10 - Internet Protocol Security#IP]]
+[[Cybersecurity Lecture 10 - Internet Protocol Security|Make sure to see the related Cyber-Security lecture on the same topic.]]
+
+In IPv6, IPSec is part of the protocol suite, and is *mandatory.* IPSec itself is a set of security specifications, originally written as part of the IPv6 specification itself. A diagram describing the three main features of the specification is shown below:
+
+![[Pasted image 20220331221343.png]]
+
+### Where can we implement IPSec?
+IPSec can be impl
