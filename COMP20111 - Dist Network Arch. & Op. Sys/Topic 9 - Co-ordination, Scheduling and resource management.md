@@ -391,4 +391,20 @@ for(int x = 0; x < 10; x++) {
 ```
 ![[Pasted image 20220331151750.png]]
 
-However, a problem arises: what if there are *more iterations* than there 
+However, a problem arises: what if there are *more iterations* than there are available compute nodes?
+
+```
+int n = 10;
+for(int x = 0; x < n; x += 2) {
+	for(int y = 0; y < n; y += 2) {
+		for(int innerX = x; inner X < Math.min(x+2, n); innerX++) {
+			for(int innerY = y; innerY < Math.min(y+2, n); innerY++) {
+				a[innerX][innerY] = 1; // setting to a value here but
+				// complex work could be sent to compute node at this point
+			}
+		}
+	}
+}
+```
+
+The above code means that we can restrict 
