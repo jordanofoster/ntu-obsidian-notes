@@ -102,11 +102,26 @@ The two covered here are the *Authentication Header* (AH) and *Encapsulating Sec
 	- This is only in the ESP.
 
 #### Authentication Header (AH):
-`NOTE: The following slides were presumably explained during the Seminar itself. Please refer to the Cybersecurity lecture for more details.`
+`NOTE: The following slides were presumably better explained during the Seminar itself. If available, please refer to a recording of the seminar; otherwise, refer to the Cybersecurity lecture for more details.`
 
 This provides data integrity and data authentication for the *entire IPv6 packet,* and incorporates anti-replay protection. The header format is shown below:
 
 ![[Pasted image 20220331222703.png]]
 
 #### Encapsulating Security Payload (ESP) Header:
-This provides confidentiality and/or authentication and data integrity to the encapsulated payload. Much like the AH, anti-replay protection is also provided. The authentication algorithm it
+This provides confidentiality and/or authentication and data integrity to the encapsulated payload. Much like the AH, anti-replay protection is also provided. 
+
+The authentication algorithm itself is only applied to the data being encrypted. As a result, the IP header fields are *not* protected by the authentication algorithm (*unless* they are encapsulated in *tunnel mode*). The header format is shown below:
+
+![[Pasted image 20220331223002.png]]
+
+### Comparison of IPv4/IPv6 packets before/after IPsec protocols are applied:
+![[Pasted image 20220331223054.png]]
+![[Pasted image 20220331223057.png]]
+![[Pasted image 20220331223108.png]]
+
+## Security Policies, Security Associations and Associated Databases
+
+*Security Policies* are rules used to decide if a particular packet needs to be processed under IPsec, and if so, *how* it should be processed (*transport/tunnel mode*). Security policies are stored in a device's *Security Policy Database* (SPD).
+
+*Security Associations* are a set of information describing a *secure communication* between devices, and are stored in a *Security a*
