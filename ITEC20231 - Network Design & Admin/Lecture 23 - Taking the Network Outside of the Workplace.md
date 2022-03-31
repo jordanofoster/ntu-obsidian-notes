@@ -41,3 +41,5 @@ The best solution to security in this instance may just be encryption.
 
 ![[Pasted image 20220331193742.png]]
 
+### How to use EFS?
+The recommended method is as follows
