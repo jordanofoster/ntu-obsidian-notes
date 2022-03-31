@@ -131,10 +131,18 @@ The authentication algorithm itself is only applied to the data being encrypted.
 ### Security Association Triples
 SAs are defined via a set of three parameters, known as a *triple.* These parameters are as follows:
 
-- *Security Parameter Index* (SPI) - 32-bits:
+- ***Security Parameter Index* (SPI) - 32-bits:**
 	- This is chosen to *uniquely identify* a particular SA for *any connected device.*
 		- The SPI is placed in AH or ESP datagrams - and as a result, *links* each secure datagram to the SA from which it originates.
 	- The SPI is used by the *recipient* of a transmission, so that it knows what SA governs the received datagram.
+- **IP Destination Address:**
+	- This is the address of the device for which the SA has been established.
+- **Security Protocol Identifier:**
+	- This specifies whether the association is for an AH or ESP datagram. If both are in use with this device, they will have separate SAs.
 
-- IP Destination Address:
-	- This is the address of the device for which the SA has been establihs
+### Processing Models:
+#### Outbound Packets
+![[Pasted image 20220331224018.png]]
+
+#### Inbound Packets
+![[Pasted image 20220331224052.png]]
