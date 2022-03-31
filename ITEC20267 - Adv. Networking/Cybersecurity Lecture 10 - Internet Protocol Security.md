@@ -108,7 +108,7 @@ See <a href = "https://ntu.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=341f64b
 
 ### Takeaway Remarks on IPsec
 
-IPSec provides *transparent* security for all users of the IP protocol, without fundamentally changing the interface of IP itself. It provides host-to-host security but *not* user-to-user or application-to-applicaiton security.
+IPSec provides *transparent* security for all users of the IP protocol, without fundamentally changing the interface of IP itself. It provides host-to-host security but *not* user-to-user or application-to-application security.
 
 As a result, IPsec protects and application traffic *across an IP network* - applications themselves do not need to be specifically designed to use IPsec.
 

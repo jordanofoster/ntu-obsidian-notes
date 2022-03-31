@@ -42,4 +42,13 @@ The base header can be followed by up to *six* extension headers, as seen below:
 We will describe the options from left-to-right:
 - The *hop-by-hop* option is used when the source needs to pass information to *all routers* that the datagram packet visits.
 - The *destination* option is used when the source needs to pass information to the *destination only.*  Intermediate routers are *not* permitted access to this information.
-- 
+- For *fragmentation,* the concept is the same in IPv6 as in IPv4.
+- The *authentication* extension header has two purposes:
+	- It validates the message sender...
+		- This is needed so that the receiver can be certain that the message is from a *genuine sender,* and *not* an imposter.
+	- ...and ensures integrity of data.
+		- This checks that the data has not been altered during transmission, either accidentally or maliciously (i.e. by an adversary).
+- The *Encrypted Security Payload* (ESP) provides confidentiality and protects against eavesdropping.
+
+## IP Security (IPSec) overview:
+[[Cybersecurity Lecture 10 - Internet Protocol Security#IP]]
