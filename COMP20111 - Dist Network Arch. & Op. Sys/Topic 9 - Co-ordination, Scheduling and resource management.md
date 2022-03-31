@@ -337,4 +337,4 @@ So - naturally - some types of code are more efficient on parallel/distributed s
 ### Optimisation Tips
 When writing distributed programs, we need to consider how best to use our resources. When writing code for a single PC, we don't have to generally think about the best way to parallelise a program. To provide an example, a loop would normally be done one iteration after another (until completed).
 
-On highly parallelised architectures, this is inefficient - one node is doing the work while the others are left unused. A loop which repeats 1000 times would be better written as the same procedure on 1000 different nodes.
+On highly parallelised architectures, this is inefficient - one node is doing the work while the others are left unused. A loop which repeats 1000 times would be better written as the same procedure on 1000 different nodes. As a result 
