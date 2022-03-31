@@ -458,4 +458,15 @@ The [[Topic 9 - Co-ordination, Scheduling and resource management#Least Connecti
 
 This provides the same goal as the classic method; balancing requests at the application layer across multiple availability zones. Instead, *target groups* are used, which are a number of EC$^2$ compute instances that are configured with an associated protocol and port number.
 
-An individual target node can be part of *multiple* target groups; health checks are performed on a *singular target basis,* much like 
+An individual target node can be part of *multiple* target groups; health checks are performed on a *singular target basis,* much like classic balancing.
+
+Application balancers use *listener rules,* which determine which target group a request should be forwarded; a priority list is created based on given rules, and the selected group(s) uses Round Robin to receive requests. Rules themselves are configured by users.
+
+##### Network load balancers
+These work similarly to application load balancers, as they also use target groups - but they instead work on the transport layer (4). Network load balancers support *cross-zone* load balancing, and use *flow hashing algorithms* to determine which target group to forward a request to.
+
+Depending on whether TCP or UDP is used, a number of details are included in the hashing process, such as:
+- Source IP
+- Source Port
+- Destination Port
+- TCP ser
