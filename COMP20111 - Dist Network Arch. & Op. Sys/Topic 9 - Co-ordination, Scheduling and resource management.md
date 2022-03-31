@@ -441,4 +441,6 @@ These platforms can also provide elastic on-demand services using a utility mode
 
 ![[Pasted image 20220331173220.png]]
 
-#### Regions 
+Regions are separate independent locations that are *isolated* to *improve fault tolerance and stability.* Services are not usually replicated between them. Availability Zones are *Physical data centres* within the *same region,* that have their own resources (such as CPU/power/networking/storage etc.)
+
+Availability zones offer high availability and failover in order to minimize downtime, and can span across multiple data centres.
