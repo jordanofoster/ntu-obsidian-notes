@@ -124,4 +124,17 @@ The authentication algorithm itself is only applied to the data being encrypted.
 
 *Security Policies* are rules used to decide if a particular packet needs to be processed under IPsec, and if so, *how* it should be processed (*transport/tunnel mode*). Security policies are stored in a device's *Security Policy Database* (SPD).
 
-*Security Associations* are a set of information describing a *secure communication* between devices, and are stored in a *Security a*
+*Security Associations* are a set of information describing a *secure communication* between devices, and are stored in a *Security Association Database* (SAD). SAs can be set up manually, or automatically via a deployed system that uses another protocol (such as [[Cybersecurity Lecture 10 - Internet Protocol Security#Internet Key Exchange Protocol|IKE.]])
+
+**To determine what to do with a particular datagram,** the device first checks the SPD. A *Security Policy* in the SPD may reference a particular *Security Association* in the SAD. **If this is the case,** the device *looks up* that SA and uses it when processing the datagram.
+
+### Security Association Triples
+SAs are defined via a set of three parameters, known as a *triple.* These parameters are as follows:
+
+- *Security Parameter Index* (SPI) - 32-bits:
+	- This is chosen to *uniquely identify* a particular SA for *any connected device.*
+		- The SPI is placed in AH or ESP datagrams - and as a result, *links* each secure datagram to the SA from which it originates.
+	- The SPI is used by the *recipient* of a transmission, so that it knows what SA governs the received datagram.
+
+- IP Destination Address:
+	- This is the address of the device for which the SA has been establihs
