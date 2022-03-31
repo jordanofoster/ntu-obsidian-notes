@@ -68,7 +68,22 @@ There are two main areas where IPSec can be implemented:
 
 ### Applications of IPSec
 IPSec provides the capability to secure communications across LANs, private *and* public WANs, and across the Internet. Examples of its use include:
-- Secure branch connectivity over the Internet:
+
+- **Secure branch connectivity over the Internet:**
 	- Companies can build a secure VPN over the Internet, or a public WAN.
-- Secure remote access over the Internet:
-	- An end user whose system is equipped with IPSec protocols can make a local call to an ISP, and 
+- **Secure remote access over the Internet:**
+	- An end user whose system is equipped with IPsec protocols can make a local call to an ISP, and gain secure access to a company network.
+- **Establishing extranet and intranet connectivity with partners:**
+	- IPsec can be used for secure communications with other organisations.
+		- This ensures authentication and confidentiality, an provides a key exchange mechanism.
+- **Enhancing e-commerce security:**
+	- Even though some web/e-commerce applications have built-in security protocols, IPsec enhances their security.
+
+### Modes of IPsec
+#### Transport Mode
+This protects the *upper-layer* protocols:
+
+![[Pasted image 20220331222342.png]]
+
+#### Tunnel Mode
+This protects the *entire IP payload*
