@@ -441,3 +441,4 @@ These platforms can also provide elastic on-demand services using a utility mode
 
 ![[Pasted image 20220331173220.png]]
 
+#### Regions 
