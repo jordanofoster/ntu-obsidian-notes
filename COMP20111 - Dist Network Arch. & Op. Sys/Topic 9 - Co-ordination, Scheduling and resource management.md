@@ -426,4 +426,10 @@ Examples of applicable languages include Java, Julia and Go.
 - Provides a friendly Web-based UI for managing the cloud
 - Provides a native API
 - Manages storage for instances running on the hypervisors (primary storage) as well as templates, snapshots, and ISO images (secondary storage)
-- Orchestrates network services from the data link layer (L2) to 
+- Orchestrates network services from the data link layer (L2) to some application layer (L7) services such as HCP, NAT, firewall, VPN and so on
+- Accounting of network, compute and storage resources
+- Multi-tenancy/account separation
+- User management
+
+### Google, Azure
+There are a number of cloud-based platforms, such as [Microsoft Azure](https://azure.microsoft.com/en-us/) and 
