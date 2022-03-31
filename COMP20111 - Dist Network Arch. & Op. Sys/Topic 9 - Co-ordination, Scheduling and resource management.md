@@ -414,3 +414,11 @@ There are several languages applicable for distributed computing; they provide c
 
 Examples of applicable languages include Java, Julia and Go.
 
+## Platforms for Distributed Systems:
+
+### OpenStack
+[OpenStack](https://openstack.org) provides a number of services that offer compute, storage and resources:
+![[Pasted image 20220331163451.png]]
+
+### Apache CloudStack
+[Apache Cloudstack] 
