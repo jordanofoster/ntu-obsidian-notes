@@ -381,4 +381,14 @@ for(int i = 0; i < 50; i++) a[i] = 0;
 for(int i = 0; i < 50; i++) b[i] = a[i+1] + 1; // Dependant on prior loop
 ```
 
-Another method of loop optimisation is *loop tiling* - whch 
+Another method of loop optimisation is *loop tiling* - which breaks up a loop into more nests, which can then be send to different compute notes. For example;
+
+```
+int a[][] new int[10][10];
+for(int x = 0; x < 10; x++) {
+	for(int y = 0; y < 10; y++) a[x][y] = 1;
+}
+```
+![[Pasted image 20220331151750.png]]
+
+However, a problem arises: what if there are *more iterations* than there 
