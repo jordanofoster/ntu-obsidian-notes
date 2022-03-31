@@ -56,4 +56,18 @@ The recommended method is as follows:
 ### EFS and its interactions with NTFS
 Moving or copying a file into an encrypted folder encrypts the file itself; moving an already encrypted file to an unencrypted folder, however, *does not* decrypt it.
 
-Copying or moving an encrypted file to *another file system* such as FAT32 
+Copying or moving an encrypted file to *another file system* such as FAT32 *does* decrypt the file.
+Moving or copying a file, therefore, requires the permission to decrypt.
+
+Files can be backed up in an encrypted state; meaning we need to keep our keys for a long time.
+
+### EFS Best Practices
+- Users and recovery agents should export keys/certificates to removable media such as USB sticks.
+	- These keys should be stored securely, away from the computer.
+- Recovery keys are important, because they can be designated for a large number of users.
+- Users should encrypt folders, rather than files.
+- A well-organised procedure should be in place for any change of recovery agents.
+	- Keep keys until all files that *might* have been encrypted with them are re-encrypted with new keys.
+
+### Further Protections for EFS
+SYSKEY is enabled by default to randomly hide the system master key within the registry. This method protects the SAM database, alongside other important details, but this obfuscation method has been [cracked](http://www.irongeek.com/i.php?page=security/localsamcrack2)
