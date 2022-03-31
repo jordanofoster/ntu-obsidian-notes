@@ -58,11 +58,11 @@ TCP estimates the *round-trip* delay for each active connection by measuring the
 When the response arrives, a new estimate for the round-trip delay is calculated, via a statistical function that produces a weighted average and variance, and uses a linear combination of the estimated mean and variance as a value for retransmission.
 
 ###### Calculation for Retransmission Time
-The equations is as follows:
+The equation is as follows:
 
 $EstimatedRT = (1 - \alpha) \times EstimatedRTT + \alpha \times SampleRTT$
 
-This represents an exponential *weighted* moving average. The influence of the past sample thereforedecreases exponentially fast; typically, $a = 0.125$.
+This represents an exponential *weighted* moving average. The influence of the past sample therefore decreases exponentially fast; typically, $a = 0.125$.
 
 ![[Pasted image 20220111222542.png]]
 
