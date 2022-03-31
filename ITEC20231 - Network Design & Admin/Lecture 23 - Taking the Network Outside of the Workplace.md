@@ -41,5 +41,17 @@ The best solution to security in this instance may just be encryption.
 
 ![[Pasted image 20220331193742.png]]
 
+If the admin removes/resets the password from a user account, all EFS encrypted files, personal certificates and stored passwords are lost. This does *not* happen if a user does a password change.
+
+As a result, it is *extremely* important that at least *one* recovery agent (preferably more) exists. The domain administrator is the default recovery agent:
+- They can use group policy to explicitly designate recovery agents.
+	- If a user loses their key/resets password/leaves company, the recovery agent can access the files, decrypt them and even remove encryption entirely (if required).
+	- Agents cannot impersonate a user; they can only decrypt files.
+
 ### How to use EFS?
-The recommended method is as follows
+![[Pasted image 20220331211056.png]]
+The recommended method is as follows:
+- Create an NTFS folder, then use *Properties -> General -> Advanced...* to select encryption. Only the files within the folder are encrypted; the folder itself is not.
+
+### EFS and its interactions with NTFS
+Moving or copying a file into
