@@ -432,4 +432,4 @@ Examples of applicable languages include Java, Julia and Go.
 - User management
 
 ### Google, Azure
-There are a number of cloud-based platforms, such as [Microsoft Azure](https://azure.microsoft.com/en-us/) and 
+There are a number of cloud-based platforms, such as [Microsoft Azure](https://azure.microsoft.com/en-us/) and [Google Cloud](https://cloud.google.com/) 
