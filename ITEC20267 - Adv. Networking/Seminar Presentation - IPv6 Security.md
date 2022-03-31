@@ -58,4 +58,17 @@ In IPv6, IPSec is part of the protocol suite, and is *mandatory.* IPSec itself i
 ![[Pasted image 20220331221343.png]]
 
 ### Where can we implement IPSec?
-IPSec can be impl
+There are two main areas where IPSec can be implemented:
+- at the *End Host*
+	- This provides the most flexibility and security...
+	- ...but is far more work if there are many hosts.
+- at the *Router*
+	- We only have to make limited changes to a *few routers*
+		- and provide connections between these routers.
+
+### Applications of IPSec
+IPSec provides the capability to secure communications across LANs, private *and* public WANs, and across the Internet. Examples of its use include:
+- Secure branch connectivity over the Internet:
+	- Companies can build a secure VPN over the Internet, or a public WAN.
+- Secure remote access over the Internet:
+	- An end user whose system is equipped with IPSec protocols can make a local call to an ISP, and 
