@@ -433,3 +433,8 @@ Examples of applicable languages include Java, Julia and Go.
 
 ### Google, Azure
 There are a number of cloud-based platforms, such as [Microsoft Azure](https://azure.microsoft.com/en-us/) and [Google Cloud](https://cloud.google.com/), that offer Infrastructure or Platform-as-a-Service (I/Paas) functionality.
+
+These platforms can also provide elastic on-demand services using a utility model on top of a virtualisation platform, and also allow the renting of virtual servers for remote login.
+
+### Amazon Web Services (AWS)
+   [AWS](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/elb-ng.pdf) is a cloud service provider that offers Cloud Computing, Storage and Load Bala
