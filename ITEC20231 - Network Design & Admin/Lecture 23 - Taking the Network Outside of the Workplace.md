@@ -24,4 +24,10 @@ On many occasions, security conflicts with ease, convenience and productivity; t
 - Other potential data vectors.
 
 ### Files held on a Local Drive
-These are
+These are vulnerable if the laptop dies anyway, so the user must be educated about backups. We must also consider what happens if the laptop gets stolen:
+- We ensure the non-domain account also has a decent password/other protection (by, again, educating the user)
+- Encryption must also be considered:
+	- Are the files worth protecting?
+	- If so, which files?
+- Some files may only be worth *recovering*
+	- This means they would cost time/money to restore, but do not contain sensitive information in and of themselves.
