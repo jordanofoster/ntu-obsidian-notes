@@ -410,3 +410,7 @@ for(int x = 0; x < n; x += 2) {
 The above code means that we can distribute *4* "elements" of calculation per node (instead of the assumed direct node:element mapping).
 
 ## Languages for distributed computing
+There are several languages applicable for distributed computing; they provide constructs that *facilitate communication and coordination* between different system components. Some have been *designed* with distributed/parallel computing in mind.
+
+Examples of applicable languages include Java, Julia and Go.
+
