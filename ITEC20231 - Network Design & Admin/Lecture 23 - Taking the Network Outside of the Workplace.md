@@ -37,6 +37,16 @@ Some users may want local copies to work on while offsite, meaning that they wou
 
 The best solution to security in this instance may just be encryption.
 
+### Email via the web browser
+There are several issues that may occur here; the contact list/address book may need to be secured, and attached files may remain in the browser cache. It should also be noted that users of web email in open-access machines (such as those in airports) are liable to leave the machine without properly logging off.
+
+### Other Laptop Issues
+- What happens if the laptop is shut; does it lock the desktop or just hibernate?
+	- You must ensure secure settings.
+- Are users educated about using machines on public transport (where data is visible to shoulder-surfers)?
+- Are all laptops fully up-to-date, and with their own firewall, etc., in-case free Wi-Fi is used?
+- Consider switching off [*everything*](http://www.theregister.co.uk/2007/08/01/defcon_survival_guide/) when in vulnerable locations.
+
 ## Encrypting File System (EFS)
 
 ![[Pasted image 20220331193742.png]]
@@ -74,4 +84,4 @@ SYSKEY is enabled by default to randomly hide the system master key within the r
 
 ![[Pasted image 20220331212544.png]]
 
-EFS does not defend against those who can demand or otherwise forcibly extract encryptions keys, such as the government. Therefore, further methods might be necessary for foreign spies, criminal organisatio
+EFS does not defend against those who can demand or otherwise forcibly extract encryptions keys, such as the government. Therefore, further methods might be necessary for foreign spies, criminal organisations and the paranoid, such as [deniable encryption.](https://en.wikipedia.org/wiki/Deniable_encryption)
