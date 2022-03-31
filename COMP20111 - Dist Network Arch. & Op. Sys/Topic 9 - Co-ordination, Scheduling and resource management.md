@@ -444,3 +444,11 @@ These platforms can also provide elastic on-demand services using a utility mode
 Regions are separate independent locations that are *isolated* to *improve fault tolerance and stability.* Services are not usually replicated between them. Availability Zones are *Physical data centres* within the *same region,* that have their own resources (such as CPU/power/networking/storage etc.)
 
 Availability zones offer high availability and failover in order to minimize downtime, and can span across multiple data centres.
+
+#### AWS Load Balancers
+There are three types; *Classic*, *Application* and *Network*
+
+##### Classic Load Balancers
+These distribute requests to AWS compute (EC$^2$) nodes, and can be across multiple availability zones. Load is balanced at the application layer (7) and transport layer (4). Health checks are also made to ensure requests are only sent to *healthy nodes* in the system.
+
+The [[Topic 9 - Co-ordination, Scheduling and resource management#Least Connection Least Loaded|least connections]] algorithm is used at the application layer, and [[Topic 9 - Co-o]]
