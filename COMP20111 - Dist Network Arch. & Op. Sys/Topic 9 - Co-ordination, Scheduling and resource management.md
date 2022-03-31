@@ -407,4 +407,4 @@ for(int x = 0; x < n; x += 2) {
 }
 ```
 
-The above code means that we can restrict 
+The above code means that we can have compute nodes work on *more* than one element of work
