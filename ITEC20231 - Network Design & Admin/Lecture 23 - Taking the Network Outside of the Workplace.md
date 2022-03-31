@@ -47,6 +47,27 @@ There are several issues that may occur here; the contact list/address book may 
 - Are all laptops fully up-to-date, and with their own firewall, etc., in-case free Wi-Fi is used?
 - Consider switching off [*everything*](http://www.theregister.co.uk/2007/08/01/defcon_survival_guide/) when in vulnerable locations.
 
+## Web Access to Corporate Services
+By definition, these provide access from anywhere - meaning extremely insecure machines in internet cafes. Even VPN use can be unsafe here, as keyloggers may be present. Thus, you need to educate users against their use.
+
+Besides this, web servers should be hidden behind reverse application proxies, and in DMZs bastion hosts should be used.
+
+## Virtual Private Networks
+VPNs must authenticate an end user, and assign their remote node an IP address routable on the local network. This effectively means that the end user machine is now a member of 2 networks, effectively connecting their ISP to your corporate network.
+
+Client VPN software changes the default gateway for that machine to be one on your VPN server, so even internet traffic gets routed via it. There are choices for dealing with it, however (assuming use of the VPN over the internet, rather than trusted infrastructure).
+ 
+VPNs need to have technologies in place to ensure *all* aspects of security, such as:
+- Firewalls
+- Encryption
+- IPSec (or another secure traffic protocol)
+- AAA Server
+	- Authentication (who you are)
+	- Authorisation (what you are allowed to do)
+	- Accounting (what you actually do)
+
+Because of the risks associated with "arbitrary" clients, some vendors support quarantining of these machines, allowing them to be inspected for software such as a firewall, virus scanner, service packs, etc. before allowing the session to continue. NTU does this, for example.
+
 ## Encrypting File System (EFS)
 
 ![[Pasted image 20220331193742.png]]
