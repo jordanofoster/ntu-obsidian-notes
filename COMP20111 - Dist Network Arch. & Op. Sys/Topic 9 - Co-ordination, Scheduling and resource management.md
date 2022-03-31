@@ -375,4 +375,10 @@ for(int i = 0; i < 50; i++) {
 }
 ```
 
+This improves the parallelism and data locality of loops, but only works if there are *no dependencies* between both loops. For example, the below pair of loops *cannot* be fused:
+```
+for(int i = 0; i < 50; i++) a[i] = 0;
+for(int i = 0; i < 50; i++) b[i] = a[i+1] + 1; // Dependant on prior loop
+```
 
+Another method of loop optimisation is *loop tiling* - whch 
