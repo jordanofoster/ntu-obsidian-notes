@@ -451,4 +451,11 @@ There are three types; *Classic*, *Application* and *Network*
 ##### Classic Load Balancers
 These distribute requests to AWS compute (EC$^2$) nodes, and can be across multiple availability zones. Load is balanced at the application layer (7) and transport layer (4). Health checks are also made to ensure requests are only sent to *healthy nodes* in the system.
 
-The [[Topic 9 - Co-ordination, Scheduling and resource management#Least Connection Least Loaded|least connections]] algorithm is used at the application layer, and [[Topic 9 - Co-o]]
+The [[Topic 9 - Co-ordination, Scheduling and resource management#Least Connection Least Loaded|least connections]] algorithm is used at the application layer, and [[Topic 2 - Concurrency#Round Robin RR|Round Robin]] is used at the transport layer.
+
+##### Application Load Balancers
+![[Pasted image 20220331175539.png]]
+
+This provides the same goal as the classic method; balancing requests at the application layer across multiple availability zones. Instead, *target groups* are used, which are a number of EC$^2$ compute instances that are configured with an associated protocol and port number.
+
+An individual target node can be part of *multiple* target groups; health checks are performed on a *singular target basis,* much like 
