@@ -361,7 +361,18 @@ This is a process known as *loop unrolling;* we are able to then send each calcu
 What if there *are* dependencies between each loop, though?
 ![[Pasted image 20220331150329.png]]
 
+Another method that can be used is the combination of two or more loops - a process known as *loop fusion:*
+```
+for(int i = 0; i < 50; i++) a[i] = 0;
+for(int i = 0; i < 50; i++) b[i] = 0;
+```
 
-
+These statements can actually be merged via the following code:
+```
+for(int i = 0; i < 50; i++) {
+	a[i] = 0;
+	b[i] = 0;
+}
+```
 
 
