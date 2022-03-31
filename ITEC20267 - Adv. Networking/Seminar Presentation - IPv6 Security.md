@@ -86,4 +86,27 @@ This protects the *upper-layer* protocols:
 ![[Pasted image 20220331222342.png]]
 
 #### Tunnel Mode
-This protects the *entire IP payload*
+This protects the *entire IP payload,* representing an encapsulation of an entire IP datagram packet. It is a common choice for *VPN* implementations:
+
+![[Pasted image 20220331222430.png]]
+
+### IPsec Protocols
+The two covered here are the *Authentication Header* (AH) and *Encapsulating Security Payload* (ESP). These protocols attempt to provide the following services:
+
+- Access control
+- Connectionless integrity
+- Data origin authentication
+- Rejection of replayed packets
+	- Providing a form of *partial* sequence integrity
+- Confidentiality via encryption
+	- This is only in the ESP.
+
+#### Authentication Header (AH):
+`NOTE: The following slides were presumably explained during the Seminar itself. Please refer to the Cybersecurity lecture for more details.`
+
+This provides data integrity and data authentication for the *entire IPv6 packet,* and incorporates anti-replay protection. The header format is shown below:
+
+![[Pasted image 20220331222703.png]]
+
+#### Encapsulating Security Payload (ESP) Header:
+This provides confidentiality and/or authentication and data integrity to the encapsulated payload. Much like the AH, anti-replay protection is also provided. The authentication algorithm it
