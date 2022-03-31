@@ -340,3 +340,13 @@ When writing distributed programs, we need to consider how best to use our resou
 On highly parallelised architectures, this is inefficient - one node is doing the work while the others are left unused. A loop which repeats 1000 times would be better written as the same procedure on 1000 different nodes. As a result we need to optimise code to best use parallelised resources - the *loop* construct is a good candidate for this.
 
 #### Optimising *loops* for parallelisation
+Take the following code as an example:
+```
+for(int i = 0; i < endValue; i++) {
+	a[i] = a[i] + b[i]
+}
+```
+When compiled, this generates code that does the following:
+
+- *Start the loop* (`i = 0`)
+- *Store i* ``
