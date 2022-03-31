@@ -54,4 +54,6 @@ The recommended method is as follows:
 - Create an NTFS folder, then use *Properties -> General -> Advanced...* to select encryption. Only the files within the folder are encrypted; the folder itself is not.
 
 ### EFS and its interactions with NTFS
-Moving or copying a file into
+Moving or copying a file into an encrypted folder encrypts the file itself; moving an already encrypted file to an unencrypted folder, however, *does not* decrypt it.
+
+Copying or moving an encrypted file to *another file system* such as FAT32 
