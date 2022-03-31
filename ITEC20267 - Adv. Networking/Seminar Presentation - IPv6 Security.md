@@ -27,4 +27,19 @@ The components of an IPv6 Datagram Packet are explained as follows:
 Finally, the *Payload* field in IPv6 has a different format and meaning than the *Payload* field in IPv4.
 
 #### Payloads in an IPv6 Datagram
-The payload in IPv6 contains a combination of one or more *exn*
+The payload in IPv6 contains a combination of one or more *extension* headers, or options, followed by the headers/payloads of the protocol in the *layer above it* - such as TCP, UDP, etc.
+
+![[Pasted image 20220331215952.png]]
+
+Each extension's header has *two mandatory fields;* the *next* header, and the extension length. The *code* of the *next header* field (its value) defines the *type* of the header after it, as seen in the diagram above.
+
+The *last* "next header" field in the extension list *defines the protocol in the payload* (TCP/UDP/etc.)
+
+### Extension Headers
+The base header can be followed by up to *six* extension headers, as seen below:
+![[Pasted image 20220331220232.png]]
+
+We will describe the options from left-to-right:
+- The *hop-by-hop* option is used when the source needs to pass information to *all routers* that the datagram packet visits.
+- The *destination* option is used when the source needs to pass information to the *destination only.*  Intermediate routers are *not* permitted access to this information.
+- 
