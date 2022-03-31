@@ -469,4 +469,18 @@ Depending on whether TCP or UDP is used, a number of details are included in the
 - Source IP
 - Source Port
 - Destination Port
-- TCP ser
+- TCP sequence (only if using TCP)
+
+These help identify the target machine by producing a unique hash. AWS can support several load balancing algorithms depending on system needs, and network load balancers are highly scalable and resilient.
+
+## Distributed File Systems: Hadoop
+[Apache Hadoop](https://hadoop.apache.org/) is a piece of open-source software that allows the creation of scalable and reliable distributed computing systems - but it is primarily used for storage; mainly the large-scale distributed type (across multiple nodes).
+
+In this use, the implementation is an open-source version of GFS, with 5 main components:
+- Hadoop Common
+- HDSD (Hadoop distributed file system)
+- Hadoop YARN
+- Hadoop MapReduce
+- Hadoop Ozone
+
+Other distributed filesystems include the Google File System (GFS), and Amazon S3 and EBS.
