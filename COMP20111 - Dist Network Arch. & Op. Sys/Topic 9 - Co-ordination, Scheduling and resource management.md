@@ -421,4 +421,9 @@ Examples of applicable languages include Java, Julia and Go.
 ![[Pasted image 20220331163451.png]]
 
 ### Apache CloudStack
-[Apache Cloudstack](http://cloudstack.apache.org/) 
+[Apache Cloudstack](http://cloudstack.apache.org/) is an opens-source solution that can be used to deploy both private and public *Infrastructure-as-a-Service* (IaaS) clouds amongst organisations. According to the website, it provides:
+- "Works with hosts running XenServer/XCP, KVM, Hyper-V, and/or VMware ESXi with vSphere"
+- Provides a friendly Web-based UI for managing the cloud
+- Provides a native API
+- Manages storage for instances running on the hypervisors (primary storage) as well as templates, snapshots, and ISO images (secondary storage)
+- Orchestrates network services from the data link layer (L2) to 
