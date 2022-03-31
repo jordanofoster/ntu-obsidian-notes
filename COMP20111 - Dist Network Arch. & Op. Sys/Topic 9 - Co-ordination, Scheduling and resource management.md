@@ -437,4 +437,4 @@ There are a number of cloud-based platforms, such as [Microsoft Azure](https://a
 These platforms can also provide elastic on-demand services using a utility model on top of a virtualisation platform, and also allow the renting of virtual servers for remote login.
 
 ### Amazon Web Services (AWS)
-   [AWS](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/elb-ng.pdf) is a cloud service provider that offers Cloud Computing, Storage and Load Bala
+   [AWS](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/elb-ng.pdf) is a cloud service provider that offers Cloud Computing, Storage and Load Balancing services; the lattter through Elastic Load Balancing (ELB), which can balance between 
