@@ -70,4 +70,8 @@ Files can be backed up in an encrypted state; meaning we need to keep our keys f
 	- Keep keys until all files that *might* have been encrypted with them are re-encrypted with new keys.
 
 ### Further Protections for EFS
-SYSKEY is enabled by default to randomly hide the system master key within the registry. This method protects the SAM database, alongside other important details, but this obfuscation method has been [cracked](http://www.irongeek.com/i.php?page=security/localsamcrack2)
+SYSKEY is enabled by default to randomly hide the system master key within the registry. This method protects the SAM database, alongside other important details, but this obfuscation method has been [cracked](http://www.irongeek.com/i.php?page=security/localsamcrack2) - it is thus recommended to switch from SYSKEY to password mode, as this never leaves the key available on the machine.
+
+![[Pasted image 20220331212544.png]]
+
+EFS does not defend against those who can demand or otherwise forcibly extract encryptions keys, such as the government. Therefore, further methods might be necessary for foreign spies, criminal organisatio
