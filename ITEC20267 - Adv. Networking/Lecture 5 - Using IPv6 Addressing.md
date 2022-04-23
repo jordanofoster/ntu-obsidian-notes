@@ -11,8 +11,8 @@ With an increasing internet population, a limited IPv4 address space, issues wit
 Both IPv4 and IPv6 will coexist in the near future, as the transition to IPv6 will take several years; the IETF has created various protocols and tools to help network administrators migrate their networks to IPv6. These migration techniques can be divided into three categories:
 
 - **Dual stack** - The devices run both IPv4 and IPv6 protocol stacks simultaneously
-- **Tunneling** - A method of transporting an IPv6 packet over an IPv4 network. The IPv6 packet is encapsulated inside an IPv4 packet.
-- **Translation** Network Address Translation 64 (NAT64) allows IPv6-enabled devices to communicate with IPv4-enabled devices using a translation technique similar to NAT for IPv4.
+- **Tunnelling** - A method of transporting an IPv6 packet over an IPv4 network. The IPv6 packet is encapsulated inside an IPv4 packet.
+- **Translation** - Network Address Translation 64 (NAT64) allows IPv6-enabled devices to communicate with IPv4-enabled devices using a translation technique similar to NAT for IPv4.
 
 ## IPv4 Addressing Formats
 
