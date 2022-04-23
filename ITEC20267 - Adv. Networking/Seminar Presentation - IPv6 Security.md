@@ -75,7 +75,7 @@ IPSec provides the capability to secure communications across LANs, private *and
 	- An end user whose system is equipped with IPsec protocols can make a local call to an ISP, and gain secure access to a company network.
 - **Establishing extranet and intranet connectivity with partners:**
 	- IPsec can be used for secure communications with other organisations.
-		- This ensures authentication and confidentiality, an provides a key exchange mechanism.
+		- This ensures authentication and confidentiality, and provides a key exchange mechanism.
 - **Enhancing e-commerce security:**
 	- Even though some web/e-commerce applications have built-in security protocols, IPsec enhances their security.
 
