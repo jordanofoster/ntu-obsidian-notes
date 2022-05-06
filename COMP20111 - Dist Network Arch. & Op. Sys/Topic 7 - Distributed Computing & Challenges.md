@@ -1,4 +1,4 @@
-#COMP2011-DNAOS/dist-computing-challenges
+#COMP20111-DNAOS/dist-computing-challenges
 # Distributed Computing & Challenges
 
 ## Current computing paradigms

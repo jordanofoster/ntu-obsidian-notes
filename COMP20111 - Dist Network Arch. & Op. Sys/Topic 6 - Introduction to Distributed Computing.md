@@ -1,4 +1,4 @@
-#COMP2011-DNAOS/dist-computing-intro
+#COMP20111-DNAOS/dist-computing-intro
 # Introduction to Distributed Computing
 
 ## Computer Stack

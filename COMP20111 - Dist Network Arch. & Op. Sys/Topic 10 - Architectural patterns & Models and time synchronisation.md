@@ -1,4 +1,4 @@
-#COMP2011-DNAOS/arch-patterns-models-time-synch
+#COMP20111-DNAOS/arch-patterns-models-time-synch
 # Architectural patterns & Models and time synchronisation
 
 ## Architectural patterns

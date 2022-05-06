@@ -1,4 +1,4 @@
-#COMP2011-DNAOS/concurrency
+#COMP20111-DNAOS/concurrency
 # Concurrency
 - Operating systems have different architecture layers; userland, kernelspace, and bare-metal (hardware).
 - Hardware layer consists of microcode and software such as the BIOS, CPU, MMU and others.

@@ -1,4 +1,4 @@
-#COMP2011-DNAOS/memory-management
+#COMP20111-DNAOS/memory-management
 # Memory Management
 
 ## Current position (Windows)

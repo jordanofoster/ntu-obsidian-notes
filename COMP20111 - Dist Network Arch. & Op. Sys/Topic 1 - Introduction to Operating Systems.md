@@ -1,4 +1,4 @@
-#COMP2011-DNAOS/intro-to-os
+#COMP20111-DNAOS/intro-to-os
 # Introduction to Operating Systems
 ## History of Operating Systems
 
