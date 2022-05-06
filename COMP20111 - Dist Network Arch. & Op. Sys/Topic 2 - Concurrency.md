@@ -1,3 +1,4 @@
+#COMP2011-DNAOS/concurrency
 # Concurrency
 - Operating systems have different architecture layers; userland, kernelspace, and bare-metal (hardware).
 - Hardware layer consists of microcode and software such as the BIOS, CPU, MMU and others.
@@ -142,7 +143,7 @@ There are also **six major scheduling algorithms** under the above two policies:
 	- This is based on the following:
 		- **Memory**
 		- **Time**
-		- Other resource requirements **[(waiting time + run time) / run time]**
+		- Other resource requirements **\[(waiting time + run time) / run time\]**
 - Job with **highest priority goes first**
 - Priorities can change when **new jobs are added**
 
