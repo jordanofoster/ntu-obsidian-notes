@@ -67,7 +67,7 @@ There are, however, **scenarios in which the CPU must break this cycle temporari
 Interrupts are signals sent to the CPU to indicate a hardware/software event that requires **immediate attention.** An example including an I/O event is listed below:
 - I/O event occurs. process execution is **suspended** as no more progress can be made.
 - Processor switches execution to **another process,** working on that instead.
-- I/O event resolves and alerts CPU via an **interrupt.** CPU switches to handling the Interrupt Service Routine (**ISR**), a process specifically designed for **dealing with interrrupts.**
+- I/O event resolves and alerts CPU via an **interrupt.** CPU switches to handling the Interrupt Service Routine (**ISR**), a process specifically designed for **dealing with interrupts.**
 - The previously suspended process **continues where it left off,** if **conditions to do so are met.**
 
 There are many types of interrupts, but here are three examples:
