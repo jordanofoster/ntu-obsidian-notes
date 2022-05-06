@@ -24,6 +24,17 @@
 	- **RUNNING** on the CPU
 	- **READY** and waiting on CPU
 	- **BLOCKED** by unavailable resources
-- Processes are in *resource queues*
+- **BLOCKED** processes are in *resource queues*
 	- Each queue represents a *specific resource*
-		- 
+		- I/O, Storage, Display, etc.
+
+![[StateQueue.png]]
+
+## Process Termination
+- Two ways:
+	- **Voluntary**
+		- **Normal exit** - process finishes work
+		- **Error exit** - process finds and handles error
+	- **Involuntary**
+		- **Fatal error** - OS detected (e.g. zero division)
+		- **Killed** by another process (via OS *syscall*)
