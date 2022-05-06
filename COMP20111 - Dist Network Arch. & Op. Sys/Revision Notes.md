@@ -10,7 +10,7 @@
 	- Shareable resources (RAM, CPU, etc)
 	- Long-term storage access (hard drives, SSDs, etc)
 	- Non-determinacy
-		- Resiliency to unpredicted events (not crashing)
+		- Resiliency to unpredicted events (i.e. not crashing)
 
 - 
 ### File Systems
