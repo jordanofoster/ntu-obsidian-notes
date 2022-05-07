@@ -8,4 +8,7 @@
 ## Process Creation
 
 There are two methods:
-- Via **explicit** excecution by th
+- Via **explicit** execution by user
+- Via [[Spawning+Forking|Spawning/Forking.]]
+
+ 
