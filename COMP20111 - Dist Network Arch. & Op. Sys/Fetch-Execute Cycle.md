@@ -6,6 +6,6 @@
 4) Loop 2-3 until all instructions done
 5) Terminate
 
-If an [[Interrupts|interrupt]] is received from 2-3, handle it and return
+If an [[Interrupts|interrupt]] is received from 2-3, [[Interrupts#Interrupt Handling|handle it]] and return.
 
 ![[FetchExecuteInterrupt.png]]
