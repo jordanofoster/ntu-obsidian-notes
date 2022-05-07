@@ -3,5 +3,9 @@
 1) [[Processes|Process]] execution started by CPU
 2) Fetch instruction from register
 3) Execute instruction
-4) Loop 2-3 until process done, 
+4) Loop 2-3 until all instructions done
+5) Terminate
+
+If an [[Interrupts|interrupt]] is received from 2-3, handle it and return
+
 ![[FetchExecuteInterrupt.png]]
