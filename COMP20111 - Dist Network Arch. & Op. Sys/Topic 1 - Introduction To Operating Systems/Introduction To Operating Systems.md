@@ -6,7 +6,7 @@
 			- Internal components - via **data buses**
 			- External peripherals - via **interfaces**
 
-## Operating Systems
+# Operating Systems
 - **Collections of programs** that manage:
 	- **Hardware resources**
 	- **Connected peripherals**
@@ -24,6 +24,32 @@
 		- See *Byzantine Fault Tolerance*
 
 - Removes **accessibility boundaries** from less technically literate
-	- Eliminates boundary between *hardware and software*
+	- No boundary between *hardware/software*
 	- Easy-to-use development/runtime environments
+
+## OS Architecture
+- **Four main management subsystems**
+	- Process
+	- Memory
+	- I/O
+	- File Management
+- Additional subsystems for:
+	- Security
+	- Networking
+	- GUIs
+
+- OSs are **built in layers**
+	- Assist layers above
+	- Use layers below
+	- Only top layer user-visible
+
+### Kernel and Usermode
+- OS software is **Kernel** mode
+	- *Complete control of hardware
+
+- Other processes are **User** mode
+	- Restricted functionality
+	- Machine control provided via *syscalls*
+	- Safety net for bad programs
+		- But less available resources
 
