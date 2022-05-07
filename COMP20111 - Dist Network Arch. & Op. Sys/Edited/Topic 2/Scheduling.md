@@ -3,7 +3,7 @@
 - Schedulers decide which [[Processes|processes]] should be worked on next by the CPU.
 - Changes made via a *[[Scheduling#Context Switch|context switch]]*
 
-## Context Switch
+## Context Switching
 
 - If current process *not* highest priority:
 	1) **Save** process [[Processes#Process States|state]] in [[Processes#Process Tables|table]]
@@ -11,3 +11,7 @@
 	3) Begin/Resume process, as indicated by program counter.
 
 - **Causes overhead** - should be minimized.
+
+### Prioritization Metrics
+
+Scheduling involves determination of *optimal order/timing* when assigning *execution time* to processes. 
