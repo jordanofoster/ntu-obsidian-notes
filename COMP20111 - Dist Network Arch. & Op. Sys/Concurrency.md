@@ -5,4 +5,5 @@
 	- [[Interrupts#Interrupt Handling|I/O request]] via syscall
 	- [[Interrupts|Interrupt]] 
 
-With CPUs capable of switching 
+- Some CPUs can switch processes so fast that concurrent execution *seems* to occur.
+	- [[Fetch-Execute Cycle|Only one instruction]] *per physical core*/CPU is ever executed.
