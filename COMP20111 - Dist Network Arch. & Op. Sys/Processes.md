@@ -20,7 +20,7 @@ There are two methods:
 ## Process States
 
 There are three:
-- currently **RUNNING**
+- currently **RUNNING** ^555d69
 	- One process **at a time**
 - **READY** for execution ^bb9c04
 - **BLOCKED** by busy resources ^1436ce
