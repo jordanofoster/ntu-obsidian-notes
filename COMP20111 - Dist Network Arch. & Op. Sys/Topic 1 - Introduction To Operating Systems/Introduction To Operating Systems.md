@@ -46,10 +46,28 @@
 ### Kernel and Usermode
 - OS software is **Kernel** mode
 	- *Complete control of hardware
+	- Errors are **fatal**
 
 - Other processes are **User** mode
 	- Restricted functionality
-	- Machine control provided via *syscalls*
-	- Safety net for bad programs
-		- But less available resources
+		- Safety net for bad programs
+		- Machine control provided via *syscalls*
 
+# Distributed Systems
+- **Isolated networks** of **multiple autonomous systems**
+	- Each has its own resources and OS
+	- Connected via **middleware**
+		- Uses **message passing** over network
+- Similar issues to *centralized:*
+	- **Synchronization**
+	- **Coordination**
+	- **Distributed Memory**
+	- **Distributed Filesystems**
+	- **Resource Allocation**
+	- **Concurrency**
+- Also unique issues:
+	- **Infrastructures/Models**
+	- **Messaging Systems**
+	- **Coordination/Synchronization**
+	- **Requires specific software**
+	- **Storage and Security**
