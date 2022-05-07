@@ -21,7 +21,7 @@ Using an I/O blocking event as an example:
 Many types; three examples:
 - **I/O Interrupts**
 	- Signal from I/O device, completion or error.
-- **Timer Interrupts**
-	- Caused by processer timer, alerting OS at intervals.
+- **Timer Interrupts** ^46cbff
+	- Caused by processor timer, alerting OS at intervals.
 - **Program Interrupts**
 	- [[Processes#Process Termination|Errors,]] both fatal and non-fatal.

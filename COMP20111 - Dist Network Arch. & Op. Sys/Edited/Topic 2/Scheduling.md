@@ -22,3 +22,17 @@
 		- Maximize throughput in accordance with [[Scheduling#^c89b45|the above]]
 	- **Fairness**
 		- Do not prioritize one user over another
+
+## Scheduling Policies and Algorithms
+
+Two policy types:
+- **Non-preemptive**
+	- Processes run until complete, or **[[Processes#^1436ce|BLOCKED]]** 
+- **Preemptive**
+	- Processes interrupted and replaced by others
+		- Generally on a [[Interrupts#^46cbff|timer]].
+
+*Six* major policies covered:
+
+### Non-Preemptive Algorithms
+[[First Come, First Serve (FCFS) or First In, First Out (FIFO)]]
