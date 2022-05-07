@@ -20,7 +20,7 @@
 		- Keep it as **busy as possible**
 	- **Efficiency**
 		- Maximize throughput in accordance with [[Scheduling#^c89b45|the above]]
-	- **Fairness**
+	- **Fairness** ^7ea821
 		- Do not prioritize one user over another
 
 ## Scheduling Policies and Algorithms
@@ -35,4 +35,5 @@ Two policy types:
 *Six* major policies covered:
 
 ### Non-Preemptive Algorithms
-[[First Come, First Serve (FCFS) or First In, First Out (FIFO)]]
+- [[First Come, First Serve (FCFS) or First In, First Out (FIFO)]]
+- [[Shortest Job First (SJF)]]
