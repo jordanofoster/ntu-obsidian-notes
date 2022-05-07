@@ -5,6 +5,9 @@ Signals sent to CPU that require **immediate attention.** indicates hardware/sof
 
 ## Interrupt Handling
 
+- When user processes suspended, OS takes over by handling I/O request or starting [[Interrupt Service Routine (ISR)s|interrupt handler]]
+	- OS can then have CPU work another process.
+
 Using an I/O blocking event as an example:
 
 1) Event occurs. Process execution **suspended.**
