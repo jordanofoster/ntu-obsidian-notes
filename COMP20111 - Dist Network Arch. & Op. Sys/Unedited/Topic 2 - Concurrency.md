@@ -73,7 +73,7 @@ Interrupts are signals sent to the CPU to indicate a hardware/software event tha
 There are many types of interrupts, but here are three examples:
 - An **I/O interrupt** is caused by an I/O device to signal completion or an error.
 - A **Timer interrupt** is caused by a processor timer to alert the OS at given times.
-- A **Program interupt** is caused by errors, both fatal and non-fatal (user processes).
+- A **Program interrupt** is caused by errors, both fatal and non-fatal (user processes).
 
 Interrupts are the main mechanism by which OSes are able to perform **multitasking** - by overseeing several programs and I/O devices simultaneously.
 

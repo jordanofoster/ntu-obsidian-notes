@@ -1,6 +1,6 @@
 # Interrupts
 
-Signals sent to CPU that require **immediate attention.** indicates hardware/software event. Construct that allows [[multitasking]] to occur.
+Signals sent to CPU that require **immediate attention.** indicates hardware/software event. Construct that allows [[Concurrency|multitasking]] to occur.
 
 
 ## Interrupt Handling
