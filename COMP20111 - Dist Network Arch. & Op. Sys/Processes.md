@@ -38,4 +38,3 @@ There are three:
 - **Involuntary**
 	- **Fatal error** - OS detected, illegal operation
 	- **Killed** - by another process - via OS syscall
-
