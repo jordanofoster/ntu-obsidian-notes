@@ -5,7 +5,7 @@ Signals sent to CPU that require **immediate attention.** indicates hardware/sof
 
 ## Interrupt Handling
 
-Using an [[Processes#^1436ce|I/O event]] as an example:
+Using an I/O blocking event as an example:
 
 1) Event occurs. Process execution **suspended.**
 2) CPU begins work on **another process.**
