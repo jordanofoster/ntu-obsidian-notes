@@ -12,6 +12,13 @@
 
 - **Causes overhead** - should be minimized.
 
-### Prioritization Metrics
+## Prioritization Metrics
 
-Scheduling involves determination of *optimal order/timing* when assigning *execution time* to processes. 
+- Scheduling involves determination of *optimal order/timing* when assigning *execution time* to processes.
+- Various metrics:
+	- **CPU utilisation** ^c89b45
+		- Keep it as **busy as possible**
+	- **Efficiency**
+		- Maximize throughput in accordance with [[Scheduling#^c89b45|the above]]
+	- **Fairness**
+		- Do not prioritize one user over another
