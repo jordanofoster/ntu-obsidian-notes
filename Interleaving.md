@@ -4,7 +4,7 @@ An *interleaving* is a *unique* sequence of [[Programs#Program Execution|stateme
 
 The number of possible interleavings for a for a set of processes can be calculated using:
 $$\frac{(n_1 + n_2 + ... + n_i)!}{n_1!n_2!\times{...}\times{n_i!}}$$
-where $n$ is the number of *atomic instructions* 
+where $n$ is the number of *[Atomic Instructions](https://stackoverflow.com/a/1762179)* in a [[Threads|thread]] - up to $n_i$.
 An example shows 10 different [[Threads|threads]], causing 10 interleavings:
 
 ![[Interleaving.png]]
