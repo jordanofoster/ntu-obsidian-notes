@@ -11,13 +11,14 @@ Inter-process synchronization allows [[Threads|threads]] and [[Processes|process
 
 ## Critical Sections and Mutual Exclusion
 
-A *critical section* is a [[Processes|process]] in code that involves *sensitive operations* on a *shared resource.*
-
-- Competition on *resources* within *critical sections* are referred to as *race conditions* 
+A *critical section* is a [[Processes|process]] in code that involves *sensitive operations* on a *shared resource.* Competition in them cause *[[Inter-Process Synchronization#Race Condition|race conditions]]*.
 	- These are **unstable and undesirable.** 
 		- To fix this, only one [[Threads|thread]] should be able to enter a section at a time.
 			- This is achieved through *Mutual Exclusion.*
 
 ## Race Condition
 
-A race condition occurs when competition occurs on *resources* within *critical sections.* They
+A race condition occurs when competition occurs on *resources* within *critical sections.* They are generally **unstable and undesirable** and a form of *[[Thread Interference|thread interference]]*.
+
+### Example 1: Racing for Memory Access
+
