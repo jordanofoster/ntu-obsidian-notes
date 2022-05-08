@@ -28,9 +28,9 @@
 ## Scheduling Policies and Algorithms
 
 Two policy types:
-- **Non-Preemptive**
+- **[[Non-Preemptive Algorithms]]**
 	- Processes run until complete, or **[[Processes#^1436ce|BLOCKED]]** 
-- **Preemptive**
+- **[[Preemptive Algorithms]]**
 	- Processes interrupted and replaced by others
 		- Generally on a [[Interrupts#^46cbff|timer]].
 
