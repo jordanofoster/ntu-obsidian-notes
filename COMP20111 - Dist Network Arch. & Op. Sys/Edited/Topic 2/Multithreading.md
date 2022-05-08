@@ -21,5 +21,15 @@ This refers to mapping a [[Threads#User Threads|user thread]] to a [[Threads#Ker
 
 - Each [[Threads#User Threads|user thread]] maps to *one* [[Threads#Kernel Threads|kernel thread]].
 	- [[Programs#Concurrent Program Execution|Concurrent execution]] possible
-		- Due to [[Threads#^efd154|independent threads]]
-		- 
+	- Better *Multi-CPU* performance
+	- Heavy management *overhead*
+		- Kernel manages *every* [[Threads#User Threads|user thread]]
+	- Thread [[Spawning+Forking|Spawning/Forking]] limits
+	- Requires kernel support
+
+#### Many-To-Many
+
+- [[Threads#User Threads|User threads]] are *multiplexed* to an *equal or smaller* number of [[Threads#Kernel Threads|kernel threads]].
+	- Takes advantage of *multiple CPUs*
+	- No [[Spawning+Forking|Spawning/Forking]] limits
+	- [[]]
