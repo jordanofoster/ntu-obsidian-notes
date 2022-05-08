@@ -15,8 +15,9 @@ There is only ever *one possible execution sequence.* For example:
 
 - A program with statements $P, Q, R$:
 	- Executes in order of definition: $P \to Q \to R$
+		- This is *total ordering.*
 
-A sequential program can be represented in code (*High-Level*) or machine instructions (*System-Level*):
+Sequential programs are deterministic - an input will *always* give the same output. They can be represented in code (*High-Level*) or machine instructions (*System-Level*):
 
 ```
 x = 1;		//P
@@ -42,4 +43,4 @@ The above implies the following:
 	- System-level sequence:
 		- $P1 \to Q1 \to Q2 \to Q3 \to R1 \to R2 \to R3$ 
 
-There is no overlap in statement execution 
+### Concurrent Program Execution
