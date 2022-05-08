@@ -26,7 +26,7 @@
 ## Scheduling Policies and Algorithms
 
 Two policy types:
-- **Non-preemptive**
+- **Non-Preemptive**
 	- Processes run until complete, or **[[Processes#^1436ce|BLOCKED]]** 
 - **Preemptive**
 	- Processes interrupted and replaced by others
@@ -35,5 +35,8 @@ Two policy types:
 *Six* major policies covered:
 
 ### Non-Preemptive Algorithms
+
 - [[First Come, First Serve (FCFS) or First In, First Out (FIFO)]]
 - [[Shortest Job First (SJF)]]
+
+### Preemptive Algorithms
