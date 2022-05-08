@@ -20,4 +20,4 @@ A *critical section* is a [[Processes|process]] in code that involves *sensitive
 
 ## Race Condition
 
-A race condition occurs when competition occurs on *resources* within *critical sections.*23
+A race condition occurs when competition occurs on *resources* within *critical sections.* They
