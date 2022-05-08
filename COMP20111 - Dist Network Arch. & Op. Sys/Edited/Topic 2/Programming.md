@@ -1,3 +1,4 @@
+#comp20111-dnaos/topic-2
 # Programming
 
 ## Sequential Programming
@@ -8,7 +9,8 @@
 
 ## Concurrent Programming
 
-- Making programming with *concurrent* language
+- Making [[Program|program]] with *concurrent* language
 	- Takes advantage of multiple [[Threads|threads]] 
-		- Allows *parallel computations*
-		- [[^si]]
+		- Allows [[Concurrency#^d2d18d|parallel]]  computations/activity control
+
+- Can run on systems with single *or* multiple CPUs
