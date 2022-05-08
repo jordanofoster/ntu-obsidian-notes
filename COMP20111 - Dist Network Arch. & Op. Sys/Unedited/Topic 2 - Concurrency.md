@@ -383,7 +383,7 @@ Threads in a system behave in two ways dependant on situation:
 OSes themselves contain threads which are constantly doing both. inter-process synchronisation acts as a solution that allows threads and processes to **share resources.**
 
 #### Critical Section and Mutual Exclusion
-A **critical section** in code is a process that involves either **sensitive operations** or a **shared resource.**
+A **critical section** in code is a process that involves either **sensitive operations** on a **shared resource.**
 
 Competition for resources in these sections are referred to as **race conditions.** These are **unstable and therefore undesirable!** As a general rule, critical sections should only be enterable by **one thread at a time.** this is guaranteed through a process known as **mutual exclusion** - and is a major design issue in OSes.
 

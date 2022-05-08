@@ -11,4 +11,9 @@ Inter-process synchronization allows [[Threads|threads]] and [[Processes|process
 
 ## Critical Sections and Mutual Exclusion
 
-A *critical section* is a [[Processes|process]] in code that involves *sensitive operations* on a 
+A *critical section* is a [[Processes|process]] in code that involves *sensitive operations* on a *shared resource.*
+
+- Competition on *resources* within *critical sections* are referred to as *race conditions* 
+	- These are **unstable and undesirable.** 
+		- To fix this, only one [[Threads|thread]] should be able to enter a section at a time.
+			- This is guaranteed 
