@@ -1,3 +1,4 @@
+#comp20111-dnaos/topic-2 
 # Shared Resources
 
 ## Semaphores
@@ -20,4 +21,4 @@ Signal(S) {
 }
 ```
 
-Both 
+*Wait* and *Signal* allow a [[Scheduling#Context Switching|context switch]] - the processor can be switched from a **[[Processes#^1436ce|BLOCKED]]** [[Processes|process]]/[[Threads|thread]] to another process/thread.
