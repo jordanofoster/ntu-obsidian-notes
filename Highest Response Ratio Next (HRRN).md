@@ -1,7 +1,7 @@
 # Highest Response Ratio Next (HRRN)
 
 *Derived* from [[Shortest Job First (SJF)]] - attempts to *reduce long job starvation*
-- Jobs assigned [[Scheduling#^be213a|priorities]] based on:
+- Jobs assigned [[Scheduling#Prioritization Metrics|priorities]] based on:
 	- [[Memory]]
 	- [[Time]]
 	- Other requirements

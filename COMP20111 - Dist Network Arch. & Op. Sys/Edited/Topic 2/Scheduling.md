@@ -34,14 +34,12 @@ Two policy types:
 	- Processes interrupted and replaced by others
 		- Generally on a [[Interrupts#^46cbff|timer]].
 
-*Six* major policies covered:
-
-### Non-Preemptive Algorithms
+### [[Non-Preemptive Algorithms]]
 
 - [[First Come, First Serve (FCFS) or First In, First Out (FIFO)]]
 - [[Shortest Job First (SJF)]]
 
-### Preemptive Algorithms
+### Pre-emptive Algorithms
 
 - [[Shortest Remaining Time (SRT)]]
 - [[Highest Response Ratio Next (HRRN)]]
