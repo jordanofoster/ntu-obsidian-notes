@@ -1,4 +1,5 @@
-## Race Condition
+#comp20111-dnaos/topic-2 
+# Race Conditions
 
 A *race condition* occurs when competition occurs on *resources* within *critical sections.* They are generally **unstable and undesirable.**
 
@@ -23,10 +24,11 @@ Here, two [[Threads|threads]] are competing for access to the [[I/O|print spoole
 ![[RaceConditonsExample2.jpg]]
 
 An example race condition is as follows:
+
 1) The next available job slot is `7`.
 2) $A$ and $B$ access `7` *simultaneously.*
 3) $A$ attempts to read `7`...
-	- But a [[Interrupts#^46cbff|timer Interrupt]] occurs before $A$ writes anything.
+	- But a [[Interrupts#^46cbff|timer Interrupt]] occurs before $A$ can write anything.
 4) The CPU switches to $B$.
 5) $B$ reads `7` :
 	- $B$ stores a Job at `7`, incrementing necessary values.
