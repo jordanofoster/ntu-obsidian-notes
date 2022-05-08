@@ -1,3 +1,10 @@
 # Highest Response Ratio Next (HRRN)
 
-*Derived* from [[Shortest Job First (SJF)]] - attempts to *reduce lomng
+*Derived* from [[Shortest Job First (SJF)]] - attempts to *reduce long job starvation*
+- Jobs assigned [[Scheduling#^be213a|priorities]] based on:
+	- [[Memory]]
+	- [[Time]]
+	- Other requirements
+		- $(\text{waiting time} + \text{run time}) / \text{run time}$
+- **Highest** priority (*Response Ratio*) first
+- Priorities change when *new jobs added*

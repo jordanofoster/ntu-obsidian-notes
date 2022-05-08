@@ -14,6 +14,8 @@
 
 ## Prioritization Metrics
 
+^be213a
+
 - Scheduling involves determination of *optimal order/timing* when assigning *execution time* to processes.
 - Various metrics:
 	- **CPU utilisation** ^c89b45
