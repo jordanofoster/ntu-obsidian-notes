@@ -14,3 +14,8 @@
 		- Allows [[Concurrency#^d2d18d|parallel]]  computations/activity control
 
 - Can run on systems with single *or* multiple CPUs
+	- Single - *multitasking*
+	- Multiple - *true parallelism*
+
+- Requires support from *both* language and OS
+	- Not a problem nowadays
