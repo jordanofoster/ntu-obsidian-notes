@@ -17,7 +17,7 @@ There is only ever *one possible execution sequence.* For example:
 	- Executes in order of definition: $P \to Q \to R$
 		- This is *total ordering.*
 
-Sequential programs are deterministic - an input will *always* give the same output. ^ee72a7
+Sequential programs are *deterministic* - an input will *always* give the same output. ^ee72a7
 
 They can be represented in code (*High-Level*) or machine instructions (*System-Level*):
 
@@ -47,6 +47,6 @@ The above implies the following:
 
 ### Concurrent Program Execution
 
-There are a number of issues to be aware of in concurrent execution:
+Concurrent execution is *non-deterministic*. As a result, there are a number of issues to be aware of:
 - [[Interleaving]]
-- [[Thread Interferenc]]
+- [[Race Conditions]]
