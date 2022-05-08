@@ -18,4 +18,7 @@ A *critical section* is a [[Processes|process]] in code that involves *sensitive
 
 ## Mutual Exclusion
 
-*Mutual Exclusion* is assured when *no two [[Processes|processes]]* are simultaneously inside their own [[Inter-Process Synchronization#Critical Sections|critical regions]]. 
+*Mutual Exclusion* is assured when *no two [[Processes|processes]]* are simultaneously inside their own [[Inter-Process Synchronization#Critical Sections|critical sections]]. The following must be observed to do so:
+1) *No assumptions* are made about the *number of threads,* or their *speed*
+2) No process/thread *outside* its [[Inter-Process Synchronization#Critical Sections|critical section]] can **[[Processes#^1436ce|BLOCK]]** other *processes*
+3) No process needs to [[Deadlocks|wait forever]] to *enter* its [[Inter-Process Synchronization#Critical Sections|critical section]].
