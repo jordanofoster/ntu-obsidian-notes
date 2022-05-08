@@ -9,14 +9,13 @@ OSes contains threads that do both.
 
 Inter-process synchronization allows [[Threads|threads]] and [[Processes|processes]] to share resources.
 
-## Critical Sections and Mutual Exclusion
+## Critical Sections
 
 A *critical section* is a [[Processes|process]] in code that involves *sensitive operations* on a *shared resource.* Competition in them cause *[[Inter-Process Synchronization#Race Condition|race conditions]]*.
 	- These are **unstable and undesirable.** 
 		- To fix this, only one [[Threads|thread]] should be able to enter a section at a time.
 			- This is achieved through *Mutual Exclusion.*
 
-[[Race Conditions]]
+## Mutual Exclusion
 
-### Example 1: Racing for Memory Access
-
+*Mutual Exclusion* is assured when *no two [[Processes|processes]]* are simultaneously inside their own [[Inter-Process Synchronization#Critical Sections|critical regions]]. 
