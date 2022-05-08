@@ -25,3 +25,14 @@ But differences too:
 
 Multiple threads share [[Address spaces|address space]], in contrast to [[Processes#^dfcfe2|processes]].
 
+## User Threads
+
+- Typically created/managed by *user-level library* - typically *without kernel knowledge*
+	- Fast to create/manage
+	- Portable to any OS
+- If *one thread* is blocked, all are.
+
+## Kernel Threads
+
+- Directly managed/supported by kernel
+- Have inverse properties of [[Threads#User Threads]]:
