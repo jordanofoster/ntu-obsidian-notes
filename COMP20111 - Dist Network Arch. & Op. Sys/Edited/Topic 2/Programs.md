@@ -1,5 +1,5 @@
 #comp20111-dnaos/topic-2
-# Program
+# Programs
 
 - A program *is compiled binary* of source-code.
 - Several [[Processes|processes]] can be derived from the same program.
@@ -45,4 +45,6 @@ The above implies the following:
 
 ### Concurrent Program Execution
 
-With 
+There are a number of issues to be aware of in concurrent execution:
+- [[Interleaving]]
+- [[Thread Interference]]

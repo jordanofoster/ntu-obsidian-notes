@@ -3,13 +3,13 @@
 
 ## Sequential Programming
 
-- Making a [[Program|program]] using a *sequential* language
+- Making a [[Programs|program]] using a *sequential* language
 	- Statements executed *in order* on *single* CPU
 		- Hence, single [[Threads|thread]] of control
 
 ## Concurrent Programming
 
-- Making [[Program|program]] with *concurrent* language
+- Making [[Programs|program]] with *concurrent* language
 	- Takes advantage of multiple [[Threads|threads]] 
 		- Allows [[Concurrency#^d2d18d|parallel]]  computations/activity control
 
