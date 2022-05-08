@@ -30,9 +30,13 @@ Multiple threads share [[Address spaces|address space]], in contrast to [[Proces
 - Typically created/managed by *user-level library* - typically *without kernel knowledge*
 	- Fast to create/manage
 	- Portable to any OS
-- If *one thread* is blocked, all are.
+- If *one thread* is blocked, all are. ^5bfc61
 
 ## Kernel Threads
 
 - Directly managed/supported by kernel
-- Have inverse properties of [[Threads#User Threads]]:
+- Have inverse properties of [[Threads#User Threads|user threads]]:
+	- Slower to create/manage
+	- OS-specific
+	- Threads are treated independently ([[Threads#^5bfc61|unlike user threads]])
+-  Allows parallelism on *multiple CPUs*
