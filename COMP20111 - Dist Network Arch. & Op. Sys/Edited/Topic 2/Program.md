@@ -27,4 +27,6 @@ x = y+2;	//R
 ```
 
 1) $P$ is a singular instruction:
-	1) Store `1` at  
+	1) Store `1` at address of `x`
+2) $Q$ is broken down into 3:
+	1) Load `y` into  
