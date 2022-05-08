@@ -1,6 +1,8 @@
 # Processes
 
 - Processes are running instances of a [[Program|program]].
+	- A single *flow of control* with a start and end. ^49d2fc
+		- Only one *point of execution* at a given time.
 - Each process has its own [[Address spaces|address space]].
 - Each process has a *Process Identification Number* (PID). ^a534ab
 
