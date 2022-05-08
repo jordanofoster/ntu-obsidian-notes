@@ -18,7 +18,7 @@ There are two methods:
 - Process tables keep track of [[Processes#^a534ab|PIDs]].
 - Each process in the table has a *Process Control Block* (PCB).
 	- These hold *Process Descriptors*:
-		> ![[Process Descriptors.png]]
+		> ![[Process Descriptors.png]] ^7a999f
 
 ## Process States
 
