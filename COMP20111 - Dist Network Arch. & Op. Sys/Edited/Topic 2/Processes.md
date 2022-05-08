@@ -7,6 +7,7 @@
 - Each process has its own [[Address spaces|address space]].
 - Each process has a *Process Identification Number* (PID). ^a534ab
 
+Multiple processes share [[Resources]]. ^dfcfe2
 ## Process Creation
 
 There are two methods:
