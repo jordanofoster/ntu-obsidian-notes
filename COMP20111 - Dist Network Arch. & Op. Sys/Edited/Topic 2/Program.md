@@ -29,4 +29,11 @@ x = y+2;	//R
 1) $P$ is a singular instruction:
 	1) Store `1` at address of `x`
 2) $Q$ is broken down into 3:
-	1) Load `y` into  
+	1) Load value `x` into CPU register
+	2) Increment register by `1`
+	3) Store result at address of `y`
+4) $R$ is broken down into 3:
+	1) Load value `y` into CPU register
+	2) Increment register by `2`
+	3) Store result at address of `x`
+
