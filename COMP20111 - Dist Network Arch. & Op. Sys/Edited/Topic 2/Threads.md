@@ -34,5 +34,5 @@ Multiple threads share [[Address spaces|address space]], in contrast to [[Proces
 - Have inverse properties of [[Threads#User Threads|user threads]]:
 	- Slower to create/manage
 	- OS-specific
-	- Threads are treated independently ([[Threads#^5bfc61|unlike user threads]])
+	- Threads are treated independently ([[Threads#^5bfc61|unlike user threads]]) ^efd154
 -  Allows parallelism on *multiple CPUs*

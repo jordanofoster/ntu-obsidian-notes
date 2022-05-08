@@ -13,4 +13,13 @@ This refers to mapping a [[Threads#User Threads|user thread]] to a [[Threads#Ker
 #### Many-To-One
 
 - All [[Threads#User Threads|user threads]] in a [[Processes|process]] are mapped to *one* [[Threads#Kernel Threads|kernel thread]].
-	- M
+	- More portable (*fewer system dependencies*)
+	- *No* [[Programs#Concurrent Program Execution|concurrent execution]] of threads.
+	- blocking issues, [[Threads#^5bfc61|like in user threads]].
+
+#### One-To-One
+
+- Each [[Threads#User Threads|user thread]] maps to *one* [[Threads#Kernel Threads|kernel thread]].
+	- [[Programs#Concurrent Program Execution|Concurrent execution]] possible
+		- Due to [[Threads#^efd154|independent threads]]
+		- 
