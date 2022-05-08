@@ -1,3 +1,4 @@
+#comp20111-dnaos/topic-2
 # Interrupts
 
 Signals sent to CPU that require **immediate attention.** indicates hardware/software event. Construct that allows [[Concurrency|multitasking]] to occur.
