@@ -7,4 +7,8 @@
 	- This is known as *multithreading*
 		- Generally improves application performance
 
-New threads are stored in a [[Processes#Process Tables|Thread Control Block (TCB)]] upon crea
+New threads are stored in a [[Processes#Process Tables|Thread Control Block (TCB)]] upon creation. They share other similarities with processes:
+- [[Processes#^49d2fc|Flow of Control]]
+- Single [[Processes#^26a0a7|Point of Control]]
+- [[Processes#Process States|States]]
+- [[Scheduling#Context Switching|Context Switching]] 

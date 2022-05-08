@@ -5,6 +5,8 @@
 
 ## Context Switching
 
+Context switching can be performed on both [[Processes|processes]] and [[Threads|threads]].
+
 - If current process *not* highest priority:
 	1) **Save** process [[Processes#Process States|state]] in [[Processes#Process Tables|table]]
 	2) **Retrieve** state of new highest-priority process
