@@ -16,9 +16,7 @@ A *critical section* is a [[Processes|process]] in code that involves *sensitive
 		- To fix this, only one [[Threads|thread]] should be able to enter a section at a time.
 			- This is achieved through *Mutual Exclusion.*
 
-## Race Condition
-
-A race condition occurs when competition occurs on *resources* within *critical sections.* They are generally **unstable and undesirable** and a form of *[[Thread Interference|thread interference]]*.
+[[Race Conditions]]
 
 ### Example 1: Racing for Memory Access
 

@@ -49,4 +49,4 @@ The above implies the following:
 
 There are a number of issues to be aware of in concurrent execution:
 - [[Interleaving]]
-- [[Thread Interference]]
+- [[Thread Interferenc]]

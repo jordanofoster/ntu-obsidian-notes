@@ -1,7 +1,7 @@
 #comp20111-dnaos/topic-2 
 # Thread Interference
 
-[[Programs#Concurrent Program Execution|Concurrent execution]] is *non-deterministic* - as opposed to [[Programs#^ee72a7|sequential execution]]. An example has a high-level program spawn threads `t1` and `t2`, that both manipulate the same variable, as shown below:
+ An example has a high-level program spawn threads `t1` and `t2`, that both manipulate the same variable, as shown below:
 
 ![[RaceConditionsExample1.png]]
 
