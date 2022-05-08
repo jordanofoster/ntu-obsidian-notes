@@ -32,4 +32,5 @@ This refers to mapping a [[Threads#User Threads|user thread]] to a [[Threads#Ker
 - [[Threads#User Threads|User threads]] are *multiplexed* to an *equal or smaller* number of [[Threads#Kernel Threads|kernel threads]].
 	- Takes advantage of *multiple CPUs*
 	- No [[Spawning+Forking|Spawning/Forking]] limits
-	- [[]]
+	- No [[Threads#^5bfc61|blocking issues]]
+	- *Difficult to implement* - complex design. 
