@@ -1,11 +1,7 @@
 #comp20111-dnaos/topic-2
 # Threads
 
-Threads are *independent* execution paths/sequences within a [[Processes|process]].
- 
-- Parts of *some* processes can be *parallelised* for efficiency/usability
-	- This is known as *multithreading*
-		- Generally improves application performance
+Threads are *independent* execution paths/sequences within a [[Processes|process]], and are a key construct in [[Multithreading|multithreaded]] [[Programs|applications]]. 
 
 New threads are stored in a [[Processes#Process Tables|Thread Control Block (TCB)]] upon creation. They share other similarities with processes:
 - [[Processes#^49d2fc|Flow of Control]]
