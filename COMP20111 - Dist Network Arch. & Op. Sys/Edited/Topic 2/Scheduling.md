@@ -33,3 +33,19 @@ Two policy types:
 - **[[Preemptive Algorithms]]**
 	- Processes interrupted and replaced by others
 		- Generally on a [[Interrupts#^46cbff|timer]].
+
+# Scheduling in Distributed Systems
+
+Scheduling in distributed systems is a problem of *routing* - and ensuring that no nodes are *over/underloaded.*
+
+There are a number of methods:
+- [[Round Robin (RR)]]
+- [[Weighted Round Robin (WRR)]]
+- [[Sender/Receiver Initiated]]
+- [[Least Connection/Least Loaded (LC/LL)]]
+- [[Min-min]]
+- [[Max-min]]
+- [[Opportunistic Load Balancing]]
+- [[Equally Spread Current Execution (ESCE)]]
+- [[Throttled Load Balancing]]
+- [[Ant Colony Optimisation]]
