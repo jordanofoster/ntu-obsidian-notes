@@ -21,4 +21,12 @@ This can occur as follows, using our [[The Producer-Consumer Problem#^445f51|pre
 1) A consumer reads `itemCount = 0`, and therefore calls `sleep(consumer)`.
 2) Just before calling `sleep()`, the consumer is [[Interrupts#^46cbff|interrupted]]; the *producer* wakes.
 3) The producer adds an item to the buffer.
-	- `itemCount = 1` now
+	- Now, `itemCount = 1`
+4) Producer tries to call `wakeup(consumer)`
+	- Consumer is already awake - call is missed.
+5) Consumer resumes and calls `sleep(consumer)` as it was about to do.
+6) Producer continues to add items to the buffer.
+	- No consumer to take them, so it becomes full!
+	- Producer calls `sleep(producer)` when this happens.
+7) Both *consumer* and *producer* are asleep, and waiting to be awoken by the other.
+	- No progress can be made; **[[Deadlocks|deadlock]]** occurs.
