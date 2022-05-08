@@ -37,3 +37,9 @@ x = y+2;	//R
 	2) Increment register by `2`
 	3) Store result at address of `x`
 
+The above implies the following:
+- As $P \to Q \to R$
+	- System-level sequence:
+		- $P1 \to Q1 \to Q2 \to Q3 \to R1 \to R2 \to R3$ 
+
+There is no overlap in statement execution 
