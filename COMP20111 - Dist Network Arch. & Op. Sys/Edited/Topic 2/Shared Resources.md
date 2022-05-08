@@ -6,4 +6,6 @@ Semaphores are *data structures* that allow [[Inter-Process Synchronization#Mutu
 
 ### Example:
 
-Semaphore $S$ is an integer that only takes *non-negative* values
+Semaphore $S$ is an integer that only takes *non-negative* values. Only two indivisible operations on $S$ are allowed:
+- `Wait(S)` - on the *non-critical* section
+- `Signal(S)` - on the *[[Inter-Process Synchronization#Critical Sections|critical section]]* 
