@@ -3,8 +3,8 @@
 An *interleaving* is a *unique* sequence of [[Programs#Program Execution|statement executions]], in the context of several [[Concurrency|concurrent]] [[Threads|threads]] causing an unpredictable execution order. 
 
 The number of possible interleavings for a for a set of processes can be calculated using:
-$$\frac{(n_1, n_2...+m_1, m_2...)!}{n_1!m_1 + n_2!m_2...}$$
-where $n$ is the *number of instructions*
+$$\frac{(n_1 + n_2 + ... + n_i)!}{n_1!n_2!\times{...}\times{n_i!}}$$
+where $n$ is the number of *atomic instructions* 
 An example shows 10 different [[Threads|threads]], causing 10 interleavings:
 
 ![[Interleaving.png]]
