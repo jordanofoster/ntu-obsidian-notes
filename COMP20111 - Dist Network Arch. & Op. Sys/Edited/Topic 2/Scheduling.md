@@ -1,7 +1,7 @@
 # Scheduling
 
 - Schedulers decide which [[Processes|processes]] should be worked on next by the CPU.
-- Changes made via a *[[Scheduling#Context Switch|context switch]]*
+- Changes made via a *[[Scheduling#Context Switching|context switch]].*
 
 ## Context Switching
 
