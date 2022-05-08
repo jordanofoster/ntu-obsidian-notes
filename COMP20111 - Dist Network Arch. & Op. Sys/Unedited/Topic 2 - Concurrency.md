@@ -446,7 +446,7 @@ This describes a programming issue where a producer repeatedly produces items, p
 - The consumer can consume an item from the buffer **only if it is not empty**
 - The program terminates when all items produced are eventually consumed.
 
-##### The naive solution
+##### The naïve solution
 
 The number of items can be kept track of through use of interleaving:
 
