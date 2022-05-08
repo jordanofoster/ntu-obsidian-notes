@@ -23,7 +23,7 @@ Multiple threads share [[Address spaces|address space]], in contrast to [[Proces
 
 ## User Threads
 
-- Typically created/managed by *user-level library* - typically *without kernel knowledge*
+- Typically created/managed by *user-level library* *without kernel knowledge*
 	- Fast to create/manage
 	- Portable to any OS
 - If *one thread* is blocked, all are. ^5bfc61
