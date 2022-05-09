@@ -14,4 +14,18 @@
 
 - Below shows two sectors on a portion of a *disk track:*
 	>![[MagDiskSector.png]]
-- The *preamble* sets up a sector 
+- The *preamble* is used to set up a sector and to synchronize the read/write head.
+	- For sectors, formatting a disk sets the preamble to contain cylinder/sector numbers.
+- *Error Correcting Code* (ECC) also exists to check data for errors.
+
+### Image Comparing HDDs and SSDs
+
+![[HDDSSDComparison.png]]
+
+## Flash ROM
+
+![[FlashROMDiagram.png]]
+
+This is used in the *system boot* process when powering on the PC:
+1) BIOS initializes registers, power management system
+2) BIOS per
