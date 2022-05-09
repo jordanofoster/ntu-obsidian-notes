@@ -23,7 +23,15 @@ These are sets of *address locations* that reference specific parts of physical 
 
 *Logical* address spaces have programmers refer to their *own* address space; the issue being how we differentiate between the same *logical* address on separate [[Processes|processes]] (as each maps to a *unique* physical address).
 
-[[Programs]] are *loaded*
+A *loader* performs *[[Processes|process]] loading* - moving data to [[Volatile Memory|main memory]] for execution. Some issues arise:
+1) We don't know *where* a loaded [[Processes|process]] *is* in [[Volatile Memory|main memory]].
+2) Code *cannot* refer to *fixed memory addresses*
+	- This is *sometimes* desirable
+3) Machine instructions *should not* be able to directly access *physical* address spaces.
+
+Our solution is to map our *logical* addresses to *physical* addresses. The *Memory Management Unit* (MMU) handles this using registers to map partitions.
+
+#### M
 ## Memory Without Abstraction
 
 >![[NonAbstractionDiagram.png]]
