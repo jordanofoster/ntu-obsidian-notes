@@ -13,7 +13,7 @@ Multiple processes share [[Resources]]. ^dfcfe2
 
 There are two methods:
 - Via **explicit** execution by user
-- Via [[Spawning+Forking|Spawning/Forking.]]
+- Via [[Spawning and Forking|Spawning/Forking.]]
 
 ## Process Tables
 

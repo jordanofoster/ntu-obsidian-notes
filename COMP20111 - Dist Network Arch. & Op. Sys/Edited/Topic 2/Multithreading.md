@@ -24,13 +24,13 @@ This refers to mapping a [[Threads#User Threads|user thread]] to a [[Threads#Ker
 	- Better *Multi-CPU* performance
 	- Heavy management *overhead*
 		- Kernel manages *every* [[Threads#User Threads|user thread]]
-	- Thread [[Spawning+Forking|Spawning/Forking]] limits
+	- Thread [[Spawning and Forking|Spawning/Forking]] limits
 	- Requires kernel support
 
 #### Many-To-Many
 
 - [[Threads#User Threads|User threads]] are *multiplexed* to an *equal or smaller* number of [[Threads#Kernel Threads|kernel threads]].
 	- Takes advantage of *multiple CPUs*
-	- No [[Spawning+Forking|Spawning/Forking]] limits
+	- No [[Spawning and Forking|Spawning/Forking]] limits
 	- No [[Threads#^5bfc61|blocking issues]]
 	- *Difficult to implement* - complex design. 
