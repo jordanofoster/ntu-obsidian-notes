@@ -11,7 +11,7 @@ New threads are stored in a [[Processes#Process Tables|Thread Control Block (TCB
 - [[Spawning and Forking|Spawning/Forking]]
 
 But differences too:
-- Only existent *within* a [[Processes|process]]
+- Only existent *within* a [[Processes|process]] ^b4cb70
 	- [[Spawning and Forking|created/controlled]] by an existing process
 - Share [[Address spaces|address space]] with parent
 	- Creating/[[Scheduling#Context Switching|Switching]] is *inexpensive* as a result.
