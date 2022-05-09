@@ -87,3 +87,33 @@ When our semaphores are used correctly, $N =$ `SpacesLeft` $+$ `ItemsReady`.
 ![[MultiProcConsumeProb.png]]
 
 Our [[The Producer-Consumer Problem#Solving The Producer-Consumer Problem using Shared Resources Semaphores Semaphores|prior solution]] only works well when a *single* producer-consumer pair is present. With more, we once again get [[Race Conditions|race conditions]].
+
+## Solving [[The Producer-Consumer Problem#Multiple Producers-Consumers Problem|The Multiple Producers-Consumers Problem]] using [[Shared Resources#Semaphores|Semaphores]]
+
+To ensure [[Inter-Process Synchronization#Mutual Exclusion|mutual exclusion]] across multiple producers and consumers, we include a *mutex/binary* [[Shared Resources#Semaphores|semaphore]] - that can only be released by its *owner.*
+
+```
+Producer Class:
+
+loop {
+	Produce item i
+	Wait(SpacesLeft)
+	Wait(BusyBuffer) //mutex
+	Put item i
+	Signal(BusyBuffer)
+	Signal(ItemsReady)
+	}
+	
+Consumer Class:
+
+loop {
+	Wait(ItemsReady)
+	Wait(BusyBuffer) //mutex
+	Get item i
+	Signal(BusyBuffer)
+	Signal(SpacesLeft)
+	Consume item i
+	}
+```
+
+Here, `BusyBuffer`
