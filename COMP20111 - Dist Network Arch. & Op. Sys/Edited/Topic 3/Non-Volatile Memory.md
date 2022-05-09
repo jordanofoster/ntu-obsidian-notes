@@ -28,4 +28,12 @@
 
 This is used in the *system boot* process when powering on the PC:
 1) BIOS initializes registers, power management system
-2) BIOS per
+2) BIOS performs following:
+	1) *Power-on Safe-test* - POST
+		- A form of self-diagnostics.
+	2) Boots BIOS of all subsidiary boards
+	3) Initiates comms with basic peripherals.
+3) BIOS begins bootstrapping sequence:
+	1) Copies *[secondary bootloader](https://en.wikipedia.org/wiki/Bootloader#Second-stage_boot_loader)* to [[Volatile Memory#Random Access Memory RAM|RAM]]
+	2) Bootloader waits on user choice
+	3) Bootloader puts chosen OS in RAM, relinquishes control.
