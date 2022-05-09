@@ -44,3 +44,20 @@ With this method, no chopstick is ever held by two philosophers. A [[Deadlocks|d
 5. Phil 4 takes `chopstick[left]`
 
 A [[Deadlocks#^5cb177|circular wait]] has occurred; with this, all *four* conditions are held, causing our [[Deadlocks#Deadlocks|deadlock]].
+
+Our solution is the [[The Producer-Consumer Problem#^e0635b|same]] as with *[[The Producer-Consumer Problem#Multiple Producers-Consumers Problem|The Multiple Producers-Consumers Problem]]* - we use a *mutex* [[Shared Resources#Semaphores|semaphore]]:
+
+```
+Philosopher Class (int i):
+	loop {
+		think();
+		wait(busy); //mutex
+		wait(chopstick[left]); //take left
+		wait(chopstick[right]); //take right
+		eat();
+		signal(chopstick[left]); //release left
+		signal(chopstick[right]); //release right
+		signal(busy); //release mutex
+	}
+```
+

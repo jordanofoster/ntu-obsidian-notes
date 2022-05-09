@@ -90,7 +90,7 @@ Our [[The Producer-Consumer Problem#Solving The Producer-Consumer Problem using 
 
 ## Solving [[The Producer-Consumer Problem#Multiple Producers-Consumers Problem|The Multiple Producers-Consumers Problem]] using [[Shared Resources#Semaphores|Semaphores]]
 
-To ensure [[Inter-Process Synchronization#Mutual Exclusion|mutual exclusion]] across multiple producers and consumers, we include a *mutex/binary* [[Shared Resources#Semaphores|semaphore]] - that can only be released by its *owner.*
+To ensure [[Inter-Process Synchronization#Mutual Exclusion|mutual exclusion]] across multiple producers and consumers, we include a *mutex/binary* [[Shared Resources#Semaphores|semaphore]] - that can only be released by its *owner.* ^e0635b
 
 ```
 Producer Class:
