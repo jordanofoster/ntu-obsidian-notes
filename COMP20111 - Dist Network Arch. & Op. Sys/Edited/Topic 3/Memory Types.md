@@ -28,3 +28,12 @@ There are two types of register; *generic* and *specialised.*
 	- Typically named as such - e.g. *program counter*
 
 ### Cache Memory
+![[CacheDiagram.png]]
+
+- Small, slower than [[Memory Types#Processor Registers|registers]] but still fast
+- Used to *reduce* average time/energy cost to access data from [[[Memory Types#Random Access Memory (RAM)|RAM]]
+- Resides within CPU
+	- Acts as intermediary between [[Memory Types#Processor Registers|registers]] and [[[Memory Types#Random Access Memory (RAM)|RAM]]
+	- Modern CPUs have a *sub-hierarchy* of *Cache Levels*
+		- Fastest-to-slowest, Lowest-to-highest
+			- e.g. L1, L2, L3, L4 etc.
