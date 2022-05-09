@@ -15,10 +15,14 @@ When *logical* addresses are referenced, the Base Register performs the followin
 
 ## Memory Protection & Relocation
 
-The value of the *Base Register* is added to the *logical* address, mapping to a *physical* address. This process is known as *Relocation.* ^615611
-
-Logical addresses greater than the *Limit Register* are *invalid.* This acts as a form of *Memory Protection.*
-
-![[MemProcReloc.png]]
+- The value of the *Base Register* is added to the *logical* address, mapping to a *physical* address. This process is known as *Relocation.* ^615611
+	- Logical addresses greater than the *Limit Register* are *invalid.* This acts as a form of *Memory Protection.*
 
 The *address* component of a machine instruction acts as an offset for the *base* address. To demonstrate:
+
+> ![[MemProcReloc.png]]
+
+1) Base address is `101`.
+2) Instruction is `JMP 5`.
+3) $101 + 5 = 106 
+   - $\therefore$ *logical* `JMP 5` $\rightarrow$ *physical* `JMP 106` 
