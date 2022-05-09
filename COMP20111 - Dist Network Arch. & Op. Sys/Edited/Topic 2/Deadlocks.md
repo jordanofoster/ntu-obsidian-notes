@@ -29,3 +29,15 @@ This can occur as follows, using our [[The Producer-Consumer Problem#^445f51|pre
 	- Producer calls `sleep(producer)` when this happens.
 7) Both *consumer* and *producer* are asleep, and waiting to be awoken by the other.
 	- No progress can be made; **[[Deadlocks|deadlock]]** occurs.
+
+## Example of a Deadlock in [[The Dining Philosopher's Problem]]
+
+A [[Deadlocks|deadlock]] can occur if *[[The Dining Philosopher's Problem#^a1b0b4|all five philosophers]]* want to *eat at once:*
+
+1) Phil 0 takes `chopstick[left]`
+2) Phil 1 takes `chopstick[left]`
+3) Phil 2 takes `chopstick[left]`
+4) Phil 3 takes `chopstick[left]`
+5) Phil 4 takes `chopstick[left]`
+
+A [[Deadlocks#^5cb177|circular wait]] has occurred; with this, [[Deadlocks#^35d28e]]all *four* conditions are held.

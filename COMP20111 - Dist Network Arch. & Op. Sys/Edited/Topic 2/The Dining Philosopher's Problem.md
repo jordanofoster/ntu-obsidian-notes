@@ -11,7 +11,7 @@
 
 ## Using [[Shared Resources#Semaphores|Semaphores]]
 
-![[DiningPhiloSemaphores.png]]
+![[DiningPhiloSemaphores.png]] ^a1b0b4
 
 Here, we each philosopher is modelled as a [[Threads|thread]] with a [[Processes#^a534ab|unique ID]] - there is one [[Shared Resources#Semaphores|Semaphore]] per *chopstick/fork*.
 
