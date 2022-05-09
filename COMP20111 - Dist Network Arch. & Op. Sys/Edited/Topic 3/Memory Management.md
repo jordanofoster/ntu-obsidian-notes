@@ -29,9 +29,8 @@ A *loader* performs *[[Processes|process]] loading* - moving data to [[Volatile 
 	- This is *sometimes* desirable
 3) Machine instructions *should not* be able to directly access *physical* address spaces.
 
-Our solution is to map our *logical* addresses to *physical* addresses. The *Memory Management Unit* (MMU) handles this using registers to map partitions.
+We solve this using an [[Memory Management Unit (MMU)|MMU]].
 
-#### M
 ## Memory Without Abstraction
 
 >![[NonAbstractionDiagram.png]]
