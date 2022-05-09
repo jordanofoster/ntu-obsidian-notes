@@ -10,11 +10,11 @@ Higher layers have the following properties:
 - Require more power
 	- Generate more heat
 - Expensive
-- [[Memory Types#Volatile|Volatile]]
+- [[Volatile Memory#Volatile|Volatile]]
 
 Lower layers have the following properties:
 - Higher *capacity*
 - Lower speeds
 - Cheap
-- [[Memory Types#Non-volatile|Non-volatile]]
+- [[Volatile Memory#Non-volatile|Non-volatile]]
 	- Only at lowest layers

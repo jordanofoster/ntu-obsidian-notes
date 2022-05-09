@@ -1,12 +1,10 @@
-# Memory Types
-
-## Volatile
+# Volatile Memory
 
 Volatile memory *does not* retain information after power loss. Examples include:
 
-- [[Memory Types#Processor Registers|Registers]]
-- [[Memory Types#Cache Memory|Cache]]
-- [[Memory Types#Random Access Memory RAM|RAM]]
+- [[Volatile Memory#Processor Registers|Registers]]
+- [[Volatile Memory#Cache Memory|Cache]]
+- [[Volatile Memory#Random Access Memory RAM|RAM]]
 
 ### Processor Registers
 
@@ -30,14 +28,17 @@ There are two types of register; *generic* and *specialised.*
 ### Cache Memory
 ![[CacheDiagram.png]]
 
-- Small, slower than [[Memory Types#Processor Registers|registers]] but still fast
-- Used to *reduce* average time/energy cost to access data from [[Memory Types#Random Access Memory RAM|RAM]] 
+- Small, slower than [[Volatile Memory#Processor Registers|registers]] but still fast
+- Used to *reduce* average time/energy cost to access data from [[Volatile Memory#Random Access Memory RAM|RAM]] 
 - Resides within CPU:
 	>![[CPU-ZExample.png]]
-- Acts as intermediary between [[Memory Types#Processor Registers|registers]] and [[[Memory Types#Random Access Memory (RAM)|RAM]]
+- Acts as intermediary between [[Volatile Memory#Processor Registers|registers]] and [[[Memory Types#Random Access Memory (RAM)|RAM]]
 	- Modern CPUs have a *sub-hierarchy* of *Cache Levels*
 		- Fastest-to-slowest, Lowest-to-highest
 			- e.g. L1, L2, L3, L4 etc.
 
 ### Random Access Memory (RAM)
 
+A diagram that connects RAM to CPU registers/cache is shown below:
+
+![[MainMemoryRAMDiagram.png]]
