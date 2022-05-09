@@ -81,3 +81,9 @@ loop {
 ```
 
 When our semaphores are used correctly, $N =$ `SpacesLeft` $+$ `ItemsReady`.
+
+# Multiple Producers-Consumers Problem
+
+![[MultiProcConsumeProb.png]]
+
+Our [[The Producer-Consumer Problem#Solving The Producer-Consumer Problem using Shared Resources Semaphores Semaphores|prior solution]] only works well when a *single* producer-consumer pair is present. With more, we once again get [[Race Conditions|race conditions]].
