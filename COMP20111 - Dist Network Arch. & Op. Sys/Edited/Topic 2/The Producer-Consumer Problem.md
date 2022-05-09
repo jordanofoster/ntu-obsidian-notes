@@ -53,3 +53,31 @@ loop {
 In this instance it can cause a [[Race Conditions|race condition]] - and could lead to a *[[Deadlocks|deadlock]]* - see below:
 
 ![[Deadlocks#Example of a Deadlock in The Producer-Consumer Problem]]
+
+## Solving [[The Producer-Consumer Problem]] using [[Shared Resources#Semaphores|Semaphores]]
+
+We do so with the following code:
+```
+ItemsReady = 0
+SpacesLeft = N // Size of Buffer
+
+Producer Class:
+
+loop {
+	Produce item i
+	Wait(SpacesLeft) //decrement
+	Put item i
+	Signal(ItemsReady) //increment
+	}
+
+Consumer Class:
+
+loop {
+	Wait(ItemsReady) //decrement
+	Get item i
+	Signal(SpacesLeft) //increment
+	Consume item i
+	}
+```
+
+When our semaphores are used correctly, $N =$ `SpacesLeft` $+$ `ItemsReady`.
