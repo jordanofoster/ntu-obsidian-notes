@@ -116,4 +116,6 @@ loop {
 	}
 ```
 
-Here, `BusyBuffer`
+Here, `BusyBuffer` has *ownership* - meaning that it can only be increased or decreased by the *same [[Processes|process]]*. It is initially set to 1. 
+
+Of importance is the *order* in which semaphores are *incremented/decremented* - this is essential.
