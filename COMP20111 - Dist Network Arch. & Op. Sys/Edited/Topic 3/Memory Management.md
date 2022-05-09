@@ -15,13 +15,24 @@ Therefore, we must use [[Memory Management]] for concurrent processes by taking 
 
 Similar to creating an [[Concurrency|abstract CPU that runs processes 'concurrently']], management systems provide *abstract memory* that allows the coexistence of [[Processes|processes]] inside [[Volatile Memory#Random Access Memory RAM|physical]] [[Non-Volatile Memory#Hard Drives|memory]].
 
+### Address Spaces
+
 ## Memory Without Abstraction
+
 >![[NonAbstractionDiagram.png]]
-- `c` is an example of the memory
+- *`c` is an example of the memory layout MS-DOS used for the OS component stored in the BIOS.*
 
 In early systems, every [[Programs|program]] could access physical memory. Programmers were given a direct set of addresses, with each corresponding to a fixed bit-length cell. There are obvious disadvantages:
 
 - *Impossible* to run *more than one program* [[Scheduling|at the same time]]
 	- When one program is loaded over another, instructions are overwritten.
 - [[Concurrency]] *is* possible with [[Threads|threads]]...
-	- But this only allows us to run *[[Threads#^b4cb70|related processes]]* 
+	- But this only allows us to run *[[Threads#^b4cb70|related processes]]*
+
+### Referencing Physical Memory
+
+- Within some OSes, memory can be addressed *directly*:
+>	![[ReferencingPhysMem.png]]
+
+- This can result in the OS being damaged accidentally or intentionally.
+- Additionally, it can be difficult to run multiple programs using [[Scheduling#Context Switching|context switches]].
