@@ -7,4 +7,3 @@
 	- Each philosopher requires *two forks* to *eat*
 	- No two philosophers can *share the same fork.*
 
-2
