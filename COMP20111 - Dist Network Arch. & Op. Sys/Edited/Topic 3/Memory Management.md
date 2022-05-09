@@ -17,6 +17,7 @@ Similar to creating an [[Concurrency|abstract CPU that runs processes 'concurren
 
 ### Address Spaces
 
+These are sets of *address locations* that reference specific parts of physical memory.
 ## Memory Without Abstraction
 
 >![[NonAbstractionDiagram.png]]
@@ -27,7 +28,7 @@ In early systems, every [[Programs|program]] could access physical memory. Progr
 - *Impossible* to run *more than one program* [[Scheduling|at the same time]]
 	- When one program is loaded over another, instructions are overwritten.
 - [[Concurrency]] *is* possible with [[Threads|threads]]...
-	- But this only allows us to run *[[Threads#^b4cb70|related processes]]*
+	- But this only allows us to run *[[Threads#^b4cb70|related processes]]*.
 
 ### Referencing Physical Memory
 

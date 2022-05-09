@@ -19,7 +19,7 @@ But differences too:
 	- But have their own private *Thread Descriptors* too:
 		> ![[ProcessThreadBlock.png]]
 
-Multiple threads share [[Address spaces|address space]], in contrast to [[Processes#^dfcfe2|processes]].
+Multiple threads share [[Memory Management#Address Spaces|address space]], in contrast to [[Processes#^dfcfe2|processes]].
 
 ## User Threads
 
