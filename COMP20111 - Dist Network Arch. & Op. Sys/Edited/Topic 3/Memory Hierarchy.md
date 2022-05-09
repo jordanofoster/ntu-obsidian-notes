@@ -2,7 +2,7 @@
 
 Systems typically have a hierarchical memory system. 
 
-![[MemoryHierarchyPyramid.png]]
+![[MemoryHierarchyPyramid.png]] 
 
 Higher layers have the following properties:
 - Higher speeds
