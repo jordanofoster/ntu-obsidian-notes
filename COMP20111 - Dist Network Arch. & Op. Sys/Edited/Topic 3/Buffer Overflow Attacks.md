@@ -16,4 +16,4 @@ position = 10000; //Position is byte 10,000
 buffer[position] = 0; //We try to write to byte 10,000 - outside buffer!
 ```
 
-In modern systems, various [[Memory Management Unit (MMU)#^4c942c|memory protection]] measures prevent this, however.
+In modern systems, various [[Memory Management Unit (MMU)#^4c942c|memory protection]] measures prevent this, but it still occurs in the wild - for example in [homebrew](https://en.wikipedia.org/wiki/Homebrew_(video_games)) communities, as seen with [NTRCardHax](https://courses.csail.mit.edu/6.857/2019/project/20-Chau-Ko-Tang.pdf) on the Nintendo 3DS.
