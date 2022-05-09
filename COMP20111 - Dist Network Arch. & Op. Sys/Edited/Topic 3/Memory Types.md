@@ -4,9 +4,9 @@
 
 Volatile memory *does not* retain information after power loss. Examples include:
 
-- [[Memory Types#Processor Registers]]
-- [[Memory Types#Cache Memory]]
-- [[[Memory Types#Random Access Memory (RAM)]]]
+- [[Memory Types#Processor Registers|Registers]]
+- [[Memory Types#Cache Memory|Cache]]
+- [[Memory Types#Random Access Memory RAM|RAM]]
 
 ### Processor Registers
 
@@ -31,7 +31,7 @@ There are two types of register; *generic* and *specialised.*
 ![[CacheDiagram.png]]
 
 - Small, slower than [[Memory Types#Processor Registers|registers]] but still fast
-- Used to *reduce* average time/energy cost to access data from [[[Memory Types#Random Access Memory (RAM)|RAM]]
+- Used to *reduce* average time/energy cost to access data from [[Memory Types#Random Access Memory RAM|RAM]] 
 - Resides within CPU:
 	>![[CPU-ZExample.png]]
 - Acts as intermediary between [[Memory Types#Processor Registers|registers]] and [[[Memory Types#Random Access Memory (RAM)|RAM]]
