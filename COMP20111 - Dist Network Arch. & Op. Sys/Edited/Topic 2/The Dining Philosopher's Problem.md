@@ -35,4 +35,12 @@ loop {
 }
 ```
 
-With this method, no chopstick is ever held by two philosophers. A [[Deadlocks|deadlock]] can still occur, however; *if all *
+With this method, no chopstick is ever held by two philosophers. A [[Deadlocks|deadlock]] can still occur, however, if *all five* philosophers want to eat *at the same time*:
+
+1. Phil 0 takes `chopstick[left]`
+2. Phil 1 takes `chopstick[left]`
+3. Phil 2 takes `chopstick[left]`
+4. Phil 3 takes `chopstick[left]`
+5. Phil 4 takes `chopstick[left]`
+
+A [[Deadlocks#^5cb177|circular wait]] has occurred; with this, all *four* conditions are held, causing our [[Deadlocks#Deadlocks|deadlock]].

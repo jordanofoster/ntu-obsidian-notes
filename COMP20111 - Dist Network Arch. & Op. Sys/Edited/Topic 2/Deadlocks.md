@@ -1,8 +1,6 @@
 # Deadlocks
 
-These occur when *two or more* [[Threads|threads]] are waiting upon each other. More accurately, four conditions must hold simultaneously:
-
-![[CircularWait.png]]
+These occur when *two or more* [[Threads|threads]] are waiting upon each other. More accurately, four conditions must hold simultaneously: ^35d28e
 
 1) **[[Inter-Process Synchronization#Mutual Exclusion|Mutual Exclusion]]** 
 	- The resource is assigned to *one* [[Processes|process]] at a time.
@@ -11,8 +9,9 @@ These occur when *two or more* [[Threads|threads]] are waiting upon each other. 
 3) **No Preemption** 
 	- Previously-locked resources cannot be forcefully unlocked by another [[Processes|process]]
 		- They must be *released* by the holding process.
-4) **Circular Wait**
+4) **Circular Wait** ^5cb177
 	- There must be a chain of processes - such that *each member* of a chain waits on a resource held by the *next member* in that chain. 
+	>![[CircularWait.png]]
 
 ## Example of a Deadlock in [[The Producer-Consumer Problem]]
 
