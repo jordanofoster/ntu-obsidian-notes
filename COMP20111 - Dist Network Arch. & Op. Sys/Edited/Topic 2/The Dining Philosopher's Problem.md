@@ -35,15 +35,10 @@ loop {
 }
 ```
 
-With this method, no chopstick is ever held by two philosophers. A [[Deadlocks|deadlock]] can still occur, however, if *all five* philosophers want to eat *at the same time*:
+With this method, no chopstick is ever held by two philosophers. A [[Deadlocks|deadlock]] can still occur, however:
 
-1. Phil 0 takes `chopstick[left]`
-2. Phil 1 takes `chopstick[left]`
-3. Phil 2 takes `chopstick[left]`
-4. Phil 3 takes `chopstick[left]`
-5. Phil 4 takes `chopstick[left]`
+![[Deadlocks#Example of a Deadlock in The Dining Philosopher's Problem]]
 
-A [[Deadlocks#^5cb177|circular wait]] has occurred; with this, all *four* conditions are held, causing our [[Deadlocks#Deadlocks|deadlock]].
 
 Our solution is the [[The Producer-Consumer Problem#^e0635b|same]] as with *[[The Producer-Consumer Problem#Multiple Producers-Consumers Problem|The Multiple Producers-Consumers Problem]]* - we use a *mutex* [[Shared Resources#Semaphores|semaphore]]:
 
