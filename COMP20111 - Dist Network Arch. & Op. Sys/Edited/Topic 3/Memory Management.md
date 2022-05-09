@@ -10,3 +10,6 @@ Therefore, we must use [[Memory Management]] for concurrent processes by taking 
 - Overall make memory addressing transparent through [[Memory Management#Memory Abstraction|abstraction]].
 
 ## Memory Abstraction
+![[AbstractionDiagram.png]]
+
+Similar to creating an [[Concurrency|abstract CPU that runs processes 'concurrently']], management systems provide *abstract memory* that allows the coexistence of [[Processes|processes]] inside [[[Memory Types#Random Access Memory (RAM)|physical]]
