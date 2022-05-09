@@ -21,4 +21,10 @@ There are two types of register; *generic* and *specialised.*
 
 ![[GenericSpecialisedRegisters.png]]
 
- Generic registers allow 
+ - *Generic Registers* are used to store *function* data:
+	 - *Parameters*
+	 - *Outputs*
+- *Specialised Registers* are for *specific purposes*
+	- Typically named as such - e.g. *program counter*
+
+### Cache Memory
