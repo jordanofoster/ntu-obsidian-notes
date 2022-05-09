@@ -4,4 +4,4 @@
 
 ![[MemMgmtDiagram.png]]
 
-Therefore, we must use [[Memory Management]] for concurrent processes by using [[Locality of Reference]] 
+Therefore, we must use [[Memory Management]] for concurrent processes by taking advantage of [[Locality of Reference]] 
