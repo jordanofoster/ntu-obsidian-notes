@@ -13,4 +13,8 @@ Volatile memory *does not* retain information after power loss. Examples include
 - Small and extremely fast
 - Reside within CPU
 	- Typically as single containers that hold one value
-- Typically referred to by name (i.e. identifying code)
+- Typically referred to by name rather than *address*
+- Used primary for *arithmetic operations*
+- Manipulated/tested by *machine instructions*
+
+There are two types of register; *generic* and *specialised.*
