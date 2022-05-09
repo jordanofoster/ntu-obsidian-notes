@@ -18,3 +18,7 @@ Volatile memory *does not* retain information after power loss. Examples include
 - Manipulated/tested by *machine instructions*
 
 There are two types of register; *generic* and *specialised.*
+
+![[GenericSpecialisedRegisters.png]]
+
+ Generic registers allow 
