@@ -18,6 +18,12 @@ Similar to creating an [[Concurrency|abstract CPU that runs processes 'concurren
 ### Address Spaces
 
 These are sets of *address locations* that reference specific parts of physical memory.
+
+![[LogAddrSpaces.png]]
+
+*Logical* address spaces have programmers refer to their *own* address space; the issue being how we differentiate between the same *logical* address on separate [[Processes|processes]] (as each maps to a *unique* physical address).
+
+[[Programs]] are *loaded*
 ## Memory Without Abstraction
 
 >![[NonAbstractionDiagram.png]]
