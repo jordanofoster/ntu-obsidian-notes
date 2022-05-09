@@ -3,7 +3,6 @@
 
 Signals sent to CPU that require **immediate attention.** indicates hardware/software event. Construct that allows [[Concurrency|multitasking]] to occur.
 
-
 ## Interrupt Handling
 
 - When user processes suspended, OS takes over by handling I/O request or starting [[Interrupt Service Routine (ISR)s|interrupt handler]]
