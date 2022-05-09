@@ -25,14 +25,13 @@
 ## Flash ROM
 
 ![[FlashROMDiagram.png]]
-
 This is used in the *system boot* process when powering on the PC:
 1) BIOS initializes registers, power management system
 2) BIOS performs following:
 	1) *Power-on Safe-test* - POST
 		- A form of self-diagnostics.
 	2) Boots BIOS of all subsidiary boards
-	3) Initiates comms with basic peripherals.
+	3) Initiates communications with basic peripherals.
 3) BIOS begins bootstrapping sequence:
 	1) Copies *[secondary bootloader](https://en.wikipedia.org/wiki/Bootloader#Second-stage_boot_loader)* to [[Volatile Memory#Random Access Memory RAM|RAM]]
 	2) Bootloader waits on user choice
