@@ -16,7 +16,7 @@ When *logical* addresses are referenced, the Base Register performs the followin
 ## Memory Protection & Relocation
 
 - The value of the *Base Register* is added to the *logical* address, mapping to a *physical* address. This process is known as *Relocation.* ^615611
-	- Logical addresses greater than the *Limit Register* are *invalid.* This acts as a form of *Memory Protection.*
+	- Logical addresses greater than the *Limit Register* are *invalid.* This acts as a form of *Memory Protection.* ^4c942c
 
 The *address* component of a machine instruction acts as an offset for the *base* address. To demonstrate:
 

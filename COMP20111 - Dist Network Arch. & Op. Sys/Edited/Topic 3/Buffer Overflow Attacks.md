@@ -11,7 +11,9 @@ These occur when a program writes data *outside* of the boundaries of the [[Memo
 An example [C](https://en.wikipedia.org/wiki/C_(programming_language)) program that would cause a Buffer Overflow is as follows:
 ```
 int position;
-char buffer[2000];
-position = 10000;
-buffer[position] = 0;
+char buffer[2000]; //Our buffer is 2000 bytes long
+position = 10000; //Position is byte 10,000
+buffer[position] = 0; //We try to write to byte 10,000 - outside buffer!
 ```
+
+In modern systems, various [[Memory Management Unit (MMU)#^4c942c|memory protection]] measures prevent this, however.
