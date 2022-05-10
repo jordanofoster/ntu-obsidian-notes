@@ -4,4 +4,4 @@ This is a [[Memory Management]] technique allows the *partial* storage of [[proc
 
 ## Interplay between Virtual Memory and Swapping
 
-[[Swapping]] allows multiple processes to run, but uses [[Contiguous Memory Allocation]]
+[[Swapping]] allows multiple processes to run, but uses [[Contiguous Memory Allocation]] to do so 

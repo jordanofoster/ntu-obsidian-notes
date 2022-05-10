@@ -4,4 +4,4 @@ Memory is *not infinite* (see the [[Memory Hierarchy]]) and [[Processes|processe
 
 ![[SwappingDiagram.png]]
 
-*Swapping* involves bringing in *each* [[Processes|process]] entirely, giving it [[Programs#Program Execution|execution time]] and then returning it to *mass storage.* It acts much like [[Scheduling#Context Switching|context switching]] within [[Memory Management|memory management]]. Swapping (much like [[Compaction|compaction]]) requires overhead - typically by the OS having to [[Tracking Free Space|track free space]].
+*Swapping* involves bringing in *each* [[Processes|process]] [[Contiguous Memory Allocation|entirely]], giving it [[Programs#Program Execution|execution time]] and then returning it to *mass storage.* It acts much like [[Scheduling#Context Switching|context switching]] within [[Memory Management|memory management]]. Swapping (much like [[Compaction|compaction]]) requires overhead - typically by the OS having to [[Tracking Free Space|track free space]].
