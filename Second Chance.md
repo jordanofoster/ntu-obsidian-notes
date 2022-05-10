@@ -8,4 +8,4 @@ If unset (`0`), it is replaced; otherwise, it is cleared and moved to the [[FIFO
 
 ![[SecondChancePgReplacement2.png]]
 
-This still unneccessarily moves 
+This still unnecessarily moves pages, but improves on [[FIFO Page Replacement|FIFO]] regardless.
