@@ -282,7 +282,7 @@ Swapping allows the use of multiple processes to run where the **sum of their si
 
 Paging is a memory management mechanism that allows physical address space of a process to be **non-contiguous.** This is done by dividing physical memory into blocks of **equal size** called **frames** - and dividing [[Topic 3 - Memory Management#Logical Address Spaces|program/logical address spaces]] into blocks of the same size, known as **pages.**
 
-Pages are loaded into the available frames as the processes they contain are executed; this acts as a good solution to external fragementation.
+Pages are loaded into the available frames as the processes they contain are executed; this acts as a good solution to external fragmentation.
 
 ##### Process of forming pages
 
