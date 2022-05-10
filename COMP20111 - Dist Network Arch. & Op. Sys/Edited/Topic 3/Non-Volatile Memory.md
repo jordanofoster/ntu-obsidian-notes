@@ -1,6 +1,9 @@
 #comp20111-dnaos/topic-3 
 # Non-Volatile Memory
 
+## Why use Non-Volatile Storage? #comp20111-dnaos/topic-4
+
+- Someti
 ## Hard Drives
 
 #isys20231-nda/topic-4 
