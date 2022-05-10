@@ -65,4 +65,7 @@ When [[Processes|processes]] terminate, all related pages are *released* from [[
 
 ## Page Replacement
 
-Here, we must decide which *page* to remove from [[Volatile Memory#Random Access Memory RAM|RAM]] and place within [[Non-Volatile Memory#Hard Drives|mass storage]] - *efficiently* and with *minimal overhead.* [[Thrashing]]
+Here, we must decide which *page* to remove from [[Volatile Memory#Random Access Memory RAM|RAM]] and place within [[Non-Volatile Memory#Hard Drives|mass storage]] - *efficiently* and with *minimal overhead.* [[Thrashing]] is of particular concern, and so we should consider the following:
+
+1) Modified pages must *first be saved*
+2) 
