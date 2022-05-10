@@ -2,7 +2,7 @@
 # Fetch-Execute Cycle
 
 1) [[Processes|Process]] execution started by CPU
-2) Fetch instruction from register
+2) Fetch instruction from register ^80b146
 3) Execute instruction
 4) Loop 2-3 until all instructions done
 5) Terminate

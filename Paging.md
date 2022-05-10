@@ -40,12 +40,23 @@ These map *virtual pages* into *page frames*. Their layout is *highly machine de
 
 1) **Page frame**
 	- This defines the *frame number.*
-2) **Present**
+2) **Present** ^dc1948
 	- This defines whether a page is *present* in [[Volatile Memory#Random Access Memory RAM|main]] or [[Non-Volatile Memory#Hard Drives|secondary]] memory.
-3) **Modified**
+3) **Modified** ^621b28
 	- This records whether a page is *modified* since its last loading.
 		- This is also called a *dirty bit* - if true (`1`), the page *must be copied back to [[Non-Volatile Memory#Hard Drives|disk]]*.
 4) **Protection**
 	- Records what kind of *access* (Read/Write/Execute) is permitted.
 5) **Referenced**
-	1) 
+	- OS sets this when page is used.
+
+## Page Fault Handling
+
+*Page faults* occur when part of a [[Processes|process]] is *not* in [[Volatile Memory#Random Access Memory RAM|main memory]] when [[Fetch-Execute Cycle|needed by the CPU.]] This causes an [[Interrupts|interrupt]]:
+
+1) OS selects existing page frame
+2) Page's [[Paging#^621b28|modified]] bit is checked for modifications.
+	- If `1`, write contents back to [[Non-Volatile Memory#Hard Drives|disk]].
+3) Fetch a new page from the [[Non-Volatile Memory#Hard Drives|disk]], discarding the old page in the *frame.* ^86a515
+4) Update page/frame mappings and *restart* the trapped instruction.
+	- Mark the *virtual page* as *unmapped* (using the *[[Paging#^dc1948|present]] bit*) and update the address to [[Paging#^86a515|]]
