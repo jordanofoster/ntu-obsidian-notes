@@ -6,7 +6,7 @@
 - Sometimes, it is desirable to store data for later use and further processing.
 	- This should happen even after shutdown, predicted or otherwise:
 		- Critical errors, crashes or otherwise forced terminations.
-- [[Volatile Memory]] (and by extension, [[Volatile Memory#Random Access Memory RAM|RAM]]) is insufficient:
+- [[Volatile Memory]] (and by extension, [[Volatile Memory#Random Access Memory RAM|RAM]]) is *insufficient*:
 	- Information in [[Processes|process]] [[Memory Management#Logical Address Spaces|address space]] is lost when the process terminates
 	- Capacity *too limited* to handle *all data at once* for most applications
 		- This is why [[Virtual Memory]] exists.
