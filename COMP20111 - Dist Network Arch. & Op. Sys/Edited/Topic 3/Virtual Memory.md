@@ -4,4 +4,4 @@ This is a [[Memory Management]] technique allows the *partial* storage of [[proc
 
 ## Interplay between Virtual Memory and Swapping
 
-[[Swapping]] allows several [[Processes|processes]] to run where the **sum of their sizes** is greater than total *available* [[Volatile Memory#Random Access Memory RAM|RAM]] - Virtual Memory allows us to 
+[[Swapping]] allows several [[Processes|processes]] to run where the **sum of their sizes** is greater than total *available* [[Volatile Memory#Random Access Memory RAM|RAM]] - [[Virtual Memory]] allows [[Processes|processes]] **larger** than our *total* [[Volatile Memory#Random Access Memory RAM|RAM]] size  
