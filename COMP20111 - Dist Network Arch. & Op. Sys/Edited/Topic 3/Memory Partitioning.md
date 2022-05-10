@@ -15,3 +15,14 @@
 	- Restricted number of simultaneous [[Processes|processes]]
 	- Each partition has unused space - caused *internal fragmentation*
 		- Because of this, may not be a partition big enough to fit a [[Processes|process]]
+
+## Variable Partition Memory
+
+![[VarPartMem.png]]
+
+- [[Processes]] are allocated *exactly* what they need
+	- Then loaded into *contiguous* memory slots until full.
+- Advantages:
+	- No *internal fragmentation*
+	- Space *freed* when [[Processes|processes]] terminate
+	- Adjacent fragmentations *mergeable*
