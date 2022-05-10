@@ -59,4 +59,10 @@ These map *virtual pages* into *page frames*. Their layout is *highly machine de
 	- If `1`, write contents back to [[Non-Volatile Memory#Hard Drives|disk]].
 3) Fetch a new page from the [[Non-Volatile Memory#Hard Drives|disk]], discarding the old page in the *frame.* ^86a515
 4) Update page/frame mappings and *restart* the trapped instruction.
-	- Mark the *virtual page* as *unmapped* (using the *[[Paging#^dc1948|present]] bit*) and update the address to [[Paging#^86a515|]]
+	- Mark the *virtual page* as *unmapped* (using the *[[Paging#^dc1948|present]] bit*) and update the address to [[Paging#^86a515|that page]] with a new [[Memory Management#Memory Without Abstraction|physical address]].
+
+When [[Processes|processes]] terminate, all related pages are *released* from [[Virtual Memory|virtual memory]].
+
+## Page Replacement
+
+Here, we must decide which *page* to remove from [[Volatile Memory#Random Access Memory RAM|RAM]] and place within [[Non-Volatile Memory#Hard Drives|mass storage]] - *efficiently* and with *minimal overhead.* [[Thrashing]]
