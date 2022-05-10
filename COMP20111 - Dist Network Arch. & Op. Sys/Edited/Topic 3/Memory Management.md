@@ -15,9 +15,9 @@ Therefore, we must use [[Memory Management]] for concurrent processes by taking 
 
 Similar to creating an [[Concurrency|abstract CPU that runs processes 'concurrently']], management systems provide *abstract memory* that allows the coexistence of [[Processes|processes]] inside [[Volatile Memory#Random Access Memory RAM|physical]] [[Non-Volatile Memory#Hard Drives|memory]].
 
-### Address Spaces
+### Logical Address Spaces
 
-These are sets of *address locations* that reference specific parts of physical memory.
+*Address spaces* are sets of *address locations* that reference specific parts of physical memory.
 
 ![[LogAddrSpaces.png]]
 
