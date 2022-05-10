@@ -13,7 +13,7 @@
 	- Fast [[Scheduling#Context Switching|context switching]]
 - Disadvantages:
 	- Restricted number of simultaneous [[Processes|processes]]
-	- Each partition has unused space - caused *internal fragmentation*
+	- Each partition has unused space - *internal fragmentation*
 		- Because of this, may not be a partition big enough to fit a [[Processes|process]]
 
 ## Variable Partition Memory
@@ -29,4 +29,5 @@
 	- *Unfixed* number of [[Multithreading|parallel]] [[Processes|processes]]
 - Disadvantages
 	- Assumes [[Memory Management Unit (MMU)|memory manager]] knows required memory for [[Processes|process]]
-		-  
+		- Can cause memory holes *outside* of partition - *external fragmentation* 
+			- This can be resolved with [[Compaction]].
