@@ -3,7 +3,7 @@
 
 *Derived* from [[Shortest Job First (SJF)]] - attempts to *reduce long job starvation*
 - Jobs assigned [[Scheduling#Prioritization Metrics|priorities]] based on:
-	- [[Memory]]
+	- [[Memory Hierarchy|Memory]]
 	- [[Time]]
 	- Other requirements
 		- $(\text{waiting time} + \text{run time}) / \text{run time}$
