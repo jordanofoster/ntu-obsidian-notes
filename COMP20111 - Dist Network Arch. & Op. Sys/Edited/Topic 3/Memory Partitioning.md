@@ -13,7 +13,7 @@
 	- Fast [[Scheduling#Context Switching|context switching]]
 - Disadvantages:
 	- Restricted number of simultaneous [[Processes|processes]]
-	- Each partition has unused space - *internal fragmentation*
+	- Each partition has unused space - *internal fragmentation* ^76d30b
 		- Because of this, may not be a partition big enough to fit a [[Processes|process]]
 
 ## Variable Partition Memory
