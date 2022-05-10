@@ -316,7 +316,7 @@ Each process has a *page table* - which records the frame number for each proces
 
 ##### Page Tables
 
-The purpose of one of hese is to **map virtual pages into page frames.** The layout of one is highly machine dependent, although there are some important common fields:
+The purpose of one of these is to **map virtual pages into page frames.** The layout of one is highly machine dependent, although there are some important common fields:
 1. **Page frame**
 	- This is the most important field, and outputs the number of the frame.
 2. **Present**

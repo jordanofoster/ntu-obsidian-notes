@@ -11,3 +11,7 @@ This is a [[Memory Management]] mechanism that allows *non*-[[Contiguous Memory 
 ![[FormPageProcDiagram.png]]
 
 - Each [[Memory Management#Logical Address Spaces|logical address]] has a [[Processes|process]] number $(s)$ and *displacement or offset* $(d)$ within that page.
+- Each [[Processes|process]] has a *page table* that records the *frame number* for each *[[Processes|process]] page*.
+	- This is implemented in hardware, using the [[Memory Management Unit (MMU)|MMU]].
+
+## Example 1
