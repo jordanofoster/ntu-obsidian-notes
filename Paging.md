@@ -76,4 +76,4 @@ Optimally, we replace pages that are *not needed* for the *longest period of tim
 1) It is *impossible* to know a program's *future*
 2) Thus; *impossible* to know *when* a page is next needed.
 
-[[Page Replacement Algorithms]] are still useful despite th
+[[Page Replacement Algorithms]] are still useful despite this, as they use predictors.
