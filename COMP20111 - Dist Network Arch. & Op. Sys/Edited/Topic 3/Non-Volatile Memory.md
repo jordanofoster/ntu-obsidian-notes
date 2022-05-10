@@ -3,10 +3,15 @@
 
 ## Why use Non-Volatile Storage? #comp20111-dnaos/topic-4
 
-- Someti
-## Hard Drives
+- Sometimes, it is desirable to store data for later use and further processing.
+	- This should happen even after shutdown, predicted or otherwise:
+		- Critical errors, crashes or otherwise forced terminations.
+- [[Volatile Memory]] (and by extension, [[Volatile Memory#Random Access Memory RAM|RAM]]) is insufficient:
+	- Information in [[Processes|process]] [[Memory Management#Logical Address Spaces|address space]] is lost when the process terminates
+	- Capacity *too limited* to handle *all data at once* for most applications
+		- This is why [[Virtual Memory]] exists.
 
-#isys20231-nda/topic-4 
+## Hard Drives #isys20231-nda/topic-4 
 
 - Hard disks usually contain a number of platters:
 	>![[HDGeometry1.png]]
@@ -15,7 +20,6 @@
 	>![[HDGeometry2.png]]
 	
 ### Magnetic Disk Geometry
-
 - Below shows two sectors on a portion of a *disk track:*
 	>![[MagDiskSector.png]]
 - The *preamble* is used to set up a sector and to synchronize the read/write head.
