@@ -18,4 +18,4 @@ Almost *full* utilisation of [[Memory Management#Memory Without Abstraction|phys
 	- Larger page sizes means *more unused programs* are loaded into memory...
 		- ...But smaller [[Paging#Page Tables|paging tables]]
 
-Having one [[Paging#Page Tables|page table]] per [[Processes|process]] consumes *lots* of [[Memory Management#Memory Without Abstraction|physical memory]], and this method does not *divide pages into units* to support *[[Virtual Memory|logical division]]* of [[Programs|programs]]. 
+Having one [[Paging#Page Tables|page table]] per [[Processes|process]] consumes *lots* of [[Memory Management#Memory Without Abstraction|physical memory]], and this method does not *divide pages into units* to support *[[Segmentation|logical division]]* of [[Programs|programs]]. 
