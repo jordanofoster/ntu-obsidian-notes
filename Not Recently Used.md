@@ -1,6 +1,6 @@
 # "Not Frequently Used" Page Replacement
 
-This method uses [[Paging#^bec2a7|reference]] and [[Paging#^621b28|modified]] bits in the [[Paging#Page Tables|page table]] to collect usage statistics on pages, like so:
+This method uses [[Paging#^bec2a7|reference]] and [[Paging#^621b28|modified]] bits in the [[Paging#Page Tables|page table]] to collect usage statistics on pages:
 
 - Class 0, `0 0` -> Not referenced/Not modified
 - Class 1, `0 1` -> Not referenced/Modified

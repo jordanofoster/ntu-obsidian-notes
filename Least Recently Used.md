@@ -6,4 +6,5 @@
 		- Most recent at the head, least recent at the tail.
 		- Must be updated with *every reference to memory*
 			- Referenced page must be moved to the head.
-- 
+
+Implementation is *difficult* and *time-consuming.*
