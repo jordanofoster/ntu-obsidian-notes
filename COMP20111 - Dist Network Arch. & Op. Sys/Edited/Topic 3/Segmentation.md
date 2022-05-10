@@ -17,3 +17,7 @@ Segmentation properties are enumerated thus:
 
 ## Protection and Sharing with Segmentation
 
+- [Protection]() is achieved by:
+	- Assigning modes (read/write/execute) to each segment
+	- Checking that memory references do not *exceed* segment length
+- [Sharing]() refers to a shared segment that is referenced by mutliple [[Processes]]
