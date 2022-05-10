@@ -28,6 +28,6 @@
 	- Adjacent fragmentations *mergeable*
 	- *Unfixed* number of [[Multithreading|parallel]] [[Processes|processes]]
 - Disadvantages
-	- Assumes [[Memory Management Unit (MMU)|memory manager]] knows required memory for [[Processes|process]] ^a0233c
-		- Can cause memory holes *outside* of partition - *external fragmentation* 
+	- Assumes [[Memory Management Unit (MMU)|memory manager]] knows required memory for [[Processes|process]]
+		- Can cause memory holes *outside* of partition - *external fragmentation*  ^b913a9
 			- This can be resolved with [[Compaction]].

@@ -2,7 +2,7 @@
 
 Segmentation is a [[Memory Management]] scheme that works alongside the *user-view* of [[Programs|programs]]. Each is split into *segments* of variable size, according to its *logical structure:*
 
-![[SegmentationDiagram.png]]
+![[SegmentationDiagram.png]] ^f1c0fb
 - A `C` compiler may have *4 segments*, as shown above - all of *different sizes.*
 
 [[Processes]] have memory allocated segment-by-segment, in *non-[[Contiguous Memory Allocation|contiguous]]* areas of [[Memory Management#Memory Without Abstraction|physical memory]]. Each segment has its *own [[Memory Management#Logical Address Spaces|address space]]*. 
@@ -22,3 +22,12 @@ Segmentation properties are enumerated thus:
 	- Checking that memory references do not *exceed* segment length
 - [Sharing]() refers to a shared segment that is referenced by multiple [[Processes|processes]]
 	- Such as a [library]()
+
+## Comparison of [[Paging]] and [[Segmentation]]
+
+- [[Paging]] allows more [[Memory Management#Logical Address Spaces|addressable space]] without *actual* [[Volatile Memory#Random Access Memory RAM|physical memory]].
+	- Memory is divided in a way that is *transparent* to the user
+	- But pages are *fixed-size* 
+		- Offset by having *no [[Memory Partitioning#^b913a9|external fragmentation]]* 
+
+- [[Segmentation]] allows [[Programs|programs]] to be broken up into independent [[Memory Management#Logical Address Spaces|logical address spaces]], allowing [[Segmentation#^f1c0fb|logical division]] of the program

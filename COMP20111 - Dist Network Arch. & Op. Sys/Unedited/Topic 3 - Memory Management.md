@@ -438,9 +438,9 @@ Memory is allocated to processes segment-by-segment, in non-contiguous areas of 
 
 ###### Advantages & Disadvantages
 
-Segmentation allows the logical divison of programs, and segments themselves can grow and shrink dynamically and independently of one-another (e.g. stack and heap). Segmentation also supports [[Topic 3 - Memory Management#Protection Sharing|both protection and sharing]].
+Segmentation allows the logical division of programs, and segments themselves can grow and shrink dynamically and independently of one-another (e.g. stack and heap). Segmentation also supports [[Topic 3 - Memory Management#Protection Sharing|both protection and sharing]].
 
-But segments are typically much larger than pages and may waste space - and tend to be prone to external fragementation.
+But segments are typically much larger than pages and may waste space - and tend to be prone to external fragmentation.
 
 ##### Protection & Sharing
 
@@ -452,7 +452,7 @@ Segmentation **aids both of these:**
 
 [[Topic 3 - Memory Management#Paging|Paging]] is useful to allow more address space without requiring more *actual physical memory.* Memory is divided in a way that is **transparent to the user**, but pages are of a **fixed size** - this is offset by having **no external fragmentation.**
 
-[[Topic 3 - Memory Management#Segmentation|Segmentation]] allows programs to be broken up into independent [[Topic 3 - Memory Management#Logical Address Spaces|logical address spaces]], and allows logical division of a program which is **visible** to the user (**useful for programmers**) - segements are of a variable size (which is nice for efficiency), but this can **generate memory holes.**
+[[Topic 3 - Memory Management#Segmentation|Segmentation]] allows programs to be broken up into independent [[Topic 3 - Memory Management#Logical Address Spaces|logical address spaces]], and allows logical division of a program which is **visible** to the user (**useful for programmers**) - segments are of a variable size (which is nice for efficiency), but this can **generate memory holes.**
 
 #### Segmentation with Paging
 
