@@ -11,6 +11,9 @@ Segmentation properties are enumerated thus:
 
 - Segmentation allows for *logical division* of programs
 	- Segments can *grow and shrink* independently (e.g., [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) and [Heap](https://en.wikipedia.org/wiki/Heap_(data_structure))). 
-- Allows for [[Protection and Sharing with Segmentation|protection and sharing]] 
+- Allows for [[Segmentation#Protection and Sharing with Segmentation|protection and sharing]] 
 - Segments are typically *larger* than [[Paging|pages]] and may waste space
 	- Additionally prone to [[Memory Partitioning#^a0233c|external fragmentation]]
+
+## Protection and Sharing with Segmentation
+
