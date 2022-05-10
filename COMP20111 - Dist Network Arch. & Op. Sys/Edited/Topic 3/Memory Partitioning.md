@@ -26,3 +26,7 @@
 	- No *internal fragmentation*
 	- Space *freed* when [[Processes|processes]] terminate
 	- Adjacent fragmentations *mergeable*
+	- *Unfixed* number of [[Multithreading|parallel]] [[Processes|processes]]
+- Disadvantages
+	- Assumes [[Memory Management Unit (MMU)|memory manager]] knows required memory for [[Processes|process]]
+		-  
