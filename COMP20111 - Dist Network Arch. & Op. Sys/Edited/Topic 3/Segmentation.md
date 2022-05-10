@@ -18,10 +18,10 @@ Segmentation properties are enumerated thus:
 
 ## Protection and Sharing with Segmentation
 
-- [Protection]() is achieved by:
+- [Protection](https://en.wikipedia.org/wiki/Memory_protection) is achieved by:
 	- Assigning modes (read/write/execute) to each segment
 	- Checking that memory references do not *exceed* segment length
-- [Sharing]() refers to a shared segment that is referenced by multiple [[Processes|processes]]
+- [Sharing](https://en.wikipedia.org/wiki/Shared_memory) refers to a shared segment that is referenced by multiple [[Processes|processes]]
 	- Such as a [library]()
 
 ## Comparison of [[Paging]] and [[Segmentation]]
@@ -43,7 +43,7 @@ Segmentation properties are enumerated thus:
 		- Can be resolved by *mapping* [[Segmentation|segments]] into [[Paging#^ea0e56|page frames]] via *paging segments*
 			- Each segment is assigned with a page table, achieving the *best of both worlds:*
 				- **Avoiding [[Memory Partitioning#^b913a9|external fragmentation]]**
-				- **Aids [sharing](https://en.wikipedia.org/wiki/Shared_memory) and [protection]()** 
+				- **Aids  [protection](https://en.wikipedia.org/wiki/Memory_protection) and [sharing](https://en.wikipedia.org/wiki/Shared_memory)** 
 				- **Supports *user-view* of program**
 
 The combination of the two is roughly equivalent to modern [[Memory Management]] techniques, as seen in x86, ARM and others.
