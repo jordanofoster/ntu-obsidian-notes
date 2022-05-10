@@ -65,7 +65,15 @@ When [[Processes|processes]] terminate, all related pages are *released* from [[
 
 ## Page Replacement
 
-Here, we must decide which *page* to remove from [[Volatile Memory#Random Access Memory RAM|RAM]] and place within [[Non-Volatile Memory#Hard Drives|mass storage]] - *efficiently* and with *minimal overhead.* [[Thrashing]] is of particular concern, and so we should consider the following:
+Here, we must decide which *page* to remove from [[Volatile Memory#Random Access Memory RAM|RAM]] and place within [[Non-Volatile Memory#Hard Drives|mass storage]] - *efficiently* and with *minimal overhead.* [[Thrashing]] is of particular concern, and so we should consider the following, using information from the [[Paging#Page Tables|page table]]:
 
-1) Modified pages must *first be saved*
-2) 
+1) [[Paging#^621b28|Modified]] pages must *first be saved*
+	- *Unmodified* pages are simply overwritable.
+2) Avoid replacing *often-used pages* - **both** in and out of [[Volatile Memory#Random Access Memory RAM|main memory]].
+
+Optimally, we replace pages that are *not needed* for the *longest period of time*, but this is infeasible:
+
+1) It is *impossible* to know a program's *future*
+2) Thus; *impossible* to know *when* a page is next needed.
+
+[[Page Replacement Algorithms]] are still useful despite th
