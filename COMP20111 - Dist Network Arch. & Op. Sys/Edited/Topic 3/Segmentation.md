@@ -30,4 +30,16 @@ Segmentation properties are enumerated thus:
 	- But pages are *fixed-size* 
 		- Offset by having *no [[Memory Partitioning#^b913a9|external fragmentation]]* 
 
-- [[Segmentation]] allows [[Programs|programs]] to be broken up into independent [[Memory Management#Logical Address Spaces|logical address spaces]], allowing [[Segmentation#^f1c0fb|logical division]] of the program
+- [[Segmentation]] allows [[Programs|programs]] to be broken up into independent [[Memory Management#Logical Address Spaces|logical address spaces]], allowing [[Segmentation#^f1c0fb|logical division]], which is *visible to the user*
+	- This is *useful for programmers*
+- Segments are of a *variable size*
+	- Nice for efficiency; can generate [[Memory Partitioning#^b913a9|memory holes]]
+
+## [[Segmentation]] with [[Paging]]
+
+- Segments are larger than pages.
+	- Can present a problem is segment is larger than [[Memory Management#Memory Without Abstraction|physical memory]].
+		- Can be resolved by *mapping* [[Segmentation|segments]] into [[Paging#^ea0e56|page frames]] via *paging segments*
+			- Each segment is assigned with a page table, achieving the *best of both worlds:*
+				- **Avoiding [[Memory Partitioning#^b913a9|external fragmentation]]**
+				- **Aids [sharing]() an** 

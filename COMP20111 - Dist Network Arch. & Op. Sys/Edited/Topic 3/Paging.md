@@ -4,7 +4,7 @@ This is a [[Memory Management]] mechanism that allows *non*-[[Contiguous Memory 
 
 ![[PagingDiagram.png]]
 
-*Pages* are loaded into available *frames* as the [[Processes|processes]] contained are [[Programs#Program Execution|executed]]; the process counters [[Memory Partitioning#^a0233c|external fragmentation]] - much like [[Compaction]].
+*Pages* are loaded into available *frames* as the [[Processes|processes]] contained are [[Programs#Program Execution|executed]]; the process counters [[Memory Partitioning#^a0233c|external fragmentation]] - much like [[Compaction]]. ^ea0e56
 
 ## Forming Pages
 
