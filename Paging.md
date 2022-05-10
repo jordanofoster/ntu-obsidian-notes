@@ -47,7 +47,7 @@ These map *virtual pages* into *page frames*. Their layout is *highly machine de
 		- This is also called a *dirty bit* - if true (`1`), the page *must be copied back to [[Non-Volatile Memory#Hard Drives|disk]]*.
 4) **Protection**
 	- Records what kind of *access* (Read/Write/Execute) is permitted.
-5) **Referenced**
+5) **Referenced** ^bec2a7
 	- OS sets this when page is used.
 
 ## Page Fault Handling
