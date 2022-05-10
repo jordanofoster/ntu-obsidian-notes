@@ -42,4 +42,7 @@ Segmentation properties are enumerated thus:
 		- Can be resolved by *mapping* [[Segmentation|segments]] into [[Paging#^ea0e56|page frames]] via *paging segments*
 			- Each segment is assigned with a page table, achieving the *best of both worlds:*
 				- **Avoiding [[Memory Partitioning#^b913a9|external fragmentation]]**
-				- **Aids [sharing]() an** 
+				- **Aids [sharing]() and [protection]()** 
+				- **Supports *user-view* of program**
+
+The combination of the two is roughly equivalent to modern [[Memory Management]] techniques, as seen in x86, ARM and others.

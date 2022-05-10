@@ -1,3 +1,4 @@
+#comp20111-dnaos/topic-3 
 # Memory Management
 
 [[Processes]] share physical memory as well as CPU time. Instructions are fetched from [[Volatile Memory#Random Access Memory RAM|main memory]] and handed to the CPU for [[Fetch-Execute Cycle|execution]]; main memory is large enough to store *several* running processes at once.
