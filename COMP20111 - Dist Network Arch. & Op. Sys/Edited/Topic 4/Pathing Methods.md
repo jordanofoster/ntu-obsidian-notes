@@ -5,7 +5,7 @@
 
 There are two common methods:
 - **Absolute** ^5ccc9c
-	- Relative to *root* directory and *unique*:
+	- Relative to *root* directory and *unique*: ^670c93
 		- `/`  in UNIX $\rightarrow$  `/NTU/dnaos/demo.c`
 		- `\` in MS-DOS/Windows $\rightarrow$ `\NTU\dnaos\demo.c`
 - **Relative**

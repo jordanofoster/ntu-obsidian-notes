@@ -28,9 +28,16 @@
 
 Given [[Pathing Methods#^5ccc9c|absolute path name]] `/usr/ast/mbox`:
 
+![[LocatingUnixFileDiag.png]]
+
 1) System locates *root [[Directories and Folders|directory]]'s [[i-nodes#^d5818b|i-node]]*
 	- [[i-nodes#^a70acb|second]] *i-node* **always has a fixed position**
 		- [[i-nodes#^04578a|first]] *i-node* is **reserved**
 			- Used to store/track *bad blocks* on disk to prevent use by other files
 2) First path component (`usr`) looked up, to find *i-node* number of that file/directory
-3) With `/usr`'s *i-node number*, i-node data accessed to find [[i-nodes#^628e47|next]] nu
+3) With `/usr`'s *i-node number*, i-node data accessed to find [[i-nodes#^628e47|next]] number for `usr/ast`
+4) Process repeated until *actual file* (`mbox`) located
+	- After locating `/usr/ast/mbox`, *i-node* of `mbox` is held in memory until file [[File Operations#^c33804|closed]]
+
+[[Pathing Methods#^670c93|Relative]] path names are accessed *almost* identically - search starts from *current working directory* instead. Locating files in *[[File Systems#File Block Allocation Methods|other hierarchical filesystems]]* is similar - things are looked up *component by component*
+

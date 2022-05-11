@@ -23,3 +23,7 @@
 		- [[Linked-List File Block Allocation (Non-Contiguous)]]
 			- [[Linked List with File Allocation Table (FAT)]]
 		- [[i-nodes]]
+
+## Determining Block Size
+
+- [[File Systems#File Block Allocation Methods|All allocation methods]] require the disk to be split into *fixed-size [[File*
