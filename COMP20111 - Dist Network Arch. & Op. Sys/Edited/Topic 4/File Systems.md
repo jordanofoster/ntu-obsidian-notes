@@ -35,6 +35,19 @@
 			- A small file (e.g. 1KB) *wastes space*, by requiring a block larger than it (i.e. 32KB).
 	- Typical block sizes are therefore used (512B/1KB/2KB).
 
-## Tracking Free Space
+## Consistency
 
-Same methods as with [[Memory ]]
+- File systems read/modify/write blocks
+	- If they *crash* before all modifications are written, errors can occur
+		- This is *inconsistency.*
+			- Most OSs offer programs to deal with this
+				- UNIX has `fsck`
+				- Windows has `chkdsk`
+
+An example diagram detailing [[File Systems|filesystem]] states is shown:
+![[ConsistencyDiag.png]]
+
+- `(a)` - Consistent.
+- `(b)` - *Missing* [[File Systems#^a97394|block]]
+- `(c)` - Duplicate [[File Systems#^a97394|block]] in free list.
+- `(d)` - Duplicate *data* [[File Systems#^a97394|block]]
