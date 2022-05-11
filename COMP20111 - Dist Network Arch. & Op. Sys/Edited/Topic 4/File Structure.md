@@ -8,6 +8,16 @@ Files can be structured in one of three ways:
 
 ## Byte Sequence
 
+- OS inherently considers files *unstructured*
+	- Has [[Programs|programs]] interpret byte sequences themselves
+		- Used by Windows/UNIX
+	
 ## Record Sequence
+
+- Treats files as *sequence* of *fixed-length*, *structured* records:
+	- Collection of bytes:
+		- Mainly used when *punchcards* st
+
+	>![[RecordSequence.png]]
 
 ## Tree
