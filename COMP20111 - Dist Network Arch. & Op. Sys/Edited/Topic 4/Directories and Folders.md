@@ -31,7 +31,7 @@ There are three types:
 		- UNIX `(b)`:
 		- ![[DirEntryStruct.png]]
 			- Each entry has an *i-node* number and [[Naming Files|filename]]:
-				- 
+				- ![[UnixDirEntry.png]]
 				- All directory [[File Attributes|attributes]] stored *in the i-node*
 					- All *i-nodes* have fixed disk locations - location is fast
 		- MS-DOS `(a)`:
