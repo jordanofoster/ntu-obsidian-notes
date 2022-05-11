@@ -6,7 +6,7 @@
 
 Two methods exist:
 - Bitmaps - Figure `(b)`
-- Linked Lists - Figure `(c)`
+- Linked Lists - Figure `(c)` ^d9cbd3
 
 ## Tracking Free Space in [[File Systems]] #comp20111-dnaos/topic-4 
 

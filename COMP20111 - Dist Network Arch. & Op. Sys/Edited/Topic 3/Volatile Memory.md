@@ -33,7 +33,7 @@ There are two types of register; *generic* and *specialised.*
 - Used to *reduce* average time/energy cost to access data from [[Volatile Memory#Random Access Memory RAM|RAM]] 
 - Resides within CPU:
 	>![[CPU-ZExample.png]]
-- Acts as intermediary between [[Volatile Memory#Processor Registers|registers]] and [[[Memory Types#Random Access Memory (RAM)|RAM]]
+- Acts as intermediary between [[Volatile Memory#Processor Registers|registers]] and [[[Volatile Memory#Random Access Memory (RAM)|RAM]]
 	- Modern CPUs have a *sub-hierarchy* of *Cache Levels*
 		- Fastest-to-slowest, Lowest-to-highest
 			- e.g. L1, L2, L3, L4 etc.
