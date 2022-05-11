@@ -70,4 +70,6 @@ An example diagram detailing [[File Systems|filesystem]] states is shown:
 ![[JournalingExample.png]]
 
 - *Journaling* filesystems use part of the disk to *log* pending [[File Operations]]
-	- Under failure, the *log* helps bring disk back to [[File Systems#Consistency|C]]
+	- Under failure, the *log* helps bring disk back to [[File Systems#Consistency|consistency]]
+		- i.e. by completing all pending actions.
+- Log entries are erased upon successful completion
