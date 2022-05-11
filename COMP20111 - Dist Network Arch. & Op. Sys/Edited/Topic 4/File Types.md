@@ -14,7 +14,7 @@
 	- **Special Characters**
 		- Not true files; directories that refer to *character devices*
 			- Allows communication with I/O devices
-	- **Block Special**
+	- **Block Special** ^5c8c03
 		- Not true files; directories that refer to *block devices*
 			- Allows communication with *storage devices*
 				- Such as [[Non-Volatile Memory#Hard Drives isys20231-nda topic-4|disks]] or [[Volatile Memory#Random Access Memory RAM|main memory]]
