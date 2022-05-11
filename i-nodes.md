@@ -17,5 +17,10 @@
 
 - Contain a number of *direct pointers* to [[File Systems#^a97394|disk blocks]]
 	- Typically 10 of these
-
+- 3 *indirect pointers* exist
+	- Point to further [[Memory Management#Logical Address Spaces|address]] blocks
+		- Eventually leads to another disk data block
+	- First pointer is a *single level* of indirections
+		- Next is a *double indirect pointer*
+			- Third a *triple indirect pointer*
 
