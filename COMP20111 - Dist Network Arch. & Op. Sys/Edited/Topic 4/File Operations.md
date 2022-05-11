@@ -14,4 +14,15 @@ These are syscalls related to file management, provided by the OS. Some examples
 	- Used when all access is finished and loaded attributes/addresses are *no longer needed.*
 - **Seek**
 	- Used for *Random Access* files. Repositions file pointer to specific location in file.
-- 
+- **Get Attributes**
+	- Retrieve file attributes. Useful for some programs.
+- **Set attribute**
+	- Self-explanatory. Some can be user-set, such as protection-mode.
+- **Rename**
+	- Change file name.
+- **Read**
+	- Read data from file.
+- **Write** ^6d560d
+	- Write data to *existing* file.
+- **Append**
+	- Restricted variant of [[File Operations#^6d560d|write]] - can add data only to *the end* of a file.
