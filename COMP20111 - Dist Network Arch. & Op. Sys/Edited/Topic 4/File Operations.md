@@ -18,7 +18,7 @@ These are syscalls related to file management, provided by the OS. Some examples
 	- Retrieve file attributes. Useful for some programs.
 - **Set attribute**
 	- Self-explanatory. Some can be user-set, such as protection-mode.
-- **Rename**
+- **Rename** ^ac5401
 	- Change file name.
 - **Read**
 	- Read data from file.

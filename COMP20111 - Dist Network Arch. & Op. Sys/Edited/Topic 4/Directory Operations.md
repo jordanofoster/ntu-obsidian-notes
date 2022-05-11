@@ -16,3 +16,10 @@ OSs provide the following syscalls:
 - **Readdir**
 	- Next entry in [[Directory Operations#^90af86|open directory]]
 - **Rename**
+	- Same method as with [[File Operations#^ac5401|files]]
+- **Link**
+	- Allows files to appear in *more than one directory*
+- **Unlink**
+	- Unlinked files are only present in *one* directory
+
+More specific syscalls exist depending on OS.
