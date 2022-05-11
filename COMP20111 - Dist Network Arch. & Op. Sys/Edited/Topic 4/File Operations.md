@@ -24,5 +24,5 @@ These are syscalls related to file management, provided by the OS. Some examples
 	- Read data from file.
 - **Write** ^6d560d
 	- Write data to *existing* file.
-- **Append**
+- **Append** ^558d90
 	- Restricted variant of [[File Operations#^6d560d|write]] - can add data only to *the end* of a file.

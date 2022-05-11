@@ -8,7 +8,7 @@ File access refers to how we access stored files, as a form of [[Memory Manageme
 - **Sequential Access**
 	- Still interesting today due to [[Locality of Reference]]
 		- Reads/Writes *next*
-- **Random/Direct Access**
+- **Random/Direct Access** ^174f37
 	- Essential for most applications!
 		- Where $n = \text{relative block number}$
 			- Read $n$
