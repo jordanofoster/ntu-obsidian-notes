@@ -9,7 +9,7 @@
 	- **Executables**
 		- [[Programs|Program code]] executable by OS:
 		>![[ExampleExecutableLayout.png]]
-	- **Directory/Folder**
+	- **Directory/Folder** ^e4c368
 		- System files that *reference other filetypes*
 	- **Special Characters**
 		- Not true files; directories that refer to *character devices*
