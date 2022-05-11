@@ -1,6 +1,8 @@
 #comp20111-dnaos/topic-4 
 # Linked-List File Block Allocation
 
+![[LLNonContigAlloc.png]]
+
 - Files stored as *Linked-List* of blocks
 	- First bytes of each block used as pointer
 		- Each block contains its own data and a pointer to the next
@@ -14,3 +16,4 @@
 - [[File Access#^174f37|Random access]] *unsupported*
 	- Method is *very slow* - must traverse a *chain of blocks*
 - Data overhead in form of block pointers
+- *Non-[[Contiguous Memory Allocation|contiguous]]*
