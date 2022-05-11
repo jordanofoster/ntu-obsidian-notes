@@ -2,4 +2,4 @@
 # Distributed [[File Systems]]
 
 - OSes and PCs have their *own* filesystems.
-	- In distributed systems, many separate machines with their *own fi*
+	- In distributed systems, many separate machines with their *own filesystems* must be considered. (how do we manage it?)
