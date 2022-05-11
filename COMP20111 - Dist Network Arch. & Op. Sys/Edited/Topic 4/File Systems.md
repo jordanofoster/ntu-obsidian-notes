@@ -21,5 +21,5 @@
 	- Different schemes to achieve this
 		- [[Contiguous File Block Allocation]]
 		- [[Linked-List File Block Allocation]]
-			- [[Linked List with File Allocation Table]]
+			- [[Linked List with File Allocation Table (FAT)]]
 		- [[i-nodes]]

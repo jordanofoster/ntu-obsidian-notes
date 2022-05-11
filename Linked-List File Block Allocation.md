@@ -3,7 +3,7 @@
 
 ![[LLNonContigAlloc.png]]
 
-- Files stored as *Linked-List* of blocks
+- Files stored as *Linked-List* of blocks ^4cc555
 	- First bytes of each block used as pointer
 		- Each block contains its own data and a pointer to the next
 			- Final block has *null* pointer.
