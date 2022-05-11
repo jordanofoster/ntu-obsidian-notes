@@ -1,4 +1,4 @@
-#COMP20111-DNAOS/io-neworking
+#COMP20111-DNAOS/io-networking
 # Input/Output and networking
 
 ## Current Position (Windows)

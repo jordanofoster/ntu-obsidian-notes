@@ -23,6 +23,6 @@ Two methods exist:
 - Bitmaps are stored with *one bit/block* that records if it is free or used:
 	- `1` - free
 	- `0` - used
-- Occupy less space than [[|Linked Lists]]
+- Occupy less space than [[Tracking Free Space#Linked List Method|Linked Lists]]
 	- 1 bit/block vs. 32 bits
 	- Number of blocks required to track free space is *constant*, unlike [[Tracking Free Space#^b984f5|Linked Lists]]
