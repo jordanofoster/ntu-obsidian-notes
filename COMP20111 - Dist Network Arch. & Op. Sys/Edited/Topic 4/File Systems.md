@@ -8,7 +8,7 @@
 	- In this example, section 0 is the *Master Boot Record (MBR)*
 		- Boots the computer via a **boot block**
 			- Stored in specified partition, from where OS is loadd
-		- **Super block** contains partition info (e.g., number of blocks)
+		- **Super block** contains partition info (e.g., number of blocks) ^98732e
 
 ## File Block Allocation Methods
 
@@ -93,8 +93,7 @@ An example diagram detailing [[File Systems|filesystem]] states is shown:
 - Also pictured - Minix file attributes:
 >![[ExampleMinixDskLayout2.png]]
 
-- The API and procedures for [[File Systems#^a97394|block]] and [[i-nodes|i-node]] management are shown below:
-
+The API and procedures for [[File Systems#^a97394|block]] and [[i-nodes|i-node]] management:
 
 | Procedure | Function |
 | --------- | -------- |
@@ -107,4 +106,16 @@ An example diagram detailing [[File Systems|filesystem]] states is shown:
 | `flushall` | Flush all dirty blocks for one device |
 | `rw_scattered` | Read or write scattered data from or to a device |
 | `rm_lru` | Remove a block from its LRU chain |
+
+
+Procedures that manage the [[File Systems#^98732e|superblock]] and [[Tracking Free Space#Bitmap Method|bitmaps]]:
+
+| Procedure | Function |
+| --------- | -------- |
+| `alloc_bit` | Allocate a bit from the zone or i-node map |
+| `free_bit` | Free a bit in the zone or i-node map |
+| `get_super` | Search the superblock table for a device |
+| `get_block_size` | Find a block size to use |
+| `mounted` | Report whether given i-node is on a mounted (or root) filesystem |
+| `read_super` | Read a superblock |
 
