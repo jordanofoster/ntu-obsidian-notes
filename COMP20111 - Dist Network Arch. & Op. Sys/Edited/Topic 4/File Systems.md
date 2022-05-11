@@ -73,3 +73,10 @@ An example diagram detailing [[File Systems|filesystem]] states is shown:
 	- Under failure, the *log* helps bring disk back to [[File Systems#Consistency|consistency]]
 		- i.e. by completing all pending actions.
 - Log entries are erased upon successful completion
+
+## Security in File Systems
+
+- File access can be managed through *Access Control Lists*
+	- Each object (e.g. [[Files|file]]) contains a list of principles
+		- These determine what can be done:
+	- 
