@@ -20,7 +20,7 @@
 	- *Abstract* naming spaces *independent* of physical devices
 		- Should be a string and/or integer ID
 			- [[Programs]] do not require *device awareness*
-- **Error Handling**
+- **[[Error Handling]]**
 	- Lower layers must *always* try to handle errors *before* upper layers
 		- Controller hardware attempts to correct error first
 			- If it can't then driver software does:
@@ -29,7 +29,7 @@
 - **Synchronous vs. Asynchronous Transfers**
 	- Most physical I/O is *asynchronous* ([[Interrupts|interrupt]]-driven)
 	- O/S makes it *look* synchronous (using blocking) to [[Processes|processes]]
-- **Buffering**
+- **[[Buffering]]**
 	- *Decouple* transfer rates
 	- insulate data from [[Swapping|swapping]]
 
@@ -37,3 +37,11 @@
 
 ![[Pasted image 20211206151541.png]]
 
+- When complex systems are engineered, we need a *complex approach*
+	- I/O is no different
+		- Multiple layers for dealing with requests
+		- Each with an API providing access to the *layer below*:
+			- [[Interrupt Handlers]]
+			- [[Device Drivers]]
+			- Device-independent operating system software
+			- User-level I/O software
