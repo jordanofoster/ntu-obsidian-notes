@@ -26,4 +26,6 @@
 
 ## Determining Block Size
 
-- [[File Systems#File Block Allocation Methods|All allocation methods]] require the disk to be split into *fixed-size [[File*
+- [[File Systems#File Block Allocation Methods|All allocation methods]] require the disk to be split into *fixed-size [[File Systems#^a97394|blocks]]* - almost *all modern systems* use blocks as such.
+	- Trade-off is similar to [[Segmentation#Comparison of Paging and Segmentation|page size]] in [[Memory Management]]:
+		- With sm

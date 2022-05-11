@@ -13,7 +13,7 @@ Almost *full* utilisation of [[Memory Management#Memory Without Abstraction|phys
 - Some [[Memory Partitioning#^76d30b|internal fragmentation]].
 	- Processes cannot use memory in *multiples* of a page.
 		- e.g., Last page usually *does not* use the entire page size.
-- *Tuning* allocated page size is difficult:
+- *Tuning* allocated page size is difficult: ^21f3d8
 	- Smaller page sizes reduce [[Memory Partitioning#^76d30b|internal fragmentation]]...
 		- ...But require larger [[Paging#Page Tables|paging tables]]
 	- Larger page sizes means *more unused programs* are loaded into memory...
