@@ -26,6 +26,8 @@
 
 ## Determining Block Size
 
+^add949
+
 - [[File Systems#File Block Allocation Methods|All allocation methods]] require the disk to be split into *fixed-size [[File Systems#^a97394|blocks]]* - almost *all modern systems* use blocks as such.
 	- Trade-off is similar to [[Segmentation#Comparison of Paging and Segmentation|page size]] in [[Memory Management]]:
 		- With small block sizes, files occupy several blocks
@@ -79,4 +81,30 @@ An example diagram detailing [[File Systems|filesystem]] states is shown:
 - File access can be managed through *Access Control Lists*
 	- Each object (e.g. [[Files|file]]) contains a list of principles
 		- These determine what can be done:
-	- 
+			>![[ACLExample.png]]
+
+### Example implementation within Minix
+
+- Pictured below: disk layout for a small hard-disk partition:
+	- Contains 64 [[i-nodes]] and a 1KB [[File Systems#^a97394|block]] [[File Systems#^add949|size]]
+		- i.e. Two *consecutive* 512B sectors are treated as a *single block*
+		>![[ExampleMinixDskLayout.png]]
+		
+- Also pictured - Minix file attributes:
+>![[ExampleMinixDskLayout2.png]]
+
+- The API and procedures for [[File Systems#^a97394|block]] and [[i-nodes|i-node]] management are shown below:
+
+
+| Procedure | Function |
+| --------- | -------- |
+| `get_block` | Fetch a block for reading or writing |
+| `put_block` | Return a block previously requested with `get_block` |
+| `alloc_zone` | Allocate a new zone (to make a file longer) |
+| `free_zone` | Release a zone (when a file is removed) |
+| `rw_block` | Transfer a block between disk and cache |
+| `invalidate` | Purge all the cache blocks for some device |
+| `flushall` | Flush all dirty blocks for one device |
+| `rw_scattered` | Read or write scattered data from or to a device |
+| `rm_lru` | Remove a block from its LRU chain |
+
