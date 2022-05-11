@@ -4,5 +4,5 @@
 ![[FreeSpaceMgmt.png]]
 
 Two methods exist:
-- [[Bitmaps]]  - Figure `(b)`
-- [[Free Lists]] - Figure `(c)`
+- [[Bitmaps for Tracking Free Space|Bitmaps]]  - Figure `(b)`
+- [[Linked Lists for Tracking Free Space|Linked Lists]] - Figure `(c)`

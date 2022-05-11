@@ -28,4 +28,13 @@
 
 - [[File Systems#File Block Allocation Methods|All allocation methods]] require the disk to be split into *fixed-size [[File Systems#^a97394|blocks]]* - almost *all modern systems* use blocks as such.
 	- Trade-off is similar to [[Segmentation#Comparison of Paging and Segmentation|page size]] in [[Memory Management]]:
-		- With sm
+		- With small block sizes, files occupy several blocks
+			- Longer access time as *more blocks must be located*
+				- Thus, *greater overhead*
+		- With large block sizes:
+			- A small file (e.g. 1KB) *wastes space*, by requiring a block larger than it (i.e. 32KB).
+	- Typical block sizes are therefore used (512B/1KB/2KB).
+
+## Tracking Free Space
+
+Same methods as with [[Memory ]]
