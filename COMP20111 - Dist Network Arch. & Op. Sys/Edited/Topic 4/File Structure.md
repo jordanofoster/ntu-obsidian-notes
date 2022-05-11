@@ -16,8 +16,14 @@ Files can be structured in one of three ways:
 
 - Treats files as *sequence* of *fixed-length*, *structured* records:
 	- Collection of bytes:
-		- Mainly used when *punchcards* st
+		- Mainly used when *punch cards* still in use
 
-	>![[RecordSequence.png]]
+![[RecordSequence.png]]
 
 ## Tree
+
+- Each *variable-length* record has a *key field*
+	- used for *record retrieval*
+		- Useful in *databases*
+
+![[TreeSequence.png]]
