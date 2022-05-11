@@ -14,7 +14,7 @@
 
 ![[BlockAllocation.png]]
 
-- Blocks are *subdivisions* of [[Non-Volatile Memory|mass storage]]
+- Blocks are *subdivisions* of [[Non-Volatile Memory|mass storage]] ^a97394
 	- Similar to [[Paging|pages]] but in secondary memory
 
 - File block allocation tracks which files go to *which block* on a [[Non-Volatile Memory#Hard Drives isys20231-nda topic-4|disk]]
