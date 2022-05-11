@@ -1,7 +1,7 @@
 #comp20111-dnaos/topic-4 
 # [File Attributes](https://en.wikipedia.org/wiki/File_attribute)
 
-These are a type of metadata that describe or affect how [[Files|files]]/[[File Types#^e4c368|directories]] behave. An example table is listed below:
+These are a type of metadata that describe or affect how [[Files|files]]/[[Directories and Folders|directories]] behave. An example table is listed below:
 
 | Attribute | Meaning |
 | --------- | ------- |
