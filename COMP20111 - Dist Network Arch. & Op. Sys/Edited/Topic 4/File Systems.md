@@ -20,6 +20,6 @@
 - File block allocation tracks which files go to *which block* on a [[Non-Volatile Memory#Hard Drives isys20231-nda topic-4|disk]]
 	- Different schemes to achieve this
 		- [[Contiguous File Block Allocation]]
-		- [[Linked List File Block Allocation]]
-			- [[Linked List File Block Allocation#Linked List with File Allocation Table]]
+		- [[Linked-List File Block Allocation]]
+			- [[Linked-List File Block Allocation#Linked List with File Allocation Table]]
 		- [[i-nodes]]

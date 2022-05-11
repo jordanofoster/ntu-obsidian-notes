@@ -12,4 +12,5 @@
 - Initial file size *must be tracked*
 	- Files themselves *cannot grow*
 		- e.g., document cannot have data [[File Operations#^558d90|appended]]
-- [[Memory Partitioning^frag]]
+- [[Memory Partitioning#^76d30b|Fragmentation]] as files deleted and holes left;
+	- [[Compaction]] usable
