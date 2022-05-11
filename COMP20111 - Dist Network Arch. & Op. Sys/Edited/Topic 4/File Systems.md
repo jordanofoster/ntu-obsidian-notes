@@ -38,16 +38,36 @@
 ## Consistency
 
 - File systems read/modify/write blocks
-	- If they *crash* before all modifications are written, errors can occur
+	- If they *crash* before all modifications are written, errors can occur!
 		- This is *inconsistency.*
-			- Most OSs offer programs to deal with this
+			- Most OSs offer programs to deal with this:
 				- UNIX has `fsck`
 				- Windows has `chkdsk`
 
 An example diagram detailing [[File Systems|filesystem]] states is shown:
+
 ![[ConsistencyDiag.png]]
 
 - `(a)` - Consistent.
 - `(b)` - *Missing* [[File Systems#^a97394|block]]
 - `(c)` - Duplicate [[File Systems#^a97394|block]] in free list.
 - `(d)` - Duplicate *data* [[File Systems#^a97394|block]]
+
+## Journaling
+
+- Single file operations sometimes require *multiple disk writes.* 
+	- Using UNIX as an example:
+		1) Remove [[Files|file]] from [[Directories and Folders|directory]]
+		2) Release [[i-nodes|file i-node]] to list of *free i-nodes*
+		3) Return all [[Non-Volatile Memory#Hard Drives isys20231-nda topic-4|disk]] [[File Systems#^a97394|blocks]] to pool of *free blocks*
+	- Similar steps required in Windows
+- Issues can occur with an error
+	- If `1)` completes and then the system crashes:
+		- The [[i-nodes|i-node]] and [[Files|file]] [[File Systems#^a97394|blocks]] are not accessible *from any file*
+			- Or available for reassignment!
+	- Fixing this requires time-consuming repair (e.g., `scandisk`, etc.)
+
+![[JournalingExample.png]]
+
+- *Journaling* filesystems use part of the disk to *log* pending [[File Operations]]
+	- Under failure, the *log* helps bring disk back to [[File Systems#Consistency|C]]
