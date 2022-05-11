@@ -24,4 +24,17 @@ There are three types:
 	- This provides a *mapping* from a [[Naming Files|filename]]/[[File Attributes|file descriptor]] to the [[Non-Volatile Memory#Hard Drives isys20231-nda topic-4|disk]] [[File Systems#^a97394|blocks]] for a given file
 		- Mapping varies depending on [[File Systems|filesystem]]:
 			- [[Contiguous File Block Allocation|Contiguous allocation]] filesystems contain the addresses for the *entire file*
-			- [[Linked-List File Block Allocation (Non-Contiguous)|Linked]] [[Linked List with File Allocation Table (FAT)|List]] allocation contain the *first* [[Non-Volatile Memory#Hard Drives isys20231-nda topic-4|disk]] [[File System]]
+			- [[Linked-List File Block Allocation (Non-Contiguous)|Linked]] [[Linked List with File Allocation Table (FAT)|List]] allocation contain the *first* [[Non-Volatile Memory#Hard Drives isys20231-nda topic-4|disk]] [[File Systems#^a97394|block]] [[Memory Management#Logical Address Spaces|address]]
+			- [[i-nodes|i-node]] systems contain the directory's *i-node* number
+- Directory entry allows access to [[File Attributes]]
+	- Structure of entry differs based on OS:
+		- UNIX `(b)`:
+		- ![[DirEntryStruct.png]]
+			- Each entry has an *i-node* number and [[Naming Files|filename]]:
+				- 
+				- All directory [[File Attributes|attributes]] stored *in the i-node*
+					- All *i-nodes* have fixed disk locations - location is fast
+		- MS-DOS `(a)`:
+			- Directory entry contains attributes itself:
+				- ![[DOSDirEntry.png]]
+	
