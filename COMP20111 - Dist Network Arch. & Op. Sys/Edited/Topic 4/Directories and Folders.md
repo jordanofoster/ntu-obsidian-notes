@@ -1,7 +1,7 @@
 #comp20111-dnaos/topic-4 
 # Directories and Folders
 
-- Most filing systems group files using these, for logical organisation.
+- Most filing systems group files using these, for logical organisation. ^ac448c
 	- Also allows [[File Operations]] to be performed on groups of files
 
 ![[FileDescTable.png]]
