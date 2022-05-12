@@ -16,11 +16,11 @@ Different types of organisations have different office politics. There are four 
 
 The power culture is illustrated as a spider's web '...because the key to the while organisation sits in the centre, surrounded by ever-widening circles of intimates and influence. The closer you are to the spider, the more influence you have.'
 
-Organisations with poewr culture can respond quickly to events, but their success is heavily dependent on the abilities of those at the centre. Size is a problem.
+Organisations with power culture can respond quickly to events, but their success is heavily dependent on the abilities of those at the centre. Size is a problem.
 
-Power culture environments attrack people who are *power-orientated* and politically minded; they take risks and do not rate security highly. Control of resources is the main power base in this culture, with some elements of personal power in the centre.
+Power culture environments attack people who are *power-orientated* and politically minded; they take risks and do not rate security highly. Control of resources is the main power base in this culture, with some elements of personal power in the centre.
 
-Performance in such environements is based on results, and such organisations are tolerant of means. Such organisations require that employees correctly anticipate what those in power expect of them and perform accordingly.
+Performance in such environments is based on results, and such organisations are tolerant of means. Such organisations require that employees correctly anticipate what those in power expect of them and perform accordingly.
 
 ### Role
 
