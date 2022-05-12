@@ -1,2 +1,5 @@
 #isys20311-infosec/lecture-1 
-# This 
+# Authorisation
+
+- Determining if someone is *allowed access* to something
+	- Typically confirmed using [[Authentication]]
