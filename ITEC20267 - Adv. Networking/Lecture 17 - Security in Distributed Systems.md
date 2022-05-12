@@ -107,7 +107,7 @@ Distributed systems are reliant on data through the following inputs:
 - Storage of data
 - Usage of this data in services
 
-The [[ISYS20311 - Information Security/Lecture 1 - Overview#CIA Triad|CIA]] triad directly applies to each element of the data chain (alongside the interfaces within it), and therefore threats to each are present in distributed systems:
+The [[ISYS20311 - Information Security/Unedited/Lecture 1 - Overview#CIA Triad|CIA]] triad directly applies to each element of the data chain (alongside the interfaces within it), and therefore threats to each are present in distributed systems:
 - Confidentiality
 	- Information leakage threats
 		- Side channel attacks
@@ -222,7 +222,7 @@ These manifest as resource exhaustion by limiting access to nodes or communicati
 Benign peers may also be impaired by an excessive maintenance workload; additional, both DoS and DDoS attacks can have negative impacts on bandwidth usage and resource provisioning, resulting in degraded services.
 
 #### Collusion Attacks
-These aim to compromise the [[ISYS20311 - Information Security/Lecture 1 - Overview#CIA Triad|CIA triad]] in regards to P2P networks. In collusion, a sufficiently large subset of peers can operate together to carry out strategies that target P2P networks to negatively affect P-OPs.
+These aim to compromise the [[ISYS20311 - Information Security/Unedited/Lecture 1 - Overview#CIA Triad|CIA triad]] in regards to P2P networks. In collusion, a sufficiently large subset of peers can operate together to carry out strategies that target P2P networks to negatively affect P-OPs.
 
 Typical collusion attacks attempt to override control mechanisms (such as those for reputation or trust management), or control provisioning. *Sybil* and *Eclipse* attacks are based on attackers colluding to create network partitions that hide system state information from good nodes.
 
@@ -505,7 +505,7 @@ Attack surfaces in distributed systems typically involve disruption of the follo
 - Communications
 - Interfaces
 - Data that impairs resource availability...
-	- ...or impacts the [[ISYS20311 - Information Security/Lecture 1 - Overview#CIA Triad|CIA]] of the overall system and its services.
+	- ...or impacts the [[ISYS20311 - Information Security/Unedited/Lecture 1 - Overview#CIA Triad|CIA]] of the overall system and its services.
 
 These disruptions can be from improper design, arising from operational conditions or deliberately targeted attacks. The compromise/disruption of resources is the typical aim of attacks, but the functionality of a distributed system itself emerges specifically from the *interactions* that occur across these distributed resources.
 
@@ -608,7 +608,7 @@ Communication, being a core requirement for resource coordination, has strong im
 A variety of protection techniques exist, including retries, ACK/NACK based schemes and cryptographically secured channels (among others).
 
 ##### Compromise on Monitoring and Accounting
-With incorrect information given on the state of systems/services, the entire [[ISYS20311 - Information Security/Lecture 1 - Overview#CIA Triad|CIA Triad]] can be compromised.
+With incorrect information given on the state of systems/services, the entire [[ISYS20311 - Information Security/Unedited/Lecture 1 - Overview#CIA Triad|CIA Triad]] can be compromised.
 
 ###### Mitigation
 State consistency schemes are typically applied here, as the replication and coordination concepts form the basis of mitigation approaches, as the very purpose of replication management is to maintain consistent system states to circumvent disruption.

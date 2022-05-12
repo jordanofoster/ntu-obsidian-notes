@@ -1,5 +1,5 @@
 # Encryption
-Encryption is used to provide [[ISYS20311 - Information Security/Lecture 1 - Overview#Confidentiality|confidentiality]], integrity, authentication and non-repudiation. It exists in *Symmetric* and *Asymmetric* forms. A basic overview of how it works is shown in the following video, from `1:22-3:50`:
+Encryption is used to provide [[ISYS20311 - Information Security/Unedited/Lecture 1 - Overview#Confidentiality|confidentiality]], integrity, authentication and non-repudiation. It exists in *Symmetric* and *Asymmetric* forms. A basic overview of how it works is shown in the following video, from `1:22-3:50`:
 
 <iframe width="896" height="504" src="https://www.youtube.com/embed/UiJiXNEm-Go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  Encryption is *important* as a key control in managing risk; as a result, we need to know what it can be applied to, and have a foundational understanding of the technology itself. 
