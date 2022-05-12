@@ -7,3 +7,6 @@
 - Important as information is only useful if it is *accurate*
 	- Attacks attempt to *maintain system trust*...
 		- ...but exfiltrate/modify that information to *mislead*
+			- Examples include:
+				- Session hijacking
+				- [[Man-in-the-Middle (MITM) Attacks]]
