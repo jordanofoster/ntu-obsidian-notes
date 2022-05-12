@@ -6,3 +6,5 @@ These are not part of [[The CIA Triad]] but are similarly important:
 - [[Non-Repudiation]]
 - [[Authentication]]
 - [[Authorisation]]
+
+[[Accountability]] and [[Non-Repudiation]] are enforceable through [[Authentication]] and [[Authorisation]].
