@@ -6,3 +6,8 @@
 		- Controls put in place to preserve the triad across *all affectable assets*
 
 ![[CIA.png]]
+
+As can be seen above, the triad consists of the following:
+- [[Confidentiality]]
+- [[Integrity]]
+- [[Availability]]
