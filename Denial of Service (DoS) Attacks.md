@@ -9,6 +9,6 @@
 			- Broadcasting lots of packets using victim's spoofed IP
 		- [DDoS Attacks](https://en.wikipedia.org/wiki/Denial-of-service_attack#Distributed_attack)
 			- Botnets to carry out large-scale attacks with several *unique IPs* 
-		- [Malformed Packets]()
+		- Malformed Packets
 			- Exploiting protocol implementation [[Vulnerabilities]]
-				- [Ping of Death]()
+				- [Ping of Death](https://en.wikipedia.org/wiki/Ping_of_death)
