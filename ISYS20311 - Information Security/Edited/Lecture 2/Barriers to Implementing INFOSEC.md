@@ -25,4 +25,7 @@
 			- Management lacks understanding
 			- Ignorance towards [[Risks]]
 
-## Positive Changes towards INFOSEC Implemn
+## Positive Changes towards INFOSEC Implementation
+
+- Gradually improving:
+	- **[[Risks|Risk]] aversion**
