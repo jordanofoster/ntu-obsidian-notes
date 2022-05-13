@@ -13,4 +13,4 @@
 	- Often have *unique signature*
 		- Detectable by *anti-viruses*
 			- Signature taken in the form of a *hash*
-		- Some 
+		- Some viruses *modify their own code* to avoid detection
