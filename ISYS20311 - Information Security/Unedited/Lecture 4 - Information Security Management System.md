@@ -7,7 +7,7 @@ Refers to *the confidence that information systems will protect the information 
 
 The ISMS preserves the CIA triad around information by applying risk-management processes, thereby giving confidence to invested parties that the risks have been adequately managed.
 
-To do so, an ISMS must be integrated within the organisation's processes and management structure - and information security as a whole must be considered through the entire design, including processes, information syhstems and controls.
+To do so, an ISMS must be integrated within the organisation's processes and management structure - and information security as a whole must be considered through the entire design, including processes, information systems and controls.
 
 To simplify, an ISMS is more or less a guidebook to information assurance within an organisation.
 

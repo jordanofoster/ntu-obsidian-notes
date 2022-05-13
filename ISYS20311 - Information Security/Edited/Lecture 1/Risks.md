@@ -3,12 +3,12 @@
 
 - Potential *events* that *damage an [[Assets|asset]]*
 	- Two key attributes: ^3f5a60
-		- *Likelihood* ^89dbdb
+		- *Likelihood* 
 		- *Impact*
-- Risks can be controlled:
+- Risks can be controlled: ^2cf679
 	- Involves reducing to *acceptable level*
 		- *Reducing/Removing [[Vulnerabilities]]*
-		- Anticipating risks
+		- Anticipating [[Risks]]
 		- Insuring at-risk [[Assets]]
 - Risks can *rarely be reduced to zero* - unless [[Assets|asset]] itself is removed ^30c25f
 	- Risk mitigation is therefore a balance:
