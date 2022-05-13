@@ -4,4 +4,4 @@
 - Physical [[Assets|assets]] that facilitate business
 	- Buildings, machines, servers, etc.
 - Easier to protect:
-	- Remote 
+	- Remote attackers not a consideration
