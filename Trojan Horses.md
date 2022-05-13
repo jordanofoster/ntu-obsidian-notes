@@ -6,4 +6,5 @@
 		- Installed trojans can:
 			- Give unauthorised access through [[Trapdoors]]
 			- Disable security software
-			- 
+			- Install other [[Malware]]
+			- Hijack machine to act as a *botnet* for a [[Denial of Service (DoS) Attacks|DoS Attack]]
