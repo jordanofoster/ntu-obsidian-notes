@@ -30,7 +30,7 @@
 - Gradually improving:
 	- **[[Risks|Risk]] aversion**
 		- Organisations/Staff more [[Threats|threat]] aware
-			- Realising that breaches can *happen to anyone*
+			- Realisation - breaches can *happen to anyone*
 		- *Contractual obligations* to uphold INFOSEC
 		- *Regulation/Legislature* holds companies accountable
 	- **Competitiveness**
@@ -39,4 +39,6 @@
 			- Qualifies a company as a good procurement candidate
 			- Companies want to manage reputation
 	- **Corporate Governance**
-		- 
+		- Corporate *responsibility to stakeholders* to protect [[Assets]]
+		- Directors' obligations *require INFOSEC*
+		- Ignorance of INFOSEC no longer acceptable
