@@ -7,5 +7,5 @@
 		- *Water holing*
 			- Not meticulous in design
 		- *Network Scanning*
-			- i.e. *Port Knocking*
+			- i.e. *[[Port Scanning]]*
 		- Deploying *Ransomware*
