@@ -1,7 +1,7 @@
 #isys20311-infosec/lecture-1 
 # Risks
 
-- Potential *events* that *damage an [[Assets|asset]]*
+- Potential *events* that *damage an [[Assets|asset]]* ^04f76b
 	- Two key attributes: ^3f5a60
 		- *Likelihood* 
 		- *Impact*

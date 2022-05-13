@@ -5,7 +5,7 @@
 - Business needs and security requirements at odds
 	- Security is inherently inconvenient
 		- Changes may also clash with enterprise culture
-- Cost of a solution and its security impact *must be balanced*
+- Cost of a solution and its security impact *must be balanced* ^14fb02
 
 ## Negative Attitude to INFOSEC
 
