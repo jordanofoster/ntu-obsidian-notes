@@ -7,5 +7,4 @@
 			- Involves thinking about processes:
 				- How access is gained to/in buildings
 				- How users interact with services
-				- How staff do work
-					- Requirements for them to do so
+				- How staff do work - and requirements for them to do so
