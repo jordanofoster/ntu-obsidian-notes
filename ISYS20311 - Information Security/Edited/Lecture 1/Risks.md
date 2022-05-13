@@ -5,7 +5,7 @@
 	- Two key attributes: ^3f5a60
 		- *Likelihood* 
 		- *Impact*
-- Risks can be controlled: ^2cf679
+- Risks can be [[Controls|controlled]]: ^2cf679
 	- Involves reducing to *acceptable level*
 		- *Reducing/Removing [[Vulnerabilities]]*
 		- Anticipating [[Risks]]

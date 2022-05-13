@@ -12,4 +12,5 @@
 ## Outcomes of Risk Analysis
 - [[Asset Register|Asset Register(s)]]
 	- A list of all *points of concern*, and who is [[Accountability|accountable]]
-- [[Risk Register|Risk Register(s)]] 
+- [[Risk Register|Risk Register(s)]]
+	- A list of *all identified [[Risks|risks]]* and potential [[Controls|controls]] used to address them
