@@ -1,5 +1,5 @@
 #isys20311-infosec/lecture-2 
-# Security through Obscurity
+# Security by Obscurity
 
 - Reliance on *hiding design details* to protect [[Assets]]
 	>*"Attackers with little knowledge can do [[Threats|little harm]]!"*
@@ -8,4 +8,8 @@
 - Also *broadcasts vulnerability*
 	- Admittance of insecurity
 		>"They must have something to hide!"
-- 
+- A *poor choice* for security assurance:
+	- Adds little to a strong system *at best*
+		- Viewed as a substitute to actual security
+			> [45:28](https://youtu.be/J1q4Ir2J8P8?t=2729) *"We all like to make fun of [[Security by Obscurity]]... but sometimes that's all we have."*
+		

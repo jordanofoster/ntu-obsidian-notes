@@ -2,5 +2,5 @@
 # INFOSEC Cost-cutting
 
 - There are several bad practices organisations take to save money on INFOSEC:
-	- [[Security through Obscurity]]
+	- [[Security by Obscurity]]
 	- [[Reactive vs Proactive INFOSEC]]
