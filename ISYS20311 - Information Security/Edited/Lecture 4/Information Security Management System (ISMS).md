@@ -11,3 +11,16 @@ Simplified, ISMSs are *guidebooks* to [[Information Assurance]] within an organi
 		- Information Systems
 		- Controls
 
+## Parts of an ISMS
+
+| System Component | Purpose/Detail |
+| -----------------	| -------------- |
+| Context |	The basis for what needs to be done |				 
+| [[Scope]] | Defining what is to be protected/supported |
+| Objectives | The basis for evaluation of overall effectiveness |
+| [[Policy]] | Assurance and directive to the organisation |
+| Planning | Aligning objectives with components, managing programme |
+| **[[Risk Analysis]] & treatment** | **Analysis of what [[Risks]] exist to which [[Assets]], which are acceptable and what [[Controls]] are needed** |
+| Statement of Applicability | 'Checklist' (have likely [[Controls]] been considered?) |
+| Assurance process | Internal audits, management reviews, performance improvements, non-conformance & continual improvement |
+
