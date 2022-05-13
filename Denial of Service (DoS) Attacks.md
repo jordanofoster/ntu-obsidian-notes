@@ -12,3 +12,4 @@
 		- Malformed Packets
 			- Exploiting protocol implementation [[Vulnerabilities]]
 				- [Ping of Death](https://en.wikipedia.org/wiki/Ping_of_death)
+- Most are *difficult to defend against* - *brute-force* infrastructural sabotage

@@ -12,7 +12,7 @@
 			- [[Worms]]
 	- Network-based
 		- [[Denial of Service (DoS) Attacks]]
-		- [[Port Knocking]]
+		- [[Port Scanning]]
 		- [[Man-in-the-Middle (MITM) Attacks]]
 		- [[Hacking & Unauthorised Access]]
 		- [[Database & Web Attacks]]
