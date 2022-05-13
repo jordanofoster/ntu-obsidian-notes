@@ -2,4 +2,13 @@
 # Denial of Service (DoS) Attacks
 
 - Make an asset *unavailable* to authorised users/[[Processes|processes]]
-	- Catch-all term
+	- Catch-all term for many types of attack, e.g.:
+		- [SYN Floods](https://en.wikipedia.org/wiki/SYN_flood) 
+			- Exploiting TCP handshakes
+		- [Smurf Attacks](https://en.wikipedia.org/wiki/Smurf_attack)  
+			- Broadcasting lots of packets using victim's spoofed IP
+		- [DDoS Attacks](https://en.wikipedia.org/wiki/Denial-of-service_attack#Distributed_attack)
+			- Botnets to carry out large-scale attacks with several *unique IPs* 
+		- [Malformed Packets]()
+			- Exploiting protocol implementation [[Vulnerabilities]]
+				- [Ping of Death]()
