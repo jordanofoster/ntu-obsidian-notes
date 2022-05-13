@@ -6,7 +6,7 @@
 		- *Likelihood* 
 		- *Impact*
 - Risks can be [[Controls|controlled]]: ^2cf679
-	- Involves reducing to *acceptable level*
+	- Involves reducing to *acceptable level* ^71e52c
 		- *Reducing/Removing [[Vulnerabilities]]*
 		- Anticipating [[Risks]]
 		- Insuring at-risk [[Assets]]
