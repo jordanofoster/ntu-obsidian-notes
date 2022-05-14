@@ -12,5 +12,5 @@
 	- Adds little to a strong system *at best*
 		- Viewed as a substitute to actual security
 			> [45:28](https://youtu.be/J1q4Ir2J8P8?t=2729) *"We all like to make fun of [[Security by Obscurity]], right? But sometimes that's all we have."*
-	![](https://www.youtube.com/watch?v=J1q4Ir2J8P8)
+	![](https://www.youtube.com/watch?v=J1q4Ir2J8P8#t=45:29,45:52)
 	 
