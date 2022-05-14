@@ -11,6 +11,6 @@
 - A *poor choice* for security assurance:
 	- Adds little to a strong system *at best*
 		- Viewed as a substitute to actual security
-			>[45:29](https://www.youtube.com/embed/J1q4Ir2J8P8?start=2729&end=2751) *"We all like to make fun of [[Security by Obscurity]], right? But sometimes that's all we have."*
+			>[45:29](https://www.youtube.com/embed/J1q4Ir2J8P8?start=2729&end=2751&autoplay=1) *"We all like to make fun of [[Security by Obscurity]], right? But sometimes that's all we have."*
 	
 	 
