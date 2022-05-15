@@ -4,9 +4,10 @@
 - There are several *types* of [[Assets|asset]]:
 >![[AssetIdentRing.png]]
 
-- **Information** ^b38515
+- [[Infrastructure]]
+- **[[Information]]**
 	- Stored electronically/on paper, etc.
-- **Software**
+- **[[Software & Services]]**
 	- Operating Systems
 	- Applications
 	- Dev tools, etc.

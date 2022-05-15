@@ -5,4 +5,8 @@
 	- Too soon and recovery is impossible post-breach
 	- Too long, it is costly to store and data compliance/regulation law can be breached
 - Must be *certain* that data is destroyed properly
-	- Physical devices can be wiped/degaussed/shredde
+	- Physical devices can be wiped/degaussed/shredded depending
+	- Distributed data is harder to remove
+	- Third-parties another question entirely!
+
+![[DisposalDiag.png]]
