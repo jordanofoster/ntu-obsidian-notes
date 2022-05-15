@@ -7,7 +7,7 @@
 - [[Infrastructure]]
 - **[[Information]]**
 	- Stored electronically/on paper, etc.
-- **[[Software & Services]]**
+- **[[Software]]**
 	- Operating Systems
 	- Applications
 	- Dev tools, etc.
