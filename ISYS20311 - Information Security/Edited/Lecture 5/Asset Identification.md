@@ -7,11 +7,11 @@
 - [[Infrastructure]]
 - **[[Information]]**
 	- Stored electronically/on paper, etc.
-- **[[Software]]**
+- **[[Software & Services]]**
 	- Operating Systems
 	- Applications
 	- Dev tools, etc.
-- **Physical** assets/hardware
+- [[Physical Assets]]
 	- Any [[Assets|asset]] that can *manipulate [[Asset Identification#^b38515|information]]*
 - **Supporting services**
 	- Heating
