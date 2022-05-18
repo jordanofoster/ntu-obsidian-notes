@@ -1,3 +1,4 @@
+#isys20311-infosec/lecture-20
 # Dealing with Management and Office Politics
 
 ## Are office politics an issue for InfoSec professionals?
