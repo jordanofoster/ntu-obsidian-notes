@@ -1,3 +1,4 @@
+#isys20311-infosec/lecture-7 
 # Application of Security Controls (Technical)
 
 ## Types of Control

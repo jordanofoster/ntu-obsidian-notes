@@ -1,3 +1,4 @@
+#isys20311-infosec/lecture-18
 # Artificial Intelligence (AI) and Cyber Security
 
 Cyber security is the main focus of companies in recent years. Providing security is a monotonous and repetitive job, however; we can use the power of machine learning and other data mining techniques to streamline the process.

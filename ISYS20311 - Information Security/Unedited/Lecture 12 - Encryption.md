@@ -1,3 +1,4 @@
+#isys20311-infosec/lecture-12
 # Encryption
 Encryption is used to provide [[ISYS20311 - Information Security/Unedited/Lecture 1 - Overview#Confidentiality|confidentiality]], integrity, authentication and non-repudiation. It exists in *Symmetric* and *Asymmetric* forms. A basic overview of how it works is shown in the following video, from `1:22-3:50`:
 

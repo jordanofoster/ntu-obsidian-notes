@@ -1,3 +1,4 @@
+#isys20311-infosec/lecture-14
 # Business Continuity
 
 *'A holistic management process that identifies potential impacts that threaten an organisation and provides a framework for building resilience with the capability for an effective response that safeguards the interests of its key stakeholders, reputation, brand and value-creating activities.'* (Business Continuity Institute, 2001).
