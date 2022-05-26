@@ -17,7 +17,7 @@ In switched comms networks, data entering the network from a station/end device 
 
 #### Switching Nodes
 
-Switches nodes may connect to other nodes, or some stations/end devices. The network is typically partially connected between nodes (that is, a node is only aware of neighbouring nodes and not the entire network) - although some redundant connections are desirable for the purposes of reliability.
+Switched nodes may connect to other nodes, or some stations/end devices. The network is typically partially connected between nodes (that is, a node is only aware of neighbouring nodes and not the entire network) - although some redundant connections are desirable for the purposes of reliability.
 
 There are two different switching technologies in use. *Circuit switching* and *Packet Switching.*
 
@@ -25,7 +25,7 @@ There are two different switching technologies in use. *Circuit switching* and *
 
 In circuit switching, a dedicated comms path is established between two stations in an end-to-end fashion. This path is a connected sequence of links between nodes - on each physical link, a dedicated logical channel is also formed.
 
-Communiction over circuit switching has three phases:
+Communication over circuit switching has three phases:
 - Circuit establishment, done link-by-link
 	- Routing/resource allocation (FDM or TDM)
 - Data transfer
